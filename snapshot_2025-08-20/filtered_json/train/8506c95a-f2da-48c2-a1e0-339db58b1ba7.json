@@ -1,0 +1,134 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-12-13",
+        "published":true,
+        "info":"spearphishing campaign targeted at least 20 Autonomous System (AS) owners",
+        "publish_timestamp":"1734122230",
+        "timestamp":"1734122191",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:sector=\"Telecoms\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Detailed explanation of as relationships and the impact of bgp flapping on upstream networks.rar",
+                "timestamp":"1734121775",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Detailed explanation of as relationships and the impact of bgp flapping on upstream networks.lnk",
+                "timestamp":"1734121803",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Adobe PDF Extractor.exe)",
+                "timestamp":"1734121837",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1734121850",
+                "type":"domain",
+                "value":"swisscoms.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domain: onnetmais[.]org (behind Cloudflare CDN)",
+                "timestamp":"1734121882",
+                "type":"domain",
+                "value":"onnetmais.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Backend C2 IP address: 47.251.162[.]130",
+                "timestamp":"1734121900",
+                "type":"ip-dst",
+                "value":"47.251.162.130",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1734121744",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1734121744",
+                        "type":"text",
+                        "value":"fediverse",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1734121744",
+                        "type":"text",
+                        "value":"Between December 11 and 12, 2024, a spearphishing campaign targeted at least 20 Autonomous System (AS) owners, predominantly Internet Service Providers (ISPs), and purported to come from the Network Operations Center (NOC) of a prominent European ISP.\r\n\r\nAll of the observed targeted entities peer with the spoofed ISP and phishing emails were sent to contact addresses present in the AS's WHOIS records, indicative of a highly deliberate targeting effort.\r\n\r\nEach spearphishing email was personalized to the target based on their Autonomous System Number (ASN) and purported to relate to a detected BGP (Border Gateway Protocol) flapping session within the target’s network.\r\n\r\nThe email contained a password protected RAR archive named “Detailed Explanation of AS Relationships and the Impact of BGP Flapping on Upstream Networks.rar”. The RAR contains a Microsoft Shortcut (LNK) file which executes a Portable Executable (PE) file contained in a hidden folder named “_MACOSX”.\r\n\r\nFollowing execution, the target is shown a decoy document related to BGP Flapping, and the executable file uses indirect syscalls to load shellcode into memory before it deletes itself from disk.\r\n\r\nWe are raising early awareness of this campaign given the coordinated effort to target network infrastructure administration personnel across a broad range of AS owners.\r\n\r\nIOCs for this campaign:\r\n\r\n4ec4b396bfa932756c90833e781f95c07b15108526a9c218efb35526ad956535 (Detailed explanation of as relationships and the impact of bgp flapping on upstream networks.rar)\r\n\r\n12031213e31dca91eddc9d4a16d2e2c18da9fb355ee98dc4acbbaa16e35faec3 (Detailed explanation of as relationships and the impact of bgp flapping on upstream networks.lnk)\r\n\r\nafc971f687303d0b3f3699883aa428f885d0a3fc20576953a28d31844328ccda (Adobe PDF Extractor.exe)\r\n\r\nActor-controlled sender domain:\r\nswisscoms[.]com\r\n\r\nC2 domain: onnetmais[.]org (behind Cloudflare CDN)\r\nBackend C2 IP address: 47.251.162[.]130",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1734121744",
+                        "type":"link",
+                        "value":"https://infosec.exchange/@threatinsight/113641860084873613",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1734121744",
+                        "type":"text",
+                        "value":"Informative",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1734121744",
+                        "type":"text",
+                        "value":"Unknown",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

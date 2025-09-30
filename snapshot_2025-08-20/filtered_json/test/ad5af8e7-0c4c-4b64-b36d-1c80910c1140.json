@@ -1,0 +1,153 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2023-06-23",
+        "published":true,
+        "info":"Cadet Blizzard emerges as a novel and distinct Russian threat actor",
+        "publish_timestamp":"1687501476",
+        "timestamp":"1687501467",
+        "Tag":[
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"IT\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"NGO\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Police - Law enforcement\""
+            },
+            {
+                "name":"misp-galaxy:country=\"ukraine\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"reGeorg\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"reGeorg\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Impacket - S0357\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1687500854",
+                "type":"link",
+                "value":"https://www.microsoft.com/en-us/security/blog/2023/06/14/cadet-blizzard-emerges-as-a-novel-and-distinct-russian-threat-actor/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1687500901",
+                "type":"comment",
+                "value":"﻿Cadet Blizzard seeks to conduct disruption, destruction, and information collection, using whatever means are available and sometimes acting in a haphazard fashion. While the group carries high risk due to their destructive activity, they appear to operate with a lower degree of operational security than that of longstanding and advanced Russian groups such as Seashell Blizzard and Forest Blizzard.  Additionally, as is the case with other Russian state-sponsored threat groups, Microsoft assesses that at least one Russian private sector organization has materially supported Cadet Blizzard by providing operational support including during the WhisperGate destructive attack.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1687501167",
+                "type":"vulnerability",
+                "value":"CVE-2021-26084",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1687501167",
+                "type":"vulnerability",
+                "value":"CVE-2022-41040",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sender for non-weaponized emails containing only antagonistic messaging: volodimir_azov@justiceua[.]org",
+                "timestamp":"1687501431",
+                "type":"domain",
+                "value":"justiceua.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hosted the JusticeUA operation between March and April 2022",
+                "timestamp":"1687501431",
+                "type":"ip-dst",
+                "value":"179.43.187.33",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Import Hash matching WhisperGate malware",
+                "timestamp":"1687501431",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Web shell – p0wnyshell (not unique to Cadet Blizzard)",
+                "timestamp":"1687501431",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Web shell – p0wnyshell (not unique to Cadet Blizzard)",
+                "timestamp":"1687501431",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Web shell – WSO Shell (not unique to Cadet Blizzard)",
+                "timestamp":"1687501431",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Web shell – reGeorg (not unique to Cadet Blizzard)",
+                "timestamp":"1687501431",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Web shell – PAS (may not be unique to Cadet Blizzard)",
+                "timestamp":"1687501431",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1687501448",
+                "type":"vulnerability",
+                "value":"CVE-2020-1472",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1687501448",
+                "type":"vulnerability",
+                "value":"CVE-2021-4034",
+                "to_ids":false
+            }
+        ]
+    }
+}

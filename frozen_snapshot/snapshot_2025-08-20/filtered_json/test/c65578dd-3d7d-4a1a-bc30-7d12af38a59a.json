@@ -1,0 +1,1568 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-04-19",
+        "published":true,
+        "info":"TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies",
+        "publish_timestamp":"1650976930",
+        "timestamp":"1650976901",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Lazarus Group - G0032\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Lazarus Group - G0032\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868950",
+                "type":"url",
+                "value":"https://greenvideo.nl/wp‐content/themes/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868925",
+                "type":"url",
+                "value":"https://dafnefonseca.com/wp‐content/themes/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868938",
+                "type":"url",
+                "value":"https://haciendadeclarevot.com/wp‐content/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868884",
+                "type":"url",
+                "value":"https://sche‐eg.org/plugins/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868899",
+                "type":"url",
+                "value":"https://www.vinoymas.ch/wp‐content/plugins/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Endpoints",
+                "timestamp":"1650868913",
+                "type":"url",
+                "value":"https://infodigitalnew.com/wp‐content/plugins/top.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DAFOM purports to be a “cryptocurrency portfolio application.” A Mach-O binary packaged within the Electron application was signed by an Apple digital signature issued for the Apple Developer Team W58CYKFH67. The certificate associated with Apple Developer Team W58CYKFH67 has been revoked. A metadata file packaged in the DAFOM application provided the URL hxxps://github[.]com/dafomdev for bug reports. As of April 2022, this page was unavailable.",
+                "timestamp":"1650869229",
+                "type":"url",
+                "value":"https://github.com/dafomdev",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1650872510",
+                "type":"url",
+                "value":"https://www.esilet.com/update/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1650872649",
+                "type":"url",
+                "value":"https://www.alticgo.com/update/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1650874610",
+                "type":"url",
+                "value":"https://aideck.net/board.php",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1650548444",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1650548444",
+                        "type":"link",
+                        "value":"https://www.cisa.gov/uscert/ncas/alerts/aa22-108a",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650548444",
+                        "type":"text",
+                        "value":"The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the U.S. Treasury Department (Treasury) are issuing this joint Cybersecurity Advisory (CSA) to highlight the cyber threat associated with cryptocurrency thefts and tactics used by a North Korean state-sponsored advanced persistent threat (APT) group since at least 2020. This group is commonly tracked by the cybersecurity industry as Lazarus Group, APT38, BlueNoroff, and Stardust Chollima.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650548444",
+                        "type":"text",
+                        "value":"Alert",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1650548489",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1650548489",
+                        "type":"link",
+                        "value":"https://www.cisa.gov/uscert/sites/default/files/publications/AA22-108A-TraderTraitor-North_Korea_APT_Targets_Blockchain_Companies.pdf",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650548489",
+                        "type":"text",
+                        "value":"The Federal Bureau of Investigation (FBI), the\r\nCybersecurity and Infrastructure Security Agency (CISA),\r\nand the U.S. Treasury Department (Treasury) are issuing\r\nthis joint Cybersecurity Advisory (CSA) to highlight the\r\ncyber threat associated with cryptocurrency thefts and\r\ntactics used by a North Korean state-sponsored advanced\r\npersistent threat (APT) group since at least 2020. This\r\ngroup is commonly tracked by the cybersecurity industry as\r\nLazarus Group, APT38, BlueNoroff, and Stardust Chollima.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650548489",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650627612",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650627612",
+                        "type":"whois-registrar",
+                        "value":"NameCheap, Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650627612",
+                        "type":"datetime",
+                        "value":"2022-02-07T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650627612",
+                        "type":"datetime",
+                        "value":"2023-02-07T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650627612",
+                        "type":"domain",
+                        "value":"dafom.dev",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650627612",
+                        "type":"ip-src",
+                        "value":"45.14.227.58",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650870701",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"text",
+                        "value":"dropper macos",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"filename",
+                        "value":"DAFOM-1.0.0.dmg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650628202",
+                        "type":"size-in-bytes",
+                        "value":"92182575",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650631031",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650631031",
+                        "type":"whois-registrar",
+                        "value":"NameCheap, Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650631031",
+                        "type":"datetime",
+                        "value":"2022-01-27T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650631031",
+                        "type":"datetime",
+                        "value":"2023-01-27T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650631031",
+                        "type":"domain",
+                        "value":"tokenais.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650631031",
+                        "type":"ip-src",
+                        "value":"199.188.103.115",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650633767",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"text",
+                        "value":"dropper macos",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"filename",
+                        "value":"TokenAIS.app.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650633767",
+                        "type":"size-in-bytes",
+                        "value":"123728267",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650634148",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650634148",
+                        "type":"whois-registrar",
+                        "value":"NameCheap, Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634148",
+                        "type":"datetime",
+                        "value":"2021-08-02T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634148",
+                        "type":"datetime",
+                        "value":"2022-08-02T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634148",
+                        "type":"domain",
+                        "value":"cryptais.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634148",
+                        "type":"ip-src",
+                        "value":"82.102.31.14",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650634205",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650634205",
+                        "type":"whois-registrar",
+                        "value":"NetEarth One Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634205",
+                        "type":"datetime",
+                        "value":"2020-08-08T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634205",
+                        "type":"datetime",
+                        "value":"2021-08-08T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634205",
+                        "type":"domain",
+                        "value":"alticgo.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634205",
+                        "type":"ip-src",
+                        "value":"108.170.55.202",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650634260",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650634260",
+                        "type":"whois-registrar",
+                        "value":"NameSilo, LLC",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634260",
+                        "type":"datetime",
+                        "value":"2020-06-12T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634260",
+                        "type":"datetime",
+                        "value":"2021-06-12T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634260",
+                        "type":"domain",
+                        "value":"esilet.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634260",
+                        "type":"ip-src",
+                        "value":"104.168.98.156",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650873770",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650873770",
+                        "type":"whois-registrar",
+                        "value":"Flexwebhosting",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873770",
+                        "type":"datetime",
+                        "value":"2018-02-26T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873770",
+                        "type":"domain",
+                        "value":"greenvideo.nl",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873770",
+                        "type":"ip-src",
+                        "value":"62.84.240.140",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650873794",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650873794",
+                        "type":"whois-registrar",
+                        "value":"PublicDomainRegistry",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873794",
+                        "type":"datetime",
+                        "value":"2019-08-27T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873794",
+                        "type":"datetime",
+                        "value":"2022-08-27T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873794",
+                        "type":"domain",
+                        "value":"dafnefonseca.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873794",
+                        "type":"ip-src",
+                        "value":"151.101.64.119",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650873853",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650873853",
+                        "type":"whois-registrar",
+                        "value":"cdmon,10DENCEHISPAHARD, S.L.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873853",
+                        "type":"datetime",
+                        "value":"2005-03-02T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873853",
+                        "type":"domain",
+                        "value":"haciendadeclarevot.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873853",
+                        "type":"ip-src",
+                        "value":"185.66.41.17",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873853",
+                        "type":"datetime",
+                        "value":"2023-03-02T00:00:00+00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650873886",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650873886",
+                        "type":"whois-registrar",
+                        "value":"GoDaddy.com, LLC",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873886",
+                        "type":"datetime",
+                        "value":"2019-06-01T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873886",
+                        "type":"domain",
+                        "value":"sche-eg.org",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650873886",
+                        "type":"ip-src",
+                        "value":"160.153.235.20",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650873886",
+                        "type":"datetime",
+                        "value":"2022-06-01T00:00:00+00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650874185",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650874185",
+                        "type":"whois-registrar",
+                        "value":"cdmon, 10DENCEHISPAHARD, S.L.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650874185",
+                        "type":"datetime",
+                        "value":"2010-01-24T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650874185",
+                        "type":"domain",
+                        "value":"www.vinoymas.ch",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650874185",
+                        "type":"ip-src",
+                        "value":"46.16.62.238",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Likely legitimate but compromised",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650874233",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650874233",
+                        "type":"whois-registrar",
+                        "value":"PublicDomainRegistry",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650874233",
+                        "type":"datetime",
+                        "value":"2020-06-20T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650874233",
+                        "type":"domain",
+                        "value":"infodigitalnew.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650874233",
+                        "type":"ip-src",
+                        "value":"107.154.160.132",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650874233",
+                        "type":"datetime",
+                        "value":"2022-06-20T00:00:00+00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650634752",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650634752",
+                        "type":"whois-registrar",
+                        "value":"NameCheap, Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634752",
+                        "type":"datetime",
+                        "value":"2020-03-09T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634752",
+                        "type":"datetime",
+                        "value":"2021-03-09T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634752",
+                        "type":"domain",
+                        "value":"creaideck.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634752",
+                        "type":"ip-src",
+                        "value":"38.132.124.161",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1650634870",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1650634870",
+                        "type":"whois-registrar",
+                        "value":"NameCheap, Inc.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634870",
+                        "type":"datetime",
+                        "value":"2020-06-22T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634870",
+                        "type":"datetime",
+                        "value":"2021-06-22T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634870",
+                        "type":"domain",
+                        "value":"aideck.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1650634870",
+                        "type":"ip-src",
+                        "value":"89.45.4.151",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650634935",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"text",
+                        "value":"dropper macos",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"filename",
+                        "value":"CryptAIS[.]dmg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650634935",
+                        "type":"size-in-bytes",
+                        "value":"84259810",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650635003",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"text",
+                        "value":"trojan macho",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"filename",
+                        "value":"darwin64.bin",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635003",
+                        "type":"size-in-bytes",
+                        "value":"6757832",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650875019",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"text",
+                        "value":"trojan peexe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"filename",
+                        "value":"win32.bin",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"datetime",
+                        "value":"2020-06-23T06:06:35+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635159",
+                        "type":"size-in-bytes",
+                        "value":"2198684",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650873574",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"text",
+                        "value":"dropper peexe nsis",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"filename",
+                        "value":"AlticGO.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"datetime",
+                        "value":"2018-12-15T22:26:14+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635259",
+                        "type":"size-in-bytes",
+                        "value":"45656474",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650872625",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"text",
+                        "value":"dropper peexe nsis",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"filename",
+                        "value":"AlticGO_R.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"datetime",
+                        "value":"2020-02-12T16:15:17+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635345",
+                        "type":"size-in-bytes",
+                        "value":"46745505",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650873560",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"text",
+                        "value":"dropper peexe nsis",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"filename",
+                        "value":"AlticGO.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"datetime",
+                        "value":"2020-02-12T16:15:17+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635422",
+                        "type":"size-in-bytes",
+                        "value":"46745644",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650635710",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"text",
+                        "value":"dropper macos",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"filename",
+                        "value":"Esilet.dmg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635710",
+                        "type":"size-in-bytes",
+                        "value":"81688694",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650636077",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"text",
+                        "value":"trojan macho",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"filename",
+                        "value":"Esilet-tmpzpsb3",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650635846",
+                        "type":"size-in-bytes",
+                        "value":"522620",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1650636451",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"text",
+                        "value":"trojan macho",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"filename",
+                        "value":"Esilet-tmpg7lpp",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1650636176",
+                        "type":"size-in-bytes",
+                        "value":"39156",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"DAFOM purports to be a “cryptocurrency portfolio application.” A Mach-O binary packaged within the Electron application was signed by an Apple digital signature issued for the Apple Developer Team W58CYKFH67. The certificate associated with Apple Developer Team W58CYKFH67 has been revoked. A metadata file packaged in the DAFOM application provided the URL hxxps://github[.]com/dafomdev for bug reports. As of April 2022, this page was unavailable.",
+                "description":"GitHub user",
+                "meta-category":"misc",
+                "name":"github-user",
+                "timestamp":"1650870505",
+                "Attribute":[
+                    {
+                        "category":"Social network",
+                        "comment":"",
+                        "timestamp":"1650870505",
+                        "type":"github-username",
+                        "value":"dafomdev",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,64 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-29",
+        "published":false,
+        "info":"OSINT - APT39: An Iranian Cyber Espionage Group Focused on Personal Information",
+        "publish_timestamp":"0",
+        "timestamp":"1561122370",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT39 - G0087\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"APT39\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548952217",
+                "type":"text",
+                "value":"n December 2018, FireEye identified APT39 as an Iranian cyber espionage group responsible for widespread theft of personal information. We have tracked activity linked to this group since November 2014 in order to protect organizations from APT39 activity to date. APT39’s focus on the widespread theft of personal information sets it apart from other Iranian groups FireEye tracks, which have been linked to influence operations, disruptive attacks, and other threats. APT39 likely focuses on personal information to support monitoring, tracking, or surveillance operations that serve Iran’s national priorities, or potentially to create additional accesses and vectors to facilitate future campaigns. \r\n\r\nAPT39 was created to bring together previous activities and methods used by this actor, and its activities largely align with a group publicly referred to as \"Chafer.\" However, there are differences in what has been publicly reported due to the variances in how organizations track activity. APT39 primarily leverages the SEAWEED and CACHEMONEY backdoors along with a specific variant of the POWBAT backdoor. While APT39's targeting scope is global, its activities are concentrated in the Middle East. APT39 has prioritized the telecommunications sector, with additional targeting of the travel industry and IT firms that support it and the high-tech industry. The countries and industries targeted by APT39 are depicted in Figure 1.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548952217",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/01/apt39-iranian-cyber-espionage-group-focused-on-personal-information.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Countries and industries targeted by APT39",
+                "timestamp":"1548952863",
+                "type":"attachment",
+                "value":"APT39Fig1c.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"APT39 attack lifecycle",
+                "timestamp":"1548953365",
+                "type":"attachment",
+                "value":"APT39Fig2.png",
+                "to_ids":false
+            }
+        ]
+    }
+}

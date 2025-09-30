@@ -1,0 +1,79 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-30",
+        "published":true,
+        "info":"OSINT - Websites compromised in â€˜Decimal IPâ€™ campaign",
+        "publish_timestamp":"1490880415",
+        "timestamp":"1490880407",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"RIG\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490876884",
+                "type":"text",
+                "value":"When looking at malicious traffic, one of the things we are interested in are the hosts involved in a particular attack. For example, we check the hostnames or IP addresses that were serving up malicious code.\r\n\r\nBefore getting further, letâ€™s define a few concepts to better understand the topic we are discussing today. A host name can be:\r\n\r\nA domain name (i.e. http://example.com/)\r\nA fully qualified domain name (i.e. http://test.example.com/)\r\nAn IP address (i.e. http://127.0.0.1/)\r\nItâ€™s not as usual, but IP addresses can indeed be directly used as the URL and when that happens it is called an IP-Literal Hostname (see Eric Lawrenceâ€™s post on this subject).\r\n\r\nIP addresses (IPv4) follow the dot-decimal notation which is four numbers, each ranging from 0 to 255, separated by dots. But then, to make things a little more complicated, we have exceptions, such as the non-dotted IP literals, in decimal (http://2130706433/) or octal form (http://017700000001/).\r\n\r\nThis takes us to a recent infection chain for the RIG exploit kit where we came across such an occurrence.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490876877",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/cybercrime/2017/03/websites-compromised-decimal-ip-campaign/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload (Smoke Loader)",
+                "timestamp":"1490876833",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious redirect",
+                "timestamp":"1490876833",
+                "type":"ip-dst",
+                "value":"104.238.158.235",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload (Smoke Loader) - Xchecked via VT: 4bed780a55e6179e4a1236444c34398af50d3bea39f86eb877089265f833bda5",
+                "timestamp":"1490876837",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload (Smoke Loader) - Xchecked via VT: 4bed780a55e6179e4a1236444c34398af50d3bea39f86eb877089265f833bda5",
+                "timestamp":"1490876838",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Payload (Smoke Loader) - Xchecked via VT: 4bed780a55e6179e4a1236444c34398af50d3bea39f86eb877089265f833bda5",
+                "timestamp":"1490876839",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4bed780a55e6179e4a1236444c34398af50d3bea39f86eb877089265f833bda5/analysis/1490743909/",
+                "to_ids":false
+            }
+        ]
+    }
+}

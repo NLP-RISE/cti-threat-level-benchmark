@@ -1,0 +1,237 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-28",
+        "published":true,
+        "info":"2019-01-28: Turla Kazuar RAT",
+        "publish_timestamp":"1548767977",
+        "timestamp":"1548767952",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Turla RAT\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Turla - G0010\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Turla Group\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Kazuar\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Kazuar - S0265\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Kazuar\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"RemoteAccess\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"remote-access-tool\""
+            },
+            {
+                "name":"veris:asset:variety=\"S - Remote access\""
+            },
+            {
+                "name":"veris:action:misuse:vector=\"Remote access\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"RemoteAccess\""
+            },
+            {
+                "name":"CERT-XLM:malicious-code=\"spyware-rat\""
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1548760999",
+                "type":"url",
+                "value":"northviewcanada.com/wp-content/galler/slider/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1548761000",
+                "type":"url",
+                "value":"zycie-chotomowa.pl/wp-content/languages/index.php",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1548759728",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"text",
+                        "value":"2019-01-28: #Turla #Kazuar #RAT: Component: { loader, service, solver, sender, singler, scripter } C2: { northviewcanada[.com/wp-content/galler/slider/, zycie-chotomowa[.pl/wp-content/languages/index.php } MD5: 988df2967a7239a4b916cc9fcedaff68 cc @DrunkBinary",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"url",
+                        "value":"https://twitter.com/VK_Intel/status/1089959988116799491",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"text",
+                        "value":"DrunkBinary",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"datetime",
+                        "value":"2019-01-28T10:54:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548759728",
+                        "type":"text",
+                        "value":"VK_Intel",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548761278",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548761278",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548761278",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548767943",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548767943",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"datetime",
+                        "value":"2019-01-29T07:35:34",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/44cc7f6c2b664f15b499c7d07c78c110861d2cc82787ddaad28a5af8efc3daac/analysis/1548747334/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548767943",
+                        "type":"text",
+                        "value":"42/69",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

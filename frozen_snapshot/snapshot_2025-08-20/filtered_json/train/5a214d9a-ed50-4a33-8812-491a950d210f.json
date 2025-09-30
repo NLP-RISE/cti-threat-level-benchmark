@@ -1,0 +1,326 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-29",
+        "published":true,
+        "info":"OSINT - Fake Windows Troubleshooting Support Scam Uploads Screenshots & Uses Paypal",
+        "publish_timestamp":"1514467579",
+        "timestamp":"1512356424",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512132229",
+                "type":"comment",
+                "value":"A new tech support scam has been discovered that shows a fake BSOD, or Blue Screen of Death, on the infected computer and then displays an application that pretends to be a Troubleshooter for Windows. This Troubleshooter will then state that your computer cannot be fixed, blocks you from using Windows, and prompts you to purchase a program using PayPal to fix the \"detected problems\" and unlock the screen.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512132257",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/fake-windows-troubleshooting-support-scam-uploads-screenshots-and-uses-paypal/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Extra/Downloads/BSOD.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Extra/Downloads/csrvc.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Extra/Downloads/adwizz.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Extra/Downloads/Troubleshoot.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/extra/downloads/scshtrv.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Extra/Downloads/Windows%20Chat%20Support.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/thankyou.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://hitechnovation.com/Downloads/DList.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"http://freegeoip.net/xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Network Connections",
+                "timestamp":"1512134080",
+                "type":"url",
+                "value":"ftp://182.50.132.48",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134316",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\BSOD.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\csrvc.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\csrvc.InstallLog",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\csrvc.InstallState",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\scshtrv.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%Temp%\\csrvc\\Troubleshoot.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"filename",
+                "value":"%PROGRAMFILES%\\adwizz\\adwizz.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\adwizz",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\csrvc",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1512134317",
+                "type":"regkey",
+                "value":"HKLM\\SYSTEM\\CurrentControlSet\\services\\csrvc",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512132838",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512132838",
+                        "type":"filename",
+                        "value":"adwizz.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512132838",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512132981",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512132981",
+                        "type":"filename",
+                        "value":"BSOD.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512132981",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512133098",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512133098",
+                        "type":"filename",
+                        "value":"csrvc.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512133098",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512133362",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512133363",
+                        "type":"filename",
+                        "value":"scshtrv.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512133363",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512134048",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512134048",
+                        "type":"filename",
+                        "value":"Troubleshoot.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512134048",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

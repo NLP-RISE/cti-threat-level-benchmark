@@ -1,0 +1,148 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-07-05",
+        "published":true,
+        "info":"OSINT - Analysis of TeleBotsâ€™ cunning backdoor",
+        "publish_timestamp":"1499327309",
+        "timestamp":"1499327306",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1499237223",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2017/07/04/analysis-of-telebots-cunning-backdoor/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1499237223",
+                "type":"text",
+                "value":"On the 27th of June 2017, a new cyberattack hit many computer systems in Ukraine, as well as in other countries. That attack was spearheaded by the malware ESET products detect as Diskcoder.C (aka ExPetr, PetrWrap, Petya, or NotPetya). This malware masquerades as typical ransomware: it encrypts the data on the computer and demands $300 bitcoins for recovery. In fact, the malware authorsâ€™ intention was to cause damage, so they did all that they could to make data decryption very unlikely.\r\nIn our previous blogpost, we attributed this attack to the TeleBots group and uncovered details about other similar supply chain attacks against Ukraine. This article reveals details about the initial distribution vector that was used during the DiskCoder.C outbreak.",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1499237144",
+                "type":"text",
+                "value":"MSIL/TeleDoor.A",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate servers abused by malware authors",
+                "timestamp":"1499237144",
+                "type":"hostname",
+                "value":"upd.me-doc.com.ua",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1499237144",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1499237144",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1499237144",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3567434e2e49358e8210674641a20b147e0bd23c",
+                "timestamp":"1499237144",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3567434e2e49358e8210674641a20b147e0bd23c",
+                "timestamp":"1499237144",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 3567434e2e49358e8210674641a20b147e0bd23c",
+                "timestamp":"1499237144",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2fd2863d711a1f18eeee5c7c82f2349c5d4e00465de9789da837fcdca4d00277/analysis/1499236176/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7f3b1c56c180369ae7891483675bec61f3182f27",
+                "timestamp":"1499237144",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7f3b1c56c180369ae7891483675bec61f3182f27",
+                "timestamp":"1499237144",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 7f3b1c56c180369ae7891483675bec61f3182f27",
+                "timestamp":"1499237144",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d462966166450416d6addd3bfdf48590f8440dd80fc571a389023b7c860ca3ac/analysis/1499232770/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7b051e7e7a82f07873fa360958acc6492e4385dd",
+                "timestamp":"1499237144",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7b051e7e7a82f07873fa360958acc6492e4385dd",
+                "timestamp":"1499237144",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 7b051e7e7a82f07873fa360958acc6492e4385dd",
+                "timestamp":"1499237144",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f9d6fe8bd8aca6528dec7eaa9f1aafbecde15fd61668182f2ba8a7fc2b9a6740/analysis/1499234664/",
+                "to_ids":false
+            }
+        ]
+    }
+}

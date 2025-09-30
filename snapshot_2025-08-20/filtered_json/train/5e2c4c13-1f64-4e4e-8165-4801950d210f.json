@@ -1,0 +1,186 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-01-25",
+        "published":true,
+        "info":"Emotet/Trickbot",
+        "publish_timestamp":"1580456162",
+        "timestamp":"1580456151",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"Banker: TrickBot"
+            },
+            {
+                "name":"malware:emotet"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1579962769",
+                "type":"url",
+                "value":"https://jomamba.best:80/adgvredgdz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1579962762",
+                "type":"url",
+                "value":"http://144.202.114.147:80/aascx",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1579962734",
+                "type":"url",
+                "value":"http://149.28.106.230/adsfjasktmsttyoatopoyamfkytasrdltoiqrttmcvbmltpatp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 via powershell",
+                "timestamp":"1579962390",
+                "type":"url",
+                "value":"149.28.106.230.vultr.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 via Emotet",
+                "timestamp":"1579962489",
+                "type":"ip-dst",
+                "value":"68.183.170.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot connected to this domain",
+                "timestamp":"1579963242",
+                "type":"domain",
+                "value":"2cdajlnnwxfylth4.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot connected to this domain",
+                "timestamp":"1579963248",
+                "type":"domain",
+                "value":"myexternalip.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot connected to this domain",
+                "timestamp":"1579963254",
+                "type":"domain",
+                "value":"chekfast.zennolab.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot connected to this domain",
+                "timestamp":"1579963254",
+                "type":"domain",
+                "value":"api.ipify.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PowerView.ps1",
+                "timestamp":"1579965122",
+                "type":"url",
+                "value":"https://qwe4dse4.com/hcxUr9dg.ps1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1580051493",
+                "type":"url",
+                "value":"http://207.148.30.186:80/asdkjbaskjnvscjshxhgbsxsanxrvsars",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1580051498",
+                "type":"url",
+                "value":"http://155.138.202.17:80/aieutireuoitreuJHJksfhkjhewkkkqowJLKjswwoieuoepo",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot potential c2",
+                "timestamp":"1580061584",
+                "type":"url",
+                "value":"https://updatewinlsass.com:80/afdgszfsbgrg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot PowerTrick",
+                "timestamp":"1580062002",
+                "type":"domain",
+                "value":"updatewinlsass.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot download and IEX via powershell",
+                "timestamp":"1580087835",
+                "type":"url",
+                "value":"https://koretycbeeb.com:80/lmjnbvgftyujkiu765678",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot connecting to PowerShell Empire",
+                "timestamp":"1580087929",
+                "type":"ip-dst",
+                "value":"155.138.142.157",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Object describing a series of shell commands executed. This object can be linked with malicious files in order to describe a specific execution of shell commands.",
+                "meta-category":"misc",
+                "name":"shell-commands",
+                "timestamp":"1579962888",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Trickbot",
+                        "timestamp":"1579962857",
+                        "type":"text",
+                        "value":"nltest  /domain_trusts /all_trusts",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Trickbot",
+                        "timestamp":"1579962878",
+                        "type":"text",
+                        "value":"net  view /all /domain",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Trickbot",
+                        "timestamp":"1579962888",
+                        "type":"text",
+                        "value":"net  config workstation",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

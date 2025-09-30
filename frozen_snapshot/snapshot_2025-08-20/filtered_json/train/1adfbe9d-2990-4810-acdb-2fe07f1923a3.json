@@ -1,0 +1,168 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-07-27",
+        "published":true,
+        "info":"Impact of FrostyGoop ICS Malware on Connected OT Systems",
+        "publish_timestamp":"1722124480",
+        "timestamp":"1722124372",
+        "Tag":[
+            {
+                "name":"misp-galaxy:target-information=\"Ukraine\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Energy\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-techniques=\"Standard Application Layer Protocol\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-techniques=\"Unauthorized Command Message\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Create or Modify System Process - T1543\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Service Discovery - T1007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Modify Registry - T1112\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1722122763",
+                "type":"link",
+                "value":"https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1722122774",
+                "type":"link",
+                "value":"https://www.nozominetworks.com/blog/protecting-against-frostygoop-bustleberm-malware",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"configuration file",
+                "timestamp":"1722123550",
+                "type":"filename",
+                "value":"task_test.json",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"FrostyGoop binaries use a Go Modbus library retrieved from a publicly available Github repository",
+                "timestamp":"1722123635",
+                "type":"link",
+                "value":"https://github.com/rolfl/modbus",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1722123842",
+                "type":"yara",
+                "value":"// Created by Nozomi Networks Labs\r\n\r\nrule Mal_Hacktool_Win64_Bustleberm\r\n\r\n{\r\n\r\nmeta:\r\n\r\n   name = \"BUSTLEBERM ICS Hacktool\"\r\n\r\n   author = \"Nozomi Networks Labs\"\r\n\r\n   description = \"Detects the BUSTLEBERM ICS Hacktool (also known as FrostyGoop)\"\r\n\r\n   date = \"2024-07-24\"\r\n\r\n   tlp = \"clear\"\r\n\r\n   x_threat_name = \"BUSTLEBERM\"\r\n\r\n   x_mitre_technique = \"T1007, T1012, T1033, T1112, T1543, T0869, T0855\"\r\n\r\n   reference = \"https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_.pdf\"\r\n\r\n   hash1 = \"5d2e4fd08f81e3b2eb2f3eaae16eb32ae02e760afc36fa17f4649322f6da53fb\"\r\n\r\n   hash2 = \"a63ba88ad869085f1625729708ba65e87f5b37d7be9153b3db1a1b0e3fed309c\"\r\n\r\nstrings:\r\n\r\n   $go = \"Go build ID:\" ascii fullword\r\n\r\n   $modbus_1 = \"github.com/rolfl/modbus\" ascii fullword\r\n\r\n   $modbus_2 = \"\\x00main.MbConfig.writeMultiple\\x00\" ascii\r\n\r\n   $rtn_1 = \"\\x00main.TaskList.executeCommand\\x00\" ascii\r\n\r\n   $rtn_2 = \"\\x00main.TaskList.getTaskIpList\\x00\" ascii\r\n\r\n   $rtn_3 = \"\\x00main.TaskList.getIpList\\x00\" ascii\r\n\r\n   $rtn_4 = \"\\x00main.TargetList.getTargetIpList\\x00\" ascii\r\n\r\ncondition:\r\n\r\n   uint16(0) == 0x5a4d and\r\n\r\n   filesize <= 10MB and\r\n\r\n   $go and\r\n\r\n   any of ($modbus_*) and\r\n\r\n   2 of ($rtn_*)\r\n\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"https://raw.githubusercontent.com/Neo23x0/signature-base/master/yara/mal_go_modbus.yar",
+                "timestamp":"1722124022",
+                "type":"yara",
+                "value":"rule MAL_Go_Modbus_Jul24_1 {\r\n   meta:\r\n      description = \"Detects characteristics reported by Dragos for FrostyGoop ICS malware\"\r\n      author = \"Florian Roth\"\r\n      reference = \"https://hub.dragos.com/hubfs/Reports/Dragos-FrostyGoop-ICS-Malware-Intel-Brief-0724_.pdf\"\r\n      date = \"2024-07-23\"\r\n      modified = \"2024-07-24\"\r\n      score = 75\r\n      hash1 = \"5d2e4fd08f81e3b2eb2f3eaae16eb32ae02e760afc36fa17f4649322f6da53fb\"\r\n   strings:\r\n      $a1 = \"Go build\"\r\n\r\n      $sa1 = \"github.com/rolfl/modbus\"\r\n\r\n      $sb1 = \"main.TaskList.executeCommand\"\r\n      $sb2 = \"main.TargetList.getTargetIpList\"\r\n      $sb3 = \"main.TaskList.getTaskIpList\"\r\n      $sb4 = \"main.CycleInfo\" fullword\r\n   condition:\r\n      filesize < 30MB\r\n      and (\r\n         $sa1\r\n         and 3 of ($sb*)\r\n      )\r\n      or 4 of them\r\n}",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722124215",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124146",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124160",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124173",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124216",
+                        "type":"filename",
+                        "value":"mb.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722124321",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124296",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124308",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722124322",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

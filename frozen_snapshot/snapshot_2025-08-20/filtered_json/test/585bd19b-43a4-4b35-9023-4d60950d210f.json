@@ -1,0 +1,90 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-12-22",
+        "published":true,
+        "info":"OSINT - Danger Close: Fancy Bear Tracking of Ukrainian Field Artillery Units",
+        "publish_timestamp":"1482412774",
+        "timestamp":"1482412759",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"X-Agent\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482412480",
+                "type":"comment",
+                "value":"In June CrowdStrike identified and attributed a series of targeted intrusions at the Democratic National Committee (DNC), and other political organizations that utilized a well known implant commonly called X-Agent. X-Agent is a cross platform remote access toolkit, variants have been identified for various Windows operating systems, Appleâ€™s iOS, and likely the MacOS. Also known as Sofacy, X-Agent has been tracked by the security community for almost a decade, CrowdStrike associates the use of X-Agent with an actor we call FANCY BEAR. This actor to date is the exclusive operator of the malware, and has continuously developed the platform for ongoing operations which CrowdStrike assesses is likely tied to Russian Military Intelligence (GRU). The source code to this malware has not been observed in the public domain and appears to have been developed uniquely by FANCY BEAR.\r\n\r\nLate in the summer of 2016, CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. Initial research identified that the filename suggested a relationship to the D-30 122mm towed howitzer, an artillery weapon first manufactured in the Soviet Union in the 1960s but still in use today. In-depth reverse engineering revealed the APK contained an Android variant of X-Agent, the command and control protocol was closely linked to observed Windows variants of X-Agent, and utilized a cryptographic algorithm called RC4 with a very similar 50 byte base key.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature.",
+                "timestamp":"1482412508",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482412525",
+                "type":"link",
+                "value":"https://www.crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Late in the summer of 2016, CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature.",
+                "timestamp":"1482412678",
+                "type":"filename",
+                "value":"ÐŸÐ¾Ð¿Ñ€-Ð”30.apk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Snort rule matches on the X-Agent-Android C2 beacon request",
+                "timestamp":"1482412723",
+                "type":"snort",
+                "value":"alert tcp $HOME_NET any -> $EXTERNAL_NET $HTTP_PORTS (\\\r\nmsg: â€œCrowdStrike FANCY BEAR X-Agent Android C2 Requestâ€; \\\r\nflow: established,to_server; \\\r\ncontent: â€œlm=â€; http_uri; \\\r\npcre: â€œ/^\\/(watch|search|find|results|open|close)\\/\\?/Uâ€; \\\r\npcre: â€œ/[\\?\\&](text|from|ags|oe|aq|btnG|oprnd)=/Uâ€; \\\r\nclasstype: trojan-activity; metadata: service http; \\\r\nsid: XXXX; rev: 20160815;)",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. - Xchecked via VT: 6f7523d3019fa190499f327211e01fcb",
+                "timestamp":"1482412759",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. - Xchecked via VT: 6f7523d3019fa190499f327211e01fcb",
+                "timestamp":"1482412760",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"CrowdStrike Intelligence analysts began investigating a curious Android Package (APK) named â€˜ÐŸÐ¾Ð¿Ñ€-Ð”30.apkâ€™ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. - Xchecked via VT: 6f7523d3019fa190499f327211e01fcb",
+                "timestamp":"1482412760",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/02de72e43d578c45d9d6359299cb2d47771081617ff01363b736414eb831deea/analysis/1482411451/",
+                "to_ids":false
+            }
+        ]
+    }
+}

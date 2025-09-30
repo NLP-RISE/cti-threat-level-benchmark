@@ -1,0 +1,172 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-13",
+        "published":true,
+        "info":"OSINT - New Linux Malware Exploits CGI Vulnerability",
+        "publish_timestamp":"1489413830",
+        "timestamp":"1489408795",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"Linux\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1489408795",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/new-linux-malware-exploits-cgi-vulnerability/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"IMEIJ sample has the following hash",
+                "timestamp":"1489408795",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download link",
+                "timestamp":"1489408795",
+                "type":"url",
+                "value":"http://172.247.116.3:8080/Arm1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download link",
+                "timestamp":"1489408795",
+                "type":"url",
+                "value":"http://172.247.116.21:85/Arm1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download link",
+                "timestamp":"1489408795",
+                "type":"url",
+                "value":"http://192.154.108.2:8080/Arm1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download (compromised site?)",
+                "timestamp":"1489408795",
+                "type":"ip-dst",
+                "value":"172.247.116.3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download (compromised site?)",
+                "timestamp":"1489408795",
+                "type":"ip-dst",
+                "value":"172.247.116.21",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ELF_IMEIJ.A download (compromised site?)",
+                "timestamp":"1489408795",
+                "type":"ip-dst",
+                "value":"192.154.108.2",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"The infection flow of ELF_IMEIJ.A",
+                "timestamp":"1489408795",
+                "type":"attachment",
+                "value":"linux-malware_1.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1489408795",
+                "type":"text",
+                "value":"ELF_IMEIJ.A",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"IMEIJ sample has the following hash - Xchecked via VT: 8040422762138d28aa411d8bb2307a93432416f72b292bf884fb7c7efde9f3f5",
+                "timestamp":"1489408803",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"IMEIJ sample has the following hash - Xchecked via VT: 8040422762138d28aa411d8bb2307a93432416f72b292bf884fb7c7efde9f3f5",
+                "timestamp":"1489408804",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"IMEIJ sample has the following hash - Xchecked via VT: 8040422762138d28aa411d8bb2307a93432416f72b292bf884fb7c7efde9f3f5",
+                "timestamp":"1489408805",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8040422762138d28aa411d8bb2307a93432416f72b292bf884fb7c7efde9f3f5/analysis/1489408605/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489408898",
+                "type":"malware-sample",
+                "value":"8040422762138d28aa411d8bb2307a93432416f72b292bf884fb7c7efde9f3f5|a16a281cbe544af40f8463c7f5186496",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489408900",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489408901",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Related sample",
+                "timestamp":"1489409766",
+                "type":"malware-sample",
+                "value":"4394cc9f411c83d9fd0aceff9c73485649b607c80b244c23bd28872c3a3df6fb|b486cb7aec3e75b0cdf294cd38f4c417",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Related sample",
+                "timestamp":"1489409768",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Related sample",
+                "timestamp":"1489409770",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

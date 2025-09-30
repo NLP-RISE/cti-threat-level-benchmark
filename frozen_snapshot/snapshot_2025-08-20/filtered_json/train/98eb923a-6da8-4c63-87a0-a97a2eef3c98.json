@@ -1,0 +1,952 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-07-14",
+        "published":true,
+        "info":"CustomerLoader: a new malware distributing a wide variety of payloads",
+        "publish_timestamp":"1693969262",
+        "timestamp":"1693969205",
+        "Tag":[
+            {
+                "name":"admiralty-scale:source-reliability=\"b\""
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"2\""
+            },
+            {
+                "name":"DOTRUNPEX"
+            },
+            {
+                "name":"Loader"
+            },
+            {
+                "name":"feedly:source=\"Sekoia.io Blog\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Downloader\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Symmetric Cryptography - T1573.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Impair Defenses - T1562\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"vidar\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"XLoader\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Agent Tesla\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"AsyncRAT\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Ave Maria\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"DarkCloud Stealer\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"LgoogLoader\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"RedLine Stealer\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"SectopRAT\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Stealc\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Agent Tesla - S0331\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"WarzoneRAT - S0670\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"QuasarRAT - S0262\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Remcos - S0332\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"AsyncRAT\""
+            },
+            {
+                "name":"misp-galaxy:stealer=\"Vidar\""
+            },
+            {
+                "name":"misp-galaxy:stealer=\"DarkCloud Stealer\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"FormBook\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Agent Tesla\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"BitRAT\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"WannaCry - S0366\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Shared Modules - T1129\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Ingress Tool Transfer - T1105\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Disable or Modify Tools - T1562.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Dynamic API Resolution - T1027.007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Reflective Code Loading - T1620\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Encoding - T1132.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Obfuscation - T1001\""
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2 server associated with CustomLoader",
+                "timestamp":"1689341011",
+                "type":"ip-dst",
+                "value":"5.42.94.169",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 server associated with CustomLoader",
+                "timestamp":"1689341011",
+                "type":"domain",
+                "value":"kyliansuperm92139124.sbs",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343898",
+                "type":"domain",
+                "value":"get-vbs.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343899",
+                "type":"domain",
+                "value":"cmd2.pw",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343899",
+                "type":"domain",
+                "value":"mymine.pw",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343899",
+                "type":"domain",
+                "value":"vbs1.pw",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343899",
+                "type":"domain",
+                "value":"vbs22.pw",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Domains receiving requets from ccrypter downloaded by CustomerLoader",
+                "timestamp":"1689343899",
+                "type":"domain",
+                "value":"vbs3.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343984",
+                "type":"domain",
+                "value":"macros-pro.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343985",
+                "type":"domain",
+                "value":"plugin4free.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343985",
+                "type":"domain",
+                "value":"self-games.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343985",
+                "type":"domain",
+                "value":"slackmessenger.site",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343986",
+                "type":"domain",
+                "value":"soft-got.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343986",
+                "type":"domain",
+                "value":"vpnsget.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution site (landing page)",
+                "timestamp":"1689343986",
+                "type":"domain",
+                "value":"vstget.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344015",
+                "type":"domain",
+                "value":"seif-games.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"self-games.host",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"self-games.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"self-games.site",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"self-games.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"soft-got.co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"soft-got.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"soft-got.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"vst-dw.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to distribution website",
+                "timestamp":"1689344016",
+                "type":"domain",
+                "value":"vstdw.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"File hosting domain",
+                "timestamp":"1689344047",
+                "type":"domain",
+                "value":"hardcoverradio.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"File hosting domain",
+                "timestamp":"1689344047",
+                "type":"domain",
+                "value":"macrospro.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"File hosting domain",
+                "timestamp":"1689344047",
+                "type":"domain",
+                "value":"plugin4free.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"File hosting domain",
+                "timestamp":"1689344048",
+                "type":"domain",
+                "value":"slackmessenger.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"File hosting domain",
+                "timestamp":"1689344048",
+                "type":"domain",
+                "value":"vpnsget.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344088",
+                "type":"domain",
+                "value":"adanagram.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"bin-a.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"bin-b.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"bin-c.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"bin-d.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"cmd1.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"cmd2.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"cmd22.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-a.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-b.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-c.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-d.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-i.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-vbs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"get-y.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"hautegaleria.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"jacksmanual.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344089",
+                "type":"domain",
+                "value":"vbs1.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344090",
+                "type":"domain",
+                "value":"vbs2.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344090",
+                "type":"domain",
+                "value":"vbs22.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirection to file hosting domain",
+                "timestamp":"1689344090",
+                "type":"domain",
+                "value":"vbs3.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Miner’s C2 domain",
+                "timestamp":"1689344123",
+                "type":"domain",
+                "value":"minemy.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Miner’s C2 domain",
+                "timestamp":"1689344123",
+                "type":"domain",
+                "value":"mymine.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Encrypted file hosting domain",
+                "timestamp":"1689344162",
+                "type":"domain",
+                "value":"crypt1.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1689344162",
+                "type":"domain",
+                "value":"gethere.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Server hosting macro-pro.]net",
+                "timestamp":"1689344162",
+                "type":"ip-dst",
+                "value":"77.91.124.25",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 80 - Redline C2 server",
+                "timestamp":"1689344162",
+                "type":"ip-dst|port",
+                "value":"104.193.255.48|80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cryptominer C2 server",
+                "timestamp":"1689597843",
+                "type":"ip-dst",
+                "value":"179.43.170.241",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
+                "meta-category":"misc",
+                "name":"annotation",
+                "timestamp":"1689339213",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1689339213",
+                        "type":"datetime",
+                        "value":"2023-07-12T00:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1689339213",
+                        "type":"link",
+                        "value":"https://blog.sekoia.io/customerloader-a-new-malware-distributing-a-wide-variety-of-payloads/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1689339213",
+                        "type":"text",
+                        "value":"Report from Sekoia.io",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1689339213",
+                        "type":"text",
+                        "value":"Executive Summary",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689340359",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Hyperlink contained in an image file mimicking a PDF file, itself delivered by a phishing email.\r\nThis link redirects to a compromised website hosting a ZIP file. The archive contains an executable which is the loader.",
+                        "timestamp":"1689340359",
+                        "type":"url",
+                        "value":"http://smartmaster.com.my/48E003A01/48E003A01.7z",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1689340535",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"Archive file retrieved from \"smartmaster\" domain.\r\nThe archive contains an executable which is the loader.",
+                        "timestamp":"1689340436",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1689340852",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"CustomerLoader payload. Contained in a ZIP archive file.",
+                        "timestamp":"1689340622",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689340817",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"CustomerLoader’s C2 URL.",
+                        "timestamp":"1689340702",
+                        "type":"url",
+                        "value":"http://5.42.94.169/customer/735",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689341099",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Hundreds of YouTube videos from compromised accounts use the lure of cracked software to redirect users to the Telegra[.]ph webpage.The Telegra[.]ph web page aims at sharing instructions to disable Windows Defender protection and redirecting them to the download of a password-protected archive on MediaFire .",
+                        "timestamp":"1689341099",
+                        "type":"url",
+                        "value":"https://telegra.ph/Full-Version-06-03-2",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689341360",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Page to download a malicious password-protected archive",
+                        "timestamp":"1689341202",
+                        "type":"url",
+                        "value":"https://www.mediafire.com/file/nnamjnckj7h80xz/v2.4_2023.rar/file",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689341420",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Webpage leads to the download of a malicious password-protected archive",
+                        "timestamp":"1689341272",
+                        "type":"url",
+                        "value":"https://www.mediafire.com/file/lgoql94feiic0x7/v2.5_2023.rar/file",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1689342481",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"CustomerLoader sample contained in a decompressed archive.",
+                        "timestamp":"1689341495",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1689341496",
+                        "type":"filename",
+                        "value":"Setup.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"First-stage C2 server used in an infection starting with compromised Youtube channels. An encrypted payload can be downloaded from this address.",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689342753",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1689342434",
+                        "type":"url",
+                        "value":"http://5.42.94.169/customer/770",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2 server communicating with Raccoon Stealer",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1689342593",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1689342593",
+                        "type":"ip-dst",
+                        "value":"45.9.74.99",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2 server communicating with Raccoon Stealer",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1689342620",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1689342620",
+                        "type":"ip-dst",
+                        "value":"5.42.65.69",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"A webpage impersonating the website of the video conferencing software Slack distributed CustomerLoader as a fake installer. The technique used to spread this fake web site remains unknown at the time of writing, it could be SEO-poisoning, phishing emails or redirections from legitimate forums.",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689343273",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"The user browses the webpage impersonating Slack website and clicks on the download button",
+                        "timestamp":"1689342815",
+                        "type":"url",
+                        "value":"https://slackmessenger.site/",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"The ZIP file contains the executable SlackSetup.exe, which turns out to be a CustomerLoader sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1689343423",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1689342870",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1689342870",
+                        "type":"filename",
+                        "value":"SlackSetup.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689343064",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Domain contains a malicious domain",
+                        "timestamp":"1689342925",
+                        "type":"url",
+                        "value":"https://slackmessenger.pw/slack.zip",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689343378",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"C2 server from which an encrypted payload can be downloaded",
+                        "timestamp":"1689343378",
+                        "type":"url",
+                        "value":"http://5.42.94.169/customer/798",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2 domain for Redline Stealer. Communications over port 80.",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1689343653",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1689343653",
+                        "type":"domain",
+                        "value":"missunno.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2 domain communicating with a cryptominer",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1689343720",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1689343684",
+                        "type":"url",
+                        "value":"http://179.43.170.241/BEBRIK.php",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

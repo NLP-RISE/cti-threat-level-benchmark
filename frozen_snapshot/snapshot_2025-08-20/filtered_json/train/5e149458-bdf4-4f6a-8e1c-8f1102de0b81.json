@@ -1,0 +1,115 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-01-07",
+        "published":true,
+        "info":"OSINT - Spam via mobile phone",
+        "publish_timestamp":"1578407441",
+        "timestamp":"1578407416",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"scam\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:financial-fraud=\"Vishing\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1578407043",
+                "type":"phone-number",
+                "value":"+4917071524639",
+                "to_ids":true
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1578407049",
+                "type":"phone-number",
+                "value":"+33606117967",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1578407087",
+                "type":"link",
+                "value":"https://who-calls.me.uk/phone/08081896207",
+                "to_ids":false
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1578407415",
+                "type":"phone-number",
+                "value":"+448081896207",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1578407390",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1578407279",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1578407284",
+                        "type":"text",
+                        "value":"Weird stuff happening on my phone. Call from German number, then from a French number. Both left voice mails with a robot voice reading out some numbers.\r\n\r\nA phone number verification service?\r\n\r\nAnyone recognise them? \r\nðŸ‡©ðŸ‡ª +4917071524639\r\nðŸ‡«ðŸ‡· +33606117967",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1578407284",
+                        "type":"link",
+                        "value":"https://twitter.com/edent/status/1214494432046800896",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1578407284",
+                        "type":"text",
+                        "value":"Verified",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1578407284",
+                        "type":"text",
+                        "value":"Informative",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

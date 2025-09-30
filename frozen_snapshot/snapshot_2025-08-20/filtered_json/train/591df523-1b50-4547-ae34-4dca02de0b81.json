@@ -1,0 +1,149 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-18",
+        "published":true,
+        "info":"OSINT - Will Astrum Fill the Vacuum in the Exploit Kit Landscape?",
+        "publish_timestamp":"1495135852",
+        "timestamp":"1495135834",
+        "Tag":[
+            {
+                "name":"misp-galaxy:exploit-kit=\"Astrum\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"riskiq:threat-type=\"exploit-kit\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"exploits-exploit-kits\""
+            },
+            {
+                "name":"dnc:infrastructure-type=\"exploit-kit\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495135696",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/astrum-exploit-kit-abuses-diffie-hellman-key-exchange/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495135696",
+                "type":"text",
+                "value":"The decline of exploit kit activityâ€”particularly from well-known exploit kits like Magnitude, Nuclear, Neutrino, and Rig during the latter half of 2016â€”doesnâ€™t mean exploit kits are throwing in the towel just yet. This is the casse with Astrum (also known as Stagano), an old and seemingly reticent exploit kit we observed to have been updated multiple times as of late.\r\n\r\nAstrum was known to be have been exclusively used by the AdGholas malvertising campaign that delivered a plethora of threats including banking Trojans Dreambot/Gozi (also known as Ursnif, and detected by Trend Micro as BKDR_URSNIF) and RAMNIT (TROJ_RAMNIT, PE_RAMNIT). Weâ€™re also seeing Astrum redirected by the Seamless malvertising campaign, which is known for using the Rig exploit kit.\r\n\r\nAstrumâ€™s recent activities feature several upgrades and show how itâ€™s starting to move away from the more established malware mentioned above. It appears these changes were done to lay the groundwork for future campaigns, and possibly to broaden its use. With a modus operandi that deters analysis and forensics by abusing the Diffie-Hellman key exchange, it appears Astrum is throwing down the gauntlet.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Address and domain related to Astrum exploit kit:",
+                "timestamp":"1495135696",
+                "type":"ip-dst",
+                "value":"141.255.161.68",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Address and domain related to Astrum exploit kit:",
+                "timestamp":"1495135696",
+                "type":"url",
+                "value":"http://define.predatorhuntingusa.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload",
+                "timestamp":"1495135696",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload",
+                "timestamp":"1495135696",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses related to Seamless Malvertising Campaign",
+                "timestamp":"1495135696",
+                "type":"ip-dst",
+                "value":"193.124.200.194",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses related to Seamless Malvertising Campaign",
+                "timestamp":"1495135696",
+                "type":"ip-dst",
+                "value":"193.124.200.212",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"IP Addresses related to Seamless Malvertising Campaign",
+                "timestamp":"1495135696",
+                "type":"filename",
+                "value":"194.58.40.46",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload - Xchecked via VT: ccf89a7c8005948b9548cdde12cbd060f618234fd00dfd434c52ea5027353be8",
+                "timestamp":"1495135700",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload - Xchecked via VT: ccf89a7c8005948b9548cdde12cbd060f618234fd00dfd434c52ea5027353be8",
+                "timestamp":"1495135700",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"dropped payload - Xchecked via VT: ccf89a7c8005948b9548cdde12cbd060f618234fd00dfd434c52ea5027353be8",
+                "timestamp":"1495135701",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ccf89a7c8005948b9548cdde12cbd060f618234fd00dfd434c52ea5027353be8/analysis/1494841409/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload - Xchecked via VT: 39b1e99034338d7f5b0cbff9fb9bd93d9e4dd8f4c77b543da435bb2d2259b0b5",
+                "timestamp":"1495135701",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped payload - Xchecked via VT: 39b1e99034338d7f5b0cbff9fb9bd93d9e4dd8f4c77b543da435bb2d2259b0b5",
+                "timestamp":"1495135702",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"dropped payload - Xchecked via VT: 39b1e99034338d7f5b0cbff9fb9bd93d9e4dd8f4c77b543da435bb2d2259b0b5",
+                "timestamp":"1495135702",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/39b1e99034338d7f5b0cbff9fb9bd93d9e4dd8f4c77b543da435bb2d2259b0b5/analysis/1493282868/",
+                "to_ids":false
+            }
+        ]
+    }
+}

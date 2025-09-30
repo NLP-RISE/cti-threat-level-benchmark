@@ -1,0 +1,457 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-24",
+        "published":true,
+        "info":"IOCs Associated with DNS Infrastructure Tampering",
+        "publish_timestamp":"1548364252",
+        "timestamp":"1548364213",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Imported from STIX header description",
+                "timestamp":"1548364147",
+                "type":"comment",
+                "value":"The National Cybersecurity and Communications Integration Center (NCCIC), part of the Cybersecurity and Infrastructure Security Agency (CISA), is aware of a global Domain Name System (DNS) infrastructure hijacking campaign. Using compromised credentials, an attacker can modify the location to which an organizationâ€™s domain name resources resolve. This enables the attacker to redirect user traffic to attacker-controlled infrastructure and obtain valid encryption certificates for an organizationâ€™s domain names, enabling man-in-the-middle attacks.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"url",
+                "value":"http://hr-suncor.com/Suncor_employment_form.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"url",
+                "value":"http://hr-wipro.com/Wipro_Working_Conditions.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"domain",
+                "value":"hr-wipro.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"domain",
+                "value":"hr-suncor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"domain",
+                "value":"0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.20.184.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.161.211.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"107.161.23.204",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.20.187.8",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.174.101.168",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"192.161.187.200",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.161.211.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"185.236.78.63",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548364147",
+                "type":"ip-dst",
+                "value":"209.141.38.71",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548364147",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548364189",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"filename",
+                        "value":"Suncor_employment_form.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"size-in-bytes",
+                        "value":"623616",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548364189",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"size-in-bytes",
+                        "value":"368640",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548364189",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364147",
+                        "type":"size-in-bytes",
+                        "value":"372736",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing the original file used to import data in MISP.",
+                "meta-category":"file",
+                "name":"original-imported-file",
+                "timestamp":"1548364147",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548364148",
+                        "type":"attachment",
+                        "value":"AA19-024_IOCs.stix.xml",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364148",
+                        "type":"text",
+                        "value":"STIX 1.1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548364189",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364189",
+                        "type":"datetime",
+                        "value":"2018-12-21T08:26:28",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/2010f38ef300be4349e7bc287e720b1ecec678cacbf0ea0556bcf765f6e073ec/analysis/1545380788/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"text",
+                        "value":"47/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548364190",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"datetime",
+                        "value":"2019-01-24T11:12:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/45a9edb24d4174592c69d9d37a534a518fbe2a88d3817fc0cc739e455883b8ff/analysis/1548328320/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"text",
+                        "value":"45/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548364190",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"datetime",
+                        "value":"2018-12-22T03:41:06",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/9ea577a4b3faaf04a3bddbfcb934c9752bed0d0fc579f2152751c5f6923f7e14/analysis/1545450066/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548364190",
+                        "type":"text",
+                        "value":"36/60",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

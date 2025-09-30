@@ -1,0 +1,281 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-10-06",
+        "published":true,
+        "info":"Obama207 QAKBOT (QBOT) infection with Cobalt Strike",
+        "publish_timestamp":"1665082457",
+        "timestamp":"1665082447",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"QAKBOT C2 TRAFFIC",
+                "timestamp":"1665082312",
+                "type":"ip-dst|port",
+                "value":"186.90.144.235|2222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QAKBOT C2 TRAFFIC",
+                "timestamp":"1665082312",
+                "type":"ip-dst|port",
+                "value":"186.81.122.168|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QAKBOT C2 TRAFFIC",
+                "timestamp":"1665082312",
+                "type":"ip-dst|port",
+                "value":"85.86.242.245|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QAKBOT C2 TRAFFIC",
+                "timestamp":"1665082312",
+                "type":"ip-dst|port",
+                "value":"193.3.19.137|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"GET / COBALT STRIKE TRAFFIC",
+                "timestamp":"1665082388",
+                "type":"url",
+                "value":"http://194.165.16.64/prepare/add.mp4a",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"GET / COBALT STRIKE TRAFFIC",
+                "timestamp":"1665082388",
+                "type":"url",
+                "value":"http://194.165.16.64/risk.ico",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST / COBALT STRIKE TRAFFIC",
+                "timestamp":"1665082388",
+                "type":"url",
+                "value":"http://194.165.16.64/target",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1665082413",
+                "type":"link",
+                "value":"https://github.com/pan-unit42/tweets/blob/master/2022-09-29-IOCs-for-Obama207-Qakbot-and-Cobalt-Strike.txt",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"HTML file attached to thread-hijackedemail",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082001",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082001",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082001",
+                        "type":"filename",
+                        "value":"REF#5689_Sep_28.html",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082001",
+                        "type":"size-in-bytes",
+                        "value":"839474",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"password-protected zip archive (abc333)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082432",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082061",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082432",
+                        "type":"filename",
+                        "value":"attachment.zip",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082061",
+                        "type":"size-in-bytes",
+                        "value":"410653",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Windows shortcut on ISO image / eloquentGlummer.js",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082435",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082148",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082435",
+                        "type":"filename",
+                        "value":"REF.lnk",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082148",
+                        "type":"size-in-bytes",
+                        "value":"1245",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"JS file run by the above Windows shortcut",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082185",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082185",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082185",
+                        "type":"filename",
+                        "value":"gaffes\\eloquentGlummer.js",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082185",
+                        "type":"size-in-bytes",
+                        "value":"154",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CMD batch script run by the above JS file",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082222",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082222",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082222",
+                        "type":"filename",
+                        "value":"gaffes\\acknowledgeablyPartner.cmd",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082222",
+                        "type":"size-in-bytes",
+                        "value":"142",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Qakbot DLL run by above CMD batch script",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1665082257",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082257",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1665082257",
+                        "type":"filename",
+                        "value":"gaffes\\wheelwright.db",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1665082257",
+                        "type":"size-in-bytes",
+                        "value":"712192",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

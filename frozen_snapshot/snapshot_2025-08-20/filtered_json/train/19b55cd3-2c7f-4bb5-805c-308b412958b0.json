@@ -1,0 +1,989 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-08-19",
+        "published":true,
+        "info":"Brazil malspam pushes Astaroth (Guildma) malware",
+        "publish_timestamp":"1661767563",
+        "timestamp":"1661430902",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Astaroth\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Astaroth - S0373\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"Guildma\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Link from email",
+                "timestamp":"1661411907",
+                "type":"url",
+                "value":"http://w7oaer.infocloudgruposolucaoecia.link/P05dWVqI0WghlU4/UeWgmk3mU3p8yeyxkUgI8Um1R1/65837/gruposolucaoeciainfocloud",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL to legitimate website generated from iframe",
+                "timestamp":"1661412192",
+                "type":"url",
+                "value":"http://www.intangiblesearch.it/search/home_page.php?db_name=%3Cscript%20src=%22https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js%22%3E%3C/script%3E%3Cscript%20type=%22text/javascript%22%20src=%22hxxp://w7oaer.infocloudgruposolucaoecia.link/P05dWVqI0WghlU4/UeWgmk3mU3p8yeyxkUgI8Um1R1/65837/gruposolucaoeciainfocloudAvDk.T036%22%3E%3C/script%3E?",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Traffic to initial malicious domain that provides zip archive download:",
+                "timestamp":"1661412192",
+                "type":"url",
+                "value":"http://w7oaer.infocloudgruposolucaoecia.link/P05dWVqI0WghlU4/UeWgmk3mU3p8yeyxkUgI8Um1R1/65837/gruposolucaoeciainfocloudAvDk.T036",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Traffic to initial malicious domain that provides zip archive download:",
+                "timestamp":"1661412192",
+                "type":"url",
+                "value":"http://w7oaer.infocloudgruposolucaoecia.link//inc.php?/gruposolucaoeciainfocloud",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Traffic to initial malicious domain that provides zip archive download:",
+                "timestamp":"1661412192",
+                "type":"url",
+                "value":"http://w7oaer.infocloudgruposolucaoecia.link/YBZJPTBQV/482NJ8NS74J9/N6D6WW/gruposolucaoeciainfocloud_097.88933.61414z64y64",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Screenshot of the malicious email with link to download a malicious zip archive.",
+                "timestamp":"1661430718",
+                "type":"attachment",
+                "value":"2022-08-19-ISC-diary-image-01.jpg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1661411110",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1661411110",
+                        "type":"link",
+                        "value":"https://isc.sans.edu/diary/rss/28962",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661411110",
+                        "type":"text",
+                        "value":"Dairy",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1661411191",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1661411191",
+                        "type":"link",
+                        "value":"https://otx.alienvault.com/pulse/6303804723bccc7e3caad737",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"initial malicious domain",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1661412119",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661412119",
+                        "type":"domain",
+                        "value":"w7oaer.infocloudgruposolucaoecia.link",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661412119",
+                        "type":"ip-dst",
+                        "value":"172.67.217.95",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661412119",
+                        "type":"port",
+                        "value":"80",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661413952",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661413952",
+                        "type":"hostname",
+                        "value":"ahaaer.pfktaacgojiozfehwkkimhkbkm.cfd",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661413952",
+                        "type":"ip-dst",
+                        "value":"172.67.212.174",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661413952",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661413952",
+                        "type":"url",
+                        "value":"/?1/",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414107",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414107",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414107",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414107",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414107",
+                        "type":"url",
+                        "value":"/?59792746413628799",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414269",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414269",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414269",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414269",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414269",
+                        "type":"url",
+                        "value":"/?59792746413628799",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414404",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414404",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414404",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414404",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414404",
+                        "type":"url",
+                        "value":"/?33954141807632999",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414409",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414409",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414409",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414409",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414409",
+                        "type":"url",
+                        "value":"/?33954141807632999",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414967",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414967",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414967",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414967",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414967",
+                        "type":"url",
+                        "value":"/?71576927405639060",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661414971",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414971",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414971",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414971",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661414971",
+                        "type":"url",
+                        "value":"/?71576927405639060",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415144",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415144",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415144",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415144",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415144",
+                        "type":"url",
+                        "value":"/?59784568396678051",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415149",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415149",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415149",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415149",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415149",
+                        "type":"url",
+                        "value":"/?59784568396678051",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415266",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415266",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415267",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415267",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415267",
+                        "type":"url",
+                        "value":"/?40018133101693668",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415271",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415271",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415271",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415271",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415271",
+                        "type":"url",
+                        "value":"/?40018133101693668",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415381",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415381",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415381",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415381",
+                        "type":"http-method",
+                        "value":"HEAD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415381",
+                        "type":"url",
+                        "value":"/?33450285101613952",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661415386",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415386",
+                        "type":"hostname",
+                        "value":"cteasc.ijnkwnkxeguxaxmldwyogggwfk.sbs",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415386",
+                        "type":"ip-dst",
+                        "value":"104.21.11.4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415386",
+                        "type":"http-method",
+                        "value":"GET",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661415386",
+                        "type":"url",
+                        "value":"/?33450285101613952",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Data exfiltration through HTTP POST request",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661417294",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417294",
+                        "type":"hostname",
+                        "value":"hcu11m2mkk2.rouepcgomfhejergdahjcfcugarfcmoa.tk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417294",
+                        "type":"ip-dst",
+                        "value":"104.21.25.34",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417294",
+                        "type":"http-method",
+                        "value":"POST",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417294",
+                        "type":"url",
+                        "value":"/",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Data exfiltration through HTTP POST request",
+                "description":"A single HTTP request header",
+                "meta-category":"network",
+                "name":"http-request",
+                "timestamp":"1661417333",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417333",
+                        "type":"hostname",
+                        "value":"j2vfrc7gddo.aeabihjpejprueuibdjmhfmdcpsfr.gq",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417333",
+                        "type":"ip-dst",
+                        "value":"172.67.165.46",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417333",
+                        "type":"http-method",
+                        "value":"POST",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1661417333",
+                        "type":"url",
+                        "value":"/",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Example of downloaded zip archive",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1661421687",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661418074",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661418074",
+                        "type":"filename",
+                        "value":"gruposolucaoeciainfocloud_097.88933.61414.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661418074",
+                        "type":"size-in-bytes",
+                        "value":"1091",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1661421648",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661420743",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661420743",
+                        "type":"filename",
+                        "value":"gruposolucaoeciainfocloud_097.88933157.086456.45192.cmd",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661420743",
+                        "type":"size-in-bytes",
+                        "value":"338",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1661421630",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661420780",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661420780",
+                        "type":"filename",
+                        "value":"gruposolucaoeciainfocloud_097.88933157.086456.45192.lNk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661420780",
+                        "type":"size-in-bytes",
+                        "value":"1341",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Command from Windows shortcut in Windows Startup folder on the infected Windows host",
+                "description":"LNK object describing a Windows LNK binary file (aka Windows shortcut)",
+                "meta-category":"file",
+                "name":"lnk",
+                "timestamp":"1661430381",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430350",
+                        "type":"text",
+                        "value":"%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -windowstyle hidden -Command C:\\W45784602214\\Asus.CertificateValidation.2022.1728.641.AutoIt3.exe C:\\W45784602214\\Asus.CertificateValidation.2022.1728.641.AutoIt3.log",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Windows EXE for AutoIt v3, not inherently malicious",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1661430606",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661430606",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661430606",
+                        "type":"filename",
+                        "value":"Asus.CertificateValidation.2022.1728.641.AutoIt3.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430606",
+                        "type":"size-in-bytes",
+                        "value":"893608",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430606",
+                        "type":"text",
+                        "value":"C:\\W45784602214\\Asus.CertificateValidation.2022.1728.641.AutoIt3.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430606",
+                        "type":"text",
+                        "value":"C:\\W45784602214\\",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious data binary, AutoIt v3 compiled script run by above Windows EXE for AutoIt v3",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1661430671",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661430671",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1661430671",
+                        "type":"filename",
+                        "value":"Asus.CertificateValidation.2022.1728.641.AutoIt3.log",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430671",
+                        "type":"size-in-bytes",
+                        "value":"246116",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430671",
+                        "type":"text",
+                        "value":"C:\\W45784602214\\Asus.CertificateValidation.2022.1728.641.AutoIt3.log",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1661430671",
+                        "type":"text",
+                        "value":"C:\\W45784602214\\",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

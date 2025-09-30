@@ -1,0 +1,127 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2020-05-18",
+        "published":true,
+        "info":"KuGou trojan backdoor campaign aim RDP on HFS panels",
+        "publish_timestamp":"1589787461",
+        "timestamp":"1589787453",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"TrojanDownloader\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Payload distribution in HFS via USA network (as TTP)",
+                "timestamp":"1589786946",
+                "type":"ip-src",
+                "value":"192.161.86.218",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload distribution in HFS via USA network (as TTP)",
+                "timestamp":"1589786954",
+                "type":"ip-src",
+                "value":"162.209.193.211",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 IPv4",
+                "timestamp":"1589787008",
+                "type":"ip-dst",
+                "value":"111.229.231.218",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1589787099",
+                "type":"hostname",
+                "value":"a222222.f3322.net",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1589787099",
+                "type":"hostname",
+                "value":"moqi.f3322.net",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payloads",
+                "timestamp":"1589787159",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payloads",
+                "timestamp":"1589787159",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payloads",
+                "timestamp":"1589787159",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payloads",
+                "timestamp":"1589787159",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payloads",
+                "timestamp":"1589787159",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload filenames",
+                "timestamp":"1589787233",
+                "type":"filename",
+                "value":"1521",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload filenames",
+                "timestamp":"1589787234",
+                "type":"filename",
+                "value":"NetSyst96.dl",
+                "to_ids":false
+            },
+            {
+                "category":"Internal reference",
+                "comment":"Threat anouncement w/screenshots",
+                "timestamp":"1589787453",
+                "type":"link",
+                "value":"https://twitter.com/malwaremustd1e/status/1262274362872229888",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,454 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2021-10-08",
+        "published":true,
+        "info":"FontOnLake: Previously unknown malware family targeting Linux",
+        "publish_timestamp":"1633682516",
+        "timestamp":"1633682506",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Boot or Logon Initialization Scripts - T1037\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Client Software Binary - T1554\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Fallback Channels - T1008\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Transfer Protocols - T1071.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Files and Directories - T1564.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hide Artifacts - T1564\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Kernel Modules and Extensions - T1547.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Linux and Mac File and Directory Permissions Modification - T1222.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Modify Authentication Process - T1556\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Native API - T1106\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Non-Application Layer Protocol - T1095\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Python - T1059.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Rootkit - T1014\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Encoding - T1132.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Symmetric Cryptography - T1573.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Unix Shell - T1059.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"User Execution - T1204\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Valid Accounts - T1078\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1633681898",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/wp-content/uploads/2021/10/eset_fontonlake.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1633681898",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2021/10/07/fontonlake-previously-unknown-malware-family-targeting-linux/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized cat",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized kill",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized sftp",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized sshd",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Custom sshd",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Custom sshd",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 3",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor 3",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 1",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Rootkit 2",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"inject.so",
+                "timestamp":"1633682161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"ip-dst",
+                "value":"47.107.60.212",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"ip-dst",
+                "value":"47.112.197.119",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"ip-dst",
+                "value":"156.238.111.174",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"ip-dst",
+                "value":"172.96.231.69",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"hostname",
+                "value":"hm2.yrnykx.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"ywbgrcrupasdiqxknwgceatlnbvmezti.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"yhgrffndvzbtoilmundkmvbaxrjtqsew.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"wcmbqxzeuopnvyfmhkstaretfciywdrl.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"ruciplbrxwjscyhtapvlfskoqqgnxevw.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"pdjwebrfgdyzljmwtxcoyomapxtzchvn.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"nfcomizsdseqiomzqrxwvtprxbljkpgd.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"hkxpqdtgsucylodaejmzmtnkpfvojabe.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"etzndtcvqvyxajpcgwkzsoweaubilflh.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"esnoptdkkiirzewlpgmccbwuynvxjumf.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633682181",
+                "type":"domain",
+                "value":"ekubhtlgnjndrmjbsqitdvvewcgzpacy.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"From internet-wide scan",
+                "timestamp":"1633682195",
+                "type":"ip-dst",
+                "value":"27.102.130.63",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1633682227",
+                "type":"filename",
+                "value":"/lib/modules/%VARIABLE%/kernel/drivers/input/misc/ati_remote3.ko",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1633682227",
+                "type":"filename",
+                "value":"/etc/sysconfig/modules/ati_remote3.modules",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1633682255",
+                "type":"filename",
+                "value":"/tmp/.tmp_%RANDOM%",
+                "to_ids":false
+            }
+        ]
+    }
+}

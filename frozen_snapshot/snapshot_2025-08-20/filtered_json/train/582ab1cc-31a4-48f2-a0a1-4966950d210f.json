@@ -1,0 +1,159 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-11-07",
+        "published":true,
+        "info":"OSINT - Microsoft Word Intruder 8 Adds Support for Flash Vulnerability CVE-2016-4117",
+        "publish_timestamp":"1479193466",
+        "timestamp":"1479193333",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Exploit\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"exploits-exploit-kits\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1479193054",
+                "type":"comment",
+                "value":"Microsoft Word Intruder (MWI) is a kit designed for building malicious Microsoft Word documents for use in targeted attacks. The most recent iteration of MWI - Version 8 - supports a wide variety of vulnerabilities that actors can exploit via crafted Microsoft Word documents. Available on underground markets since 2013, we first identified MWI in March 2015 [1]. FireEye [2] and Sophos [3] provided additional documentation of the kit later that year.\r\n\r\nIn the mid-July 2016, an advertisement for MWI on an underground site stated that this exploit document builder integrated CVE-2016-4117 (Adobe Flash Player up to 21.0.0.213). At the end of August, MWI incremented to version 8, with the message â€œMICROSOFT WORD INTRUDER 8 (MWI8): CVE-2016-4117 + CVE-2015-2545 + CVE-2015-1641 + CVE-2012-0158â€ in an advertisement for the new version (see Appendix).\r\n\r\nWe were able to observe this updated version in the wild dropping various payloads; for example, we saw it dropping RTM Banker on October 21. In this case, the document â€œbusiness project laveco price.doc.rtfâ€ was delivered via email and targeted at retail, financial, and manufacturing verticals.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1479193068",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/microsoft-word-intruder-8-adds-support-for-flash-vulnerability",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œbusiness project laveco price.doc.rtfâ€dropping RTM Banker",
+                "timestamp":"1479193108",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œÐ˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð²Ð·Ð°Ð¸Ð¼Ð¾Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ.docâ€ dropping a TeamViewer-based RAT",
+                "timestamp":"1479193109",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MWI8 C2",
+                "timestamp":"1479193149",
+                "type":"domain",
+                "value":"bibi.pro",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"RTM C2",
+                "timestamp":"1479193150",
+                "type":"ip-dst",
+                "value":"188.138.71.117",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MWI8 C2",
+                "timestamp":"1479193216",
+                "type":"ip-dst",
+                "value":"82.146.37.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MWI8 C2",
+                "timestamp":"1479193216",
+                "type":"hostname",
+                "value":"pink.publicvm.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MWI8 C2",
+                "timestamp":"1479193216",
+                "type":"ip-dst",
+                "value":"5.45.80.32",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MWI8 C2",
+                "timestamp":"1479193266",
+                "type":"domain",
+                "value":"take5market.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œÐ˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð²Ð·Ð°Ð¸Ð¼Ð¾Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ.docâ€ dropping a TeamViewer-based RAT - Xchecked via VT: fe41a918e38abe4de2108357c8a7ab87658abf68a457e59473052443038638d9",
+                "timestamp":"1479193314",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œÐ˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð²Ð·Ð°Ð¸Ð¼Ð¾Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ.docâ€ dropping a TeamViewer-based RAT - Xchecked via VT: fe41a918e38abe4de2108357c8a7ab87658abf68a457e59473052443038638d9",
+                "timestamp":"1479193314",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MWI8 document â€œÐ˜Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ñ ÑƒÑÐ»Ð¾Ð²Ð¸Ð¹ Ð²Ð·Ð°Ð¸Ð¼Ð¾Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ.docâ€ dropping a TeamViewer-based RAT - Xchecked via VT: fe41a918e38abe4de2108357c8a7ab87658abf68a457e59473052443038638d9",
+                "timestamp":"1479193314",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fe41a918e38abe4de2108357c8a7ab87658abf68a457e59473052443038638d9/analysis/1476772587/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œbusiness project laveco price.doc.rtfâ€dropping RTM Banker - Xchecked via VT: a02b009929079af6b3ebe26305765aa469c41f703b3836b170ee16bc6b43223c",
+                "timestamp":"1479193314",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MWI8 document â€œbusiness project laveco price.doc.rtfâ€dropping RTM Banker - Xchecked via VT: a02b009929079af6b3ebe26305765aa469c41f703b3836b170ee16bc6b43223c",
+                "timestamp":"1479193314",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MWI8 document â€œbusiness project laveco price.doc.rtfâ€dropping RTM Banker - Xchecked via VT: a02b009929079af6b3ebe26305765aa469c41f703b3836b170ee16bc6b43223c",
+                "timestamp":"1479193315",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a02b009929079af6b3ebe26305765aa469c41f703b3836b170ee16bc6b43223c/analysis/1478789049/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1479193333",
+                "type":"vulnerability",
+                "value":"CVE-2016-4117",
+                "to_ids":false
+            }
+        ]
+    }
+}

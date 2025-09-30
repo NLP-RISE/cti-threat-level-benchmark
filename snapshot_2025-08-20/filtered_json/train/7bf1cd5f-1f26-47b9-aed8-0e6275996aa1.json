@@ -1,0 +1,126 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2023-01-26",
+        "published":true,
+        "info":"Alert (AA23-025A) - Protecting Against Malicious Use of Remote Monitoring and Management Software",
+        "publish_timestamp":"1674714950",
+        "timestamp":"1674714919",
+        "Tag":[
+            {
+                "name":"misp-galaxy:rat=\"AnyDesk\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"ConnectWise - S0591\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Automated Exfiltration - T1020\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Phishing - T1566\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1566.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"User Execution - T1204\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Suspected first-stage malware domain",
+                "timestamp":"1674714467",
+                "type":"domain",
+                "value":"win03.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected first-stage malware domain",
+                "timestamp":"1674714432",
+                "type":"domain",
+                "value":"myhelpcare.online",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected first-stage malware domain",
+                "timestamp":"1674714406",
+                "type":"domain",
+                "value":"win01.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected first-stage malware domain",
+                "timestamp":"1674714444",
+                "type":"domain",
+                "value":"myhelpcare.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Second-stage malicious domain",
+                "timestamp":"1674714418",
+                "type":"domain",
+                "value":"247secure.us",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"first-stage domain names follow naming patterns used for IT help/support themed social-engineering",
+                "timestamp":"1674714537",
+                "type":"domain",
+                "value":"hservice.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"first-stage domain names follow naming patterns used for IT help/support themed social-engineering",
+                "timestamp":"1674714537",
+                "type":"domain",
+                "value":"gscare.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"first-stage domain names follow naming patterns used for IT help/support themed social-engineering",
+                "timestamp":"1674714537",
+                "type":"domain",
+                "value":"nhelpcare.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"first-stage domain names follow naming patterns used for IT help/support themed social-engineering",
+                "timestamp":"1674714537",
+                "type":"domain",
+                "value":"deskcareme.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"first-stage domain names follow naming patterns used for IT help/support themed social-engineering",
+                "timestamp":"1674714537",
+                "type":"domain",
+                "value":"nhelpcare.cc",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1674714725",
+                "type":"link",
+                "value":"https://www.cisa.gov/uscert/ncas/alerts/aa23-025a",
+                "to_ids":false
+            }
+        ]
+    }
+}

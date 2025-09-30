@@ -1,0 +1,125 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-17",
+        "published":true,
+        "info":"OSINT - 0000 Cryptomix Ransomware Variant Released",
+        "publish_timestamp":"1511380245",
+        "timestamp":"1511360400",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/0000-cryptomix-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"comment",
+                "value":"Yesterday, MalwareHunterTeam discovered another variant of the CryptoMix ransomware, which puts it at two releases of new variants this week. This variant appends the .0000 extension to encrypted files and changes the contact emails used by the ransomware.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"email-src",
+                "value":"y0000@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"email-src",
+                "value":"y0000@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"email-src",
+                "value":"y0000z@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"email-src",
+                "value":"y0000s@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote",
+                "timestamp":"1511360394",
+                "type":"filename",
+                "value":"_HELP_INSTRUCTION.TXT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote",
+                "timestamp":"1511360394",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511360394",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7bbd1d047b5cb3d7f073e3a5cfbf81cdb8fee970fe62ee4135f56e68245eba2f",
+                "timestamp":"1511360394",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7bbd1d047b5cb3d7f073e3a5cfbf81cdb8fee970fe62ee4135f56e68245eba2f",
+                "timestamp":"1511360394",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 7bbd1d047b5cb3d7f073e3a5cfbf81cdb8fee970fe62ee4135f56e68245eba2f",
+                "timestamp":"1511360394",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7bbd1d047b5cb3d7f073e3a5cfbf81cdb8fee970fe62ee4135f56e68245eba2f/analysis/1511335852/",
+                "to_ids":false
+            }
+        ]
+    }
+}

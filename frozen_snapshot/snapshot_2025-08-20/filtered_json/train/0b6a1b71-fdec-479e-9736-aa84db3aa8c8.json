@@ -1,0 +1,676 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-02-08",
+        "published":true,
+        "info":"Indicators of Compromise Associated with LockBit 2.0 Ransomware",
+        "publish_timestamp":"1644308781",
+        "timestamp":"1644308770",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"LockBit\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1644307249",
+                "type":"link",
+                "value":"https://www.cisa.gov/uscert/ncas/current-activity/2022/02/07/fbi-releases-indicators-compromise-associated-lockbit-20",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1644307249",
+                "type":"link",
+                "value":"https://www.ic3.gov/Media/News/2022/220204.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FBI Flash",
+                "timestamp":"1644307281",
+                "type":"attachment",
+                "value":"220204.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Files created",
+                "timestamp":"1644308255",
+                "type":"filename",
+                "value":"%USERPROFILE%\\Desktop\\LockBit_Ransomware.hta",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Files created",
+                "timestamp":"1644308255",
+                "type":"filename",
+                "value":"%WINDIR%\\SysWOW64\\<First 6 characters of Decryption ID>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Files created",
+                "timestamp":"1644308255",
+                "type":"filename",
+                "value":"%TEMP%\\<LockBit 2.0 wallpaper> .tmp.bmp",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Extension",
+                "timestamp":"1644308357",
+                "type":"comment",
+                "value":".lockbit",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"LockBit 2.0 Ransom Note",
+                "timestamp":"1644308397",
+                "type":"text",
+                "value":"Restore-My-Files.txt",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"139.60.160.200",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"93.190.139.223",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"45.227.255.190",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"193.162.143.218",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"168.100.11.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"93.190.143.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"88.80.147.102",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"193.38.235.234",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"174.138.62.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"185.215.113.39",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1644308447",
+                "type":"ip-dst",
+                "value":"185.182.193.120",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stealbit URL Example",
+                "timestamp":"1644308472",
+                "type":"url",
+                "value":"http://185.182.193.120/06599379103BD9028AB56AE0EBED457D0",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"Network Indicators",
+                "timestamp":"1644308497",
+                "type":"comment",
+                "value":"After a host establishes a connection to one of the command and control servers, a HTTP PUT\r\nrequest with hexadecimal value and a length of 32 or 33 characters is sent to the command and\r\ncontrol server.\r\nFor example, PUT /06599379103BD9028AB56AE0EBED457D0 HTTP/1.1",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Self-Delete Command",
+                "timestamp":"1644308522",
+                "type":"comment",
+                "value":"ping 127.0.0.7 –n 7 > Nul & fsutil file setZeroData offset=0 length=<Stealbit file size>< Stealbit\r\nfile path > & Del /f /q <Stealbit executable>",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Named Pipe",
+                "timestamp":"1644308578",
+                "type":"comment",
+                "value":"STEALBIT-MASTER-PIPE",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Summary",
+                "timestamp":"1644308627",
+                "type":"comment",
+                "value":"LockBit 2.0 operates as an affiliate-based Ransomware-as-a-Service (RaaS) and employs a wide\r\nvariety of tactics, techniques, and procedures (TTPs), creating significant challenges for defense\r\nand mitigation. LockBit 2.0 ransomware compromises victim networks through a variety of\r\ntechniques, including, but not limited to, purchased access, unpatched vulnerabilities, insider\r\naccess, and zero day exploits.\r\nAfter compromising a victim network, LockBit 2.0 actors use publicly available tools such as\r\nMimikatz to escalate privileges. The threat actors then use both publicly available and custom\r\ntools to exfiltrate data followed by encryption using the Lockbit malware. The actors always\r\nleave a ransom note in each affected directory within victim systems, which provides\r\ninstructions on how to obtain the decryption software. The ransom note also threatens to leak\r\nexfiltrated victim data on the LockBit 2.0 leak site and demands a ransom to avoid these\r\nactions.\r\nIn July 2021, LockBit 2.0 released an update which featured the automatic encryption of devices\r\nacross windows domains by abusing Active Directory group policies. In August 2021, LockBit 2.0\r\nbegan to advertise for insiders to establish initial access into potential victim networks, while\r\npromising a portion of the proceeds from a successful attack. LockBit 2.0 also developed a\r\nLinux-based malware which takes advantage of vulnerabilities within VMWare ESXi virtual\r\nmachines.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Technical details",
+                "timestamp":"1644308658",
+                "type":"comment",
+                "value":"LockBit 2.0 is best described as a heavily obfuscated ransomware application leveraging bitwise\r\noperations to decode strings and load required modules to evade detection. Upon launch,\r\nLockBit 2.0 decodes the necessary strings and code to import the required modules followed by\r\ndetermining if the process has administrative privileges. If privileges are not sufficient, it\r\nattempts to escalate to the required privileges. Lockbit 2.0 then determines the system and\r\nuser language settings and only targets those not matching a set list of languages that are\r\nEastern European. If an Eastern European language is detected, the program exits without\r\ninfection. As infection begins, Lockbit 2.0 deletes log files and shadow copies residing on disk.\r\nLockbit 2.0 enumerates system information to include hostname, host configuration, domain\r\ninformation, local drive configuration, remote shares, and mounted external storage devices.\r\nLockbit 2.0 attempts to encrypt any data saved to any local or remote device but skips files\r\nassociated with core system functions. Once completed, Lockbit 2.0 deletes itself from disk and\r\ncreates persistence at startup.\r\nPrior to encryption, Lockbit affiliates primarily use the Stealbit application obtained directly\r\nfrom the Lockbit panel to exfiltrate specific file types. The desired file types can be configured\r\nby the affiliate to tailor the attack to the victim. The affiliate configures the application to target\r\na desired file path and, upon execution, the tool copies the files to an attacker-controlled server\r\nusing http. Due to the nature of the affiliate model, some attackers use other commercially\r\navailable tools such as rclone and MEGAsync to achieve the same results. Lockbit 2.0 actors\r\noften use publicly available file sharing services including, privatlab[.]net, anonfiles[.]com,\r\nsendspace[.]com, fex[.]net, transfer[.]sh, and send.exploit[.]in. While some of these\r\napplications and services can support legitimate purposes, they can also be used by threat\r\nactors to aid in system compromise or exploration of an enterprise.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307497",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307497",
+                        "type":"text",
+                        "value":"Description: Deletes Shadow Copies",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307497",
+                        "type":"text",
+                        "value":"cmd.exe /c vssadmin Delete Shadows /All /Quiet",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307555",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307555",
+                        "type":"text",
+                        "value":"Description: Disables Win 10 recovery",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307555",
+                        "type":"text",
+                        "value":"cmd.exe /c bcdedit /set {default} recoveryenabled No",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307577",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307577",
+                        "type":"text",
+                        "value":"Description: Ignore boot failures",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307577",
+                        "type":"text",
+                        "value":"cmd.exe /c bcdedit /set {default} bootstatuspolicy ignoreallfailures",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307601",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307601",
+                        "type":"text",
+                        "value":"Description: This command has an invalid syntax and errors out",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307601",
+                        "type":"text",
+                        "value":"cmd.exe /c wmic SHADOWCOPY /nointeractive",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307621",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307621",
+                        "type":"text",
+                        "value":"Description: Deletes security log",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307621",
+                        "type":"text",
+                        "value":"cmd.exe /c wevtutil cl security",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307638",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307638",
+                        "type":"text",
+                        "value":"Description: Deletes system log",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307638",
+                        "type":"text",
+                        "value":"cmd.exe /c wevtutil cl system",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307657",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307657",
+                        "type":"text",
+                        "value":"Description: Deletes application log",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307657",
+                        "type":"text",
+                        "value":"cmd.exe /c wevtutil cl application",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307682",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307682",
+                        "type":"text",
+                        "value":"Description: Wipes and deletes itself",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307682",
+                        "type":"text",
+                        "value":"cmd.exe \"%WINDIR%\\System32\\cmd.exe\" /C ping 127.0.0.7 -n 3 >Nul&fsutil file\r\nsetZeroData offset=0 length=524288 \"%USERPROFILE%\\Desktop\\Lsystem-234-bit.exe\" & Del /f\r\n/q \"%USERPROFILE%\\Desktop\\Lsystem-234-bit.exe\"",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644307701",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307701",
+                        "type":"text",
+                        "value":"Description: Lockbit 2.0 deletes all shadow copies on disc to prevent data recovery",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644307701",
+                        "type":"text",
+                        "value":"cmd.exe \"%WINDIR%\\System32\\cmd.exe\" /c vssadmin delete shadows /all /quiet & wmic\r\nshadowcopy delete & bcdedit /set {default} bootstatuspolicy ignoreallfailures & bcdedit /set\r\n{default} recoveryenabled no",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308209",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644307949",
+                        "type":"text",
+                        "value":"<LockBit 2.0 Ransomware path>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308209",
+                        "type":"regkey",
+                        "value":"HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows NT\\CurrentVersion\\ICM\\Calibration\\|Display Calibrator",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308004",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308004",
+                        "type":"text",
+                        "value":"\"%WINDIR%\\system32\\mshta.exe\" \"%USERPROFILE%\\Desktop\\LockBit_Ransomware.hta\"",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308004",
+                        "type":"regkey",
+                        "value":"HKEY_CLASSES_ROOT\\Lockbit\\shell\\Open\\Command\\",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308029",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308029",
+                        "type":"text",
+                        "value":"%WINDIR%\\<First 6 characters of LockBit 2.0 Decryption ID>.ico",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308029",
+                        "type":"regkey",
+                        "value":"HKEY_CLASSES_ROOT\\Lockbit\\DefaultIcon",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308197",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308056",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\Desktop\\LockBit_Ransomware.hta",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308197",
+                        "type":"regkey",
+                        "value":"HKEY_CURENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\{GUID}",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308098",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"Created - Encryption",
+                        "timestamp":"1644308098",
+                        "type":"regkey",
+                        "value":"%USERPROFILE%\\Desktop\\LockBit_Ransomware.hta",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308120",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"Created - Encryption",
+                        "timestamp":"1644308120",
+                        "type":"regkey",
+                        "value":"HKEY_CURRENT_USER\\Software\\< LockBit 2.0 ID >\\Public",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308142",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"Created - LockBit 2.0 Icon Location",
+                        "timestamp":"1644308142",
+                        "type":"regkey",
+                        "value":"HKEY_LOCAL_MACHINE\\Software\\Classes\\.lockbit\\DefaultIcon",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1644308184",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308177",
+                        "type":"text",
+                        "value":"%APPDATA%\\Local\\Temp\\<LockBit 2.0 wallpaper>.tmp.bmp",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1644308184",
+                        "type":"regkey",
+                        "value":"HKEY_CURRENT_USER\\Control Panel\\Desktop",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644308288",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644308288",
+                        "type":"text",
+                        "value":"PowerShell Command – Force GPO Policy",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644308288",
+                        "type":"text",
+                        "value":"powershell.exe -Command “Get-ADComputer -filter * -Searchbase ‘%s’ | foreach{ InvokeGPUpdate -computer $_.name -force -RandomDelayInMinutes 0}”",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and options related to a specific command executed by a program, whether it is malicious or not.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1644308308",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644308308",
+                        "type":"text",
+                        "value":"Anti-Recovery Command",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1644308308",
+                        "type":"text",
+                        "value":"%WINDIR%\\System32\\cmd.exe /c vssadmin delete shadows /all /quiet & wmic shadowcopy\r\ndelete & bcdedit /set {default} bootstatuspolicy ignoreallfailures & bcdedit /set {default}\r\nrecoveryenabled no",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

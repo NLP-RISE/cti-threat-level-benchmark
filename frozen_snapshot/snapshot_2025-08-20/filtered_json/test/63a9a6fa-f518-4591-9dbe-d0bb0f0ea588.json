@@ -1,0 +1,709 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-06-01",
+        "published":true,
+        "info":"OSINT - First Exploitation of Follina Seen in the Wild",
+        "publish_timestamp":"1654068983",
+        "timestamp":"1654068974",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1654067911",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1654067862",
+                        "type":"link",
+                        "value":"https://isc.sans.edu/forums/diary/First+Exploitation+of+Follina+Seen+in+the+Wild/28698/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067862",
+                        "type":"text",
+                        "value":"For a few days, \"Follina\" is generating a lot of noise on the Internet, check our yesterday diary[1] about this new vulnerability if you need more details. It was time to hunt for some samples. For this purpose, I created a simple YARA rule on VT:",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"https://isc.sans.edu/forums/diary/First+Exploitation+of+Follina+Seen+in+the+Wild/28698/",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1654067893",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067893",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1654067893",
+                        "type":"yara",
+                        "value":"import \"vt\"\r\nrule hunt_0day_msdt\r\n{\r\n    strings:\r\n        $s1 = \"!\\\" TargetMode=\\\"External\\\"/>\" nocase wide ascii\r\n    condition:\r\n        new_file and all of ($s*) and vt.metadata.file_type == vt.FileType.DOCX\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067893",
+                        "type":"text",
+                        "value":"hunt_0day_msdt",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1654068048",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":".text",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"size-in-bytes",
+                        "value":"242688",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"float",
+                        "value":"7.986983162408",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1654068048",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":".rsrc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"size-in-bytes",
+                        "value":"1536",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"float",
+                        "value":"4.2376045113149",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1654068048",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":".reloc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"size-in-bytes",
+                        "value":"512",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"float",
+                        "value":"1.5849625007212",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a Portable Executable",
+                "meta-category":"file",
+                "name":"pe",
+                "timestamp":"1654068048",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"4212166",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"datetime",
+                        "value":"2062-12-15T16:16:38+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"filename",
+                        "value":"ssapyb.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"filename",
+                        "value":"ssapyb.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"ssapyb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"1.0.0.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"000004b0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"ssapyb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"1.0.0.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"text",
+                        "value":"Copyright ©  2022",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"counter",
+                        "value":"3",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1654068048",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"filename",
+                        "value":"3206fe87e2874db37239d64779c1f504cfca528cef8f5c2214f8434b392aa25a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"size-in-bytes",
+                        "value":"245248",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"float",
+                        "value":"7.9694694775347",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"malware-sample",
+                        "value":"3206fe87e2874db37239d64779c1f504cfca528cef8f5c2214f8434b392aa25a|ca322dd565f02d6d8c374e220cf8078e",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"mime-type",
+                        "value":"PE32 executable (GUI) Intel 80386 Mono/.Net assembly, for MS Windows",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068048",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1654068077",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/3206fe87e2874db37239d64779c1f504cfca528cef8f5c2214f8434b392aa25a",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"text",
+                        "value":"37/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1654068077",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/url/01230a4cfe6238655e83d3185a7837282020336d2a35f58c664f094cfdf8fd55",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"text",
+                        "value":"10/94",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1654068077",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"url",
+                        "value":"http://coolrat.xyz/Client.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1654068077",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/ip_address/20.62.24.77",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068077",
+                        "type":"text",
+                        "value":"0/91",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1654068125",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"e07a5ab133d0e22fbb0a434653bf50a851031001: Enriched via the virustotal module",
+                        "timestamp":"1654068125",
+                        "type":"ip-dst",
+                        "value":"20.62.24.77",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1654068677",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1654068677",
+                        "type":"domain",
+                        "value":"coolrat.xyz",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1654068756",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"filename",
+                        "value":"fc6a9b001b8b07437b221d70343259d51a6ec580c625be1648e3f6acf09146fc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"size-in-bytes",
+                        "value":"15218",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"float",
+                        "value":"7.2521670427369",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"malware-sample",
+                        "value":"fc6a9b001b8b07437b221d70343259d51a6ec580c625be1648e3f6acf09146fc|14aff46aaffbad783974ba819dba6e41",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"mime-type",
+                        "value":"Microsoft Word 2007+",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654068756",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

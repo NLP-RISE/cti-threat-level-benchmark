@@ -1,0 +1,132 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-14",
+        "published":false,
+        "info":"OSINT - Possible Bankerflux Malware UPX -> Au3 Resource",
+        "publish_timestamp":"0",
+        "timestamp":"1557839654",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1557837384",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"text",
+                        "value":"2019-05-16: Possible #Bankerflux #Malware\r\nUPX -> Au3 Resource\r\n🧰\r\n\r\nh/t @malwrhunterteam\r\n \r\ncc/ @James_inthe_box\r\n\r\ndebuglog(\"Server is visible right now\") | \"Decrypting datastorage\"\r\n🛑\r\n\r\nConfig Extractor | \"ba3x\"\r\nExtracted & shared raw Au3 from this malware on Git ->\r\n(link: https://github.com/k-vitali/Malware-Misc-RE/blob/master/2019-05-15-possible-bankerflux-vk.au3) github.com/k-vitali/Malwa…",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"url",
+                        "value":"https://twitter.com/VK_Intel/status/1128194176103931904",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"text",
+                        "value":"@malwrhunterteam",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"text",
+                        "value":"cc/ @James_inthe_box",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"url",
+                        "value":"https://t.co/ePoyIfJ4iw?amp=1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"url",
+                        "value":"https://github.com/k-vitali/Malware-Misc-RE/blob/master/2019-05-15-possible-bankerflux-vk.au3",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"datetime",
+                        "value":"2019-05-14 9:03 AM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557837384",
+                        "type":"text",
+                        "value":"VK_Intel",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557839060",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557839060",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557839060",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

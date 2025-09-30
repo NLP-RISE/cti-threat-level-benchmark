@@ -1,0 +1,211 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-01-24",
+        "published":true,
+        "info":"OSINT - First Node.js-based Ransomware : Nodera",
+        "publish_timestamp":"1579854880",
+        "timestamp":"1579854868",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Nodera Ransomware\""
+            },
+            {
+                "name":"dnc:malware-type=\"Ransomware\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"ransomware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Ransomware\""
+            },
+            {
+                "name":"Ransomware"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Ransom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1579854418",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1579854420",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1579854557",
+                "type":"link",
+                "value":"https://blogs.quickheal.com/first-node-js-based-ransomware-nodera/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1579854471",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1579854471",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"datetime",
+                        "value":"2020-01-24T07:09:56",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/53a95c9126be8262afb0821da4d7137e6c8a4d9b363f91298249ca134d394bf4/analysis/1579849796/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854420",
+                        "type":"text",
+                        "value":"11/56",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1579854472",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1579854472",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"datetime",
+                        "value":"2020-01-24T05:46:08",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/7265c1fb74eb9ea3cd98358475620ce54b9033421ba042957135bdefd078b366/analysis/1579844768/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1579854418",
+                        "type":"text",
+                        "value":"23/57",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

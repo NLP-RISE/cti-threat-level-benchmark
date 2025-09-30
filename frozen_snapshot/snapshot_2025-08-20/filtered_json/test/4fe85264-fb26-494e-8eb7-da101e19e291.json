@@ -1,0 +1,578 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-10-24",
+        "published":true,
+        "info":"Investigating FortiManager Zero-Day Exploitation (CVE-2024-47575)",
+        "publish_timestamp":"1729840588",
+        "timestamp":"1729840578",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1729754802",
+                "type":"vulnerability",
+                "value":"CVE-2024-47575",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"UNC5820",
+                "timestamp":"1729755948",
+                "type":"ip-dst",
+                "value":"45.32.41.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"UNC5820",
+                "timestamp":"1729755948",
+                "type":"ip-dst",
+                "value":"104.238.141.143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"UNC5820",
+                "timestamp":"1729755948",
+                "type":"ip-dst",
+                "value":"158.247.199.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"UNC5820",
+                "timestamp":"1729755948",
+                "type":"ip-dst",
+                "value":"195.85.114.78",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MD5 hash of unreg_devices.txt",
+                "timestamp":"1729755975",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Malicious Fortinet Device ID",
+                "timestamp":"1729756506",
+                "type":"text",
+                "value":"FMG-VMTM23017412",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"String indicating exploitation in /log/locallog/elog",
+                "timestamp":"1729756612",
+                "type":"text",
+                "value":"msg=\"Unregistered device localhost add succeeded\"",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"String indicating exploitation in /log/locallog/elog",
+                "timestamp":"1729756612",
+                "type":"text",
+                "value":"changes=\"Edited device settings (SN FMG-VMTM23017412)\"",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"String indicating exploitation in /log/locallog/elog",
+                "timestamp":"1729756612",
+                "type":"text",
+                "value":"changes=\"Added unregistered device to unregistered table.\"",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Observed in subs.dat and subs.dat.tmp",
+                "timestamp":"1729756658",
+                "type":"text",
+                "value":"Purity Supreme",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"via https://www.fortiguard.com/psirt/FG-IR-24-423",
+                "timestamp":"1729840578",
+                "type":"ip-dst",
+                "value":"45.32.63.2",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1729754781",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729754781",
+                        "type":"link",
+                        "value":"https://cloud.google.com/blog/topics/threat-intelligence/fortimanager-zero-day-exploitation-cve-2024-47575",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729754781",
+                        "type":"text",
+                        "value":"In October 2024, Mandiant collaborated with Fortinet to investigate the mass exploitation of FortiManager appliances across 50+ potentially compromised FortiManager devices in various industries. The vulnerability, CVE-2024-47575 / FG-IR-24-423, allows a threat actor to use an unauthorized, threat actor-controlled FortiManager device to execute arbitrary code or commands against vulnerable FortiManager devices. \r\n\r\nMandiant observed a new threat cluster we now track as UNC5820 exploiting the FortiManager vulnerability as early as June 27, 2024. UNC5820 staged and exfiltrated the configuration data of the FortiGate devices managed by the exploited FortiManager. This data contains detailed configuration information of the managed appliances as well as the users and their FortiOS256-hashed passwords. This data could be used by UNC5820 to further compromise the FortiManager, move laterally to the managed Fortinet devices, and ultimately target the enterprise environment.\r\n\r\nAt this time, the data sources analyzed by Mandiant did not record the specific requests that the threat actor used to leverage the FortiManager vulnerability. Additionally, at this stage of our investigations there is no evidence that UNC5820 leveraged the obtained configuration data to move laterally and further compromise the environment. As a result, at the time of publishing, we lack sufficient data to assess actor motivation or location. As additional information becomes available through our investigations, Mandiant will update this blog’s attribution assessment.\r\n\r\nOrganizations that may have their FortiManager exposed to the internet should conduct a forensic investigation immediately.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729754781",
+                        "type":"text",
+                        "value":"Investigating FortiManager Zero-Day Exploitation (CVE-2024-47575)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729754781",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"vulnerability",
+                        "value":"CVE-2024-47575",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"A missing authentication for critical function in FortiManager 7.6.0, FortiManager 7.4.0 through 7.4.4, FortiManager 7.2.0 through 7.2.7, FortiManager 7.0.0 through 7.0.12, FortiManager 6.4.0 through 6.4.14, FortiManager 6.2.0 through 6.2.12, Fortinet FortiManager Cloud 7.4.1 through 7.4.4, FortiManager Cloud 7.2.1 through 7.2.7, FortiManager Cloud 7.0.1 through 7.0.13, FortiManager Cloud 6.4.1 through 6.4.7 allows attacker to execute arbitrary code or commands via specially crafted requests.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"datetime",
+                        "value":"2024-10-24T01:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"datetime",
+                        "value":"2024-10-23T15:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"link",
+                        "value":"https://fortiguard.fortinet.com/psirt/FG-IR-24-423",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Weakness object describing a common weakness enumeration which can describe usable, incomplete, draft or deprecated weakness for software, equipment of hardware.",
+                "meta-category":"vulnerability",
+                "name":"weakness",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-306",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Missing Authentication for Critical Function",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Draft",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Base",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Attack pattern describing a common attack pattern enumeration and classification.",
+                "meta-category":"vulnerability",
+                "name":"attack-pattern",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"62",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Cross Site Request Forgery",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"An attacker crafts malicious web links and distributes them (via web pages, email, etc.), typically in a targeted manner, hoping to induce users to click on the link and execute the malicious action against some third-party application. If successful, the action embedded in the malicious link will be processed and accepted by the targeted application with the users' privilege level. This type of attack leverages the persistence and implicit trust placed in user session cookies by many web applications today. In such an architecture, once the user authenticates to an application and a session cookie is created on the user's system, all following transactions for that session are authenticated using that cookie including potential actions initiated by an attacker and simply \"riding\" the existing session cookie.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Use cryptographic tokens to associate a request with a specific action. The token can be regenerated at every request so that if a request with an invalid token is encountered, it can be reliably discarded. The token is considered invalid if it arrived with a request other than the action it was supposed to be associated with. Although less reliable, the use of the optional HTTP Referrer header can also be used to determine whether an incoming request was actually one that the user is authorized for, in the current context. Additionally, the user can also be prompted to confirm an action every time an action concerning potentially sensitive data is invoked. This way, even if the attacker manages to get the user to click on a malicious link and request the desired action, the user has a chance to recover by denying confirmation. This solution is also implicitly tied to using a second factor of authentication before performing such actions. In general, every request must be checked for the appropriate authentication token as well as authorization in the current session context.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-1275",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-306",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-352",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-664",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-716",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-732",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Attack pattern describing a common attack pattern enumeration and classification.",
+                "meta-category":"vulnerability",
+                "name":"attack-pattern",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"36",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Using Unpublished Interfaces",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"An adversary searches for and invokes interfaces that the target system designers did not intend to be publicly available. If these interfaces fail to authenticate requests the attacker may be able to invoke functionality they are not authorized for.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"The architecture under attack must publish or otherwise make available services that clients can attach to, either in an unauthenticated fashion, or having obtained an authentication token elsewhere. The service need not be 'discoverable', but in the event it isn't it must have some way of being discovered by an attacker. This might include listening on a well-known port. Ultimately, the likelihood of exploit depends on discoverability of the vulnerable service.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Authenticating both services and their discovery, and protecting that authentication mechanism simply fixes the bulk of this problem. Protecting the authentication involves the standard means, including: 1) protecting the channel over which authentication occurs, 2) preventing the theft, forgery, or prediction of authentication credentials or the resultant tokens, or 3) subversion of password reset and the like.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-1242",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-306",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-693",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-695",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Attack pattern describing a common attack pattern enumeration and classification.",
+                "meta-category":"vulnerability",
+                "name":"attack-pattern",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"166",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Force the System to Reset Values",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"An attacker forces the target into a previous state in order to leverage potential weaknesses in the target dependent upon a prior configuration or state-dependent factors. Even in cases where an attacker may not be able to directly control the configuration of the targeted application, they may be able to reset the configuration to a prior state since many applications implement reset functions. Since these functions are usually intended as emergency features to return an application to a stable configuration if the current configuration degrades functionality, they may not be as strongly secured as other configuration options. The resetting of values is dangerous as it may enable undesired functionality, disable services, or modify access controls. At the very least this is a nuisance attack since the administrator will need to re-apply their configuration. At worst, this attack can open avenues for powerful attacks against the application, and, if it isn't obvious that the configuration has been reset, these vulnerabilities may be present a long time before they are notices.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"The targeted application must have a reset function that returns the configuration of the application to an earlier state. The reset functionality must be inadequately protected against use.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-1232",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-306",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-47575: Enriched via the cve_advanced module",
+                "description":"Attack pattern describing a common attack pattern enumeration and classification.",
+                "meta-category":"vulnerability",
+                "name":"attack-pattern",
+                "timestamp":"1729755710",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"12",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Choosing Message Identifier",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"This pattern of attack is defined by the selection of messages distributed over via multicast or public information channels that are intended for another client by determining the parameter value assigned to that client. This attack allows the adversary to gain access to potentially privileged information, and to possibly perpetrate other attacks through the distribution means by impersonation. If the channel/message being manipulated is an input rather than output mechanism for the system, (such as a command bus), this style of attack could be used to change the adversary's identifier to more a privileged one.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"Information and client-sensitive (and client-specific) data must be present through a distribution channel available to all users. Distribution means must code (through channel, message identifiers, or convention) message destination in a manner visible within the distribution means itself (such as a control channel) or in the messages themselves.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"text",
+                        "value":"The purpose is to architect the system in a way that associates proper authentication/authorization with each channel/message. Re-architect system input/output channels as appropriate to distribute self-protecting data. That is, encrypt (or otherwise protect) channels/messages so that only authorized readers can see them.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-201",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1729755710",
+                        "type":"weakness",
+                        "value":"CWE-306",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Observed in subs.dat and subs.dat.tmp. This is a disposable email address created by the threat actor.",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1729756542",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1729756542",
+                        "type":"email-src",
+                        "value":"0qsc137p@justdefinition.com",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,217 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-04",
+        "published":true,
+        "info":"OSINT - GandCrab Version 3 Released With Autorun Feature and Desktop Background",
+        "publish_timestamp":"1525762546",
+        "timestamp":"1525762485",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"GandCrab\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525762473",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/gandcrab-version-3-released-with-autorun-feature-and-desktop-background/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525762473",
+                "type":"text",
+                "value":"GandCrab version 3 was released earlier this week with a few noticeable changes. The most noticeable change is the addition of a desktop background.\r\n\r\nUnfortunately, at this time GandCrab 3 cannot be decrypted for free.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525762474",
+                "type":"attachment",
+                "value":"gandcrabv3mail.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote",
+                "timestamp":"1525762474",
+                "type":"filename",
+                "value":"CRAB-DECRYPT.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525678238",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525762475",
+                "type":"filename",
+                "value":"%AppData%\\Microsoft\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1525762475",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce \"[random]\" = \"%AppData%\\Microsoft\\[random].exe\"",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762476",
+                "type":"hostname",
+                "value":"ns1.wowservers.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762476",
+                "type":"domain",
+                "value":"carder.bit",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762476",
+                "type":"url",
+                "value":"https://www.torproject.org/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762477",
+                "type":"url",
+                "value":"http://gandcrab2pie73et.onion/[id]",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762477",
+                "type":"url",
+                "value":"https://psi-im.org/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762478",
+                "type":"url",
+                "value":"http://sj.ms/register.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525762478",
+                "type":"email-src",
+                "value":"ransomware@sj.ms",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525762478",
+                "type":"url",
+                "value":"http://www.sfu.ca/jabber/Psi_Jabber_PC.pdf",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525762482",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525762479",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525762479",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525762480",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525762480",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525762480",
+                        "type":"datetime",
+                        "value":"2018-05-07T14:08:34",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525762481",
+                        "type":"text",
+                        "value":"55/65",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525762481",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0b193494ffbbc5396886715253582aea075f97f5c5e79b58de9a4c0c62ed9b02/analysis/1525702114/",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

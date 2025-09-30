@@ -1,0 +1,151 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-07",
+        "published":true,
+        "info":"OSINT - The curious case of a Sundown EK variant dropping a Cryptocurrency Miner",
+        "publish_timestamp":"1483798369",
+        "timestamp":"1483798339",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"Sundown\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483798029",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/cybercrime/2017/01/the-curious-case-of-a-sundown-ek-variant-dropping-a-cryptocurrency-miner/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483798061",
+                "type":"comment",
+                "value":"We recently encountered an atypical case of Sundown EK in the wild â€“ usually the landing page is obfuscated, but in this case there was plain JavaScript. The exploit was dropping some malicious payloads that we took for further analysis. It turned out that they are also atypical by many means. In this article, we will describe the details of our investigation.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"original sample, dropped by EK (UPX packed)",
+                "timestamp":"1483798091",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX packed",
+                "timestamp":"1483798091",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX layer removed",
+                "timestamp":"1483798092",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"",
+                "timestamp":"1483798145",
+                "type":"whois-registrant-email",
+                "value":"lovemonero2.worker@hotmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Social network",
+                "comment":"The name of the user â€“ LoveMonero â€“ suggests that this application is not used to mine Bitcoins, but another cryptocurrency â€“ Monero. This choice makes sense, because the pool of bitcoins is more and more saturated â€“ and nowadays mining them is much more difficult  and resource-consuming than it was in the past, when this currency was still young.",
+                "timestamp":"1483798257",
+                "type":"github-username",
+                "value":"lovemonero",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"original sample, dropped by EK (UPX packed) - Xchecked via VT: 0f597c738f2e1a58c03a69f66825fa80",
+                "timestamp":"1483798270",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"original sample, dropped by EK (UPX packed) - Xchecked via VT: 0f597c738f2e1a58c03a69f66825fa80",
+                "timestamp":"1483798270",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"original sample, dropped by EK (UPX packed) - Xchecked via VT: 0f597c738f2e1a58c03a69f66825fa80",
+                "timestamp":"1483798271",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3826017cc19f829ccc17893803de42028cd1ebbd99dad24ab9ed984c9dae57b8/analysis/1483650552/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX packed - Xchecked via VT: 22e4113fb0a9d136a56988f7a10c46b8",
+                "timestamp":"1483798272",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX packed - Xchecked via VT: 22e4113fb0a9d136a56988f7a10c46b8",
+                "timestamp":"1483798273",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"payload (miner) â€“ UPX packed - Xchecked via VT: 22e4113fb0a9d136a56988f7a10c46b8",
+                "timestamp":"1483798273",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/30ba2cbe1202a96258d605d7318d1775d616b4bf3dcabd155b531128464daa2d/analysis/1483749344/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX layer removed - Xchecked via VT: 9f2c0ae3cb7ae032bd66f025fcb93f03",
+                "timestamp":"1483798274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload (miner) â€“ UPX layer removed - Xchecked via VT: 9f2c0ae3cb7ae032bd66f025fcb93f03",
+                "timestamp":"1483798275",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"payload (miner) â€“ UPX layer removed - Xchecked via VT: 9f2c0ae3cb7ae032bd66f025fcb93f03",
+                "timestamp":"1483798276",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/541888040a3c01902d646ba13a8d48bdf5d18da917820e1b06075beed205fd55/analysis/1483676986/",
+                "to_ids":false
+            }
+        ]
+    }
+}

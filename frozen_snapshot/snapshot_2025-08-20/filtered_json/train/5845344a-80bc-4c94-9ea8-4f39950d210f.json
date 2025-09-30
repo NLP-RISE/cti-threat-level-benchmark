@@ -1,0 +1,496 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2015-06-24",
+        "published":true,
+        "info":"OSINT - MMD-0033-2015 - Linux/XorDDoS infection incident report (CNC: HOSTASA.ORG)",
+        "publish_timestamp":"1518770889",
+        "timestamp":"1515812443",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"link",
+                "value":"http://blog.malwaremustdie.org/2015/06/mmd-0033-2015-linuxxorddos-infection_23.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"comment",
+                "value":"Background\r\nThis post is an actual malware infection incident of the\"Linux/XOR.DDoS\" malware (please see previous post as reference-->[LINK]) and malware was in attempt to infect a real Linux server.\r\n\r\nIncident details:\r\n\r\nSource of attack:\r\nAn attack was coming from 107.182.141.40 with the below GeoIP details:\r\nThe attacker was compromising a Linux host via ssh password bruting to then executing a one liner shell (sh) command line and then the malware initiation commands was executed on the compromised system:",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 41625",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"107.182.141.40",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"domain",
+                "value":"44ro4.cn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"198.15.234.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"103.240.140.152",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"103.240.141.54",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"192.126.126.64",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"ip-dst",
+                "value":"23.234.60.143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"hostname",
+                "value":"aa.hostasa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"hostname",
+                "value":"ns4.hostasa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"hostname",
+                "value":"ns3.hostasa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1515750274",
+                "type":"hostname",
+                "value":"ns2.hostasa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1480930766",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1480930766",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1480930767",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1480930767",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1480930768",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515750277",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515750274",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c394440c56fdcda9739fbb966e9ac2eab9e11e2eeff0720eb4c850a05b33eefc/analysis/1495044102/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"text",
+                        "value":"41/55",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"datetime",
+                        "value":"2017-05-17T18:01:42",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515750277",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750274",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515750275",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0a312a4154dcec2bc6ce1d3b51c037b122ace5848ec99c2b861ab6124addae9b/analysis/1494973480/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"text",
+                        "value":"39/56",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"datetime",
+                        "value":"2017-05-16T22:24:40",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515750278",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515750275",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/fd6060b963d1b5ca7a07b5a283ad99105298a6708e44d286440a506738a17e34/analysis/1495062664/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"text",
+                        "value":"42/57",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"datetime",
+                        "value":"2017-05-17T23:11:04",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515750278",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515750275",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/92a260d856e00056469fb26f5305a37f6ab443d735d1476281b053b10b3c4f86/analysis/1495027397/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"text",
+                        "value":"40/57",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"datetime",
+                        "value":"2017-05-17T13:23:17",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515750278",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515750275",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/61b0107a7a06ecbb8cc1d323967291d15450df7e8bab5d96c822a98c9399a521/analysis/1495007597/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"text",
+                        "value":"42/57",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515750275",
+                        "type":"datetime",
+                        "value":"2017-05-17T07:53:17",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

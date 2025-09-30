@@ -1,0 +1,135 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-18",
+        "published":true,
+        "info":"OSINT - New Loki Variant Being Spread via PDF File",
+        "publish_timestamp":"1495135268",
+        "timestamp":"1495135260",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Flokibot\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Trojan\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495135180",
+                "type":"link",
+                "value":"https://blog.fortinet.com/2017/05/17/new-loki-variant-being-spread-via-pdf-file",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495135180",
+                "type":"text",
+                "value":"The Loki Bot has been observed for years. As you may know, it is designed to steal credentials from installed software on a victimâ€™s machine, such as email clients, browsers, FTP clients, file management clients, and so on. FortiGuard Labs recently captured a PDF sample that is used to spread a new Loki variant. In this blog, we will analyze how this new variant works and what it steals.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1495135180",
+                "type":"url",
+                "value":"194.88.105.202/~ninjagro/pdfs/QUOTATION.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1495135180",
+                "type":"url",
+                "value":"online-prodaja.rs/tz/Panel/five/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION (1).pdf",
+                "timestamp":"1495135180",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION.exe",
+                "timestamp":"1495135180",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised system to distribute malware",
+                "timestamp":"1495135180",
+                "type":"ip-dst",
+                "value":"194.88.105.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised server",
+                "timestamp":"1495135180",
+                "type":"domain",
+                "value":"online-prodaja.rs",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION.exe - Xchecked via VT: fa417e0b42362c40301750809df9f0c9bdbf333269f50f74832d4f471358aaed",
+                "timestamp":"1495135183",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION.exe - Xchecked via VT: fa417e0b42362c40301750809df9f0c9bdbf333269f50f74832d4f471358aaed",
+                "timestamp":"1495135184",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"QUOTATION.exe - Xchecked via VT: fa417e0b42362c40301750809df9f0c9bdbf333269f50f74832d4f471358aaed",
+                "timestamp":"1495135184",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fa417e0b42362c40301750809df9f0c9bdbf333269f50f74832d4f471358aaed/analysis/1494822036/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION (1).pdf - Xchecked via VT: e71379a53045385c4ac32e5be75a04e3d2a9fc7b707fb4478ce90fe689f66d19",
+                "timestamp":"1495135184",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUOTATION (1).pdf - Xchecked via VT: e71379a53045385c4ac32e5be75a04e3d2a9fc7b707fb4478ce90fe689f66d19",
+                "timestamp":"1495135185",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"QUOTATION (1).pdf - Xchecked via VT: e71379a53045385c4ac32e5be75a04e3d2a9fc7b707fb4478ce90fe689f66d19",
+                "timestamp":"1495135185",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e71379a53045385c4ac32e5be75a04e3d2a9fc7b707fb4478ce90fe689f66d19/analysis/1495003707/",
+                "to_ids":false
+            }
+        ]
+    }
+}

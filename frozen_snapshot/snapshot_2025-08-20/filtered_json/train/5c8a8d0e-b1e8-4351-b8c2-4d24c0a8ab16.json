@@ -1,0 +1,49 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-03-07",
+        "published":true,
+        "info":"New SLUB Backdoor Uses GitHub, Communicates via Slack",
+        "publish_timestamp":"1552584022",
+        "timestamp":"1552584014",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1552583964",
+                "type":"link",
+                "value":"https://blog.trendmicro.com/trendlabs-security-intelligence/new-slub-backdoor-uses-github-communicates-via-slack/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Win32.CVE20151701.E",
+                "timestamp":"1552584009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Win32.SLUB.A",
+                "timestamp":"1552584009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1552584009",
+                "type":"url",
+                "value":"https://gist.github.com/kancc14522/626a3a68a2cc2a91c1ece1eed7610c8a",
+                "to_ids":true
+            }
+        ]
+    }
+}

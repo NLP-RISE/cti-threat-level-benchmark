@@ -1,0 +1,167 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-04-03",
+        "published":true,
+        "info":"Crypren Ransomware",
+        "publish_timestamp":"1523867501",
+        "timestamp":"1523867322",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Crypren\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523863015",
+                "type":"attachment",
+                "value":"DZ3XmsHW4AIBUMf.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523863015",
+                "type":"attachment",
+                "value":"DZ3XmsNV4AAofZW.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523627556",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1523626348",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523626348",
+                        "type":"text",
+                        "value":"Crypren #Ransomware sample @malwrhunterteam @BleepinComputer https://www.virustotal.com/#/file/c290907b168b106296718bab628cbbe42281ab5f066de4653fb38ffc21989690/detection â€¦ 26/65 atm. First submitted: today.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523626349",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1523626349",
+                        "type":"url",
+                        "value":"https://twitter.com/leotpsc/status/981177718686466048",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523626349",
+                        "type":"datetime",
+                        "value":"2018-04-03T00:00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523626349",
+                        "type":"text",
+                        "value":"@leotpsc",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523863019",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523863016",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523863016",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523863017",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523863017",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523863017",
+                        "type":"datetime",
+                        "value":"2018-04-06T07:57:46",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523863018",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c290907b168b106296718bab628cbbe42281ab5f066de4653fb38ffc21989690/analysis/1523001466/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523863018",
+                        "type":"text",
+                        "value":"46/65",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-11",
+        "published":true,
+        "info":"Jigsaw Ransomware Decrypted: Will delete your files until you pay the Ransom",
+        "publish_timestamp":"1466511094",
+        "timestamp":"1466510947",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1466510947",
+                "type":"link",
+                "value":"http://www.bleepingcomputer.com/news/security/jigsaw-ransomware-decrypted-will-delete-your-files-until-you-pay-the-ransom/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Frfx\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Frfx\\firefox.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Drpbx\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Drpbx\\drpbx.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\System32Work\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\System32Work\\Address.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\System32Work\\dr",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts Dropped (File)",
+                "timestamp":"1460526461",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\System32Work\\EncryptedFileList.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460526461",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\firefox.exe\t%UserProfile%\\AppData\\Roaming\\Frfx\\firefox.exe",
+                "to_ids":true
+            }
+        ]
+    }
+}

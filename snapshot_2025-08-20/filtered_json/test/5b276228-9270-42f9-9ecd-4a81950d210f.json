@@ -1,0 +1,127 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-15",
+        "published":true,
+        "info":"Clipboard Hijacker Targeting Bitcoin & Ethereum Users Infects Over 300,0000 PCs",
+        "publish_timestamp":"1540717301",
+        "timestamp":"1540557811",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"ClipboardWalletHijacker\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529308093",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/clipboard-hijacker-targeting-bitcoin-and-ethereum-users-infects-over-300-0000-pcs/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529308069",
+                "type":"text",
+                "value":"A malware campaign spreading a clipboard hijacker has infected over 300,000 computers, according to Chinese security firm Qihoo 360 Total Security.\r\n\r\nThe campaign has been raging for the past week and has spread a malware which Qihoo researchers have named ClipboardWalletHijacker.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529308085",
+                "type":"link",
+                "value":"https://blog.360totalsecurity.com/en/new-cryptominer-hijacks-your-bitcoin-transaction-over-300000-computers-have-been-attacked/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An address used in a cryptocurrency",
+                "meta-category":"financial",
+                "name":"coin-address",
+                "timestamp":"1529308177",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1529308177",
+                        "type":"btc",
+                        "value":"1FoSfmjZJFqFSsD2cGXuccM9QMMa28Wrn1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529308178",
+                        "type":"text",
+                        "value":"BTC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An address used in a cryptocurrency",
+                "meta-category":"financial",
+                "name":"coin-address",
+                "timestamp":"1529308195",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1529308195",
+                        "type":"btc",
+                        "value":"19gdjoWaE8i9XPbWoDbixev99MvvXUSNZL",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529308196",
+                        "type":"text",
+                        "value":"BTC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An address used in a cryptocurrency",
+                "meta-category":"financial",
+                "name":"coin-address",
+                "timestamp":"1529308212",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1529308212",
+                        "type":"btc",
+                        "value":"0x004D3416DA40338fAf9E772388A93fAF5059bFd5",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529308213",
+                        "type":"text",
+                        "value":"ETH",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,252 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-04-22",
+        "published":true,
+        "info":"OSINT - New Poison Ivy RAT Variant Targets Hong Kong Pro-Democracy Activists",
+        "publish_timestamp":"1461356783",
+        "timestamp":"1461356749",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356566",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2016/04/unit42-new-poison-ivy-rat-variant-targets-hong-kong-pro-democracy-activists/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356580",
+                "type":"comment",
+                "value":"Malware writers have always sought to develop feature-rich, easy to use tools that are also somewhat hard to detect via both host- and network-based detection systems.  For many years, one of the go-to families of malware used by both less-skilled and advanced actors has been the Poison Ivy (aka PIVY) RAT. Poison Ivy has a convenient graphical user interface (GUI) for managing compromised hosts and provides easy access to a rich suite of post-compromise tools. It is no surprise itâ€™s now being used against pro-democracy organizations and supporters in Hong Kong that have long been a target of advanced attack campaigns.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1461356606",
+                "type":"vulnerability",
+                "value":"CVE-2015-2545",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs",
+                "timestamp":"1461356630",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs",
+                "timestamp":"1461356631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs",
+                "timestamp":"1461356631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Poison Ivy shellcode files",
+                "timestamp":"1461356653",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Poison Ivy shellcode files",
+                "timestamp":"1461356654",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains",
+                "timestamp":"1461356668",
+                "type":"hostname",
+                "value":"sent.leeh0m.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains",
+                "timestamp":"1461356669",
+                "type":"hostname",
+                "value":"found.leeh0m.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process",
+                "timestamp":"1461356719",
+                "type":"filename",
+                "value":"RasTls.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process",
+                "timestamp":"1461356719",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process",
+                "timestamp":"1461356720",
+                "type":"filename",
+                "value":"ssMUIDLL.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process",
+                "timestamp":"1461356720",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process - Xchecked via VT: 7a424ad3f3106b87e8e82c7125834d7d8af8730a2a97485a639928f66d5f6bf4",
+                "timestamp":"1461356749",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process - Xchecked via VT: 7a424ad3f3106b87e8e82c7125834d7d8af8730a2a97485a639928f66d5f6bf4",
+                "timestamp":"1461356749",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356749",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7a424ad3f3106b87e8e82c7125834d7d8af8730a2a97485a639928f66d5f6bf4/analysis/1459770131/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process - Xchecked via VT: 0191cb2a2624b532b2dffef6690824f7f32ea00730e5aef5d86c4bad6edf9ead",
+                "timestamp":"1461356750",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Loader Files - legitimate, signed binary that is used in the sideloading process - Xchecked via VT: 0191cb2a2624b532b2dffef6690824f7f32ea00730e5aef5d86c4bad6edf9ead",
+                "timestamp":"1461356750",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356750",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0191cb2a2624b532b2dffef6690824f7f32ea00730e5aef5d86c4bad6edf9ead/analysis/1461310950/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 9c6dc1c2ea5b2370b58b0ac11fde8287cd49aee3e089dbdf589cc8d51c1f7a9e",
+                "timestamp":"1461356751",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 9c6dc1c2ea5b2370b58b0ac11fde8287cd49aee3e089dbdf589cc8d51c1f7a9e",
+                "timestamp":"1461356751",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356751",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9c6dc1c2ea5b2370b58b0ac11fde8287cd49aee3e089dbdf589cc8d51c1f7a9e/analysis/1461331258/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 4d38d4ee5b625e09b61a253a52eb29fcf9c506ee9329b3a90a0b3911e59174f2",
+                "timestamp":"1461356752",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 4d38d4ee5b625e09b61a253a52eb29fcf9c506ee9329b3a90a0b3911e59174f2",
+                "timestamp":"1461356752",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356753",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4d38d4ee5b625e09b61a253a52eb29fcf9c506ee9329b3a90a0b3911e59174f2/analysis/1461331255/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 13bdc52c2066e4b02bae5cc42bc9ec7dfcc1f19fbf35007aea93e9d62e3e3fd0",
+                "timestamp":"1461356753",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Weaponized EPS Docs - Xchecked via VT: 13bdc52c2066e4b02bae5cc42bc9ec7dfcc1f19fbf35007aea93e9d62e3e3fd0",
+                "timestamp":"1461356753",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461356754",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/13bdc52c2066e4b02bae5cc42bc9ec7dfcc1f19fbf35007aea93e9d62e3e3fd0/analysis/1461331255/",
+                "to_ids":false
+            }
+        ]
+    }
+}

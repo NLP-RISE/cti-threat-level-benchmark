@@ -1,0 +1,1487 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-21",
+        "published":false,
+        "info":"OSINT - Sednit update: How Fancy Bear Spent the Year",
+        "publish_timestamp":"0",
+        "timestamp":"1513948645",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:state=\"incomplete\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster-values\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"Sednit EK\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"GAMEFISH\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"JHUHUGIT\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"X-Tunnel\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"XTunnel\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"ADVSTORESHELL\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"EVILTOSS\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"USBStealer\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"X-Agent\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"XAgentOSX\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"CHOPSTICK\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"DealersChoice\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Downdelph\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513893921",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2017/12/21/sednit-update-fancy-bear-spent-year/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513893921",
+                "type":"text",
+                "value":"The Sednit group — also known as Strontium, APT28, Fancy Bear or Sofacy — is a group of attackers operating since 2004, if not earlier, and whose main objective is to steal confidential information from specific targets.\r\n\r\nThis article is a follow-up to ESET’s presentation at BlueHat in November 2017. Late in 2016 we published a white paper covering Sednit activity between 2014 and 2016. Since then, we have continued to actively track Sednit’s operations, and today we are publishing a brief overview of what our tracking uncovered in terms of the group’s activities and updates to their toolset. The first section covers the update of their attack methodology: namely, the ways in which this group tries to compromise their targets systems. The second section covers the evolution of their tools, with a particular emphasis on a detailed analysis of a new version of their flagship malware: Xagent.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"movieultimate.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"meteost.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"faststoragefiles.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"nethostnet.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"fsportal.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"fastdataexchange.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Xagent Samples",
+                "timestamp":"1513893957",
+                "type":"domain",
+                "value":"newfilmts.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Win32/Sednit.AX",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936310",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936310",
+                        "type":"filename",
+                        "value":"Bulletin.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936310",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936310",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.CVE-2016-4117.A",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936388",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936388",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936388",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NUB",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936531",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936531",
+                        "type":"filename",
+                        "value":"OC_PSO_2017.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936531",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936531",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NTR",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936578",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936578",
+                        "type":"filename",
+                        "value":"NASAMS.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936578",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936578",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NTO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936718",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936718",
+                        "type":"filename",
+                        "value":"Programm_Details.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936718",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936718",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NTR",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936757",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936757",
+                        "type":"filename",
+                        "value":"Operation_in_Mosul.rtf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936757",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936757",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SWF/Agent.L",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936943",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936943",
+                        "type":"filename",
+                        "value":"ARM-NATO_ENGLISH_30_NOV_2016.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936943",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936943",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.BL",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936967",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936967",
+                        "type":"filename",
+                        "value":"Olympic-Agenda-2020-20-20-Recommendations.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936967",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936967",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NUG",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513936993",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936993",
+                        "type":"filename",
+                        "value":"Merry_Christmas!.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513936993",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513936993",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NWZ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937021",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937021",
+                        "type":"filename",
+                        "value":"Trump’s_Attack_on_Syria_English.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937021",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937021",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937046",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937047",
+                        "type":"filename",
+                        "value":"Hotel_Reservation_Form.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937047",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937047",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937070",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937070",
+                        "type":"filename",
+                        "value":"SB_Doc_2017-3_Implementation_of_Key_Taskings_and_Next_Steps.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937071",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937071",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937083",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937083",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937083",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937097",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937097",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937097",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937115",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937116",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937116",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Exploit.Agent.NTM",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937147",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937147",
+                        "type":"filename",
+                        "value":"Caucasian_Eagle_ENG.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937147",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937147",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SWF/Exploit.CVE-2017-11292.A",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937166",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937166",
+                        "type":"filename",
+                        "value":"World War3.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937166",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937166",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"VBA/DDE.E",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937191",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937191",
+                        "type":"filename",
+                        "value":"SaberGuardian2017.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937191",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937191",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"VBA/DDE.L",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937212",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937212",
+                        "type":"filename",
+                        "value":"IsisAttackInNewYork.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937212",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937212",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win64/Sednit.Z",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513937829",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937559",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937559",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win64/Sednit.Z",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938094",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937864",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937864",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938213",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937910",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937910",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938172",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937929",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937929",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win64/Sednit.Y",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937953",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937953",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win64/Sednit.Y",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938193",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937975",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937976",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win64/Sednit.Z",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938132",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513937992",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513937992",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938283",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513938011",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513938011",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513938267",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513938034",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513938034",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.AX\t",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948645",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939882",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939882",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BS",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948538",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939907",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939907",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BS",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948600",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939924",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939924",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BR",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948629",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939946",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939946",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948076",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939972",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939972",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948501",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513939991",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513939991",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BN",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948131",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513940012",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513940012",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BG",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513948342",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513940027",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513940027",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/Sednit.BG",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513940756",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513940042",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513940042",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940362",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940362",
+                        "type":"ip-dst",
+                        "value":"87.236.211.182",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940362",
+                        "type":"domain",
+                        "value":"servicecdp.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940472",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940472",
+                        "type":"ip-dst",
+                        "value":"95.215.45.43",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940472",
+                        "type":"domain",
+                        "value":"wmdmediacodecs.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940490",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940490",
+                        "type":"ip-dst",
+                        "value":"89.45.67.144",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940491",
+                        "type":"domain",
+                        "value":"mvband.net",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940506",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940506",
+                        "type":"ip-dst",
+                        "value":"89.33.246.117",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940506",
+                        "type":"domain",
+                        "value":"mvtband.net",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940542",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940542",
+                        "type":"ip-dst",
+                        "value":"87.236.211.182",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940542",
+                        "type":"domain",
+                        "value":"servicecdp.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940558",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940558",
+                        "type":"ip-dst",
+                        "value":"185.156.173.70",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940558",
+                        "type":"domain",
+                        "value":"runvercheck.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940572",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940572",
+                        "type":"ip-dst",
+                        "value":"191.101.31.96",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940572",
+                        "type":"domain",
+                        "value":"remsupport.org",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940590",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940591",
+                        "type":"ip-dst",
+                        "value":"89.187.150.44",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940591",
+                        "type":"domain",
+                        "value":"viters.org",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940608",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940608",
+                        "type":"ip-dst",
+                        "value":"146.185.253.132",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940608",
+                        "type":"domain",
+                        "value":"myinvestgroup.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940621",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940621",
+                        "type":"ip-dst",
+                        "value":"86.106.131.141",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940622",
+                        "type":"domain",
+                        "value":"space-delivery.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940641",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940642",
+                        "type":"ip-dst",
+                        "value":"89.34.111.160",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940642",
+                        "type":"domain",
+                        "value":"satellitedeluxpanorama.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1513940654",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940654",
+                        "type":"ip-dst",
+                        "value":"185.216.35.26",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1513940654",
+                        "type":"domain",
+                        "value":"webviewres.net",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,133 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-01",
+        "published":true,
+        "info":"OSINT - Test Cryptomix Ransomware Variant Released",
+        "publish_timestamp":"1512391963",
+        "timestamp":"1512388614",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"filename",
+                "value":"_HELP_INSTRUCTION.TXT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"email-src",
+                "value":"test757@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"email-src",
+                "value":"test757@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"email-src",
+                "value":"test757xz@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"email-src",
+                "value":"test757xy@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"email-src",
+                "value":"test757@consultant.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"comment",
+                "value":"Today, MalwareHunterTeam discovered a new variant of the CryptoMix ransomware that appends the .TEST extension to encrypted files and changes the contact emails used by the ransomware. \r\n\r\nIn this article I will provide a brief summary of any changes that have occurred in this new variant.  As we are always looking for weaknesses, if you are a victim of this variant and decide to pay the ransom, please send us the decryptor so we can take a look at it. You can also discuss or receive support for Cryptomix ransomware infections in our dedicated Cryptomix Help & Support Topic.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512388609",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/test-cryptomix-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0b2f5f6e61a81c9a872827e5ea1fd5ea05ca470b55975267b00033251dc79c1b",
+                "timestamp":"1512388610",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0b2f5f6e61a81c9a872827e5ea1fd5ea05ca470b55975267b00033251dc79c1b",
+                "timestamp":"1512388610",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 0b2f5f6e61a81c9a872827e5ea1fd5ea05ca470b55975267b00033251dc79c1b",
+                "timestamp":"1512388610",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0b2f5f6e61a81c9a872827e5ea1fd5ea05ca470b55975267b00033251dc79c1b/analysis/1512356719/",
+                "to_ids":false
+            }
+        ]
+    }
+}

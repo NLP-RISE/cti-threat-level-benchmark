@@ -1,0 +1,371 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-07",
+        "published":true,
+        "info":"Erebus Ransomware Utilizes a UAC Bypass and Request a $90 Ransom Payment",
+        "publish_timestamp":"1486712925",
+        "timestamp":"1486712914",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Ransomware\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"ransomware\""
+            },
+            {
+                "name":"dnc:malware-type=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/erebus-ransomware-utilizes-a-uac-bypass-and-request-a-90-ransom-payment/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"comment",
+                "value":"A sample of a potentially new ransomware called Erebus has been discovered by MalwareHunterTeam on VirusTotal. I say that this is a potentially new ransomware because TrendMicro had reported another ransomware using the same name was previously released back in September 2016. Though I do not have a sample of the original Erebus, from its outward characteristics, the one discovered today looks like either a complete rewrite or a new ransomware using the same name..",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKEY_CLASSES_ROOT.msc",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Classes\\mscfile",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Classes\\mscfile\\shell",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Classes\\mscfile\\shell\\open",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Classes\\mscfile\\shell\\open\\command",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Classes\\mscfile\\shell\\open\\command\\ %UserProfile%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Data\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Data\\Tor\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Data\\Tor\\geoip",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Data\\Tor\\geoip6",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libeay32.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libevent-2-0-5.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libevent_core-2-0-5.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libevent_extra-2-0-5.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libgcc_s_sjlj-1.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\libssp-0.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\ssleay32.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\tor-gencert.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\tor.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor\\Tor\\zlib1.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Local\\Temp\\tor.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\cached-certs",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\cached-microdesc-consensus",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\cached-microdescs.new",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\lock",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\tor\\state",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\Desktop\\test\\xor-test.pdf",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\Desktop\\README.html",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\Documents\\README.html",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"filename",
+                "value":"%UserProfile%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"url",
+                "value":"http://erebus5743lnq6db.onion/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"text",
+                "value":"Files crypted!\r\nEvery important file on this computer was crypted. Please look on your documents or desktop folder for a file called README.html for instructions on how to decrypt them.",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486626261",
+                "type":"text",
+                "value":"Data crypted\r\n\r\nEvery important file (documents,photos,videos etc) on this computer has been encrypted using an unique key for this computer. \r\nIt is impossible to recover your files without this key. You can try to open them they won't work and will stay that way. \r\n\r\nThat is, unless you buy a decryption key and decrypt your files.\r\nClick 'recover my files' below to go to the website allowing you to buy the key. \r\nFrom now on you have 96 hours to recover the key after this time it will be deleted and your files will stay unusable forever \r\nYour id is : '[id]' you can find this page on your desktop and document folder Use it to \r\n\r\nif the button below doesn't work you need to download a web browser called 'tor browser' \r\ndownload by clicking here then install the browser, it's like chrome, firefox or internet explorer except it allows you to browse to special websites. \r\nonce it's launched browse to http://erebus5743lnq6db.onion",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ed3a685ca65de70b79faf95bbd94c343e73a150e83184f67e0bdb35b11d05791",
+                "timestamp":"1486626277",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ed3a685ca65de70b79faf95bbd94c343e73a150e83184f67e0bdb35b11d05791",
+                "timestamp":"1486626277",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ed3a685ca65de70b79faf95bbd94c343e73a150e83184f67e0bdb35b11d05791",
+                "timestamp":"1486626279",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ed3a685ca65de70b79faf95bbd94c343e73a150e83184f67e0bdb35b11d05791/analysis/1486609351/",
+                "to_ids":false
+            }
+        ]
+    }
+}

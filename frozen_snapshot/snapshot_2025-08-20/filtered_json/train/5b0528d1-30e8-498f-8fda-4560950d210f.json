@@ -1,0 +1,1021 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-22",
+        "published":false,
+        "info":"OSINT - Turla Mosquito: A shift towards more generic tools",
+        "publish_timestamp":"0",
+        "timestamp":"1527952165",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Turla\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527065208",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2018/05/22/turla-mosquito-shift-towards-generic-tools/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527066648",
+                "type":"attachment",
+                "value":"ESET_Turla_Mosquito.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527066819",
+                "type":"link",
+                "value":"https://github.com/eset/malware-ioc/tree/master/turla#mosquito-indicators-of-compromise",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1527067569",
+                "type":"url",
+                "value":"https://209.239.115.91/6OHEJ",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1527067570",
+                "type":"url",
+                "value":"https://70.32.39.219/n2DE3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"domain",
+                "value":"smallcloud.ga",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"domain",
+                "value":"fleetwood.tk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"url",
+                "value":"docs.google.com/uc?authuser=0&id=0B_wY-Tu90pbjTDllRENW",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"hostname",
+                "value":"adstore.twilightparadox.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"domain",
+                "value":"bigpen.ga",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"url",
+                "value":"https://script.google.com/macros/s/AKfycbxxPPyGP3Z5wgwbs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"url",
+                "value":"https://script.google.com/macros/s/AKfycbwF_VS5wHqlH",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"hostname",
+                "value":"ebay-global.publicvm.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"psychology-blog.ezua.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"agony.compress.to",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"gallop.mefound.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"auberdine.etowns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"hostname",
+                "value":"skyrim.3d-game.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527070010",
+                "type":"hostname",
+                "value":"officebuild.4irc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"sendmessage.mooo.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"robot.wikaba.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server URLs",
+                "timestamp":"1527069988",
+                "type":"hostname",
+                "value":"tellmemore.4irc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Fake adobe URL",
+                "timestamp":"1527952161",
+                "type":"url",
+                "value":"http://get.adobe.com/stats/AbfFcBebD/?q=",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Fake adobe URL",
+                "timestamp":"1527952124",
+                "type":"url",
+                "value":"http://get.adobe.com/flashplayer/download/update/x32",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Fake adobe URL",
+                "timestamp":"1527952138",
+                "type":"url",
+                "value":"http://get.adobe.com/flashplayer/download/update/x64",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527085149",
+                "type":"text",
+                "value":"Turla is a notorious espionage group, and has been active for at least ten years. It came to light in 2008, when Turla breached the US Department of Defense [1]. Since then, there have been numerous security incidents involving Turla targeting several governments and sensitive businesses such as the defense industry [2].\r\n\r\nOur January 2018 white paper [3] was the first public analysis of a Turla campaign called Mosquito. We have also published indicators of compromise [4]. Since then, the campaign has remained very active and attackers have been busy changing their tactics to remain as stealthy as possible.\r\n\r\nStarting in March 2018, we observed a significant change in the campaign: it now leverages the open source exploitation framework Metasploit before dropping the custom Mosquito backdoor. It is not the first time Turla has used generic tools. In the past, we have seen the group using open-source password dumpers such as Mimikatz. However, to our knowledge, this is the first time Turla has used Metasploit as a first stage backdoor, instead of relying on one of its own tools such as Skipper [5].",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527068145",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068145",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068146",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068146",
+                        "type":"filename",
+                        "value":"flashplayer28_xa_install.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527068146",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527068203",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068203",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068204",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068204",
+                        "type":"filename",
+                        "value":"msupdateconf.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527068204",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527068256",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068256",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068256",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527068257",
+                        "type":"filename",
+                        "value":"msupdatesmal.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527068257",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Installer",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168111",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071702",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071703",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071703",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071704",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Loader (.tlb)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527071750",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071751",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071751",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071751",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071752",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Backdoor (.pdb)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168111",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071793",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071793",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071794",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071794",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Installer",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168111",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071838",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071839",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071839",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071840",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Loader (.tlb) ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071893",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071894",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071894",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071894",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Backdoor (.pdb) ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071969",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071969",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527071970",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527071970",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Installer",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079283",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079284",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079284",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527079284",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Backdoor",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079763",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079763",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527079764",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527079764",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Installer (JS backdoor)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527080618",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527080618",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527080619",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527080619",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"google_update_checker.js",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527081362",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527081363",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527081363",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527081363",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527081364",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"local_update_checker.js",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527083776",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083777",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083777",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083778",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527083778",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Installer (Launch a PowerShell to download an executable at http://get.adobe[.]com/flashplayer/download/update/x32)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083816",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083817",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527083817",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527083818",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Backdoor",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084367",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084367",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084368",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527084368",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Old Backdoor",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084600",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084601",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527084601",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527084601",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168109"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168110"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168111"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168112"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168113"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168114"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168115"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527168119"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168118"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168118"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168119"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168120"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527168121"
+            }
+        ]
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2014-03-19",
+        "published":true,
+        "info":"OSINT APT Bestia used in APT attacks on Polish Government",
+        "publish_timestamp":"1456870751",
+        "timestamp":"1456870733",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456869657",
+                "type":"link",
+                "value":"https://twitter.com/yararules/status/704613871294746625",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456869657",
+                "type":"link",
+                "value":"https://zaufanatrzeciastrona.pl/post/ukierunkowany-atak-na-pracownikow-polskich-samorzadow/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456869716",
+                "type":"link",
+                "value":"https://github.com/Yara-Rules/rules/blob/master/malware/APT_Bestia.yar",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1456870733",
+                "type":"yara",
+                "value":"rule APT_bestia\r\n{\r\nmeta:\r\n    author = \"Adam Ziaja <adam@adamziaja.com> http://adamziaja.com\"\r\n    date = \"2014-03-19\"\r\n    description = \"Bestia.3.02.012.07 malware used in APT attacks on Polish government\"\r\n    references = \"http://zaufanatrzeciastrona.pl/post/ukierunkowany-atak-na-pracownikow-polskich-samorzadow/\" /* PL */\r\n    hash0 = \"9bb03bb5af40d1202378f95a6485fba8\"\r\n    hash1 = \"7d9a806e0da0b869b10870dd6c7692c5\"\r\n    maltype = \"apt\"\r\n    filetype = \"exe\"\r\nstrings:\r\n    /* generated with https://github.com/Xen0ph0n/YaraGenerator */\r\n    $string0 = \"u4(UeK\"\r\n    $string1 = \"nMiq/'p\"\r\n    $string2 = \"_9pJMf\"\r\n    $string3 = \"ICMP.DLL\"\r\n    $string4 = \"EG}QAp\"\r\n    $string5 = \"tsjWj:U\"\r\n    $string6 = \"FileVersion\" wide\r\n    $string7 = \"O2nQpp\"\r\n    $string8 = \"2}W8we\"\r\n    $string9 = \"ILqkC:l\"\r\n    $string10 = \"f1yzMk\"\r\n    $string11 = \"AutoIt v3 Script: 3, 3, 8, 1\" wide\r\n    $string12 = \"wj<1uH\"\r\n    $string13 = \"6fL-uD\"\r\n    $string14 = \"B9Iavo<\"\r\n    $string15 = \"rUS)sO\"\r\n    $string16 = \"FJH{_/f\"\r\n    $string17 = \"3e 03V\"\r\ncondition:\r\n    17 of them\r\n}",
+                "to_ids":true
+            }
+        ]
+    }
+}

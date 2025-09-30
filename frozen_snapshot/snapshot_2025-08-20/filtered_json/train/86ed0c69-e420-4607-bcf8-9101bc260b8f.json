@@ -1,0 +1,163 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-01-19",
+        "published":true,
+        "info":"New TTPs observed in Mint Sandstorm campaign targeting high-profile individuals at universities and research orgs",
+        "publish_timestamp":"1705699443",
+        "timestamp":"1705699430",
+        "Tag":[
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"Mint Sandstorm\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"APT35\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Belgium\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"France\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Israel\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"United Kingdom\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"United States\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Academia - University\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Research - Innovation\""
+            },
+            {
+                "name":"misp-galaxy:country=\"iran\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spear phishing messages with malicious links - T1369\""
+            },
+            {
+                "name":"misp-galaxy:sigma-rules=\"Suspicious Double Extension Files\""
+            },
+            {
+                "name":"misp-galaxy:sigma-rules=\"PUA - NirCmd Execution\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1705699187",
+                "type":"link",
+                "value":"https://www.microsoft.com/en-us/security/blog/2024/01/17/new-ttps-observed-in-mint-sandstorm-campaign-targeting-high-profile-individuals-at-universities-and-research-orgs/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"east-healthy-dress.glitch.me",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"coral-polydactyl-dragonfruit.glitch.me",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"kwhfibejjyxregxmnpcs.supabase.co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"epibvgvoszemkwjnplyc.supabase.co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"ndrrftqrlblfecpupppp.supabase.co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1705699208",
+                "type":"hostname",
+                "value":"cloud-document-edit.onrender.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"curl command to retrieve a series of malicious files from attacker-controlled subdomains",
+                "timestamp":"1705699321",
+                "type":"domain",
+                "value":"glitch.me",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"curl command to retrieve a series of malicious files from attacker-controlled subdomains",
+                "timestamp":"1705699321",
+                "type":"domain",
+                "value":"supabase.co",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"added a file, typically named a.vbs, to the CurrentVersion\\Run registry key",
+                "timestamp":"1705699358",
+                "type":"filename",
+                "value":"Persistence.vbs",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1705699247",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1705699247",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1705699247",
+                        "type":"filename",
+                        "value":"MediaPl.dll",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

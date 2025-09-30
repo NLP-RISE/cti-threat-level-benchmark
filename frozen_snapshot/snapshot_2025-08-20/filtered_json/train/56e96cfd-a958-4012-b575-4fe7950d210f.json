@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-16",
+        "published":true,
+        "info":"OSINT - Malicious iBanking application with new uninstall countermeasures",
+        "publish_timestamp":"1458138632",
+        "timestamp":"1458138550",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458138428",
+                "type":"comment",
+                "value":"Our CERT laboratory recently received a sample of iBanking malware (along with a malicious JavaScript code snippet associated with it), posing as the mobile Trusteer Rapport antimalware solution. The attack scenario isnâ€™t new, it has been used many times in the past, but recently we see an increase in attacks on Polish users of electronic banking using this method. In comparison to previous, similar programs, the analyzed application has proven much more difficult to remove and itâ€™s code was much better obfuscated.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458138442",
+                "type":"link",
+                "value":"http://www.cert.pl/news/11166/langswitch_lang/en",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples",
+                "timestamp":"1458138469",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples",
+                "timestamp":"1458138469",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples - Xchecked via VT: 30f75776b1ea0df28186e0e6a141c039e50089e80becb62918915643249fb726",
+                "timestamp":"1458138509",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples - Xchecked via VT: 30f75776b1ea0df28186e0e6a141c039e50089e80becb62918915643249fb726",
+                "timestamp":"1458138510",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458138510",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/30f75776b1ea0df28186e0e6a141c039e50089e80becb62918915643249fb726/analysis/1455733718/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples - Xchecked via VT: aa6f87e50e9df2a88fc2146ba477abe8099459012ed1b9d4f6c03ec54ed2f754",
+                "timestamp":"1458138510",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Samples - Xchecked via VT: aa6f87e50e9df2a88fc2146ba477abe8099459012ed1b9d4f6c03ec54ed2f754",
+                "timestamp":"1458138511",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458138511",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/aa6f87e50e9df2a88fc2146ba477abe8099459012ed1b9d4f6c03ec54ed2f754/analysis/1457870277/",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1458138550",
+                "type":"text",
+                "value":"Android.Trojan.HesperBot.",
+                "to_ids":false
+            }
+        ]
+    }
+}

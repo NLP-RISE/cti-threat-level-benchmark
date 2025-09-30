@@ -1,0 +1,452 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-02-29",
+        "published":true,
+        "info":"OSINT - ATMZombie: banking trojan in Israeli waters",
+        "publish_timestamp":"1456743741",
+        "timestamp":"1456743712",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743485",
+                "type":"link",
+                "value":"https://securelist.com/blog/research/73866/atmzombie-banking-trojan-in-israeli-waters/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743506",
+                "type":"comment",
+                "value":"On November 2015, Kaspersky Lab researchers identified ATMZombie, a banking Trojan that is considered to be the first malware to ever steal money from Israeli banks. It uses insidious injection and other sophisticated and stealthy methods. The first method, dubbed â€œproxy-changingâ€, is commonly used for HTTP packets inspections. It involves modifying browser proxy configurations and capturing traffic between a client and a server, acting as Man-In-The-Middle.\r\n\r\nAlthough this is efficient for testing, streaming bank details isnâ€™t as easy. Banks are using encrypted channels, signed with authorized certificates, to prevent the data from being streamed in clear-text. The attackers, however, realized the missing piece and have since issued a certificate of their own, which is embedded in the dropper and is inserted in the root CA list of common browsers in the victimâ€™s machine.\r\n\r\nThe method of using a â€œproxy-changerâ€ Trojan to steal bank credentials has been around since the end of 2005, and is being actively used by Brazilian cybercriminals; however, it wasnâ€™t until 2012 that Kaspersky Lab researchers compiled a full attack analysis. â€œIn Brazil malicious PAC files in Trojan bankers have been increasingly common since 2009, when several families such as Trojan.Win32.ProxyChanger started to force the URLs of PAC files in the browser of infected machines.â€œ, said Fabio Assolini, Senior Security Researcher at GReAT Kaspersky Lab, in his article.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743528",
+                "type":"domain",
+                "value":"retsback.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743528",
+                "type":"domain",
+                "value":"updconfs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743529",
+                "type":"domain",
+                "value":"systruster.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743529",
+                "type":"domain",
+                "value":"msupdcheck.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743544",
+                "type":"ip-dst",
+                "value":"91.230.211.206",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743544",
+                "type":"ip-dst",
+                "value":"185.86.77.153",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743545",
+                "type":"ip-dst",
+                "value":"91.215.154.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1456743545",
+                "type":"ip-dst",
+                "value":"88.214.236.121",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zym",
+                "timestamp":"1456743629",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyt",
+                "timestamp":"1456743630",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyk",
+                "timestamp":"1456743631",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyl",
+                "timestamp":"1456743631",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PAC",
+                "timestamp":"1456743632",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyp",
+                "timestamp":"1456743632",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyq",
+                "timestamp":"1456743633",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg",
+                "timestamp":"1456743633",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg",
+                "timestamp":"1456743634",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg",
+                "timestamp":"1456743634",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg",
+                "timestamp":"1456743635",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: e5b7fd7eed59340027625ac39bae7c81",
+                "timestamp":"1456743712",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: e5b7fd7eed59340027625ac39bae7c81",
+                "timestamp":"1456743713",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743713",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/83c8f47fb756860134a06eb2241467450c106059849de0a4838811f2af02f93d/analysis/1447251902/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: 13d9352a27b626e501f5889bfd614b34",
+                "timestamp":"1456743713",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: 13d9352a27b626e501f5889bfd614b34",
+                "timestamp":"1456743714",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743714",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/76ef5d7d06e2a11bb3dd78b8a6e5f3042b79b69bec034d07f97540d8514dca3b/analysis/1447116816/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: efa5ea2c511b08d0f8259a10a49b27ad",
+                "timestamp":"1456743714",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: efa5ea2c511b08d0f8259a10a49b27ad",
+                "timestamp":"1456743715",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743715",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d5a4b61207294f29c4f8abd317df38d8426ef9f0c7240132d9c33764e0b535d4/analysis/1456742204/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: d08e51f8187df278296a8c4ff5cff0de",
+                "timestamp":"1456743715",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyg - Xchecked via VT: d08e51f8187df278296a8c4ff5cff0de",
+                "timestamp":"1456743716",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743716",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/23dad1d88a73b3e4e7a938e228aa87f6af1d035d1f258644a38c085342c8eda4/analysis/1456742000/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyq - Xchecked via VT: 80440e78a68583b180ad4d3e9a676a6e",
+                "timestamp":"1456743716",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyq - Xchecked via VT: 80440e78a68583b180ad4d3e9a676a6e",
+                "timestamp":"1456743717",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743717",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/dee548966f1e6f8d34684c98616da3021a2db5bd9b7de3543befa5a1c686ef20/analysis/1456739595/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyp - Xchecked via VT: d2bf165284ab1953a96dfa7b642637a8",
+                "timestamp":"1456743717",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyp - Xchecked via VT: d2bf165284ab1953a96dfa7b642637a8",
+                "timestamp":"1456743718",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743718",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/966d747a0dfdce90c32c9c8d33355c5493310b7abaa50eb0e208b35dc7614202/analysis/1448457095/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PAC - Xchecked via VT: 84bb5a77e28b3539a8022bc3612d4f4c",
+                "timestamp":"1456743718",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PAC - Xchecked via VT: 84bb5a77e28b3539a8022bc3612d4f4c",
+                "timestamp":"1456743719",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743719",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0ea3e84cd40ee1a50a4161413154c983300b38aa4c78a910ba0f728618ec98e3/analysis/1447258543/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyl - Xchecked via VT: 47b316e3227d618089eb1625c4202142",
+                "timestamp":"1456743719",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyl - Xchecked via VT: 47b316e3227d618089eb1625c4202142",
+                "timestamp":"1456743720",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743720",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/eb18f0d3abc6b9bfdd3d09082a027bebc4963c9bbee28b8708888cb276a00049/analysis/1456743361/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyk - Xchecked via VT: c0201ab2a45bc0e17ebd186059d5a59e",
+                "timestamp":"1456743720",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyk - Xchecked via VT: c0201ab2a45bc0e17ebd186059d5a59e",
+                "timestamp":"1456743721",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743721",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/294f44963b3d1e305fb4b3498a0ee616313660bdf8197d0cb2a94c0cdfaf7539/analysis/1447092121/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyt - Xchecked via VT: 4c5b7a8187475be251d05655edcaccbe",
+                "timestamp":"1456743721",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zyt - Xchecked via VT: 4c5b7a8187475be251d05655edcaccbe",
+                "timestamp":"1456743722",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743722",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/64225a6e0815bc5b6c3414985ef5b3f374d4797d357bd243a19afc08d75c87e9/analysis/1448376105/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zym - Xchecked via VT: 6d11090c78e6621c21836c98808ff0f4",
+                "timestamp":"1456743722",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan-Banker.Win32.Capper.zym - Xchecked via VT: 6d11090c78e6621c21836c98808ff0f4",
+                "timestamp":"1456743723",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456743723",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8662e3c0c564b85ee4af656dcf76fdafdacb41a2f13a3de509bca16b2e8928c7/analysis/1447502166/",
+                "to_ids":false
+            }
+        ]
+    }
+}

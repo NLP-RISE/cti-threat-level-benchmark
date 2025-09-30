@@ -1,0 +1,173 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-10-11",
+        "published":true,
+        "info":"OSINT - How Stampado Ransomware Analysis Led To Yara Improvements",
+        "publish_timestamp":"1476169652",
+        "timestamp":"1476169628",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1476169466",
+                "type":"yara",
+                "value":"rule stampado_overlay\r\n{\r\nmeta:\r\ndescription = \"Catches Stampado samples looking for \\\\r at the beginning of PE overlay section\"\r\nreference = \"\"\r\nauthor = \"Fernando Merces, FTR, Trend Micro\"\r\ndate = \"2016-07\"\r\nmd5 = \"a393b9536a1caa34914636d3da7378b5\"\r\nmd5 = \"dbf3707a9cd090853a11dda9cfa78ff0\"\r\nmd5 = \"dd5686ca7ec28815c3cf3ed3dbebdff2\"\r\nmd5 = \"6337f0938e4a9c0ef44ab99deb0ef466\"\r\n\r\ncondition:\r\npe.characteristics == 0x122 and\r\npe.number_of_sections == 5 and\r\npe.imports(\"VERSION.dll\", \"VerQueryValueW\") and uint8(pe.sections[4].raw_data_offset + pe.sections[4].raw_data_size) == 0x0d\r\n\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1476169490",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1476169491",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1476169491",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1476169491",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1476169616",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/stampado-ransomware-analysis-led-yara-improvements",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: 6337f0938e4a9c0ef44ab99deb0ef466",
+                "timestamp":"1476169628",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: 6337f0938e4a9c0ef44ab99deb0ef466",
+                "timestamp":"1476169628",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: 6337f0938e4a9c0ef44ab99deb0ef466",
+                "timestamp":"1476169629",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3f147a037baac4220a84b5fed4c167fc75cf331126735d70f67c2c8fb7f50c87/analysis/1475531539/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dd5686ca7ec28815c3cf3ed3dbebdff2",
+                "timestamp":"1476169629",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dd5686ca7ec28815c3cf3ed3dbebdff2",
+                "timestamp":"1476169630",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dd5686ca7ec28815c3cf3ed3dbebdff2",
+                "timestamp":"1476169630",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cfe1c48aae527864b3f96fabdc771decf3ba388456010a83a17a52b1d40b88ef/analysis/1475870104/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dbf3707a9cd090853a11dda9cfa78ff0",
+                "timestamp":"1476169631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dbf3707a9cd090853a11dda9cfa78ff0",
+                "timestamp":"1476169631",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: dbf3707a9cd090853a11dda9cfa78ff0",
+                "timestamp":"1476169632",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/78db508226ccacd363fc0f02b3ae326a2bdd0baed3ae51ddf59c3fc0fcf60669/analysis/1474984811/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: a393b9536a1caa34914636d3da7378b5",
+                "timestamp":"1476169632",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: a393b9536a1caa34914636d3da7378b5",
+                "timestamp":"1476169633",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: a393b9536a1caa34914636d3da7378b5",
+                "timestamp":"1476169633",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/342933cb4cbb31a2c30ac1733afc318a6e5cd0226160a59197686d635ec71b20/analysis/1474984808/",
+                "to_ids":false
+            }
+        ]
+    }
+}

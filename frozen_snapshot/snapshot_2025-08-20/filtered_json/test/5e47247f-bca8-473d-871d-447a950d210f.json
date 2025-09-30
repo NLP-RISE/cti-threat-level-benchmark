@@ -1,0 +1,201 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-02-14",
+        "published":true,
+        "info":"XMRig & Masscan",
+        "publish_timestamp":"1581721636",
+        "timestamp":"1581721614",
+        "Tag":[
+            {
+                "name":"tlp:green"
+            },
+            {
+                "name":"dnc:malware-type=\"CoinMiner\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"RDP login from this IP",
+                "timestamp":"1581721504",
+                "type":"ip-src",
+                "value":"5.121.144.182",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Masscan GUI",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581720746",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720750",
+                        "type":"malware-sample",
+                        "value":"vint.exe|9f544e2f85d341e7c414174473fd9051",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720756",
+                        "type":"filename",
+                        "value":"vint.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720756",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720756",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720756",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581720756",
+                        "type":"size-in-bytes",
+                        "value":"178176",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Coin Miner & Persistance",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581720847",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720847",
+                        "type":"malware-sample",
+                        "value":"svshost.exe|81a4bc7617cee5761fd883413a1a26d3",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720848",
+                        "type":"filename",
+                        "value":"svshost.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720848",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720848",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581720848",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581720848",
+                        "type":"size-in-bytes",
+                        "value":"6621184",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"XMRig",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581721041",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"malware-sample",
+                        "value":"xmrig.exe|e13c006428e3d397c42b3c30122d99cc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"filename",
+                        "value":"xmrig.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581721041",
+                        "type":"size-in-bytes",
+                        "value":"6414848",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

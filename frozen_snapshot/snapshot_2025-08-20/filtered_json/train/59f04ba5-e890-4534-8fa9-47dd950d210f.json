@@ -1,0 +1,722 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-25",
+        "published":true,
+        "info":"OSINT - BadRabbit Ransomware Compiled by ThaiCERT, a member of the Electronic Transactions Development Agency",
+        "publish_timestamp":"1508930601",
+        "timestamp":"1508929710",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Bad Rabbit\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Restrict Workstation Communication\""
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Backup and Restore Process\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"Report 0.2 from ThaiCert",
+                "timestamp":"1508921209",
+                "type":"attachment",
+                "value":"BadRabbit Ransomware v0.2.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1508921209",
+                "type":"text",
+                "value":"Win32/Diskcoder.D",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1508921209",
+                "type":"text",
+                "value":"Trojan-Ransom.Win32.Gen.ftl",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1508921209",
+                "type":"text",
+                "value":"Win32/Tibbar.A",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1508921209",
+                "type":"text",
+                "value":"Troj/Ransom-ERK",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508921209",
+                "type":"text",
+                "value":"new ransomware strain named BadRabbit is wreaking havoc in many Eastern European countries,\r\naffecting both government agencies and private businesses alike.\r\nAt the time of writing, the ransomware has hit countries such as Russia, Ukraine, Bulgaria, and Turkey.\r\nConfirmed victims include the Odessa airport in Ukraine, the Kiev subway system in Ukraine, the\r\nUkrainian Ministry of Infrastructure, and three Russian news agencies, including Interfax and Fontanka.\r\nUkraine's CERT team has posted an alert and is warning Ukrainian businesses about this new outbreak.\r\nThe speed with which BadRabbit spread is similar to the WannaCry and NotPetya outbreaks that have hit\r\nin May and June this year, respectively.\r\nThe domain where the malware is downloaded from has been taken down already.\r\nAt the time of writing, no recovery tools for the encryption have been found.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926756",
+                "type":"link",
+                "value":"https://securingtomorrow.mcafee.com/mcafee-labs/badrabbit-ransomware-burrows-russia-ukraine/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926607",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/bad-rabbit-ransomware-outbreak-hits-eastern-europe/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926553",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/threat-analysis/2017/10/badrabbit-closer-look-new-version-petyanotpetya/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926544",
+                "type":"link",
+                "value":"https://securelist.com/bad-rabbit-ransomware/82851/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926563",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2017/10/24/bad-rabbit-not-petya-back/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926574",
+                "type":"link",
+                "value":"https://www.group-ib.com/blog/badrabbit",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926617",
+                "type":"link",
+                "value":"https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Tibbar.A",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926478",
+                "type":"link",
+                "value":"http://blog.talosintelligence.com/2017/10/bad-rabbit.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926534",
+                "type":"link",
+                "value":"https://otx.alienvault.com/pulse/59ef5e053db003162704fcb2/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Malware analysis sources",
+                "timestamp":"1508926585",
+                "type":"link",
+                "value":"https://labs.bitdefender.com/2017/10/bad-rabbit-ransomware-strikes-ukraine-likely-related-to-goldeneye/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"International advisories",
+                "timestamp":"1508926644",
+                "type":"link",
+                "value":"https://www.us-cert.gov/ncas/current-activity/2017/10/24/Multiple-Ransomware-Infections-Reported",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926793",
+                "type":"link",
+                "value":"https://www.csoonline.com/article/3234691/security/badrabbit-ransomware-attacks-multiple-media-outlets.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926764",
+                "type":"link",
+                "value":"https://www.cyberscoop.com/badrabbit-ransomware-spreading-across-ukraine-russia/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926803",
+                "type":"link",
+                "value":"https://www.darkreading.com/attacks-breaches/bad-rabbit-ransomware-attacks-rock-russia-ukraine---and-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926786",
+                "type":"link",
+                "value":"https://www.infosecurity-magazine.com/news/new-waves-of-ransomware-spread/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926779",
+                "type":"link",
+                "value":"https://www.itnews.com.au/news/is-bad-rabbit-the-new-notpetya-476121",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925851",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/cybercrime/2017/10/badrabbit-ransomware-strikes-eastern-europe/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://motherboard.vice.com/en_us/article/59yb4q/bad-rabbit-petya-ransomware-russia-ukraine",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926772",
+                "type":"link",
+                "value":"https://nakedsecurity.sophos.com/2017/10/24/bad-rabbit-ransomware-outbreak/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926705",
+                "type":"link",
+                "value":"https://researchcenter.paloaltonetworks.com/2017/10/threat-brief-information-bad-rabbit-ransomware-attacks/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926689",
+                "type":"link",
+                "value":"http://www.reuters.com/article/us-ukraine-cyber/new-wave-of-cyber-attacks-hits-ukraine-and-russia-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926697",
+                "type":"link",
+                "value":"http://www.reuters.com/article/us-ukraine-cyber/new-cyber-attacks-hit-airport-metro-in-ukraine-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926635",
+                "type":"link",
+                "value":"http://securityaffairs.co/wordpress/64713/malware/bad-rabbit-ransomware.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926670",
+                "type":"link",
+                "value":"https://thehackernews.com/2017/10/bad-rabbit-ransomware-attack.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926598",
+                "type":"link",
+                "value":"https://www.theregister.co.uk/2017/10/24/badrabbit_ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://threatpost.com/badrabbit-ransomware-attacks-hitting-russia-ukraine/128593/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926679",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2017/10/24/kiev-metro-hit-new-variant-infamous-diskcoder-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926661",
+                "type":"link",
+                "value":"https://www.kaspersky.com/blog/bad-rabbit-ransomware/19887/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926653",
+                "type":"link",
+                "value":"https://www.pcmag.com/news/356977/badrabbit-ransomware-targets-systems-in-russia-ukraine",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508926626",
+                "type":"link",
+                "value":"https://www.technologyreview.com/the-download/609206/a-new-strain-of-ransomware-is-hitting-eastern-europe/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"https://www.bloomberg.com/news/articles/2017-10-24/russian-news-agency-interfax-faces-unprecedented-hacker-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://www.washingtontimes.com/news/2017/oct/24/badrabbit-ransomware-strain-infects-russian-media-/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"https://techcrunch.com/2017/10/24/badrabbit-notpetya-russia-ukraine-ransomware-malware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"http://www.bbc.co.uk/news/technology-41740768",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"http://www.zdnet.com/article/bad-rabbit-ransomware-a-new-variant-of-petya-is-spreading-warn-researchers/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://www.wired.com/story/badrabbit-ransomware-notpetya-russia-ukraine/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"https://arstechnica.com/information-technology/2017/10/new-wave-of-data-encrypting-malware-crashes-through-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://www.scmagazine.com/badrabbit-ransomware-spreading-in-russia-and-the-ukraine-vaccine-",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"https://www.bangkokpost.com/news/world/1348551/new-badrabbit-ransomware-attacks-hit-europe",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508925901",
+                "type":"link",
+                "value":"https://isc.sans.edu/forums/diary/BadRabbit+New+ransomware+wave+hitting+RU+UA/22964/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://gizmodo.com/bad-rabbit-ransomware-strikes-russia-and-ukraine-1819814538",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"http://money.cnn.com/2017/10/24/technology/bad-rabbit-ransomware-attack/index.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"English news references",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://www.windowscentral.com/new-bad-rabbit-ransomware-attack-spreading-across-europe",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"\"Vaccine found\" Mitigation",
+                "timestamp":"1508929710",
+                "type":"link",
+                "value":"https://www.cybereason.com/blog/cybereason-researcher-discovers-vaccine-for-badrabbit-ransomware",
+                "to_ids":false
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1508926904",
+                "type":"btc",
+                "value":"1GxXGMoz7HAVwRDZd7ezkKipY4DHLUqzmM",
+                "to_ids":true
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1508926899",
+                "type":"btc",
+                "value":"17GhezAiRhgB8DGArZXBkrZBFTGCC9SQ2Z",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL 1",
+                "timestamp":"1508921210",
+                "type":"url",
+                "value":"http://1dnscontrol.com/flash_install.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL 2",
+                "timestamp":"1508921210",
+                "type":"url",
+                "value":"http://1dnscontrol.com/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inject URL",
+                "timestamp":"1508921210",
+                "type":"url",
+                "value":"http://185.149.120.3/scholargoogle/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Payment site",
+                "timestamp":"1508921210",
+                "type":"url",
+                "value":"http://caforssztxqzf2nm.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1508921210",
+                "type":"windows-scheduled-task",
+                "value":"viserion_",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1508921210",
+                "type":"windows-scheduled-task",
+                "value":"rhaegal",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1508921210",
+                "type":"windows-scheduled-task",
+                "value":"drogon",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"diskcryptor client",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x86",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x64",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infpub.dat diskcoder",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x32 diskcryptor drv",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x64 diskcryptor drv",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"install_flash_player.exe dropper",
+                "timestamp":"1508921210",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"install_flash_player.exe dropper - Xchecked via VT: 630325cac09ac3fab908f903e3b00d0dadd5fdaa0875ed8496fcbb97a558d0da",
+                "timestamp":"1508921210",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"install_flash_player.exe dropper - Xchecked via VT: 630325cac09ac3fab908f903e3b00d0dadd5fdaa0875ed8496fcbb97a558d0da",
+                "timestamp":"1508921210",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"install_flash_player.exe dropper - Xchecked via VT: 630325cac09ac3fab908f903e3b00d0dadd5fdaa0875ed8496fcbb97a558d0da",
+                "timestamp":"1508921210",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/630325cac09ac3fab908f903e3b00d0dadd5fdaa0875ed8496fcbb97a558d0da/analysis/1508920901/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x64 diskcryptor drv - Xchecked via VT: 0b2f863f4119dc88a22cc97c0a136c88a0127cb026751303b045f7322a8972f6",
+                "timestamp":"1508921210",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x64 diskcryptor drv - Xchecked via VT: 0b2f863f4119dc88a22cc97c0a136c88a0127cb026751303b045f7322a8972f6",
+                "timestamp":"1508921210",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"cscc.dat x64 diskcryptor drv - Xchecked via VT: 0b2f863f4119dc88a22cc97c0a136c88a0127cb026751303b045f7322a8972f6",
+                "timestamp":"1508921210",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0b2f863f4119dc88a22cc97c0a136c88a0127cb026751303b045f7322a8972f6/analysis/1508918584/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x32 diskcryptor drv - Xchecked via VT: 682adcb55fe4649f7b22505a54a9dbc454b4090fc2bb84af7db5b0908f3b7806",
+                "timestamp":"1508921210",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"cscc.dat x32 diskcryptor drv - Xchecked via VT: 682adcb55fe4649f7b22505a54a9dbc454b4090fc2bb84af7db5b0908f3b7806",
+                "timestamp":"1508921210",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"cscc.dat x32 diskcryptor drv - Xchecked via VT: 682adcb55fe4649f7b22505a54a9dbc454b4090fc2bb84af7db5b0908f3b7806",
+                "timestamp":"1508921210",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/682adcb55fe4649f7b22505a54a9dbc454b4090fc2bb84af7db5b0908f3b7806/analysis/1508920930/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infpub.dat diskcoder - Xchecked via VT: 579fd8a0385482fb4c789561a30b09f25671e86422f40ef5cca2036b28f99648",
+                "timestamp":"1508921210",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infpub.dat diskcoder - Xchecked via VT: 579fd8a0385482fb4c789561a30b09f25671e86422f40ef5cca2036b28f99648",
+                "timestamp":"1508921210",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"infpub.dat diskcoder - Xchecked via VT: 579fd8a0385482fb4c789561a30b09f25671e86422f40ef5cca2036b28f99648",
+                "timestamp":"1508921210",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/579fd8a0385482fb4c789561a30b09f25671e86422f40ef5cca2036b28f99648/analysis/1508917915/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x64 - Xchecked via VT: 301b905eb98d8d6bb559c04bbda26628a942b2c4107c07a02e8f753bdcfe347c",
+                "timestamp":"1508921210",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x64 - Xchecked via VT: 301b905eb98d8d6bb559c04bbda26628a942b2c4107c07a02e8f753bdcfe347c",
+                "timestamp":"1508921210",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"mimikatz-like x64 - Xchecked via VT: 301b905eb98d8d6bb559c04bbda26628a942b2c4107c07a02e8f753bdcfe347c",
+                "timestamp":"1508921211",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/301b905eb98d8d6bb559c04bbda26628a942b2c4107c07a02e8f753bdcfe347c/analysis/1508918790/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x86 - Xchecked via VT: 2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035",
+                "timestamp":"1508921211",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz-like x86 - Xchecked via VT: 2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035",
+                "timestamp":"1508921211",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"mimikatz-like x86 - Xchecked via VT: 2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035",
+                "timestamp":"1508921211",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035/analysis/1508915760/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"diskcryptor client - Xchecked via VT: 8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93",
+                "timestamp":"1508921211",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"diskcryptor client - Xchecked via VT: 8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93",
+                "timestamp":"1508921211",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"diskcryptor client - Xchecked via VT: 8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93",
+                "timestamp":"1508921211",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8ebc97e05c8e1073bda2efb6f4d00ad7e789260afa2c276f0c72740b838a0a93/analysis/1508918221/",
+                "to_ids":false
+            }
+        ]
+    }
+}

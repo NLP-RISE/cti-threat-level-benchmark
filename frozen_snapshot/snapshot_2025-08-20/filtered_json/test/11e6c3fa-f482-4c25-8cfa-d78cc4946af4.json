@@ -1,0 +1,65 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-02-01",
+        "published":true,
+        "info":"Thanksgiving 2023 security incident",
+        "publish_timestamp":"1707299379",
+        "timestamp":"1707299376",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707299152",
+                "type":"link",
+                "value":"https://blog.cloudflare.com/thanksgiving-2023-security-incident",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Primary threat actor\r\nInfrastructure, owned by\r\nM247 Europe SRL (Bucharest,\r\nRomania)",
+                "timestamp":"1707299185",
+                "type":"ip-dst",
+                "value":"193.142.58.126",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sliver C2 server, owned by\r\nOVH SAS (London, England)",
+                "timestamp":"1707299194",
+                "type":"ip-dst",
+                "value":"198.244.174.214",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"nfrastructure serving Sliver\r\npayload",
+                "timestamp":"1707299200",
+                "type":"domain",
+                "value":"idowall.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sliver payload",
+                "timestamp":"1707299230",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sliver payload",
+                "timestamp":"1707299232",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-04-10",
+        "published":true,
+        "info":"TA547 Targets German Organizations with Rhadamanthys Stealer",
+        "publish_timestamp":"1712773820",
+        "timestamp":"1712773813",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Rhadamanthys\""
+            },
+            {
+                "name":"misp-galaxy:stealer=\"Rhadamanthys\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"TA547\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Germany\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1712773690",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/blog/threat-insight/security-brief-ta547-targets-german-organizations-rhadamanthys-stealer",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"PowerShell Payload",
+                "timestamp":"1712773766",
+                "type":"url",
+                "value":"https://bolibachan.com/g.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1712773766",
+                "type":"domain",
+                "value":"indscpm.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443 : C2",
+                "timestamp":"1712773766",
+                "type":"ip-dst|port",
+                "value":"94.131.104.223|443",
+                "to_ids":true
+            }
+        ]
+    }
+}

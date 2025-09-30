@@ -1,0 +1,47 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-29",
+        "published":true,
+        "info":"Malicious Emails Outlook Themed",
+        "publish_timestamp":"1530292641",
+        "timestamp":"1530292629",
+        "Tag":[
+            {
+                "name":"veris:action:social:variety=\"Phishing\""
+            },
+            {
+                "name":"veris:discovery_method=\"Int - NIDS\""
+            },
+            {
+                "name":"veris:attribute:confidentiality:data:variety=\"Credentials\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1530291813",
+                "type":"email-src",
+                "value":"a-huset.off@trollhattan.se",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1530291938",
+                "type":"url",
+                "value":"https://outlookindex11000.weebly.com/",
+                "to_ids":true
+            },
+            {
+                "category":"Support Tool",
+                "comment":"",
+                "timestamp":"1530292560",
+                "type":"attachment",
+                "value":"screenshot.jpg",
+                "to_ids":false
+            }
+        ]
+    }
+}

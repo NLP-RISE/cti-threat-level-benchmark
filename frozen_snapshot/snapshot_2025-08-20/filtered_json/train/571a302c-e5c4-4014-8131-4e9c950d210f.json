@@ -1,0 +1,180 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-22",
+        "published":true,
+        "info":"OSINT - Teaching an old RAT new tricks",
+        "publish_timestamp":"1461334497",
+        "timestamp":"1461334427",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334074",
+                "type":"link",
+                "value":"https://www.sentinelone.com/blogs/teaching-an-old-rat-new-tricks/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334102",
+                "type":"comment",
+                "value":"Attackers have been successfully deploying RATs for years to remotely control users systems - giving them full access to the victimâ€™s files or resources such as cameras, recording key strokes, or downloading further malware.  Traditionally RATs have been deployed when a user opens an email attachment, or downloads a file from a website or peer-to-peer network.  In both cases, these vectors involve use of files to deliver the payload - which are easier to detect.\r\n\r\nRecently we detected a more sophisticated technique that a handful of countries across Asia are actively using to infect systems with RATs.  This new technique ensures that the payload/file remains in memory through its execution, never touching the disk in a de-encrypted state.  In doing so, the attacker can remain out of view from antivirus technologies, and even â€˜next-generationâ€™ technologies that only focus on file-based threat vectors.  Also, the samples analyzed have the ability detect the presence of a virtual machine to ensure itâ€™s not being analyzed in a network sandbox.\r\n\r\nAnd finally itâ€™s important to highlight that the RAT itself is not new.  In fact this technique can be used to deliver any â€œknownâ€ RAT to a victimâ€™s system.  We analyzed this sample against our SentinelOne EPP to confirm is does not evade our behavior-based detection mechanisms.  This is due to the fact that weâ€™re monitoring all processes at the user-space/kernel-space interface - and because all communication between the application and the kernel must be unencrypted, we detect the sample at both process-injection points.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32 PE .NET 2.0 - Samples Analyzed",
+                "timestamp":"1461334141",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32 PE .NET 2.0 - Samples Analyzed - Xchecked via VT: b7cfc7e9551b15319c068aae966f8a9ff563b522ed9b1b42d19c122778e018c8",
+                "timestamp":"1461334259",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32 PE .NET 2.0 - Samples Analyzed - Xchecked via VT: b7cfc7e9551b15319c068aae966f8a9ff563b522ed9b1b42d19c122778e018c8",
+                "timestamp":"1461334260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334260",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b7cfc7e9551b15319c068aae966f8a9ff563b522ed9b1b42d19c122778e018c8/analysis/1461260966/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Packed \"Benchmark\" DLL",
+                "timestamp":"1461334316",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Monitor (PerfWatson.exe)",
+                "timestamp":"1461334371",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"NanoCore RAT dumped from memory",
+                "timestamp":"1461334394",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"NanoCore RAT dumped from memory - Xchecked via VT: d740ed3f33ca4cef3a6aa717f94bf52a",
+                "timestamp":"1461334405",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"NanoCore RAT dumped from memory - Xchecked via VT: d740ed3f33ca4cef3a6aa717f94bf52a",
+                "timestamp":"1461334406",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334406",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/755f49a4ffef5b1b62f4b5a5de279868c0c1766b528648febf76628f1fe39050/analysis/1460984076/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Monitor (PerfWatson.exe) - Xchecked via VT: 9e05fb115bd4e85cfc0e32c72aa721be",
+                "timestamp":"1461334406",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Monitor (PerfWatson.exe) - Xchecked via VT: 9e05fb115bd4e85cfc0e32c72aa721be",
+                "timestamp":"1461334407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/51142d1fb6c080b3b754a92e8f5826295f5da316ec72b480967cbd68432cede1/analysis/1455165681/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Packed \"Benchmark\" DLL - Xchecked via VT: e5c71180f117270538487cd9b9b1b6d8",
+                "timestamp":"1461334408",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Packed \"Benchmark\" DLL - Xchecked via VT: e5c71180f117270538487cd9b9b1b6d8",
+                "timestamp":"1461334408",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461334408",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e707a7745e346c5df59b5aa4df084574ae7c204f4fb7f924c0586ae03b79bf06/analysis/1461269734/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 1617",
+                "timestamp":"1461334426",
+                "type":"hostname",
+                "value":"azona2015.chickenkiller.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 1617",
+                "timestamp":"1461334427",
+                "type":"hostname",
+                "value":"azona.chickenkiller.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

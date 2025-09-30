@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-10-02",
+        "published":true,
+        "info":"A wolf in sheep's clothing: Actors spread malware by leveraging trust in Amnesty International and fear of Pegasus",
+        "publish_timestamp":"1633165356",
+        "timestamp":"1633165353",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Remote Access Tools - T1219\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1633165080",
+                "type":"domain",
+                "value":"amnestyinternationalantipegasus.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633165230",
+                "type":"domain",
+                "value":"medicalsystemworld.site",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633165230",
+                "type":"domain",
+                "value":"alwaysstriveandprosper.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing / distribution page",
+                "timestamp":"1633165286",
+                "type":"domain",
+                "value":"amnestyvspegasus.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing / distribution page",
+                "timestamp":"1633165286",
+                "type":"domain",
+                "value":"antipegasusamnesty.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1633165230",
+                "type":"domain",
+                "value":"mementomoriforlife.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1633165081",
+                "type":"ip-dst",
+                "value":"87.249.53.124",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1633165081",
+                "type":"ip-dst",
+                "value":"185.215.113.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1633165081",
+                "type":"ip-dst",
+                "value":"194.9.71.129",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1633165081",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1633165081",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

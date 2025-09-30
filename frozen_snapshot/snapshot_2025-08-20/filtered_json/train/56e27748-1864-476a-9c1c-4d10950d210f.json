@@ -1,0 +1,951 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-11",
+        "published":true,
+        "info":"OSINT - Android banking trojan masquerades as Flash Player and bypasses 2FA",
+        "publish_timestamp":"1457683286",
+        "timestamp":"1457682951",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457682266",
+                "type":"link",
+                "value":"http://www.welivesecurity.com/2016/03/09/android-trojan-targets-online-banking-users/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457682306",
+                "type":"comment",
+                "value":"Active users of mobile banking apps should be aware of a new Android banking trojan campaign targeting customers of large banks in Australia, New Zealand and Turkey. The banking malware, detected by ESET security products as Android/Spy.Agent.SI, can steal login credentials from 20 mobile banking apps.The list of target banks includes the largest banks in each of the three target countries (A full list can be found in the final section of this article). Thanks to its ability to intercept SMS communications, the malware is also able to bypass SMS-based two-factor authentication.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1457682510",
+                "type":"url",
+                "value":"http://94.198.97.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1457682511",
+                "type":"url",
+                "value":"http://46.105.95.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1457682511",
+                "type":"url",
+                "value":"http://181.174.164.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1457682542",
+                "type":"ip-dst",
+                "value":"94.198.97.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1457682542",
+                "type":"ip-dst",
+                "value":"46.105.95.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1457682543",
+                "type":"ip-dst",
+                "value":"181.174.164.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682597",
+                "type":"url",
+                "value":"http://flashplayeerupdate.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682597",
+                "type":"url",
+                "value":"http://adobeflashplaayer.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682597",
+                "type":"url",
+                "value":"http://adobeuploadplayer.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682598",
+                "type":"url",
+                "value":"http://adobeplayerdownload.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682598",
+                "type":"url",
+                "value":"http://adobeupdateplayer.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682598",
+                "type":"url",
+                "value":"http://adobeupdateplayeer.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious link",
+                "timestamp":"1457682598",
+                "type":"url",
+                "value":"http://adobeupdateflash11.com/download/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682626",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682627",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682627",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682627",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682628",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682628",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682628",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682629",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682629",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682629",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682630",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682630",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682630",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682631",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682631",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682631",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682631",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682632",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682632",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682632",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682632",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682633",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457682633",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: fe6ac1915f8c215ecec227da6fb341520d68a9c7",
+                "timestamp":"1457682681",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: fe6ac1915f8c215ecec227da6fb341520d68a9c7",
+                "timestamp":"1457682682",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457682682",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fe0e760fbe30b16ddc94ed71d18890d3a0aaec667889184dbcf30f5009ee96e8/analysis/1457552096/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 6cad2250eddf7eddf0b4d4e7f0b5d24b647cb728",
+                "timestamp":"1457682682",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 6cad2250eddf7eddf0b4d4e7f0b5d24b647cb728",
+                "timestamp":"1457682683",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457682683",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/581cc3af6e73f8a700188655b2b6dcf47a033e86ba8338f781d04061c09c4606/analysis/1457552094/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: c31e5e31210b08ba07ac6570814473c963a2ef81",
+                "timestamp":"1457682684",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: c31e5e31210b08ba07ac6570814473c963a2ef81",
+                "timestamp":"1457682684",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457682684",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8b4b2d8e1f051b3789c3d8f320136f9ebe75ef5f73c0f524e9875601a4ba5a68/analysis/1457552093/",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682906",
+                "type":"target-user",
+                "value":"Westpac",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682906",
+                "type":"target-user",
+                "value":"Bendigo Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682907",
+                "type":"target-user",
+                "value":"Commonwealth Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682907",
+                "type":"target-user",
+                "value":"St. George Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682907",
+                "type":"target-user",
+                "value":"National Australia Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682908",
+                "type":"target-user",
+                "value":"Bankwest",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682908",
+                "type":"target-user",
+                "value":"Me Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682908",
+                "type":"target-user",
+                "value":"ANZ Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682908",
+                "type":"target-user",
+                "value":"ASB Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682909",
+                "type":"target-user",
+                "value":"Bank of New Zealand",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682909",
+                "type":"target-user",
+                "value":"Kiwibank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682909",
+                "type":"target-user",
+                "value":"Wells Fargo",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682910",
+                "type":"target-user",
+                "value":"Halkbank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682910",
+                "type":"target-user",
+                "value":"YapÄ± Kredi Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682910",
+                "type":"target-user",
+                "value":"VakÄ±fBank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682910",
+                "type":"target-user",
+                "value":"Garanti Bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682911",
+                "type":"target-user",
+                "value":"Akbank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682911",
+                "type":"target-user",
+                "value":"Finansbank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682911",
+                "type":"target-user",
+                "value":"TÃ¼rkiye Ä°ÅŸ BankasÄ±",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted banks",
+                "timestamp":"1457682912",
+                "type":"target-user",
+                "value":"Ziraat BankasÄ±",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682951",
+                "type":"target-machine",
+                "value":"org.westpac.bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682951",
+                "type":"target-machine",
+                "value":"com.westpac.cashtank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682952",
+                "type":"target-machine",
+                "value":"au.com.westpac.onlineinvesting",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682952",
+                "type":"target-machine",
+                "value":"org.banking.westpac.payway",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682952",
+                "type":"target-machine",
+                "value":"com.rev.mobilebanking.westpac",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682952",
+                "type":"target-machine",
+                "value":"com.westpac.illuminate",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682953",
+                "type":"target-machine",
+                "value":"com.bendigobank.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682953",
+                "type":"target-machine",
+                "value":"com.commbank.netbank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682953",
+                "type":"target-machine",
+                "value":"org.stgeorge.bank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682954",
+                "type":"target-machine",
+                "value":"au.com.nab.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682954",
+                "type":"target-machine",
+                "value":"au.com.bankwest.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682954",
+                "type":"target-machine",
+                "value":"com.akbank.android.apps.akbank_direkt",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682955",
+                "type":"target-machine",
+                "value":"com.finansbank.mobile.cepsube",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682955",
+                "type":"target-machine",
+                "value":"finansbank.enpara",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682955",
+                "type":"target-machine",
+                "value":"com.pozitron.iscep",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682956",
+                "type":"target-machine",
+                "value":"com.wf.wellsfargomobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682956",
+                "type":"target-machine",
+                "value":"com.wf.wellsfargomobile.tablet",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682956",
+                "type":"target-machine",
+                "value":"com.wellsFargo.ceomobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682957",
+                "type":"target-machine",
+                "value":"com.wellsfargo.mobile.merchant",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682957",
+                "type":"target-machine",
+                "value":"com.tmobtech.halkbank",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682957",
+                "type":"target-machine",
+                "value":"com.ziraat.ziraatmobil",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682957",
+                "type":"target-machine",
+                "value":"au.com.mebank.banking",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682958",
+                "type":"target-machine",
+                "value":"com.anz.android.gomoney",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682958",
+                "type":"target-machine",
+                "value":"nz.co.anz.android.mobilebanking",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682958",
+                "type":"target-machine",
+                "value":"nz.co.westpac",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682959",
+                "type":"target-machine",
+                "value":"nz.co.asb.asbmobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682959",
+                "type":"target-machine",
+                "value":"nz.co.bnz.droidbanking",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682959",
+                "type":"target-machine",
+                "value":"nz.co.kiwibank.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682960",
+                "type":"target-machine",
+                "value":"com.ykb.android",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682960",
+                "type":"target-machine",
+                "value":"com.vakifbank.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682960",
+                "type":"target-machine",
+                "value":"com.garanti.cepsubesi",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682961",
+                "type":"target-machine",
+                "value":"biz.mobinex.android.apps.cep_sifrematik",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682961",
+                "type":"target-machine",
+                "value":"com.paypal.android.p2pmobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682961",
+                "type":"target-machine",
+                "value":"com.ebay.mobile",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682962",
+                "type":"target-machine",
+                "value":"com.skype.raider",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682962",
+                "type":"target-machine",
+                "value":"com.whatsapp",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682962",
+                "type":"target-machine",
+                "value":"com.google.android.googlequicksearchbox",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682963",
+                "type":"target-machine",
+                "value":"com.android.vending",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682963",
+                "type":"target-machine",
+                "value":"com.google.android.music",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682963",
+                "type":"target-machine",
+                "value":"com.google.android.apps.plus",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682963",
+                "type":"target-machine",
+                "value":"com.android.chrome",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682964",
+                "type":"target-machine",
+                "value":"com.google.android.apps.maps",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682964",
+                "type":"target-machine",
+                "value":"com.google.android.youtube",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682964",
+                "type":"target-machine",
+                "value":"com.google.android.apps.photos",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682965",
+                "type":"target-machine",
+                "value":"com.google.android.apps.books",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682965",
+                "type":"target-machine",
+                "value":"com.google.android.apps.docs",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682965",
+                "type":"target-machine",
+                "value":"com.google.android.apps.docs.editors.docs",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682965",
+                "type":"target-machine",
+                "value":"com.google.android.videos",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Targeted package names",
+                "timestamp":"1457682966",
+                "type":"target-machine",
+                "value":"com.google.android.gm",
+                "to_ids":false
+            }
+        ]
+    }
+}

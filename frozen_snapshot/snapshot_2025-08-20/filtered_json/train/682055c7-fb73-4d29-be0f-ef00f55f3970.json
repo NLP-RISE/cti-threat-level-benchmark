@@ -1,0 +1,122 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-08-29",
+        "published":true,
+        "info":"State-backed attackers and commercial surveillance vendors repeatedly use the same exploits",
+        "publish_timestamp":"1725896079",
+        "timestamp":"1725895997",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Mongolia\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT29 - G0016\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1725895402",
+                "type":"link",
+                "value":"https://blog.google/threat-analysis-group/state-backed-attackers-and-commercial-surveillance-vendors-repeatedly-use-the-same-exploits/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1725895540",
+                "type":"vulnerability",
+                "value":"CVE-2023-41993",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1725895540",
+                "type":"vulnerability",
+                "value":"CVE-2024-5274",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1725895814",
+                "type":"vulnerability",
+                "value":"CVE-2024-4671",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"iOS reconnaissance payload (VALIDVICTOR)",
+                "timestamp":"1725895954",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"iOS cookie stealer module (COOKIESNATCH)",
+                "timestamp":"1725895954",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Chrome reconnaissance payload",
+                "timestamp":"1725895954",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Chrome cookie stealer payload (ANDROSNATCH)",
+                "timestamp":"1725895954",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1725895954",
+                "type":"url",
+                "value":"https://ceo-adviser.com/fb-connect.php?online=1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1725895954",
+                "type":"url",
+                "value":"https://track-adv.com/market-analytics.php?pc=1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1725895954",
+                "type":"url",
+                "value":"https://track-adv.com/analytics.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1725895973",
+                "type":"url",
+                "value":"https://track-adv.com/analytics.php?personalization_id=<random number>",
+                "to_ids":false
+            }
+        ]
+    }
+}

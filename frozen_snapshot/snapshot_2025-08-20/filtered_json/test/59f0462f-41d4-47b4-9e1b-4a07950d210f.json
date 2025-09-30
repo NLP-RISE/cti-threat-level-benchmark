@@ -1,0 +1,123 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-24",
+        "published":true,
+        "info":"OSINT - Bad Rabbit ransomware",
+        "publish_timestamp":"1508922265",
+        "timestamp":"1508922261",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Bad Rabbit\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Backup and Restore Process\""
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Restrict Workstation Communication\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"The ransomware dropper is distributed from",
+                "timestamp":"1508918921",
+                "type":"url",
+                "value":"http://1dnscontrol.com/flash_install.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508919089",
+                "type":"link",
+                "value":"https://securelist.com/bad-rabbit-ransomware/82851/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508919222",
+                "type":"comment",
+                "value":"n October 24th we observed notifications of mass attacks with ransomware called Bad Rabbit. It has been targeting organizations and consumers, mostly in Russia but there have also been reports of victims in Ukraine.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded file",
+                "timestamp":"1508919379",
+                "type":"filename",
+                "value":"install_flash_player.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious DLL",
+                "timestamp":"1508919380",
+                "type":"filename",
+                "value":"%WINDIR%\\infpub.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1508919704",
+                "type":"filename",
+                "value":"dispci.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1508919789",
+                "type":"filename",
+                "value":"%WINDIR%\\cscc.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508919835",
+                "type":"url",
+                "value":"http://1dnscontrol.com/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"install_flash_player.exe",
+                "timestamp":"1508919835",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\infpub.dat",
+                "timestamp":"1508919835",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\dispci.exe",
+                "timestamp":"1508919835",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ]
+    }
+}

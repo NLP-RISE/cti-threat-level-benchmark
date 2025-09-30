@@ -1,0 +1,240 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-10-03",
+        "published":true,
+        "info":"OSINT - #EmissaryPanda #APT older sample (2018)",
+        "publish_timestamp":"1575970236",
+        "timestamp":"1575970217",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Threat Group-3390\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Threat Group-3390 - G0027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Threat Group-3390\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Threat Group-3390 - G0027\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Emissary Panda\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"LuckyMouse\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Threat Group-3390\""
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570437695",
+                "type":"hostname",
+                "value":"tdjsyqty0takah2x.gitoos.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1570437775",
+                "type":"attachment",
+                "value":"EF9924EW4AA9T0J.jpeg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1570437821",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"#EmissaryPanda #APT older sample (2018). Signed by same company as my prior post \"Hangzhou Bianfeng Networking technology Co., Ltd.\" + previously unreported C2.\r\n \r\nIOCS:\r\n931017406b4718d81d2c776165e6ddf0\r\ntdjsyqty0takah2x[.]gitoos[.]com\r\n \r\n#threatintel #apt27",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"link",
+                        "value":"https://mobile.twitter.com/MeltX0R/status/1179800013150527488",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"#EmissaryPanda",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"#APT",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"#threatintel",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"#apt27",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"MeltX0R",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"text",
+                        "value":"Informative",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570434804",
+                        "type":"datetime",
+                        "value":"2019-10-03T18:46:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570437487",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575970216",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575970216",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"datetime",
+                        "value":"2019-11-20T12:18:04",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ce3424524fd1f482a0339a3f92e440532cff97c104769837fa6ae52869013558/analysis/1574252284/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570437487",
+                        "type":"text",
+                        "value":"19/67",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

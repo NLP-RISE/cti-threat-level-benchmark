@@ -1,0 +1,478 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-07-01",
+        "published":true,
+        "info":"Return of the Evilnum APT with updated TTPs and new targets",
+        "publish_timestamp":"1656703970",
+        "timestamp":"1656703958",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Finance\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Technology\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command and Scripting Interpreter - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"JavaScript - T1059.007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Visual Basic - T1059.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Evilnum - G0120\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"proof of ownership.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"tradersway compliance.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"vantagemarkets documents.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"vantagefx compliance.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"calliber docs (2).docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"complaince tfglobaltrading.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"complaint europatradecapital.com.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fxtm_compliance.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"livetraderfx.docx",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SerenadeDACplApp.exe | Loader",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"devZUQVD.tmp | Encrypted binary",
+                "timestamp":"1656703765",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"travinfor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"webinfors.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"khnga.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"netwebsoc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"infcloudnet.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"bgamifieder.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"bunflun.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"refinance-ltd.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"book-advp.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"mailservice-ns.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"advertbart.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"inetp-service.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"yomangaw.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"covdd.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"visitaustriaislands.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"traveladvnow.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"tripadvit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"moreofestonia.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"moretraveladv.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"estoniaforall.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"bookingitnow.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"travelbooknow.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"bookaustriavisit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"windnetap.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"roblexmeet.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"netrcmapi.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"meetomoves.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"bingapianalytics.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"azuredcloud.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"appdllsvc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"udporm.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"pcamanalytics.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"nortonalytics.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"deltacldll.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"mscloudin.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 domains",
+                "timestamp":"1656703790",
+                "type":"domain",
+                "value":"msdllopt.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1656703841",
+                "type":"windows-scheduled-task",
+                "value":"UpdateModel Task",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1656703841",
+                "type":"windows-scheduled-task",
+                "value":"PropertyDefinitionSync",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1656703841",
+                "type":"windows-scheduled-task",
+                "value":"Schedule Defrag",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1656703901",
+                "type":"comment",
+                "value":"msdcat.exe\" /E:jscRipt \"%APPDATA%\\Redist.txt\" dg ThirdPartyNotices.txt",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1656703901",
+                "type":"comment",
+                "value":"the main distribution vector used by this threat group was Windows Shortcut files (LNK) sent inside malicious archive files (ZIP) as email attachments in spear phishing emails to the victims",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1656703901",
+                "type":"comment",
+                "value":"In the most recent instances, the threat actor has started using MS Office Word documents, leveraging document template injection to deliver the malicious payload to the victims’ machines",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1656703901",
+                "type":"comment",
+                "value":"In March 2022, we observed a significant update in the choice of targets of Evilnum APT group. They targeted an Intergovernmental organization which deals with international migration services.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1656703925",
+                "type":"link",
+                "value":"https://www.zscaler.com/blogs/security-research/return-evilnum-apt-updated-ttps-and-new-targets",
+                "to_ids":false
+            }
+        ]
+    }
+}

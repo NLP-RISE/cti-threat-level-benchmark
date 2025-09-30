@@ -1,0 +1,449 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-25",
+        "published":true,
+        "info":"OSINT - Bad Rabbit: Not-Petya is back with improved ransomware",
+        "publish_timestamp":"1514467254",
+        "timestamp":"1511385587",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Bad Rabbit\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Backup and Restore Process\""
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Restrict Workstation Communication\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508921673",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2017/10/24/bad-rabbit-not-petya-back/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"ip-dst",
+                "value":"185.149.120.3",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"comment",
+                "value":"A new ransomware outbreak today and has hit some major infrastructure in Ukraine including Kiev metro.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"domain",
+                "value":"1dnscontrol.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1508920176",
+                "type":"filename",
+                "value":"install_flash_player.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (32-bits)",
+                "timestamp":"1508921674",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (64-bits)",
+                "timestamp":"1508921674",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://caforssztxqzf2nm.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://185.149.120.3/scholargoogle/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://1dnscontrol.com/flash_install.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://argumentiru.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.fontanka.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://grupovo.bg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.sinematurk.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.aica.co.jp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://spbvoditel.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://argumenti.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.mediaport.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://blog.fontanka.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://an-crimea.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.t.ks.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://most-dnepr.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://osvitaportal.com.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.otbrana.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://calendar.fontanka.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.grupovo.bg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.pensionhotel.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.online812.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://www.imer.ro",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://novayagazeta.spb.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://i24.com.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://bg.pensionhotel.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised site",
+                "timestamp":"1508921674",
+                "type":"url",
+                "value":"http://ankerch-crimea.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (64-bits) - Xchecked via VT: 16605a4a29a101208457c47ebfde788487be788d",
+                "timestamp":"1508921674",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (64-bits) - Xchecked via VT: 16605a4a29a101208457c47ebfde788487be788d",
+                "timestamp":"1508921674",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Mimikatz (64-bits) - Xchecked via VT: 16605a4a29a101208457c47ebfde788487be788d",
+                "timestamp":"1508921674",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2f8c54f9fa8e47596a3beff0031f85360e56840c77f71c6a573ace6f46412035/analysis/1508915760/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (32-bits) - Xchecked via VT: 413eba3973a15c1a6429d9f170f3e8287f98c21c",
+                "timestamp":"1508921674",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mimikatz (32-bits) - Xchecked via VT: 413eba3973a15c1a6429d9f170f3e8287f98c21c",
+                "timestamp":"1508921674",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Mimikatz (32-bits) - Xchecked via VT: 413eba3973a15c1a6429d9f170f3e8287f98c21c",
+                "timestamp":"1508921674",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/301b905eb98d8d6bb559c04bbda26628a942b2c4107c07a02e8f753bdcfe347c/analysis/1508918790/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Diskcoder",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1508921861",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920400",
+                        "type":"filename",
+                        "value":"infpub.dat",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920400",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Lockscreen",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1508921972",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920442",
+                        "type":"filename",
+                        "value":"dispci.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920442",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dropper",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1508921843",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920491",
+                        "type":"filename",
+                        "value":"install_flash_player.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920491",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"JavaScript on compromised sites",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1508920564",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920564",
+                        "type":"filename",
+                        "value":"page-main.js",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1508920564",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

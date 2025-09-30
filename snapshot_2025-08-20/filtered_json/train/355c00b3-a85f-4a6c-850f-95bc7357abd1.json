@@ -1,0 +1,453 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2020-09-22",
+        "published":true,
+        "info":"Linux/CDRThief — Indicators of Compromise - Who is calling? CDRThief targets Linux VoIP softswitches",
+        "publish_timestamp":"1600777404",
+        "timestamp":"1600777302",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1600776924",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"(UPX packed)",
+                "timestamp":"1600776924",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1600776924",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"(Corrupted)",
+                "timestamp":"1600776924",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1600776944",
+                "type":"link",
+                "value":"https://github.com/eset/malware-ioc/tree/master/cdrthief",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"119.29.173.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"129.211.157.244",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"129.226.134.180",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"150.109.79.136",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"34.94.199.142",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C servers",
+                "timestamp":"1600776964",
+                "type":"ip-dst",
+                "value":"35.236.173.187",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1600777017",
+                "type":"mutex",
+                "value":"/dev/shm/.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1600777017",
+                "type":"mutex",
+                "value":"/dev/shm/.linux",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1600777050",
+                "type":"filename",
+                "value":"/dev/shm/callservice",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1600777050",
+                "type":"filename",
+                "value":"/dev/shm/sys.png",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1600777285",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2020/09/10/who-callin-cdrthief-linux-voip-softswitches/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Cryptographic materials such as public or/and private keys.",
+                "meta-category":"misc",
+                "name":"crypto-material",
+                "timestamp":"1600777150",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1600777150",
+                        "type":"text",
+                        "value":"-----BEGIN PUBLIC KEY-----\r\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCQ3k3GgS3FX4pI7s9x0krBYqbMcSaw4BPY91Ln\r\ntt5/X8s9l0BC6PUTbQcUzs6PPXhKKTx8ph5CYQqdWynxOLJah0FMMRYxS8d0HX+Qx9eWUeKRHm2E\r\nAtZQjdHxqTJ9EBpHYWV4RrWmeoOsWAOisvedlb23O0E55e8rrGGrZLhPbwIDAQAB\r\n-----END PUBLIC KEY-----",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1600777150",
+                        "type":"text",
+                        "value":"RSA",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1600777150",
+                        "type":"text",
+                        "value":"malware-extraction",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"datetime",
+                        "value":"2020-09-22T10:56:34+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/665acb48f9ad6317806231e52e5d3d05e91a93b20f40771a55e634192e8b094b/detection/f-665acb48f9ad6317806231e52e5d3d05e91a93b20f40771a55e634192e8b094b-1600772194",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"text",
+                        "value":"32/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"datetime",
+                        "value":"2020-09-22T10:56:43+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/ffe88d3012c15a680a506f0382264ea763ff2d426bf4ad3caf03111d47d9a80c/detection/f-ffe88d3012c15a680a506f0382264ea763ff2d426bf4ad3caf03111d47d9a80c-1600772203",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(UPX packed)",
+                        "timestamp":"1600776924",
+                        "type":"text",
+                        "value":"27/60",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"datetime",
+                        "value":"2020-09-22T10:56:33+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/af75687cb030418c3196d6535d10479bc45e4248d60d3427230381e0d09e5ca4/detection/f-af75687cb030418c3196d6535d10479bc45e4248d60d3427230381e0d09e5ca4-1600772193",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"(Corrupted)",
+                        "timestamp":"1600776924",
+                        "type":"text",
+                        "value":"25/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1600777229",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"datetime",
+                        "value":"2020-09-22T10:56:24+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/6b15cf51e4dff3e25b805173eef88940dbeb52b2662bd265450e6e54d5bb84d6/detection/f-6b15cf51e4dff3e25b805173eef88940dbeb52b2662bd265450e6e54d5bb84d6-1600772184",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1600776924",
+                        "type":"text",
+                        "value":"30/61",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,594 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-21",
+        "published":true,
+        "info":"OSINT - JadeRAT mobile surveillanceware spikes in espionage activity",
+        "publish_timestamp":"1508587621",
+        "timestamp":"1508587610",
+        "Tag":[
+            {
+                "name":"misp-galaxy:rat=\"JadeRAT\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"RemoteAccess\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"remote-access-tool\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508587464",
+                "type":"text",
+                "value":"Lookout researchers are monitoring the evolution of an Android surveillanceware family known as JadeRAT, we believe may be connected to a government sponsored APT group.\r\n\r\nEmerging in 2015 and becoming increasingly active, JadeRAT provides its operators with a significant degree of control over a compromised device and supports over 60 commands that are focused on retrieving sensitive information and profiling victims.\r\nAll Lookout customers are protected from this threat.\r\n\r\nJadeRAT is just one example of numerous mobile surveillanceware families we've seen in recent months, indicating that actors are continuing to incorporate mobile tools in their attack chains. Some of these active families have included FrozenCell, an attack against government officials in Palestine; xRAT, associated with a family targeting Hong Kong protestors; and ViperRAT, an attack targeting members of the Israeli Defense Force. Research into those families suggests they are highly targeted however we've also seen more wide-reaching spyware such as SonicSpy that was discovered in thousands of malicious apps, some of which made their way into the Google Play Store.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508587464",
+                "type":"link",
+                "value":"https://blog.lookout.com/mobile-threat-jaderat",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"hostname",
+                "value":"googleservhlp.oicp.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"hostname",
+                "value":"iponetest.eicp.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"hostname",
+                "value":"myofficedesktop.rkfree.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"hostname",
+                "value":"asd887655.6655.la",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"103.226.127.98",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"125.41.93.32",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"113.106.48.194",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"123.149.231.81",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"221.192.178.51",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"61.36.72.43",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"1.192.250.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"123.15.58.119",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"117.158.131.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"1.192.241.109",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"hostname",
+                "value":"test.ymyoo.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"103.200.31.23",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Though these phone numbers are only associated with a limited number of samples, all samples come configured with specific infrastructure to which they communicate. Observed domains and external IP addresses.",
+                "timestamp":"1508587464",
+                "type":"ip-dst",
+                "value":"61.144.202.216",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587464",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples",
+                "timestamp":"1508587465",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: b0f844b4ffc4824dad757be4b231905e099a97d7",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: b0f844b4ffc4824dad757be4b231905e099a97d7",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: b0f844b4ffc4824dad757be4b231905e099a97d7",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/83d6eed16dce6c97f0e2115c897d18db7b46466bc7b75a5efd6642a5fd1b7b9b/analysis/1441017348/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 1e9ec2cdeca8c6954b13551051eec8107b0cef75",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 1e9ec2cdeca8c6954b13551051eec8107b0cef75",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 1e9ec2cdeca8c6954b13551051eec8107b0cef75",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fa185c5f57163b016d64bb0ed295661713671b092066dc40fea8d3723f032707/analysis/1450982618/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 97de3e5a20014f125a8685c6e48c8e6bc4e2c51d",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 97de3e5a20014f125a8685c6e48c8e6bc4e2c51d",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 97de3e5a20014f125a8685c6e48c8e6bc4e2c51d",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d347221a45fbc9cf3479ceee2b3e02e946a5eaecb0fd746448537e6cf899de8b/analysis/1460366743/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 5cb05fb8e3e98781c94f69890a9b69eec8def46a",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 5cb05fb8e3e98781c94f69890a9b69eec8def46a",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 5cb05fb8e3e98781c94f69890a9b69eec8def46a",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1ee815452328ae439998af43ed828901cbae38a0d02c34bcacda1d88ef574e00/analysis/1460133268/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 64dddf18cd767b8d273aac1f178db791c758d819",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 64dddf18cd767b8d273aac1f178db791c758d819",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 64dddf18cd767b8d273aac1f178db791c758d819",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d5f55036d114c4518b990d85b20e99baf27589b8bb6bd3f82ab49885e8a4f191/analysis/1460365945/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 00683fa02a0a70e6951daeb34c48cbcceffb60d9",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 00683fa02a0a70e6951daeb34c48cbcceffb60d9",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 00683fa02a0a70e6951daeb34c48cbcceffb60d9",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b6e38d41b1a685215a78387ddcaebf472a5b41949628f71eeb6784d8d8780e3b/analysis/1460376239/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: fd5a2ec25d996fe88845bb0705296bf9a621cbe7",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: fd5a2ec25d996fe88845bb0705296bf9a621cbe7",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: fd5a2ec25d996fe88845bb0705296bf9a621cbe7",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/54e3174a42e2f1fcf5fa2c14910187723c1070a23cea31e2c0a7cbf48c653e16/analysis/1458661599/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 62cc592cac04d698313ed500bbc897df8172b029",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 62cc592cac04d698313ed500bbc897df8172b029",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 62cc592cac04d698313ed500bbc897df8172b029",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0e9fc5f5f3e7183c33fbeaaf51fa99813acf07d7efa21e1f8e59af808207881a/analysis/1460129710/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 6aaf0f67dddab4fbc9239e29a668195c109d8c23",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 6aaf0f67dddab4fbc9239e29a668195c109d8c23",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 6aaf0f67dddab4fbc9239e29a668195c109d8c23",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4f709f6de93709d93adadf1dbc10931cee5ae4b4bf554f6990e6be15db26aa30/analysis/1463300427/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 3e883ac8e5fac3940e774ebca8d626eac5b8d02c",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 3e883ac8e5fac3940e774ebca8d626eac5b8d02c",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 3e883ac8e5fac3940e774ebca8d626eac5b8d02c",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9ab0abf833f847b1c7bc4625b88ca1766d091f9b06c5e8cd79a7567f600f7d83/analysis/1465960575/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 674224a4fe7ec9badd5eefce303ec0867a4afcdf",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: 674224a4fe7ec9badd5eefce303ec0867a4afcdf",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: 674224a4fe7ec9badd5eefce303ec0867a4afcdf",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c9c25f3973318417d2943d11672db88c9272f9fd34d11a1670492ba9892bf3ea/analysis/1473947478/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: b86d8dc815f50377e444a297f5f33bba1b16cc8e",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: b86d8dc815f50377e444a297f5f33bba1b16cc8e",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: b86d8dc815f50377e444a297f5f33bba1b16cc8e",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/92511088347013365cb21b085bc4445a22b30b163467b14b6c49128ce95c34b3/analysis/1479329410/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: fea0bc1df035ea8eb683bc91cef4d925d8a260f3",
+                "timestamp":"1508587465",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JadeRAT samples - Xchecked via VT: fea0bc1df035ea8eb683bc91cef4d925d8a260f3",
+                "timestamp":"1508587465",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JadeRAT samples - Xchecked via VT: fea0bc1df035ea8eb683bc91cef4d925d8a260f3",
+                "timestamp":"1508587465",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9b51f912df5925a97f9d9954aad8a56095516e9d2fb7cccdf6e0a8dd53e69d88/analysis/1479329865/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2017-03-10",
+        "published":true,
+        "info":"OSINT - Wikileaks Vault7 JQJSNICKER code leak",
+        "publish_timestamp":"1489174184",
+        "timestamp":"1489174168",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Artifacts dropped",
+                "comment":"There are however artifacts that could possibly be left on accident and or on a system that never had a cleanup initialized. One of those examples is a registry key that seems unique to this malware",
+                "timestamp":"1489174015",
+                "type":"regkey",
+                "value":"SOFTWARE\\Microsoft\\DRM\\{cd704ff3-cd05-479e-acf7-6474908031dd}",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1489174015",
+                "type":"link",
+                "value":"http://marcmaiffret.com/vault7/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"malware-sample",
+                "value":"Installer.dll.embedded.core.dll.file|d85e26868162eefef20ca6f4aeca3a99",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"malware-sample",
+                "value":"install.reg.base64blob.decoded.installer.dll.file|82684128dfd4a027fddb33711bd2a8ec",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"malware-sample",
+                "value":"install.reg.file|2232b4428a55b09a32729a5e70788baa",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JQJSNICKER",
+                "timestamp":"1489174015",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JQJSNICKER - Xchecked via VT: 66670300a301bdcaa9ca3cfdc710805d4c0ecf196cdadc542479f1dfa2d53353",
+                "timestamp":"1489174033",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/66670300a301bdcaa9ca3cfdc710805d4c0ecf196cdadc542479f1dfa2d53353/analysis/1489140362/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"JQJSNICKER - Xchecked via VT: f0d422222b6b39b4a141b6916cb4c844aeb6173fe185fe1030497d273f4e1377",
+                "timestamp":"1489174033",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f0d422222b6b39b4a141b6916cb4c844aeb6173fe185fe1030497d273f4e1377/analysis/1489162563/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"JQJSNICKER - Xchecked via VT: ea042bd3a7df11273e233c423e9740e6b51001911139855ef39501472a1e5fb0",
+                "timestamp":"1489174034",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ea042bd3a7df11273e233c423e9740e6b51001911139855ef39501472a1e5fb0/analysis/1489162613/",
+                "to_ids":false
+            }
+        ]
+    }
+}

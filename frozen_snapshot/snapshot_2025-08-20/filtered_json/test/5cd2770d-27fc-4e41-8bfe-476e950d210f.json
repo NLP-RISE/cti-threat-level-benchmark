@@ -1,0 +1,853 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-04-16",
+        "published":false,
+        "info":"OSINT - Spear Phishing Campaign Targets Ukraine Government and Military; Infrastructure Reveals Potential Link to So-Called Luhansk People's Republic",
+        "publish_timestamp":"0",
+        "timestamp":"1557314623",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"spear-phishing-attacks\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557296927",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/04/spear-phishing-campaign-targets-ukraine-government.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557297357",
+                "type":"text",
+                "value":"In early 2019, FireEye Threat Intelligence identified a spear phishing email targeting government entities in Ukraine. The spear phishing email included a malicious LNK file with PowerShell script to download the second-stage payload from the command and control (C&C) server. The email was received by military departments in Ukraine and included lure content related to the sale of demining machines. \r\n\r\nThis latest activity is a continuation of spear phishing that targeted the Ukrainian Government as early as 2014. The email is linked to activity that previously targeted the Ukrainian Government with RATVERMIN. Infrastructure analysis indicates the actors behind the intrusion activity may be associated with the so-called Luhansk People's Republic (LPR).",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Spear Phisihing Mail",
+                "timestamp":"1557297509",
+                "type":"attachment",
+                "value":"Picture1.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1557303234",
+                "type":"email-src",
+                "value":"re2a1er1@yandex.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks 24tv.ua, A large news portal in Ukraine",
+                "timestamp":"1557303234",
+                "type":"domain",
+                "value":"24ua.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks censor.net.ua, A large news portal in Ukraine",
+                "timestamp":"1557303234",
+                "type":"domain",
+                "value":"censor.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks fakty.ua, A large news portal in Ukraine",
+                "timestamp":"1557303234",
+                "type":"domain",
+                "value":"fakty.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks Volodymyr Borysovych Groysman ( V. B. Groysman is a politician who has been the Prime Minister of Ukraine since April 14, 2016)",
+                "timestamp":"1557303234",
+                "type":"domain",
+                "value":"groysman.host",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks gordonua.com, A large mail service in Ukraine",
+                "timestamp":"1557303235",
+                "type":"hostname",
+                "value":"gordon.co.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks ukr.net, A large news portal in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"mailukr.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks me.gov.ua, Ukraine's Ministry of Economic Development and Trade",
+                "timestamp":"1557303235",
+                "type":"hostname",
+                "value":"me.co.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks novaposhta.ua, Ukraine's largest logistics services company",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"novaposhta.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks olx.ua, Ukraine's largest online ad platform",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"olx.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks online.ua, A large news portal in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"onlineua.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks rst.ua, One of the largest car sales websites in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"rst.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - TV-related",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"satv.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks sinoptik.ua, The largest weather website in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"sinoptik.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks spectator.co.uk, A large news portal in the UK",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"spectator.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - TV-related",
+                "timestamp":"1557303235",
+                "type":"hostname",
+                "value":"tv.co.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks uatoday.news, A large news portal in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"uatoday.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks ukrposhta.ua, State Post of Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"ukrposhta.website",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks unian.net, A large news portal in Ukraine",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"unian.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru",
+                "timestamp":"1557303235",
+                "type":"domain",
+                "value":"vj2.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - possibly mimicks zik.ua, A large news portal in Ukraine",
+                "timestamp":"1557303678",
+                "type":"domain",
+                "value":"z1k.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Military news",
+                "timestamp":"1557303687",
+                "type":"domain",
+                "value":"milnews.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain Registered by re2a1er1@yandex.ru - Punycode of мгблнр.орг, Ministry of State Security of the So-Called Luhansk People’s Republic’s website",
+                "timestamp":"1557303761",
+                "type":"hostname",
+                "value":"xn--90adzbis.xn--c1avg",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"akamainet022.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"notifymail.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"akamainet066.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"akamainet024.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"akamaicdn.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1557309388",
+                "type":"domain",
+                "value":"cdnakamai.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1557311101",
+                "type":"url",
+                "value":"http://sinoptik.website/OxslV6",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1557311101",
+                "type":"url",
+                "value":"http://cdn1186.site/zG4roJ",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1557299737",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Pose as Armtrac, defense manufacturer in the United Kingdom",
+                        "timestamp":"1557299477",
+                        "type":"email-src-display-name",
+                        "value":"Armtrac",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299477",
+                        "type":"email-body",
+                        "value":"Dear Colleagues,\r\n\r\nPlease accept the best regards from representatives of Armtrac Ltd. which were on the meeting held on 24th May in Astana. My name is Alex Gallil and I'm am responsible person from Armtrac Ltd. for cooperation development with Ukrainian partners. \r\nAs part of conversation held between our sides, were discussed joint opportunities in demining activities, development of demining vehicles, ammunition recycling, participation in tenders with further technology transfer and other. Among other were discussed the border surveillance system which is highly interesting for us.\r\n\r\nSincerely,\r\nAlex Gallil\r\nExecutive manager",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299477",
+                        "type":"email-subject",
+                        "value":"SPEC-20T-MK2-000-ISS-4.10-09-2018-STANDARD",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299477",
+                        "type":"email-attachment",
+                        "value":"Armtrac-Commercial.7z",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557299477",
+                        "type":"datetime",
+                        "value":"2019-01-22 11:35",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557299770",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299402",
+                        "type":"filename",
+                        "value":"Armtrac-Commercial.7z",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299402",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557299402",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557300170",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299665",
+                        "type":"filename",
+                        "value":"Armtrac-Commercial.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299665",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557299665",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"benign document from the official Armtrac website",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557299932",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299932",
+                        "type":"filename",
+                        "value":"Armtrac-20T-with-Equipment-35078.pdf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557299932",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557299932",
+                        "type":"text",
+                        "value":"Harmless",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"benign document from the official Armtrac website",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557300009",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557300009",
+                        "type":"filename",
+                        "value":"SPEC-20T-MK2-000-ISS-4.10-09-2018-STANDARD.pdf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557300009",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557300009",
+                        "type":"text",
+                        "value":"Harmless",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious LNK file that executes a PowerShell script.\r\nInterestingly, while the LNK file used a forged extension to impersonate a PDF document, the icon was replaced with a Microsoft Word document icon.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557300077",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557300077",
+                        "type":"filename",
+                        "value":"SPEC-10T-MK2-000-ISS-4.10-09-2018-STANDARD.pdf.lnk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557300077",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557300077",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1557303912",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"ip-dst",
+                        "value":"78.140.167.89",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"ip-dst",
+                        "value":"78.140.164.221",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"ip-dst",
+                        "value":"185.125.46.158",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"ip-dst",
+                        "value":"78.140.167.89",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"domain",
+                        "value":"sinoptik.website",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557303913",
+                        "type":"domain",
+                        "value":"www.sinoptik.website",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557308177",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557308178",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557308178",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557308524",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557308524",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557308524",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557309245",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557309245",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557309245",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557309261",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557309261",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557309261",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557309282",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557309282",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557309282",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557309302",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557309302",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557309303",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557311078",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311078",
+                        "type":"filename",
+                        "value":"Висновки. S021000262_1901141812000. Scancopy_0003. HP LaserJet Enterprise 700 M775dn(CC522A).docx.lnk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311079",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557311079",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"ZIP archive containing a malicious LNK file",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557311729",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311729",
+                        "type":"filename",
+                        "value":"КМУ база даних.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311729",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557311729",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Benign decoy document",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557311896",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311896",
+                        "type":"filename",
+                        "value":"Додаток.pdf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311896",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557311896",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious LNK that executes a PowerShell script",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557311944",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311944",
+                        "type":"filename",
+                        "value":"КМУ_база_даних_органи_упр,_СГ_КМУ.rtf.lnk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557311944",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557311944",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,304 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-04-13",
+        "published":true,
+        "info":"OSINT - Zero-Day Exploitation of Unauthenticated Remote Code Execution Vulnerability in GlobalProtect (CVE-2024-3400)",
+        "publish_timestamp":"1713023054",
+        "timestamp":"1713023036",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1713022471",
+                "type":"vulnerability",
+                "value":"CVE-2024-3400",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"server used by the attacker to host malicious files server used by the attacker to host malicious files",
+                "timestamp":"1713022532",
+                "type":"ip-dst",
+                "value":"198.58.109.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"server used by the attacker to host malicious files server used by the attacker to host malicious files",
+                "timestamp":"1713022532",
+                "type":"ip-dst",
+                "value":"144.172.79.92",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"server used by the attacker to host malicious files server used by the attacker to host malicious files",
+                "timestamp":"1713022532",
+                "type":"ip-dst",
+                "value":"172.233.228.93",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised ASUS router used by attacker to interact with compromised devices",
+                "timestamp":"1713022563",
+                "type":"ip-dst",
+                "value":"71.9.135.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Surfshark VPN address used in exploitation attempts.",
+                "timestamp":"1713022579",
+                "type":"ip-dst",
+                "value":"89.187.187.69",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised S3 bucket used to host files by UTA0218",
+                "timestamp":"1713022597",
+                "type":"hostname",
+                "value":"nhdata.s3-us-west-2.amazonaws.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised ASUS router used by attacker to interact with compromised devices",
+                "timestamp":"1713022622",
+                "type":"ip-dst",
+                "value":"23.242.208.175",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised ASUS router used by attacker to interact with compromised devices",
+                "timestamp":"1713022622",
+                "type":"ip-dst",
+                "value":"137.118.185.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Surfshark VPN address used in exploitation attempts.",
+                "timestamp":"1713022644",
+                "type":"ip-dst",
+                "value":"66.235.168.222",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1713022686",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022686",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1713022686",
+                        "type":"yara",
+                        "value":"rule apt_malware_py_upstyle : UTA0218\r\n{\r\n    meta:\r\n        author = \"threatintel@volexity.com\"\r\n        date = \"2024-04-11\"\r\n        description = \"Detect the UPSTYLE webshell.\"\r\n        hash1 = \"3de2a4392b8715bad070b2ae12243f166ead37830f7c6d24e778985927f9caac\"\r\n        hash2 = \"0d59d7bddac6c22230187ef6cf7fa22bca93759edc6f9127c41dc28a2cea19d8\"\r\n        hash3 = \"4dd4bd027f060f325bf6a90d01bfcf4e7751a3775ad0246beacc6eb2bad5ec6f\"\r\n        os = \"linux\"\r\n        os_arch = \"all\"\r\n        report = \"TIB-20240412\"\r\n        scan_context = \"file,memory\"\r\n        last_modified = \"2024-04-12T13:05Z\"\r\n        license = \"See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt\"\r\n        rule_id = 10429\r\n        version = 2\r\n\r\n    strings:\r\n        $stage1_str1 = \"/opt/pancfg/mgmt/licenses/PA_VM\"\r\n        $stage1_str2 = \"exec(base64.\"\r\n\r\n        $stage2_str1 = \"signal.signal(signal.SIGTERM,stop)\"\r\n        $stage2_str2 = \"exec(base64.\"\r\n\r\n        $stage3_str1 = \"write(\\\"/*\\\"+output+\\\"*/\\\")\"\r\n        $stage3_str2 = \"SHELL_PATTERN\"\r\n\r\n    condition:\r\n        all of ($stage1*) or\r\n        all of ($stage2*) or\r\n        all of ($stage3*)\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1713022721",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022721",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1713022721",
+                        "type":"yara",
+                        "value":"rule susp_any_gost_arguments\r\n{\r\n    meta:\r\n        author = \"threatintel@volexity.com\"\r\n        date = \"2024-04-10\"\r\n        description = \"Looks for common arguments passed to the hacktool GOST that are sometimes used by attackers in scripts (for example cronjobs etc).\"\r\n        os = \"all\"\r\n        os_arch = \"all\"\r\n        report = \"TIB-20240412\"\r\n        scan_context = \"file\"\r\n        last_modified = \"2024-04-12T13:06Z\"\r\n        license = \"See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt\"\r\n        rule_id = 10425\r\n        version = 2\r\n\r\n    strings:\r\n        $s1 = \"-L=socks5://\" ascii\r\n        $s2 = \"-L rtcp://\" ascii\r\n\r\n    condition:\r\n        filesize < 10KB and\r\n        any of them\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1713022792",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022792",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1713022792",
+                        "type":"yara",
+                        "value":"rule susp_any_jarischf_user_path\r\n{\r\n    meta:\r\n        author = \"threatintel@volexity.com\"\r\n        date = \"2024-04-10\"\r\n        description = \"Detects paths embedded in samples in released projects written by Ferdinand Jarisch, a pentester in AISEC. These tools are sometimes used by attackers in real world intrusions.\"\r\n        hash1 = \"161fd76c83e557269bee39a57baa2ccbbac679f59d9adff1e1b73b0f4bb277a6\"\r\n        os = \"all\"\r\n        os_arch = \"all\"\r\n        report = \"TIB-20240412\"\r\n        scan_context = \"file,memory\"\r\n        last_modified = \"2024-04-12T13:06Z\"\r\n        license = \"See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt\"\r\n        rule_id = 10424\r\n        version = 4\r\n\r\n    strings:\r\n        $proj_1 = \"/home/jarischf/\"\r\n\r\n    condition:\r\n        any of ($proj_*)\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1713022817",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022817",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1713022817",
+                        "type":"yara",
+                        "value":"rule hacktool_golang_reversessh_fahrj\r\n{\r\n    meta:\r\n        author = \"threatintel@volexity.com\"\r\n        date = \"2024-04-10\"\r\n        description = \"Detects a reverse SSH utility available on GitHub. Attackers may use this tool or similar tools in post-exploitation activity.\"\r\n        hash1 = \"161fd76c83e557269bee39a57baa2ccbbac679f59d9adff1e1b73b0f4bb277a6\"\r\n        os = \"all\"\r\n        os_arch = \"all\"\r\n        reference = \"https://github.com/Fahrj/reverse-ssh\"\r\n        report = \"TIB-20240412\"\r\n        scan_context = \"file,memory\"\r\n        last_modified = \"2024-04-12T13:06Z\"\r\n        license = \"See license at https://github.com/volexity/threat-intel/blob/main/LICENSE.txt\"\r\n        rule_id = 10423\r\n        version = 5\r\n\r\n    strings:\r\n        $fun_1 = \"createLocalPortForwardingCallback\"\r\n        $fun_2 = \"createReversePortForwardingCallback\"\r\n        $fun_3 = \"createPasswordHandler\"\r\n        $fun_4 = \"createPublicKeyHandler\"\r\n        $fun_5 = \"createSFTPHandler\"\r\n        $fun_6 = \"dialHomeAndListen\"\r\n        $fun_7 = \"createExtraInfoHandler\"\r\n        $fun_8 = \"createSSHSessionHandler\"\r\n        $fun_9 = \"createReversePortForwardingCallback\"\r\n\r\n        $proj_1 = \"github.com/Fahrj/reverse-ssh\"\r\n\r\n    condition:\r\n        any of ($proj_*) or\r\n        4 of ($fun_*)\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-3400: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1713022829",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"vulnerability",
+                        "value":"CVE-2024-3400",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"text",
+                        "value":"A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.\n\nFixes for PAN-OS 10.2, PAN-OS 11.0, and PAN-OS 11.1 are in development and are expected to be released by April 14, 2024. Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability. All other versions of PAN-OS are also not impacted.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"datetime",
+                        "value":"2024-04-13T01:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"datetime",
+                        "value":"2024-04-12T08:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1713022829",
+                        "type":"link",
+                        "value":"https://security.paloaltonetworks.com/CVE-2024-3400",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1713022857",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1713022857",
+                        "type":"link",
+                        "value":"https://www.volexity.com/blog/2024/04/12/zero-day-exploitation-of-unauthenticated-remote-code-execution-vulnerability-in-globalprotect-cve-2024-3400/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022857",
+                        "type":"text",
+                        "value":"Zero-Day Exploitation of Unauthenticated Remote Code Execution Vulnerability in GlobalProtect (CVE-2024-3400)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1713022857",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

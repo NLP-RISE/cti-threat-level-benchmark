@@ -1,0 +1,147 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-11-03",
+        "published":true,
+        "info":"OSINT - Chrome 0-day exploit CVE-2019-13720 used in Operation WizardOpium",
+        "publish_timestamp":"1572768139",
+        "timestamp":"1572768064",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"collaborative-intelligence:request=\"sample\""
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"almost-certain\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Operation WizardOpium\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploitation for Client Execution - T1203\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572766831",
+                "type":"link",
+                "value":"https://securelist.com/chrome-0-day-exploit-cve-2019-13720-used-in-operation-wizardopium/94866/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"domain",
+                "value":"behindcorona.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"hostname",
+                "value":"code.jquery.cdn.behindcorona.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766877",
+                "type":"email-src",
+                "value":"kennethosborne@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572766914",
+                "type":"text",
+                "value":"Kaspersky Exploit Prevention is a component part of Kaspersky products that has successfully detected a number of zero-day attacks in the past. Recently, it caught a new unknown exploit for Googleâ€™s Chrome browser. We promptly reported this to the Google Chrome security team. After reviewing of the PoC we provided, Google confirmed there was a zero-day vulnerability and assigned it CVE-2019-13720. Google has released Chrome version 78.0.3904.87 for Windows, Mac, and Linux and we recommend all Chrome users to update to this latest version as soon as possible! You can read Googleâ€™s bulletin by clicking here.\r\n\r\nKaspersky endpoint products detect the exploit with the help of the exploit prevention component. The verdict for this attack is Exploit.Win32.Generic.\r\n\r\nWe are calling these attacks Operation WizardOpium. So far, we have been unable to establish a definitive link with any known threat actors. There are certain very weak code similarities with Lazarus attacks, although these could very well be a false flag. The profile of the targeted website is more in line with earlier DarkHotel attacks that have recently deployed similar false flag attacks.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1572766939",
+                "type":"vulnerability",
+                "value":"CVE-2019-13720",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572766964",
+                "type":"link",
+                "value":"https://chromereleases.googleblog.com/2019/10/stable-channel-update-for-desktop_31.html",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1572767092",
+                "type":"ip-dst",
+                "value":"193.29.59.52",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-21",
+        "published":false,
+        "info":"OSINT -  Igexin advertising network put user privacy at risk",
+        "publish_timestamp":"0",
+        "timestamp":"1521801926",
+        "Tag":[
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster-values\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"Android Malware"
+            },
+            {
+                "name":"ms-caro-malware-full:malware-platform=\"AndroidOS\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521795039",
+                "type":"link",
+                "value":"https://blog.lookout.com/igexin-malicious-sdk",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1521789739",
+                "type":"url",
+                "value":"http://sdk.open.phone.igexin.com/api.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521795046",
+                "type":"comment",
+                "value":"The Lookout Security Intelligence team has discovered an advertising software development kit (SDK) called Igexin that had the capability of spying on victims through otherwise benign apps by downloading malicious plugins. Over 500 apps available on Google Play used the Igexin ad SDK. While not all of these applications have been confirmed to download the malicious spying capability, Igexin could have introduced that functionality at their convenience. Apps containing the affected SDK were downloaded over 100 million times across the Android ecosystem.",
+                "to_ids":false
+            }
+        ]
+    }
+}

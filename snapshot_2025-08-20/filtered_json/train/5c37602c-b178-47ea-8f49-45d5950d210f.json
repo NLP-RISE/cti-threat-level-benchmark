@@ -1,0 +1,70 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-10",
+        "published":true,
+        "info":"OSINT - TA505 Group Adopts New ServHelper Backdoor and FlawedGrace RAT",
+        "publish_timestamp":"1547730923",
+        "timestamp":"1547727524",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"TA505\""
+            },
+            {
+                "name":"misp-galaxy:backdoor=\"ServHelper\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"FlawedGrace\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"RemoteAccess\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547724060",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/ta505-group-adopts-new-servhelper-backdoor-and-flawedgrace-rat/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547724059",
+                "type":"text",
+                "value":"Malware researchers discovered two new malware families distributed through phishing campaigns last year carried out by the TA505 cybercriminal group: ServHelper backdoor with two variants and FlawedGrace remote access trojan (RAT).",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ServHelper's C2 servers:",
+                "timestamp":"1547196479",
+                "type":"domain",
+                "value":"dedsolutions.bit",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ServHelper's C2 servers:",
+                "timestamp":"1547196480",
+                "type":"domain",
+                "value":"arepos.bit",
+                "to_ids":true
+            }
+        ]
+    }
+}

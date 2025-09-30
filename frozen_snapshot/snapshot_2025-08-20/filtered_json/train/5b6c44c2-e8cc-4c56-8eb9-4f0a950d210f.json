@@ -1,0 +1,1048 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-08",
+        "published":true,
+        "info":"OSINT -  Familiar Feeling A Malware Campaign Targeting the Tibetan Diaspora Resurfaces",
+        "publish_timestamp":"1537215875",
+        "timestamp":"1537215802",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1537189076",
+                "type":"link",
+                "value":"https://citizenlab.ca/2018/08/familiar-feeling-a-malware-campaign-targeting-the-tibetan-diaspora-resurfaces/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174539",
+                "type":"domain",
+                "value":"commail.co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174540",
+                "type":"domain",
+                "value":"tibetnews.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174540",
+                "type":"domain",
+                "value":"comemails.email",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174541",
+                "type":"ip-dst",
+                "value":"27.126.186.222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174541",
+                "type":"ip-dst",
+                "value":"103.55.24.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537174542",
+                "type":"ip-dst",
+                "value":"203.189.232.207",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537176051",
+                "type":"ip-dst",
+                "value":"45.127.97.222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537176052",
+                "type":"domain",
+                "value":"tibetnews.today",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537176052",
+                "type":"ip-dst",
+                "value":"115.126.86.151",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537178791",
+                "type":"domain",
+                "value":"tibethouse.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537178794",
+                "type":"domain",
+                "value":"daynew.today",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537178798",
+                "type":"domain",
+                "value":"daynews.today",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1537189105",
+                "type":"text",
+                "value":"In January 2018, a Tibetan activist received a mundane-looking email purporting to be program updates from a human rights NGO. Attached to the message were a PowerPoint presentation and a document. The activist, like many in the Tibetan diaspora, had grown wary of unsolicited emails with attachments, and instead of opening the documents, shared the files with Citizen Lab researchers.\r\n\r\nThe suspicion was warranted: the attachments were malicious. If clicked, the files would run recent exploits to infect Windows computers with custom malware. This email was the start of a malware campaign active between January to March 2018 that targeted Tibetan activists, journalists, members of the Tibetan Parliament in exile, and the Central Tibetan Administration. We worked closely with the targeted groups to collect the malicious messages, and also engaged in incident response with a compromised organization. This collaboration enabled us to gain further insights into the tactics, techniques, and procedures used by the operators.\r\n\r\nThe campaign used social engineering to trick targets into opening exploit-laden PowerPoint (CVE-2017-0199) and Microsoft Rich Text Format (RTF) documents (CVE-2017-11882) attached to e-mail messages. The malware includes a PowerShell payload we call DMShell++, a backdoor known as TSSL, and a post-compromise tool we call DSNGInstaller.\r\n\r\nWe call this recent campaign the â€œResurfaced Campaignâ€ because of connections to a 2016 campaign that targeted Tibetan Parliamentarians (which we refer to as the â€œParliamentary Campaignâ€). These connections suggest that the same group may be involved or tools and infrastructure are being shared between multiple groups.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537190954",
+                "type":"url",
+                "value":"commail.co:5453/qqqzqa",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 6001",
+                "timestamp":"1537190954",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|6001",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 6002",
+                "timestamp":"1537190955",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|6002",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 6003",
+                "timestamp":"1537190956",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|6003",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537190957",
+                "type":"url",
+                "value":"tibetnews.info:8026/qqqzqa",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 80",
+                "timestamp":"1537190957",
+                "type":"ip-dst|port",
+                "value":"103.55.24.196|80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1537190958",
+                "type":"ip-dst|port",
+                "value":"103.55.24.196|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1537190959",
+                "type":"ip-dst|port",
+                "value":"45.127.97.222|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 80",
+                "timestamp":"1537190960",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1537190961",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080",
+                "timestamp":"1537190962",
+                "type":"ip-dst|port",
+                "value":"27.126.186.222|8080",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1537190963",
+                "type":"url",
+                "value":"comemails.email:1234/hgf",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 80",
+                "timestamp":"1537190963",
+                "type":"ip-dst|port",
+                "value":"203.189.232.207|80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1537190964",
+                "type":"ip-dst|port",
+                "value":"203.189.232.207|443",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1537171463",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537171463",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537171463",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1537172313",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"float",
+                        "value":"9.3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"link",
+                        "value":"http://reversingminds-blog.logdown.com/posts/3907313-fileless-attack-in-word-without-macros-cve-2017-11882",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"link",
+                        "value":"http://www.securityfocus.com/bid/101757",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"link",
+                        "value":"http://www.securitytracker.com/id/1039783",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"link",
+                        "value":"https://0patch.blogspot.com/2017/11/did-microsoft-just-manually-patch-their.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"link",
+                        "value":"https://0patch.blogspot.com/2017/11/official-patch-for-cve-2017-11882-meets.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"text",
+                        "value":"Microsoft Office 2007 Service Pack 3, Microsoft Office 2010 Service Pack 2, Microsoft Office 2013 Service Pack 1, and Microsoft Office 2016 allow an attacker to run arbitrary code in the context of the current user by failing to properly handle objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11884.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172313",
+                        "type":"text",
+                        "value":"CVE-2017-11882",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172316",
+                        "type":"datetime",
+                        "value":"2017-11-14T22:29:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172316",
+                        "type":"text",
+                        "value":"Microsoft Office 2007 Service Pack 3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172317",
+                        "type":"text",
+                        "value":"cpe:2.3:a:microsoft:office:2010:sp2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172317",
+                        "type":"text",
+                        "value":"Microsoft Office 2013 SP1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172318",
+                        "type":"text",
+                        "value":"Microsoft Office 2016",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537172318",
+                        "type":"datetime",
+                        "value":"2017-12-30T21:29:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1537174420",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174421",
+                        "type":"float",
+                        "value":"9.3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174421",
+                        "type":"link",
+                        "value":"http://rewtin.blogspot.nl/2017/04/cve-2017-0199-practical-exploitation-poc.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174421",
+                        "type":"link",
+                        "value":"https://ics-cert.us-cert.gov/advisories/ICSMA-18-058-02",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174422",
+                        "type":"link",
+                        "value":"https://www.exploit-db.com/exploits/41934/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174422",
+                        "type":"link",
+                        "value":"https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199_useda.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174423",
+                        "type":"link",
+                        "value":"https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174423",
+                        "type":"link",
+                        "value":"http://www.securitytracker.com/id/1038224",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174424",
+                        "type":"link",
+                        "value":"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2017-0199",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174424",
+                        "type":"link",
+                        "value":"http://www.securityfocus.com/bid/97498",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174425",
+                        "type":"link",
+                        "value":"https://blog.nviso.be/2017/04/12/analysis-of-a-cve-2017-0199-malicious-rtf-document/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174425",
+                        "type":"link",
+                        "value":"https://www.exploit-db.com/exploits/42995/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537174426",
+                        "type":"link",
+                        "value":"https://www.exploit-db.com/exploits/41894/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174426",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174426",
+                        "type":"datetime",
+                        "value":"2017-12-04T10:59:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174426",
+                        "type":"text",
+                        "value":"Microsoft Office 2007 SP3, Microsoft Office 2010 SP2, Microsoft Office 2013 SP1, Microsoft Office 2016, Microsoft Windows Vista SP2, Windows Server 2008 SP2, Windows 7 SP1, Windows 8.1 allow remote attackers to execute arbitrary code via a crafted document, aka \"Microsoft Office/WordPad Remote Code Execution Vulnerability w/Windows API.\"",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174427",
+                        "type":"text",
+                        "value":"cpe:2.3:a:microsoft:office:2010:sp2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174427",
+                        "type":"text",
+                        "value":"Microsoft Office 2007 Service Pack 3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174428",
+                        "type":"text",
+                        "value":"Microsoft Windows Server 2008 Service Pack 2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174428",
+                        "type":"text",
+                        "value":"Microsoft Office 2016",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174429",
+                        "type":"text",
+                        "value":"cpe:2.3:o:microsoft:windows_7:-:sp1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174429",
+                        "type":"text",
+                        "value":"Microsoft Windows Vista Service Pack 2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174430",
+                        "type":"text",
+                        "value":"Microsoft Windows Server 2008 R2 Service Pack 1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174430",
+                        "type":"text",
+                        "value":"Microsoft Office 2013 SP1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174431",
+                        "type":"text",
+                        "value":"Microsoft Windows Server 2012",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174431",
+                        "type":"datetime",
+                        "value":"2018-03-27T21:29:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537174431",
+                        "type":"text",
+                        "value":"CVE-2017-0199",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1537178039",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1537177828",
+                        "type":"whois-registrant-email",
+                        "value":"bqfkdrmnhh0623[@]gmail.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1537177830",
+                        "type":"whois-registrant-name",
+                        "value":"huang ning",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1537177833",
+                        "type":"whois-registrant-phone",
+                        "value":"8677687877",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1537179167",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179167",
+                        "type":"ip-dst",
+                        "value":"115.126.86.29",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179171",
+                        "type":"domain",
+                        "value":"google.comemails.email",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1537179207",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179207",
+                        "type":"ip-dst",
+                        "value":"115.126.98.78",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179210",
+                        "type":"domain",
+                        "value":"mail.google.commail.co",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1537179261",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179261",
+                        "type":"ip-dst",
+                        "value":"118.99.59.214",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537179265",
+                        "type":"domain",
+                        "value":"google.comemail.email",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1537188384",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537179763",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537179763",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1537187589",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537179783",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537179783",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1537187205",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537179800",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537179800",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1537190429",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537190430",
+                        "type":"email-src",
+                        "value":"tibetanparliarnent@yahoo.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1537193094",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193095",
+                        "type":"ip-dst",
+                        "value":"27.126.186.222",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"6001",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"6002",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"6003",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"80",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"8080",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537193096",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1537194880",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194880",
+                        "type":"ip-dst",
+                        "value":"103.55.24.196",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194880",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194880",
+                        "type":"port",
+                        "value":"80",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1537194902",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194902",
+                        "type":"ip-dst",
+                        "value":"45.127.97.222",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194903",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1537194923",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194923",
+                        "type":"ip-dst",
+                        "value":"203.189.232.207",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194923",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1537194923",
+                        "type":"port",
+                        "value":"80",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1537215759",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537215758",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537215760",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1537215763",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1537215765",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537215768",
+                        "type":"datetime",
+                        "value":"2018-08-10T08:33:52",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1537215770",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/1b156c7d2cc651d0a58c8dac1353332614b489e4d21e51ca7a0a929295e6ad40/analysis/1533890032/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1537215772",
+                        "type":"text",
+                        "value":"24/67",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,240 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-02-16",
+        "published":true,
+        "info":"WIP26 Espionage | Threat Actors Abuse Cloud Infrastructure in Targeted Telco Attacks",
+        "publish_timestamp":"1682263279",
+        "timestamp":"1682263274",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Google Firebase instance used for C2 purposes",
+                "timestamp":"1682263001",
+                "type":"url",
+                "value":"https://gmall-52fb5-default-rtdb.asia-southeast1.firebasedatabase.app/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Google Firebase instance used for C2 purposes",
+                "timestamp":"1682263007",
+                "type":"url",
+                "value":"https://go0gle-service-default-rtdb.firebaseio.com/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft 365 Mail location used for C2 purposes",
+                "timestamp":"1682263016",
+                "type":"url",
+                "value":"https://graph.microsoft.com/beta/users/3517e816-6719-4b16-9b40-63cc779da77c/mailFolders",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Dropbox malware hosting site",
+                "timestamp":"1682263024",
+                "type":"url",
+                "value":"https://www.dropbox.com/s/6a8u8wlpvv73fe4/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Dropbox malware hosting site",
+                "timestamp":"1682263026",
+                "type":"url",
+                "value":"https://www.dropbox.com/s/hbc5yz8z116zbi9/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft Azure malware hosting site",
+                "timestamp":"1682263043",
+                "type":"url",
+                "value":"https://socialmsdnmicrosoft.azurewebsites.net/AAA/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft Azure malware hosting site",
+                "timestamp":"1682263043",
+                "type":"url",
+                "value":"https://socialmsdnmicrosoft.azurewebsites.net/ABB/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft Azure malware hosting site",
+                "timestamp":"1682263043",
+                "type":"url",
+                "value":"https://socialmsdnmicrosoft.azurewebsites.net/AMA/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft Azure malware hosting site",
+                "timestamp":"1682263043",
+                "type":"url",
+                "value":"https://socialmsdnmicrosoft.azurewebsites.net/AS/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Microsoft Azure malware hosting site",
+                "timestamp":"1682263043",
+                "type":"url",
+                "value":"https://akam.azurewebsites.net/api/File/Upload",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Chisel C2 server",
+                "timestamp":"1682263053",
+                "type":"ip-dst",
+                "value":"193.29.56.122",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1682263110",
+                "type":"link",
+                "value":"https://www.sentinelone.com/labs/wip26-espionage-threat-actors-abuse-cloud-infrastructure-in-targeted-telco-attacks/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Malware loader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1682263065",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682262883",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682263065",
+                        "type":"filename",
+                        "value":"PDFelement.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CMD365 sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1682263056",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682262911",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682263056",
+                        "type":"filename",
+                        "value":"Update.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CMD365 sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1682263060",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682262932",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682263060",
+                        "type":"filename",
+                        "value":"EdgeUpdater.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CMDEmber sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1682263063",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682262948",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682263063",
+                        "type":"filename",
+                        "value":"Launcher.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CMDEmber sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1682263072",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682262970",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1682263072",
+                        "type":"filename",
+                        "value":"Update.exe",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

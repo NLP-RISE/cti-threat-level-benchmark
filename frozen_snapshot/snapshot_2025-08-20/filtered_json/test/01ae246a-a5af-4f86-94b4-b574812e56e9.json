@@ -1,0 +1,117 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-07-15",
+        "published":true,
+        "info":"MuddyWater replaces Atera by custom MuddyRot implant in a recent campaign",
+        "publish_timestamp":"1721329967",
+        "timestamp":"1721329958",
+        "Tag":[
+            {
+                "name":"misp-galaxy:groups=\"MuddyWater\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"Mango Sandstorm\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"MuddyWater - G0069\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1598.002\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1721329647",
+                "type":"link",
+                "value":"https://blog.sekoia.io/muddywater-replaces-atera-by-custom-muddyrot-implant-in-a-recent-campaign/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1721329801",
+                "type":"mutex",
+                "value":"DocumentUpdater",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1721329821",
+                "type":"filename",
+                "value":"documentsmanagerreporter.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MuddyRot related codes",
+                "timestamp":"1721329904",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MuddyRot related codes",
+                "timestamp":"1721329904",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MuddyRot related codes",
+                "timestamp":"1721329904",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MuddyRot related codes",
+                "timestamp":"1721329904",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1721329916",
+                "type":"ip-dst",
+                "value":"91.235.234.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1721329916",
+                "type":"ip-dst",
+                "value":"146.19.143.14",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1721329938",
+                "type":"yara",
+                "value":"rule apt_MuddyWater_MuddyRot_strings {\r\n  meta:\r\n        id = \"f7bc195a-0e60-4495-b78a-78f101543700\"\r\n        version = \"1.0\"\r\n        malware = \"MuddyRot\"\r\n        intrusion_set = \"MuddyWater\"\r\n        description = \"Detects RotRot backdoor based on strings permutations\"\r\n        source = \"Sekoia.io\"\r\n        creation_date = \"2024-06-10\"\r\n        classification = \"TLP:WHITE\"\r\n  strings:\r\n    $s1 = \"qsphsbnebub\"\r\n    $s2 = \"rtqitcofcvc\"\r\n    $s3 = \"surjudpgdwd\"\r\n    $s4 = \"tvskveqhexe\"\r\n    $s5 = \"uwtlwfrifyf\"\r\n    $s6 = \"vxumxgsjgzg\"\r\n\r\n    $t1 = \"MpbeMjcsbs\"\r\n    $t2 = \"NqcfNkdtct\"\r\n    $t3 = \"OrdgOleudu\"\r\n    $t4 = \"PsehPmfvev\"\r\n    $t5 = \"QtfiQngwfw\"\r\n    $t6 = \"RugjRohxgx\"\r\n\r\n    $u1 = \"UfsnjobufKpcPckfdu\"\r\n    $u2 = \"VgtokpcvgLqdQdlgev\"\r\n    $u3 = \"WhuplqdwhMreRemhfw\"\r\n    $u4 = \"XivqmrexiNsfSfnigx\"\r\n    $u5 = \"YjwrnsfyjOtgTgojhy\"\r\n    $u6 = \"ZkxsotgzkPuhUhpkiz\"\r\n\r\n  condition:\r\n    uint16be(0) == 0x4d5a and\r\n    filesize > 100KB and filesize < 300KB and\r\n    any of ($s*) and any of ($t*) and any of ($u*)\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1721329958",
+                "type":"yara",
+                "value":"rule apt_MuddyWater_malicious_pdf {\r\n    meta:\r\n        id = \"77983aea-47cb-4436-b773-faf7be430339\"\r\n        version = \"1.0\"\r\n        intrusion_set = \"MuddyWater\"\r\n        description = \"Detects malicious PDF used by MuddyWater\"\r\n        source = \"Sekoia.io\"\r\n        creation_date = \"2024-06-10\"\r\n        classification = \"TLP:WHITE\"\r\n    strings:\r\n        $ = \"egnyte.com/fl/\"\r\n        $ = \"/Type/Pages/Count 1\"\r\n    condition:\r\n        uint32be(0) == 0x25504446 and\r\n        filesize < 300KB and\r\n        all of them\r\n}",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-01",
+        "published":true,
+        "info":"OSINT - Sigrun Ransomware Author Decrypting Russian Victims for Free",
+        "publish_timestamp":"1528904384",
+        "timestamp":"1528891752",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Sigrun Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528294869",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/sigrun-ransomware-author-decrypting-russian-victims-for-free/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528294862",
+                "type":"text",
+                "value":"The author of the Sigrun Ransomware is providing decryption for Russian victims for free, while asking for a ransom payment of $2,500 in Bitcoin or Dash for everyone else. It is not uncommon for Russian ransomware developers to purposely avoid targeting Russian citizens and to outwardly help such victims for free.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528356973",
+                "type":"filename",
+                "value":"RESTORE-SIGRUN.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528356974",
+                "type":"filename",
+                "value":"RESTORE-SIGRUN.html",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528357046",
+                "type":"email-src",
+                "value":"sigrun_decryptor@protonmail.ch",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528356608",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528356609",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528356609",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528875487"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528875486"
+            }
+        ]
+    }
+}

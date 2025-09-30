@@ -1,0 +1,1015 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-06",
+        "published":false,
+        "info":"OSINT - Mitigating and eliminating info-stealing Qakbot and Emotet in corporate networks",
+        "publish_timestamp":"0",
+        "timestamp":"1511184352",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            },
+            {
+                "name":"misp-galaxy:banker=\"Qakbot\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510922403",
+                "type":"link",
+                "value":"https://blogs.technet.microsoft.com/mmpc/2017/11/06/mitigating-and-eliminating-info-stealing-qakbot-and-emotet-in-corporate-networks/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510922403",
+                "type":"comment",
+                "value":"The threat to information is greater than ever, with data breaches, phishing attacks, and other forms of information theft like point-of-sale malware and ATM hacks becoming all too common in today's threat landscape. Information-stealing trojans are in the same category of threats that deliver a steady stream of risk to data and can lead to significant financial loss.\r\n\r\nQakbot and Emotet are information stealers that have been showing renewed activity in recent months. These malware families are technically different, but they share many similarities in behavior. They both have the ultimate goal of stealing online banking credentials that malware operators can then use to steal money from online banking accounts. They can also steal other sensitive information using techniques like keylogging.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware",
+                "timestamp":"1510922403",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware",
+                "timestamp":"1510922403",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1510922403",
+                "type":"filename",
+                "value":"%APPDATA%\\Microsoft\\Cexpalgxx\\Cexpalgxx.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1510922403",
+                "type":"filename",
+                "value":"%APPDATA%\\Microsoft\\Cexpalgxx\\Cexpalgxx32.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"104.236.252.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"162.243.159.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"45.33.55.157",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"77.244.245.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"192.81.212.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"173.212.192.45",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"103.16.131.20",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"195.78.33.200",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"50.116.54.16",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"212.83.166.45",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"137.74.254.64",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"104.227.137.34",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"188.165.220.214",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"85.143.221.180",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"119.82.27.246",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"194.88.246.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"206.214.220.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"173.230.136.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"ip-dst",
+                "value":"173.224.218.25",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"regkey",
+                "value":"%appdata%\\roaming\\microsoft\\windows\\start menu\\programs\\startup\\[random].lnk",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"filename",
+                "value":"%Appdata%\\local\\[random]\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"regkey",
+                "value":"%localappdata%\\microsoft\\windows",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1510922404",
+                "type":"filename",
+                "value":"%WINDIR%\\System32\\netshedule.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet downloader",
+                "timestamp":"1510922404",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware",
+                "timestamp":"1510922404",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware",
+                "timestamp":"1510922404",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware - Xchecked via VT: 59639027a7fd487295bad10db896528ea223684e6595cae4ce9a0bec8d809087",
+                "timestamp":"1510922404",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware - Xchecked via VT: 59639027a7fd487295bad10db896528ea223684e6595cae4ce9a0bec8d809087",
+                "timestamp":"1510922404",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Emotet malware - Xchecked via VT: 59639027a7fd487295bad10db896528ea223684e6595cae4ce9a0bec8d809087",
+                "timestamp":"1510922404",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/59639027a7fd487295bad10db896528ea223684e6595cae4ce9a0bec8d809087/analysis/1506215055/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware - Xchecked via VT: ffcb204da3ff72d268c8ac065c2e7cce5c65fafc2f549d92d0c280c6099bd440",
+                "timestamp":"1510922404",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet malware - Xchecked via VT: ffcb204da3ff72d268c8ac065c2e7cce5c65fafc2f549d92d0c280c6099bd440",
+                "timestamp":"1510922404",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Emotet malware - Xchecked via VT: ffcb204da3ff72d268c8ac065c2e7cce5c65fafc2f549d92d0c280c6099bd440",
+                "timestamp":"1510922404",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ffcb204da3ff72d268c8ac065c2e7cce5c65fafc2f549d92d0c280c6099bd440/analysis/1510558151/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet downloader - Xchecked via VT: 4ce5366c7eef1fff1260d5d7a0aec72c1246621838bf8df07f4a6ab3e5369d96",
+                "timestamp":"1510922404",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet downloader - Xchecked via VT: 4ce5366c7eef1fff1260d5d7a0aec72c1246621838bf8df07f4a6ab3e5369d96",
+                "timestamp":"1510922404",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Emotet downloader - Xchecked via VT: 4ce5366c7eef1fff1260d5d7a0aec72c1246621838bf8df07f4a6ab3e5369d96",
+                "timestamp":"1510922404",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4ce5366c7eef1fff1260d5d7a0aec72c1246621838bf8df07f4a6ab3e5369d96/analysis/1510180240/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware - Xchecked via VT: ca2d536b91b15e7fc44ec93bbed1f0f46ae65c723b8a4823253a2a91b8241f9a",
+                "timestamp":"1510922404",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware - Xchecked via VT: ca2d536b91b15e7fc44ec93bbed1f0f46ae65c723b8a4823253a2a91b8241f9a",
+                "timestamp":"1510922404",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Qakbot malware - Xchecked via VT: ca2d536b91b15e7fc44ec93bbed1f0f46ae65c723b8a4823253a2a91b8241f9a",
+                "timestamp":"1510922404",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ca2d536b91b15e7fc44ec93bbed1f0f46ae65c723b8a4823253a2a91b8241f9a/analysis/1510257822/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware - Xchecked via VT: da00823090dae3dae452ddc8a4c2a3c087389b4aacf1f0c12d13c83c9fcaef9c",
+                "timestamp":"1510922404",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qakbot malware - Xchecked via VT: da00823090dae3dae452ddc8a4c2a3c087389b4aacf1f0c12d13c83c9fcaef9c",
+                "timestamp":"1510922404",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Qakbot malware - Xchecked via VT: da00823090dae3dae452ddc8a4c2a3c087389b4aacf1f0c12d13c83c9fcaef9c",
+                "timestamp":"1510922405",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/da00823090dae3dae452ddc8a4c2a3c087389b4aacf1f0c12d13c83c9fcaef9c/analysis/1510111314/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657087",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657087",
+                        "type":"port",
+                        "value":"995",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657087",
+                        "type":"ip-dst",
+                        "value":"64.183.173.170",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657114",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657114",
+                        "type":"port",
+                        "value":"993",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657114",
+                        "type":"ip-dst",
+                        "value":"67.213.243.228",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657236",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657236",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657236",
+                        "type":"ip-dst",
+                        "value":"96.67.244.225",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657261",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657261",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657261",
+                        "type":"ip-dst",
+                        "value":"173.25.234.18",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657283",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657283",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657283",
+                        "type":"ip-dst",
+                        "value":"24.123.151.58",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657490",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657490",
+                        "type":"port",
+                        "value":"995",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657491",
+                        "type":"ip-dst",
+                        "value":"76.164.161.46",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510657599",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657599",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510657599",
+                        "type":"ip-dst",
+                        "value":"68.115.254.146",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665186",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665186",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665186",
+                        "type":"ip-dst",
+                        "value":"198.57.88.73",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665449",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665450",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665450",
+                        "type":"ip-dst",
+                        "value":"47.21.79.34",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665512",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665512",
+                        "type":"port",
+                        "value":"465",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665512",
+                        "type":"ip-dst",
+                        "value":"174.51.185.121",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665534",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665534",
+                        "type":"port",
+                        "value":"993",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665534",
+                        "type":"ip-dst",
+                        "value":"71.3.55.80",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665551",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665551",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665551",
+                        "type":"ip-dst",
+                        "value":"88.244.177.127",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665866",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665866",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665866",
+                        "type":"ip-dst",
+                        "value":"180.93.148.41",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665883",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665883",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665883",
+                        "type":"ip-dst",
+                        "value":"101.51.40.175",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665904",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665905",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665905",
+                        "type":"ip-dst",
+                        "value":"73.166.94.110",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510665982",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665982",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510665982",
+                        "type":"ip-dst",
+                        "value":"71.88.202.122",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666100",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666100",
+                        "type":"port",
+                        "value":"990",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666100",
+                        "type":"ip-dst",
+                        "value":"74.5.136.50",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666120",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666120",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666120",
+                        "type":"ip-dst",
+                        "value":"89.43.179.209",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666143",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666143",
+                        "type":"port",
+                        "value":"995",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666143",
+                        "type":"ip-dst",
+                        "value":"211.27.18.233",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666258",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666258",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666258",
+                        "type":"ip-dst",
+                        "value":"96.82.91.67",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666279",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666279",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666279",
+                        "type":"ip-dst",
+                        "value":"98.194.132.179",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666296",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666296",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666296",
+                        "type":"ip-dst",
+                        "value":"98.113.137.220",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666317",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666317",
+                        "type":"port",
+                        "value":"2222",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666317",
+                        "type":"ip-dst",
+                        "value":"24.184.200.177",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510666334",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666334",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510666334",
+                        "type":"ip-dst",
+                        "value":"105.224.247.34",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,292 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-11",
+        "published":true,
+        "info":"OSINT - CVE-2017-0199: In the Wild Attacks Leveraging HTA Handler",
+        "publish_timestamp":"1491939455",
+        "timestamp":"1491939061",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491939040",
+                "type":"text",
+                "value":"FireEye recently detected malicious Microsoft Office RTF documents that leverage CVE-2017-0199, a previously undisclosed vulnerability. This vulnerability allows a malicious actor to download and execute a Visual Basic script containing PowerShell commands when a user opens a document containing an embedded exploit. FireEye has observed Office documents exploiting CVE-2017-0199 that download and execute malware payloads from different well-known malware families.\r\n\r\nFireEye shared the details of the vulnerability with Microsoft and has been coordinating public disclosure timed with the release of a patch by Microsoft to address the vulnerability, which can be found here.\r\n\r\nThe vulnerability bypassed most mitigations prior to patch availability; however, FireEye email and network products detected the malicious documents. FireEye recommends that Microsoft Office users apply the patch from Microsoft.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491939039",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡ÐŸÐ£Ð¢ÐÐ˜Ðš Ð ÐÐ—Ð’Ð•Ð”Ð§Ð˜ÐšÐ.doc",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"template.doc",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"copy.jpg/winword.exe",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"docu.doc/document.doc",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491938958",
+                "type":"vulnerability",
+                "value":"CVE-2017-0199",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"hire_form.doc Malicious document",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"template.doc/template[?].hta Malicious HTA file",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ww.vbs/maintenance.vbs Stage two VBScript",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"questions.doc/document.doc Decoy document",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"eoobvfwiglhiliqougukgm.js Malicious script",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"wood.exe/ dcihprianeeyirdeuceulx.exe Final payload",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"wood.exe/ dcihprianeeyirdeuceulx.exe Updated final payload",
+                "timestamp":"1491938958",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1491938958",
+                "type":"url",
+                "value":"http://www.modani.com/media/wysiwyg/ww.vbs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1491938958",
+                "type":"url",
+                "value":"http://www.modani.com/media/wysiwyg/wood.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"variant then connects to the following command and control (C2) server",
+                "timestamp":"1491938958",
+                "type":"ip-dst",
+                "value":"217.12.203.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The initial stage reached out to the following URL to download the stage one malicious HTA file:",
+                "timestamp":"1491938958",
+                "type":"url",
+                "value":"http://95.141.38.110/mo/dnr/tmp/template.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious HTA",
+                "timestamp":"1491938958",
+                "type":"ip-dst",
+                "value":"95.141.38.110",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"wood.exe/ dcihprianeeyirdeuceulx.exe Updated final payload - Xchecked via VT: 15e51cdbd938545c9af47806984b1667",
+                "timestamp":"1491938977",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"wood.exe/ dcihprianeeyirdeuceulx.exe Updated final payload - Xchecked via VT: 15e51cdbd938545c9af47806984b1667",
+                "timestamp":"1491938978",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"wood.exe/ dcihprianeeyirdeuceulx.exe Updated final payload - Xchecked via VT: 15e51cdbd938545c9af47806984b1667",
+                "timestamp":"1491938979",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/169c9cc7120fa64c7c02cbbf3aeeefd02fef32ca5dcc61093d1ea012e4f39a18/analysis/1491819886/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"template.doc/template[?].hta Malicious HTA file - Xchecked via VT: fb475f0d8c8e9bf1bc360211179d8a28",
+                "timestamp":"1491938980",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"template.doc/template[?].hta Malicious HTA file - Xchecked via VT: fb475f0d8c8e9bf1bc360211179d8a28",
+                "timestamp":"1491938981",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"template.doc/template[?].hta Malicious HTA file - Xchecked via VT: fb475f0d8c8e9bf1bc360211179d8a28",
+                "timestamp":"1491938983",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3e72bfa3ca0880226cacdbac28299d2a0bacde556ad3400d76be8f1666940828/analysis/1491935832/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"hire_form.doc Malicious document - Xchecked via VT: 5ebfd13250dd0408e3de594e419f9e01",
+                "timestamp":"1491938984",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"hire_form.doc Malicious document - Xchecked via VT: 5ebfd13250dd0408e3de594e419f9e01",
+                "timestamp":"1491938985",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"hire_form.doc Malicious document - Xchecked via VT: 5ebfd13250dd0408e3de594e419f9e01",
+                "timestamp":"1491938986",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/13d0d0b67c8e881e858ae8cbece32ee464775b33a9ffcec6bff4dd3085dbb575/analysis/1491931544/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"docu.doc/document.doc - Xchecked via VT: e01982913fbc22188b83f5f9fadc1c17",
+                "timestamp":"1491938987",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"docu.doc/document.doc - Xchecked via VT: e01982913fbc22188b83f5f9fadc1c17",
+                "timestamp":"1491938988",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"docu.doc/document.doc - Xchecked via VT: e01982913fbc22188b83f5f9fadc1c17",
+                "timestamp":"1491938990",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/01220917060a94315eeeb04e1ee1263c024e54e66058cb1f910dec3a48fef42a/analysis/1491867682/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡ÐŸÐ£Ð¢ÐÐ˜Ðš Ð ÐÐ—Ð’Ð•Ð”Ð§Ð˜ÐšÐ.doc - Xchecked via VT: c10dabb05a38edd8a9a0ddda1c9af10e",
+                "timestamp":"1491938990",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡ÐŸÐ£Ð¢ÐÐ˜Ðš Ð ÐÐ—Ð’Ð•Ð”Ð§Ð˜ÐšÐ.doc - Xchecked via VT: c10dabb05a38edd8a9a0ddda1c9af10e",
+                "timestamp":"1491938991",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ð¡ÐŸÐ£Ð¢ÐÐ˜Ðš Ð ÐÐ—Ð’Ð•Ð”Ð§Ð˜ÐšÐ.doc - Xchecked via VT: c10dabb05a38edd8a9a0ddda1c9af10e",
+                "timestamp":"1491938992",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f4a0f65e9161a266b557e3850e3d17f08b2843ee560f8a89ecf7059eba104e66/analysis/1491801507/",
+                "to_ids":false
+            }
+        ]
+    }
+}

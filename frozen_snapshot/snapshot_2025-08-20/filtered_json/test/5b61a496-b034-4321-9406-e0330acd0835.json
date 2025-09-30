@@ -1,0 +1,566 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2018-08-01",
+        "published":true,
+        "info":"Talos Blog: Multiple Cobalt Personality Disorder",
+        "publish_timestamp":"1607926769",
+        "timestamp":"1607525069",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Cobalt\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Cobalt Strike uses PowerShell\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"ThreadKit\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"CMSTP - T1191\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Regsvr32 - T1117\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"PowerShell - T1086\""
+            },
+            {
+                "name":"cert-ist:threat_targeted_system=\"Windows\""
+            },
+            {
+                "name":"cert-ist:threat_targeted_sector=\"Finance\""
+            },
+            {
+                "name":"cert-ist:enriched"
+            },
+            {
+                "name":"cert-ist:ioc_accuracy=\"high\""
+            },
+            {
+                "name":"cert-ist:threat_level=\"low\""
+            },
+            {
+                "name":"cert-ist:threat_type=\"apt\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533212554",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2018/07/multiple-cobalt-personality-disorder.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533126149",
+                "type":"vulnerability",
+                "value":"CVE-2017-11882",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533126149",
+                "type":"vulnerability",
+                "value":"CVE-2017-8570",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533126149",
+                "type":"vulnerability",
+                "value":"CVE-2017-0199",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533126149",
+                "type":"vulnerability",
+                "value":"CVE-2018-8174",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious RTF doc",
+                "timestamp":"1533126231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious Word Doc(x)",
+                "timestamp":"1533126284",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious Word Doc(x)",
+                "timestamp":"1533126284",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious Word Doc(x)",
+                "timestamp":"1533126284",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"DROPPER DLLS",
+                "timestamp":"1533126474",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"DROPPER DLLS",
+                "timestamp":"1533126470",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"DROPPER DLLS",
+                "timestamp":"1533126432",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"DROPPER DLLS",
+                "timestamp":"1533126467",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SCRIPTLET",
+                "timestamp":"1533126461",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SCRIPTLET",
+                "timestamp":"1533126458",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SCRIPTLET",
+                "timestamp":"1533126455",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SCRIPTLET",
+                "timestamp":"1533126452",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious PDF",
+                "timestamp":"1533126366",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious PDF",
+                "timestamp":"1533126366",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious PDF",
+                "timestamp":"1533126366",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Decoy Doc",
+                "timestamp":"1533126435",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"EXECUTABLE PAYLOADS",
+                "timestamp":"1533126419",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"EXECUTABLE PAYLOADS",
+                "timestamp":"1533126419",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URLs to pull docs",
+                "timestamp":"1533126550",
+                "type":"url",
+                "value":"http://95.142.39.109/e1.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URLs to pull docs",
+                "timestamp":"1533126550",
+                "type":"url",
+                "value":"https://kaspersky-security.com/Complaint.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URLs to pull docs",
+                "timestamp":"1533126550",
+                "type":"url",
+                "value":"https://mcafeecloud.us/complaints/67972318.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URLs to pull docs",
+                "timestamp":"1533126550",
+                "type":"url",
+                "value":"https://s3.sovereigncars.org.uk/inv005189.pdf",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://nl.web-cdn.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://mail.halcyonih.com/m.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://mail.halcyonih.com/humans.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://secure.n-document.biz/humans.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://xstorage.biz/robots.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://cloud.yourdocument.biz/robots.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://cloud-direct.biz/robots.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533212606",
+                "type":"filename",
+                "value":"http://documents.total-cloud.biz/version.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://cloud.pallets32.com/robots.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"STAGE 1 - DROP DLL DROPPER",
+                "timestamp":"1533126598",
+                "type":"url",
+                "value":"http://document.cdn-one.biz/robots.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BACKDOOR C2",
+                "timestamp":"1533126636",
+                "type":"url",
+                "value":"https://api.outlook.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BACKDOOR C2",
+                "timestamp":"1533126636",
+                "type":"url",
+                "value":"http://api.fujitsu.org.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BACKDOOR C2",
+                "timestamp":"1533126636",
+                "type":"url",
+                "value":"http://api.asus.org.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BACKDOOR C2",
+                "timestamp":"1533126636",
+                "type":"url",
+                "value":"http://api.toshiba.org.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BACKDOOR C2",
+                "timestamp":"1533126636",
+                "type":"url",
+                "value":"http://api.miria.kz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POWERSHELL STAGE",
+                "timestamp":"1533126664",
+                "type":"url",
+                "value":"http://95.142.39.109/driver",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POWERSHELL STAGE",
+                "timestamp":"1533126664",
+                "type":"url",
+                "value":"http://95.142.39.109/wdriver",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy Doc",
+                "timestamp":"1533126693",
+                "type":"url",
+                "value":"http://95.142.39.109/document.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"COBALT STRIKE BEACON STAGE",
+                "timestamp":"1533126738",
+                "type":"url",
+                "value":"https://95.142.39.109/vFGY",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Attack name",
+                "timestamp":"1533213228",
+                "type":"text",
+                "value":"COBALT",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST External link",
+                "timestamp":"1533213228",
+                "type":"link",
+                "value":"https://wws.cert-ist.com/private/fr/IocAttack_details?format=html&objectType=ATK&ref=CERT-IST/ATK-2016-069",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Attack Alias",
+                "timestamp":"1533213228",
+                "type":"comment",
+                "value":"Buhtrap",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Attack Alias",
+                "timestamp":"1533213228",
+                "type":"comment",
+                "value":"Cobalt Gang",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Attack Alias",
+                "timestamp":"1533213228",
+                "type":"comment",
+                "value":"Cobalt Group",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Description",
+                "timestamp":"1533213228",
+                "type":"comment",
+                "value":"These IOCs originate in a blog post by Cisco Talos regarding several malicious email campaigns attributed to the Cobalt Gang group between May and July 2018. The infection vector consist in .pdf, .rtf, or .doc attachments. Some of the .rtf or .doc files exploit known Microsoft Office vulnerabilities.\r\n\r\nThe kill chain is rather complex, involving vulnerability exploitation, JScript, PowerShell and DLL loading via legitimate Windows tools.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Malware Name",
+                "timestamp":"1533213229",
+                "type":"comment",
+                "value":"More_eggs",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Malware Name",
+                "timestamp":"1533213229",
+                "type":"comment",
+                "value":"Cobalt Strike",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Cert-IST First Seen Date",
+                "timestamp":"1533213229",
+                "type":"datetime",
+                "value":"2018-05-14T22:00:00+00:00",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Cert-IST First Disclosed Date",
+                "timestamp":"1533213229",
+                "type":"datetime",
+                "value":"2018-07-30T22:00:00+00:00",
+                "to_ids":false
+            }
+        ]
+    }
+}

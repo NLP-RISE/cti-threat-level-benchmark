@@ -1,0 +1,557 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-04-24",
+        "published":true,
+        "info":"ArcaneDoor - New espionage-focused campaign found targeting perimeter network devices",
+        "publish_timestamp":"1714051622",
+        "timestamp":"1714051599",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Adversary-in-the-Middle - T1557\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Boot or Logon Initialization Scripts - T1037\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Disable or Modify Tools - T1562.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over C2 Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command and Scripting Interpreter - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Modify Authentication Process - T1556\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"One-Way Communication - T1102.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Deletion - T1070.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Sniffing - T1040\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1714051017",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/arcanedoor-new-espionage-focused-campaign-found-targeting-perimeter-network-devices/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1714051082",
+                "type":"vulnerability",
+                "value":"CVE-2024-20353",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1714051082",
+                "type":"vulnerability",
+                "value":"CVE-2024-20359",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"192.36.57.181",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"185.167.60.85",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"185.227.111.17",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"176.31.18.153",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"172.105.90.154",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"185.244.210.120",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"45.86.163.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"172.105.94.93",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"213.156.138.77",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"89.44.198.189",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"45.77.52.253",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"103.114.200.230",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"212.193.2.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"51.15.145.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"89.44.198.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"131.196.252.148",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"213.156.138.78",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"121.227.168.69",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"213.156.138.68",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"194.4.49.6",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"185.244.210.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Likely Actor-Controlled Infrastructure",
+                "timestamp":"1714051545",
+                "type":"ip-dst",
+                "value":"216.238.75.155",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"5.183.95.95",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"45.63.119.131",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"45.76.118.87",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"45.77.54.14",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"45.86.163.244",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"45.128.134.189",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"89.44.198.16",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"96.44.159.46",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"103.20.222.218",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"103.27.132.69",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"103.51.140.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"103.119.3.230",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"103.125.218.198",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"104.156.232.22",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"107.148.19.88",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"107.172.16.208",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"107.173.140.111",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"121.37.174.139",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"139.162.135.12",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"149.28.166.244",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"152.70.83.47",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"154.22.235.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"154.22.235.17",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"154.39.142.47",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"172.233.245.241",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"185.123.101.250",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"192.210.137.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"194.32.78.183",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"205.234.232.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"207.148.74.250",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.155.157.136",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.66.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.71.49",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.72.201",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.74.95",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.81.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.85.220",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Multi-Tenant Infrastructure",
+                "timestamp":"1714051588",
+                "type":"ip-dst",
+                "value":"216.238.86.24",
+                "to_ids":true
+            }
+        ]
+    }
+}

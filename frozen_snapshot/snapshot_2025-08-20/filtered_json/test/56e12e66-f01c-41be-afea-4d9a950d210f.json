@@ -1,0 +1,127 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-10",
+        "published":true,
+        "info":"Cerber Ransomware",
+        "publish_timestamp":"1457605279",
+        "timestamp":"1457605235",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Payment site",
+                "timestamp":"1457598168",
+                "type":"url",
+                "value":"decrypttozxybarc.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Geo lookup",
+                "timestamp":"1457598169",
+                "type":"url",
+                "value":"http://ipinfo.io/json",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Geo lookup",
+                "timestamp":"1457598169",
+                "type":"url",
+                "value":"http://freegeoip.net/json/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Geo lookup",
+                "timestamp":"1457598169",
+                "type":"url",
+                "value":"http://ip-api.com/json",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber executable (created: Fri Feb 26 10:28:56 2016)",
+                "timestamp":"1457598338",
+                "type":"malware-sample",
+                "value":"a5ff5f.exe|2f7059d7b1dda3080e391d99788fff18",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber executable (created: Fri Feb 26 10:28:56 2016)",
+                "timestamp":"1457598339",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber executable (created: Fri Feb 26 10:28:56 2016)",
+                "timestamp":"1457598340",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"# DECRYPT MY FILES #.vbs",
+                "timestamp":"1457604851",
+                "type":"text",
+                "value":"Set SAPI = CreateObject(\"SAPI.SpVoice\")\r\nSAPI.Speak \"Attention! Attention! Attention!\"\r\nFor i = 1 to 5\r\nSAPI.Speak \"Your documents, photos, databases and other important files have been encrypted!\"\r\nNext",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"# DECRYPT MY FILES #.txt",
+                "timestamp":"1457604925",
+                "type":"text",
+                "value":"C E R B E R\r\n                                      -----------\r\n\r\n\r\n  Your documents, photos, databases and other important files have been encrypted!\r\n\r\n\r\n  To decrypt your files follow the instructions:\r\n\r\n\r\n  ---------------------------------------------------------------------------------------\r\n\r\n\r\n  1.  Download and install the \"Tor Browser\" from https://www.torproject.org/\r\n\r\n\r\n  2.  Run it\r\n\r\n\r\n  3.  In the \"Tor Browser\" open website:\r\n\r\n      http://decrypttozxybarc.onion/F97F-EFC0-B07D-003F-3EA6\r\n\r\n\r\n  4.  Follow the instructions at this website\r\n\r\n\r\n  ---------------------------------------------------------------------------------------\r\n\r\n\r\n  Â«...Quod me non necat me fortiorem facit.Â»",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"# DECRYPT MY FILES #.html",
+                "timestamp":"1457605002",
+                "type":"text",
+                "value":"<!DOCTYPE html>\r\n<html lang=\"en\">\r\n   <head>\r\n      <link href=\"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n      <meta charset=\"utf-8\">\r\n      <meta content=\"IE=edge\" http-equiv=\"X-UA-Compatible\">\r\n      <meta content=\"width=device-width, initial-scale=1\" name=\"viewport\">\r\n      <title>C E R B E R</title>\r\n   </head>\r\n   <body>\r\n      <div class=\"container\">\r\n         <h3 align=\"center\">C E R B E R</h3>\r\n         <br />\r\n         <h4>Your documents, photos, databases and other important files have been encrypted!<br /><br />To decrypt your files follow the instructions:</h4>\r\n         <br />\r\n         <div class=\"well\">\r\n            <h4>1.&nbsp;&nbsp;&nbsp;Download and install the &laquo;Tor Browser&raquo; from <a href=\"https://www.torproject.org/download/download-easy.html.en\" target=\"_blank\">https://www.torproject.org/</a></h4>\r\n            <br />\r\n            <h4>2.&nbsp;&nbsp;&nbsp;Run it</h4>\r\n            <br />\r\n            <h4>3.&nbsp;&nbsp;&nbsp;In the &laquo;Tor Browser&raquo; open website:<br /><br /><div class=\"form-group\" style=\"margin: 0 32px 36px 32px;\"><input class=\"form-control\" style=\"color: #c24; font-size: 22px; height: 50px; text-align: center;\" type=\"text\" value=\"http://decrypttozxybarc.onion/F97F-EFC0-B07D-003F-3EA6\" readonly></div></h4>\r\n            <h4>4.&nbsp;&nbsp;&nbsp;Follow the instructions at this website</h4>\r\n         </div>\r\n         <br />\r\n         <p style=\"color: #ccc;\">&laquo;...Quod me non necat me fortiorem facit.&raquo;</p>\r\n         <br />\r\n      </div>\r\n   </body>\r\n</html>",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"stylesheet loaded from here",
+                "timestamp":"1457605064",
+                "type":"url",
+                "value":"http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Onion server for payment",
+                "timestamp":"1457605143",
+                "type":"hostname",
+                "value":"decrypttozxybarc.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"Bitcoin address",
+                "timestamp":"1457605235",
+                "type":"btc",
+                "value":"1GCaWA685Nj2PqqG7P2ZBACYZB8ZtpQuQ9",
+                "to_ids":false
+            }
+        ]
+    }
+}

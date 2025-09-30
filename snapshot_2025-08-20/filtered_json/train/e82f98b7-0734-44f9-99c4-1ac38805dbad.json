@@ -1,0 +1,727 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-01-26",
+        "published":true,
+        "info":"OSINT - New campaign targeting security researchers",
+        "publish_timestamp":"1611668917",
+        "timestamp":"1611668896",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:amitt-misinformation-pattern=\"Create fake Social Media Profiles / Pages / Groups\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Build social network persona - T1341\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Conduct social engineering - T1249\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1611651427",
+                "type":"link",
+                "value":"https://blog.google/threat-analysis-group/new-campaign-targeting-security-researchers/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"angeldonationblog.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"codevexillium.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"investbooking.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"krakenfolio.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"opsonew3org.sg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"transferwiser.io",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Attacker-Owned",
+                "timestamp":"1611652315",
+                "type":"domain",
+                "value":"transplugin.io",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Legitimate but Compromised",
+                "timestamp":"1611652340",
+                "type":"domain",
+                "value":"trophylab.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Legitimate but Compromised",
+                "timestamp":"1611652340",
+                "type":"hostname",
+                "value":"www.colasprint.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Legitimate but Compromised",
+                "timestamp":"1611652340",
+                "type":"hostname",
+                "value":"www.dronerc.it",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Legitimate but Compromised",
+                "timestamp":"1611652340",
+                "type":"hostname",
+                "value":"www.edujikim.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains: Legitimate but Compromised",
+                "timestamp":"1611652340",
+                "type":"hostname",
+                "value":"www.fabioluciani.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652370",
+                "type":"url",
+                "value":"https://angeldonationblog.com/image/upload/upload.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652370",
+                "type":"url",
+                "value":"https://codevexillium.org/image/download/download.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652370",
+                "type":"url",
+                "value":"https://investbooking.de/upload/upload.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652370",
+                "type":"url",
+                "value":"https://transplugin.io/upload/upload.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652370",
+                "type":"url",
+                "value":"https://www.dronerc.it/forum/uploads/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"https://www.dronerc.it/shop_testbr/Core/upload.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"https://www.dronerc.it/shop_testbr/upload/upload.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"https://www.edujikim.com/intro/blue/insert.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"https://www.fabioluciani.com/es/include/include.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"http://trophylab.com/notice/images/renewal/upload.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 URLs",
+                "timestamp":"1611652371",
+                "type":"url",
+                "value":"http://www.colasprint.com/_vti_log/upload.asp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611652398",
+                "type":"filename",
+                "value":"%WINDIR%\\System32\\Nwsapagent.sys",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611652398",
+                "type":"filename",
+                "value":"%WINDIR%\\System32\\helpsvc.sys",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611652398",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\USOShared\\uso.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611652398",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\VMware\\vmnat-update.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611652398",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\VirtualBox\\update.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LinkedIn Accounts",
+                "timestamp":"1611659936",
+                "type":"url",
+                "value":"https://www.linkedin.com/in/billy-brown-a6678b1b8/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LinkedIn Accounts",
+                "timestamp":"1611659936",
+                "type":"url",
+                "value":"https://www.linkedin.com/in/guo-zhang-b152721bb/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LinkedIn Accounts",
+                "timestamp":"1611659936",
+                "type":"url",
+                "value":"https://www.linkedin.com/in/hyungwoo-lee-6985501b9/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LinkedIn Accounts",
+                "timestamp":"1611659936",
+                "type":"url",
+                "value":"https://www.linkedin.com/in/linshuang-li-aa696391bb/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LinkedIn Accounts",
+                "timestamp":"1611659936",
+                "type":"url",
+                "value":"https://www.linkedin.com/in/rimmer-trajan-2806b21bb/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611660143",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611660143",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611660143",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611660143",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1611660143",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1611651798",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611651798",
+                        "type":"text",
+                        "value":"Over the past several months, the Threat Analysis Group has identified an ongoing campaign targeting security researchers working on vulnerability research and development at different companies and organizations. The actors behind this campaign, which we attribute to a government-backed entity based in North Korea, have employed a number of means to target researchers which we will outline below. We hope this post will remind those in the security research community that they are targets to government-backed attackers and should remain vigilant when engaging with individuals they have not previously interacted with.\r\n\r\nIn order to build credibility and connect with security researchers, the actors established a research blog and multiple Twitter profiles to interact with potential targets. They've used these Twitter profiles for posting links to their blog, posting videos of their claimed exploits and for amplifying and retweeting posts from other accounts that they control.",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"https://keybase.io/zhangguo",
+                "description":"Information related to a keybase account, from API Users Object",
+                "meta-category":"misc",
+                "name":"keybase-account",
+                "timestamp":"1611652467",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611652467",
+                        "type":"text",
+                        "value":"zhangguo",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"https://t.me/james50d",
+                "description":"Information related to a telegram account",
+                "meta-category":"misc",
+                "name":"telegram-account",
+                "timestamp":"1611654190",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611654190",
+                        "type":"text",
+                        "value":"james50d",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"datetime",
+                        "value":"2021-01-26T11:03:02+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/68e6b9d71c727545095ea6376940027b61734af5c710b2985a628131e47c6af7/detection/f-68e6b9d71c727545095ea6376940027b61734af5c710b2985a628131e47c6af7-1611658982",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"text",
+                        "value":"24/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"datetime",
+                        "value":"2021-01-26T11:01:49+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/4c3499f3cc4a4fdc7e67417e055891c78540282dccc57e37a01167dfe351b244/detection/f-4c3499f3cc4a4fdc7e67417e055891c78540282dccc57e37a01167dfe351b244-1611658909",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"text",
+                        "value":"20/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"datetime",
+                        "value":"2021-01-26T11:04:20+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/a4fb20b15efd72f983f0fb3325c0352d8a266a69bb5f6ca2eba0556c3e00bd15/detection/f-a4fb20b15efd72f983f0fb3325c0352d8a266a69bb5f6ca2eba0556c3e00bd15-1611659060",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"text",
+                        "value":"18/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"datetime",
+                        "value":"2021-01-26T11:03:31+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/25d8ae4678c37251e7ffbaeddc252ae2530ef23f66e4c856d98ef60f399fa3dc/detection/f-25d8ae4678c37251e7ffbaeddc252ae2530ef23f66e4c856d98ef60f399fa3dc-1611659011",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"text",
+                        "value":"13/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1611660243",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"datetime",
+                        "value":"2021-01-26T11:03:46+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/a75886b016d84c3eaacaf01a3c61e04953a7a3adf38acf77a4a2e3a8f544f855/detection/f-a75886b016d84c3eaacaf01a3c61e04953a7a3adf38acf77a4a2e3a8f544f855-1611659026",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1611660143",
+                        "type":"text",
+                        "value":"15/70",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-29",
+        "published":true,
+        "info":"Threat Analysis: Malicious Microsoft Word Documents Being Used in Targeted Attack Campaigns",
+        "publish_timestamp":"1524609534",
+        "timestamp":"1571052771",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1514548004",
+                "type":"attachment",
+                "value":"Figure_10_fixed_for_release.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Payload",
+                "timestamp":"1514547847",
+                "type":"link",
+                "value":"https://www.cobaltstrike.com/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1514547489",
+                "type":"link",
+                "value":"https://www.carbonblack.com/2017/12/19/threat-analysis-malicious-microsoft-word-documents-used-targeted-attack-campaigns/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1514547517",
+                "type":"text",
+                "value":"A Microsoft Word document (.doc) believed to be malicious was recently submitted to Carbon Blackâ€™s Threat Analysis Unit (TAU). The submitting organization did not feel that that document (and subsequent payload) was fully executing in their analysis environment, and questioned whether or not it was actually malicious.\r\n\r\nThe submitted file was part of a targeted attack against an organization, and would not properly run unless the infected system configured for a domain that matched a hard coded pattern. The malicious carrier file contained embedded macros which would launch a series of VB scripts. Ultimately the scripts would inject a Cobalt Strike payload into a running process. While researching this variant TAU discovered numerous other variants (both .doc and .docx formats), which were written in the same manner. Only one instance contained the portion of code to ensure the script would only run at a targeted domain. All of these variants had very low coverage when run through an analysis engine, and as this technique emerges it will continue to be used in targeted attacks and eventually commoditized.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547712",
+                "type":"domain",
+                "value":"carbon-copy-marketing.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547713",
+                "type":"domain",
+                "value":"free-clipart-archive.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547713",
+                "type":"domain",
+                "value":"stationmovil.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547713",
+                "type":"domain",
+                "value":"www.bankingandfinanceexpert.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547713",
+                "type":"domain",
+                "value":"www.themediaeducation.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1514547712",
+                "type":"ip-dst",
+                "value":"212.83.58.231",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Embedded payload",
+                "timestamp":"1514547603",
+                "type":"filename",
+                "value":"Cobalt_Strike.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Embedded payload",
+                "timestamp":"1514547604",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Embedded payload",
+                "timestamp":"1514547604",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Embedded payload",
+                "timestamp":"1514547604",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1514547769",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

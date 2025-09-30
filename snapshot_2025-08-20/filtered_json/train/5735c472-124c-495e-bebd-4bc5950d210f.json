@@ -1,0 +1,84 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-05-13",
+        "published":true,
+        "info":"OSINT - Cyber Heist Attribution",
+        "publish_timestamp":"1463141862",
+        "timestamp":"1463141853",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload installation",
+                "comment":"This sample was uploaded from a user in the US on 4th March 2016",
+                "timestamp":"1463141581",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"msoutc.exe accepts a number of parameters passed with the command line. When executed, it checks if there is another instance of itself already running on a system, by attempting to create a mutex called:",
+                "timestamp":"1463141654",
+                "type":"mutex",
+                "value":"Global\\FwtSqmSession106839323_S-1-5-20",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1463141669",
+                "type":"filename",
+                "value":"%TEMP%\\sysman\\svchost.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The malware keeps its logs within an encrypted file wmplog15r.sqm and/or wmplog21t.sqm, located in the same directory. The logged messages are encrypted with a key",
+                "timestamp":"1463141711",
+                "type":"pattern-in-memory",
+                "value":"y@s!11yid60u7f!07ou74n001",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"This sample was uploaded from a user in the US on 4th March 2016 - Xchecked via VT: c6eb8e46810f5806d056c4aa34e7b8d8a2c37cad",
+                "timestamp":"1463141827",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"This sample was uploaded from a user in the US on 4th March 2016 - Xchecked via VT: c6eb8e46810f5806d056c4aa34e7b8d8a2c37cad",
+                "timestamp":"1463141828",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"This sample was uploaded from a user in the US on 4th March 2016 - Xchecked via VT: c6eb8e46810f5806d056c4aa34e7b8d8a2c37cad",
+                "timestamp":"1463141828",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4cf164497c275ae0f86c28d7847b10f5bd302ba12b995646c32cb53d03b7e6b5/analysis/1463129351/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463141853",
+                "type":"comment",
+                "value":"Attributing a single cyber-attack is a hard task and often impossible. However, when multiple attacks are conducted over long periods of time, they leave a trail of digital evidence. Piecing this together into a campaign can help investigators to see the bigger picture, and even hint at who may be behind the attacks.\r\n\r\nOur research into malware used on SWIFT based systems running in banks has turned up multiple bespoke tools used by a set of attackers. What initially looked to be an isolated incident at one Asian bank turned out to be part of a wider campaign. This led to the identification of a commercial bank in Vietnam that also appears to have been targeted in a similar fashion using tailored malware, but based off a common code-base.\r\n\r\nIn the bank malware cases we know of, the coders used a unique file wipe-out function. This implementation was so distinctive that it further drew our attention â€“ and so we began to look for other instances of code which had used the same function. Using disassembled machine opcodes (with masked out dynamic virtual addresses) we generated signatures to scan a large malware corpus.\r\n\r\nOur initial search turned up an additional sample which implemented the same wipe-out function.",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-03-24",
+        "published":true,
+        "info":"OSINT - Malware is being signed with multiple digital certificates to evade detection",
+        "publish_timestamp":"1458838164",
+        "timestamp":"1458838177",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458838011",
+                "type":"link",
+                "value":"http://www.symantec.com/connect/blogs/malware-being-signed-multiple-digital-certificates-evade-detection",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458838036",
+                "type":"comment",
+                "value":"Symantec has recently observed various malware families seen in the wild signed with multiple digital certificates. As seen with Suckfly, valid, legitimate certificates can be stolen from an organization, often without their knowledge, and then used to sign malware to evade detection. In this case, attackers have used multiple digital certificates together to increase the chance that the targeted computer considers their malware safe. The attacker's ultimate goal is that their attack goes completely undetected.\r\n\r\nHistorically, attacks have focused on the SHA1 algorithm. This prompted businesses and IT departments at various organizations to distrust SHA1 certificates and gradually move to SHA2. Microsoftâ€™s discontinuation of support for files signed with SHA1, may indicate a paradigm shift in the digital certificate space.\r\n\r\nEarlier last year, Microsoft announced the discontinuation of support for files digitally signed with a SHA1 signature after January 1, 2016 in certain scenarios. According to the new enforcement details, code signing certificates signed after January 1, 2016 will not be honored by Microsoft Windows (version dependent). These new restrictions have started to force attackers to move away from SHA1 and to figure out new ways to use SHA2 digitally signed certificates.\r\n\r\nWhile this change may have slowed down attackers, malware authors have been looking for ways to adapt to this new policy.\r\n\r\nEarlier this week we came across a spam campaign using a malicious Word document that downloads a payload to compromise the computer. In this case, the payload is Trojan.Carberp.B, a well-known financial Trojan that targets financial institutions and their customers. Our current telemetry reports that the attacks are contained to the following countries:",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1458838063",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1458838104",
+                "type":"url",
+                "value":"154.16.138.74/sexit.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1458838115",
+                "type":"ip-dst",
+                "value":"154.16.138.74",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458838143",
+                "type":"link",
+                "value":"https://malwr.com/analysis/NmFmNzhhYjYyODIwNGUxMzliMGRlMWM5NjYwNzUxNzk/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 9758aa737004fc3fc6bc7d535e604324b6e42c7c19459f575083a411a4774b18",
+                "timestamp":"1458838177",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 9758aa737004fc3fc6bc7d535e604324b6e42c7c19459f575083a411a4774b18",
+                "timestamp":"1458838177",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458838178",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9758aa737004fc3fc6bc7d535e604324b6e42c7c19459f575083a411a4774b18/analysis/1458837563/",
+                "to_ids":false
+            }
+        ]
+    }
+}

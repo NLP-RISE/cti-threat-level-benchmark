@@ -1,0 +1,81 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2018-09-06",
+        "published":true,
+        "info":"Apache Struts 2 Vulnerability (CVE-2018-11776) Exploited in CroniX Crypto-Mining Campaign",
+        "publish_timestamp":"1536232676",
+        "timestamp":"1536232668",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1536232412",
+                "type":"vulnerability",
+                "value":"CVE-2018-11776",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232412",
+                "type":"ip-dst",
+                "value":"107.181.160.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232412",
+                "type":"hostname",
+                "value":"asq.r77vh0.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232626",
+                "type":"pattern-in-traffic",
+                "value":"/lin/anacrond",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232639",
+                "type":"pattern-in-traffic",
+                "value":"/lin/update.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232639",
+                "type":"pattern-in-traffic",
+                "value":"/win/checking.ps1",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1536232639",
+                "type":"pattern-in-traffic",
+                "value":"/win/checking-test.hta",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1536232660",
+                "type":"link",
+                "value":"https://www.f5.com/labs/articles/threat-intelligence/apache-struts-2-vulnerability--cve-2018-11776--exploited-in-cron",
+                "to_ids":false
+            }
+        ]
+    }
+}

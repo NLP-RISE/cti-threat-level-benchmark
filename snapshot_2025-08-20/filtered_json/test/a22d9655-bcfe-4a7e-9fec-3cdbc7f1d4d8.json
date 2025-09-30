@@ -1,0 +1,273 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-01-24",
+        "published":true,
+        "info":"ESET takes part in global operation to disrupt the Grandoreiro banking trojan",
+        "publish_timestamp":"1706127218",
+        "timestamp":"1706127200",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Grandoreiro\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Grandoreiro - S0531\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Argentina\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Brazil\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Mexico\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Spain\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1706126997",
+                "type":"comment",
+                "value":"cloud providers such as Azure and AWS to host their network infrastructure",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1706126997",
+                "type":"comment",
+                "value":"When a Latin American banking trojan successfully compromises a machine, it usually issues an HTTP GET request to a remote server",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1706126997",
+                "type":"comment",
+                "value":"generated domains are registered via No-IP’s Dynamic DNS service (DDNS)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"20.237.166.161",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"20.120.249.43",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"52.161.154.239",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"167.114.138.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"66.70.160.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"167.114.4.175",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"18.215.238.53",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"54.219.169.167",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"3.144.135.247",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"77.246.96.204",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1706127120",
+                "type":"ip-dst",
+                "value":"185.228.72.38",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution serverr",
+                "timestamp":"1706127140",
+                "type":"ip-dst",
+                "value":"62.84.100.225",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution serverr",
+                "timestamp":"1706127140",
+                "type":"ip-dst",
+                "value":"20.151.89.252",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1706127200",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/en/eset-research/eset-takes-part-global-operation-disrupt-grandoreiro-banking-trojan/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706127045",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127045",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127045",
+                        "type":"filename",
+                        "value":"Notif.FEL.RHKVYIIPFVBCGQJPOQÃ.msi",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706127056",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127056",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127056",
+                        "type":"filename",
+                        "value":"RYCB79H7B-7DVH76Y3-67DVHC6T20-CH377DFHVO-6264704.msi",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706127095",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127070",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127095",
+                        "type":"filename",
+                        "value":"pcre.dll",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706127092",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127088",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706127092",
+                        "type":"filename",
+                        "value":"iconv.dll",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

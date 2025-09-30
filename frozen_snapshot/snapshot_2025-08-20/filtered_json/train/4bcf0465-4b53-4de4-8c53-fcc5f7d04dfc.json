@@ -1,0 +1,1390 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-01-26",
+        "published":true,
+        "info":"Unwrapping Ursnifs Gifts - The DFIR Report",
+        "publish_timestamp":"1674763294",
+        "timestamp":"1674763285",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Cobalt Strike\""
+            },
+            {
+                "name":"misp-galaxy:banker=\"Gozi\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DNS - T1071.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"JavaScript - T1059.007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"VNC - T1021.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software - T1592.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"WHOIS - T1596.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Tool - T1588.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Ursnif - S0386\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Asynchronous Procedure Call - T1055.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"BITS Jobs - T1197\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compile After Delivery - T1027.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Credentials from Password Stores - T1555\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Account - T1087.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Trust Discovery - T1482\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over C2 Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"LSASS Memory - T1003.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Lateral Tool Transfer - T1570\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Mark-of-the-Web Bypass - T1553.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Mshta - T1218.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Access Software - T1219\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Desktop Protocol - T1021.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote System Discovery - T1018\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Time Discovery - T1124\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Visual Basic - T1059.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Management Instrumentation - T1047\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674761515",
+                "type":"comment",
+                "value":"The malware displayed an interesting execution flow, which included using a renamed copy of rundll32.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674761549",
+                "type":"comment",
+                "value":"The threat actor first ran some initial discovery on the host using built-in Windows utilities like ipconfig, systeminfo, net, and ping",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674762187",
+                "type":"comment",
+                "value":"The Ursnif malware was delivered using a very familiar technique of being contained within an ISO file.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674762187",
+                "type":"comment",
+                "value":"Once mounted, the new drive contained a LNK file 6570872.lnk and hidden folder “me”.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674762187",
+                "type":"comment",
+                "value":"The LNK file would execute a batch script alsoOne.bat .",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1674762187",
+                "type":"comment",
+                "value":"This script called a JavaScript file canWell.js in the same directory and provided a number of strings as arguments.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"denterdrigx.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"superliner.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"internetlines.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"superstarts.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"superlinez.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif Domains",
+                "timestamp":"1674762302",
+                "type":"domain",
+                "value":"internetlined.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"62.173.149.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"31.41.44.97",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"5.42.199.83",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"31.41.44.27",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"208.91.197.91",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"187.190.48.135",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"210.92.250.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"189.143.170.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"201.103.222.246",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"151.251.24.5",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.147.189.122",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"115.88.24.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.40.39.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"187.195.146.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"186.182.55.44",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"222.232.238.243",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.119.84.111",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"51.211.212.188",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"203.91.116.53",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"115.88.24.203",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.117.75.91",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"181.197.121.228",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.167.61.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"109.102.255.230",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.119.84.112",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.107.133.19",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"185.95.186.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"175.120.254.9",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"46.194.108.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.225.159.63",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.140.74.43",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"187.156.56.52",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"195.158.3.162",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"138.36.3.134",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"109.98.58.98",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"24.232.210.245",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"222.236.49.123",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"175.126.109.15",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"124.109.61.160",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"95.107.163.44",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"93.152.141.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"5.204.145.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"116.121.62.237",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"31.166.129.162",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"222.236.49.124",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.171.233.129",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.171.233.126",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"211.53.230.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"196.200.111.5",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.219.54.242",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762327",
+                "type":"ip-dst",
+                "value":"190.167.100.154",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"110.14.121.125",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"58.235.189.192",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"37.34.248.24",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"110.14.121.123",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"179.53.93.16",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"175.119.10.231",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"211.59.14.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"188.48.64.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"187.232.150.225",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"186.7.85.71",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"148.255.20.4",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"91.139.196.113",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"41.41.255.235",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"31.167.236.174",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"189.165.2.131",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"1.248.122.240",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif IPs",
+                "timestamp":"1674762328",
+                "type":"ip-dst",
+                "value":"193.106.191.186",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike",
+                "timestamp":"1674762342",
+                "type":"ip-dst",
+                "value":"193.201.9.199",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1674762373",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1674763008",
+                "type":"link",
+                "value":"https://thedfirreport.com/2023/01/09/unwrapping-ursnifs-gifts/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762870",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762462",
+                        "type":"filename",
+                        "value":"firefox.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762462",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762462",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762493",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762493",
+                        "type":"filename",
+                        "value":"itsIt.db",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762493",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762493",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762493",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762526",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762526",
+                        "type":"filename",
+                        "value":"adcomp.bat",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762526",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762526",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762526",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762553",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762553",
+                        "type":"filename",
+                        "value":"alsoOne.bat",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762553",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762553",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762553",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762572",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762572",
+                        "type":"filename",
+                        "value":"canWell.js",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762572",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762572",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762572",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762611",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762611",
+                        "type":"filename",
+                        "value":"or.jpg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762611",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762611",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762611",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762638",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762638",
+                        "type":"filename",
+                        "value":"cook32.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762638",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762638",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762638",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762669",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762669",
+                        "type":"filename",
+                        "value":"cook64.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762669",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762669",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762669",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762695",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762695",
+                        "type":"filename",
+                        "value":"stilak32.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762696",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762696",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762696",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762720",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762720",
+                        "type":"filename",
+                        "value":"stilak64.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762720",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762720",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762720",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762745",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762745",
+                        "type":"filename",
+                        "value":"vnc32.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762745",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762745",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762745",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762799",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762782",
+                        "type":"filename",
+                        "value":"vnc64.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762782",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762782",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762914",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762914",
+                        "type":"filename",
+                        "value":"3488164.iso",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762914",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762914",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762914",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762937",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762937",
+                        "type":"filename",
+                        "value":"123.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762937",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762937",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762937",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1674762961",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762961",
+                        "type":"filename",
+                        "value":"6570872.lnk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762961",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762961",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1674762961",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

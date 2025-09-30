@@ -1,0 +1,132 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-12-05",
+        "published":true,
+        "info":"Iran: State-Backed Hacking of Activists, Journalists, Politicians",
+        "publish_timestamp":"1679562211",
+        "timestamp":"1679562202",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Charming Kitten - G0058\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679561648",
+                "type":"comment",
+                "value":"On October 18, 2022, a Human Rights Watch staff member working on the Middle East and North Africa region received a message on WhatsApp that claimed to be from a Lebanon-based think tank and invited the recipient to a conference. The invitation used the same format as previous invitations from the think tank, indicating a sophisticated level of social engineering. The person impersonated by the threat actor group APT42 in the WhatsApp messages previously worked for the think tank.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"mimic the name of the legitimate URL shortener cutt.ly",
+                "timestamp":"1679562202",
+                "type":"domain",
+                "value":"cutly.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://sharefilesonline.live/xxxxxx/BI-File-2022.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://sharefilesonline.live/xxxxxx/G-check-first.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://sharefilesonline.live/xxxxxx/G-transfer.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://sharefilesonline.live/xxxxxx/continue.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://sharefilesonline.live/xxxxxx/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"https://mailer-daemon.net/file=sharing=system/xxxxxx/first.check.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679561721",
+                "type":"url",
+                "value":"http://mailer-daemon.org/xxxxxx/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Person",
+                "comment":"WhatsApp numbers used by the attackers",
+                "timestamp":"1679561772",
+                "type":"phone-number",
+                "value":"+12343121624",
+                "to_ids":false
+            },
+            {
+                "category":"Person",
+                "comment":"WhatsApp numbers used by the attackers",
+                "timestamp":"1679561770",
+                "type":"phone-number",
+                "value":"+12092330560",
+                "to_ids":false
+            },
+            {
+                "category":"Person",
+                "comment":"WhatsApp numbers used by the attackers",
+                "timestamp":"1679561775",
+                "type":"phone-number",
+                "value":"+18045001154",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679562048",
+                "type":"comment",
+                "value":"All of the IP addresses used to connect to the compromised accounts were from the Express VPN (Virtual Private Network) service. Nevertheless, Human Rights Watch found one Iranian IP address, 5.160.239.XXX, that connected to one of the target’s inboxes. This could potentially be the public IP address of the attacker’s own network, perhaps revealed after they forgot to enable their VPN before connecting.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679562144",
+                "type":"comment",
+                "value":"The WhatsApp chats of those who were known to be successfully targeted reveal that the attackers were repeatedly engaging with the targets as they clicked through the phishing links. After entering their credentials on the phishing page, targets were prompted to enter a code on the 2FA bypass page, which the attackers used to gain access to their email accounts.",
+                "to_ids":false
+            }
+        ]
+    }
+}

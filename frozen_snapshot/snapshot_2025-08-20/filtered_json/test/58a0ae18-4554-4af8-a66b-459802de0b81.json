@@ -1,0 +1,266 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-12",
+        "published":true,
+        "info":"OSINT - Attackers target dozens of global banks with new malware",
+        "publish_timestamp":"1486925838",
+        "timestamp":"1486925790",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            },
+            {
+                "name":"veris:action:social:target=\"Finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486925631",
+                "type":"link",
+                "value":"https://www.symantec.com/connect/blogs/attackers-target-dozens-global-banks-new-malware-0",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486925631",
+                "type":"text",
+                "value":"Organizations in 31 countries have been targeted in a new wave of attacks which has been underway since at least October 2016. The attackers used compromised websites or â€œwatering holesâ€ to infect pre-selected targets with previously unknown malware. There has been no evidence found yet that funds have been stolen from any infected banks.\r\n\r\nThe attacks came to light when a bank in Poland discovered previously unknown malware running on a number of its computers. The bank then shared indicators of compromise (IOCs) with other institutions and a number of other institutions confirmed that they too had been compromised.\r\n\r\nAs reported, the source of the attack appears to have been the website of the Polish financial regulator. The attackers compromised the website to redirect visitors to an exploit kit which attempted to install malware on selected targets.\r\n\r\nSymantec has blocked attempts to infect customers in Poland, Mexico and Uruguay by the same exploit kit that infected the Polish banks. Since October, 14 attacks against computers in Mexico were blocked, 11 against computers in Uruguay, and two against computers in Poland.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Destover",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba",
+                "timestamp":"1486925631",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control infrastructure",
+                "timestamp":"1486925631",
+                "type":"domain",
+                "value":"eye-watch.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control infrastructure",
+                "timestamp":"1486925631",
+                "type":"hostname",
+                "value":"sap.misapor.ch",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Destover - Xchecked via VT: 4fe3c853ab237005f7d62324535dd641e1e095d1615a416a9b39e042f136cf6b",
+                "timestamp":"1486925640",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Destover - Xchecked via VT: 4fe3c853ab237005f7d62324535dd641e1e095d1615a416a9b39e042f136cf6b",
+                "timestamp":"1486925641",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor.Destover - Xchecked via VT: 4fe3c853ab237005f7d62324535dd641e1e095d1615a416a9b39e042f136cf6b",
+                "timestamp":"1486925642",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4fe3c853ab237005f7d62324535dd641e1e095d1615a416a9b39e042f136cf6b/analysis/1486115878/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 99017270f0af0e499cfeb19409020bfa0c2de741e5b32b9f6a01c34fe13fda7d",
+                "timestamp":"1486925643",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 99017270f0af0e499cfeb19409020bfa0c2de741e5b32b9f6a01c34fe13fda7d",
+                "timestamp":"1486925643",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 99017270f0af0e499cfeb19409020bfa0c2de741e5b32b9f6a01c34fe13fda7d",
+                "timestamp":"1486925644",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/99017270f0af0e499cfeb19409020bfa0c2de741e5b32b9f6a01c34fe13fda7d/analysis/1486354947/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 825624d8a93c88a811262bd32cc51e19538c5d65f6f9137e30e72c5de4f044cc",
+                "timestamp":"1486925645",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 825624d8a93c88a811262bd32cc51e19538c5d65f6f9137e30e72c5de4f044cc",
+                "timestamp":"1486925646",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 825624d8a93c88a811262bd32cc51e19538c5d65f6f9137e30e72c5de4f044cc",
+                "timestamp":"1486925646",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/825624d8a93c88a811262bd32cc51e19538c5d65f6f9137e30e72c5de4f044cc/analysis/1486355454/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 200c0f4600e54007cb4707c9727b1171f56c17c80c16c53966535c57ab684e22",
+                "timestamp":"1486925647",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 200c0f4600e54007cb4707c9727b1171f56c17c80c16c53966535c57ab684e22",
+                "timestamp":"1486925648",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 200c0f4600e54007cb4707c9727b1171f56c17c80c16c53966535c57ab684e22",
+                "timestamp":"1486925649",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/200c0f4600e54007cb4707c9727b1171f56c17c80c16c53966535c57ab684e22/analysis/1486354903/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 95c8ffe03547bcb0afd4d025fb14908f5230c6dc6fdd16686609681c7f40aca2",
+                "timestamp":"1486925649",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 95c8ffe03547bcb0afd4d025fb14908f5230c6dc6fdd16686609681c7f40aca2",
+                "timestamp":"1486925650",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 95c8ffe03547bcb0afd4d025fb14908f5230c6dc6fdd16686609681c7f40aca2",
+                "timestamp":"1486925651",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/95c8ffe03547bcb0afd4d025fb14908f5230c6dc6fdd16686609681c7f40aca2/analysis/1486356061/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 7c77ec259162872bf9ab18f6754e0e844157b31b32b4a746484f444b9f9a3836",
+                "timestamp":"1486925652",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 7c77ec259162872bf9ab18f6754e0e844157b31b32b4a746484f444b9f9a3836",
+                "timestamp":"1486925653",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Downloader.Ratankba - Xchecked via VT: 7c77ec259162872bf9ab18f6754e0e844157b31b32b4a746484f444b9f9a3836",
+                "timestamp":"1486925653",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7c77ec259162872bf9ab18f6754e0e844157b31b32b4a746484f444b9f9a3836/analysis/1486760308/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Enriched via the dns module",
+                "timestamp":"1486925789",
+                "type":"ip-src",
+                "value":"54.235.197.176",
+                "to_ids":false
+            }
+        ]
+    }
+}

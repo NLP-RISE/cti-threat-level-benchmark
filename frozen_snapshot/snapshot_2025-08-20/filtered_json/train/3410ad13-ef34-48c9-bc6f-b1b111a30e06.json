@@ -1,0 +1,932 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-06-23",
+        "published":true,
+        "info":"OSINT - Russia's APT28 uses fear of nuclear war to spread Follina docs in Ukraine",
+        "publish_timestamp":"1655990694",
+        "timestamp":"1655990647",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Ukraine\""
+            },
+            {
+                "name":"misp-galaxy:country=\"russia\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1655989738",
+                "type":"hostname",
+                "value":"www.specialityllc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1655989738",
+                "type":"hostname",
+                "value":"mail.sartoc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1655989738",
+                "type":"url",
+                "value":"http://kompartpomiar.pl/grafika/docx.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1655989738",
+                "type":"url",
+                "value":"http://kompartpomiar.pl/grafika/SQLite.Interop.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1655989738",
+                "type":"ip-dst",
+                "value":"144.208.77.68",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655989772",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655989772",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655989772",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655989772",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655989772",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1655990007",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"filename",
+                        "value":"daaa271cee97853bf4e235b55cb34c1f03ea6f8d3c958f86728d41f418b0bf01",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"size-in-bytes",
+                        "value":"411760",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"float",
+                        "value":"7.9944351431945",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"malware-sample",
+                        "value":"daaa271cee97853bf4e235b55cb34c1f03ea6f8d3c958f86728d41f418b0bf01|eafa11070f213f16efc030f625a423d1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"mime-type",
+                        "value":"Microsoft Word 2007+",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655989918",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1655989975",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1655989975",
+                        "type":"vulnerability",
+                        "value":"CVE-2022-30190",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655989975",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1655989988",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"vulnerability",
+                        "value":"CVE-2022-30190",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"text",
+                        "value":"Microsoft Windows Support Diagnostic Tool (MSDT) Remote Code Execution Vulnerability.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"datetime",
+                        "value":"2022-06-07T18:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"float",
+                        "value":"9.3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"datetime",
+                        "value":"2022-06-01T20:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"link",
+                        "value":"https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2022-30190",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"link",
+                        "value":"http://packetstormsecurity.com/files/167438/Microsoft-Office-Word-MSDTJS-Code-Execution.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2012:r2:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:1607:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_8.1:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2016:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2008:-:sp2:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2008:r2:sp1:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_7:-:sp1:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_rt_8.1:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2012:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2019:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:1809:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:20h2:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:21h1:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_server_2022:-:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_11:-:*:*:*:*:*:arm64:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_11:-:*:*:*:*:*:x64:*",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"CVE-2022-30190: Enriched via the cve_advanced module",
+                        "timestamp":"1655989988",
+                        "type":"cpe",
+                        "value":"cpe:2.3:o:microsoft:windows_10:21h2:*:*:*:*:*:*:*",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1655990131",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1655990131",
+                        "type":"link",
+                        "value":"https://otx.alienvault.com/pulse/62b44a9d13580736f8547cb8",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1655990131",
+                        "type":"link",
+                        "value":"https://blog.malwarebytes.com/threat-intelligence/2022/06/russias-apt28-uses-fear-of-nuclear-war-to-spread-follina-docs-in-ukraine/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990131",
+                        "type":"text",
+                        "value":"In a recent campaign, APT28, an advanced persistent threat actor linked with Russian intelligence, set its sights on Ukraine, targeting users with malware that steals credentials stored in browsers. APT28 (also known as Sofacy and Fancy Bear) is a notorious Russian threat actor that has been active since at least 2004 with its main activity being collecting intelligence for the Russian government. The group is known to have targeted US politicians, and US organizations, including US nuclear facilities.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990131",
+                        "type":"text",
+                        "value":"Blog post",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1655990265",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1655990265",
+                        "type":"url",
+                        "value":"http://kitten-268.frge.io/article.html",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1655990265",
+                        "type":"hostname",
+                        "value":"kitten-268.frge.io",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990265",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"kitten-268.frge.io: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1655990334",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"text",
+                        "value":"18.133.249.238",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"counter",
+                        "value":"88",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"datetime",
+                        "value":"2022-06-20T20:54:14+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"datetime",
+                        "value":"2022-06-22T22:48:01+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"text",
+                        "value":"kitten-268.frge.io.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: kitten-268.frge.io",
+                        "timestamp":"1655990334",
+                        "type":"domain",
+                        "value":"frge.io",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1655990571",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":".text",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"size-in-bytes",
+                        "value":"5431296",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"float",
+                        "value":"7.9973059211035",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1655990571",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":".rsrc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"size-in-bytes",
+                        "value":"1024",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"float",
+                        "value":"3.1296610663897",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a Portable Executable",
+                "meta-category":"file",
+                "name":"pe",
+                "timestamp":"1655990571",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"4194304",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"datetime",
+                        "value":"2048-12-25T08:35:47+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"filename",
+                        "value":"docx.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"filename",
+                        "value":"docx.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"DocumentSaver",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"1.0.0.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"000004b0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"DocumentSaver",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"1.0.0.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":"Copyright ©  2022",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"text",
+                        "value":".text|0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"counter",
+                        "value":"2",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1655990571",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"filename",
+                        "value":"2318ae5d7c23bf186b88abecf892e23ce199381b22c8eb216ad1616ee8877933",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"size-in-bytes",
+                        "value":"5433824",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"float",
+                        "value":"7.9971445004064",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"malware-sample",
+                        "value":"2318ae5d7c23bf186b88abecf892e23ce199381b22c8eb216ad1616ee8877933|d3bddb5de864afd7e4f5e56027f4e5ea",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"mime-type",
+                        "value":"PE32+ executable (GUI) x86-64 Mono/.Net assembly, for MS Windows",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1655990571",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,119 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-02-08",
+        "published":true,
+        "info":"Coyote: A multi-stage banking Trojan abusing the Squirrel installer",
+        "publish_timestamp":"1710336768",
+        "timestamp":"1710336760",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Brazil\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1710336631",
+                "type":"link",
+                "value":"https://securelist.com/coyote-multi-stage-banking-trojan/111846/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1710336747",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1710336747",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1710336747",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1710336747",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"atendesolucao.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"servicoasso.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"dowfinanceiro.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"centralsolucao.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"traktinves.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"diadaacaodegraca.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1710336760",
+                "type":"domain",
+                "value":"segurancasys.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-03-29",
+        "published":true,
+        "info":"OSINT - Mole66 Cryptomix Ransomware Variant Released",
+        "publish_timestamp":"1523200204",
+        "timestamp":"1523200179",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Zeta\""
+            },
+            {
+                "name":"workflow:state=\"complete\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523200165",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/mole66-cryptomix-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523200166",
+                "type":"comment",
+                "value":"Today MalwareHunterTeam discovered a new variant of the Cryptomix Ransomware that appends the .MOLE66 extension to encrypted files, changes the contact email, and slightly changes the ransom note's name. In the past, we used to see new Cryptomix variants a few times a month, but this time it has been almost 2 months since the previous System variant was released.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1522916982",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200166",
+                "type":"filename",
+                "value":"_HELP_INSTRUCTIONS_.TXT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200166",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200167",
+                "type":"email-src",
+                "value":"alpha2018a@aol.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523200170",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200167",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200168",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200168",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523200169",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523200169",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/15f5cb94b851289d0218f333e06372e43b2a55d241c530d4f61aad3b89f68b91/analysis/1522854946/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523200169",
+                        "type":"text",
+                        "value":"48/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523200169",
+                        "type":"datetime",
+                        "value":"2018-04-04T15:15:46",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

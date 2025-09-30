@@ -1,0 +1,382 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-10",
+        "published":true,
+        "info":"OSINT - DarkHydrus is launching attacks to targets in Middle East",
+        "publish_timestamp":"1547215104",
+        "timestamp":"1547215090",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"DarkHydrus\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1547205028",
+                "type":"domain",
+                "value":"edgekey.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1547205028",
+                "type":"domain",
+                "value":"akdns.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1547205028",
+                "type":"domain",
+                "value":"trafficmanager.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1547205028",
+                "type":"domain",
+                "value":"akamaized.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1547205028",
+                "type":"domain",
+                "value":"akamaiedge.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205616",
+                "type":"domain",
+                "value":"0ffice365.life",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205617",
+                "type":"domain",
+                "value":"0ffice365.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205617",
+                "type":"domain",
+                "value":"0nedrive.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205618",
+                "type":"domain",
+                "value":"akadns.live",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205618",
+                "type":"domain",
+                "value":"akamai.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205619",
+                "type":"domain",
+                "value":"akamaiedge.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205619",
+                "type":"domain",
+                "value":"azureedge.today",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205620",
+                "type":"domain",
+                "value":"cloudfronts.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205620",
+                "type":"domain",
+                "value":"corewindows.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205621",
+                "type":"domain",
+                "value":"hotmai1.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205621",
+                "type":"domain",
+                "value":"microsoftonline.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205622",
+                "type":"domain",
+                "value":"microsoftonline.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205622",
+                "type":"domain",
+                "value":"nsatc.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205623",
+                "type":"domain",
+                "value":"onedrive.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205623",
+                "type":"domain",
+                "value":"phicdn.world",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205624",
+                "type":"domain",
+                "value":"sharepoint.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205625",
+                "type":"domain",
+                "value":"skydrive.agency",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205625",
+                "type":"domain",
+                "value":"skydrive.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547205626",
+                "type":"domain",
+                "value":"t-msedge.world",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1547215082",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1547200855",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547200855",
+                        "type":"text",
+                        "value":"#DarkHydrus is launching attacks to targets in Middle East. DNS tunneling is used for C2 communication\r\nDropperï¼šØ§Ù„ÙÙ‡Ø§Ø±Ø³.xlsm\r\nVT Link\r\n(link: https://www.virustotal.com/#/file/513813af1590bc9edeb91845b454d42bbce6a5e2d43a9b0afa7692e4e500b4c8/detection) virustotal.com/#/file/513813aâ€¦\r\nC2:\r\n(link: http://edgekey.live) edgekey.live\r\n(link: http://akdns.live) akdns.live\r\n(link: http://trafficmanager.live) trafficmanager.live\r\n(link: http://akamaized.live) akamaized.live\r\n(link: http://akamaiedge.live) akamaiedge.live",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547200856",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1547200856",
+                        "type":"url",
+                        "value":"https://mobile.twitter.com/360TIC/status/1083289987339042817",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547200858",
+                        "type":"datetime",
+                        "value":"2019-01-10T10:10:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547200859",
+                        "type":"text",
+                        "value":"360TIC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547203871",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547203872",
+                        "type":"filename",
+                        "value":"Ø§Ù„ÙÙ‡Ø§Ø±Ø³.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547203872",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547204953",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547204953",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/#/file/513813af1590bc9edeb91845b454d42bbce6a5e2d43a9b0afa7692e4e500b4c8/detection",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547215088",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547215088",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547215089",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547215089",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547215089",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547215090",
+                        "type":"datetime",
+                        "value":"2019-01-11T02:47:36",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547215090",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/513813af1590bc9edeb91845b454d42bbce6a5e2d43a9b0afa7692e4e500b4c8/analysis/1547174856/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547215090",
+                        "type":"text",
+                        "value":"34/62",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

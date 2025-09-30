@@ -1,0 +1,335 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-07",
+        "published":true,
+        "info":"OSINT - 2016 Updates to Shifu Banking Trojan",
+        "publish_timestamp":"1483798227",
+        "timestamp":"1483798214",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            },
+            {
+                "name":"veris:action:social:target=\"Finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483797279",
+                "type":"comment",
+                "value":"Shifu is a Banking Trojan first discovered in 2015. Shifu is based on the Shiz source code which incorporated techniques used by Zeus. Attackers use Shifu to steal credentials for online banking websites around the world, starting in Russia but later including the UK, Italy, and others.\r\n\r\nPalo Alto Networks Unit 42 research has found that the Shifu authors have evolved Shifu in 2016. Our research has found that Shifu has incorporated multiple new techniques to infect and evade detection on Microsoft Windows systems. Some of these include:\r\n\r\n    Exploitation of CVE-2016-0167 a Microsoft Windows Privilege Escalation vulnerability to gain SYSTEM level privileges. Earlier versions of Shifu exploited CVE-2015-0003 to achieve the same goal\r\n    Use of a Windows atom to identify if the host is already infected with Shifu in addition to the mutex used by previous versions\r\n    Use of â€œpush-calc-retâ€ API obfuscation to hide function calls from malware analysts\r\n    Use of alternative Namecoin .bit domains\r\n\r\nWe have also identified new links between Shifu and other tools which suggest Shifu isnâ€™t simply based on the Shiz Trojan, but is probably the latest evolution of Shiz.\r\n\r\nThe primary goal of this report is to introduce Shifuâ€™s new features to other malware analysts who may encounter this Trojan in the future. The following sections give an overview of the new features, and the appendix at the end includes the technical details on the overall functionality of Shifu.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483797291",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2017/01/unit42-2016-updates-shifu-banking-trojan/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Exploitation of CVE-2016-0167 a Microsoft Windows Privilege Escalation vulnerability to gain SYSTEM level privileges. Earlier versions of Shifu exploited CVE-2015-0003 to achieve the same goal",
+                "timestamp":"1483797347",
+                "type":"vulnerability",
+                "value":"CVE-2016-0167",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Exploitation of CVE-2016-0167 a Microsoft Windows Privilege Escalation vulnerability to gain SYSTEM level privileges. Earlier versions of Shifu exploited CVE-2015-0003 to achieve the same goal",
+                "timestamp":"1483797347",
+                "type":"vulnerability",
+                "value":"CVE-2015-0003",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1483797393",
+                "type":"pdb",
+                "value":"Z:\\coding\\cryptor\\Release\\crypted.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1483797395",
+                "type":"pdb",
+                "value":"Z:\\coding\\malware\\tests\\Release\\cryptoshit.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1483797395",
+                "type":"pdb",
+                "value":"Z:\\coding\\malware\\RDP\\output\\Release\\rdp_bot.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1483797396",
+                "type":"pdb",
+                "value":"Z:\\coding\\malware\\ScanBot\\Release\\bot.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1483797397",
+                "type":"pdb",
+                "value":"Z:\\coding\\project\\main\\payload\\payload.x86.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader",
+                "timestamp":"1483797421",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader",
+                "timestamp":"1483797422",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader",
+                "timestamp":"1483797423",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader",
+                "timestamp":"1483797423",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Second stage injector",
+                "timestamp":"1483797446",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Second stage injector",
+                "timestamp":"1483797447",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Exploit injector",
+                "timestamp":"1483797468",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CVE-2016-0167 exploit (x86)",
+                "timestamp":"1483797487",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CVE-2016-0167 exploit (x64)",
+                "timestamp":"1483797504",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Main payload",
+                "timestamp":"1483797527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Main payload",
+                "timestamp":"1483797528",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The main payload of Shifu uses .bit top-level domains which is a decentralized DNS system based on the Namecoin infrastructure. The malware requests the IP addresses of the domains by subsequently contacting the following hardcoded Namecoin DNS servers",
+                "timestamp":"1483797686",
+                "type":"ip-dst",
+                "value":"92.222.80.28",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The main payload of Shifu uses .bit top-level domains which is a decentralized DNS system based on the Namecoin infrastructure. The malware requests the IP addresses of the domains by subsequently contacting the following hardcoded Namecoin DNS servers",
+                "timestamp":"1483797696",
+                "type":"ip-dst",
+                "value":"78.138.97.93",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The main payload of Shifu uses .bit top-level domains which is a decentralized DNS system based on the Namecoin infrastructure. The malware requests the IP addresses of the domains by subsequently contacting the following hardcoded Namecoin DNS servers",
+                "timestamp":"1483797707",
+                "type":"ip-dst",
+                "value":"77.66.108.93",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"At the time of analysis, only the following Namecoin DNS server was answering with the IP address of the actual C&C server:",
+                "timestamp":"1483797670",
+                "type":"hostname",
+                "value":"ns1.dk.dns.d0wn.biz",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Both domain names, klyatiemoskali.bit and slavaukraine.bit, resolved to the IP address 103.199.16.106 at the time of analysis.",
+                "timestamp":"1483797772",
+                "type":"ip-dst",
+                "value":"103.199.16.106",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both domain names, klyatiemoskali.bit and slavaukraine.bit, resolved to the IP address 103.199.16.106 at the time of analysis.",
+                "timestamp":"1483797790",
+                "type":"filename",
+                "value":"klyatiemoskali.bit",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both domain names, klyatiemoskali.bit and slavaukraine.bit, resolved to the IP address 103.199.16.106 at the time of analysis.",
+                "timestamp":"1483797791",
+                "type":"filename",
+                "value":"slavaukraine.bit",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: d3f9c4037f8b4d24f2baff1e0940d2bf238032f9343d06478b5034d0981b2cd9",
+                "timestamp":"1483797834",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: d3f9c4037f8b4d24f2baff1e0940d2bf238032f9343d06478b5034d0981b2cd9",
+                "timestamp":"1483797834",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Initial obfuscated loader - Xchecked via VT: d3f9c4037f8b4d24f2baff1e0940d2bf238032f9343d06478b5034d0981b2cd9",
+                "timestamp":"1483797835",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d3f9c4037f8b4d24f2baff1e0940d2bf238032f9343d06478b5034d0981b2cd9/analysis/1476315072/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: 368b23e6d9ec7843e537e9d6547777088cf36581076599d04846287a9162652b",
+                "timestamp":"1483797836",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: 368b23e6d9ec7843e537e9d6547777088cf36581076599d04846287a9162652b",
+                "timestamp":"1483797836",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Initial obfuscated loader - Xchecked via VT: 368b23e6d9ec7843e537e9d6547777088cf36581076599d04846287a9162652b",
+                "timestamp":"1483797837",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/368b23e6d9ec7843e537e9d6547777088cf36581076599d04846287a9162652b/analysis/1476120793/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: e7e154c65417f5594a8b4602db601ac39156b5758889f708dac7258e415d4a18",
+                "timestamp":"1483797838",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: e7e154c65417f5594a8b4602db601ac39156b5758889f708dac7258e415d4a18",
+                "timestamp":"1483797839",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Initial obfuscated loader - Xchecked via VT: e7e154c65417f5594a8b4602db601ac39156b5758889f708dac7258e415d4a18",
+                "timestamp":"1483797840",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e7e154c65417f5594a8b4602db601ac39156b5758889f708dac7258e415d4a18/analysis/1476121083/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: f63ec1e5752eb8b9a07104f42392eebf143617708bfdd0fe31cbf00ef12383f9",
+                "timestamp":"1483797840",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial obfuscated loader - Xchecked via VT: f63ec1e5752eb8b9a07104f42392eebf143617708bfdd0fe31cbf00ef12383f9",
+                "timestamp":"1483797841",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Initial obfuscated loader - Xchecked via VT: f63ec1e5752eb8b9a07104f42392eebf143617708bfdd0fe31cbf00ef12383f9",
+                "timestamp":"1483797842",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f63ec1e5752eb8b9a07104f42392eebf143617708bfdd0fe31cbf00ef12383f9/analysis/1476121104/",
+                "to_ids":false
+            }
+        ]
+    }
+}

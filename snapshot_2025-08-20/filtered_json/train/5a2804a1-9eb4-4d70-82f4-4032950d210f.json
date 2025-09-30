@@ -1,0 +1,554 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-06",
+        "published":false,
+        "info":"OSINT - Champing at the Cyberbit: Ethiopian Dissidents Targeted with New Commercial Spyware",
+        "publish_timestamp":"0",
+        "timestamp":"1512578550",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"Orginal report",
+                "timestamp":"1512572208",
+                "type":"link",
+                "value":"https://citizenlab.ca/2017/12/champing-cyberbit-ethiopian-dissidents-targeted-commercial-spyware/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"impersonating diretube.com",
+                "timestamp":"1512578183",
+                "type":"hostname",
+                "value":"diretube.co.uk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"impersonating meskerem.net",
+                "timestamp":"1512578169",
+                "type":"hostname",
+                "value":"meskereme.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1512578258",
+                "type":"domain",
+                "value":"time-local.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1512578258",
+                "type":"domain",
+                "value":"time-local.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The samples from getadobeplayer.com",
+                "timestamp":"1512578547",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The samples from getadobeplayer.com",
+                "timestamp":"1512578547",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The samples from getadobeplayer.com",
+                "timestamp":"1512578547",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The samples from getadobeplayer.com",
+                "timestamp":"1512578547",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The samples from getadobeplayer.com",
+                "timestamp":"1512578547",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Phishing sent to Jawar Mohammed (Executive Director of the Oromia Media Network)",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512575801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575801",
+                        "type":"email-src",
+                        "value":"sbo.radio88@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575801",
+                        "type":"email-subject",
+                        "value":"Fw: Confidential video made public",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575801",
+                        "type":"email-src-display-name",
+                        "value":"sbo radio",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Phishing sent to Jawar Mohammed (Executive Director of the Oromia Media Network)",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512575902",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575903",
+                        "type":"email-src",
+                        "value":"sbo.radio88@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575903",
+                        "type":"email-subject",
+                        "value":"Video hints Eritrea and Ethiopia war is highly likely to continue",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512575903",
+                        "type":"email-src-display-name",
+                        "value":"sbo radio",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Real Flash Player update bundled with spyware",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1512576320",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1512576270",
+                        "type":"url",
+                        "value":"http://getadobeplayer.com/flashplayer/download/index7371.html",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1512576270",
+                        "type":"domain",
+                        "value":"getadobeplayer.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512576270",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512576270",
+                        "type":"text",
+                        "value":"/download/index7371.html",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Link to a video trying to trick the user to install a malicious flash player",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1512576497",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1512576446",
+                        "type":"url",
+                        "value":"http://www.eastafro.net/eritrea-ethiopia-border-clash-video.html",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1512576446",
+                        "type":"hostname",
+                        "value":"www.eastafro.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512576446",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512576446",
+                        "type":"text",
+                        "value":"/eritrea-ethiopia-border-clash-video.html",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577634",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577634",
+                        "type":"email-src",
+                        "value":"eliassamare@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577634",
+                        "type":"email-subject",
+                        "value":"Ethiopia Struggling with inside Challenges!",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577691",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577691",
+                        "type":"email-src",
+                        "value":"eliassamare@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577691",
+                        "type":"email-subject",
+                        "value":"Tsorona Conflict Video!",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577738",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577739",
+                        "type":"email-src",
+                        "value":"eliassamare@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577739",
+                        "type":"email-subject",
+                        "value":"UN Report and Diaspora Reaction!",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577776",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577776",
+                        "type":"email-src",
+                        "value":"eliassamare@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577776",
+                        "type":"email-subject",
+                        "value":"Ethiopia and Current Options!",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577813",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577813",
+                        "type":"email-src",
+                        "value":"wadewadejoe@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577813",
+                        "type":"email-subject",
+                        "value":"Congrats – የኢሳት ፍሬዎች",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577856",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577857",
+                        "type":"email-src",
+                        "value":"awetnaeyu@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577857",
+                        "type":"email-subject",
+                        "value":"Egypt-Ethiopia new tension!",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577889",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577889",
+                        "type":"email-src",
+                        "value":"lekanuguse2014@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577889",
+                        "type":"email-subject",
+                        "value":"Gov official interrogated following leakage of national security meeting minutes",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Targeting Etana Habte",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512577954",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577955",
+                        "type":"email-src",
+                        "value":"shigut.gelleta@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512577955",
+                        "type":"email-subject",
+                        "value":"Let’s stop EU & the World Bank from funding $500 m to Ethiopia",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Targeting Etana Habte",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1512578004",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512578004",
+                        "type":"email-src",
+                        "value":"networkoromostudies2015@gmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512578004",
+                        "type":"email-subject",
+                        "value":"Fwd: MONOSANTO (A multinational company)’s plan on Oromia",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1512578327",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1512578327",
+                        "type":"url",
+                        "value":"http://pssts1.nozonenet.com/ts8/ts8.php",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1512578327",
+                        "type":"hostname",
+                        "value":"pssts1.nozonenet.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512578327",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512578327",
+                        "type":"text",
+                        "value":"/ts8/ts8.php",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512578477",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512578413",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512578413",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512578413",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512578425",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

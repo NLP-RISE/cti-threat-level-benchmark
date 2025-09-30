@@ -1,0 +1,183 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-02-14",
+        "published":true,
+        "info":"New MortalKombat ransomware and Laplas Clipper malware threats deployed in financially motivated campaign",
+        "publish_timestamp":"1679652242",
+        "timestamp":"1679652235",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Xorist\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"download the MortalKombat ransomware.",
+                "timestamp":"1679651833",
+                "type":"ip-dst",
+                "value":"193.169.255.78",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 / Laplas Clipper malware employed in the attacks communicates with the Clipper bot",
+                "timestamp":"1679651956",
+                "type":"domain",
+                "value":"clipper.guru",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"email-src",
+                "value":"hack3dlikeapro@proton.me",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"url",
+                "value":"http://193.169.255.78/fw-apgksdtpx4hoaujjmbvdnxpohz.pdf.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"url",
+                "value":"http://193.169.255.78/fw-cpgk2xfpx4hoaujjmbvdnxpohz.pdf.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651451",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651452",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651452",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679651452",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1679651475",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/new-mortalkombat-ransomware-and-laplas-clipper-malware-threats/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679651647",
+                "type":"comment",
+                "value":"Talos observed the threat actor deploying MortalKombat ransomware and Laplas Clipper malware in this campaign, both used to steal cryptocurrency from the victim.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"qTOX ID",
+                "timestamp":"1679651759",
+                "type":"comment",
+                "value":"DA639EF141F3E3C35EA62FF284200C29FA2E7E597EF150FDD526F9891CED372CBB9AB7B8BEC8",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ransomware executable filename",
+                "timestamp":"1679652001",
+                "type":"filename",
+                "value":"E7OKC9s3llhAD13.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679652046",
+                "type":"comment",
+                "value":"MortalKombat discovers and maps the logical drives of the victim’s machine, appends “\\*.*” and searches through all folders recursively. The ransomware enumerates every file and matches the file extension using the extensive list of file extensions decrypted from the ransomware’s resource section. In the event of a match, the ransomware encrypts the files and appends a new file extension “..Remember_you_got_only_24_hours_to_make_the_payment_if_you_dont_pay_prize_will_triple_Mortal_Kombat_Ransomware” to the encrypted files. Simultaneously, the ransom note file “HOW TO DECRYPT FILES.txt” will be created in every folder where the files are encrypted. Upon successfully encrypting the files, the ransomware changes the victim machine’s wallpaper by loading the dropped JPEG image from the local user’s application temporary folder. The ransomware also corrupts the deleted files in the recycle bin folder and changes the file names and types",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1679652152",
+                "type":"windows-scheduled-task",
+                "value":"cmd.exe /C schtasks /create /tn OQaXPFVvfW /tr  ”%APPDATA%\\OQaXPFVvfW\\TCOBAisZyL.exe” /st 00:00 /du 9999:59 /sc once /ri 1 /f",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1679651919",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"downloads the Laplas Clipper payload",
+                        "timestamp":"1679651919",
+                        "type":"ip-dst",
+                        "value":"144.76.136.153",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1679651919",
+                        "type":"domain",
+                        "value":"transfer.sh",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

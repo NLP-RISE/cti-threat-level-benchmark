@@ -1,0 +1,381 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-01-20",
+        "published":true,
+        "info":"Campaigns abusing corporate trusted infrastructure hunt for corporate credentials on ICS networks",
+        "publish_timestamp":"1642676905",
+        "timestamp":"1642676789",
+        "Tag":[
+            {
+                "name":"misp-galaxy:financial-fraud=\"Business Email Compromise\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Business Relationships - T1591.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Credentials - T1589.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1642676169",
+                "type":"comment",
+                "value":"the majority of “anomalous” samples were configured to use SMTP-based (rather than FTP or HTTP(s)) C2s as a one-way communication channel,",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676774",
+                "type":"ip-dst",
+                "value":"105.112.101.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.102.213",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.107.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.109.252",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.113.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.113.250",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.114.120",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.115.230",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.115.4",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.117.199",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.121.59",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.144.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.144.56",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.144.77",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.145.6",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.147.156",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.147.20",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.148.252",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.148.60",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.150.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.178.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676775",
+                "type":"ip-dst",
+                "value":"105.112.26.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.32.44",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.33.155",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.33.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.33.40",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.35.117",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.37.192",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.37.193",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.37.222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.38.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.38.201",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.38.218",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.38.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.39.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.39.167",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.41.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.41.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.46.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.46.38",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.50.73",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infrastructure IPs",
+                "timestamp":"1642676776",
+                "type":"ip-dst",
+                "value":"105.112.50.80",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1642676781",
+                "type":"link",
+                "value":"https://ics-cert.kaspersky.com/publications/reports/2022/1/19/campaigns-abusing-corporate-trusted-infrastructure-hunt-for-corporate-credentials-on-ics-networks/",
+                "to_ids":false
+            }
+        ]
+    }
+}

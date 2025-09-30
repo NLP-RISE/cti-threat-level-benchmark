@@ -1,0 +1,212 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-06-17",
+        "published":true,
+        "info":"OSINT - Setting Sights On Retail: AbaddonPOS Now Targeting Specific POS Software",
+        "publish_timestamp":"1466239298",
+        "timestamp":"1466237887",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1466202010",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/abaddonpos-now-targeting-specific-pos-software",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1466202025",
+                "type":"comment",
+                "value":"Much attention has been focused recently on ransomware and other threats that go after consumers and businesses directly for monetary payouts. Still, point-of-sale (POS) malware continues to be an important source of stolen credit card data and associated revenue for cyber criminals.\r\n\r\nThe ongoing rollout of chip-and-pin credit cards and tighter standards following the retail megabreaches of 2014 have put further pressure on the POS malware black market. But as we have seen with the AbaddonPOS malware described here, POS malware is not just alive and wellâ€”itâ€™s being actively developed.\r\n\r\nOn May 5, a financially motivated actor whom Proofpoint has been tracking as TA530 (also featured in our previous blog post \"Phish Scales\" [1]) sent out a highly-personalized email campaign targeting primarily retail companies and attempting to install TinyLoader and AbaddonPOS point-of-sale malware. The retail vertical was likely chosen due to the higher likelihood of infecting a POS system. We first observed AbaddonPOS when it was delivered by Vawtrak [2] in October of 2015. We have also found that TinyLoader and AbaddonPOS have since been updated in several ways.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Example macro document",
+                "timestamp":"1466237541",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial TinyLoader download",
+                "timestamp":"1466237541",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TinyLoader update",
+                "timestamp":"1466237541",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AbaddonPOS",
+                "timestamp":"1466237542",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 30010 TinyLoader C2",
+                "timestamp":"1466237596",
+                "type":"ip-dst",
+                "value":"50.7.124.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 50010 TinyLoader C2",
+                "timestamp":"1466237596",
+                "type":"ip-dst",
+                "value":"85.93.5.136",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1466237628",
+                "type":"mutex",
+                "value":"CHAMEL1ON",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Example TinyLoader download",
+                "timestamp":"1466237730",
+                "type":"url",
+                "value":"http://dolcheriva.com/img/del/a/cg-bn/word.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Example TinyLoader update download",
+                "timestamp":"1466237730",
+                "type":"url",
+                "value":"http://50.7.124.178/file.e",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Example AbaddonPOS download",
+                "timestamp":"1466237730",
+                "type":"url",
+                "value":"http://85.93.5.136/ZRH4J2/P_KYJ3gxEhTpasmJxz.d",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AbaddonPOS - Xchecked via VT: 24e39756c5b6bdbdc397dabde3ece587cdb987af9704d5e5329e00b5b2aaa312",
+                "timestamp":"1466237887",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AbaddonPOS - Xchecked via VT: 24e39756c5b6bdbdc397dabde3ece587cdb987af9704d5e5329e00b5b2aaa312",
+                "timestamp":"1466237887",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"AbaddonPOS - Xchecked via VT: 24e39756c5b6bdbdc397dabde3ece587cdb987af9704d5e5329e00b5b2aaa312",
+                "timestamp":"1466237887",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/24e39756c5b6bdbdc397dabde3ece587cdb987af9704d5e5329e00b5b2aaa312/analysis/1463379262/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TinyLoader update - Xchecked via VT: b30ee5185c7f649da42efabe9512d79adcaa53f3f3647e0025b7c68bf7cc8734",
+                "timestamp":"1466237887",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TinyLoader update - Xchecked via VT: b30ee5185c7f649da42efabe9512d79adcaa53f3f3647e0025b7c68bf7cc8734",
+                "timestamp":"1466237888",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"TinyLoader update - Xchecked via VT: b30ee5185c7f649da42efabe9512d79adcaa53f3f3647e0025b7c68bf7cc8734",
+                "timestamp":"1466237888",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b30ee5185c7f649da42efabe9512d79adcaa53f3f3647e0025b7c68bf7cc8734/analysis/1463397647/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial TinyLoader download - Xchecked via VT: e5fbfd61b19561a4c35d1f7aa385f4ca73a65adb2610504398e4ca47c109bace",
+                "timestamp":"1466237888",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Initial TinyLoader download - Xchecked via VT: e5fbfd61b19561a4c35d1f7aa385f4ca73a65adb2610504398e4ca47c109bace",
+                "timestamp":"1466237888",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Initial TinyLoader download - Xchecked via VT: e5fbfd61b19561a4c35d1f7aa385f4ca73a65adb2610504398e4ca47c109bace",
+                "timestamp":"1466237888",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e5fbfd61b19561a4c35d1f7aa385f4ca73a65adb2610504398e4ca47c109bace/analysis/1465218852/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Example macro document - Xchecked via VT: 7dc57aef76a1ddb5eef7bfd1a1350e1e951b5f216bfc805f51796545d04d80a0",
+                "timestamp":"1466237889",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Example macro document - Xchecked via VT: 7dc57aef76a1ddb5eef7bfd1a1350e1e951b5f216bfc805f51796545d04d80a0",
+                "timestamp":"1466237889",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Example macro document - Xchecked via VT: 7dc57aef76a1ddb5eef7bfd1a1350e1e951b5f216bfc805f51796545d04d80a0",
+                "timestamp":"1466237889",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7dc57aef76a1ddb5eef7bfd1a1350e1e951b5f216bfc805f51796545d04d80a0/analysis/1464788426/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-06-25",
+        "published":true,
+        "info":"Rig Exploit Kit sends Pitou.B Trojan",
+        "publish_timestamp":"1561442753",
+        "timestamp":"1561442743",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Gate domain that redirected to Rig EK",
+                "timestamp":"1559937241",
+                "type":"ip-dst",
+                "value":"185.254.190.200",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Gate domain that redirected to Rig EK",
+                "timestamp":"1559937241",
+                "type":"domain",
+                "value":"makemoneyeasywith.me",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Rig EK traffic",
+                "timestamp":"1559937241",
+                "type":"ip-dst",
+                "value":"188.225.26.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Encoded/encrypted traffic caused by the Pitou.B Trojan",
+                "timestamp":"1559937241",
+                "type":"ip-dst",
+                "value":"195.154.255.65",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flash exploit sent by Rig EK on 2019-06-24",
+                "timestamp":"1559937241",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Pitou.B malware sent by Rig EK on 2019-06-24",
+                "timestamp":"1559937241",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

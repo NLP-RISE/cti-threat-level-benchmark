@@ -1,0 +1,1080 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2020-03-23",
+        "published":true,
+        "info":"Trickbot to Ryuk in Two Hours",
+        "publish_timestamp":"1585237620",
+        "timestamp":"1585237597",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Disabling Security Tools - T1089\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Group Policy Modification - T1484\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Files and Directories - T1158\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Rundll32 - T1085\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Valid Accounts - T1078\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Credential Dumping - T1003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Connections Discovery - T1049\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Discovery - T1518\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Security Software Discovery - T1063\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote System Discovery - T1018\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Share Discovery - T1135\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Service Scanning - T1046\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Trust Discovery - T1482\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Account Discovery - T1087\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Desktop Protocol - T1076\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote File Copy - T1105\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Services - T1021\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Admin Shares - T1077\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Automated Collection - T1119\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Service - T1102\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            },
+            {
+                "name":"Cobalt Strike"
+            },
+            {
+                "name":"PowerView"
+            },
+            {
+                "name":"Ryuk"
+            },
+            {
+                "name":"tlp:green"
+            },
+            {
+                "name":"trickbot"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980096",
+                "type":"snort",
+                "value":"ET POLICY WMIC WMI Request Over SMB - Likely Lateral Movement",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980127",
+                "type":"snort",
+                "value":"ET POLICY SMB2 NT Create AndX Request For an Executable File",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980131",
+                "type":"snort",
+                "value":"ET POLICY Powershell Activity Over SMB - Likely Lateral Movement",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980136",
+                "type":"snort",
+                "value":"ET POLICY SMB Executable File Transfer",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980142",
+                "type":"snort",
+                "value":"ET POLICY Tunneled RDP msts Handshake",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980148",
+                "type":"snort",
+                "value":"ET NETBIOS DCERPC SVCCTL - Remote Service Control Manager Access",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980148",
+                "type":"snort",
+                "value":"GPL ATTACK_RESPONSE command completed",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980148",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 15",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET TROJAN ABUSE.CH SSL Blacklist Malicious SSL certificate detected (Dridex/Trickbot CnC)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 19",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 21",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 12",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 9",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 14",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET CNC Feodo Tracker Reported CnC Server group 4",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ETPRO TROJAN Cobalt Strike Malleable C2 Amazon Profile",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET POLICY Possible External IP Lookup ipinfo.io",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ET Rules that fired during attack",
+                "timestamp":"1584980149",
+                "type":"snort",
+                "value":"ET POLICY OpenSSL Demo CA - Internet Widgits Pty",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 / Possible Cobalt Strike Team Server",
+                "timestamp":"1585160272",
+                "type":"ip-dst",
+                "value":"206.81.5.253",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 / Possible Cobalt Strike Team Server",
+                "timestamp":"1585160261",
+                "type":"domain",
+                "value":"norulless.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"146.185.253.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"195.123.239.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"185.62.188.159",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"190.214.13.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"64.44.51.113",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"5.255.96.187",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1584982797",
+                "type":"ip-dst",
+                "value":"203.176.135.102",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"RDP Tunnel from/to this IP",
+                "timestamp":"1584990745",
+                "type":"ip-src",
+                "value":"195.123.242.48",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog write-up with full timeline of attack",
+                "timestamp":"1585225685",
+                "type":"link",
+                "value":"https://www.wilbursecurity.com/2020/03/trickbot-to-ryuk-in-two-hours/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979194",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979199",
+                        "type":"malware-sample",
+                        "value":"aHSIi.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979205",
+                        "type":"filename",
+                        "value":"aHSIi.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979205",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979205",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979206",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"malware-sample",
+                        "value":"cAvYqaMfOlan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"filename",
+                        "value":"cAvYqaMfOlan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979206",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979207",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979207",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979207",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979207",
+                        "type":"malware-sample",
+                        "value":"cSKtg.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979207",
+                        "type":"filename",
+                        "value":"cSKtg.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979208",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979208",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979208",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979208",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979208",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"malware-sample",
+                        "value":"dOpMdPWIBlan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"filename",
+                        "value":"dOpMdPWIBlan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979209",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"malware-sample",
+                        "value":"hOXrbKdIZlan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"filename",
+                        "value":"hOXrbKdIZlan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979209",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"malware-sample",
+                        "value":"muIVOiFnGlan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"filename",
+                        "value":"muIVOiFnGlan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979209",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979210",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"malware-sample",
+                        "value":"vlGEgCBTilan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"filename",
+                        "value":"vlGEgCBTilan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979210",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"malware-sample",
+                        "value":"VSuzYpQlrlan.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"filename",
+                        "value":"VSuzYpQlrlan.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exe called RYUK or ran shortly after RYUK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979210",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"malware-sample",
+                        "value":"yjnfV.exe|c908088e542ca306759249cf4b35d25b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"filename",
+                        "value":"yjnfV.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979210",
+                        "type":"size-in-bytes",
+                        "value":"143360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"RyukReadMe.html",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1585225948",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584979315",
+                        "type":"filename",
+                        "value":"RyukReadMe.html",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584979321",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584979327",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584979327",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979327",
+                        "type":"size-in-bytes",
+                        "value":"627",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Potential Cobalt Strike Beacon",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979454",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979454",
+                        "type":"malware-sample",
+                        "value":"13307d2.exe|4bd6b95947819e3175031bf917da0e6e",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979454",
+                        "type":"filename",
+                        "value":"13307d2.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979454",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979454",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"size-in-bytes",
+                        "value":"285696",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Potential Cobalt Strike Beacon",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979455",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"malware-sample",
+                        "value":"d417c9c.exe|9692ca87687778c5a9d44100e6a6c4b4",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"filename",
+                        "value":"d417c9c.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"size-in-bytes",
+                        "value":"285696",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Potential Cobalt Strike Beacon",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584979455",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"malware-sample",
+                        "value":"db73b2.exe|ca7b238df0492720bea33e2c0af3f552",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"filename",
+                        "value":"db73b2.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584979455",
+                        "type":"size-in-bytes",
+                        "value":"285696",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

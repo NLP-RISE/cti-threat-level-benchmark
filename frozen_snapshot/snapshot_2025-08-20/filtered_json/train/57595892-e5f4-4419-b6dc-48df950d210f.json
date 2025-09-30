@@ -1,0 +1,119 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-06-09",
+        "published":true,
+        "info":"OSINT - LinkedIn information used to spread banking malware in the Netherlands",
+        "publish_timestamp":"1465477834",
+        "timestamp":"1465477825",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Zeus Panda, in this case, always connects to the following domain & IP using SSL",
+                "timestamp":"1465473194",
+                "type":"ip-dst",
+                "value":"107.171.187.182",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Zeus Panda, in this case, always connects to the following domain & IP using SSL",
+                "timestamp":"1465473218",
+                "type":"domain",
+                "value":"skorianial.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The Macro retrieves a binary from the following (likely compromised) website",
+                "timestamp":"1465473251",
+                "type":"url",
+                "value":"ledpronto.com/app/office.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The Macro retrieves a binary from the following (likely compromised) website",
+                "timestamp":"1465473759",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The Macro retrieves a binary from the following (likely compromised) website - Xchecked via VT: c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d",
+                "timestamp":"1465473811",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The Macro retrieves a binary from the following (likely compromised) website - Xchecked via VT: c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d",
+                "timestamp":"1465473812",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"The Macro retrieves a binary from the following (likely compromised) website - Xchecked via VT: c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d",
+                "timestamp":"1465473812",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d/analysis/1465384661/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1465474041",
+                "type":"user-agent",
+                "value":"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 7.1; Trident/5.0)",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1465477680",
+                "type":"malware-sample",
+                "value":"office.bin|8582db69683290be0381bd1485013435",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1465477681",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1465477682",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"downloaded malware - Xchecked via VT: c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d",
+                "timestamp":"1465477825",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c1e21a06a1fa1de2998392668b6910ca2be0d5d9ecc39bd3e3a2a3ae7623400d/analysis/1465474372/",
+                "to_ids":false
+            }
+        ]
+    }
+}

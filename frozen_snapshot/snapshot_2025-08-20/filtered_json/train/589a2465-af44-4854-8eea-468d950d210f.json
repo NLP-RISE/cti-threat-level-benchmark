@@ -1,0 +1,164 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-07",
+        "published":true,
+        "info":"OSINT - The Curious Case of a Reconnaissance Campaign Targeting Ministry and Embassy Sites",
+        "publish_timestamp":"1486497512",
+        "timestamp":"1486497239",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Turla\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486496896",
+                "type":"text",
+                "value":"Forcepoint Security Labsâ„¢ came across a malicious reconnaissance campaign that targets websites. It is unknown what is the intent behind the campaign as of this writing, however, the profile of the targets resembles those that are common targets of Advanced Persistent Threat (APT) actors. As the attack is currently active, it effectively turns compromised sites into attack surfaces against their visitors.\r\n\r\nFurthermore, the injections resemble those used by the Turla group, such as those previously documented by Swiss GovCERT last year. In this post, we will share our findings on this campaign's targets and injected code as well as provide insights to its timeline.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing Pages",
+                "timestamp":"1486496938",
+                "type":"url",
+                "value":"http://rss.nbcpost.com/news/today/content.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing Pages",
+                "timestamp":"1486496939",
+                "type":"url",
+                "value":"http://drivers.epsoncorp.com/plugin/analytics/counter.js",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing Pages",
+                "timestamp":"1486496940",
+                "type":"url",
+                "value":"http://www.mentalhealthcheck.net/update/check.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing Pages",
+                "timestamp":"1486496941",
+                "type":"url",
+                "value":"http://www.mentalhealthcheck.net/update/counter.js",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing Pages",
+                "timestamp":"1486496942",
+                "type":"url",
+                "value":"http://static.travelclothes.org/main.js",
+                "to_ids":true
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497045",
+                "type":"target-external",
+                "value":"Foreign affairs ministries of Kyrgyzstan, Moldova and Uzbekistan",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497046",
+                "type":"target-external",
+                "value":"Embassy sites of Iraq, Jordan, Zambia and Russia",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497046",
+                "type":"target-external",
+                "value":"A political party in Austria",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497047",
+                "type":"target-external",
+                "value":"A government-run, sustainability site in Austria",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497048",
+                "type":"target-external",
+                "value":"A sports association in Austria",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497049",
+                "type":"target-external",
+                "value":"A Somalian news site",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497050",
+                "type":"target-external",
+                "value":"A socialist organization in Spain",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497051",
+                "type":"target-external",
+                "value":"An international cooperation organization based in France",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497052",
+                "type":"target-external",
+                "value":"An African union site",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497053",
+                "type":"target-external",
+                "value":"A road safety site from Ukraine",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1486497054",
+                "type":"target-external",
+                "value":"An African plant society",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486497239",
+                "type":"link",
+                "value":"https://blogs.forcepoint.com/security-labs/curious-case-reconnaissance-campaign-targeting-ministry-and-embassy-sites",
+                "to_ids":false
+            }
+        ]
+    }
+}

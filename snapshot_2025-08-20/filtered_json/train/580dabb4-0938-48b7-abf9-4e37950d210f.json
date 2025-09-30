@@ -1,0 +1,82 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-09-29",
+        "published":true,
+        "info":"OSINT - TeamXRat: Brazilian cybercrime meets ransomware",
+        "publish_timestamp":"1477291752",
+        "timestamp":"1477291239",
+        "Tag":[
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477291026",
+                "type":"link",
+                "value":"https://securelist.com/blog/research/76153/teamxrat-brazilian-cybercrime-meets-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477291042",
+                "type":"comment",
+                "value":"Brazilian cybercriminals are notorious for their ability to develop banking trojans but now they have started to focus their efforts in new areas, including ransomware. We discovered a new variant of a Brazilian-made ransomware, Trojan-Ransom.Win32.Xpan, that is being used to infect local companies and hospitals, directly affecting innocent people, encrypting their files using the extension â€œ.___xratteamLuckedâ€ and asking to pay the ransom.\r\n\r\nThe Kaspersky Anti-Ransom team decrypted the Xpan Trojan, allowing them to rescue the files of a Hospital in Brazil that had fallen victim to this Ransomware family.\r\n\r\nActually, this is not the first ransomware to come out of Brazil. In the past, we investigated TorLocker and its flawed encryption, which was created and negotiated worldwide by a Brazilian cybercriminal. We also saw a lot of copycats use HiddenTear in local attacks. Trojan Ransom Xpan was created by an organized gang, which used targeted attacks via RDP that abused weak passwords and wrong implementations.\r\n\r\nIn this post, weâ€™ll explain this new Ransomware family and how Brazilian coders are creating new ransomware from scratch.",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1477291070",
+                "type":"pattern-in-memory",
+                "value":".___xratteamLucked",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1477291135",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The ransom texts used by the group are written in Portuguese from Brazil. The messages do not inform how much the victim has to pay to retrieve their files, nor the payment method required (which is usually Bitcoins). Instead, they instruct the victim to send an email to one of the anonymous email services Mail2Tor or Email.tg.",
+                "timestamp":"1477291239",
+                "type":"email-src",
+                "value":"corporacaoxrat@mail2tor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The ransom texts used by the group are written in Portuguese from Brazil. The messages do not inform how much the victim has to pay to retrieve their files, nor the payment method required (which is usually Bitcoins). Instead, they instruct the victim to send an email to one of the anonymous email services Mail2Tor or Email.tg.",
+                "timestamp":"1477291239",
+                "type":"email-src",
+                "value":"xratteam@mail2tor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The ransom texts used by the group are written in Portuguese from Brazil. The messages do not inform how much the victim has to pay to retrieve their files, nor the payment method required (which is usually Bitcoins). Instead, they instruct the victim to send an email to one of the anonymous email services Mail2Tor or Email.tg.",
+                "timestamp":"1477291240",
+                "type":"email-src",
+                "value":"xratteam@email.tg",
+                "to_ids":true
+            }
+        ]
+    }
+}

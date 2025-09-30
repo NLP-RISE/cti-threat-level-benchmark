@@ -1,0 +1,619 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2025-02-04",
+        "published":true,
+        "info":"UAC-0063: Cyber Espionage Operation Expanding from Central Asia",
+        "publish_timestamp":"1738699853",
+        "timestamp":"1738699848",
+        "Tag":[
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Georgia\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Germany\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Netherlands\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Romania\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"United Kingdom\""
+            },
+            {
+                "name":"misp-galaxy:groups=\"APT28\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT28 - G0007\""
+            },
+            {
+                "name":"misp-galaxy:country=\"russia\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Diplomacy\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738698813",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738698813",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1738698828",
+                "type":"link",
+                "value":"https://www.bitdefender.com/en-us/blog/businessinsights/uac-0063-cyber-espionage-operation-expanding-from-central-asia",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"MALDOC C2",
+                "timestamp":"1738699443",
+                "type":"domain",
+                "value":"cloud-mail.ink",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"HATVIBE C2",
+                "timestamp":"1738699443",
+                "type":"domain",
+                "value":"background-services.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"HATVIBE C2",
+                "timestamp":"1738699443",
+                "type":"domain",
+                "value":"lookup.ink",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698854",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698854",
+                        "type":"domain",
+                        "value":"futuresfurnitures.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698854",
+                        "type":"ip-dst",
+                        "value":"91.202.5.49",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698918",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698918",
+                        "type":"domain",
+                        "value":"automation-embedding.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698918",
+                        "type":"ip-dst",
+                        "value":"195.80.150.54",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698933",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698933",
+                        "type":"domain",
+                        "value":"tieringservice.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698933",
+                        "type":"ip-dst",
+                        "value":"46.183.219.228",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698960",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698960",
+                        "type":"domain",
+                        "value":"retaildemo.info",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698960",
+                        "type":"ip-dst",
+                        "value":"185.167.63.42",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698979",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698979",
+                        "type":"domain",
+                        "value":"internalsecurity.us",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698979",
+                        "type":"ip-dst",
+                        "value":"212.224.86.69",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738698997",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698997",
+                        "type":"domain",
+                        "value":"errorreporting.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738698997",
+                        "type":"ip-dst",
+                        "value":"185.62.56.47",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738699019",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699019",
+                        "type":"domain",
+                        "value":"enrollmentdm.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699019",
+                        "type":"ip-dst",
+                        "value":"185.158.248.198",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738699037",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699037",
+                        "type":"domain",
+                        "value":"lanmangraphics.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699037",
+                        "type":"ip-dst",
+                        "value":"84.32.188.23",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738699056",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699056",
+                        "type":"domain",
+                        "value":"rss-feed-monitoring.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699056",
+                        "type":"ip-dst",
+                        "value":"38.180.87.154",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1738699075",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699075",
+                        "type":"domain",
+                        "value":"underwearshopfor.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1738699075",
+                        "type":"ip-dst",
+                        "value":"91.237.124.142",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699112",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699112",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\programs\\base\\_sql.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699140",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699140",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699140",
+                        "type":"filename",
+                        "value":"%LOCALAPPDATA%\\programs\\onedrive\\crashreporting.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699160",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699160",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699160",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\python\\tools\\scripts\\help.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699180",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699180",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699180",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\python\\tools\\scripts\\findcolor.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699200",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699200",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699200",
+                        "type":"filename",
+                        "value":"%LOCALAPPDATA%\\Network\\AccessProtection.hta",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699254",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699254",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699254",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\python\\aiopyfix.cp37-win32.pyd",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699280",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699280",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699280",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\python\\tools\\scripts\\aiopyfix.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699315",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699315",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699315",
+                        "type":"filename",
+                        "value":"%LOCALAPPDATA%\\verifiedpublisher\\certstorecheck.hta",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699338",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699338",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699338",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\python\\lib\\mac\\synchronizewintime.py",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699367",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699367",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699367",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\programs\\diagsvc.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1738699388",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699388",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1738699388",
+                        "type":"filename",
+                        "value":"%COMMON\\_APPDATA%\\drivers\\slmgr.vbe",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,567 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-03-21",
+        "published":true,
+        "info":"Ongoing ITG05 operations leverage evolving malware arsenal in global campaigns",
+        "publish_timestamp":"1711048223",
+        "timestamp":"1711048212",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"APT28\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT28 - G0007\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1711047835",
+                "type":"link",
+                "value":"https://securityintelligence.com/x-force/itg05-leverages-malware-arsenal/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1711048141",
+                "type":"vulnerability",
+                "value":"CVE-2024-21413",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1711048141",
+                "type":"vulnerability",
+                "value":"CVE-2024-21410",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1711048141",
+                "type":"vulnerability",
+                "value":"CVE-2023-23397",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1711048141",
+                "type":"vulnerability",
+                "value":"CVE-2023-35636",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for emails containing *.firstcloudit[.]com URLs",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Stay abreast of newly published exploits likely to be used by APT actors",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"CVE-2024-21413",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"CVE-2024-21410",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"CVE-2023-23397",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"CVE-2023-35636",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Block NTLMv2 authentication, especially for outgoing connections, and use Kerberos for authentication instead",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for abuse of “search-ms” and “wpa” URI handlers",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for abuse of WebDAV",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Process: rundll32.exe %WINDIR%\\system32\\davclnt.dll,DavSetCookie <malicious_URL>",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for .LNK files downloaded from or referencing WebDAV servers",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor network traffic for signs of webhooks/OOB communication services",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.webhook[.]site",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]fun",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]pro",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]live",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]site",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]online",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"*.oast[.]me",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for suspicious Python files spawning cmd exe",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for raw TCP traffic containing the string “<SEPARATOR>” as an indicator of a MASEPIE infection",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for suspicious IMAP traffic to unknown servers",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Monitor for IMAP traffic containing the string “newtime1:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000” as an indicator for an OCEANMAP infection",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Install and configure endpoint security software",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Update relevant network security monitoring rules",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1711048173",
+                "type":"comment",
+                "value":"Educate staff on the potential threats to the organization",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 55155",
+                "timestamp":"1711048206",
+                "type":"ip-dst|port",
+                "value":"172.114.170.18|55155",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 55555",
+                "timestamp":"1711048206",
+                "type":"ip-dst|port",
+                "value":"194.126.178.8|55555",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 54467",
+                "timestamp":"1711048206",
+                "type":"ip-dst|port",
+                "value":"148.252.42.42|54467",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"ip-dst",
+                "value":"74.124.219.71",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"webmail.facadesolutionsuae.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"wody-info-files.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"kzgw-wody.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"nas-files.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-nas.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"ua-calendar.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"calendarua.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"calendar-ua.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-gov-am.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-gov.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"info-mod.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-mod.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"rada-zakon.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"militarysupport.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"sgg-files.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"sgg-gov.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"presidencia-docs.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"files-presidencia.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-presidencia.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"presidencia-files.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"presidencia-gov.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"presidencia-gob.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"gcsd.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"emod.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"e-military.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"dls-gov.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"eecommission.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"hostname",
+                "value":"eecommission-drive.firstcloudit.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1711048206",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

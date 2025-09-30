@@ -1,0 +1,96 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-10",
+        "published":true,
+        "info":"OSINT - New KeyPass Ransomware Campaign Underway",
+        "publish_timestamp":"1536846760",
+        "timestamp":"1536842677",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"KEYPASS\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1534168336",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/new-keypass-ransomware-campaign-underway/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1536842335",
+                "type":"text",
+                "value":"A new distribution campaign is underway for a STOP Ransomware variant called KeyPass based on the amount of victims that have been seen. Unfortunately, how the ransomware is being distributed is unknown at this time.\r\n\r\nNot much is known regarding how this ransomware is being distributed other than what people have posted in the BleepingComputer forums. According to some of the posts, the ransomware appeared after the user downloaded and installed cracks such as KMSpico. Other reports state that it appeared on its own and that the victim did not install anything.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1536841994",
+                "type":"email-src",
+                "value":"keypass@bitmessage.ch",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1536841994",
+                "type":"email-src",
+                "value":"keypass@india.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1536841968",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1536841969",
+                        "type":"filename",
+                        "value":"!!!KEYPASS_DECRYPTION_INFO!!!.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1536841969",
+                        "type":"text",
+                        "value":"Attention! \r\n\r\nAll your files, documents, photos, databases and other important files are encrypted and have the extension: .KEYPASS\r\n\r\nThe only method of recovering files is to purchase an decrypt software and unique private key.\r\n\r\nAfter purchase you will start decrypt software, enter your unique private key and it will decrypt all your data.\r\n\r\nOnly we can give you this key and only we can recover your files.\r\n\r\nYou need to contact us by e-mail keypass@bitmessage.ch send us your personal ID and wait for further instructions.\r\n\r\nFor you to be sure, that we can decrypt your files - you can send us a 1-3 any not very big encrypted files and we will send you back it in a original form FREE.\r\n\r\nPrice for decryption $300. \r\n\r\nThis price avaliable if you contact us first 72 hours.\r\n\r\nE-mail address to contact us:\r\n\r\nkeypass@bitmessage.ch\r\n\r\n\r\n\r\nReserve e-mail address to contact us:\r\n\r\nkeypass@india.com\r\n\r\n\r\n\r\nYour personal id:\r\n[id]",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1536841969",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

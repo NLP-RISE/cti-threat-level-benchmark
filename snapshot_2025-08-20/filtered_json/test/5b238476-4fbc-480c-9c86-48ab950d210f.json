@@ -1,0 +1,223 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-08",
+        "published":false,
+        "info":"OSINT - The Week in Ransomware - June 8th 2018 - CryBrazil, CryptConsole, and Magniber",
+        "publish_timestamp":"0",
+        "timestamp":"1540555274",
+        "Tag":[
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryBrazil\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Magniber\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Pedcont\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"DiskDoctor\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Magniber Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"XiaoBa ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptConsole\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"RedEye\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Aurora Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Fake Globe Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"GlobeImposter\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"PGPSnippet Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Spartacus Ransomware\""
+            },
+            {
+                "name":"workflow:todo=\"additional-task\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529065560",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-june-8th-2018-crybrazil-cryptconsole-and-magniber/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529065567",
+                "type":"comment",
+                "value":"This week we have seen a lot of CryptConsole variants, Magniber activity, and smaller variants released. Ransomware continues to decline as malware developers move toward more profitable miners and information stealing Trojans. Ransomware is not going away, but is instead moving away from mass malspam campaigns to targeted network attacks where a ransom payment may be more likely.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptConsole contact mail",
+                "timestamp":"1529063158",
+                "type":"email-src",
+                "value":"xser@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptConsole contact email",
+                "timestamp":"1529063750",
+                "type":"email-src",
+                "value":"redbul@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptConsole contact email",
+                "timestamp":"1529063750",
+                "type":"email-src",
+                "value":"heineken@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PGPSnippet Ransomware contact email",
+                "timestamp":"1529064292",
+                "type":"email-src",
+                "value":"digiworldhack@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Spartacus ransomware contact email",
+                "timestamp":"1529064692",
+                "type":"email-src",
+                "value":"example@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Spartacus ransomware contact email",
+                "timestamp":"1529064693",
+                "type":"email-src",
+                "value":"example1@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1540555274",
+                "type":"comment",
+                "value":"Missing cluster : Ransomware>Princess Ransomware",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Scarab Ransomware variant, DiskDoctor, Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529062241",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1529062241",
+                        "type":"filename",
+                        "value":"HOW TO RECOVER ENCRYPTED FILES.TXT",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529062241",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"XiaoBa Ransomware ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529062366",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1529062366",
+                        "type":"filename",
+                        "value":"# # DECRYPT MY FILE # #.bmp",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529062366",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Aurora ransomware ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529063180",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1529063180",
+                        "type":"filename",
+                        "value":"#RECOVERY-PC#.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529063180",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

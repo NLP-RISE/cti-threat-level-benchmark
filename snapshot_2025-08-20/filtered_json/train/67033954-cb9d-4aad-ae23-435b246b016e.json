@@ -1,0 +1,874 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-02-06",
+        "published":true,
+        "info":"MOD Netherlands uncovers COATHANGER, a stealthy Chinese FortiGate RAT",
+        "publish_timestamp":"1707294924",
+        "timestamp":"1707294872",
+        "Tag":[
+            {
+                "name":"misp-galaxy:country=\"china\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Netherlands\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Military\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Research - Innovation\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Vulnerabilities - T1588.006\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707292918",
+                "type":"link",
+                "value":"https://www.ncsc.nl/documenten/publicaties/2024/februari/6/mivd-aivd-advisory-coathanger-tlp-clear",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707292918",
+                "type":"link",
+                "value":"https://github.com/JSCU-NL/COATHANGER",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1707292942",
+                "type":"yara",
+                "value":"rule COATHANGER_files\r\n{\r\n    meta:\r\n        description = \"Detects COATHANGER files by used filenames\"\r\n        malware = \"COATHANGER\"\r\n        author = \"NLD MIVD - JSCU\"\r\n        date = \"20240206\"\r\n    strings:\r\n        $1 = \"/data2/\"\r\n        $2 = \"/httpsd\"\r\n        $3 = \"/preload.so\"\r\n        $4 = \"/authd\"\r\n        $5 = \"/tmp/packfile\"\r\n        $6 = \"/smartctl\"\r\n        $7 = \"/etc/ld.so.preload\"\r\n        $8 = \"/newcli\"\r\n        $9 = \"/bin/busybox\"\r\n\r\n    condition:\r\n        (uint32(0) == 0x464c457f or uint32(4) == 0x464c457f)\r\n        and filesize < 5MB and 4 of them\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1707292954",
+                "type":"yara",
+                "value":"rule COATHANGER_beacon\r\n{\r\n    meta:\r\n        description = \"Detects COATHANGER beaconing code (GET / HTTP/2\\nHost: www.google.com\\n\\n)\"\r\n        malware = \"COATHANGER\"\r\n        author = \"NLD MIVD - JSCU\"\r\n        date = \"20240206\"\r\n    strings:\r\n        $chunk_1 = {\r\n            48 B8 47 45 54 20 2F 20 48 54\r\n            48 89 45 B0\r\n            48 B8 54 50 2F 32 0A 48 6F 73\r\n            48 89 45 B8\r\n            48 B8 74 3A 20 77 77 77 2E 67\r\n            48 89 45 C0\r\n            48 B8 6F 6F 67 6C 65 2E 63 6F\r\n        }\r\n\r\n    condition:\r\n        uint32(0) == 0x464c457f and filesize < 5MB and\r\n        any of them\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"# This JA3-hash is a fingerprint for connections originating # from FortiGate devices that support all encryption and # hashing algorithms for doing TLS.  # Whereas the far majority of TLS-connections use different # parameters, the built-in logging functionality of FortiGate # devices seems to make use of identical TLS-parameters, # leading to potential false positive results from this JA3 # hash.  # Therefore, traffic should be judged as legitimate (i.e., as # false positive indicator of COATHANGER) if it originates # from a FortiGate device and has: # − port 541 or 514 as destination port and # − an IP address belonging to Fortinet Inc. or a Fortinet # device, such as a FortiManager as destination.",
+                "timestamp":"1707293890",
+                "type":"ja3-fingerprint-md5",
+                "value":"339f6adf54e6076d069dcaac54fddc25",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294303",
+                "type":"comment",
+                "value":"- The Ministry of Defence (MOD) of the Netherlands was impacted in 2023 by an intrusion into one of its networks. The effects were limited because of prior network segmentation.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294303",
+                "type":"comment",
+                "value":"− Incident response uncovered previously unpublished malware, a remote access trojan (RAT) designed specifically for Fortigate appliances. It is used as second-stage malware, and does not exploit a new vulnerability. Intelligence services MIVD & AIVD refer to the malware as COATHANGER based on a string present in the code.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294471",
+                "type":"comment",
+                "value":"− The COATHANGER malware is stealthy and persistent. It hides itself by hooking system calls that could reveal its presence. It survives reboots and firmware upgrades.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294303",
+                "type":"comment",
+                "value":"− MIVD & AIVD assess with high confidence that the malicious activity was conducted by a state- sponsored actor from the People’s Republic of China. This is part of a wider trend of Chinese political espionage against the Netherlands and its allies.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294303",
+                "type":"comment",
+                "value":"− MIVD & AIVD assess that use of COATHANGER may be relatively targeted. The Chinese threat actor(s) scan for vulnerable edge devices at scale and gain access opportunistically, and likely introduce COATHANGER as a communication channel for select victims.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294303",
+                "type":"comment",
+                "value":"− Action that organizations can take to prevent future malicious activity: for all internet-facing (edge) devices, install security patches from the vendor as soon as they become available.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707294407",
+                "type":"vulnerability",
+                "value":"CVE-2022-42475",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294572",
+                "type":"comment",
+                "value":"The COATHANGER implant is persistent, recovering after every reboot by injecting a backup of itself in the process responsible for rebooting the system. Moreover, the infection survives firmware upgrades. Even fully patched FortiGate devices may therefore be infected, if they were compromised before the latest patch was applied.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294712",
+                "type":"comment",
+                "value":"Therefore, any suspicious outgoing connections to external IP addresses from a process called httpsd is a strong indicator of the presence of COATHANGER: <device_IP>:<device_port>-><c2_IP>:<c2_port>->state=established err=0 socktype=1 rma=0 wma=0fma=0 tma=0 inode=<inode> process=<PID>/httpsd",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294786",
+                "type":"comment",
+                "value":"The PIDs of process that have suspicious outgoing connections can be used as a starting point for conducting this check. When the process has a GID set to 90, the device is infected with COATHANGER.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1707294813",
+                "type":"comment",
+                "value":"It is not expected behavior of an isolated FortiGate device to connect to other domains than those related to Fortinet or domains/IPs listed in the configuration of the device.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293245",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293245",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293245",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293245",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293258",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293258",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293258",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293258",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293268",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"unpack.so",
+                        "timestamp":"1707293268",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"unpack.so",
+                        "timestamp":"1707293268",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"unpack.so",
+                        "timestamp":"1707293268",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293279",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293279",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293279",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293279",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293291",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293291",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293291",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293291",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293398",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293398",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293398",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293398",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293421",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293421",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293421",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293421",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293470",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293470",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293470",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293470",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293508",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293508",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293508",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"sh",
+                        "timestamp":"1707293508",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293541",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293541",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293541",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"preload.so",
+                        "timestamp":"1707293541",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293556",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"liblog.so / ld.so.preload",
+                        "timestamp":"1707293556",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"liblog.so / ld.so.preload",
+                        "timestamp":"1707293556",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"liblog.so / ld.so.preload",
+                        "timestamp":"1707293556",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293620",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293620",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293620",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293620",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293664",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293664",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293664",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"packfile",
+                        "timestamp":"1707293664",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293693",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293693",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293693",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293693",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293711",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293711",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293711",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ld.so.preload",
+                        "timestamp":"1707293711",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293733",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293733",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293733",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"newcli",
+                        "timestamp":"1707293733",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293752",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"libpe.so",
+                        "timestamp":"1707293752",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"libpe.so",
+                        "timestamp":"1707293752",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"libpe.so",
+                        "timestamp":"1707293752",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293764",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"smartctl",
+                        "timestamp":"1707293764",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"smartctl",
+                        "timestamp":"1707293764",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"smartctl",
+                        "timestamp":"1707293764",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293782",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293782",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293782",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"authd",
+                        "timestamp":"1707293782",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293809",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293809",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293809",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293809",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707293846",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293833",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293833",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293833",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"httpsd",
+                        "timestamp":"1707293833",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707293846",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

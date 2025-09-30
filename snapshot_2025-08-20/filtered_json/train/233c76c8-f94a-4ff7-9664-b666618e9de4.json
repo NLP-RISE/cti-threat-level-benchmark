@@ -1,0 +1,176 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-02-12",
+        "published":true,
+        "info":"OSINT - Ivanti Connect Secure: Journey to the core of the DSLog backdoor",
+        "publish_timestamp":"1707733761",
+        "timestamp":"1707733756",
+        "Tag":[
+            {
+                "name":"PAP:CLEAR"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Massive exploitation activity (comment: sounds like a VPN gateway)",
+                "timestamp":"1707726341",
+                "type":"ip-dst",
+                "value":"159.65.123.122",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1707726305",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1707726305",
+                        "type":"link",
+                        "value":"https://www.orangecyberdefense.com/fileadmin/general/pdf/Ivanti_Connect_Secure_-_Journey_to_the_core_of_the_DSLog_backdoor.pdf",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726305",
+                        "type":"text",
+                        "value":"Ivanti Connect Secure:\r\nJourney to the core of the\r\nDSLog backdoor",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726305",
+                        "type":"text",
+                        "value":"Ivanti Connect Secure: Journey to the core of the DSLog backdoor",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726305",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1707726305",
+                        "type":"attachment",
+                        "value":"Ivanti_Connect_Secure_-_Journey_to_the_core_of_the_DSLog_backdoor.pdf",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707726571",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726460",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726530",
+                        "type":"text",
+                        "value":"/root/home/webserver/htdocs/dana-na/imgs/index.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726493",
+                        "type":"text",
+                        "value":"/root/home/webserver/htdocs/dana-na/imgs/index1.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707726503",
+                        "type":"text",
+                        "value":"/root/home/webserver/htdocs/dana-na/imgs/logo.png",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Embedding the result of ‘uname -a’",
+                        "timestamp":"1707726533",
+                        "type":"text",
+                        "value":"/root/home/webserver/htdocs/dana-na/imgs/index2.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Legitimate DSLog Log module embedding the\r\nbackdoor (IDS flag disabled + review of the local file is required)",
+                        "timestamp":"1707726571",
+                        "type":"text",
+                        "value":"/root/home/perl/DSLog.pm",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1707733521",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1707733521",
+                        "type":"link",
+                        "value":"https://www.orangecyberdefense.com/global/blog/cybersecurity/ivanti-0-day",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1707733521",
+                        "type":"text",
+                        "value":"CERT alert: Zero-day in Ivanti software (Update 09. Feb)",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

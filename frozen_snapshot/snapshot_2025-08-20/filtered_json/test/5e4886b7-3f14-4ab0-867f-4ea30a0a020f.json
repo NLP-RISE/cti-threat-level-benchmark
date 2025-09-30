@@ -1,0 +1,354 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-02-16",
+        "published":true,
+        "info":"IRS Doc Malware",
+        "publish_timestamp":"1593663211",
+        "timestamp":"1732078838",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command-Line Interface - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1086\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1060\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"BITS Jobs - T1197\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"maldoc"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1581967401",
+                "type":"ip-dst|port",
+                "value":"199.188.200.112|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"legitmate OCSP CRL server",
+                "timestamp":"1581967334",
+                "type":"ip-dst|port",
+                "value":"151.139.128.14|80",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1581967386",
+                "type":"url",
+                "value":"http://siliconmadeinhk.com/Server2_36B4.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1581967386",
+                "type":"domain",
+                "value":"siliconmadeinhk.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1581967352",
+                "type":"domain",
+                "value":"binupload.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to  \t\r\nbinupload.com",
+                "timestamp":"1581967352",
+                "type":"ip-dst",
+                "value":"199.188.200.112",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to siliconmadeinhk.com",
+                "timestamp":"1581967386",
+                "type":"ip-dst",
+                "value":"185.222.202.237",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to siliconmadeinhk.com",
+                "timestamp":"1581967386",
+                "type":"ip-dst",
+                "value":"89.208.229.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to siliconmadeinhk.com",
+                "timestamp":"1581967386",
+                "type":"ip-dst",
+                "value":"172.105.81.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to siliconmadeinhk.com",
+                "timestamp":"1581967386",
+                "type":"ip-dst",
+                "value":"172.105.154.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tied to siliconmadeinhk.com",
+                "timestamp":"1581967386",
+                "type":"ip-dst",
+                "value":"89.208.196.16",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1581967556",
+                "type":"regkey|value",
+                "value":"Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce|%USERPROFILE%\\PROTOZOA.vbs",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Walkthrough writeup of malware execution",
+                "timestamp":"1581968008",
+                "type":"link",
+                "value":"https://laskowski-tech.com/2020/02/17/what-is-this-bad-for-sure-racoon-stealer-maybe/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1581972550",
+                "type":"hostname",
+                "value":"server237-5.web-hosting.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581967575",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581967575",
+                        "type":"malware-sample",
+                        "value":"PROTOZOA.exe|9dec963dd964716405adbe9ef9006de7",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813507",
+                        "type":"filename",
+                        "value":"PROTOZOA.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813507",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813507",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813507",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581813507",
+                        "type":"size-in-bytes",
+                        "value":"36864",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581967575",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581967575",
+                        "type":"malware-sample",
+                        "value":"PROTOZOA.vbs|701a346228708332063529695210309a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813520",
+                        "type":"filename",
+                        "value":"PROTOZOA.vbs",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813520",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813520",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581813520",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581813520",
+                        "type":"size-in-bytes",
+                        "value":"104",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581967386",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1581967386",
+                        "type":"malware-sample",
+                        "value":"Irs letter with W2.doc|b102452e6d92a217995f4ca5523d0b85",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1581813535",
+                        "type":"filename",
+                        "value":"Irs letter with W2.doc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1581813535",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1581813535",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1581813535",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581813535",
+                        "type":"size-in-bytes",
+                        "value":"717585",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1581967933",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1581967933",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/585f829c600736a9613d0870c6460068d9461a7be35c07149fe58143b2f24b6f/detection",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1581967933",
+                        "type":"text",
+                        "value":"7/72 initially, later 38/70",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

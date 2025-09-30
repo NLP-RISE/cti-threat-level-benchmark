@@ -1,0 +1,73 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-30",
+        "published":true,
+        "info":"OSINT - Saga 2.0 (Sage 2.0) comes with IP Generation Algorithm (IPGA)",
+        "publish_timestamp":"1485803996",
+        "timestamp":"1485803987",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1485803689",
+                "type":"text",
+                "value":"On Jan 20, 2017, we came across a malware that appeared to be a new Ransomware family called Sage 2.0. Within a couple of days we were able to collect more than 200 malware binaries across our sensors associated with this new Ransomware. Last week, Brad Duncan also wrote a SANS InfoSec Diary entry on Sage 2.0, noticing some strange UDP packets sent to over 7'000 different IPs:",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1485803879",
+                "type":"link",
+                "value":"https://www.govcert.admin.ch/blog/27/saga-2.0-comes-with-ip-generation-algorithm-ipga",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sage 2.0 samples",
+                "timestamp":"1485803748",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sage 2.0 Traffic Encryption and Serialisation",
+                "timestamp":"1485803970",
+                "type":"attachment",
+                "value":"sage.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sage 2.0 samples - Xchecked via VT: cfe8749de0954cee3966e1cbdb341e69",
+                "timestamp":"1485803926",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sage 2.0 samples - Xchecked via VT: cfe8749de0954cee3966e1cbdb341e69",
+                "timestamp":"1485803926",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sage 2.0 samples - Xchecked via VT: cfe8749de0954cee3966e1cbdb341e69",
+                "timestamp":"1485803927",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5e7cc796dfd2d47e6efb31412e1d614db6d96620ac118426dda04b6fbb943993/analysis/1485347931/",
+                "to_ids":false
+            }
+        ]
+    }
+}

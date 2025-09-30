@@ -1,0 +1,120 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-12-29",
+        "published":true,
+        "info":"OSINT -  Updated Sundown Exploit Kit Uses Steganography",
+        "publish_timestamp":"1483646629",
+        "timestamp":"1483646568",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"very-likely\""
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"2\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Chthonic\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"Sundown\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483518477",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/updated-sundown-exploit-kit-uses-steganography/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483518499",
+                "type":"comment",
+                "value":"2016 saw a big shift in the exploit kit landscape, with many of the bigger players unexpectedly dropping out of action. The Nuclear exploit kit operations started dwindling in May, Angler disappeared around the same time Russiaâ€™s Federal Security Service made nearly 50 arrests last June, and then Neutrino reportedly went private and shifted to focus on select clientele in September. RIG and Sundown are now the most prominent exploit kits in circulation, gaining  prominence shortly after Neutrino dropped out of active circulation.\r\n\r\nSundown is something of an outlier from typical exploit kits. It tends to reuse old exploits and doesnâ€™t make an effort to disguise their activity. The URLs for Sundown requests for Flash files end in .swf, while Silverlight requests end in .xap. These are the normal extensions for these file types. Typically, other exploit kits make an effort to hide their exploits. In addition, Sundown doesnâ€™t have the anti-crawling feature used by other exploit kits.\r\n\r\nRecent use of Sundown/RIG\r\n\r\nSundown and RIG were both in the spotlight last September when a malvertising campaign was found to be distributing the CryLocker ransomware through the two exploit kits. Researchers first detected RIG pushing this ransomware as its payload on September 1, while Sundown started doing so on September 5. CryLocker was unique in that it used Portable Network Graphic (PNG) files to package the information stolen from the infected system. The PNG file was then uploaded to an Imgur album, where ransomware operators could access it easily while evading detection.\r\n\r\nThe developers of this particular malware gave their files a valid PNG header, but no image. The file only had the system information as ASCII strings. This makes it distinct from steganography, which hides secret messages, files, or information in an image.\r\n\r\nSteganography Techniques used by Exploit Kits\r\n\r\nSteganography is an advanced technique used to hide malicious code in an image to prevent signature based detection. Itâ€™s quite popular and has been used in several malvertising and exploit kit attacks. Earlier this year, the massive GooNky malvertising campaign used multiple techniques to hide their malvertising traffic, including moving part of malicious code into images to prevent detection. However, here the attackers didnâ€™t really â€œhideâ€ the data in the picture itself â€“ they merely appended their malicious code at the end of the file.\r\n\r\nIn a more advanced case, Trend Micro researchers worked with colleagues in the security community to look into the steganography tactics used in the  AdGholas malvertising campaign and its associated Astrum exploit kit. The campaign encoded a script into an imageâ€™s alpha channel, which defines the transparency of the pixels. The minor modification allows the malware designer to mimic a legitimate ad, with only a slight difference in color. This makes it more difficult for these malicious ads to be spotted and analyzed.\r\n\r\nOn December 27, 2016, we noticed that Sundown was updated to use similar techniques. The PNG files werenâ€™t just used to store harvested information; the malware designers now used steganography to hide their exploit code.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The following domains were used by the Sundown Exploit kit with the matching IP addresses:",
+                "timestamp":"1483518532",
+                "type":"hostname",
+                "value":"xbs.q30.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The following domains were used by the Sundown Exploit kit with the matching IP addresses:",
+                "timestamp":"1483518533",
+                "type":"ip-dst",
+                "value":"188.165.163.228",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The following domains were used by the Sundown Exploit kit with the matching IP addresses:",
+                "timestamp":"1483518534",
+                "type":"hostname",
+                "value":"cjf.0340.mobi",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The following domains were used by the Sundown Exploit kit with the matching IP addresses:",
+                "timestamp":"1483518534",
+                "type":"ip-dst",
+                "value":"93.190.143.211",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The Chthonic sample has the following hash",
+                "timestamp":"1483518567",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The sample also used the following C&C server:",
+                "timestamp":"1483518593",
+                "type":"filename",
+                "value":"pationare.bit",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The Chthonic sample has the following hash - Xchecked via VT: c2cd9ea5ad1061fc33adf9df68eeed6a1883c5f9",
+                "timestamp":"1483518636",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The Chthonic sample has the following hash - Xchecked via VT: c2cd9ea5ad1061fc33adf9df68eeed6a1883c5f9",
+                "timestamp":"1483518636",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"The Chthonic sample has the following hash - Xchecked via VT: c2cd9ea5ad1061fc33adf9df68eeed6a1883c5f9",
+                "timestamp":"1483518637",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9581b02cbe553b7ca436b138d9df012d9712e81b554dbe620f1bf1bffdc09219/analysis/1483176386/",
+                "to_ids":false
+            }
+        ]
+    }
+}

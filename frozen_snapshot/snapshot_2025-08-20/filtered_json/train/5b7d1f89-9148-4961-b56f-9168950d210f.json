@@ -1,0 +1,101 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-21",
+        "published":true,
+        "info":"OSINT - Microsoft Disrupts APT28 Hacking Campaign Aimed at US Midterm Elections",
+        "publish_timestamp":"1535013049",
+        "timestamp":"1534929537",
+        "Tag":[
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"STRONTIUM\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"APT28\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1534926911",
+                "type":"link",
+                "value":"https://blogs.microsoft.com/on-the-issues/2018/08/20/we-are-taking-new-steps-against-broadening-threats-to-democracy/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1534926902",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/microsoft-disrupts-apt28-hacking-campaign-aimed-at-us-midterm-elections/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1534927744",
+                "type":"text",
+                "value":"Last weekâ€™s order transferred control of the six internet domains listed below from Strontium to Microsoft, preventing Strontium from using them and enabling us to more closely look for evidence of what Strontium intended to do with the domains.\r\n\r\nImportantly, these domains show a broadening of entities targeted by Strontiumâ€™s activities. One appears to mimic the domain of the International Republican Institute, which promotes democratic principles and is led by a notable board of directors, including six Republican senators and a leading senatorial candidate. Another is similar to the domain used by the Hudson Institute, which hosts prominent discussions on topics including cybersecurity, among other important activities. Other domains appear to reference the U.S. Senate but are not specific to particular offices. To be clear, we currently have no evidence these domains were used in any successful attacks before the DCU transferred control of them, nor do we have evidence to indicate the identity of the ultimate targets of any planned attack involving these domains.\r\n\r\nMicrosoft has notified both nonprofit organizations. Both have responded quickly, and Microsoft will continue to work closely with them and other targeted organizations on countering cybersecurity threats to their systems. Weâ€™ve also been monitoring and addressing domain activity with Senate IT staff the past several months, following prior attacks we detected on the staffs of two current senators.\r\n\r\nDespite last weekâ€™s steps, we are concerned by the continued activity targeting these and other sites and directed toward elected officials, politicians, political groups and think tanks across the political spectrum in the United States. Taken together, this pattern mirrors the type of activity we saw prior to the 2016 election in the United States and the 2017 election in France.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928974",
+                "type":"domain",
+                "value":"my-iri.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928975",
+                "type":"domain",
+                "value":"hudsonorg-my-sharepoint.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928975",
+                "type":"domain",
+                "value":"senate.group",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928976",
+                "type":"domain",
+                "value":"adfs-senate.services",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928976",
+                "type":"domain",
+                "value":"adfs-senate.email",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1534928977",
+                "type":"domain",
+                "value":"office365-onedrive.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

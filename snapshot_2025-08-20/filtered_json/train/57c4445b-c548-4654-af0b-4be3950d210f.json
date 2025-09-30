@@ -1,0 +1,98 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-08-29",
+        "published":true,
+        "info":"Ransomware - Xorist",
+        "publish_timestamp":"1472548231",
+        "timestamp":"1472541011",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1472480394",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1472480394",
+                "type":"filename",
+                "value":"3Z4wnG9603it23y.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1472480395",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1472480395",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1472480448",
+                "type":"comment",
+                "value":"UPX packed",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1472480840",
+                "type":"text",
+                "value":"Key: 85350044dF4AC3518D185678A9414A7F,\r\nEncryption rounds:8,\r\nStart offset: 64,\r\nAlgorithm: TEA",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the Freetext Import Tool - Xchecked via VT: b3c4ae251f8094fa15b510051835c657eaef2a6cea46075d3aec964b14a99f68",
+                "timestamp":"1472540684",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b3c4ae251f8094fa15b510051835c657eaef2a6cea46075d3aec964b14a99f68/analysis/1469554268/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1472541011",
+                "type":"link",
+                "value":"http://www.xylibox.com/2011/06/have-fun-with-trojan-ransomwin32xorist.html",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1472547599",
+                "type":"regkey|value",
+                "value":"Software\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run|%TEMP%\\3Z4wnG9603it23y.exe",
+                "to_ids":true
+            }
+        ]
+    }
+}

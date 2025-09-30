@@ -1,0 +1,74 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-19",
+        "published":true,
+        "info":"OSINT - MULTIGRAIN â€“ Point of Sale Attackers Make an Unhealthy Addition to the Pantry",
+        "publish_timestamp":"1462176002",
+        "timestamp":"1462175966",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"services\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Ram scraper\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461245407",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2016/04/multigrain_pointo.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461245420",
+                "type":"comment",
+                "value":"FireEye recently discovered a new variant of a point of sale (POS) malware family known as NewPosThings. This variant, which we call â€œMULTIGRAINâ€, consists largely of a subset of slightly modified code from NewPosThings. The variant is highly targeted, digitally signed, and exfiltrates stolen payment card data over DNS. The addition of DNS-based exfiltration is new for this malware family; however, other POS malware families such as BernhardPOS and FrameworkPOS have used this technique in the past.\r\n\r\nUsing DNS for data exfiltration provides several advantages to the attacker. Sensitive environments that process card data will often monitor, restrict, or entirely block the HTTP or FTP traffic often used for exfiltration in other environments. While these common internet protocols may be disabled within a restrictive card processing environment, DNS is still necessary to resolve hostnames within the corporate environment and is unlikely to be blocked.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1461245616",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the freetext import. - Xchecked via VT: f924cec68be776e41726ee765f469d50",
+                "timestamp":"1462175904",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Imported via the freetext import. - Xchecked via VT: f924cec68be776e41726ee765f469d50",
+                "timestamp":"1462175904",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the freetext import. - Xchecked via VT: f924cec68be776e41726ee765f469d50",
+                "timestamp":"1462175904",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6abf4544f60ac6117706727c241b97924e0c474f505838d0eb0491fc62b673cd/analysis/1461918348/",
+                "to_ids":false
+            }
+        ]
+    }
+}

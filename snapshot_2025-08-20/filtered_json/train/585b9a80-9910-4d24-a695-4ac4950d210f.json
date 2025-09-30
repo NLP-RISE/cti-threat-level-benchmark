@@ -1,0 +1,463 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-12-22",
+        "published":true,
+        "info":"OSINT - New Linux/Rakos threat: devices and servers under SSH scan (again)",
+        "publish_timestamp":"1482398955",
+        "timestamp":"1482398934",
+        "Tag":[
+            {
+                "name":"ms-caro-malware:malware-platform=\"Linux\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482398391",
+                "type":"link",
+                "value":"http://www.welivesecurity.com/2016/12/20/new-linuxrakos-threat-devices-servers-ssh-scan/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482398411",
+                "type":"comment",
+                "value":"Apparently, frustrated users complain more often recently on various forums about their embedded devices being overloaded with computing and network tasks. What these particular posts have in common is the name of the process causing the problem. It is executed from a temporary directory and disguised as a part of the Java framework, namely â€œ.javaxxxâ€. Additional names like â€œ.swapâ€ or â€œkworkerâ€ are also used. A few weeks ago, we discussed the recent Mirai incidents and Mirai-connected IoT security problems in The Hive Mind: When IoT devices go rogue and all that was written then still holds true.\r\nAttack vector\r\n\r\nThe attack is performed via brute force attempts at SSH logins, in a similar way to that in which many Linux worms operate, including Linux/Moose (which spread by attacking Telnet logins) â€“ also referenced here â€“ as analyzed by ESET since last year. The targets include both embedded devices and servers with an open SSH port and where a very weak password has been set. The obvious aim of this trojan is to assemble a list of unsecured devices and to have an opportunity to create a botnet consisting of as many zombies as possible. The scan starts with not too extensive list of IPs and spreads incrementally to more targets. Only machines that represent low-hanging fruit from the security perspective are compromised. Note that victims reported cases when they had had a strong password but they forgot their device that had online service enabled and it was reverted to a default password after a factory reset. Just a couple of hours of online exposure was enough for such a reset machine to end up compromised!",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 688",
+                "timestamp":"1482398536",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 694",
+                "timestamp":"1482398537",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 695",
+                "timestamp":"1482398537",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64\t- 697",
+                "timestamp":"1482398538",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 698",
+                "timestamp":"1482398538",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_MIPS - ???",
+                "timestamp":"1482398539",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 700",
+                "timestamp":"1482398539",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 706",
+                "timestamp":"1482398540",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 708",
+                "timestamp":"1482398541",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 711",
+                "timestamp":"1482398541",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398559",
+                "type":"ip-dst",
+                "value":"217.12.208.28",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398559",
+                "type":"ip-dst",
+                "value":"217.12.203.31",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398560",
+                "type":"ip-dst",
+                "value":"193.169.245.68",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398560",
+                "type":"ip-dst",
+                "value":"46.8.44.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398561",
+                "type":"ip-dst",
+                "value":"195.123.210.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398561",
+                "type":"ip-dst",
+                "value":"5.34.183.231",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398562",
+                "type":"ip-dst",
+                "value":"5.34.180.64",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398563",
+                "type":"ip-dst",
+                "value":"185.82.216.125",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398563",
+                "type":"ip-dst",
+                "value":"185.14.30.78",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398564",
+                "type":"ip-dst",
+                "value":"185.14.29.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1482398564",
+                "type":"ip-dst",
+                "value":"185.20.184.117",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482398647",
+                "type":"link",
+                "value":"https://github.com/eset/malware-ioc/tree/master/rakos",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 711 - Xchecked via VT: 0492e5c07c1426af9ce73ad33e00a3fd8477c6c2",
+                "timestamp":"1482398775",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 711 - Xchecked via VT: 0492e5c07c1426af9ce73ad33e00a3fd8477c6c2",
+                "timestamp":"1482398776",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_386\t - 711 - Xchecked via VT: 0492e5c07c1426af9ce73ad33e00a3fd8477c6c2",
+                "timestamp":"1482398776",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/62f875a31c5f8541a68176d03c3b9d6d0ee6fa90cf54307d7d07aed5fc573797/analysis/1481878860/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 708 - Xchecked via VT: e46e8e5e823eb0466981afb7683fd918d6fe78a9",
+                "timestamp":"1482398777",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386\t - 708 - Xchecked via VT: e46e8e5e823eb0466981afb7683fd918d6fe78a9",
+                "timestamp":"1482398778",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_386\t - 708 - Xchecked via VT: e46e8e5e823eb0466981afb7683fd918d6fe78a9",
+                "timestamp":"1482398779",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/90cd3e16d6d0069e758bb7c1ec929354be24f52857bd77fdd246e20e4aaca75d/analysis/1481878661/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 706 - Xchecked via VT: 36b2fffe98f517355425797fc242f2cb82271c0c",
+                "timestamp":"1482398780",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 706 - Xchecked via VT: 36b2fffe98f517355425797fc242f2cb82271c0c",
+                "timestamp":"1482398780",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_386 - 706 - Xchecked via VT: 36b2fffe98f517355425797fc242f2cb82271c0c",
+                "timestamp":"1482398781",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2a77e8d43b347c4ccf80271493eedf7b7b7f45d1e30e818e321657cf9a14f1d9/analysis/1482355624/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 700 - Xchecked via VT: c54d50025d9f66ce2ace3361a8626aee468d94ba",
+                "timestamp":"1482398782",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_386 - 700 - Xchecked via VT: c54d50025d9f66ce2ace3361a8626aee468d94ba",
+                "timestamp":"1482398782",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_386 - 700 - Xchecked via VT: c54d50025d9f66ce2ace3361a8626aee468d94ba",
+                "timestamp":"1482398783",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/efedce38a1908a27115e05b3e62fab52f68fae2db5ae1c50c455f007f964c6d2/analysis/1482355624/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_MIPS - ??? - Xchecked via VT: 14af6254d9ca310b4d52778d050cb8dd7a5de1d8",
+                "timestamp":"1482398784",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_MIPS - ??? - Xchecked via VT: 14af6254d9ca310b4d52778d050cb8dd7a5de1d8",
+                "timestamp":"1482398785",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_MIPS - ??? - Xchecked via VT: 14af6254d9ca310b4d52778d050cb8dd7a5de1d8",
+                "timestamp":"1482398785",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a7ce7dc40bb8abf835efae5ebacc82cb8af2cc57b5021f0d28dc14924022c85d/analysis/1482355624/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 698 - Xchecked via VT: c93bddd9cdb4f2e185b54a4931257954e25e7c37",
+                "timestamp":"1482398786",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 698 - Xchecked via VT: c93bddd9cdb4f2e185b54a4931257954e25e7c37",
+                "timestamp":"1482398787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_X86_64 - 698 - Xchecked via VT: c93bddd9cdb4f2e185b54a4931257954e25e7c37",
+                "timestamp":"1482398788",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d59ffe12b75f596a4a30074690f96497800a6ed97be8248c573e4048adac7e05/analysis/1482355623/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64\t- 697 - Xchecked via VT: e53c73fe6a552eab720e7ee685ea4e159ebd4fdd",
+                "timestamp":"1482398788",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64\t- 697 - Xchecked via VT: e53c73fe6a552eab720e7ee685ea4e159ebd4fdd",
+                "timestamp":"1482398789",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_X86_64\t- 697 - Xchecked via VT: e53c73fe6a552eab720e7ee685ea4e159ebd4fdd",
+                "timestamp":"1482398790",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3fe9e1e0a2e626ef10cc443ec1725a8c17cbfa323864e0eb9359399177998470/analysis/1482355623/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 695 - Xchecked via VT: 3435ca5505ce8dfe8e1b22e0ebd4f41c60050cc0",
+                "timestamp":"1482398790",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 695 - Xchecked via VT: 3435ca5505ce8dfe8e1b22e0ebd4f41c60050cc0",
+                "timestamp":"1482398791",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_X86_64 - 695 - Xchecked via VT: 3435ca5505ce8dfe8e1b22e0ebd4f41c60050cc0",
+                "timestamp":"1482398791",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d731ccb407a924ca56fa9b3690e0b7debd1cce61c6de8ec63ede3a992c8af33e/analysis/1482355623/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 694 - Xchecked via VT: def04ec688ac6b41580dd3a6e78445b56536ba34",
+                "timestamp":"1482398792",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 694 - Xchecked via VT: def04ec688ac6b41580dd3a6e78445b56536ba34",
+                "timestamp":"1482398793",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_X86_64 - 694 - Xchecked via VT: def04ec688ac6b41580dd3a6e78445b56536ba34",
+                "timestamp":"1482398793",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/83160da5a4cb335ea2a9a72bc96c833cd7eab9df96a61c1d6f01e13668046b25/analysis/1482355623/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 688 - Xchecked via VT: f80836349d6e97251030190ecd30dda0047f1ee6",
+                "timestamp":"1482398794",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EM_X86_64 - 688 - Xchecked via VT: f80836349d6e97251030190ecd30dda0047f1ee6",
+                "timestamp":"1482398794",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EM_X86_64 - 688 - Xchecked via VT: f80836349d6e97251030190ecd30dda0047f1ee6",
+                "timestamp":"1482398795",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ce4bb2ce2bf66ab721b808acf9d74a7a8afddd03cbaa6aa56c7788ff7b7251bb/analysis/1482247676/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1482398934",
+                "type":"yara",
+                "value":"rule linux_rakos\r\n{\r\n    meta:\r\n        description = \"Linux/Rakos.A executable\"\r\n        author = \"Peter KÃ¡lnai\"\r\n        date = \"2016-12-13\"\r\n        reference = \"http://www.welivesecurity.com/2016/12/20/new-linuxrakos-threat-devices-servers-ssh-scan/\"\r\n        version = \"1\"\r\n        contact = \"threatintel@eset.com\"\r\n        license = \"BSD 2-Clause\"\r\n\r\n\r\n    strings:\r\n        $ = \"upgrade/vars.yaml\"\r\n        $ = \"MUTTER\"\r\n        $ = \"/tmp/.javaxxx\"\r\n        $ = \"uckmydi\"\r\n\r\n    condition:\r\n        3 of them\r\n}",
+                "to_ids":true
+            }
+        ]
+    }
+}

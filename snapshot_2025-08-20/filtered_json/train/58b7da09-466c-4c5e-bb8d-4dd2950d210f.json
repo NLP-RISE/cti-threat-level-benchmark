@@ -1,0 +1,348 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-02",
+        "published":true,
+        "info":"OSINT - Google Play Apps Infected with Malicious IFrames",
+        "publish_timestamp":"1488444419",
+        "timestamp":"1488444322",
+        "Tag":[
+            {
+                "name":"admiralty-scale:source-reliability=\"b\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"text",
+                "value":"Recently, we have discovered 132 Android apps on Google Play infected with tiny hidden IFrames that link to malicious domains in their local HTML pages, with the most popular one having more than 10,000 installs alone. Our investigation indicates that the developers of these infected apps are not to blame, but are more likely victims themselves. We believe it is most likely that the app developersâ€™ development platforms were infected with malware that searches for HTML pages and injects malicious content at the end of the HTML pages it finds. If this is this case, this is another situation where mobile malware originated from infected development platforms without developersâ€™ awareness. We have reported our findings to Google Security Team and all infected apps have been removed from Google Play.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2017/03/unit42-google-play-apps-infected-malicious-iframes/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesome3dstreetart",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesomecheesecakeideas",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.babyroomdesignideas",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.backyardwoodprojects",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bathroominteriordesigns",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.beautifulbotanicalgardens",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bedroomdesign5d",
+                "timestamp":"1488444322",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious urls",
+                "timestamp":"1488444322",
+                "type":"url",
+                "value":"www.Brenz.pl/rc/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious urls",
+                "timestamp":"1488444322",
+                "type":"url",
+                "value":"jL.chura.pl/rc/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"domain",
+                "value":"brenz.pl",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"hostname",
+                "value":"jl.chura.pl",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.awesome3dstreetart",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.awesomecheesecakeideas",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.babyroomdesignideas",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.backyardwoodprojects",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.bathroominteriordesigns",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.beautifulbotanicalgardens",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1488444322",
+                "type":"mobile-application-id",
+                "value":"com.aaronbalderapps.bedroomdesign5d",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bedroomdesign5d - Xchecked via VT: d6289fa1384fab121e730b1dce671f404950e4f930d636ae66ded0d8eb751678",
+                "timestamp":"1488444341",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bedroomdesign5d - Xchecked via VT: d6289fa1384fab121e730b1dce671f404950e4f930d636ae66ded0d8eb751678",
+                "timestamp":"1488444342",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.bedroomdesign5d - Xchecked via VT: d6289fa1384fab121e730b1dce671f404950e4f930d636ae66ded0d8eb751678",
+                "timestamp":"1488444343",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d6289fa1384fab121e730b1dce671f404950e4f930d636ae66ded0d8eb751678/analysis/1482024647/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.beautifulbotanicalgardens - Xchecked via VT: b330de625777726fc1d70bbd5667e4ce6eae124bde00b50577d6539bca9d4ae5",
+                "timestamp":"1488444344",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.beautifulbotanicalgardens - Xchecked via VT: b330de625777726fc1d70bbd5667e4ce6eae124bde00b50577d6539bca9d4ae5",
+                "timestamp":"1488444344",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.beautifulbotanicalgardens - Xchecked via VT: b330de625777726fc1d70bbd5667e4ce6eae124bde00b50577d6539bca9d4ae5",
+                "timestamp":"1488444345",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b330de625777726fc1d70bbd5667e4ce6eae124bde00b50577d6539bca9d4ae5/analysis/1482024641/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bathroominteriordesigns - Xchecked via VT: 28b16258244a23c82eff82ab0950578ebeb3a4947497b61e3b073b0f5f5e40ed",
+                "timestamp":"1488444346",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.bathroominteriordesigns - Xchecked via VT: 28b16258244a23c82eff82ab0950578ebeb3a4947497b61e3b073b0f5f5e40ed",
+                "timestamp":"1488444347",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.bathroominteriordesigns - Xchecked via VT: 28b16258244a23c82eff82ab0950578ebeb3a4947497b61e3b073b0f5f5e40ed",
+                "timestamp":"1488444347",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/28b16258244a23c82eff82ab0950578ebeb3a4947497b61e3b073b0f5f5e40ed/analysis/1481336217/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.backyardwoodprojects - Xchecked via VT: db95c87da09bdedb13430f28983b98038f190bfc0cb40f4076d8ee1c2d14dae6",
+                "timestamp":"1488444348",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.backyardwoodprojects - Xchecked via VT: db95c87da09bdedb13430f28983b98038f190bfc0cb40f4076d8ee1c2d14dae6",
+                "timestamp":"1488444349",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.backyardwoodprojects - Xchecked via VT: db95c87da09bdedb13430f28983b98038f190bfc0cb40f4076d8ee1c2d14dae6",
+                "timestamp":"1488444350",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/db95c87da09bdedb13430f28983b98038f190bfc0cb40f4076d8ee1c2d14dae6/analysis/1481336222/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.babyroomdesignideas - Xchecked via VT: 1d5878dce6d39d59d36645e806278396505348bddf602a8e3b1f74b0ce2bfbe8",
+                "timestamp":"1488444350",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.babyroomdesignideas - Xchecked via VT: 1d5878dce6d39d59d36645e806278396505348bddf602a8e3b1f74b0ce2bfbe8",
+                "timestamp":"1488444351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.babyroomdesignideas - Xchecked via VT: 1d5878dce6d39d59d36645e806278396505348bddf602a8e3b1f74b0ce2bfbe8",
+                "timestamp":"1488444352",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1d5878dce6d39d59d36645e806278396505348bddf602a8e3b1f74b0ce2bfbe8/analysis/1488422194/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesomecheesecakeideas - Xchecked via VT: a49ac5a97a7bac7d437eed9edcf52a72212673a6c8dc7621be22c332a1a41268",
+                "timestamp":"1488444353",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesomecheesecakeideas - Xchecked via VT: a49ac5a97a7bac7d437eed9edcf52a72212673a6c8dc7621be22c332a1a41268",
+                "timestamp":"1488444354",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.awesomecheesecakeideas - Xchecked via VT: a49ac5a97a7bac7d437eed9edcf52a72212673a6c8dc7621be22c332a1a41268",
+                "timestamp":"1488444355",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a49ac5a97a7bac7d437eed9edcf52a72212673a6c8dc7621be22c332a1a41268/analysis/1468332857/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesome3dstreetart - Xchecked via VT: c6e27882060463c287d1a184f8bc0e3201d5d58719ef13d9ab4a22a89400cf61",
+                "timestamp":"1488444356",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.aaronbalderapps.awesome3dstreetart - Xchecked via VT: c6e27882060463c287d1a184f8bc0e3201d5d58719ef13d9ab4a22a89400cf61",
+                "timestamp":"1488444357",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"com.aaronbalderapps.awesome3dstreetart - Xchecked via VT: c6e27882060463c287d1a184f8bc0e3201d5d58719ef13d9ab4a22a89400cf61",
+                "timestamp":"1488444358",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c6e27882060463c287d1a184f8bc0e3201d5d58719ef13d9ab4a22a89400cf61/analysis/1488422159/",
+                "to_ids":false
+            }
+        ]
+    }
+}

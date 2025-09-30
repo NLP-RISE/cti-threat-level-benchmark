@@ -1,0 +1,526 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-14",
+        "published":true,
+        "info":"OSINT - Zeus Panda Banking Trojan Targets Online Holiday Shoppers",
+        "publish_timestamp":"1514468033",
+        "timestamp":"1513825239",
+        "Tag":[
+            {
+                "name":"misp-galaxy:banker=\"Panda Banker\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-family=\"Banker\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Trojan\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513761114",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/zeus-panda-banking-trojan-targets-online-holiday-shoppers",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513761114",
+                "type":"comment",
+                "value":"Banking Trojans work by injecting code into web pages as they are viewed on infected machines, allowing the malware to harvest banking credentials and credit card information as victims interact with legitimate sites. Most often, the injects -- the code that actually performs the man-in-the-browser attacks -- are configured for region-specific banking sites. More recently, we have seen injects for online payment sites, casinos, retailers, and more appearing in banking Trojan campaigns.\r\n\r\nSince November -- a period of time that includes Thanksgiving, Black Friday, Cyber Monday and now leading up to Christmas -- we have observed Zeus Panda banking Trojan campaigns that have an increasing focus on non-banking targets with an extensive list of injects clearly designed to capitalize on holiday shopping and activities.\r\n\r\nMore specifically, these Zeus Panda (aka Panda Banker) campaigns expanded their injects to a variety of online shopping sites for brick and mortar retailers like Zara, specialty online retailers, travel sites, and video streaming sites, among others. The vast majority of these new targets will potentially see higher-than-normal numbers of credit card transactions for the holidays. While Zeus Panda can be configured to steal a variety of information, these injects collected the credit card number, address, phone number, DOB, SSN, and security question-related information such as motherâ€™s maiden name.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513688781",
+                "type":"filename",
+                "value":"receipt-package-5a0a062cae04a.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Landing page redirection",
+                "timestamp":"1513761114",
+                "type":"url",
+                "value":"https://canadapost-packagecenter.com/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513761114",
+                "type":"filename",
+                "value":"resume.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Document payload",
+                "timestamp":"1513761114",
+                "type":"url",
+                "value":"http://80.82.67.217/moo.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Panda",
+                "timestamp":"1513688966",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Panda C&C",
+                "timestamp":"1513761114",
+                "type":"domain",
+                "value":"gromnes.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Panda C&C",
+                "timestamp":"1513761114",
+                "type":"domain",
+                "value":"aklexim.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Panda C&C",
+                "timestamp":"1513761114",
+                "type":"domain",
+                "value":"kichamyn.top",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Attachment",
+                "timestamp":"1513688967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URL in email",
+                "timestamp":"1513761114",
+                "type":"url",
+                "value":"http://www.nfk-trading.com/analyticsmmrxbctq/redirect/0849e22e843170e1600c1910df8cf9da-id-qblozsmn-to-package-awaiting",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Document payload",
+                "timestamp":"1513761114",
+                "type":"url",
+                "value":"http://89.248.169.136/bigmac.jpg",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"containing URLs linking to Microsoft Word documents such as â€œreceipt-package-5a0a062cae04a.docâ€",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1513688748",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513688749",
+                        "type":"email-subject",
+                        "value":"Your package is ready to be picked upâ€",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513688749",
+                        "type":"datetime",
+                        "value":"2017-11-13T00:00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1513688902",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513688902",
+                        "type":"email-subject",
+                        "value":"Application submitted from Gumtree Jobs by [First Last Names] for Field Sales Consultant - Status: Emailed",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513688902",
+                        "type":"email-attachment",
+                        "value":"resume.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513688902",
+                        "type":"datetime",
+                        "value":"2017-12-11T00:00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513689320",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513689320",
+                        "type":"filename",
+                        "value":"receipt-package-5a0a062cae04a.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513689320",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513689320",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Panda executable",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513689357",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513689358",
+                        "type":"filename",
+                        "value":"Bigmac.jpg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513689358",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513689358",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513761117",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761114",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761114",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761114",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513761114",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ae92a4a5bc64db6af23219d7fa2d8bce98a5d7eb2eff7193e4f49698e3e5650d/analysis/1513357351/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"text",
+                        "value":"53/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"datetime",
+                        "value":"2017-12-15T17:02:31",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513761118",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513761115",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/5f7a1b02d5b2904554e65bd01a12f1fa5ff2121eef53f3942c4e9e29c46bdce3/analysis/1513686510/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"text",
+                        "value":"44/66",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Panda",
+                        "timestamp":"1513761115",
+                        "type":"datetime",
+                        "value":"2017-12-19T12:28:30",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513761118",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513761115",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e13594d83f2a573627e742baf33298b9eeec1ebb8c7955304b8c35559e5f23dc/analysis/1513686599/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"text",
+                        "value":"27/58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Attachment",
+                        "timestamp":"1513761115",
+                        "type":"datetime",
+                        "value":"2017-12-19T12:29:59",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513761118",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513761115",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/2514dbf1549b517692e415af85baa6e5eca926cdedb526d2e255b5943501d98b/analysis/1513686655/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"text",
+                        "value":"33/58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513761115",
+                        "type":"datetime",
+                        "value":"2017-12-19T12:30:55",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

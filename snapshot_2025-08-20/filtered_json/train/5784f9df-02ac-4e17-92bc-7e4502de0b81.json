@@ -1,0 +1,500 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-07-12",
+        "published":true,
+        "info":"OSINT - NetTraveler APT Targets Russian, European Interests",
+        "publish_timestamp":"1468333038",
+        "timestamp":"1468332991",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1468332586",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/nettraveler-apt-targets-russian-european-interests",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1468332600",
+                "type":"comment",
+                "value":"Throughout 2016, Proofpoint researchers tracked a cyber-espionage campaign targeting victims in Russia and neighboring countries. The actor utilizes spear phishing campaigns to deliver NetTraveler, also known as TravNet. First observed as early as 2004, NetTraveler is a Trojan used widely in targeted attacks. We believe that this attacker operates out of China. In addition to Russia, targeted regions include neighboring countries such as Mongolia, Belarus, and other European countries. The spear-phishing campaigns we detected use links to RAR-compressed executables and Microsoft Word attachments that exploit the CVE-2012-0158 vulnerability.\r\n\r\nThis particular APT is targeting organizations that include weapons manufacturers, human rights activists, and pro-democracy groups, among others.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C and payload hosting site",
+                "timestamp":"1468332665",
+                "type":"hostname",
+                "value":"www.interfaxru.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C and payload hosting site",
+                "timestamp":"1468332665",
+                "type":"hostname",
+                "value":"www.info-spb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332666",
+                "type":"hostname",
+                "value":"www.tassnews.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332666",
+                "type":"hostname",
+                "value":"www.riaru.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332666",
+                "type":"hostname",
+                "value":"www.voennovosti.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332666",
+                "type":"hostname",
+                "value":"www.mogoogle.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332666",
+                "type":"ip-dst",
+                "value":"103.231.184.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332667",
+                "type":"ip-dst",
+                "value":"103.231.184.163",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler C&C",
+                "timestamp":"1468332667",
+                "type":"ip-dst",
+                "value":"98.126.38.107",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler payload URL",
+                "timestamp":"1468332720",
+                "type":"url",
+                "value":"http://www.interfaxru.com/html/rostechnologii/20160420.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler payload URL",
+                "timestamp":"1468332720",
+                "type":"url",
+                "value":"http://www.info-spb.com/analiz/voennye_kommentaria/n148584.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler payload URL",
+                "timestamp":"1468332720",
+                "type":"url",
+                "value":"http://www.info-spb.com//worldnews/almaz-antey/no.15.02.2016.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler payload URL",
+                "timestamp":"1468332721",
+                "type":"url",
+                "value":"http://www.info-spb.com/worldnews/mfa/ua/2016-02-16.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"NetTraveler payload URL",
+                "timestamp":"1468332721",
+                "type":"url",
+                "value":"http://www.info-spb.com/worldnews/mfa/uz/03.02.2016.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160420.rar",
+                "timestamp":"1468332941",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿ÐµÑ€ÐµÑ‡Ð½Ðµ Ð·Ð¾Ð½ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐµÑ‚ÐµÐ²Ð¾Ð¹ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² 2016 Ð³.rar",
+                "timestamp":"1468332941",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160330.rar",
+                "timestamp":"1468332941",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡Ð¾Ð²Ð¼ÐµÑÑ‚Ð½Ð¾Ðµ Ð°Ð½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€Ð¸ÑÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑƒÑ‡ÐµÐ½Ð¸Ðµ Â«ÐÐ½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€-2016Â».rar",
+                "timestamp":"1468332942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"13_11.rar",
+                "timestamp":"1468332942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€ Sputnikâ€“Ð¢ÑƒÑ€Ñ†Ð¸Ñ Ð² ÑÑ€ÐµÐ´Ñƒ Ð²ÐµÑ€Ð½ÐµÑ‚ÑÑ Ð² ÐœÐ¾ÑÐºÐ²Ñƒ.rar",
+                "timestamp":"1468332942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¢ÐµÐºÑÑ‚ Ð¿Ñ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²Ð¸Ñ Ð“Ð»Ð°Ð²Ñ‹ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°.rar",
+                "timestamp":"1468332942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"n148584.rar",
+                "timestamp":"1468332942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160623.doc",
+                "timestamp":"1468332943",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160607.doc",
+                "timestamp":"1468332943",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ÐŸÐ›ÐÐ Ð Ð•ÐÐ›Ð˜Ð—ÐÐ¦Ð˜Ð˜ ÐŸÐ ÐžÐ•ÐšÐ¢Ð.doc",
+                "timestamp":"1468332943",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ÐŸÐ›ÐÐ Ð Ð•ÐÐ›Ð˜Ð—ÐÐ¦Ð˜Ð˜ ÐŸÐ ÐžÐ•ÐšÐ¢Ð.doc - Xchecked via VT: b3a5c562e3531fb8be476af4947eaa793a77cc61715284bfb9c380b7048da44a",
+                "timestamp":"1468332991",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ÐŸÐ›ÐÐ Ð Ð•ÐÐ›Ð˜Ð—ÐÐ¦Ð˜Ð˜ ÐŸÐ ÐžÐ•ÐšÐ¢Ð.doc - Xchecked via VT: b3a5c562e3531fb8be476af4947eaa793a77cc61715284bfb9c380b7048da44a",
+                "timestamp":"1468332991",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"ÐŸÐ›ÐÐ Ð Ð•ÐÐ›Ð˜Ð—ÐÐ¦Ð˜Ð˜ ÐŸÐ ÐžÐ•ÐšÐ¢Ð.doc - Xchecked via VT: b3a5c562e3531fb8be476af4947eaa793a77cc61715284bfb9c380b7048da44a",
+                "timestamp":"1468332991",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b3a5c562e3531fb8be476af4947eaa793a77cc61715284bfb9c380b7048da44a/analysis/1453440894/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160607.doc - Xchecked via VT: 60386112fc4b0ddb833fc9a877a9a4f0fe76828ebab4457637b0827106b269fe",
+                "timestamp":"1468332991",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160607.doc - Xchecked via VT: 60386112fc4b0ddb833fc9a877a9a4f0fe76828ebab4457637b0827106b269fe",
+                "timestamp":"1468332992",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"20160607.doc - Xchecked via VT: 60386112fc4b0ddb833fc9a877a9a4f0fe76828ebab4457637b0827106b269fe",
+                "timestamp":"1468332992",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/60386112fc4b0ddb833fc9a877a9a4f0fe76828ebab4457637b0827106b269fe/analysis/1468011599/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160623.doc - Xchecked via VT: 80ba8997067025dd830d49d09c57c0dcb1e2f303fa0e093069bd9cff29420692",
+                "timestamp":"1468332992",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160623.doc - Xchecked via VT: 80ba8997067025dd830d49d09c57c0dcb1e2f303fa0e093069bd9cff29420692",
+                "timestamp":"1468332992",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"20160623.doc - Xchecked via VT: 80ba8997067025dd830d49d09c57c0dcb1e2f303fa0e093069bd9cff29420692",
+                "timestamp":"1468332992",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/80ba8997067025dd830d49d09c57c0dcb1e2f303fa0e093069bd9cff29420692/analysis/1468011596/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"n148584.rar - Xchecked via VT: 3adacca54c6fe4bb905e233e48dffd8f6d03078d3d2d309d40e2e67a04a70db1",
+                "timestamp":"1468332993",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"n148584.rar - Xchecked via VT: 3adacca54c6fe4bb905e233e48dffd8f6d03078d3d2d309d40e2e67a04a70db1",
+                "timestamp":"1468332993",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"n148584.rar - Xchecked via VT: 3adacca54c6fe4bb905e233e48dffd8f6d03078d3d2d309d40e2e67a04a70db1",
+                "timestamp":"1468332993",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3adacca54c6fe4bb905e233e48dffd8f6d03078d3d2d309d40e2e67a04a70db1/analysis/1468011596/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¢ÐµÐºÑÑ‚ Ð¿Ñ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²Ð¸Ñ Ð“Ð»Ð°Ð²Ñ‹ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°.rar - Xchecked via VT: 409bb7f9faf4b7dc168f71084edb695707f22a83a2e79b810a0b4a27966d78f1",
+                "timestamp":"1468332993",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¢ÐµÐºÑÑ‚ Ð¿Ñ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²Ð¸Ñ Ð“Ð»Ð°Ð²Ñ‹ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°.rar - Xchecked via VT: 409bb7f9faf4b7dc168f71084edb695707f22a83a2e79b810a0b4a27966d78f1",
+                "timestamp":"1468332993",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ð¢ÐµÐºÑÑ‚ Ð¿Ñ€Ð¸Ð²ÐµÑ‚ÑÑ‚Ð²Ð¸Ñ Ð“Ð»Ð°Ð²Ñ‹ Ð³Ð¾ÑÑƒÐ´Ð°Ñ€ÑÑ‚Ð²Ð°.rar - Xchecked via VT: 409bb7f9faf4b7dc168f71084edb695707f22a83a2e79b810a0b4a27966d78f1",
+                "timestamp":"1468332994",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/409bb7f9faf4b7dc168f71084edb695707f22a83a2e79b810a0b4a27966d78f1/analysis/1457504808/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€ Sputnikâ€“Ð¢ÑƒÑ€Ñ†Ð¸Ñ Ð² ÑÑ€ÐµÐ´Ñƒ Ð²ÐµÑ€Ð½ÐµÑ‚ÑÑ Ð² ÐœÐ¾ÑÐºÐ²Ñƒ.rar - Xchecked via VT: 1bcafa596c597868a179fe3d783b8c5bcd1b487d891b99cb90e76e8abd55a599",
+                "timestamp":"1468332994",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€ Sputnikâ€“Ð¢ÑƒÑ€Ñ†Ð¸Ñ Ð² ÑÑ€ÐµÐ´Ñƒ Ð²ÐµÑ€Ð½ÐµÑ‚ÑÑ Ð² ÐœÐ¾ÑÐºÐ²Ñƒ.rar - Xchecked via VT: 1bcafa596c597868a179fe3d783b8c5bcd1b487d891b99cb90e76e8abd55a599",
+                "timestamp":"1468332994",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ð“Ð»Ð°Ð²Ð½Ñ‹Ð¹ Ñ€ÐµÐ´Ð°ÐºÑ‚Ð¾Ñ€ Sputnikâ€“Ð¢ÑƒÑ€Ñ†Ð¸Ñ Ð² ÑÑ€ÐµÐ´Ñƒ Ð²ÐµÑ€Ð½ÐµÑ‚ÑÑ Ð² ÐœÐ¾ÑÐºÐ²Ñƒ.rar - Xchecked via VT: 1bcafa596c597868a179fe3d783b8c5bcd1b487d891b99cb90e76e8abd55a599",
+                "timestamp":"1468332994",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1bcafa596c597868a179fe3d783b8c5bcd1b487d891b99cb90e76e8abd55a599/analysis/1468011597/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"13_11.rar - Xchecked via VT: 8e3e5b12f0964e73e4057610ce7a6aa25607c94536762128dabebf9ccfa667d4",
+                "timestamp":"1468332995",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"13_11.rar - Xchecked via VT: 8e3e5b12f0964e73e4057610ce7a6aa25607c94536762128dabebf9ccfa667d4",
+                "timestamp":"1468332995",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"13_11.rar - Xchecked via VT: 8e3e5b12f0964e73e4057610ce7a6aa25607c94536762128dabebf9ccfa667d4",
+                "timestamp":"1468332995",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8e3e5b12f0964e73e4057610ce7a6aa25607c94536762128dabebf9ccfa667d4/analysis/1468011598/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡Ð¾Ð²Ð¼ÐµÑÑ‚Ð½Ð¾Ðµ Ð°Ð½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€Ð¸ÑÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑƒÑ‡ÐµÐ½Ð¸Ðµ Â«ÐÐ½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€-2016Â».rar - Xchecked via VT: 69527b0471c2effab2d21106556ace6bd501daf7758b2ebbf3b2780d6399ecbf",
+                "timestamp":"1468332995",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð¡Ð¾Ð²Ð¼ÐµÑÑ‚Ð½Ð¾Ðµ Ð°Ð½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€Ð¸ÑÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑƒÑ‡ÐµÐ½Ð¸Ðµ Â«ÐÐ½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€-2016Â».rar - Xchecked via VT: 69527b0471c2effab2d21106556ace6bd501daf7758b2ebbf3b2780d6399ecbf",
+                "timestamp":"1468332995",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ð¡Ð¾Ð²Ð¼ÐµÑÑ‚Ð½Ð¾Ðµ Ð°Ð½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€Ð¸ÑÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑƒÑ‡ÐµÐ½Ð¸Ðµ Â«ÐÐ½Ñ‚Ð¸Ñ‚ÐµÑ€Ñ€Ð¾Ñ€-2016Â».rar - Xchecked via VT: 69527b0471c2effab2d21106556ace6bd501daf7758b2ebbf3b2780d6399ecbf",
+                "timestamp":"1468332996",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/69527b0471c2effab2d21106556ace6bd501daf7758b2ebbf3b2780d6399ecbf/analysis/1468011598/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160330.rar - Xchecked via VT: f3997f8269e4177342aec8816c28cfebaef17a86f22eef15d90b4f9e5b15d8e6",
+                "timestamp":"1468332996",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160330.rar - Xchecked via VT: f3997f8269e4177342aec8816c28cfebaef17a86f22eef15d90b4f9e5b15d8e6",
+                "timestamp":"1468332996",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"20160330.rar - Xchecked via VT: f3997f8269e4177342aec8816c28cfebaef17a86f22eef15d90b4f9e5b15d8e6",
+                "timestamp":"1468332996",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f3997f8269e4177342aec8816c28cfebaef17a86f22eef15d90b4f9e5b15d8e6/analysis/1468011597/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿ÐµÑ€ÐµÑ‡Ð½Ðµ Ð·Ð¾Ð½ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐµÑ‚ÐµÐ²Ð¾Ð¹ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² 2016 Ð³.rar - Xchecked via VT: 67c994ad328cd3d8b954366b2baa5e643b31ed42280548eebbd0c30c53f9e37d",
+                "timestamp":"1468332997",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿ÐµÑ€ÐµÑ‡Ð½Ðµ Ð·Ð¾Ð½ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐµÑ‚ÐµÐ²Ð¾Ð¹ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² 2016 Ð³.rar - Xchecked via VT: 67c994ad328cd3d8b954366b2baa5e643b31ed42280548eebbd0c30c53f9e37d",
+                "timestamp":"1468332997",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ð¿ÐµÑ€ÐµÑ‡Ð½Ðµ Ð·Ð¾Ð½ Ð´ÐµÑÑ‚ÐµÐ»ÑŒÐ½Ð¾ÑÑ‚Ð¸ ÑÐµÑ‚ÐµÐ²Ð¾Ð¹ Ð¾Ñ€Ð³Ð°Ð½Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð² 2016 Ð³.rar - Xchecked via VT: 67c994ad328cd3d8b954366b2baa5e643b31ed42280548eebbd0c30c53f9e37d",
+                "timestamp":"1468332997",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/67c994ad328cd3d8b954366b2baa5e643b31ed42280548eebbd0c30c53f9e37d/analysis/1467988434/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160420.rar - Xchecked via VT: 5afcaca6f6dd6fb3bad26585f30870f71462c59e251cc76b0df5851ac2aa17de",
+                "timestamp":"1468332997",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"20160420.rar - Xchecked via VT: 5afcaca6f6dd6fb3bad26585f30870f71462c59e251cc76b0df5851ac2aa17de",
+                "timestamp":"1468332997",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"20160420.rar - Xchecked via VT: 5afcaca6f6dd6fb3bad26585f30870f71462c59e251cc76b0df5851ac2aa17de",
+                "timestamp":"1468332998",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5afcaca6f6dd6fb3bad26585f30870f71462c59e251cc76b0df5851ac2aa17de/analysis/1468011596/",
+                "to_ids":false
+            }
+        ]
+    }
+}

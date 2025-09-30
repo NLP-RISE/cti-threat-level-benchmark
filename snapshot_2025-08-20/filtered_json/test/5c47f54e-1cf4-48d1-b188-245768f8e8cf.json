@@ -1,0 +1,200 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-01-23",
+        "published":true,
+        "info":"2019-01-22: Emotet->TrickBot",
+        "publish_timestamp":"1589183543",
+        "timestamp":"1621849996",
+        "Tag":[
+            {
+                "name":"Banker: TrickBot"
+            },
+            {
+                "name":"Version: 1057"
+            },
+            {
+                "name":"core-parser.dll"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Trick Bot\""
+            },
+            {
+                "name":"misp-galaxy:banker=\"Trickbot\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1548219726",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548586998",
+                "type":"link",
+                "value":"https://www.virustotal.com/en/file/8e4cc0539b4921b0222081a0948bd149f10a027f73983e9ade36d4045f69921f/analysis/1548422859/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548586997",
+                "type":"link",
+                "value":"https://github.com/k-vitali/TrickBot-share/blob/master/2019-01-22-TrickBot-banker-client-1057_misp.json",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548219813",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548220136",
+                        "type":"filename",
+                        "value":"2019-01-22-trickbot-loader.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"size-in-bytes",
+                        "value":"232960",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"float",
+                        "value":"7.682967694857",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219813",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548219850",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548220126",
+                        "type":"filename",
+                        "value":"core-parser.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"size-in-bytes",
+                        "value":"217600",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"float",
+                        "value":"6.5165485023488",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548219850",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

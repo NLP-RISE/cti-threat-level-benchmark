@@ -1,0 +1,188 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-05-27",
+        "published":true,
+        "info":"APT Actors Exploiting Fortinet Vulnerabilities to Gain Access for Malicious Activity",
+        "publish_timestamp":"1622145128",
+        "timestamp":"1622145120",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-tool=\"Mimikatz - S0002\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"filename",
+                "value":"Audio.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"filename",
+                "value":"frpc.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"imphash",
+                "value":"<imphash>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788155",
+                "type":"ssdeep",
+                "value":"<ssdeep>",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1621788325",
+                "type":"comment",
+                "value":"The APT actors may have established new user accounts on domain controllers, servers, workstations, and the active directories. Some of these accounts appear to have been created to look similar to other existing accounts on the network, so specific account names may vary per organization. In addition to unrecognized user accounts or accounts established to masquerade as existing accounts, the following account usernames may be associated with this activity:\r\nï‚· â€œelieâ€\r\nï‚· â€œWADGUtilityAccountâ€",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788371",
+                "type":"filename",
+                "value":"Frps.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788371",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788371",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788371",
+                "type":"imphash",
+                "value":"<imphash>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1621788371",
+                "type":"ssdeep",
+                "value":"<ssdeep>",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1622144838",
+                "type":"comment",
+                "value":"Associated Tools\r\nï‚· Mimikatz (credential theft)\r\nï‚· MinerGate (crypto mining)\r\nï‚· WinPEAS (privilege escalation)\r\nï‚· SharpWMI (Windows Management Instrumentation)\r\nï‚· BitLocker activation when not anticipated (data encryption)\r\nï‚· WinRAR where not expected (archiving)\r\nï‚· FileZilla where not expected (file transfer)",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1622144904",
+                "type":"comment",
+                "value":"Unrecognized Scheduled Tasks\r\nThe APT actors may have made modifications to the Task Scheduler that may display as unrecognized scheduled tasks or â€œactions.â€ Specifically, the below established task may be associated with this activity:\r\nï‚· SynchronizeTimeZone",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1622144916",
+                "type":"comment",
+                "value":"Outbound Traffic\r\nAny FTP transfers over port 443",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1622144984",
+                "type":"vulnerability",
+                "value":"CVE-2018-13379",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1622144984",
+                "type":"vulnerability",
+                "value":"CVE-2020-12812",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1622144984",
+                "type":"vulnerability",
+                "value":"CVE-2019-5591",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1622145025",
+                "type":"link",
+                "value":"https://us-cert.cisa.gov/ncas/current-activity/2021/04/02/fbi-cisa-joint-advisory-exploitation-fortinet-fortios",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1622145080",
+                "type":"comment",
+                "value":"Alert number MI-000148-MW",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1622145101",
+                "type":"comment",
+                "value":"Recommended Mitigations\r\nï‚· Immediately patch CVEs 2018-13379, 2020-12812, and 2019-5591.\r\nï‚· If FortiOS is not used by your organization, add the key artifact files used by FortiOS to your\r\norganizationâ€™s execution denylist. Any attempts to install or run this program and its associated\r\nfiles should be prevented.\r\nï‚· Review domain controllers, servers, workstations, and active directories for new or unrecognized\r\nuser accounts.\r\nï‚· Review Task Scheduler for unrecognized scheduled tasks. Additionally, manually review\r\noperating system defined or recognized scheduled tasks for unrecognized â€œactionsâ€ (for example:\r\nreview the steps each scheduled task is expected to perform).\r\nï‚· Review antivirus logs for indications they were unexpectedly turned off.\r\nï‚· Regularly back up data, air gap, and password protect backup copies offline. Ensure copies of\r\ncritical data are not accessible for modification or deletion from the system where the data\r\nresides.\r\nï‚· Implement network segmentation.\r\nï‚· Require administrator credentials to install software.\r\nï‚· Implement a recovery plan to maintain and retain multiple copies of sensitive or proprietary data\r\nand servers in a physically separate, segmented, secure location (e.g., hard drive, storage device,\r\nthe cloud).\r\nï‚· Install updates/patch operating systems, software, and firmware as soon as updates/patches are\r\nreleased.\r\nï‚· Use multifactor authentication where possible.\r\nï‚· Regularly change passwords to network systems and accounts, and avoid reusing passwords for\r\ndifferent accounts. Implement the shortest acceptable timeframe for password changes.\r\nï‚· Disable unused remote access/Remote Desktop Protocol (RDP) ports and monitor remote\r\naccess/RDP logs.\r\nï‚· Audit user accounts with administrative privileges and configure access controls with least\r\nprivilege in mind.\r\nï‚· Install and regularly update antivirus and anti-malware software on all hosts.\r\nï‚· Only use secure networks and avoid using public Wi-Fi networks. Consider installing and using a\r\nvirtual private network (VPN).\r\nï‚· Consider adding an email banner to emails received from outside your organization.\r\nï‚· Disable hyperlinks in received emails.",
+                "to_ids":false
+            }
+        ]
+    }
+}

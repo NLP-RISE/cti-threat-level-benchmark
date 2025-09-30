@@ -1,0 +1,266 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-05-13",
+        "published":true,
+        "info":"UNC3524: Eye Spy on Your Email",
+        "publish_timestamp":"1652459385",
+        "timestamp":"1652459344",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Additional Cloud Credentials - T1098.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Layer Protocol - T1071\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Asymmetric Cryptography - T1573.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Infrastructure - T1584\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DCSync - T1003.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Email Collection - T1114\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Install Digital Certificate - T1608.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"LSA Secrets - T1003.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Multi-hop Proxy - T1090.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Non-Application Layer Protocol - T1095\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Protocol Tunneling - T1572\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Rc.common - T1037.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Email Collection - T1114.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"SSH - T1021.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Discovery - T1518\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Configuration Discovery - T1016\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Connections Discovery - T1049\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Two-Factor Authentication Interception - T1111\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Virtual Private Server - T1583.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Shell - T1505.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Command Shell - T1059.003\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"QUIETEXIT Dynamic DN",
+                "timestamp":"1652459097",
+                "type":"domain",
+                "value":"cloudns.asia",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QUIETEXIT Dynamic DN",
+                "timestamp":"1652459097",
+                "type":"domain",
+                "value":"dynu.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QUIETEXIT Dynamic DN",
+                "timestamp":"1652459097",
+                "type":"domain",
+                "value":"mywire.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QUIETEXIT Dynamic DN",
+                "timestamp":"1652459097",
+                "type":"domain",
+                "value":"webredirect.org",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Find QUIETEXIT hard-coded byte string using grep",
+                "timestamp":"1652459241",
+                "type":"pattern-in-file",
+                "value":"grep \"\\x48\\x8b\\x3c\\xd3\\x4c\\x89\\xe1\\xf2\\xae\" -rs /",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Find QUIETEXIT by looking for the hard-coded password value",
+                "timestamp":"1652459274",
+                "type":"pattern-in-file",
+                "value":"grep '\\xDD\\xE5\\xD5\\x97\\x20\\x53\\x27\\xBF\\xF0\\xA2\\xBA\\xCD\\x96\\x35\\x9A\\xAD\\x1C\\x75\\xEB\\x47' -rs /",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Find QUIETEXIT persistence mechanisms in the appliance’s rc.local directory by looking for the command line arguments",
+                "timestamp":"1652459303",
+                "type":"pattern-in-file",
+                "value":"grep -e \" -[Xx] -p [[:digit:]{2,6}]\" -rs /etc",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1652459324",
+                "type":"link",
+                "value":"https://www.mandiant.com/resources/unc3524-eye-spy-email",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1652458998",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1652458998",
+                        "type":"yara",
+                        "value":"rule QUIETEXIT_strings\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n        date_created = \"2022-01-13\"\r\n\r\n        date_modified = \"2022-01-13\"\r\n\r\n        rev = 1\r\n\r\n    strings:\r\n\r\n        $s1 = \"auth-agent@openssh.com\"\r\n\r\n        $s2 = \"auth-%.8x-%d\"\r\n\r\n        $s3 = \"Child connection from %s:%s\"\r\n\r\n        $s4 = \"Compiled without normal mode, can't run without -i\"\r\n\r\n        $s5 = \"cancel-tcpip-forward\"\r\n\r\n        $s6 = \"dropbear_prng\"\r\n\r\n        $s7 = \"cron\"\r\n\r\n    condition:\r\n\r\n        uint32be(0) == 0x7F454C46 and filesize < 2MB and all of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1652458998",
+                        "type":"text",
+                        "value":"QUIETEXIT_strings",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1652459037",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1652459037",
+                        "type":"yara",
+                        "value":"rule REGEORG_Tuneller_generic\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n        date_created = \"2021-12-20\"\r\n\r\n        date_modified = \"2021-12-20\"\r\n\r\n        md5 = \"ba22992ce835dadcd06bff4ab7b162f9\"\r\n\r\n    strings:\r\n\r\n        $s1 = \"System.Net.IPEndPoint\"\r\n\r\n        $s2 = \"Response.AddHeader\"\r\n\r\n        $s3 = \"Request.InputStream.Read\"\r\n\r\n        $s4 = \"Request.Headers.Get\"\r\n\r\n        $s5 = \"Response.Write\"\r\n\r\n        $s6 = \"System.Buffer.BlockCopy\"\r\n\r\n        $s7 = \"Response.BinaryWrite\"\r\n\r\n        $s8 = \"SocketException soex\"\r\n\r\n    condition:\r\n\r\n        filesize < 1MB and 7 of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1652459037",
+                        "type":"text",
+                        "value":"REGEORG_Tuneller_generic",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1652459064",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1652459064",
+                        "type":"yara",
+                        "value":"rule UNC3524_sha1\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n        date_created = \"2022-01-19\"\r\n\r\n        date_modified = \"2022-01-19\"\r\n\r\n   strings:\r\n\r\n        $h1 = { DD E5 D5 97 20 53 27 BF F0 A2 BA CD 96 35 9A AD 1C 75 EB 47 }\r\n\r\n    condition:\r\n\r\n        uint32be(0) == 0x7F454C46 and filesize < 10MB and all of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1652459064",
+                        "type":"text",
+                        "value":"UNC3524_sha1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1652459152",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"REGEORG GitHub version",
+                        "timestamp":"1652459152",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"REGEORG GitHub version",
+                        "timestamp":"1652459152",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"REGEORG GitHub version",
+                        "timestamp":"1652459152",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

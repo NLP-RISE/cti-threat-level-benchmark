@@ -1,0 +1,166 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-07-28",
+        "published":true,
+        "info":"Malicious Inauthentic Falcon Crash Reporter Installer Distributed to German Entity via Spearphishing Website",
+        "publish_timestamp":"1722120366",
+        "timestamp":"1722120343",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Masquerading - T1036\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Germany\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1722119690",
+                "type":"link",
+                "value":"https://www.crowdstrike.com/blog/malicious-inauthentic-falcon-crash-reporter-installer-spearphishing/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1722119764",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Spearphishing URL",
+                "timestamp":"1722120168",
+                "type":"url",
+                "value":"http://{German Entity}.it.com/crowdstrike/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Obfuscated version of Crowdstrike_crash_reporter_v1.1-R7.zip",
+                "timestamp":"1722120161",
+                "type":"url",
+                "value":"http://{German Entity}.it.com/crowdstrike/media/disabled.svg",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Spearphishing domain IPv4",
+                "timestamp":"1722120187",
+                "type":"ip-dst",
+                "value":"4.180.4.19",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Malicious InnoSetup installer executable ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722120103",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722119971",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120103",
+                        "type":"filename",
+                        "value":"CrowdStrike_Crash_Reporter_Setup_8.R3.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"ZIP lure",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722120119",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120034",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120041",
+                        "type":"filename",
+                        "value":"Crowdstrike_crash_reporter_v1.1-R7.zip",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"JS downloader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722120219",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120219",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Likely next-stage executable Java8Runtime.exe",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1722120252",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120252",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1722120252",
+                        "type":"filename",
+                        "value":"Java8Runtime.exe",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

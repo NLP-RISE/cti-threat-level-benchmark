@@ -1,0 +1,552 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2025-03-06",
+        "published":true,
+        "info":"OSINT - GreyNoise Observes Active Exploitation of Cisco Vulnerabilities Tied to Salt Typhoon Attacks",
+        "publish_timestamp":"1741258750",
+        "timestamp":"1741258691",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:sector=\"Telecoms\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"UNC3236\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Volt Typhoon\""
+            },
+            {
+                "name":"misp-galaxy:producer=\"GreyNoise\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"CVE-2023-20198: enriched via the vulnerability_lookup module.",
+                "timestamp":"1741257361",
+                "type":"vulnerability",
+                "value":"CVE-2023-20198",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"CVE-2018-0171: enriched via the vulnerability_lookup module.",
+                "timestamp":"1741257361",
+                "type":"vulnerability",
+                "value":"CVE-2018-0171",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"CVE-2023-20273: enriched via the vulnerability_lookup module.",
+                "timestamp":"1741257361",
+                "type":"vulnerability",
+                "value":"CVE-2023-20273",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"139.59.223.9",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"5.36.204.121",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"109.107.214.226",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"209.38.74.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"167.71.109.17",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"142.93.167.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"157.230.153.118",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"164.92.179.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"134.209.5.135",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"128.199.176.205",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"64.44.206.10",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"95.42.20.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"165.22.47.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"159.223.86.187",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"142.93.168.28",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"207.154.201.214",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"157.245.156.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"139.59.254.193",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"64.227.93.39",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"159.65.33.216",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"143.110.199.6",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"64.225.47.166",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"51.255.62.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"51.255.62.15",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"104.131.186.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"165.22.251.103",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"165.227.125.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"128.199.238.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"tags:\"Cisco IOS XE Privilege Escalation Attempt\"",
+                "timestamp":"1741257923",
+                "type":"ip-dst",
+                "value":"167.71.52.166",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"CVE-2023-20198: enriched via the vulnerability_lookup module.",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1741257375",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"vulnerability",
+                        "value":"CVE-2023-20198",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2023-10-16T15:12:58.735000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2024-10-23T18:58:22.360000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"text",
+                        "value":"PUBLISHED",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-webui-privesc-j22SaA4z",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2018-0171: enriched via the vulnerability_lookup module.",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1741257375",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"vulnerability",
+                        "value":"CVE-2018-0171",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2018-03-28T22:00:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2024-11-13T18:24:11.004000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"text",
+                        "value":"PUBLISHED",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"https://ics-cert.us-cert.gov/advisories/ICSA-18-107-04",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"http://www.securitytracker.com/id/1040580",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180328-smi2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"https://www.darkreading.com/perimeter/attackers-exploit-cisco-switch-issue-as-vendor-warns-of-yet-another-critical-flaw/d/d-id/1331490",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"https://ics-cert.us-cert.gov/advisories/ICSA-18-107-05",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"link",
+                        "value":"http://www.securityfocus.com/bid/103538",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2023-20273: enriched via the vulnerability_lookup module.",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1741257375",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"vulnerability",
+                        "value":"CVE-2023-20273",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2023-10-24T14:13:36.311000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257375",
+                        "type":"datetime",
+                        "value":"2024-10-23T18:57:38.005000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1741257376",
+                        "type":"text",
+                        "value":"PUBLISHED",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1741257376",
+                        "type":"link",
+                        "value":"https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-iosxe-webui-privesc-j22SaA4z",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1741257457",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"CVE-2018-0171 (IOS and IOS XE Smart Install Remote Code Execution)",
+                        "timestamp":"1741257457",
+                        "type":"ip-dst",
+                        "value":"104.167.223.148",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"CVE-2018-0171 (IOS and IOS XE Smart Install Remote Code Execution)",
+                        "timestamp":"1741257457",
+                        "type":"ip-dst",
+                        "value":"179.43.168.146",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1741257742",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1741257742",
+                        "type":"ip-dst",
+                        "value":"109.107.214.226",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1741257742",
+                        "type":"ip-dst",
+                        "value":"114.246.237.62",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1741257742",
+                        "type":"ip-dst",
+                        "value":"139.59.223.9",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1741257742",
+                        "type":"ip-dst",
+                        "value":"5.36.204.121",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

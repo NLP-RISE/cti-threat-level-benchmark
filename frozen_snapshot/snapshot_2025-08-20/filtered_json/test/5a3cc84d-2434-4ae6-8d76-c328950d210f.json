@@ -1,0 +1,344 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2014-10-08",
+        "published":true,
+        "info":"OSINT - Sednit espionage group now using custom exploit kit",
+        "publish_timestamp":"1518771000",
+        "timestamp":"1516071622",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"Sednit EK\""
+            },
+            {
+                "name":"veris:actor:motive=\"Espionage\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1516008798",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2014/10/08/sednit-espionage-group-now-using-custom-exploit-kit/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008799",
+                "type":"url",
+                "value":"http://defenceiq.us/2rfKZL_BGwEQ",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008799",
+                "type":"url",
+                "value":"http://cntt.akcdndata.com/gpw?file=stat.js",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1516008800",
+                "type":"comment",
+                "value":"For at least five years the Sednit group has been relentlessly attacking various institutions, most notably in Eastern Europe. The group used several advanced pieces of malware for these targeted attacks, in particular the one we named Win32/Sednit, also known as Sofacy.\r\n\r\nWe recently came across cases of legitimate financial websites being redirected to a custom exploit kit. Based on our research and on some information provided by the Google Security Team, we were able to establish that it is used by the Sednit group. This is a new strategy for this group which has relied mostly on spear-phishing emails up until now.\r\n\r\nIn this blog, we will first examine on recent cases of spear-phishing emails using the CVE-2014-1761 Microsoft Word exploit. We will then focus on the exploit kit, which appears to still be in development and testing phase, and briefly describe the actual payload.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Military news",
+                "timestamp":"1516008800",
+                "type":"domain",
+                "value":"defenceiq.us",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Military news",
+                "timestamp":"1516008800",
+                "type":"domain",
+                "value":"defenceiq.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Military news",
+                "timestamp":"1516008800",
+                "type":"domain",
+                "value":"armypress.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Military news",
+                "timestamp":"1516008801",
+                "type":"domain",
+                "value":"armytime.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Foreign Affairs magazine",
+                "timestamp":"1516008801",
+                "type":"domain",
+                "value":"mfapress.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Foreign Affairs magazine",
+                "timestamp":"1516008802",
+                "type":"domain",
+                "value":"foreignaffairs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Foreign Affairs magazine",
+                "timestamp":"1516008802",
+                "type":"domain",
+                "value":"mfapress.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CACI International, defense & cyber security contractor",
+                "timestamp":"1516008802",
+                "type":"domain",
+                "value":"caciltd.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CACI International, defense & cyber security contractor",
+                "timestamp":"1516008803",
+                "type":"domain",
+                "value":"caci.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1516008803",
+                "type":"mutex",
+                "value":"XSQWERSystemCriticalSection_for_1232321",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008803",
+                "type":"domain",
+                "value":"msonlinelive.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008804",
+                "type":"domain",
+                "value":"windows-updater.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008804",
+                "type":"domain",
+                "value":"azureon-line.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516008805",
+                "type":"filename",
+                "value":"edg6EF885E2.tmp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516008806",
+                "type":"filename",
+                "value":"edg6E85F98675.tmp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Word exploit",
+                "timestamp":"1516004846",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Word exploit",
+                "timestamp":"1516004847",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Dropper",
+                "timestamp":"1516004847",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload",
+                "timestamp":"1516004847",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1516008809",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dropper",
+                        "timestamp":"1516008806",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dropper",
+                        "timestamp":"1516008807",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dropper",
+                        "timestamp":"1516008807",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1516008808",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Dropper",
+                        "timestamp":"1516008808",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/6ffaa374cfa9504b061b52a353913c6c120bd4fe43e1a79f69fba7f964e30a4e/analysis/1515795459/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Dropper",
+                        "timestamp":"1516008808",
+                        "type":"text",
+                        "value":"51/68",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Dropper",
+                        "timestamp":"1516008808",
+                        "type":"datetime",
+                        "value":"2018-01-12T22:17:39",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1516008812",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Payload",
+                        "timestamp":"1516008809",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Payload",
+                        "timestamp":"1516008809",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Payload",
+                        "timestamp":"1516008810",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1516008810",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Payload",
+                        "timestamp":"1516008810",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e031299fa1381b40c660b8cd831bb861654f900a1e2952b1a76bedf140972a81/analysis/1490591462/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Payload",
+                        "timestamp":"1516008810",
+                        "type":"text",
+                        "value":"44/61",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Payload",
+                        "timestamp":"1516008811",
+                        "type":"datetime",
+                        "value":"2017-03-27T05:11:02",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,128 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2017-01-08",
+        "published":true,
+        "info":"OSINT  - Fancy Bear Source Code",
+        "publish_timestamp":"1483946722",
+        "timestamp":"1483946711",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"STRONTIUM\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:certainty=\"75\""
+            },
+            {
+                "name":"osint:source-type=\"source-code-repository\""
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"Python\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Social network",
+                "comment":"Source of the information - IR performed by the github user and pushed publicly",
+                "timestamp":"1483886583",
+                "type":"github-repository",
+                "value":"rickey-g/fancybear",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483885861",
+                "type":"comment",
+                "value":"# Fancy Bear Source Code \r\nThis repo contains actual source code found during IR.\r\nThe code provides a communication channel for the attacker and infected client. It uses Google's gmail servers to send and receive encoded messages.\r\n\r\n### Some artifacts are summorized below\r\n- Comments are in english, with a lot of grammar mistakes\r\n- Subject of an email is: '**piradi nomeri**'. This is Georgian language\r\n- It saves files with **dataluri_**timetsamp.dat. 'Dataluri' is also Georgian for \"details\".\r\n- In the email body it uses the word: \"**gamarjoba**\". Meaning 'Hello' in Russian and Georgian.\r\n\r\n### These are the Gmail account details used, I've verified they once worked (but not anymore!)\r\n- POP3_MAIL_IP = 'pop.gmail.com'  \r\n- POP3_PORT = 995\r\n- POP3_ADDR = 'jassnovember30@gmail.com'\r\n- POP3_PASS = '30Jass11'\r\n- SMTP_MAIL_IP = 'smtp.gmail.com'\r\n- SMTP_PORT = 587\r\n- SMTP_TO_ADDR = 'userdf783@mailtransition.com'\r\n- SMTP_FROM_ADDR = 'ginabetz75@gmail.com'\r\n- SMTP_PASS = '75Gina75'\r\n  \r\n### Command and Control server\r\n- XAS_IP = '104.152.187.66'\r\n- XAS_GATE = '/updates/'\r\n\r\n**The code is completely left as found on the original server, including the log files.**",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Source of the information - IR performed by the github user and pushed publicly",
+                "timestamp":"1483886648",
+                "type":"link",
+                "value":"https://github.com/rickey-g/fancybear",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1483885980",
+                "type":"email-src",
+                "value":"jassnovember30@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1483886002",
+                "type":"email-dst",
+                "value":"userdf783@mailtransition.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1483886056",
+                "type":"email-dst",
+                "value":"ginabetz75@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and Control server in default config",
+                "timestamp":"1483886151",
+                "type":"ip-dst",
+                "value":"104.152.187.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and Control server",
+                "timestamp":"1483886192",
+                "type":"url",
+                "value":"104.152.187.66/updates/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"zip file of the github master branch",
+                "timestamp":"1483886741",
+                "type":"malware-sample",
+                "value":"fancybear-master.zip|670c75b0c372cf8fd7da2d887a49110c",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"zip file of the github master branch",
+                "timestamp":"1483886743",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"zip file of the github master branch",
+                "timestamp":"1483886744",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1483946711",
+                "type":"url",
+                "value":"http://trasitionmail.com/mail2",
+                "to_ids":true
+            }
+        ]
+    }
+}

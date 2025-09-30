@@ -1,0 +1,471 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2015-01-20",
+        "published":true,
+        "info":"OSINT  Analysis of Project Cobra Another extensible framework used by the Uroburosâ€™ actors from Gdata",
+        "publish_timestamp":"1498163570",
+        "timestamp":"1498163317",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:green"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Turla Group\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826680",
+                "type":"link",
+                "value":"https://blog.gdatasoftware.com/blog/article/analysis-of-project-cobra.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826723",
+                "type":"text",
+                "value":"Cobra",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826724",
+                "type":"text",
+                "value":"Agent.BTZ",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826724",
+                "type":"text",
+                "value":"Carbon",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826724",
+                "type":"text",
+                "value":"Uroburos",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826746",
+                "type":"text",
+                "value":"Snake",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421826746",
+                "type":"text",
+                "value":"Turla",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421826769",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"Gdata",
+                "timestamp":"1421826816",
+                "type":"text",
+                "value":"Backdoor.TurlaCarbon.A",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"Gdata",
+                "timestamp":"1421826816",
+                "type":"text",
+                "value":"Win32.Trojan.Cobra.B",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"",
+                "timestamp":"1421826841",
+                "type":"text",
+                "value":"f:\\Workshop\\Projects\\cobra\\carbon_system\\x64\\Release\\carbon_system.pdb",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Randomly choosen from one of the three",
+                "timestamp":"1421826889",
+                "type":"filename",
+                "value":"ipvpn.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Randomly choosen from one of the three",
+                "timestamp":"1421826889",
+                "type":"filename",
+                "value":"srsvc.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Randomly choosen from one of the three",
+                "timestamp":"1421826889",
+                "type":"filename",
+                "value":"kmsvc.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827005",
+                "type":"comment",
+                "value":"Services names randomly choosen to match the dropped files among: ipvpn, srservice and hkmsvc.\r\nService display names and service descriptions are available in the blog post.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1421827017",
+                "type":"comment",
+                "value":"Data entered by David AndrÃ©",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827084",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827101",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827145",
+                "type":"mutex",
+                "value":"Global\\MSCTF.Shared.MUTEX.zRX",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827145",
+                "type":"mutex",
+                "value":"Global\\DBWindowsBase",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827146",
+                "type":"mutex",
+                "value":"Global\\IEFrame.LockDefaultBrowser",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827146",
+                "type":"mutex",
+                "value":"Global\\WinSta0_DesktopSessionMut",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827146",
+                "type":"mutex",
+                "value":"Global\\{5FA3BC02-920F-D42A-68BC-04F2A75BE158}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827146",
+                "type":"mutex",
+                "value":"Global\\SENS.LockStarterCacheResource",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827146",
+                "type":"mutex",
+                "value":"Global\\ShimSharedMemoryLock",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"bootmisc.sdi",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"C_56743.NLS",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"b9s3coff.ax",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"a67ncodc.ax",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"vndkrmn.dic",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"qavsrc.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"miniport.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"asmcerts.rs",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827225",
+                "type":"filename",
+                "value":"getcert.rs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised websites using a previously vulnerable wordpress. All patched and cleaned up at blog post publication time.",
+                "timestamp":"1421827375",
+                "type":"hostname",
+                "value":"soheylistore.ir",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised websites using a previously vulnerable wordpress. All patched and cleaned up at blog post publication time.",
+                "timestamp":"1421827375",
+                "type":"hostname",
+                "value":"tazohor.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised websites using a previously vulnerable wordpress. All patched and cleaned up at blog post publication time.",
+                "timestamp":"1421827375",
+                "type":"hostname",
+                "value":"jucheafrica.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised websites using a previously vulnerable wordpress. All patched and cleaned up at blog post publication time.",
+                "timestamp":"1421827375",
+                "type":"hostname",
+                "value":"61paris.fr",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1421827440",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827483",
+                "type":"hostname",
+                "value":"www.google.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827483",
+                "type":"hostname",
+                "value":"www.yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827483",
+                "type":"hostname",
+                "value":"www.bing.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827483",
+                "type":"hostname",
+                "value":"update.microsoft.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827483",
+                "type":"hostname",
+                "value":"windowsupdate.microsoft.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Internet connectivity check",
+                "timestamp":"1421827484",
+                "type":"hostname",
+                "value":"microsoft.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Could be used to create an IDS signature",
+                "timestamp":"1421827547",
+                "type":"url",
+                "value":"http://%s/%s?uid=%d&context=%s&mode=text&data=%s",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The orchestrator creates two named pipes in order to communicate with stage 3 or to receive messages from an external machine",
+                "timestamp":"1421829866",
+                "type":"named pipe",
+                "value":"\\\\.\\\\pipe\\sdlrpc",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The orchestrator creates two named pipes in order to communicate with stage 3 or to receive messages from an external machine",
+                "timestamp":"1421829866",
+                "type":"named pipe",
+                "value":"\\\\.\\\\pipe\\comnap",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 554450c1ecb925693fedbb9e56702646)",
+                "timestamp":"1455836158",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via e6d1dcc6c2601e592f2b03f35b06fa8f)",
+                "timestamp":"1455836160",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 43e896ede6fe025ee90f7f27c6d376a4)",
+                "timestamp":"1455836161",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via cb1b68d9971c2353c2d6a8119c49b51f)",
+                "timestamp":"1455836163",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 554450c1ecb925693fedbb9e56702646)",
+                "timestamp":"1455836159",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via e6d1dcc6c2601e592f2b03f35b06fa8f)",
+                "timestamp":"1455836160",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 43e896ede6fe025ee90f7f27c6d376a4)",
+                "timestamp":"1455836162",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via cb1b68d9971c2353c2d6a8119c49b51f)",
+                "timestamp":"1455836164",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

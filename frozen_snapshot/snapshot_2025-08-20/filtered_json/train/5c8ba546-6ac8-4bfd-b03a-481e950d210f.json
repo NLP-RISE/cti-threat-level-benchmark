@@ -1,0 +1,111 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-03-15",
+        "published":true,
+        "info":"Fake invoice (per postal mail)",
+        "publish_timestamp":"1552660097",
+        "timestamp":"1552659324",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"scam\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Company sending fake invoice (claiming to be CEBIT related)",
+                "description":"An object to describe a legal entity.",
+                "meta-category":"misc",
+                "name":"legal-entity",
+                "timestamp":"1552659324",
+                "Attribute":[
+                    {
+                        "category":"Person",
+                        "comment":"",
+                        "timestamp":"1552658620",
+                        "type":"phone-number",
+                        "value":"+34917728032",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658620",
+                        "type":"text",
+                        "value":"ES B-87371464",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658620",
+                        "type":"text",
+                        "value":"Fairs & Business",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658620",
+                        "type":"text",
+                        "value":"DirectPublisher, S.L.U.",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object to describe a geographic location.",
+                "meta-category":"misc",
+                "name":"geolocation",
+                "timestamp":"1552658495",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658495",
+                        "type":"text",
+                        "value":"WGS84 EPSG:4326",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658495",
+                        "type":"text",
+                        "value":"Madrid",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658495",
+                        "type":"text",
+                        "value":"E-28010",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552658496",
+                        "type":"text",
+                        "value":"Eloy Gonzalo, 27",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

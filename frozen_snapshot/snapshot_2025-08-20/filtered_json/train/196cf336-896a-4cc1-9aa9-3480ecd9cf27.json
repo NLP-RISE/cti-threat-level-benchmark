@@ -1,0 +1,381 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-03-16",
+        "published":true,
+        "info":"BatLoader Continues to Abuse Google Search Ads to Deliver Vidar Stealer and Ursnif",
+        "publish_timestamp":"1713171981",
+        "timestamp":"1679499354",
+        "Tag":[
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"c\""
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"3\""
+            },
+            {
+                "name":"Ursnif"
+            },
+            {
+                "name":"Vidar"
+            },
+            {
+                "name":"VidarStealer"
+            },
+            {
+                "name":"batloader"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"Python"
+            },
+            {
+                "name":"stone:malware-categorization=\"Loader\""
+            },
+            {
+                "name":"malware_advertising"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Traffic Capture or Redirection - T1410\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command and Scripting Interpreter - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Ursnif - S0386\""
+            },
+            {
+                "name":"misp-galaxy:sigma-rules=\"Ursnif\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"vidar\""
+            },
+            {
+                "name":"misp-galaxy:stealer=\"Vidar\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Python - T1059.006\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Vidar",
+                "timestamp":"1679316559",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ursnif",
+                "timestamp":"1679316560",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ursnif",
+                "timestamp":"1679316560",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AdobeSetup.msi (BatLoader)",
+                "timestamp":"1679316560",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AdobeSetup.msi (BatLoader)",
+                "timestamp":"1679316560",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BatLoader C2",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"shvarcnegerhistory.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"BatLoader C2",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"pixelarmada.su",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"uelcoskdi.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316825",
+                "type":"domain",
+                "value":"iujdhsndjfks.ru",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ursnif C2",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"isoridkf.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"gameindikdowd.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316831",
+                "type":"domain",
+                "value":"jhgfdlkjhaoiu.su",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"reggy506.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679316560",
+                "type":"domain",
+                "value":"reggy914.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316630",
+                "type":"domain",
+                "value":"chatgpt-t.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"zoomvideor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"adobe-l.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"freecad-l.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"microso-t.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"spotify-uss.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"quickbooks-q.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"java-s.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"adobe-e.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"anydesk-o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"anydesk-r.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"java-r.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"tableau-r.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"java-a.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"basecamp-a.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"adobe-a.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"visualstudio-t.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"openoffice-a.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"bitwarden-t.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Suspected BatLoader Domains Registered in February 2023",
+                "timestamp":"1679316631",
+                "type":"domain",
+                "value":"gimp-t.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An annotation object allowing analysts to add annotations, comments, executive summary to a MISP event, objects or attributes.",
+                "meta-category":"misc",
+                "name":"annotation",
+                "timestamp":"1679493556",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1679316932",
+                        "type":"link",
+                        "value":"https://www.esentire.com/blog/batloader-continues-to-abuse-google-search-ads-to-deliver-vidar-stealer-and-ursnif",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1679493556",
+                        "type":"text",
+                        "value":"In December, we published a summary of BatLoader activity whereby Google Search Ads were used to impersonate software such as WinRAR to deliver malicious Windows Installer files. The installer files contained custom action commands which used PowerShell to download and execute payloads (Redline Stealer, Ursnif, etc.) hosted on legitimate websites.\r\n\r\nThroughout February 2023, TRU has observed a series of newly registered websites impersonating various applications and brands. Included among these are:\r\n\r\nChatGPT (chatgpt-t[.]com)\r\nZoom (zoomvideor[.]com)\r\nSpotify (spotify-uss[.]com)\r\nTableau (tableau-r[.]com)\r\nAdobe (adobe-l[.]com)\r\nIn addition to comparable domain registration attributes, these websites tend to follow a similar naming convention where one or more characters are appended to the impersonated brand name (e.g., adobe-l[.]com vs adobe.com). These sites were used to host imposter download pages and all likely stem from malicious advertisements on Google Search Ads. A more complete list can be found at the end of this post.\r\n\r\nBatLoader continues to see changes and improvement since it first emerged in 2022. Recent samples analyzed by TRU utilize Windows Installer files masquerading as the above applications to launch embedded Python scripts.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1679316932",
+                        "type":"text",
+                        "value":"Introduction",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

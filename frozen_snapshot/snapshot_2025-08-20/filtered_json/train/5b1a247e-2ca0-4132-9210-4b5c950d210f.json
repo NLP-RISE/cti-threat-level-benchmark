@@ -1,0 +1,333 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-08",
+        "published":true,
+        "info":"OSINT - PLEAD Downloader Used by BlackTech",
+        "publish_timestamp":"1528904315",
+        "timestamp":"1528891759",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"RemoteAccess\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"PLEAD Downloader\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528440980",
+                "type":"link",
+                "value":"https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528440988",
+                "type":"text",
+                "value":"In a past article, we introduced TSCookie, malware which seems to be used by BlackTech[1]. It has been revealed that this actor also uses another type of malware â€œPLEADâ€. (â€œPLEADâ€ is referred to both as a name of malware including TSCookie and its attack campaign [2]. In this article, we refer to â€œPLEADâ€ as a type malware apart from TSCookie.) PLEAD has two kinds â€“ RAT (Remote Access Tool) and downloader. The RAT operates based on commands that are provided from C&C servers.ã€€(Please refer to a blog post from LAC for more information [3].) On the other hand, PLEAD downloader downloads modules and runs it on memory in the same way as TSCookie does.\r\n\r\nThis article presents behaviour of PLEAD downloader in detail.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1528443752",
+                "type":"hostname",
+                "value":"em.totalpople.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1528443753",
+                "type":"hostname",
+                "value":"office.panasocin.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1528443754",
+                "type":"hostname",
+                "value":"gstrap.jkub.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1528443755",
+                "type":"hostname",
+                "value":"woc.yasonbin.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C Servers",
+                "timestamp":"1528443756",
+                "type":"ip-dst",
+                "value":"210.71.209.206",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1528440408",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528440408",
+                        "type":"text",
+                        "value":"New Blog Post: PLEAD Downloader Used by BlackTech ^ST",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528440408",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1528440408",
+                        "type":"url",
+                        "value":"https://mobile.twitter.com/jpcert_en/status/1004964546195279872",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1528440409",
+                        "type":"url",
+                        "value":"https://t.co/keNYZ2kyzs?amp=1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528440409",
+                        "type":"url",
+                        "value":"https://blog.jpcert.or.jp/2018/06/plead-downloader-used-by-blacktech.html",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528440410",
+                        "type":"datetime",
+                        "value":"2018-06-08T07:53:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528440410",
+                        "type":"text",
+                        "value":"@jpcert_en",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"PLEAD",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528442218",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528442218",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528442219",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"PLEAD",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528442279",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528442279",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528442280",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"PLEAD",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528442988",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528442989",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528442990",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"PLEAD",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528443127",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528443128",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528443128",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"PLEAD Module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528443542",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1528443542",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1528443543",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528874969"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528874967"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528874971"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528874969"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528874973"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528874972"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528874976"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528874974"
+            }
+        ]
+    }
+}

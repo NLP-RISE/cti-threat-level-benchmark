@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-07-15",
+        "published":true,
+        "info":"Malspam 2016-07-15 .zip/.jse",
+        "publish_timestamp":"1468580742",
+        "timestamp":"1468580293",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1468580279",
+                "type":"url",
+                "value":"http://cosdoshhp.top/log.php?f=2.gif",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"download location",
+                "timestamp":"1468580280",
+                "type":"filename",
+                "value":"cosdoshhp.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1468580280",
+                "type":"ip-dst",
+                "value":"216.170.117.124",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1468580281",
+                "type":"ip-dst",
+                "value":"104.238.213.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1468580293",
+                "type":"user-agent",
+                "value":"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.3; Trident/7.0; .NET4.0E; .NET4.0C)",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".jse example",
+                "timestamp":"1468580410",
+                "type":"malware-sample",
+                "value":"7.jse|156cd83b6ac6088eb8f1c9ef9a5b2603",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".jse example",
+                "timestamp":"1468580411",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".jse example",
+                "timestamp":"1468580412",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1468580435",
+                "type":"malware-sample",
+                "value":"b1|701605e224d2455bd30a2a373a29bea8",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1468580436",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1468580437",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

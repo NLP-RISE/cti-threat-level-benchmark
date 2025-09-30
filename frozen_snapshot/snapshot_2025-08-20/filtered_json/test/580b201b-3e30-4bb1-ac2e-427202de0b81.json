@@ -1,0 +1,142 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-10-22",
+        "published":true,
+        "info":"OSINT -  The new .LNK between spam and Locky infection",
+        "publish_timestamp":"1477124543",
+        "timestamp":"1477124343",
+        "Tag":[
+            {
+                "name":"dnc:malware-type=\"Ransomware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"ransomware\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477124143",
+                "type":"comment",
+                "value":"Just when it seems the Ransom:Win32/Locky activity has slowed down, our continuous monitoring of the ransomware family reveals a new workaround that the authors might be using to keep it going.\r\n\r\nThe decline in Locky activity can be attributed to the slowdown of detections of Nemucod, which Locky uses to infect computers. Nemucod is a .wsf file contained in .zip attachments in spam email (see our Nemucod WSF blog for details). Locky has also been previously distributed by exploit kits and spam email attachments with other extensions such as .js, .hta, etc.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477124156",
+                "type":"link",
+                "value":"https://blogs.technet.microsoft.com/mmpc/2016/10/19/the-new-lnk-between-spam-and-locky-infection/",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1477124174",
+                "type":"text",
+                "value":"TrojanDownloader:PowerShell/Ploprolo.A",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hard coded C&C addresses used",
+                "timestamp":"1477124210",
+                "type":"ip-dst",
+                "value":"93.170.104.126",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hard coded C&C addresses used",
+                "timestamp":"1477124235",
+                "type":"ip-dst",
+                "value":"185.46.11.73",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"TrojanDownloader:PowerShell/Ploprolo.A",
+                "timestamp":"1477124273",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Ransom:Win32/Locky",
+                "timestamp":"1477124302",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"TrojanDownloader:PowerShell/Ploprolo.A - Xchecked via VT: 3dcf2f116af0a548e88022baa1f41f61f362ae39",
+                "timestamp":"1477124343",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"TrojanDownloader:PowerShell/Ploprolo.A - Xchecked via VT: 3dcf2f116af0a548e88022baa1f41f61f362ae39",
+                "timestamp":"1477124343",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"TrojanDownloader:PowerShell/Ploprolo.A - Xchecked via VT: 3dcf2f116af0a548e88022baa1f41f61f362ae39",
+                "timestamp":"1477124344",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a393cf8d2ec5811d976cff0972069d73a98d33f6d3004b8f11beaf21086ac848/analysis/1477114649/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Ransom:Win32/Locky - Xchecked via VT: c1ee00884c0f872767992d5348e4de576935d8da",
+                "timestamp":"1477124344",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Ransom:Win32/Locky - Xchecked via VT: c1ee00884c0f872767992d5348e4de576935d8da",
+                "timestamp":"1477124344",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ransom:Win32/Locky - Xchecked via VT: c1ee00884c0f872767992d5348e4de576935d8da",
+                "timestamp":"1477124344",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7953b0dbd410a2e216b45671be48a48f472e74fb1a8049afdacaade02e63709b/analysis/1476852064/",
+                "to_ids":false
+            }
+        ]
+    }
+}

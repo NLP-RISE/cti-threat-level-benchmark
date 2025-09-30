@@ -1,0 +1,324 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-04-07",
+        "published":true,
+        "info":"OSINT - New Matrix Ransomware Variants Installed Via Hacked Remote Desktop Services",
+        "publish_timestamp":"1523391310",
+        "timestamp":"1523391291",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Matrix\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523391244",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/new-matrix-ransomware-variants-installed-via-hacked-remote-desktop-services/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523391244",
+                "type":"comment",
+                "value":"Two new Matrix Ransomware variants were discovered this week by MalwareHunterTeam that are being installed through hacked Remote Desktop services. While both of these variants encrypt your computer's files, one is a bit more advanced with more debugging messages and the use of cipher to wipe free space.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391244",
+                "type":"filename",
+                "value":"!ReadMe_To_Decrypt_Files!.rtf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391245",
+                "type":"email-src",
+                "value":"files4463@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391245",
+                "type":"email-src",
+                "value":"files4463@protonmail.ch",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391246",
+                "type":"email-src",
+                "value":"files4463@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"!ReadMe_To_Decrypt_Files!.rtf ransomnote",
+                "timestamp":"1523391246",
+                "type":"attachment",
+                "value":"ransom-note.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"ransom background",
+                "timestamp":"1523391246",
+                "type":"attachment",
+                "value":"background.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391247",
+                "type":"filename",
+                "value":"#Decrypt_Files_ReadMe#.rtf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391247",
+                "type":"email-src",
+                "value":"restorfile@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391247",
+                "type":"email-src",
+                "value":"restorefile@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523391248",
+                "type":"email-src",
+                "value":"restorefile@qq.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"ransomnote wallpaper",
+                "timestamp":"1523391248",
+                "type":"attachment",
+                "value":"wallpaper.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523280189",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523280190",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523391249",
+                "type":"link",
+                "value":"http://id-ransomware.blogspot.lu/2016/12/matrix-ransomware.html",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523307058",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307055",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307056",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307056",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523307057",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523307057",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/a26087bb88d654cd702f945e43d7feebd98cfc50531d2cdc0afa2b0437d25eea/analysis/1523287281/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523307057",
+                        "type":"text",
+                        "value":"51/65",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523307057",
+                        "type":"datetime",
+                        "value":"2018-04-09T15:21:21",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523307061",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307058",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307058",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523307059",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523307059",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523307059",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/996ea85f12a17e8267dcc32eae9ad20cff44115182e707153006162711fbe3c9/analysis/1523284651/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523307060",
+                        "type":"text",
+                        "value":"52/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523307060",
+                        "type":"datetime",
+                        "value":"2018-04-09T14:37:31",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1523363058",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1523363059",
+                        "type":"domain",
+                        "value":"murik.xyz",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1523363059",
+                        "type":"ip-dst",
+                        "value":"212.8.244.111",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1523363060",
+                        "type":"port",
+                        "value":"80",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

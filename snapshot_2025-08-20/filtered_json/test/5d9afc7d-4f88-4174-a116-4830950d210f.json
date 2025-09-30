@@ -1,0 +1,531 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-10-07",
+        "published":false,
+        "info":"SUPPLY CHAIN ATTACKS",
+        "publish_timestamp":"0",
+        "timestamp":"1570699283",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Valid Accounts - T1078\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1192\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Account Manipulation - T1098\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Create Account - T1136\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Deployment Software - T1017\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Wmiexec\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"MimiKatz\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Mimikatz\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Mimikatz - S0002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Mimikatz\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Mimikatz - S0002\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Mimikatz\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"CertMig\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Netscan\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"ProcDump\""
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570439750",
+                "type":"snort",
+                "value":"alerttcpanyany->anyany(msg:\"Non-StdTCPClientTrafficcontains'HX1|3a|''HX2|3a|''HX3|3a|''HX4|3a|'(PLUGXVariant)\";sid:XX;rev:1;flow:established,to_server;content:\"Accept|3a202a2f2a|\";nocase;content:\"HX1|3a|\";distance:0;within:6;fast_pattern;content:\"HX2|3a|\";nocase;distance:0;content:\"HX3|3a|\";nocase;distance:0;content:\"HX4|3a|\";nocase;distance:0;classtype:nonstd-tcp;priority:X;)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570440479",
+                "type":"snort",
+                "value":"alerttcpanyany->anyany(msg:\"Non-StdTCPClientTrafficcontains'X-Session|3a|''X-Status|3a|''X-Size|3a|''X-Sn|3a|'(PLUGX)\";sid:XX;rev:1;flow:established,to_server;content:\"X-Session|3a|\";nocase;fast_pattern;content:\"X-Status|3a|\";nocase;distance:0;content:\"X-Size|3a|\";nocase;distance:0;content:\"X-Sn|3a|\";nocase;distance:0;classtype:nonstd-tcp;priority:X;)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570441901",
+                "type":"snort",
+                "value":"alerttcpanyany->anyany(msg:\"Non-StdTCPClientTrafficcontains'MJ1X|3a|''MJ2X|3a|''MJ3X|3a|''MJ4X|3a|'(PLUGXVariant)\";sid:XX;rev:1;flow:established,to_server;content:\"MJ1X|3a|\";nocase;fast_pattern;content:\"MJ2X|3a|\";nocase;distance:0;content:\"MJ3X|3a|\";nocase;distance:0;content:\"MJ4X|3a|\";nocase;distance:0;classtype:nonstd-tcp;priority:X;)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570441929",
+                "type":"snort",
+                "value":"alerttcpanyany->anyany(msg:\"Non-StdTCPClientTrafficcontains'Cookies|3a|''Sym1|2e|''|2c|Sym2|2e|''|2c|Sym3|2e|''|2c|Sym4|2e|'(ChchesVariant)\";sid:XX;rev:1;flow:established,to_server;content:\"Cookies|3a|\";nocase;content:\"Sym1|2e|0|3a|\";nocase;distance:0;fast_pattern;content:\"|2c|Sym2|2e|\";nocase;distance:0;content:\"|2c|Sym3|2e|\";nocase;distance:0;content:\"|2c|Sym4|2e|\";nocase;distance:0;classtype:nonstd-tcp;priority:X;)",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.134.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.136.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.144.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.145.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.147.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.41.180.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.136.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.140.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.141.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.142.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.143.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.146.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.148.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.149.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.150.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.151.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.152.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.153.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451198",
+                "type":"ip-dst",
+                "value":"45.56.154.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"45.56.155.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"45.56.156.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"45.56.157.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"45.56.158.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"45.56.183.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"46.244.28.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"64.64.108.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"64.64.123.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"85.203.23.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.143.84.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.143.92.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.143.95.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.194.203.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.194.218.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.194.220.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.238.45.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.238.51.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.238.58.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.238.59.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.238.62.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.37.30.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"104.37.31.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"157.97.121.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.239.195.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.239.197.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.239.198.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.239.199.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.239.207.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"173.244.55.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"185.198.240.0",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1570451199",
+                "type":"ip-dst",
+                "value":"191.101.252.0",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1570690457",
+                "type":"attachment",
+                "value":"CERTFR-2019-CTI-005.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1570699283",
+                "type":"link",
+                "value":"https://www.cert.ssi.gouv.fr/cti/CERTFR-2019-CTI-005/",
+                "to_ids":false
+            }
+        ]
+    }
+}

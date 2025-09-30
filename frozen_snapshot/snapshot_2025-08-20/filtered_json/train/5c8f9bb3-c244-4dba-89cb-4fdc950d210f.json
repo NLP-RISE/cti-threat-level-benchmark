@@ -1,0 +1,206 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-03-16",
+        "published":true,
+        "info":"OSINT - Spam Warns about Boeing 737 Max Crashes While Pushing Malware",
+        "publish_timestamp":"1559825436",
+        "timestamp":"1559823829",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"spam\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:android=\"Adwind\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"AdWind\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"jRAT - S0283\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"Adwind RAT\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"H-w0rm\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"H-worm\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Adwind\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1552915413",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/spam-warns-about-boeing-737-max-crashes-while-pushing-malware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1552915439",
+                "type":"text",
+                "value":"A new malspam campaign is underway that is trying to utilize the tragic Boeing 737 Max crashes as a way to spread malware on a recipient's computer. These spam emails pretend to be leaked documents about imminent crashes that the sender states should be reviewed and shared with loved ones to warn them.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1552919359",
+                "type":"attachment",
+                "value":"D1sqKsyU0AA0HeV.jpg:large.jpeg",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1552920445",
+                "type":"domain",
+                "value":"pm2bitcoin.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1552920445",
+                "type":"domain",
+                "value":"brothersjoy.nl",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1552917017",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"text",
+                        "value":"Attackers are using topics regarding #Boeing 737 MAX 8 crash and seems an email account from @IsgecPresses has been abused to deliver the mails. The attachment is a JAR file which drops H-WORM RAT. C2: pm2bitcoin[.]com brothersjoy[.]nl https://www.virustotal.com/#/file/0d53ae6b78d37bff74cd6458624a9157b1a7d60d5722f9c4ebc83e5a7a058463/detection",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"url",
+                        "value":"https://twitter.com/360TIC/status/1106524508612026369",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"text",
+                        "value":"@IsgecPresses",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"url",
+                        "value":"https://t.co/qs6XhKMU3k",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"url",
+                        "value":"https://www.virustotal.com/#/file/0d53ae6b78d37bff74cd6458624a9157b1a7d60d5722f9c4ebc83e5a7a058463/detection",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"datetime",
+                        "value":"2019-03-15T04:56:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552917017",
+                        "type":"text",
+                        "value":"360TIC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1552920733",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1552920733",
+                        "type":"email-body",
+                        "value":"Greetings \r\n\r\nI believe you have heard about the latest crash Boeing 737 MAX 8 which happen on sunday 10 march 2019, All  passengers and crew were killed in the accident\r\n\r\nEthiopian Airlines Flight ET302 from Addis Ababa, Ethiopia, to Nairobi, Kenya, crashed shortly after takeoff \r\n\r\nThe dead were of 35 different nationalities, including eight Americans.\r\n\r\nOn 29 October 2018, the Boeing 737 MAX 8 operating the route crashed into the Java Sea 12 minutes after takeoff.\r\n\r\nAll 189 passengers and crew were killed in the accident.\r\n\r\nnote: there was a leak information from Darkweb which listed all the airline companies that will go down soon.\r\n\r\nkindly notify your love ones about the informations on these file.\r\n \r\nRegards\r\n\r\nJoshua Berlinger \r\nprivate inteligent analyst",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1552920733",
+                        "type":"email-attachment",
+                        "value":"MP4_142019.jar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1552920733",
+                        "type":"email-src",
+                        "value":"info@isgec.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1552920733",
+                        "type":"email-subject",
+                        "value":"Fwd: Airlines plane crash Boeing 737 Max 8",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

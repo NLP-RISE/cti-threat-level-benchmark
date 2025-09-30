@@ -1,0 +1,682 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-10-02",
+        "published":true,
+        "info":"OSINT - CIG Circular 66  â€“ FASTCash  ATM Cash  Out Campaign",
+        "publish_timestamp":"1538565940",
+        "timestamp":"1538565800",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1538504180",
+                "type":"text",
+                "value":"Treasury has identified a sophisticated cyber-enabled  ATM cash out campaign we are calling  FASTCash.  FASTCash  has been active since late 2016 targeting banks in Africa and Asia to  remotely  compromise payment  switch  application servers within banks to facilitate fraudulent transactions, primarily involving ATMs to steal cash equivalent to tens of millions of dollars",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1538504215",
+                "type":"attachment",
+                "value":"CIG Circular 66 - FASTCash Campaign.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1538504582",
+                "type":"ip-dst",
+                "value":"75.99.63.27",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"In addition to the analysis of the artifacts  above, t he  below  IP addresses may be associated with the  FASTCash Camp aign . 3  Mail servers in the compromised network  made reverse proxy connections to  these IPs  but we do not have specific  date and time stamps or other information to associate them with  malicious activity :",
+                "timestamp":"1538505033",
+                "type":"ip-dst",
+                "value":"167.114.33.205",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"In addition to the analysis of the artifacts  above, t he  below  IP addresses may be associated with the  FASTCash Camp aign . 3  Mail servers in the compromised network  made reverse proxy connections to  these IPs  but we do not have specific  date and time stamps or other information to associate them with  malicious activity :",
+                "timestamp":"1538505033",
+                "type":"ip-dst",
+                "value":"180.235.133.108",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"In addition to the analysis of the artifacts  above, t he  below  IP addresses may be associated with the  FASTCash Camp aign . 3  Mail servers in the compromised network  made reverse proxy connections to  these IPs  but we do not have specific  date and time stamps or other information to associate them with  malicious activity :",
+                "timestamp":"1538505034",
+                "type":"ip-dst",
+                "value":"219.255.99.9",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Themida\r\npacked 32\r\n-\r\nbit Windows executable designed to unpack itself and run a service \r\nproxy module in memory. The proxy module accepts command line parameters and is \r\ndesigned to modify the Windows Firewall on the compromised system to allow \r\nincoming connections an\r\nd function as a backdoor. The malware listens on a specified \r\nport for incoming traffic containing instructions to perform any of the following \r\nfunctions: r\r\netrieve system information; \r\nexecute command\r\ns;   execute \r\nand terminate \r\nprocess\r\nes; \r\nsearch for files\r\n; read, write, and delete files\r\n; download and upload files\r\n; and, \r\ncompress and decompress files\r\n. ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504510",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504316",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504317",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Themida packed 64\r\n-\r\nbit Windows executable with the same functionality as \r\n5cfa1c2cb430bec721063e3e2d144feb\r\n and is signed with a valid X509 certificate issues \r\nto â€œA\r\n-Z Hire Ltdâ€ with serial number:",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504375",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504375",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504376",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"x509 object describing a X.509 certificate",
+                "meta-category":"network",
+                "name":"x509",
+                "timestamp":"1538504487",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504487",
+                        "type":"x509-fingerprint-md5",
+                        "value":"ecafe723703614e0a4fb5c2a8f7da018",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"32\r\n-\r\nbit Windows \r\nexecutable designed to execute as a service named â€œhelpsvcsâ€. The \r\nmalware binds and listens on port 443 for incoming connections, providing remote \r\ncommand and control capabilities through this connection. The malware uses the RC4 \r\nencryption algorithm to en\r\ncrypt and decrypt a portion of its communications and has \r\nthe ability to exfiltrate data, install and run secondary payloads, and provided proxy \r\nservices on the compromised system. This malware can perform the following \r\nfunctions based on specified command\r\ns from a remote operator: retrieve system \r\ninformation\r\n; execute command\r\ns;   execute \r\nand terminate process\r\nes; \r\nsearch for files\r\n; \r\nread, write, and delete files\r\n; download and upload files\r\n; compress and decompress \r\nfiles\r\n; and, change the listening port for Remove  Desktop via registry modification.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504618",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504561",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504561",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious 64\r\n-\r\nbit Windows Dynamic Link Library designed to runs as a Windows services \r\nunder â€œsvchost.exeâ€ and load an RC4 decrypted payload into memory.  ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504773",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504774",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504776",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AIX\r\nexecutable intended for a proprietary UNIX operating system developed by IBM. \r\nThis\r\n application injects a library into a currently running process. ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504825",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504826",
+                        "type":"filename",
+                        "value":"Injection_API_executable_e",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504827",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504827",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AIX executable, intended for a proprietary UNIX operating system developed by IBM\r\nand is designed to update a proprietary data structure on a\r\n UNIX system known as \r\n\"PVPA.\"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504872",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504872",
+                        "type":"filename",
+                        "value":"inject_api",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504872",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504873",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AIX executable, intended for a proprietary UNIX operating system developed by IBM. \r\nThis file is a library application \r\ndesigned to provide export functions. These functions \r\nallow an application to perform transactions on financial systems using the\r\n ISO\r\n 8583 \r\nstandard.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504922",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504922",
+                        "type":"filename",
+                        "value":"Lost_File1_so_file",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504922",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504923",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AIX executable, intended for a proprietary UNIX operating system developed by IBM. \r\nThe application provides several\r\n exported \r\nmethods permitting the interaction with \r\nfinancial systems that utilize the ISO\r\n 8583 standard.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538504964",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504964",
+                        "type":"filename",
+                        "value":"2.so",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538504964",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538504965",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"COFF executable, a format for executable, object code, and shared libraries used on\r\nUNIX\r\n systems. The executable provides several exported methods that enable \r\ninteractions with financial systems utilizing the ISO \r\n8583 \r\nstandard.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505003",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505003",
+                        "type":"filename",
+                        "value":"Lost_File.so",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505003",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505003",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505125",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505122",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505122",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505123",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538505123",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505123",
+                        "type":"datetime",
+                        "value":"2017-11-15T12:57:52",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538505124",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ca9ab48d293cc84092e8db8f0ca99cb155b30c61d32a1da7cd3687de454fe86c/analysis/1510750672/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505124",
+                        "type":"text",
+                        "value":"0/59",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505127",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505124",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505125",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505125",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538505126",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505126",
+                        "type":"datetime",
+                        "value":"2018-10-01T18:10:22",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538505126",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/10ac312c8dd02e417dd24d53c99525c29d74dcbc84730351ad7a4e0a4b1a0eba/analysis/1538417422/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505127",
+                        "type":"text",
+                        "value":"0/58",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505130",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505127",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505127",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505128",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538505128",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505128",
+                        "type":"datetime",
+                        "value":"2018-09-05T03:11:47",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538505129",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/a9bc09a17d55fc790568ac864e3885434a43c33834551e027adb1896a463aafc/analysis/1536117107/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505129",
+                        "type":"text",
+                        "value":"34/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505132",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505129",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505130",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505130",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538505131",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505131",
+                        "type":"datetime",
+                        "value":"2018-09-28T04:05:30",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538505131",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/820ca1903a30516263d630c7c08f2b95f7b65dffceb21129c51c9e21cf9551c6/analysis/1538107530/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505132",
+                        "type":"text",
+                        "value":"41/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538505135",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505132",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505132",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538505133",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538505133",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505133",
+                        "type":"datetime",
+                        "value":"2018-09-28T04:06:38",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538505134",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/4a740227eeb82c20286d9c112ef95f0c1380d0e90ffb39fc75c8456db4f60756/analysis/1538107598/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538505134",
+                        "type":"text",
+                        "value":"36/69",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

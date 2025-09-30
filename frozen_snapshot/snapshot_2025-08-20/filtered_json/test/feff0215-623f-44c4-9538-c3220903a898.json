@@ -1,0 +1,594 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-02-20",
+        "published":true,
+        "info":"Astaroth, Mekotio & Ousaban abusing Google Cloud Run in LATAM-focused malware campaigns",
+        "publish_timestamp":"1710327699",
+        "timestamp":"1710327677",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Mekotio\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Ousaban\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Astaroth - S0373\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1710327256",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/google-cloud-run-abuse/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio MSI ZIP",
+                "timestamp":"1710327554",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio MSI",
+                "timestamp":"1710327554",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio MSI",
+                "timestamp":"1710327554",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth MSI ZIP",
+                "timestamp":"1710327554",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth MSI",
+                "timestamp":"1710327554",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"filename",
+                "value":"CustomAction.idt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"filename",
+                "value":"AutoIt3.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"filename",
+                "value":"sdk.log",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"filename",
+                "value":"dump.log",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Astaroth",
+                "timestamp":"1710327569",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio",
+                "timestamp":"1710327601",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio",
+                "timestamp":"1710327601",
+                "type":"filename",
+                "value":"Binary.tnqqhgm.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mekotio",
+                "timestamp":"1710327601",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ousaban",
+                "timestamp":"1710327621",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1710327631",
+                "type":"filename",
+                "value":"Binary.sknwvly.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"https://arr-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"https://storage.googleapis.com/alele/FAT.1705617082.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"https://portu-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"https://storage.googleapis.com/alele/Fat.184949849.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://avfa-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://factalia-ofh2cutija-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://gasgas-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://haergsd-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://jx-krrdbo6imq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://ptb-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://ptm-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://pto-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://w3iuwl.nextmax.my.id/?5/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?76849368130628733",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?39829895502632947",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?61694995802639066",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?41991463280678058",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?51999170290693658",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327651",
+                "type":"url",
+                "value":"http://wae4w.mariomanagement.biz.id/?75129547751613994",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"ip-dst",
+                "value":"34.135.1.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"arr-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"portu-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"xwago.creativeplus.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"wae4w.mariomanagement.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"h4aowa.mariostrategy.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"yaiinr.actiongroup.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"e0aonr.creativeplus.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"wiae5.marioadvisory.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"caiiaf.businesswise.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"2joafm.marioanalytics.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"nqaa8e.businesswise.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"nweow8.mariostrategy.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"wba0s.produtoeletro.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"4hawb.produtoeletro.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"cua3e.mariosolutions.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"eeiul.marioadvisory.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"kka5c.marioanalytics.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"w8oaa0.mariosolutions.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"0tuiwp.mariomanagement.biz.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"lwafa.actiongroup.my.id",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"avfa-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"factalia-ofh2cutija-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"gasgas-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"haergsd-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"jx-krrdbo6imq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"ptb-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"ptm-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"pto-wd3463btrq-uc.a.run.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware campaigns",
+                "timestamp":"1710327677",
+                "type":"hostname",
+                "value":"1.tcp.sa.ngrok.io",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,509 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-02-18",
+        "published":true,
+        "info":"Trickbot and AdFind Recon",
+        "publish_timestamp":"1582857378",
+        "timestamp":"1582857280",
+        "Tag":[
+            {
+                "name":"Banker: TrickBot"
+            },
+            {
+                "name":"tlp:green"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"enter.exe which loads Trickbot",
+                "timestamp":"1581993514",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/enter.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Any.Run sandbox run of enter.exe",
+                "timestamp":"1581993496",
+                "type":"link",
+                "value":"https://app.any.run/tasks/dc8771c7-04fd-47f5-b273-c8d433862c2e/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Login from this IP minutes before activity started",
+                "timestamp":"1581993689",
+                "type":"ip-src",
+                "value":"216.170.123.19",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trickbot C2",
+                "timestamp":"1581993826",
+                "type":"ip-dst",
+                "value":"195.133.145.31",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog write-up",
+                "timestamp":"1581994683",
+                "type":"link",
+                "value":"https://www.wilbursecurity.com/2020/02/trickbot-and-adfind-recon/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161536",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/socks.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161507",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/addUser.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161512",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/adf.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161566",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/AdFind.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161521",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/test_64.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1582161525",
+                "type":"url",
+                "value":"http://support-it.online/upl/data/test_32.exe",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"socks.exe",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992125",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"malware-sample",
+                        "value":"socks.exe|9efb4a465942dc094a5a57e055fd608a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"filename",
+                        "value":"socks.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992126",
+                        "type":"size-in-bytes",
+                        "value":"139264",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"test_32.exe",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992144",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992144",
+                        "type":"malware-sample",
+                        "value":"test_32.exe|538a9f7e97c6b02e3ecfc9f831ce600b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992145",
+                        "type":"filename",
+                        "value":"test_32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992145",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992145",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992145",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992145",
+                        "type":"size-in-bytes",
+                        "value":"122880",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Trickbot",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992167",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"malware-sample",
+                        "value":".exe|3694432ff283b6d928fc9d97e18dee92",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"filename",
+                        "value":".exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992168",
+                        "type":"size-in-bytes",
+                        "value":"307200",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AdFind",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992198",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"malware-sample",
+                        "value":"AdFind.exe|9b02dd2a1a15e94922be3f85129083ac",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"filename",
+                        "value":"AdFind.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992199",
+                        "type":"size-in-bytes",
+                        "value":"1394176",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"AdFind Recon Script",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992288",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"malware-sample",
+                        "value":"adf.bat|dbbdb5aa4a033fcae3b699e169706bfd",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"filename",
+                        "value":"adf.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992288",
+                        "type":"size-in-bytes",
+                        "value":"493",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Add User Script",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992305",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992310",
+                        "type":"malware-sample",
+                        "value":"addUser.bat|c872ffd205753b7331e18c96e5274393",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992316",
+                        "type":"filename",
+                        "value":"addUser.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992316",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992317",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992317",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992317",
+                        "type":"size-in-bytes",
+                        "value":"1785",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Trickbot",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581992354",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"malware-sample",
+                        "value":"dxgmtdk.exe|9efb4a465942dc094a5a57e055fd608a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"filename",
+                        "value":"dxgmtdk.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581992354",
+                        "type":"size-in-bytes",
+                        "value":"139264",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

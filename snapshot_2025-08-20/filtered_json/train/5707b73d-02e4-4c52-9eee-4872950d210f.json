@@ -1,0 +1,74 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-08",
+        "published":true,
+        "info":"OSINT - Locky: the encryptor taking the world by storm",
+        "publish_timestamp":"1544622808",
+        "timestamp":"1544622791",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Artifacts dropped",
+                "comment":"REG_SZ - Infection ID",
+                "timestamp":"1460123565",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Software\\Locky\\id",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"REG_BINARY - Public RSA key in MSBLOB format",
+                "timestamp":"1460123565",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Software\\Locky\\pubkey",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"REG_BINARY - Text shown to the victim",
+                "timestamp":"1460123565",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Software\\Locky\\paytext",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"REG_DWORD - Status (whether encryption is completed)",
+                "timestamp":"1460123566",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Software\\Locky\\completed",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1544604346",
+                "type":"link",
+                "value":"https://securelist.com/blog/research/74398/locky-the-encryptor-taking-the-world-by-storm/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1544604346",
+                "type":"comment",
+                "value":"In February 2016, the Internet was shaken by an epidemic caused by the new ransomware Trojan Locky (detected by Kaspersky Lab products as Trojan-Ransom.Win32.Locky). The Trojan has been actively propagating up to the present day. Kaspersky Lab products have reported attempts to infect users with the Trojan in 114 countries around the world.",
+                "to_ids":false
+            }
+        ]
+    }
+}

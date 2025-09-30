@@ -1,0 +1,152 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2018-04-07",
+        "published":true,
+        "info":"OSINT - Cisco IOS CVE-2018-0171 attack",
+        "publish_timestamp":"1523942198",
+        "timestamp":"1523942190",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"roughly-even-chance\""
+            },
+            {
+                "name":"estimative-language:confidence-in-analytic-judgment=\"moderate\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Network Service Scanning\""
+            },
+            {
+                "name":"cyber-threat-framework:Effect/Consequence=\"destroy-hardware-software-or-data\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523199647",
+                "type":"link",
+                "value":"https://otx.alienvault.com/pulse/5ac8c6bca1061f185097cdc6",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1523261978",
+                "type":"other",
+                "value":"cisco IOS config change",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523199898",
+                "type":"email-src",
+                "value":"usafreedom_jht@tutanota.com",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cisco IOS and IOS XE Software Smart Install Remote Code Execution Vulnerability",
+                "timestamp":"1523199752",
+                "type":"link",
+                "value":"https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180328-smi2",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523111354",
+                "type":"text",
+                "value":"cisco-sa-20180328-smi2",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523261877",
+                "type":"vulnerability",
+                "value":"CVE-2018-0171",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Attacked Router's Startup-Config Source: https://twitter.com/xnetua/status/982316233411325952",
+                "timestamp":"1523199814",
+                "type":"attachment",
+                "value":"startup-config.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1523261737",
+                "type":"target-location",
+                "value":"IR",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Iranian & Russian Networks Attacked Using Cisco's CVE-2018-0171 Vulnerability",
+                "timestamp":"1523199921",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/iranian-and-russian-networks-attacked-using-ciscos-cve-2018-0171-vulnerability/",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1523261771",
+                "type":"target-location",
+                "value":"RU",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523430367",
+                "type":"attachment",
+                "value":"CITAR-Flash-2018-010-CISCO-Switches v1.0.pdf",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"network",
+                "name":"vulnerability",
+                "timestamp":"1523941943",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523941944",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523941944",
+                        "type":"text",
+                        "value":"A vulnerability in the Smart Install feature of Cisco IOS Software and Cisco IOS XE Software could allow an unauthenticated, remote attacker to trigger a reload of an affected device, resulting in a denial of service (DoS) condition, or to execute arbitrary code on an affected device. The vulnerability is due to improper validation of packet data. An attacker could exploit this vulnerability by sending a crafted Smart Install message to an affected device on TCP port 4786. A successful exploit could allow the attacker to cause a buffer overflow on the affected device, which could have the following impacts: Triggering a reload of the device, Allowing the attacker to execute arbitrary code on the device, Causing an indefinite loop on the affected device that triggers a watchdog crash. Cisco Bug IDs: CSCvg76186.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523941944",
+                        "type":"vulnerability",
+                        "value":"CVE-2018-0171",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

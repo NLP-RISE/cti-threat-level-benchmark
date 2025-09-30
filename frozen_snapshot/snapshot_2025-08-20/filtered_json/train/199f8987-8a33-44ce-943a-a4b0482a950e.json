@@ -1,0 +1,104 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2021-09-11",
+        "published":true,
+        "info":"Maldoc Cybersecurity in the EU Common Security and Defense Policy",
+        "publish_timestamp":"1631628241",
+        "timestamp":"1631628230",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-malware=\"Kwampirs - S0236\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"kwampirs",
+                "timestamp":"1631351606",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1631351606",
+                "type":"hostname",
+                "value":"iamnotthec2.ohl.io",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1631351606",
+                "type":"ip-dst",
+                "value":"206.198.151.187",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1631628230",
+                "type":"link",
+                "value":"https://twitter.com/h2jazi/status/1436391537416540160",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1631351757",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Cybersecurity_EU_Common_Sec_and_Defence",
+                        "timestamp":"1631351757",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1631351757",
+                        "type":"filename",
+                        "value":"Cybersecurity_EU_Common_Sec_and_Defence.doc",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1631351767",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1631351767",
+                        "type":"filename",
+                        "value":"chrome_setup.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"chrome_setup",
+                        "timestamp":"1631351767",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

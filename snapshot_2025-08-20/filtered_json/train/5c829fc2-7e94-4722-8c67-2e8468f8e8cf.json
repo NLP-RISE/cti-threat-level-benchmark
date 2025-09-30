@@ -1,0 +1,147 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-03-08",
+        "published":true,
+        "info":"2019-03-08: TerraLoader Signed -> JS RAT",
+        "publish_timestamp":"1622022016",
+        "timestamp":"1621850064",
+        "Tag":[
+            {
+                "name":"TerraLoader"
+            },
+            {
+                "name":"Digital Signature"
+            },
+            {
+                "name":"ARTILDA CONSULTING LIMITED"
+            },
+            {
+                "name":"var BV = \"6.0\""
+            },
+            {
+                "name":"rkey: \"wearenotcobaltthanks\""
+            },
+            {
+                "name":".kz Domain"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Terra Loader\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Terra JS",
+                "timestamp":"1552064675",
+                "type":"url",
+                "value":"https://host.moresecurity.kz/host/info",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1552083459",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"malware-sample",
+                        "value":"2019-03-08-TerraLoader-DLL-Signed.vk.ocx|9b3ec7553b079f413565a7f61c8efd3c",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"filename",
+                        "value":"2019-03-08-TerraLoader-DLL-Signed.vk.ocx",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"size-in-bytes",
+                        "value":"515280",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1552083459",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"datetime",
+                        "value":"2019-03-08T18:42:12",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/49af65995e51d88bbe8b0d4be5a5df2692aa57800f1875a18ecbd3f483c8a094/analysis/1552070532/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1552064468",
+                        "type":"text",
+                        "value":"5/70",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

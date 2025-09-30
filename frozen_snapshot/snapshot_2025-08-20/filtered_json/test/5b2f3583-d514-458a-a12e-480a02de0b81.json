@@ -1,0 +1,268 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2018-06-24",
+        "published":true,
+        "info":"OSINT - Tick Group Weaponized Secure USB Drives to Target Air-Gapped Critical Systems",
+        "publish_timestamp":"1529824636",
+        "timestamp":"1529821311",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Tick\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Multi-Stage Channels - T1104\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Replication Through Removable Media - T1091\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"estimative-language:confidence-in-analytic-judgment=\"moderate\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529820569",
+                "type":"text",
+                "value":"Tick is a cyberespionage group primarily targeting organizations in Japan and the Republic of Korea. The group is known to conduct attack campaigns with various custom malware such as Minzen, Datper, Nioupale (aka Daserf), and HomamDownloader. Unit 42 last wrote about the Tick group in July 2017.\r\n\r\nRecently, Palo Alto Networks Unit 42 discovered the Tick group targeted a specific type of secure USB drive created by a South Korean defense company. The USB drive and its management system have various features to follow security guidelines in South Korea.\r\n\r\nThe weaponization of a secure USB drive is an uncommon attack technique and likely done in an effort to spread to air-gapped systems, which are systems that do not connect to the public internet. In addition, our research shows that the malware used in these attacks will only try to infect systems running Microsoft Windows XP or Windows Server 2003. This is despite the fact that the malware appears to have been created when newer versions of Windows software were available. This would seem to indicate an intentional targeting of older, out-of-support versions of Microsoft Windows installed on systems with no internet connectivity. Air-gapped systems are common practice in many countries for government, military, and defense contractors, as well as other industry verticals.\r\n\r\nWe have not identified any public reporting on this attack, and we suspect the Tick group used the malware described in this report in attacks multiple years ago. Based on the data collected, we do not believe this malware is part of any active threat campaign.\r\n\r\nOur picture of this past attack is incomplete at this time. Based on our research thus far, we are able to sketch out the following hypothesized attack scenario:\r\n\r\n    The Tick Group somehow compromised a secure type of USB drive and loaded a malicious file onto an unknown number of them. These USB drives are supposed to be certified as secure by the South Korean ITSCC (English).\r\n    The Tick Group created a specific malware we are calling SymonLoader that somehow gets on older Windows systems and continuously looks for these specific USB drives.\r\n    SymonLoader specifically targets Windows XP and Windows Server 2003 systems ONLY.\r\n    If SymonLoader detects the presence of a specific type of secure USB drive, it will attempt to load the unknown malicious file using APIs that directly access the file system.\r\n\r\nIn the research below, we outline our findings around SymonLoader. We do not currently have either a compromised USB drive nor the unknown malicious file we believe is implanted on these devices. Because of this we are unable to describe the full attack sequence.\r\n\r\nBecause we do not have either a compromised USB drive or the unknown malicious file, we are also unable to determine how these USB drives have been compromised. Specifically, we do not know if there has been a successful compromise in the supply-chain making these devices, or if these have been compromised post-manufacturing and distributed using other means such as social engineering.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529820582",
+                "type":"link",
+                "value":"https://researchcenter.paloaltonetworks.com/2018/06/unit42-tick-group-weaponized-secure-usb-drives-target-air-gapped-critical-systems/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized Legitimate Software",
+                "timestamp":"1529820711",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized Legitimate Software",
+                "timestamp":"1529820711",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized Legitimate Software",
+                "timestamp":"1529820712",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojanized Legitimate Software",
+                "timestamp":"1529820712",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HomamDownloader",
+                "timestamp":"1529820749",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HomamDownloader",
+                "timestamp":"1529820750",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 of HomamDownloader",
+                "timestamp":"1529820772",
+                "type":"hostname",
+                "value":"pre.englandprevail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malformed Legitimate software",
+                "timestamp":"1529820797",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SysmonLoader",
+                "timestamp":"1529820824",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1529820838",
+                "type":"mutex",
+                "value":"SysMonitor_3A2DCB47",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1529820878",
+                "type":"filename",
+                "value":"%ProgramFiles%\\Windows NT\\Accessories\\Microsoft\\msxml.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1529820879",
+                "type":"filename",
+                "value":"%UserProfile%\\Applications\\Microsoft\\msxml.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1529820911",
+                "type":"regkey|value",
+                "value":"HKLM\\Software\\Microsof\\Windows\\CurrentVersion\\run\\â€xmlâ€|%ProgramFiles%\\Windows NT\\Accessories\\Microsoft\\msxml.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1529820911",
+                "type":"regkey|value",
+                "value":"HKCU\\Software\\Microsof\\Windows\\CurrentVersion\\run\\â€xmlâ€|%UserProfile%\\Applications\\Microsoft\\msxml.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529824621",
+                "type":"attachment",
+                "value":"tick_1.png",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821065"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821064"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821068"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821066"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821070"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821068"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821072"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821071"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821075"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821073"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821077"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821076"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529821080"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529821078"
+            }
+        ]
+    }
+}

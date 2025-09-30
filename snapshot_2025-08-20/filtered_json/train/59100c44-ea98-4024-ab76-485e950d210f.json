@@ -1,0 +1,100 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-08",
+        "published":true,
+        "info":"OSINT - Windows Defender ATP thwarts Operation WilySupply software supply chain cyberattack",
+        "publish_timestamp":"1494224616",
+        "timestamp":"1494224492",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"veris:actor:motive=\"Financial\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1494224492",
+                "type":"link",
+                "value":"https://blogs.technet.microsoft.com/mmpc/2017/05/04/windows-defender-atp-thwarts-operation-wilysupply-software-supply-chain-cyberattack/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1494224492",
+                "type":"text",
+                "value":"Several weeks ago, the Windows Defender Advanced Threat Protection (Windows Defender ATP) research team noticed security alerts that demonstrated an intriguing attack pattern. These early alerts uncovered a well-planned, finely orchestrated cyberattack that targeted several high-profile technology and financial organizations. An unknown attacker was taking advantage of a silent yet effective attack vector: the compromised update mechanism or software supply chain for a third-party editing tool. The software vendor that develops the editing tool was unaware of the issue. In fact, while their software supply chain served as a channel for attacking other organizations, they themselves were also under attack.\r\n\r\nThis cyberattack could have been much more problematic if it had gone undetected. Its early discovery allowed incident respondersâ€”a collaboration of security experts from the targeted industries and developers working for the third-party software vendorâ€”to work with Microsoft security researchers to promptly identify and neutralize the activities associated with this cyberespionage campaign.\r\n\r\nThanks to the collaborative response, Microsoft was able to notify known affected parties as well as the third-party software vendor, who then worked around the clock to contain the attempted attack and mitigate potential risks.\r\nInvestigating alert timelines and process trees\r\n\r\nRegardless of how an attack is executed, through sophisticated social engineering or a zero-day exploit, the first stage or the entry vector of a kill chain is often the most challenging aspect to understand about the attack. Windows Defender ATP initially called our attention to alerts flagging suspicious PowerShell scripts, self-deletion of executables, and other suspect activities. A quick check in the Windows Defender ATP console led us to the machine that was under attack. However, the source of the attack remained buried, requiring additional investigative effort to uncover.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"(used for initial infection and C&C communication)",
+                "timestamp":"1494224492",
+                "type":"url",
+                "value":"http://5.39.218.205/logo.png",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"(used for initial infection and C&C communication)",
+                "timestamp":"1494224492",
+                "type":"url",
+                "value":"http://176.53.118.131/logo.png",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"used for initial infection and C&C communication",
+                "timestamp":"1494224492",
+                "type":"ip-dst",
+                "value":"5.39.218.205",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"used for initial infection and C&C communication",
+                "timestamp":"1494224492",
+                "type":"ip-dst",
+                "value":"176.53.118.131",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"the malicious sample downloaded through the third-party updater",
+                "timestamp":"1494224492",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"the malicious sample downloaded through the third-party updater",
+                "timestamp":"1494224492",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"the malicious sample downloaded through the third-party updater - Xchecked via VT: 75edd4ee11e7d3dabd191c316da637f939140e2f",
+                "timestamp":"1494224496",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"the malicious sample downloaded through the third-party updater - Xchecked via VT: 75edd4ee11e7d3dabd191c316da637f939140e2f",
+                "timestamp":"1494224496",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9a4346d7ac23d3fb06050e56ab7376fa56194c21617232574a5dbcb0a4e00a57/analysis/1494003300/",
+                "to_ids":false
+            }
+        ]
+    }
+}

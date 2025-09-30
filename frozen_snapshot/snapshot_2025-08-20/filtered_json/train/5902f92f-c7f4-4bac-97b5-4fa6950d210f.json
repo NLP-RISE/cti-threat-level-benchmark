@@ -1,0 +1,135 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-28",
+        "published":true,
+        "info":"OSINT - OSX Malware is Catching Up, and it wants to Read Your HTTPS Traffic",
+        "publish_timestamp":"1493654444",
+        "timestamp":"1493647580",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"MacOS_X\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1493367513",
+                "type":"link",
+                "value":"http://blog.checkpoint.com/2017/04/27/osx-malware-catching-wants-read-https-traffic/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1493647580",
+                "type":"text",
+                "value":"People often assume that if youâ€™re running OSX, youâ€™re relatively safe from malware. But this is becoming less and less true, as evidenced by a new strain of malware encountered by the Check Point malware research team. This new malware â€“ dubbed OSX/Dok â€” affects all versions of OSX, has 0 detections on VirusTotal (as of the writing of these words), is signed with a valid developer certificate (authenticated by Apple), and is the first major scale malware to target OSX users via a coordinated email phishing campaign.\r\n\r\nOnce OSX/Dok infection is complete, the attackers gain complete access to all victim communication, including communication encrypted by SSL. This is done by redirecting victim traffic through a malicious proxy server.\r\n\r\nThe malware mostly targets European users. For instance, one phishing message was observed to target a user in Germany by baiting the user with a message regarding supposed inconsistencies in their tax returns (see image, and translation, below).",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1493367513",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1493367513",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"LaunchAgent:",
+                "timestamp":"1493367513",
+                "type":"filename",
+                "value":"/Users/training/Library/LaunchAgents/com.apple.Safari.proxy.plist",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"LaunchAgent:",
+                "timestamp":"1493367513",
+                "type":"filename",
+                "value":"/Users/training/Library/LaunchAgents/com.apple.Safari.proxy.pac",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1493367513",
+                "type":"text",
+                "value":"Trojan.OSX.DOK",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1493367513",
+                "type":"hostname",
+                "value":"paoyu7gub72lykuk.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 4131d4737fe8dfe66d407bfd0a0df18a4a77b89347471cc012da8efc93c661a5",
+                "timestamp":"1493367516",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 4131d4737fe8dfe66d407bfd0a0df18a4a77b89347471cc012da8efc93c661a5",
+                "timestamp":"1493367516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 4131d4737fe8dfe66d407bfd0a0df18a4a77b89347471cc012da8efc93c661a5",
+                "timestamp":"1493367517",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4131d4737fe8dfe66d407bfd0a0df18a4a77b89347471cc012da8efc93c661a5/analysis/1493364891/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 7819ae7d72fa045baa77e9c8e063a69df439146b27f9c3bb10aef52dcc77c145",
+                "timestamp":"1493367517",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 7819ae7d72fa045baa77e9c8e063a69df439146b27f9c3bb10aef52dcc77c145",
+                "timestamp":"1493367518",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 7819ae7d72fa045baa77e9c8e063a69df439146b27f9c3bb10aef52dcc77c145",
+                "timestamp":"1493367518",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7819ae7d72fa045baa77e9c8e063a69df439146b27f9c3bb10aef52dcc77c145/analysis/1493364722/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-25",
+        "published":true,
+        "info":"OSINT - New Arena Crysis Ransomware Variant Released",
+        "publish_timestamp":"1503930329",
+        "timestamp":"1503930276",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Dharma Ransomware\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503930272",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/new-arena-crysis-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503930272",
+                "type":"comment",
+                "value":"Yesterday, ID-Ransomware's Michael Gillespie discovered a new variant of the Crysis/Dharma ransomware that is appending the .arena extension to encrypted files. It is not known exactly how this variant is being distributed, but in the past Crysis was typically spread by hacking into Remote Desktop Services and manually installing the ransomware.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930272",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Email to contact in ransom note",
+                "timestamp":"1503930272",
+                "type":"email-src",
+                "value":"chivas@aolonline.top",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: a683494fc0d017fd3b4638f8b84caaaac145cc28bc211bd7361723368b4bb21e",
+                "timestamp":"1503930272",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: a683494fc0d017fd3b4638f8b84caaaac145cc28bc211bd7361723368b4bb21e",
+                "timestamp":"1503930272",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: a683494fc0d017fd3b4638f8b84caaaac145cc28bc211bd7361723368b4bb21e",
+                "timestamp":"1503930272",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a683494fc0d017fd3b4638f8b84caaaac145cc28bc211bd7361723368b4bb21e/analysis/1503922016/",
+                "to_ids":false
+            }
+        ]
+    }
+}

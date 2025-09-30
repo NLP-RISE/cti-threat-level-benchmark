@@ -1,0 +1,267 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-20",
+        "published":true,
+        "info":"OSINT - New Fox Ransomware Matrix Variant Tries Its Best to Close All File Handles",
+        "publish_timestamp":"1539157331",
+        "timestamp":"1539157322",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Matrix\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1539079531",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/new-fox-ransomware-matrix-variant-tries-its-best-to-close-all-file-handles/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1539079517",
+                "type":"text",
+                "value":"A new variant of the Matrix Ransomware has been discovered that is renaming encrypted files and then appending the .FOX extension to the file name. Of particular interest, this ransomware could have the most exhaustive process of making sure each and every file is not opened and available for encrypting. Thankfully, this also makes its encryption process very slow so it could be easier to detect.\r\n\r\nThis ransomware variant was first discovered by security researcher MalwareHunterTeam and is installed through computers running Remote Desktop Services and being openly connected to the Internet. The attackers will scan ranges of IP addresses to find open RDP services and then brute force the password.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539071519",
+                "type":"email-src",
+                "value":"pabfox@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539071519",
+                "type":"email-src",
+                "value":"foxhelp@cock.li",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539071520",
+                "type":"email-src",
+                "value":"foxhelp@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539073048",
+                "type":"filename",
+                "value":"%AppData%\\random.vbs",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539073049",
+                "type":"filename",
+                "value":"%AppData%\\random.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539073049",
+                "type":"filename",
+                "value":"%AppData%\\random.bmp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539073050",
+                "type":"filename",
+                "value":"%DownloadedFolder%\\.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539073050",
+                "type":"filename",
+                "value":"%DownloadedFolder%\\.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1539073089",
+                "type":"text",
+                "value":"HOW TO RECOVER YOUR FILES INSTRUCTION\r\nATENTION!!!\r\nWe are realy sorry to inform you that  ALL YOUR FILES WERE ENCRYPTED \r\nby our automatic software. It became possible because of bad server security.  \r\nATENTION!!!\r\nPlease don't worry, we can help you to RESTORE your server to original\r\nstate and decrypt all your files quickly and safely!\r\n\r\nINFORMATION!!!\r\nFiles are not broken!!!\r\nFiles were encrypted with AES-128+RSA-2048 crypto algorithms.\r\nThere is no way to decrypt your files without unique decryption key and special software. Your unique decryption key is securely stored on our server. For our safety, all information about your server and your decryption key will be automaticaly DELETED AFTER 7 DAYS! You will irrevocably lose all your data!\r\n* Please note that all the attempts to recover your files by yourself or using third party tools will result only in irrevocable loss of your data!\r\n* Please note that you can recover files only with your unique decryption key, which stored on our side. If you will use the help of third parties, you will only add a middleman.\r\n\r\nHOW TO RECOVER FILES???\r\nPlease write us to the e-mail (write on English or use professional translator):\r\nPabFox@protonmail.com \r\nFoxHelp@cock.li\r\nFoxHelp@tutanota.com\r\nYou have to send your message on each of our 3 emails due to the fact that the message may not reach their intended recipient for a variety of reasons!\r\n  \r\nIn subject line write your personal ID:\r\n[id]\r\nWe recommed you to attach 3 encrypted files to your message. We will demonstrate that we can recover your files. \r\n*   Please note that files must not contain any valuable information and their total size must be less than 5Mb. \r\n\r\nOUR ADVICE!!!\r\nPlease be sure that we will find common languge. We will restore all the data and give you recommedations how to configure the protection of your server.\r\n\r\nWe will definitely reach an agreement ;) !!!",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote",
+                "timestamp":"1539074880",
+                "type":"attachment",
+                "value":"ransom-note-redacted.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote - Desktop background",
+                "timestamp":"1539074924",
+                "type":"attachment",
+                "value":"fox-background.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"At the end of the encryption process, a random named .vbs file in the %AppData% folder will be launched that is used to register a scheduled task named DSHCA. This schedule task is used to run a batch file with administrative privileges that will perform a cleanup of the computer and to disable various repair features.",
+                "timestamp":"1539076919",
+                "type":"attachment",
+                "value":"create-task.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"This batch file is located in the %AppData% folder as well and will delete shadow volume copies using WMIC, powershell, and vssadmin, remove Windows recovery startup, and delete the VBS file, scheduled task, and itself.",
+                "timestamp":"1539077522",
+                "type":"attachment",
+                "value":"cleanup-batch-file.jpg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1539072768",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539072768",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1539072769",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1539072918",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539072918",
+                        "type":"filename",
+                        "value":"#FOX_README#.rtf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1539072922",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1539157295",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539157292",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539157297",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539157297",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1539157298",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1539157298",
+                        "type":"datetime",
+                        "value":"2018-09-27T06:49:04",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1539157298",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0b03bf1c7b596a862978999eebfa0703e6de48912c9a57e2fed3ae5cd747bea7/analysis/1538030944/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1539157299",
+                        "type":"text",
+                        "value":"48/68",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

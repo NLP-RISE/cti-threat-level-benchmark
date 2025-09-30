@@ -1,0 +1,159 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-31",
+        "published":true,
+        "info":"OSINT - Active ransomware attack uses impersonation and embedded advanced threats",
+        "publish_timestamp":"1514467840",
+        "timestamp":"1513738826",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513594331",
+                "type":"comment",
+                "value":"In this attack, the source of the email is a spoofed address, and the attachment name and number is included in the subject line and body of the message.  The full subject line in this example is â€œEmailing: Payment_201708-6165â€ and the number in the attachment name is variable.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513594331",
+                "type":"link",
+                "value":"https://blog.barracuda.com/2017/08/31/active-ransomware-attack-uses-impersonation-and-embedded-advanced-threats/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513589237",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513589234",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513589234",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513589234",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513589234",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513589234",
+                        "type":"size-in-bytes",
+                        "value":"20363",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1513590107",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"number is variable",
+                        "timestamp":"1513590107",
+                        "type":"email-subject",
+                        "value":"Emailing: Payment_201708-1160",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513590107",
+                        "type":"email-attachment",
+                        "value":"201708-1160.7z",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513590107",
+                        "type":"datetime",
+                        "value":"2017-08-30T02:13:17",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513594331",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513594332",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/87d0d011b8b456ce8fa15afea8df5e5fbf1bad5cb3305272016ca0db9c204d90/analysis/1505917656/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513594332",
+                        "type":"text",
+                        "value":"37/59",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513594332",
+                        "type":"datetime",
+                        "value":"2017-09-20T14:27:36",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-10-31",
+        "published":true,
+        "info":"OSINT - PSA: Conference Invite used as a Lure by Operation Lotus Blossom Actors",
+        "publish_timestamp":"1477941454",
+        "timestamp":"1477941449",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lotus Blossom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1477939870",
+                "type":"comment",
+                "value":"Actors related to the Operation Lotus Blossom campaign continue their attack campaigns in the Asia Pacific region. It appears that these threat actors have begun using Palo Alto Networks upcoming Cyber Security Summit hosted on November 3, 2016 in Jakarta, Indonesia as a lure to compromise targeted individuals. The payload installed in attacks using this lure is a variant of the Emissary Trojan that we have analyzed in the past, which has direct links to threat actors associated with Operation Lotus Blossom.\r\n\r\nAs our readers and customers in Indonesia are likely recipients of this phishing e-mail, we want to release some key facts to clarify the situation.\r\n\r\nThe malicious email will have an attachment named â€œ[FREE INVITATIONS] CyberSecurity Summit.docâ€ that if opened will exploit CVE-2012-0158. The legitimate invitation emails from Palo Alto Networks did not carry any attachments.\r\nIn response to this incident, we have halted our email invitations, so please disregard all new emails related to invitations to this conference, as it may be malicious.\r\nIndividuals wishing to attend the conference should register on our official CYBERSECURITY SUMMIT â€“ JAKARTA website.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477939906",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2016/10/unit42-psa-conference-invite-used-lure-operation-lotus-blossom-actors/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Delivery Document",
+                "timestamp":"1477939965",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emissary Loader",
+                "timestamp":"1477939965",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 server",
+                "timestamp":"1477939966",
+                "type":"ip-dst",
+                "value":"103.249.31.49",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1477940016",
+                "type":"email-attachment",
+                "value":"[FREE INVITATIONS] CyberSecurity Summit.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1477940104",
+                "type":"filename",
+                "value":"%APPDATA%\\Programs\\Dsdcmsoon.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1477940104",
+                "type":"filename",
+                "value":"%APPDATA%\\Programs\\DCMOS3124.DAT",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1477940105",
+                "type":"filename",
+                "value":"%APPDATA%\\Programs\\CVNX044.DAT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emissary Loader - Xchecked via VT: aefa519feab9c8741af98ae2ddc287c404117e208cecd6479ee427f682814286",
+                "timestamp":"1477940399",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emissary Loader - Xchecked via VT: aefa519feab9c8741af98ae2ddc287c404117e208cecd6479ee427f682814286",
+                "timestamp":"1477940399",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Emissary Loader - Xchecked via VT: aefa519feab9c8741af98ae2ddc287c404117e208cecd6479ee427f682814286",
+                "timestamp":"1477940400",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/aefa519feab9c8741af98ae2ddc287c404117e208cecd6479ee427f682814286/analysis/1477934763/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Delivery Document - Xchecked via VT: 61de3df463f94f8583934edb227b174c7e4473b89bd110a6f6ba44fad8c41943",
+                "timestamp":"1477940400",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Delivery Document - Xchecked via VT: 61de3df463f94f8583934edb227b174c7e4473b89bd110a6f6ba44fad8c41943",
+                "timestamp":"1477940401",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Delivery Document - Xchecked via VT: 61de3df463f94f8583934edb227b174c7e4473b89bd110a6f6ba44fad8c41943",
+                "timestamp":"1477940401",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/61de3df463f94f8583934edb227b174c7e4473b89bd110a6f6ba44fad8c41943/analysis/1476950396/",
+                "to_ids":false
+            }
+        ]
+    }
+}

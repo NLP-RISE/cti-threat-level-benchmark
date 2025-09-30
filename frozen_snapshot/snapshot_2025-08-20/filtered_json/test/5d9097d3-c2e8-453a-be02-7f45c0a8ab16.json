@@ -1,0 +1,89 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2019-09-24",
+        "published":true,
+        "info":"Malspam pushing Quasar RAT",
+        "publish_timestamp":"1569757473",
+        "timestamp":"1569757453",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1569757153",
+                "type":"link",
+                "value":"https://isc.sans.edu/forums/diary/Malspam+pushing+Quasar+RAT/25354/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1569757449",
+                "type":"url",
+                "value":"www.tradersbolt.com/126/invoice1.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1569757449",
+                "type":"hostname",
+                "value":"greatest.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1569757449",
+                "type":"url",
+                "value":"http://puu.sh/jMSLc.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1569757449",
+                "type":"url",
+                "value":"https://puu.sh",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Zip attachment from malspam",
+                "timestamp":"1569757449",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Quasar RAT EXE extracted from zip attachment or retreived from link in the malspam",
+                "timestamp":"1569757449",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File created when Quasar RAT EXE was executed (1 of 2)",
+                "timestamp":"1569757449",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File created when Quasar RAT EXE was executed (2 of 2)",
+                "timestamp":"1569757449",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

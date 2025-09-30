@@ -1,0 +1,113 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2016-08-10",
+        "published":true,
+        "info":"OSINT Additional yara rules for detection Project Sauron by Florian Roth",
+        "publish_timestamp":"1471359164",
+        "timestamp":"1471359151",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1471358930",
+                "type":"link",
+                "value":"https://github.com/Neo23x0/signature-base/blob/master/yara/apt_project_sauron_extras.yar",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359002",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Scripts {\r\n\tmeta:\r\n\t\tdescription = \"Detects scripts (mostly LUA) from Project Sauron report by Kaspersky\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-08\"\r\n\tstrings:\r\n\t\t$x1 = \"local t = w.exec2str(\\\"regedit \"\r\n\t\t$x2 = \"local r = w.exec2str(\\\"cat\"\r\n\t\t$x3 = \"ap*.txt link*.txt node*.tun VirtualEncryptedNetwork.licence\"\r\n\t\t$x4 = \"move O FakeVirtualEncryptedNetwork.dll\"\r\n\t\t$x5 = \"sinfo | basex b 32url | dext l 30\"\r\n\t\t$x6 = \"w.exec2str(execStr)\"\r\n\t\t$x7 = \"netnfo irc | basex b 32url\"\r\n\t\t$x8 = \"w.exec(\\\"wfw status\\\")\"\r\n\t\t$x9 = \"exec(\\\"samdump\\\")\"\r\n\t\t$x10 = \"cat VirtualEncryptedNetwork.ini|grep\"\r\n\t\t$x11 = \"if string.lower(k) == \\\"securityproviders\\\" then\"\r\n\t\t$x12 = \"exec2str(\\\"plist b | grep netsvcs\\\")\"\r\n\t\t$x13 = \".*account.*|.*acct.*|.*domain.*|.*login.*|.*member.*\"\r\n\t\t$x14 = \"SAURON_KBLOG_KEY =\"\r\n\tcondition:\r\n\t\t1 of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359011",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_arping_module {\r\n\tmeta:\r\n\t\tdescription = \"Detects strings from arping module - Project Sauron report by Kaspersky\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-08\"\r\n\tstrings:\r\n\t\t$s1 = \"Resolve hosts that answer\"\r\n\t\t$s2 = \"Print only replying Ips\"\r\n\t\t$s3 = \"Do not display MAC addresses\"\r\n\tcondition:\r\n\t\tall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359027",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_kblogi_module {\r\n\tmeta:\r\n\t\tdescription = \"Detects strings from kblogi module - Project Sauron report by Kaspersky\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-08\"\r\n\tstrings:\r\n\t\t$x1 = \"Inject using process name or pid. Default\"\r\n\t\t$s2 = \"Convert mode: Read log from file and convert to text\"\r\n\t\t$s3 = \"Maximum running time in seconds\"\r\n\tcondition:\r\n\t\t$x1 or 2 of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359044",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_dext_module {\r\n\tmeta:\r\n\t\tdescription = \"Detects strings from dext module - Project Sauron report by Kaspersky\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-08\"\r\n\tstrings:\r\n\t\t$x1 = \"Assemble rows of DNS names back to a single string of data\"\r\n\t\t$x2 = \"removes checks of DNS names and lengths (during split)\"\r\n\t\t$x3 = \"Randomize data lengths (length/2 to length)\"\r\n\t\t$x4 = \"This cruft\"\r\n\tcondition:\r\n\t\t2 of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359060",
+                "type":"yara",
+                "value":"rule Hacktool_This_Cruft {\r\n\tmeta:\r\n\t\tdescription = \"Detects string 'This cruft' often used in hack tools like netcat or cryptcat and also mentioned in Project Sauron report\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-08\"\r\n\t\tscore = 60\r\n\tstrings:\r\n\t\t$x1 = \"This cruft\" fullword\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 200KB and $x1 )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359075",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M1 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"9572624b6026311a0e122835bcd7200eca396802000d0777dba118afaaf9f2a9\"\r\n\tstrings:\r\n\t\t$s1 = \"ncnfloc.dll\" fullword wide\r\n\t\t$s4 = \"Network Configuration Locator\" fullword wide\r\n\r\n\t\t$op0 = { 80 75 6e 85 c0 79 6a 66 41 83 38 0a 75 63 0f b7 } /* Opcode */\r\n\t\t$op1 = { 80 75 29 85 c9 79 25 b9 01 } /* Opcode */\r\n\t\t$op2 = { 2b d8 48 89 7c 24 38 44 89 6c 24 40 83 c3 08 89 } /* Opcode */\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 200KB and ( all of ($s*) ) and 1 of ($op*) ) or ( all of them )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359089",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M2 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"30a824155603c2e9d8bfd3adab8660e826d7e0681e28e46d102706a03e23e3a8\"\r\n\tstrings:\r\n\t\t$s2 = \"\\\\*\\\\3vpn\" fullword ascii\r\n\r\n\t\t$op0 = { 55 8b ec 83 ec 0c 53 56 33 f6 39 75 08 57 89 75 } /* Opcode */\r\n\t\t$op1 = { 59 59 c3 8b 65 e8 ff 75 88 ff 15 50 20 40 00 ff } /* Opcode */\r\n\t\t$op2 = { 8b 4f 06 85 c9 74 14 83 f9 12 0f 82 a7 } /* Opcode */\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 400KB and ( all of ($s*) ) and all of ($op*) )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359103",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M3 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"a4736de88e9208eb81b52f29bab9e7f328b90a86512bd0baadf4c519e948e5ec\"\r\n\tstrings:\r\n\t\t$s1 = \"ExampleProject.dll\" fullword ascii\r\n\r\n\t\t$op0 = { 8b 4f 06 85 c9 74 14 83 f9 13 0f 82 ba } /* Opcode */\r\n\t\t$op1 = { ff 15 34 20 00 10 85 c0 59 a3 60 30 00 10 75 04 } /* Opcode */\r\n\t\t$op2 = { 55 8b ec ff 4d 0c 75 09 ff 75 08 ff 15 00 20 00 } /* Opcode */\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 1000KB and ( all of ($s*) ) and all of ($op*) )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359122",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M4 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"e12e66a6127cfd2cbb42e6f0d57c9dd019b02768d6f1fb44d91f12d90a611a57\"\r\n\tstrings:\r\n\t\t$s1 = \"xpsmngr.dll\" fullword wide\r\n\t\t$s2 = \"XPS Manager\" fullword wide\r\n\r\n\t\t$op0 = { 89 4d e8 89 4d ec 89 4d f0 ff d2 3d 08 00 00 c6 } /* Opcode */\r\n\t\t$op1 = { 55 8b ec ff 4d 0c 75 09 ff 75 08 ff 15 04 20 5b } /* Opcode */\r\n\t\t$op2 = { 8b 4f 06 85 c9 74 14 83 f9 13 0f 82 b6 } /* Opcode */\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 90KB and ( all of ($s*) ) and 1 of ($op*) ) or ( all of them )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359136",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M6 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"3782b63d7f6f688a5ccb1b72be89a6a98bb722218c9f22402709af97a41973c8\"\r\n\tstrings:\r\n\t\t$s1 = \"rseceng.dll\" fullword wide\r\n\t\t$s2 = \"Remote Security Engine\" fullword wide\r\n\r\n\t\t$op0 = { 8b 0d d5 1d 00 00 85 c9 0f 8e a2 } /* Opcode */\r\n\t\t$op1 = { 80 75 6e 85 c0 79 6a 66 41 83 38 0a 75 63 0f b7 } /* Opcode */\r\n\t\t$op2 = { 80 75 29 85 c9 79 25 b9 01 } /* Opcode */\r\n\tcondition:\r\n\t\t( uint16(0) == 0x5a4d and filesize < 200KB and ( all of ($s*) ) and 1 of ($op*) ) or ( all of them )\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1471359151",
+                "type":"yara",
+                "value":"rule APT_Project_Sauron_Custom_M7 {\r\n\tmeta:\r\n\t\tdescription = \"Detects malware from Project Sauron APT\"\r\n\t\tauthor = \"FLorian Roth\"\r\n\t\treference = \"https://goo.gl/eFoP4A\"\r\n\t\tdate = \"2016-08-09\"\r\n\t\thash1 = \"6c8c93069831a1b60279d2b316fd36bffa0d4c407068dbef81b8e2fe8fd8e8cd\"\r\n\t\thash2 = \"7cc0bf547e78c8aaf408495ceef58fa706e6b5d44441fefdce09d9f06398c0ca\"\r\n\tstrings:\r\n\t\t$sx1 = \"Default user\" fullword wide\r\n\t\t$sx2 = \"Hincorrect header check\" fullword ascii /* Typo */\r\n\r\n\t\t$sa1 = \"MSAOSSPC.dll\" fullword ascii\r\n\t\t$sa2 = \"MSAOSSPC.DLL\" fullword wide\r\n\t\t$sa3 = \"MSAOSSPC\" fullword wide\r\n\t\t$sa4 = \"AOL Security Package\" fullword wide\r\n\t\t$sa5 = \"AOL Security Package\" fullword wide\r\n\t\t$sa6 = \"AOL Client for 32 bit platforms\" fullword wide\r\n\r\n\t\t$op0 = { 8b ce 5b e9 4b ff ff ff 55 8b ec 51 53 8b 5d 08 } /* Opcode */\r\n\t\t$op1 = { e8 0a fe ff ff 8b 4d 14 89 46 04 89 41 04 8b 45 } /* Opcode */\r\n\t\t$op2 = { e9 29 ff ff ff 83 7d fc 00 0f 84 cf 0a 00 00 8b } /* Opcode */\r\n\t\t$op3 = { 83 f8 0c 0f 85 3a 01 00 00 44 2b 41 6c 41 8b c9 } /* Opcode */\r\n\t\t$op4 = { 44 39 57 0c 0f 84 d6 0c 00 00 44 89 6f 18 45 89 } /* Opcode */\r\n\t\t$op5 = { c1 ed 02 83 c6 fe e9 68 fe ff ff 44 39 57 08 75 } /* Opcode */\r\n\tcondition:\r\n\t\tuint16(0) == 0x5a4d and filesize < 200KB and\r\n\t\t(\r\n\t\t\t( 3 of ($s*) and 3 of ($op*) ) or\r\n\t\t\t( 1 of ($sx*) and 1 of ($sa*) )\r\n\t\t)\r\n}",
+                "to_ids":true
+            }
+        ]
+    }
+}

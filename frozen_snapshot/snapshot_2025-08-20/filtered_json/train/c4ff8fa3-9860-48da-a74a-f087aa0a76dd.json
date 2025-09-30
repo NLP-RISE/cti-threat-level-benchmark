@@ -1,0 +1,147 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2025-07-01",
+        "published":true,
+        "info":"Houken seeking a path by living on the edge with zero-days",
+        "publish_timestamp":"1751553086",
+        "timestamp":"1751552976",
+        "Tag":[
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:target-information=\"France\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Finance\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"News - Media\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Telecoms\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Transport\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1751552529",
+                "type":"link",
+                "value":"https://www.cert.ssi.gouv.fr/cti/CERTFR-2025-CTI-009/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1751552529",
+                "type":"link",
+                "value":"https://www.cert.ssi.gouv.fr/uploads/CERTFR-2025-CTI-009.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"GOREVERSE C2",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"107.173.111.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"GOREVERSE C2",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"195.133.52.87",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"VPS contacted using Netcat to establish a reverse shell",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"45.33.101.53",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Controlled server contacted to download additional tools and to establish a reverse shell using Python",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"156.234.193.18",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Controlled server contacted to download additional tools",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"198.98.54.209",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Vulnerabilities exploitation",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"23.236.66.97",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"VPS contacted using SSH, SCP and TELNET",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"134.195.90.71",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Vulnerabilities exploitation",
+                "timestamp":"1751552649",
+                "type":"ip-dst",
+                "value":"64.176.49.160",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Connection attempts from compromised equipment",
+                "timestamp":"1751552649",
+                "type":"hostname",
+                "value":"oyr2ohrm.eyes.sh",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1751552672",
+                "type":"vulnerability",
+                "value":"CVE-2024-8190",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1751552976",
+                "type":"vulnerability",
+                "value":"CVE-2024-8963",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1751552976",
+                "type":"vulnerability",
+                "value":"CVE-2024-9380",
+                "to_ids":false
+            }
+        ]
+    }
+}

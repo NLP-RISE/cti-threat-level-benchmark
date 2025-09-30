@@ -1,0 +1,101 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-25",
+        "published":true,
+        "info":"Registrant Tracking for \"earthalgerrity@armyspy.com\"",
+        "publish_timestamp":"1589183999",
+        "timestamp":"1732078805",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware-full:malware-family=\"Redirector\""
+            },
+            {
+                "name":"Bokbot"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1529940130",
+                "type":"domain",
+                "value":"calorida.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1529940130",
+                "type":"domain",
+                "value":"fuselect.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1529940130",
+                "type":"domain",
+                "value":"maneers.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1529940130",
+                "type":"domain",
+                "value":"stradical.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1529940130",
+                "type":"domain",
+                "value":"veryonid.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1529940229",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1529940229",
+                        "type":"whois-registrant-email",
+                        "value":"earthalgerrity@armyspy.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1529940229",
+                        "type":"whois-registrant-name",
+                        "value":"Eartha L. Gerrity",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1529940229",
+                        "type":"whois-registrant-phone",
+                        "value":"12143212804",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

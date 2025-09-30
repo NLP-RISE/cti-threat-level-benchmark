@@ -1,0 +1,263 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-09-12",
+        "published":true,
+        "info":"The Curious Case of “Monti” Ransomware: A Real-World Doppelganger BlackBerry Logo",
+        "publish_timestamp":"1662991690",
+        "timestamp":"1662991683",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1662989258",
+                "type":"comment",
+                "value":"The Curious Case of “Monti” Ransomware: A Real-World Doppelganger BlackBerry Logo",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1662989258",
+                "type":"link",
+                "value":"https://blogs.blackberry.com/en/2022/09/the-curious-case-of-monti-ransomware-a-real-world-doppelganger",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991518",
+                "type":"link",
+                "value":"https://twitter.com/malwrhunterteam/status/1542595315915710465?s=20&t=Y7d3POTgnMSB\\_JcyEeF5\\_g",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991247",
+                "type":"link",
+                "value":"https://yoroi.company/research/conti-ransomware-source-code-a-well-designed-cots-ransomware/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"samples that reference MONTI",
+                "timestamp":"1662990930",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662989259",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662989259",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"samples that reference MONTI",
+                "timestamp":"1662990942",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"samples that reference MONTI",
+                "timestamp":"1662990937",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991498",
+                "type":"link",
+                "value":"https://github.com/sadshade/veeam-creds",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"other Conti samples with the same import table hash",
+                "timestamp":"1662990862",
+                "type":"imphash",
+                "value":"<imphash>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991466",
+                "type":"domain",
+                "value":"dropmefiles.com.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662990432",
+                "type":"filename",
+                "value":"action1_agent.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The threat actor apparently intruded via an exploitation of the well-known “Log4Shell” vulnerability",
+                "timestamp":"1662989357",
+                "type":"vulnerability",
+                "value":"CVE-2021-44228",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991537",
+                "type":"filename",
+                "value":"veeamp.pdb",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ransomware payload",
+                "timestamp":"1662990782",
+                "type":"filename",
+                "value":"locker.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662990797",
+                "type":"domain",
+                "value":"temp.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662990461",
+                "type":"filename",
+                "value":"action1_remote.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991274",
+                "type":"yara",
+                "value":"rule monti_ransom {\r\n      meta:\r\n            description = \"Detects ChaCha8 encrypted 'MONTI Strain' text (using all-zero key and nonce) embedded in ransomware payload\"\r\n            author = \"BlackBerry Threat Research Team\"\r\n            date = \"August 15, 2021\"\r\n            license = \"This Yara rule is provided under the Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0) and open to any user or organization, as long as you use it under this license and ensure originator credit in any derivative to The BlackBerry Research & Intelligence Team\"\r\n\r\n      strings:\r\n            $s = {20 19 57 65 03 62 D0 AE F4 D1 68}\r\n\r\n      condition:\r\n            uint16be(0) == 0x4d5a and filesize < 2MB\r\n            and $s\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662991290",
+                "type":"yara",
+                "value":"rule veeam_dumper {\r\n      meta:\r\n            description = \"Detects Veeam credential Dumper\"\r\n            author = \"BlackBerry Threat Research Team\"\r\n            date = \"August 15, 2021\"\r\n            license = \"This Yara rule is provided under the Apache License 2.0 (https://www.apache.org/licenses/LICENSE-2.0) and open to any user or organization, as long as you use it under this license and ensure originator credit in any derivative to The BlackBerry Research & Intelligence Team\"\r\n      strings:\r\n            $s1 = \"SqlCommand\" fullword ascii wide\r\n            $s2 = \"SqlConnection\" fullword ascii wide\r\n            $s3 = \"SqlDataReader\" fullword ascii wide\r\n            $s4 = \"veeamp.exe\" fullword ascii wide\r\n            $s5 = \"veeamp.pdb\" fullword ascii wide\r\n\r\n      condition:\r\n            uint16be(0) == 0x4d5a and filesize < 60KB\r\n            and 4 of them\r\n}",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"attempts to dump credentials from a SQL database for Veeam backup management software",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1662991117",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991105",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991117",
+                        "type":"filename",
+                        "value":"veeamp.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"attempts to dump credentials from a SQL database",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1662991356",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991356",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991356",
+                        "type":"filename",
+                        "value":"veeamp.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"attempts to dump credentials from a SQL database",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1662991390",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991390",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1662991390",
+                        "type":"filename",
+                        "value":"veeamp.exe",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

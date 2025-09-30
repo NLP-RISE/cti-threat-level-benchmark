@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-13",
+        "published":true,
+        "info":"OSINT - Fileless attacks against enterprise networks",
+        "publish_timestamp":"1487003184",
+        "timestamp":"1487003097",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487002829",
+                "type":"text",
+                "value":"During incident response, a team of security specialists needs to follow the artefacts that attackers have left in the network. Artefacts are stored in logs, memories and hard drives. Unfortunately, each of these storage media has a limited timeframe when the required data is available. One reboot of an attacked computer will make memory acquisition useless. Several months after an attack the analysis of logs becomes a gamble because they are rotated over time. Hard drives store a lot of needed data and, depending on its activity, forensic specialists may extract data up to a year after an incident. Thatâ€™s why attackers are using anti-forensic techniques (or simply SDELETE) and memory-based malware to hide their activity during data acquisition. A good example of the implementation of such techniques is Duqu2. After dropping on the hard drive and starting its malicious MSI package it removes the package from the hard drive with file renaming and leaves part of itself in the memory with a payload. Thatâ€™s why memory forensics is critical to the analysis of malware and its functions. Another important part of an attack are the tunnels that are going to be installed in the network by attackers. Cybercriminals (like Carbanak or GCMAN) may use PLINK for that. Duqu2 used a special driver for that. Now you may understand why we were very excited and impressed when, during an incident response, we found that memory-based malware and tunnelling were implemented by attackers using Windows standard utilities like â€œSCâ€ and â€œNETSHâ€œ.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487002918",
+                "type":"link",
+                "value":"https://securelist.com/blog/research/77403/fileless-attacks-against-enterprise-networks/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1487002870",
+                "type":"yara",
+                "value":"rule msf_or_tunnel_in_registry\r\n{\r\nstrings:\r\n   $port_number_in_registry = â€œ/4444â€\r\n   $hidden_powershell_in_registry = â€œpowershell.exe -nop -w hiddenâ€ wide    \r\ncondition:\r\n\tuint32(0)==0x66676572 and any of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1487002942",
+                "type":"text",
+                "value":"MEM:Trojan.Win32.Cometer",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1487002943",
+                "type":"text",
+                "value":"MEM:Trojan.Win32.Metasploit",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1487002943",
+                "type":"text",
+                "value":"Trojan.Multi.GenAutorunReg.c",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1487002944",
+                "type":"text",
+                "value":"HEUR:Trojan.Multi.Powecod",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"In unallocated space in the Windows registry, the following artefacts might be found:",
+                "timestamp":"1487003018",
+                "type":"pattern-in-file",
+                "value":"powershell.exe -nop -w hidden -e",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"In unallocated space in the Windows registry, the following artefacts might be found:",
+                "timestamp":"1487003019",
+                "type":"pattern-in-file",
+                "value":"10.10.1.12/8080",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"In unallocated space in the Windows registry, the following artefacts might be found:",
+                "timestamp":"1487003020",
+                "type":"pattern-in-file",
+                "value":"10.10.1.11/4444",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1487003097",
+                "type":"text",
+                "value":"To find the host used by an attacker using the technique described for remote connections and password collection, the following paths in the Windows registry should be analyzed:\r\n\r\nHKLM\\SYSTEM\\ControlSet001\\services\\ â€“ path will be modified after using the SC utility\r\nHKLM\\SYSTEM\\ControlSet001\\services\\PortProxy\\v4tov4\\tcp â€“ path will be modified after using the NETSH utility",
+                "to_ids":false
+            }
+        ]
+    }
+}

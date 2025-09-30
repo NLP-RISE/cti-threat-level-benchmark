@@ -1,0 +1,98 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-11-24",
+        "published":true,
+        "info":"Cerber 5.0 through Google via onion gateway",
+        "publish_timestamp":"1480503175",
+        "timestamp":"1480503167",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"download location redirect (Google)",
+                "timestamp":"1479992000",
+                "type":"url",
+                "value":"https://www.google.com/url?hl=en&q=https://pvjk6aukijrdwwqs.onion.to/00562206.doc?id%3D23964551%26apr%3D0333&source=gmail&ust=1480036825671000&usg=AFQjCNEyM-vUZ9C8Kf8fbmS88Il7gWapLg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location (onion.to)",
+                "timestamp":"1479992001",
+                "type":"url",
+                "value":"https://pvjk6aukijrdwwqs.onion.to/svchost32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"payment site",
+                "timestamp":"1479992001",
+                "type":"url",
+                "value":"http://ffoqr3ug7m726zou.vofy7f.top/",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber ransomware",
+                "timestamp":"1479992049",
+                "type":"malware-sample",
+                "value":"svchost32.exe|700da63837f92dffbaca3042102730c7",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber ransomware",
+                "timestamp":"1479992050",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber ransomware",
+                "timestamp":"1479992050",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cerber ransomware - Xchecked via VT: bdaacb4e4d0f3a33c3a9199fd3cbaa2ab0047c269068d41773a754379c9c75c5",
+                "timestamp":"1479992366",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/bdaacb4e4d0f3a33c3a9199fd3cbaa2ab0047c269068d41773a754379c9c75c5/analysis/1479991440/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1480503166",
+                "type":"hostname",
+                "value":"pvjk6aukijrdwwqs.onion.to",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1480503166",
+                "type":"hostname",
+                "value":"ffoqr3ug7m726zou.vofy7f.top",
+                "to_ids":true
+            }
+        ]
+    }
+}

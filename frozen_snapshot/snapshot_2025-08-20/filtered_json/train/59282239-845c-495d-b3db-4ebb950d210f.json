@@ -1,0 +1,295 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-26",
+        "published":true,
+        "info":"OSINT - Analysis of Emotet v4",
+        "publish_timestamp":"1495804482",
+        "timestamp":"1495804476",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Trojan\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495802964",
+                "type":"link",
+                "value":"https://www.cert.pl/en/news/single/analysis-of-emotet-v4/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495802965",
+                "type":"text",
+                "value":"Emotet is a modular Trojan horse, which was firstly noticed in June 2014 by Trend Micro. This malware is related to other types like Geodo, Bugat or Dridex, which are attributed by researches to the same family.\r\n\r\nEmotet was discovered as an advanced banker â€“ itâ€™s first campaign targeted clients of German and Austrian banks. Victimsâ€™ bank accounts were infiltrated by a web browser infection which intercept communication between webpage and bank servers. In such scenario, malware hooks specific routines to sniff network activity and steal information. This technique is typical for modern banking malware and is widely known as Man-in-the-Browser attack.\r\n\r\nNext, modified release of Emotet banker (v2) has taken advantage of another technique â€“ automation of stealing money from hijacked bank accounts using ATSs (Automated Transfer Systems, more informations on page 20 of CERT Polska Report 2013). This technology is also used in other bankers. Good examples are ISFB (Gozi) or Tinba.\r\n\r\nAt the beginning of April 2017, we observed wide malspam campaign in Poland, distributing fraudulent mails. E-mails were imitating delivery notifications from DHL logistics company and contained malicious link, which referred to brand-new, unknown variant of Emotet.\r\n\r\n\r\n\r\nMalware distributed in this campaign differed from previously known versions. Behavior and communication methods were similar, but malware used different encryption and we noticed significant changes in its code. Thus we called this modification version 4.",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"C&C public key",
+                "timestamp":"1495802933",
+                "type":"other",
+                "value":"-----BEGIN PUBLIC KEY-----\r\nMHwwDQYJKoZIhvcNAQEBBQADawAwaAJhAJ16QBv5Csq0eruFy4BvTcXmmIyeqUb3\r\nvCCc8K/zOYOpL/Ww6FCdUpvPfs+RR/sLBalwtKmT14iRUaNmJdygnAKUIRWR1HNt\r\n0rQRir0pD4QlkXlnZ9lZazTfyMV8BLCatwIDAQAB\r\n-----END PUBLIC KEY-----",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Analysis based on sample",
+                "timestamp":"1495802933",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April)",
+                "timestamp":"1495802933",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April)",
+                "timestamp":"1495802933",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April)",
+                "timestamp":"1495802933",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://87.106.105.76",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://173.255.229.121",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://178.79.177.141",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 7080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://79.170.95.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://206.214.220.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://88.198.50.221",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://5.39.84.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 7080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://188.68.58.8",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 7080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://162.214.11.56",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://5.196.73.150",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 7080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://203.121.145.40",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 7080 C&C",
+                "timestamp":"1495802933",
+                "type":"url",
+                "value":"http://46.165.212.76",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Analysis based on sample - Xchecked via VT: c53956c95100c5c0ba342977f8fc44fcad35aabc24ec44cb12bb83eee1ed34fa",
+                "timestamp":"1495802942",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Analysis based on sample - Xchecked via VT: c53956c95100c5c0ba342977f8fc44fcad35aabc24ec44cb12bb83eee1ed34fa",
+                "timestamp":"1495802942",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Analysis based on sample - Xchecked via VT: c53956c95100c5c0ba342977f8fc44fcad35aabc24ec44cb12bb83eee1ed34fa",
+                "timestamp":"1495802943",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c53956c95100c5c0ba342977f8fc44fcad35aabc24ec44cb12bb83eee1ed34fa/analysis/1494971561/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 722268bad0d3a2e90aa148d52c60943e",
+                "timestamp":"1495802943",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 722268bad0d3a2e90aa148d52c60943e",
+                "timestamp":"1495802944",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 722268bad0d3a2e90aa148d52c60943e",
+                "timestamp":"1495802944",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fe8c3e060969c3e8842bcbcab161cd0ba477d2614115e2cf46588eed30554a12/analysis/1495693771/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 5b2d58b4104309ee9c93b455d39c7314",
+                "timestamp":"1495802945",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 5b2d58b4104309ee9c93b455d39c7314",
+                "timestamp":"1495802946",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 5b2d58b4104309ee9c93b455d39c7314",
+                "timestamp":"1495802946",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/621c0a11ee0100b8fc3190e471ed4936204e897d97394ba9614ec95f1b69c69c/analysis/1493454650/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 0497c120248c6f00f1ac37513bd572e5",
+                "timestamp":"1495802947",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 0497c120248c6f00f1ac37513bd572e5",
+                "timestamp":"1495802947",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"fetched modules (13th April) - Xchecked via VT: 0497c120248c6f00f1ac37513bd572e5",
+                "timestamp":"1495802947",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1eb9c52548870533246932e12843318a95f876fd873bf4dfec7759214d1c2cc9/analysis/1493439636/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495804412",
+                "type":"yara",
+                "value":"rule emotet4_basic: trojan\r\n{\r\nmeta:\r\nauthor = \"psrok1/mak\"\r\nmodule = \"emotet\"\r\nstrings:\r\n$emotet4_rsa_public = { 8d ?? ?? 5? 8d ?? ?? 5? 6a 00 68 00 80 00 00 ff 35 [4] ff 35 [4] 6a 13 68 01 00 01 00 ff 15 [4] 85 }\r\n$emotet4_cnc_list = { 39 ?? ?5 [4] 0f 44 ?? (FF | A3)}\r\ncondition:\r\nall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495804444",
+                "type":"yara",
+                "value":"rule emotet4: trojan\r\n{\r\nmeta:\r\nauthor = \"psrok1\"\r\nmodule = \"emotet\"\r\nstrings:\r\n$emotet4_x65599 = { 0f b6 ?? 8d ?? ?? 69 ?? 3f 00 01 00 4? 0? ?? 3? ?? 72 }\r\ncondition:\r\nany of them and emotet4_basic\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS flag not set (false-positive?)",
+                "timestamp":"1495804476",
+                "type":"yara",
+                "value":"rule emotet4_spam : spambot\r\n{\r\nmeta:\r\nauthor=\"mak\"\r\nmodule=\"emotet\"\r\nstrings:\r\n$login=\"LOGIN\" fullword\r\n$startls=\"STARTTLS\" fullword\r\n$mailfrom=\"MAIL FROM:\"\r\ncondition:\r\nall of them and emotet4_basic\r\n}",
+                "to_ids":false
+            }
+        ]
+    }
+}

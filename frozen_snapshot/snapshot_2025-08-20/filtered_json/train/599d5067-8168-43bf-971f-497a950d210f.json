@@ -1,0 +1,148 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-23",
+        "published":false,
+        "info":"OSINT - Malicious script dropping an executable signed by Avast?",
+        "publish_timestamp":"0",
+        "timestamp":"1503489623",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503489623",
+                "type":"link",
+                "value":"https://isc.sans.edu/forums/diary/Malicious+script+dropping+an+executable+signed+by+Avast/22748/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"comment",
+                "value":"Yesterday, I found an interesting sample that I started to analyze… It reached my spam trap attached to an email in Portuguese with the subject: \"Venho por meio desta solicitar orçamento dos produtos” (\"I hereby request the products budget”). There was one attached ZIP archive: PanilhaOrcamento.zip (SHA1: 3c159f65ba88bb208df30822d2a88b6531e4d0a7) with a VT score of 0/58.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"email-subject",
+                "value":"Venho por meio desta solicitar orçamento dos produtos",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"url",
+                "value":"https://1591523753.rsc.cdn77.org/p2r.php?",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"file signed by Avast",
+                "timestamp":"1503489599",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"link",
+                "value":"https://www.virustotal.com/#/file/9329de591b51c367908f2916307a4d2277caa2c766f2cecac8d06e02a2416246/detection",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503489599",
+                "type":"link",
+                "value":"https://www.virustotal.com/#/file/6d28d5453d0c2ca132ba3b3d7f0a121427090c1eb52f7d2a5c3e4e5440411bc7/detection",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"file signed by Avast - Xchecked via VT: 6d28d5453d0c2ca132ba3b3d7f0a121427090c1eb52f7d2a5c3e4e5440411bc7",
+                "timestamp":"1503489599",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"file signed by Avast - Xchecked via VT: 6d28d5453d0c2ca132ba3b3d7f0a121427090c1eb52f7d2a5c3e4e5440411bc7",
+                "timestamp":"1503489599",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"file signed by Avast - Xchecked via VT: 6d28d5453d0c2ca132ba3b3d7f0a121427090c1eb52f7d2a5c3e4e5440411bc7",
+                "timestamp":"1503489599",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6d28d5453d0c2ca132ba3b3d7f0a121427090c1eb52f7d2a5c3e4e5440411bc7/analysis/1503339647/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3c159f65ba88bb208df30822d2a88b6531e4d0a7",
+                "timestamp":"1503489599",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3c159f65ba88bb208df30822d2a88b6531e4d0a7",
+                "timestamp":"1503489599",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 3c159f65ba88bb208df30822d2a88b6531e4d0a7",
+                "timestamp":"1503489599",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9329de591b51c367908f2916307a4d2277caa2c766f2cecac8d06e02a2416246/analysis/1503343138/",
+                "to_ids":false
+            }
+        ]
+    }
+}

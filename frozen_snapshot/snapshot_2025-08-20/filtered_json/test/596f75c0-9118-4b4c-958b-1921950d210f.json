@@ -1,0 +1,596 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-07-19",
+        "published":true,
+        "info":"OSINT - Recent Winnti Infrastructure and Samples",
+        "publish_timestamp":"1500477162",
+        "timestamp":"1500477123",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Winnti\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"text",
+                "value":"On July 17, 2017, we detected a malicious document in VirusTotal exploiting CVE-2017-0199. By pivoting off of the infrastructure we learned that it is related to Winnti, a Chinese threat actor that is mostly targeting the gaming industry. Below we outline initial findings.\r\n\r\nThe malicious file, named curriculum vitae.rtf (58c66b3ddbc0df9810119bb688ea8fb0) was uploaded from Turkey.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"link",
+                "value":"http://www.clearskysec.com/winnti/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"mess.googlerenewals.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"us.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"signup.facebooknavigation.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"bot.new.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"jp.googlerenewals.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"xn--360tmp-k02m.new.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"cdn.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"xn--360tmp-k02m.tmp.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"xn--360tmp-k02m.www.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"ftp.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"game.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"www.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"new.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"bot.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"vnew.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"tmp.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"xn--360tmp-k02m.googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"hk.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"us.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"www.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"lead1.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"cdn.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"show.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"uk.uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"news.googlesoftservice.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"news.facebooknavigation.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"backup.aolonline.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"uk.igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"hostname",
+                "value":"news.aolonline.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"NSLS.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"HelpPane.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"conf.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"msimain17.sdb",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"shell.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"715578187~.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"COMSysAppLauncher.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"SysAppLauncher.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"curriculumvitae.rtf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"cryptbase.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"sign.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"mess.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"cryptbasesvc.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"video(20170201)_2.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"cryptbase.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"filename",
+                "value":"COMSystemApplicationLauncher.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"yytxconnecticut@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"sunware1@aol.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"lileminnesota@hotmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"dsfsaf@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"13836469977@139.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"email-src",
+                "value":"fuckccddeefff@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"googlesoftservice.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"igooglefiles.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"aolonline.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"facebooknavigation.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"googlecustomservice.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"find2find.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"tiwwter.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"luckhairs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"googlerenewals.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1500477123",
+                "type":"domain",
+                "value":"pornsee.tv",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"curriculum vitae.rtf",
+                "timestamp":"1500477123",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The script downloads and runs an executable (a4b2a6883ba0451429df29506a1f6995)",
+                "timestamp":"1500477123",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The script downloads and runs an executable (a4b2a6883ba0451429df29506a1f6995) from",
+                "timestamp":"1500477123",
+                "type":"url",
+                "value":"http://54.245.195.101/shell.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The script downloads and runs an executable (a4b2a6883ba0451429df29506a1f6995) - Xchecked via VT: a4b2a6883ba0451429df29506a1f6995",
+                "timestamp":"1500477124",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The script downloads and runs an executable (a4b2a6883ba0451429df29506a1f6995) - Xchecked via VT: a4b2a6883ba0451429df29506a1f6995",
+                "timestamp":"1500477124",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"The script downloads and runs an executable (a4b2a6883ba0451429df29506a1f6995) - Xchecked via VT: a4b2a6883ba0451429df29506a1f6995",
+                "timestamp":"1500477124",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/eee4b1c4621b0ca355dc677652dfd6449f1f230565da8cb5db59fa195e8f553f/analysis/1500457177/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"curriculum vitae.rtf - Xchecked via VT: 58c66b3ddbc0df9810119bb688ea8fb0",
+                "timestamp":"1500477124",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"curriculum vitae.rtf - Xchecked via VT: 58c66b3ddbc0df9810119bb688ea8fb0",
+                "timestamp":"1500477124",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"curriculum vitae.rtf - Xchecked via VT: 58c66b3ddbc0df9810119bb688ea8fb0",
+                "timestamp":"1500477124",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1ada845dbf89024f4eee8409880ce21ece2262db3ad5129d2eed33a76d177d39/analysis/1500445510/",
+                "to_ids":false
+            }
+        ]
+    }
+}

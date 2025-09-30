@@ -1,0 +1,172 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-03-24",
+        "published":true,
+        "info":"OSINT - The DiskWriter or UselessDisk BootLocker May Be A Wiper",
+        "publish_timestamp":"1523201513",
+        "timestamp":"1523201507",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"UselessDisk\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523200401",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/the-diskwriter-or-uselessdisk-bootlocker-may-be-a-wiper/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523200402",
+                "type":"comment",
+                "value":"A new MBR bootlocker called DiskWriter, or UselessDisk, has been discovered that overwrites the MBR of a victim's computer and then displays a ransom screen on reboot instead of booting into Windows. This ransom note asks for $300 in bitcoins in order to gain access to Windows again.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200402",
+                "type":"filename",
+                "value":"DiskWriter.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200402",
+                "type":"filename",
+                "value":"UselessDisk.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523200403",
+                "type":"filename",
+                "value":"E:\\Debug\\UselessDisk.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1522932166",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1523201493",
+                "type":"pdb",
+                "value":"E:\\Debug\\UselessDisk.pdb",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An address used in a cryptocurrency",
+                "meta-category":"financial",
+                "name":"coin-address",
+                "timestamp":"1522931877",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1522931877",
+                        "type":"btc",
+                        "value":"1GZCw453MzQr8V2VAgJpRmKBYRDUJ8kzco",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1522931878",
+                        "type":"text",
+                        "value":"BTC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523200406",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200403",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200404",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523200404",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523200405",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523200405",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bf664370a287f83a67eb9ec01d575cad3bcdfbec2e2290a5e8d570999566e79e/analysis/1522221142/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523200405",
+                        "type":"text",
+                        "value":"47/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523200405",
+                        "type":"datetime",
+                        "value":"2018-03-28T07:12:22",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

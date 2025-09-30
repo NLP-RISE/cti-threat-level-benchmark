@@ -1,0 +1,132 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-24",
+        "published":true,
+        "info":"OSINT - New targeted attack against Saudi Arabia Government",
+        "publish_timestamp":"1490340029",
+        "timestamp":"1490339998",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490339998",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/cybercrime/social-engineering-cybercrime/2017/03/new-targeted-attack-saudi-arabia-government/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490339998",
+                "type":"text",
+                "value":"A new spear phishing campaign is targeting Saudi Arabia governmental organizations. The attack originates from a phishing email containing a Word document in Arabic language. If the victim opens it up, it will not only infect their system but send the same phishing document to other contacts via their Outlook inbox.\r\n\r\nWe know that at least about a dozen Saudi agencies were targeted. As with most email-borne attacks, this one leverages social engineering to execute malicious code via a Macro.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 - potentialy compromised",
+                "timestamp":"1490339998",
+                "type":"url",
+                "value":"mail.spa.gov.sa/ews/exchange/exchange.asmx",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 - potentialy compromised",
+                "timestamp":"1490339998",
+                "type":"url",
+                "value":"webmail.ecra/ews/exchange/exchange.asmx",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1490339998",
+                "type":"ip-dst",
+                "value":"62.149.118.67",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1490339998",
+                "type":"ip-dst",
+                "value":"85.194.112.9",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary payload",
+                "timestamp":"1490339998",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary payload",
+                "timestamp":"1490339998",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Word dropper",
+                "timestamp":"1490339998",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Word dropper",
+                "timestamp":"1490339998",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Word dropper - Xchecked via VT: a6dbc36c472b3ba70a98efd0db35e75c340086be15d3c3ab4e39033604d0bcf9",
+                "timestamp":"1490340007",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Word dropper - Xchecked via VT: a6dbc36c472b3ba70a98efd0db35e75c340086be15d3c3ab4e39033604d0bcf9",
+                "timestamp":"1490340008",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a6dbc36c472b3ba70a98efd0db35e75c340086be15d3c3ab4e39033604d0bcf9/analysis/1490338453/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary payload - Xchecked via VT: a96c57c35df18ac20d83b08a88e502071bd0033add0914b951adbd1639b0b873",
+                "timestamp":"1490340009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Binary payload - Xchecked via VT: a96c57c35df18ac20d83b08a88e502071bd0033add0914b951adbd1639b0b873",
+                "timestamp":"1490340010",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a96c57c35df18ac20d83b08a88e502071bd0033add0914b951adbd1639b0b873/analysis/1490319480/",
+                "to_ids":false
+            }
+        ]
+    }
+}

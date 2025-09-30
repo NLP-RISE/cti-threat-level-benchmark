@@ -1,0 +1,285 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-19",
+        "published":false,
+        "info":"OSINT - Malware Used by “Rocke” Group Evolves to Evade Detection by Cloud Security Products",
+        "publish_timestamp":"0",
+        "timestamp":"1547935810",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Xbash\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547935471",
+                "type":"link",
+                "value":"https://unit42.paloaltonetworks.com/malware-used-by-rocke-group-evolves-to-evade-detection-by-cloud-security-products/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547935491",
+                "type":"text",
+                "value":"Palo Alto Networks Unit 42 recently captured and investigated new samples of the Linux coin mining malware used by the Rocke group. The family was suspected to be developed by the Iron cybercrime group and it’s also associated with the Xbash malware we reported on in September of 2018. The threat actor Rocke was originally revealed by Talos in August of 2018 and many remarkable behaviors were disclosed in their blog post. The samples described in this report were collected in October of 2018, and since that time the command and control servers they use have been shut down.\r\n\r\nDuring our analysis, we realized that these samples used by the Rocke group adopted new code to uninstall five different cloud security protection and monitoring products from compromised Linux servers. In our analysis, these attacks did not compromise these security products: rather, the attacks first gained full administrative control over the hosts and then abused that full administrative control to uninstall these products in the same way a legitimate administrator would.\r\n\r\nThese products were developed by Tencent Cloud and Alibaba Cloud (Aliyun), the two leading cloud providers in China that are expanding their business globally. To the best of our knowledge, this is the first malware family that developed the unique capability to target and remove cloud security products. This also highlights a new challenge for products in the Cloud Workload Protection Platforms market defined by Gartner.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935697",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935698",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935698",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935699",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935699",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935700",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935700",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935701",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935701",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935701",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935702",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample with the evasion behavior",
+                "timestamp":"1547935702",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain for C2 Communication",
+                "timestamp":"1547935725",
+                "type":"hostname",
+                "value":"dwn.rundll32.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain for C2 Communication",
+                "timestamp":"1547935725",
+                "type":"hostname",
+                "value":"www.aybc.so",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain for C2 Communication",
+                "timestamp":"1547935726",
+                "type":"hostname",
+                "value":"a.ssvs.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domain for C2 Communication",
+                "timestamp":"1547935726",
+                "type":"domain",
+                "value":"sydwzl.cn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Tencent Cloud",
+                "timestamp":"1547935765",
+                "type":"ip-dst",
+                "value":"118.24.150.172",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Alibaba Cloud",
+                "timestamp":"1547935766",
+                "type":"ip-dst",
+                "value":"120.55.54.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935803",
+                "type":"url",
+                "value":"https://pastebin.com/raw/CnPtQ2tM",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935804",
+                "type":"url",
+                "value":"https://pastebin.com/raw/rjPGgXQE",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935805",
+                "type":"url",
+                "value":"https://pastebin.com/raw/1NtRkBc3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935805",
+                "type":"url",
+                "value":"https://pastebin.com/raw/tRxfvbYN",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935806",
+                "type":"url",
+                "value":"https://pastebin.com/raw/SSCy7mY7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935806",
+                "type":"url",
+                "value":"https://pastebin.com/raw/VVt27LeH",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935807",
+                "type":"url",
+                "value":"https://pastebin.com/raw/Fj2YdETv",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935807",
+                "type":"url",
+                "value":"https://pastebin.com/raw/JNPewK6r",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935808",
+                "type":"url",
+                "value":"https://pastebin.com/raw/TzBeq3AM",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935808",
+                "type":"url",
+                "value":"https://pastebin.com/raw/eRkrSQfE",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935809",
+                "type":"url",
+                "value":"https://pastebin.com/raw/5bjpjvLP",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL for Code Update",
+                "timestamp":"1547935809",
+                "type":"url",
+                "value":"https://pastebin.com/raw/Gw7mywhC",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-01-19",
+        "published":true,
+        "info":"Suspected Chinese Threat Actors Exploiting FortiOS Vulnerability (CVE-2022-42475)",
+        "publish_timestamp":"1679575185",
+        "timestamp":"1679575177",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1679574977",
+                "type":"vulnerability",
+                "value":"CVE-2022-42475",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Basic BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Basic BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Extended BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Extended BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Windows version of BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Windows version of BOLDMOVE",
+                "timestamp":"1679575020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1679575043",
+                "type":"link",
+                "value":"https://www.mandiant.com/resources/blog/chinese-actors-exploit-fortios-flaw",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679575140",
+                "type":"filename",
+                "value":"/data/lib/libiptcp.so",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1679575140",
+                "type":"filename",
+                "value":"/data/lib/libgif.so",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1679575156",
+                "type":"user-agent",
+                "value":"curl/6.12.34",
+                "to_ids":false
+            }
+        ]
+    }
+}

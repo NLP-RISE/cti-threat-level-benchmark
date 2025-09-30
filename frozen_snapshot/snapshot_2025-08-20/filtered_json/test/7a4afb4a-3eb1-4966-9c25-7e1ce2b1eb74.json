@@ -1,0 +1,272 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-12-21",
+        "published":true,
+        "info":"Unmasking MirrorFace: Operation LiberalFace targeting Japanese political entities | WeLiveSecurity",
+        "publish_timestamp":"1671610626",
+        "timestamp":"1671610618",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Component Object Model - T1559.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Native API - T1106\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Japan\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"LODEINFO\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1671609171",
+                "type":"comment",
+                "value":"Unmasking MirrorFace: Operation LiberalFace targeting Japanese political entities | WeLiveSecurity",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1671609171",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2022/12/14/unmasking-mirrorface-operation-liberalface-targeting-japanese-political-entities/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1671609540",
+                "type":"filename",
+                "value":"SNS.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"LODEINFO C&C server.",
+                "timestamp":"1671610411",
+                "type":"ip-dst",
+                "value":"5.8.95.174",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Server for data exfiltration.",
+                "timestamp":"1671610423",
+                "type":"ip-dst",
+                "value":"45.32.13.180",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"LODEINFO C&C server.",
+                "timestamp":"1671610416",
+                "type":"ip-dst",
+                "value":"103.175.16.39",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1671609620",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609620",
+                        "type":"filename",
+                        "value":"K7SysMn1.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609483",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1671609714",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609700",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609714",
+                        "type":"filename",
+                        "value":"K7SysMon.Exe.db",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1671609833",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609820",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609833",
+                        "type":"filename",
+                        "value":"JsSchHlp.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1671609884",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609871",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609884",
+                        "type":"filename",
+                        "value":"JSESPR.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1671609932",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609918",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1671609932",
+                        "type":"filename",
+                        "value":"31558_n.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"second-stage LODEINFO C&C server.",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1671610464",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1671610453",
+                        "type":"hostname",
+                        "value":"www.ninesmn.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1671610464",
+                        "type":"ip-dst",
+                        "value":"167.179.116.56",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"second-stage LODEINFO C&C server.",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1671610495",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1671610484",
+                        "type":"hostname",
+                        "value":"www.aesorunwe.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1671610495",
+                        "type":"ip-dst",
+                        "value":"172.105.217.233",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

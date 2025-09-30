@@ -1,0 +1,288 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-11-22",
+        "published":false,
+        "info":"OSINT - Aurora / Zorro Ransomware Actively Being Distributed",
+        "publish_timestamp":"0",
+        "timestamp":"1543222498",
+        "Tag":[
+            {
+                "name":"workflow:todo=\"expansion\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Aurora Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1543222344",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/aurora-zorro-ransomware-actively-being-distributed/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1543219853",
+                "type":"email-src",
+                "value":"oktropys@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"ransomnote",
+                "timestamp":"1543220691",
+                "type":"attachment",
+                "value":"ransom-note.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Wallpapaer ransomnote",
+                "timestamp":"1543220822",
+                "type":"attachment",
+                "value":"wallpaper.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220915",
+                "type":"email-src",
+                "value":"anastacialove21@mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220916",
+                "type":"email-src",
+                "value":"anonimus.mr@yahoo.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220916",
+                "type":"email-src",
+                "value":"big.fish@vfemail.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220917",
+                "type":"email-src",
+                "value":"enco@cock.email",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220917",
+                "type":"email-src",
+                "value":"hellstaff@india.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220918",
+                "type":"email-src",
+                "value":"j0ra@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220918",
+                "type":"email-src",
+                "value":"ochennado@tutanota.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Associated email address",
+                "timestamp":"1543220918",
+                "type":"email-src",
+                "value":"unlockalexkingman@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1543222345",
+                "type":"text",
+                "value":"A ransomware that has been distributed since the summer of 2018 has started to pick up steam in the latest variant. This new variant is currently being called Zorro Ransomware, but has also been called Aurora Ransomware in the past.\r\n\r\nIt is not currently known how this ransomware is distributed, but there are indications it may be installed by hacking into computers running Remote Desktop Services and that are exposed to the Internet. The attackers will brute force the password for RDP accounts in order to gain access to the computer and install the ransomware.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An address used in a cryptocurrency",
+                "meta-category":"financial",
+                "name":"coin-address",
+                "timestamp":"1543218838",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1543218838",
+                        "type":"btc",
+                        "value":"18sj1xr86c3YHK44Mj2AXAycEsT2QLUFac",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543218839",
+                        "type":"text",
+                        "value":"BTC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1543219528",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1543219528",
+                        "type":"filename",
+                        "value":"!-GET_MY_FILES-!.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543219530",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1543219551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1543219551",
+                        "type":"filename",
+                        "value":"#RECOVERY-PC#.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543219552",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1543219574",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1543219575",
+                        "type":"filename",
+                        "value":"@_RESTORE-FILES_@.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543219575",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Wallpapaer ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1543220086",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1543220086",
+                        "type":"filename",
+                        "value":"%UserProfile%wall.i",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543220086",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1543220875",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1543220875",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1543220876",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

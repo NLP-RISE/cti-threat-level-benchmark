@@ -1,0 +1,379 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-08",
+        "published":true,
+        "info":"OSINT - Buckeye: Espionage Outfit Used Equation Group Tools Prior to Shadow Brokers Leak",
+        "publish_timestamp":"1557328840",
+        "timestamp":"1557328832",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"UPS\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT3 - G0022\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Pirpi (first variant)",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Pirpi (first variant)",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Pirpi (second variant)",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Pirpi (second variant)",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command line utility to list user accounts on remote machine",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command line utility to list user accounts on remote machine",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (C/C++)",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (C/C++)",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (Powershell)",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (Powershell)",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (py2exe)",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filensfer (py2exe)",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command line SMB client",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command line SMB client",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HTran",
+                "timestamp":"1557327195",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HTran",
+                "timestamp":"1557327195",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557328783",
+                "type":"link",
+                "value":"https://www.symantec.com/blogs/threat-intelligence/buckeye-windows-zero-day-exploit",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557328818",
+                "type":"text",
+                "value":"Buckeye: Espionage Outfit Used Equation Group Tools Prior to Shadow Brokers Leak\r\nWindows zero day was exploited by Buckeye alongside Equation Group tools during 2016 attacks. Exploit and tools continued to be used after Buckeye's apparent disappearance in 2017.\r\nKey Findings\r\n\r\n    The Buckeye attack group was using Equation Group tools to gain persistent access to target organizations at least a year prior to the Shadow Brokers leak.\r\n    Variants of Equation Group tools used by Buckeye appear to be different from those released by Shadow Brokers, potentially indicating that they didn't originate from that leak.\r\n    Buckeye's use of Equation Group tools also involved the exploit of a previously unknown Windows zero-day vulnerability. This zero day was reported by Symantec to Microsoft in September 2018 and patched in March 2019.\r\n    While Buckeye appeared to cease operations in mid-2017, the Equation Group tools it used continued to be used in attacks until late 2018. It is unknown who continued to use the tools. They may have been passed to another group or Buckeye may have continued operating longer than supposed.\r\n\r\nThe 2017 leak of Equation Group tools by a mysterious group calling itself the Shadow Brokers was one of the most significant cyber security stories in recent years. Equation is regarded as one of the most technically adept espionage groups and the release of a trove of its tools had a major impact, with many attackers rushing to deploy the malware and exploits disclosed.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"datetime",
+                        "value":"2019-05-08T05:07:44",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/6b1f8b303956c04e24448b1eec8634bd3fb2784c8a2d12ecf8588424b36d3cbc/analysis/1557292064/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (C/C++)",
+                        "timestamp":"1557327195",
+                        "type":"text",
+                        "value":"45/73",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"datetime",
+                        "value":"2019-05-08T05:07:41",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/3dbe8700ecd27b3dc39643b95b187ccfd44318fc88c5e6ee6acf3a07cdaf377e/analysis/1557292061/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Filensfer (py2exe)",
+                        "timestamp":"1557327195",
+                        "type":"text",
+                        "value":"19/73",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1557327315",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"datetime",
+                        "value":"2019-05-08T05:07:48",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/951f079031c996c85240831ea1b61507f91990282daae6da2841311322e8a6d7/analysis/1557292068/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"HTran",
+                        "timestamp":"1557327195",
+                        "type":"text",
+                        "value":"47/73",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,269 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-20",
+        "published":true,
+        "info":"OSINT - The Rise of Dridex and the Role of ESPs",
+        "publish_timestamp":"1487618315",
+        "timestamp":"1487618299",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Anunak\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Dridex\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487618050",
+                "type":"link",
+                "value":"https://www.govcert.admin.ch/blog/28/the-rise-of-dridex-and-the-role-of-esps",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487618273",
+                "type":"text",
+                "value":"Last week, we have warned Swiss citizens about a new malspam run targeting exclusively Swiss internet users. The attack aimed to infect them with Dridex. Dridex is a sophisticated eBanking Trojan that emerged from the code base of Bugat / Cridex in 2014. Despite takedown attempts by the security industry and several arrests conducted by the FBI in 2015, the botnet is still very active. In 2016, MELANI / GovCERT.ch became aware of a handful of highly sophisticated attacks against small and medium businesses (SMB) in Switzerland aiming to steal large amounts of money by targeting offline payment software. During our incident response in 2016, we could identify Dridex to be the initial infection vector, which had arrived in the victimâ€™s mailbox by malicious Office Word documents, and uncovered the installation of a sophisticated malware called Carbanak, used by the attacker for lateral movement and conducting the actual fraud. Between 2013 and 2015, the Carbanak malware was used to steal approximately 1 billion USD from banks worldwide.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 1843",
+                "timestamp":"1487618131",
+                "type":"ip-dst",
+                "value":"109.235.76.95",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618131",
+                "type":"ip-dst",
+                "value":"136.243.209.34",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 4431",
+                "timestamp":"1487618132",
+                "type":"ip-dst",
+                "value":"159.226.92.9",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618133",
+                "type":"ip-dst",
+                "value":"173.196.157.250",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618134",
+                "type":"ip-dst",
+                "value":"178.195.0.12",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 3101",
+                "timestamp":"1487618135",
+                "type":"ip-dst",
+                "value":"194.150.118.25",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618136",
+                "type":"ip-dst",
+                "value":"195.22.127.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618136",
+                "type":"ip-dst",
+                "value":"82.99.60.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618137",
+                "type":"ip-dst",
+                "value":"89.35.178.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618138",
+                "type":"ip-dst",
+                "value":"179.177.114.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618139",
+                "type":"ip-dst",
+                "value":"154.0.171.105",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618139",
+                "type":"ip-dst",
+                "value":"95.208.65.134",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618140",
+                "type":"ip-dst",
+                "value":"81.130.131.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 4433",
+                "timestamp":"1487618141",
+                "type":"ip-dst",
+                "value":"77.236.97.60",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618142",
+                "type":"ip-dst",
+                "value":"198.167.136.139",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 5353",
+                "timestamp":"1487618142",
+                "type":"ip-dst",
+                "value":"209.20.67.87",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618143",
+                "type":"ip-dst",
+                "value":"213.222.56.155",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 4043",
+                "timestamp":"1487618144",
+                "type":"ip-dst",
+                "value":"216.51.232.176",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618145",
+                "type":"ip-dst",
+                "value":"37.0.26.34",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8343",
+                "timestamp":"1487618145",
+                "type":"ip-dst",
+                "value":"37.139.21.245",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 443",
+                "timestamp":"1487618146",
+                "type":"ip-dst",
+                "value":"46.17.3.237",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618147",
+                "type":"ip-dst",
+                "value":"81.155.55.211",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1487618148",
+                "type":"ip-dst",
+                "value":"86.130.54.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Dridex payload:",
+                "timestamp":"1487618168",
+                "type":"url",
+                "value":"https://talofinancial-my.sharepoint.com/personal/ashleigh_schipp_talofinancial_com_au/_layouts/15/guestaccess.aspx?docid=07697c8afb3e544808bf527394eb7154b&authkey=Adh6QVItbnSLOpXvxh_BfCs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Dridex payload:",
+                "timestamp":"1487618168",
+                "type":"url",
+                "value":"https://yemposolutions-my.sharepoint.com/personal/amor_novicio_yempo-solu-tions_com/_layouts/15/guestaccess.aspx?docid=0ce03b9fd12d949cf91f56a7d1fbf4b93&authkey=ASOCPusN_QaBSXcCPxEkT9s",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"JS download",
+                "timestamp":"1487618206",
+                "type":"url",
+                "value":"https://jensenbowers-my.sharepoint.com/personal/leeanderson_jensenbowers_com_au/_layouts/15/download.aspx?docid=068187f5a930340c89e3b7c5c9b9c24f7&authkey=AarHUbAy66DSX08VzRPQ25w",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"JS download",
+                "timestamp":"1487618206",
+                "type":"url",
+                "value":"https://jensenbowers-my.sharepoint.com/personal/leeanderson_jensenbowers_com_au/_layouts/15/guestaccess.aspx?docid=068187f5a930340c89e3b7c5c9b9c24f7&authkey=AarHUbAy66DSX08VzRPQ25w",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487618249",
+                "type":"attachment",
+                "value":"infection_chain.jpg",
+                "to_ids":false
+            }
+        ]
+    }
+}

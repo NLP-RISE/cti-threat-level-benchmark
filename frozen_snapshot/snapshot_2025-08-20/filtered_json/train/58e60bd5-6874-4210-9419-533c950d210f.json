@@ -1,0 +1,114 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-06",
+        "published":true,
+        "info":"OSINT - LMAOxUS Ransomware: Another Case of Weaponized Open Source Ransomware",
+        "publish_timestamp":"1491501592",
+        "timestamp":"1491501555",
+        "Tag":[
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491501555",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/lmaoxus-ransomware-another-case-of-weaponized-open-source-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for first Stolich",
+                "timestamp":"1491501496",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for LMAUxUS binary",
+                "timestamp":"1491501496",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Email address used in LMAOxUS ransom note",
+                "timestamp":"1491501496",
+                "type":"email-src",
+                "value":"lmfaoxus@safe-mail.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Text-based ransom note",
+                "timestamp":"1491501496",
+                "type":"filename",
+                "value":"LMAO_READ_ME.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for LMAUxUS binary - Xchecked via VT: d0d16bb28ed263038358db5c1ae784c43d6ea7993118cf390cb2e7a7466969c2",
+                "timestamp":"1491501501",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for LMAUxUS binary - Xchecked via VT: d0d16bb28ed263038358db5c1ae784c43d6ea7993118cf390cb2e7a7466969c2",
+                "timestamp":"1491501502",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Binary for LMAUxUS binary - Xchecked via VT: d0d16bb28ed263038358db5c1ae784c43d6ea7993118cf390cb2e7a7466969c2",
+                "timestamp":"1491501503",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d0d16bb28ed263038358db5c1ae784c43d6ea7993118cf390cb2e7a7466969c2/analysis/1490307927/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for first Stolich - Xchecked via VT: d3a00a1101f2fa37b0b01bbee1b3c7f683ccf27fa224611721a863573d6e99da",
+                "timestamp":"1491501504",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Binary for first Stolich - Xchecked via VT: d3a00a1101f2fa37b0b01bbee1b3c7f683ccf27fa224611721a863573d6e99da",
+                "timestamp":"1491501505",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Binary for first Stolich - Xchecked via VT: d3a00a1101f2fa37b0b01bbee1b3c7f683ccf27fa224611721a863573d6e99da",
+                "timestamp":"1491501506",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d3a00a1101f2fa37b0b01bbee1b3c7f683ccf27fa224611721a863573d6e99da/analysis/1491230187/",
+                "to_ids":false
+            }
+        ]
+    }
+}

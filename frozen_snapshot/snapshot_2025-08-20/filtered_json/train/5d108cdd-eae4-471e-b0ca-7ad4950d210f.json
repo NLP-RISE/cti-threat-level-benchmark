@@ -1,0 +1,519 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-06-20",
+        "published":false,
+        "info":"OSINT -  Felipe, a new infostealer Trojan",
+        "publish_timestamp":"0",
+        "timestamp":"1563527786",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Trojan\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Trojan\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Trojan\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"trojan\""
+            },
+            {
+                "name":"CERT-XLM:malicious-code=\"trojan-malware\""
+            },
+            {
+                "name":"keylogger/infostealer"
+            },
+            {
+                "name":"workflow:state=\"incomplete\""
+            },
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1561369262",
+                "type":"ip-dst",
+                "value":"192.99.215.95",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1561371869",
+                "type":"url",
+                "value":"192.99.215.95/uploads",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1561371869",
+                "type":"domain",
+                "value":"inmemory.tech",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1563527779",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"filename",
+                        "value":"vshost.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\vshost.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\vshost.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1563527780",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369949",
+                        "type":"filename",
+                        "value":"explorer32.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561369949",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\explorer32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561369949",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\explorer32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561369949",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561369949",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561369802",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369802",
+                        "type":"filename",
+                        "value":"install2.bat",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561369802",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\install2.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561369802",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\install2.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561369802",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561369802",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369816",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561368205",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561368205",
+                        "type":"filename",
+                        "value":"infect.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561368216",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\infect.txt",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561368219",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\infect.txt",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win XP",
+                        "timestamp":"1561368227",
+                        "type":"text",
+                        "value":"%UserProfile%\\Local Settings\\Temp\\",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Win7/Win10",
+                        "timestamp":"1561368232",
+                        "type":"text",
+                        "value":"%UserProfile%\\AppData\\Local\\Temp\\",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561371797",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371797",
+                        "type":"filename",
+                        "value":"down.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371797",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1563442899",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1563442899",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"datetime",
+                        "value":"2019-06-19 21:05:11",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bf6e6c7808a9bb023fc1fea1822438ad0b6ebefd1bdc703d2acb280c328a4eb1/analysis/1560978311/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"46/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1563442900",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1563442901",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"datetime",
+                        "value":"2019-06-20 22:19:40",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ae0655e0a18286a797171a891c96ca9fed5e880ad171bfeb21ed6c0afc00261d/analysis/1561069180/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"text",
+                        "value":"48/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1563527780",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"datetime",
+                        "value":"2019-06-20 22:19:40",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ae0655e0a18286a797171a891c96ca9fed5e880ad171bfeb21ed6c0afc00261d/analysis/1561069180/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561369954",
+                        "type":"text",
+                        "value":"48/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1563527780",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"datetime",
+                        "value":"2019-06-19 21:05:11",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bf6e6c7808a9bb023fc1fea1822438ad0b6ebefd1bdc703d2acb280c328a4eb1/analysis/1560978311/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1561371771",
+                        "type":"text",
+                        "value":"46/72",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

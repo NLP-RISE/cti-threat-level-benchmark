@@ -1,0 +1,340 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-26",
+        "published":true,
+        "info":"OSINT - Striking Oil: A Closer Look at Adversary Infrastructure",
+        "publish_timestamp":"1506456427",
+        "timestamp":"1506456406",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"TwoFace\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://researchcenter.paloaltonetworks.com/2017/09/unit42-striking-oil-closer-look-adversary-infrastructure/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1506456407",
+                "type":"text",
+                "value":"While expanding our research into the TwoFace webshell from this past July, we were able to uncover several IP addresses that logged in and directly interfaced with the shell we discovered and wrote about. Investigating deeper into these potential adversary IPs revealed a much larger infrastructure used to execute the attacks. We found the infrastructure was segregated into different functions for specific malicious objectives. We found some sites that were set up as credential harvesters (likely used in phishing attacks), a compromised system that was used to interact with a TwoFace webshell to hide the actorâ€™s location, and finally systems that interact with TwoFace webshell-compromised systems to provide command and control direction of those compromised systems.\r\n\r\nIn addition to uncovering the attack infrastructure for this adversary, we were able to determine a significant link between the operators of the set of attacks involving TwoFace and another attack campaign we have published on in detail: OilRig.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools",
+                "timestamp":"1506456407",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456407",
+                "type":"domain",
+                "value":"owa-insss-org-ill-owa-authen.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456406",
+                "type":"domain",
+                "value":"webmaiil-tau-ac-il.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456407",
+                "type":"domain",
+                "value":"mail-macroadvisorypartners.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456406",
+                "type":"domain",
+                "value":"webmail-tidhar-co-il.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456406",
+                "type":"domain",
+                "value":"my-mailcoil.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456406",
+                "type":"domain",
+                "value":"logn-micrsftonine-con.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Credential Harvesting Domains",
+                "timestamp":"1506456406",
+                "type":"domain",
+                "value":"so-cc-hujii-ac-il.ml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"We observed the IP address 137.74.131[.]208 interacting with the TwoFace webshell as described in our previous blog.",
+                "timestamp":"1506456406",
+                "type":"ip-dst",
+                "value":"137.74.131.208",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 28a0db561ff5a525bc2696cf98d96f443f528afe63c5097c5e0ccad071fcb8c2",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 28a0db561ff5a525bc2696cf98d96f443f528afe63c5097c5e0ccad071fcb8c2",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 28a0db561ff5a525bc2696cf98d96f443f528afe63c5097c5e0ccad071fcb8c2",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/28a0db561ff5a525bc2696cf98d96f443f528afe63c5097c5e0ccad071fcb8c2/analysis/1500337719/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 6ae32cd3b5a8a1dbb5464372ded370f31802fd1f5031795b43d662c64fc5b301",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 6ae32cd3b5a8a1dbb5464372ded370f31802fd1f5031795b43d662c64fc5b301",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 6ae32cd3b5a8a1dbb5464372ded370f31802fd1f5031795b43d662c64fc5b301",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6ae32cd3b5a8a1dbb5464372ded370f31802fd1f5031795b43d662c64fc5b301/analysis/1497352004/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 3b08535b4add194f5661e1131c8e81af373ca322cf669674cf1272095e5cab95",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 3b08535b4add194f5661e1131c8e81af373ca322cf669674cf1272095e5cab95",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 3b08535b4add194f5661e1131c8e81af373ca322cf669674cf1272095e5cab95",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3b08535b4add194f5661e1131c8e81af373ca322cf669674cf1272095e5cab95/analysis/1506412272/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/450ebd66ba67bb46bf18d122823ff07ef4a7b11afe63b6f269aec9236a1790cd/analysis/1500539163/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 497e6965120a7ca6644da9b8291c65901e78d302139d221fcf0a3ec6c5cf9de3",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 497e6965120a7ca6644da9b8291c65901e78d302139d221fcf0a3ec6c5cf9de3",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 497e6965120a7ca6644da9b8291c65901e78d302139d221fcf0a3ec6c5cf9de3",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/497e6965120a7ca6644da9b8291c65901e78d302139d221fcf0a3ec6c5cf9de3/analysis/1505921769/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 5ead94f12c307438e6475e49f02bedaee0cd09ce6cebb7939f9a2830f913212c",
+                "timestamp":"1506456407",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 5ead94f12c307438e6475e49f02bedaee0cd09ce6cebb7939f9a2830f913212c",
+                "timestamp":"1506456407",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Post-exploitation Tools - Xchecked via VT: 5ead94f12c307438e6475e49f02bedaee0cd09ce6cebb7939f9a2830f913212c",
+                "timestamp":"1506456407",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5ead94f12c307438e6475e49f02bedaee0cd09ce6cebb7939f9a2830f913212c/analysis/1483030641/",
+                "to_ids":false
+            }
+        ]
+    }
+}

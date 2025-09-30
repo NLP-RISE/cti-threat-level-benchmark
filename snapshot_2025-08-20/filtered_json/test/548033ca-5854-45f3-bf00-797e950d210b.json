@@ -1,0 +1,303 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2014-12-04",
+        "published":true,
+        "info":"Regin Scanner",
+        "publish_timestamp":"1521410089",
+        "timestamp":"1521409802",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:green"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Regin\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1417688018",
+                "type":"text",
+                "value":"Regin",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1417688040",
+                "type":"link",
+                "value":"https://github.com/Neo23x0/ReginScanner",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688279",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688279",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688279",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688280",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688309",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688309",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688309",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688309",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688310",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688310",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688310",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688340",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688340",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"From meta of yara rules",
+                "timestamp":"1417688340",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1521409802",
+                "type":"yara",
+                "value":"rule Regin_APT_KernelDriver_Generic_A {\r\n\tmeta:\r\n\t\tdescription = \"Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2\"\r\n\t\tauthor = \"@Malwrsignatures - included in APT Scanner THOR\"\r\n\t\tdate = \"23.11.14\"\r\n\t\thash1 = \"187044596bc1328efa0ed636d8aa4a5c\"\r\n\t\thash2 = \"06665b96e293b23acc80451abb413e50\"\r\n\t\thash3 = \"d240f06e98c8d3e647cbf4d442d79475\"\r\n\tstrings:\r\n\t\t$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } \r\n\t\t$m1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }\r\n\t\t\r\n\t\t$s0 = \"atapi.sys\" fullword wide\r\n\t\t$s1 = \"disk.sys\" fullword wide\r\n\t\t$s3 = \"h.data\" fullword ascii\r\n\t\t$s4 = \"\\\\system32\" fullword ascii\r\n\t\t$s5 = \"\\\\SystemRoot\" fullword ascii\r\n\t\t$s6 = \"system\" fullword ascii\r\n\t\t$s7 = \"temp\" fullword ascii\r\n\t\t$s8 = \"windows\" fullword ascii\r\n\r\n\t\t$x1 = \"LRich6\" fullword ascii\r\n\t\t$x2 = \"KeServiceDescriptorTable\" fullword ascii\t\t\r\n\tcondition:\r\n\t\t$m0 at 0 and $m1 and all of ($s*) and 1 of ($x*)\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1417688398",
+                "type":"yara",
+                "value":"rule Regin_APT_KernelDriver_Generic_B {\r\n\tmeta:\r\n\t\tdescription = \"Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2\"\r\n\t\tauthor = \"@Malwrsignatures - included in APT Scanner THOR\"\r\n\t\tdate = \"23.11.14\"\r\n\t\thash1 = \"ffb0b9b5b610191051a7bdf0806e1e47\"\r\n\t\thash2 = \"bfbe8c3ee78750c3a520480700e440f8\"\r\n\t\thash3 = \"b29ca4f22ae7b7b25f79c1d4a421139d\"\r\n\t\thash4 = \"06665b96e293b23acc80451abb413e50\"\r\n\t\thash5 = \"2c8b9d2885543d7ade3cae98225e263b\"\r\n\t\thash6 = \"4b6b86c7fec1c574706cecedf44abded\"\r\n\t\thash7 = \"187044596bc1328efa0ed636d8aa4a5c\"\r\n\t\thash8 = \"d240f06e98c8d3e647cbf4d442d79475\"\r\n\t\thash9 = \"6662c390b2bbbd291ec7987388fc75d7\"\r\n\t\thash10 = \"1c024e599ac055312a4ab75b3950040a\"\r\n\t\thash11 = \"ba7bb65634ce1e30c1e5415be3d1db1d\"\r\n\t\thash12 = \"b505d65721bb2453d5039a389113b566\"\r\n\t\thash13 = \"b269894f434657db2b15949641a67532\"\r\n\tstrings:\r\n\t\t$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } \r\n\t\t$s1 = { 0e 1f ba 0e 00 b4 09 cd 21 b8 01 4c cd 21 54 68 69 73 20 70 72 6f 67 72 61 6d 20 63 61 6e 6e 6f 74 20 62 65 20 72 75 6e 20 69 6e 20 44 4f 53 20 6d 6f 64 65 2e }\r\n\t\t$s2 = \"H.data\" fullword ascii nocase\r\n\t\t$s3 = \"INIT\" fullword ascii\r\n\t\t$s4 = \"ntoskrnl.exe\" fullword ascii\r\n\t\t\r\n\t\t$v1 = \"\\\\system32\" fullword ascii\r\n\t\t$v2 = \"\\\\SystemRoot\" fullword ascii\r\n\t\t$v3 = \"KeServiceDescriptorTable\" fullword ascii\t\r\n\t\t\r\n\t\t$w1 = \"\\\\system32\" fullword ascii\r\n\t\t$w2 = \"\\\\SystemRoot\" fullword ascii\t\t\r\n\t\t$w3 = \"LRich6\" fullword ascii\r\n\t\t\r\n\t\t$x1 = \"_snprintf\" fullword ascii\r\n\t\t$x2 = \"_except_handler3\" fullword ascii\r\n\t\t\r\n\t\t$y1 = \"mbstowcs\" fullword ascii\r\n\t\t$y2 = \"wcstombs\" fullword ascii\r\n\t\t$y3 = \"KeGetCurrentIrql\" fullword ascii\r\n\t\t\r\n\t\t$z1 = \"wcscpy\" fullword ascii\r\n\t\t$z2 = \"ZwCreateFile\" fullword ascii\r\n\t\t$z3 = \"ZwQueryInformationFile\" fullword ascii\r\n\t\t$z4 = \"wcslen\" fullword ascii\r\n\t\t$z5 = \"atoi\" fullword ascii\r\n\tcondition:\r\n\t\t$m0 at 0 and all of ($s*) and \r\n\t\t( all of ($v*) or all of ($w*) or all of ($x*) or all of ($y*) or all of ($z*) ) \r\n\t\tand filesize < 20KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1417688412",
+                "type":"yara",
+                "value":"rule Regin_APT_KernelDriver_Generic_C {\r\n\tmeta:\r\n\t\tdescription = \"Generic rule for Regin APT kernel driver Malware - Symantec http://t.co/qu53359Cb2\"\r\n\t\tauthor = \"@Malwrsignatures - included in APT Scanner THOR\"\r\n\t\tdate = \"23.11.14\"\r\n\t\thash1 = \"e0895336617e0b45b312383814ec6783556d7635\"\r\n\t\thash2 = \"732298fa025ed48179a3a2555b45be96f7079712\"\t\t\r\n\tstrings:\r\n\t\t$m0 = { 4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00 b8 } \r\n\t\r\n\t\t$s0 = \"KeGetCurrentIrql\" fullword ascii\r\n\t\t$s1 = \"5.2.3790.0 (srv03_rtm.030324-2048)\" fullword wide\r\n\t\t$s2 = \"usbclass\" fullword wide\r\n\t\t\r\n\t\t$x1 = \"PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING\" ascii\r\n\t\t$x2 = \"Universal Serial Bus Class Driver\" fullword wide\r\n\t\t$x3 = \"5.2.3790.0\" fullword wide\r\n\t\t\r\n\t\t$y1 = \"LSA Shell\" fullword wide\r\n\t\t$y2 = \"0Richw\" fullword ascii\t\t\r\n\tcondition:\r\n\t\t$m0 at 0 and all of ($s*) and \r\n\t\t( all of ($x*) or all of ($y*) ) \r\n\t\tand filesize < 20KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1417688425",
+                "type":"yara",
+                "value":"rule Regin_sig_svcsstat {\r\n\tmeta:\r\n\t\tdescription = \"Detects svcstat from Regin report - file svcsstat.exe_sample\"\r\n\t\tauthor = \"@MalwrSignatures\"\r\n\t\tdate = \"26.11.14\"\r\n\t\thash = \"5164edc1d54f10b7cb00a266a1b52c623ab005e2\"\r\n\tstrings:\r\n\t\t$s0 = \"Service Control Manager\" fullword ascii\r\n\t\t$s1 = \"_vsnwprintf\" fullword ascii\r\n\t\t$s2 = \"Root Agency\" fullword ascii\r\n\t\t$s3 = \"Root Agency0\" fullword ascii\r\n\t\t$s4 = \"StartServiceCtrlDispatcherA\" fullword ascii\r\n\t\t$s5 = \"\\\\\\\\?\\\\UNC\" fullword wide\r\n\t\t$s6 = \"%ls%ls\" fullword wide\r\n\tcondition:\r\n\t\tall of them and filesize < 15KB and filesize > 10KB \r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1417688439",
+                "type":"yara",
+                "value":"rule Regin_Sample_1 {\r\n\tmeta:\r\n\t\tdescription = \"Auto-generated rule - file-3665415_sys\"\r\n\t\tauthor = \"@MalwrSignatures\"\r\n\t\tdate = \"26.11.14\"\r\n\t\thash = \"773d7fab06807b5b1bc2d74fa80343e83593caf2\"\r\n\tstrings:\r\n\t\t$s0 = \"Getting PortName/Identifier failed - %x\" fullword ascii\r\n\t\t$s1 = \"SerialAddDevice - error creating new devobj [%#08lx]\" fullword ascii\r\n\t\t$s2 = \"External Naming Failed - Status %x\" fullword ascii\r\n\t\t$s3 = \"------- Same multiport - different interrupts\" fullword ascii\r\n\t\t$s4 = \"%x occurred prior to the wait - starting the\" fullword ascii\r\n\t\t$s5 = \"'user registry info - userPortIndex: %d\" fullword ascii\r\n\t\t$s6 = \"Could not report legacy device - %x\" fullword ascii\r\n\t\t$s7 = \"entering SerialGetPortInfo\" fullword ascii\r\n\t\t$s8 = \"'user registry info - userPort: %x\" fullword ascii\r\n\t\t$s9 = \"IoOpenDeviceRegistryKey failed - %x \" fullword ascii\r\n\t\t$s10 = \"Kernel debugger is using port at address %X\" fullword ascii\r\n\t\t$s12 = \"Release - freeing multi context\" fullword ascii\r\n\t\t$s13 = \"Serial driver will not load port\" fullword ascii\r\n\t\t$s14 = \"'user registry info - userAddressSpace: %d\" fullword ascii\r\n\t\t$s15 = \"SerialAddDevice: Enumeration request, returning NO_MORE_ENTRIES\" fullword ascii\r\n\t\t$s20 = \"'user registry info - userIndexed: %d\" fullword ascii\r\n\tcondition:\r\n\t\tall of them and filesize < 110KB and filesize > 80KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1417688455",
+                "type":"yara",
+                "value":"rule Regin_Sample_2 {\r\n\tmeta:\r\n\t\tdescription = \"Auto-generated rule - file hiddenmod_hookdisk_and_kdbg_8949d000.bin\"\r\n\t\tauthor = \"@MalwrSignatures\"\r\n\t\tdate = \"26.11.14\"\r\n\t\thash = \"a7b285d4b896b66fce0ebfcd15db53b3a74a0400\"\r\n\tstrings:\r\n\t\t$s0 = \"\\\\SYSTEMROOT\\\\system32\\\\lsass.exe\" fullword wide\r\n\t\t$s1 = \"atapi.sys\" fullword wide\r\n\t\t$s2 = \"disk.sys\" fullword wide\r\n\t\t$s3 = \"IoGetRelatedDeviceObject\" fullword ascii\r\n\t\t$s4 = \"HAL.dll\" fullword ascii\r\n\t\t$s5 = \"\\\\Registry\\\\Machine\\\\System\\\\CurrentControlSet\\\\Services\" fullword ascii\r\n\t\t$s6 = \"PsGetCurrentProcessId\" fullword ascii\r\n\t\t$s7 = \"KeGetCurrentIrql\" fullword ascii\r\n\t\t$s8 = \"\\\\REGISTRY\\\\Machine\\\\System\\\\CurrentControlSet\\\\Control\\\\Session Manager\" wide\r\n\t\t$s9 = \"KeSetImportanceDpc\" fullword ascii\r\n\t\t$s10 = \"KeQueryPerformanceCounter\" fullword ascii\r\n\t\t$s14 = \"KeInitializeEvent\" fullword ascii\r\n\t\t$s15 = \"KeDelayExecutionThread\" fullword ascii\r\n\t\t$s16 = \"KeInitializeTimerEx\" fullword ascii\r\n\t\t$s18 = \"PsLookupProcessByProcessId\" fullword ascii\r\n\t\t$s19 = \"ExReleaseFastMutexUnsafe\" fullword ascii\r\n\t\t$s20 = \"ExAcquireFastMutexUnsafe\" fullword ascii\r\n\tcondition:\r\n\t\tall of them and filesize < 40KB and filesize > 30KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1417688469",
+                "type":"comment",
+                "value":"Data entered by David AndrÃ©",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1511190139",
+                "type":"yara",
+                "value":"rule Regin_Sample_3 {\r\n\tmeta:\r\n\t\tdescription = \"Detects Regin Backdoor sample fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129\"\r\n\t\tauthor = \"@Malwrsignatures\"\r\n\t\tdate = \"27.11.14\"\r\n\t\thash = \"fe1419e9dde6d479bd7cda27edd39fafdab2668d498931931a2769b370727129\"\t\t\r\n\tstrings:\r\n\t\t$hd = { fe ba dc fe }\r\n\t\r\n\t\t$s0 = \"Service Pack x\" fullword wide\r\n\t\t$s1 = \"\\\\REGISTRY\\\\MACHINE\\\\SOFTWARE\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\" fullword wide\r\n\t\t$s2 = \"\\\\REGISTRY\\\\Machine\\\\Software\\\\Microsoft\\\\Windows NT\\\\CurrentVersion\\\\HotFix\" fullword wide\r\n\t\t$s3 = \"mntoskrnl.exe\" fullword wide\r\n\t\t$s4 = \"\\\\REGISTRY\\\\Machine\\\\System\\\\CurrentControlSet\\\\Control\\\\Session Manager\\\\Memory Management\" fullword wide\r\n\t\t$s5 = \"Memory location: 0x%p, size 0x%08x\" wide fullword\r\n\t\t$s6 = \"Service Pack\" fullword wide\r\n\t\t$s7 = \".sys\" fullword wide\r\n\t\t$s8 = \".dll\" fullword wide\t\t\r\n\t\t\r\n\t\t$s10 = \"\\\\REGISTRY\\\\Machine\\\\Software\\\\Microsoft\\\\Updates\" fullword wide\r\n\t\t$s11 = \"IoGetRelatedDeviceObject\" fullword ascii\r\n\t\t$s12 = \"VMEM.sys\" fullword ascii\r\n\t\t$s13 = \"RtlGetVersion\" fullword wide\r\n\t\t$s14 = \"ntkrnlpa.exe\" fullword ascii\r\n\tcondition:\r\n\t\t( $hd at 0 ) and all of ($s*) and filesize > 160KB and filesize < 200KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1521407907",
+                "type":"yara",
+                "value":"rule Regin_Sample_Set_1 {\r\n\tmeta:\r\n\t\tdescription = \"Auto-generated rule - file SHF-000052 and ndisips.sys\"\r\n\t\tauthor = \"@MalwrSignatures\"\r\n\t\tdate = \"26.11.14\"\r\n\t\thash1 = \"8487a961c8244004c9276979bb4b0c14392fc3b8\"\r\n\t\thash2 = \"bcf3461d67b39a427c83f9e39b9833cfec977c61\"\t\t\r\n\tstrings:\r\n\t\t$s0 = \"HAL.dll\" fullword ascii\r\n\t\t$s1 = \"IoGetDeviceObjectPointer\" fullword ascii\r\n\t\t$s2 = \"MaximumPortsServiced\" fullword wide\r\n\t\t$s3 = \"KeGetCurrentIrql\" fullword ascii\r\n\t\t$s4 = \"ntkrnlpa.exe\" fullword ascii\r\n\t\t$s5 = \"\\\\REGISTRY\\\\Machine\\\\System\\\\CurrentControlSet\\\\Control\\\\Session Manager\" wide\r\n\t\t$s6 = \"ConnectMultiplePorts\" fullword wide\r\n\t\t$s7 = \"\\\\SYSTEMROOT\" fullword wide\r\n\t\t$s8 = \"IoWriteErrorLogEntry\" fullword ascii\r\n\t\t$s9 = \"KeQueryPerformanceCounter\" fullword ascii\r\n\t\t$s10 = \"KeServiceDescriptorTable\" fullword ascii\r\n\t\t$s11 = \"KeRemoveEntryDeviceQueue\" fullword ascii\r\n\t\t$s12 = \"SeSinglePrivilegeCheck\" fullword ascii\r\n\t\t$s13 = \"KeInitializeEvent\" fullword ascii\r\n\t\t$s14 = \"IoBuildDeviceIoControlRequest\" fullword ascii\r\n\t\t$s15 = \"KeRemoveDeviceQueue\" fullword ascii\r\n\t\t$s16 = \"IofCompleteRequest\" fullword ascii\r\n\t\t$s17 = \"KeInitializeSpinLock\" fullword ascii\r\n\t\t$s18 = \"MmIsNonPagedSystemAddressValid\" fullword ascii\r\n\t\t$s19 = \"IoCreateDevice\" fullword ascii\r\n\t\t$s20 = \"KefReleaseSpinLockFromDpcLevel\" fullword ascii\r\n\tcondition:\r\n\t\tall of them and filesize < 40KB and filesize > 30KB\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1521408207",
+                "type":"yara",
+                "value":"rule Regin_Sample_Set_2 {\r\n        meta:\r\n                description = \"Detects Regin Backdoor sample 4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be and e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935\"\r\n                author = \"@MalwrSignatures\"\r\n                date = \"27.11.14\"\r\n                hash0 = \"4139149552b0322f2c5c993abccc0f0d1b38db4476189a9f9901ac0d57a656be\"\r\n                hash1 = \"e420d0cf7a7983f78f5a15e6cb460e93c7603683ae6c41b27bf7f2fa34b2d935\"\r\n        strings:\r\n                $hd = { fe ba dc fe }\r\n       \r\n                $s0 = \"d%ls%ls\" fullword wide\r\n                $s1 = \"\\\\\\\\?\\\\UNC\" fullword wide\r\n                $s2 = \"Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\" fullword wide\r\n                $s3 = \"\\\\\\\\?\\\\UNC\\\\\" fullword wide\r\n                $s4 = \"SYSTEM\\\\CurrentControlSet\\\\Control\\\\Class\\\\{4D36E972-E325-11CE-BFC1-08002BE10318}\" fullword wide\r\n                $s5 = \"System\\\\CurrentControlSet\\\\Services\\\\Tcpip\\\\Linkage\" wide fullword\r\n                $s6 = \"\\\\\\\\.\\\\Global\\\\%s\" fullword wide\r\n                $s7 = \"temp\" fullword wide\r\n                $s8 = \"\\\\\\\\.\\\\%s\" fullword wide\r\n                $s9 = \"Memory location: 0x%p, size 0x%08x\" fullword wide               \r\n               \r\n                $s10 = \"sscanf\" fullword ascii\r\n                $s11 = \"disp.dll\" fullword ascii\r\n                $s12 = \"%x:%x:%x:%x:%x:%x:%x:%x%c\" fullword ascii\r\n                $s13 = \"%d.%d.%d.%d%c\" fullword ascii\r\n                $s14 = \"imagehlp.dll\" fullword ascii\r\n                $s15 = \"%hd %d\" fullword ascii\r\n        condition:\r\n                ( $hd at 0 ) and all of ($s*) and filesize < 450KB and filesize > 360KB\r\n}",
+                "to_ids":true
+            }
+        ]
+    }
+}

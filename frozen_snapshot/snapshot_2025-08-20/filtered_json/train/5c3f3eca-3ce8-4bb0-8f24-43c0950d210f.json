@@ -1,0 +1,849 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-11",
+        "published":true,
+        "info":"OSINT -  Threat Actor â€œCold Riverâ€: Network Traffic Analysis and a Deep Dive on Agent Drable",
+        "publish_timestamp":"1547722857",
+        "timestamp":"1547722837",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Cold River\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547715563",
+                "type":"link",
+                "value":"https://www.lastline.com/labsblog/threat-actor-cold-river-network-traffic-analysis-and-a-deep-dive-on-agent-drable/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547715562",
+                "type":"text",
+                "value":"While reviewing some network anomalies, we recently uncovered Cold River, a sophisticated threat actor making malicious use of DNS tunneling for command and control activities. We have been able to decode the raw traffic in command and control, find sophisticated lure documents used in the campaign, connect other previously unknown samples, and associate a number of legitimate organizations whose infrastructure is referenced and used in the campaign.\r\n\r\nThe campaign targets Middle Eastern organizations largely from the Lebanon and United Arab Emirates, though, Indian and Canadian companies with interests in those Middle Eastern countries are also targeted. There are new TTPs used in this attack â€“ for example Agent_Drable is leveraging the Django python framework for command and control infrastructure, the technical details of which are outlined later in the blog.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"callback domain",
+                "timestamp":"1547652316",
+                "type":"domain",
+                "value":"0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hardcoded HTTP CnC, not used at the time of the analysis.",
+                "timestamp":"1547712740",
+                "type":"ip-dst",
+                "value":"185.161.211.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS queries from different victims",
+                "timestamp":"1547712231",
+                "type":"hostname",
+                "value":"crzugfdhsmrqgq4hy000.0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS queries from different victims",
+                "timestamp":"1547712237",
+                "type":"hostname",
+                "value":"gyc3gfmhomrqgq4hy.0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS queries from different victims",
+                "timestamp":"1547712238",
+                "type":"hostname",
+                "value":"svg4gf2ugmrqgq4hy.0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS queries from different victims",
+                "timestamp":"1547712238",
+                "type":"hostname",
+                "value":"hnahgfmg4mrqgq4hy.0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS queries from different victims",
+                "timestamp":"1547712239",
+                "type":"hostname",
+                "value":"6ghzgf2ugmd4ji2vor2tgvkeutkf.0ffice36o.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Mostly used to generate Letâ€™s Encrypt certificates. Port 443 still answers with memail.mea.com[.]lb. Port 444 has a â€œGlobalSignâ€ certificate of memail.mea.com[.]lb.",
+                "timestamp":"1547713468",
+                "type":"ip-dst",
+                "value":"185.20.187.8",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547713469",
+                "type":"hostname",
+                "value":"memail.mea.com.lb",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Live HTTP CnC. Ports 80 and 443 return interesting Django debug info.",
+                "timestamp":"1547713469",
+                "type":"ip-dst",
+                "value":"185.20.184.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Unknown usage. Basic authentication protected page on port 7070 with https, cert CN is â€ kerteros â€œ. Port 8083 hosts a webserver , but only returns a blank page.",
+                "timestamp":"1547713470",
+                "type":"ip-dst",
+                "value":"185.20.184.157",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hosted the HR phishing domains hr-suncor[.]com and hr-wipro[.]com, now redirect to the legitimate website.",
+                "timestamp":"1547713470",
+                "type":"ip-dst",
+                "value":"185.161.211.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547713471",
+                "type":"domain",
+                "value":"hr-suncor.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547713471",
+                "type":"domain",
+                "value":"hr-wipro.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Openconnect VPN used to reach the HTTP CnC.",
+                "timestamp":"1547713471",
+                "type":"ip-dst",
+                "value":"194.9.177.22",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714089",
+                "type":"domain",
+                "value":"files-sender.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714265",
+                "type":"url",
+                "value":"https://crt.sh/?id=923463758",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714265",
+                "type":"hostname",
+                "value":"webmail.finance.gov.lb",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714266",
+                "type":"url",
+                "value":"https://crt.sh/?id=922787406",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714266",
+                "type":"hostname",
+                "value":"mail.apc.gov.ae",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714267",
+                "type":"url",
+                "value":"https://crt.sh/?id=782678542",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714267",
+                "type":"hostname",
+                "value":"mail.mgov.ae",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714268",
+                "type":"url",
+                "value":"https://crt.sh/?id=750443611",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714269",
+                "type":"hostname",
+                "value":"adpvpn.adpolice.gov.ae",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714269",
+                "type":"url",
+                "value":"https://crt.sh/?id=741047630",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714709",
+                "type":"ip-dst",
+                "value":"185.20.184.15",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714710",
+                "type":"ip-dst",
+                "value":"104.148.109.193",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1547714710",
+                "type":"domain",
+                "value":"microsoftonedrive.org",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714952",
+                "type":"regkey",
+                "value":"%userprofile%\\.oracleServices\\Apps\\",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714953",
+                "type":"filename",
+                "value":"%userprofile%\\.oracleServices\\Configure.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714953",
+                "type":"regkey",
+                "value":"%userprofile%\\.oracleServices\\Downloads\\",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714954",
+                "type":"filename",
+                "value":"%userprofile%\\.oracleServices\\log.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714954",
+                "type":"filename",
+                "value":"%userprofile%\\.oracleServices\\svshost_serv.doc",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714955",
+                "type":"filename",
+                "value":"%userprofile%\\.oracleServices\\svshost_serv.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Filesystem artifacts",
+                "timestamp":"1547714955",
+                "type":"regkey",
+                "value":"%userprofile%\\.oracleServices\\Uploads\\",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"weaponized empty document",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547650809",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547650809",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547650810",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"HR document from Suncor",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547651456",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547651456",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547651457",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1547709921",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709921",
+                        "type":"text",
+                        "value":"@securitydoggo @James_inthe_box @malwrhunterteam @Malwageddon Possible DNS tunneler/stager with 0ffice36o[.]com C2. Anyone speak Russian? https://www.sendspace.com/file/69a6bc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709921",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1547709921",
+                        "type":"url",
+                        "value":"https://twitter.com/KorbenD_Intel/status/1053037793012781061",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709922",
+                        "type":"text",
+                        "value":"@securitydoggo",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709922",
+                        "type":"text",
+                        "value":"@James_inthe_box",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709923",
+                        "type":"text",
+                        "value":"@Malwageddon",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709923",
+                        "type":"text",
+                        "value":"@malwrhunterteam",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1547709924",
+                        "type":"url",
+                        "value":"https://www.sendspace.com/file/69a6bc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709924",
+                        "type":"datetime",
+                        "value":"2018-10-18T14:39:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547709925",
+                        "type":"text",
+                        "value":"@KorbenD_Intel",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Empty doc",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547710092",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547710092",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547710093",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Suncor decoy",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547710720",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547710720",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547710721",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Payload with logs information",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547711258",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547711258",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547711259",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Payload without logs information",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547711877",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547711877",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547711877",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Dropper (maldoc)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547714458",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547714459",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547714459",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547722809",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722809",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722810",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722810",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547722811",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722811",
+                        "type":"datetime",
+                        "value":"2019-01-15T07:47:18",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547722812",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/15fe5dbcd31be15f98aa9ba18755ee6264a26f5ea0877730b00ca0646d0f25fa/analysis/1547538438/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722812",
+                        "type":"text",
+                        "value":"37/58",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547722812",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722812",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722813",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722813",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547722814",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722814",
+                        "type":"datetime",
+                        "value":"2018-12-21T08:26:31",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547722814",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/45a9edb24d4174592c69d9d37a534a518fbe2a88d3817fc0cc739e455883b8ff/analysis/1545380791/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722815",
+                        "type":"text",
+                        "value":"45/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547722815",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722815",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722816",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722816",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547722817",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722817",
+                        "type":"datetime",
+                        "value":"2018-12-22T03:41:06",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547722818",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/9ea577a4b3faaf04a3bddbfcb934c9752bed0d0fc579f2152751c5f6923f7e14/analysis/1545450066/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722818",
+                        "type":"text",
+                        "value":"36/60",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1547722818",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722818",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722819",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1547722819",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1547722821",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722821",
+                        "type":"datetime",
+                        "value":"2018-12-21T08:26:28",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1547722822",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/2010f38ef300be4349e7bc287e720b1ecec678cacbf0ea0556bcf765f6e073ec/analysis/1545380788/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1547722822",
+                        "type":"text",
+                        "value":"47/69",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,1443 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-04",
+        "published":true,
+        "info":"OSINT - Who's who in the zoo. Cyberespionage operation targets android users in the Middle East.",
+        "publish_timestamp":"1525441531",
+        "timestamp":"1525441529",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"ZooPark\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525433952",
+                "type":"link",
+                "value":"https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2018/05/03095519/ZooPark_for_public_final.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525433953",
+                "type":"hostname",
+                "value":"entekhab10.xp3.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525424140",
+                "type":"domain",
+                "value":"androidupdaters.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525424140",
+                "type":"domain",
+                "value":"dlgmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525424141",
+                "type":"domain",
+                "value":"rhubarb2.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525424141",
+                "type":"domain",
+                "value":"rhubarb3.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525433953",
+                "type":"ip-dst",
+                "value":"5.61.27.154",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2  server",
+                "timestamp":"1525433954",
+                "type":"ip-dst",
+                "value":"5.61.27.157",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525433954",
+                "type":"comment",
+                "value":"ZooPark is a cyberespionage operation that has been focusing on Middle Eastern targets since at least June 2015. The threat actors behind ZooPark infect Android devices using several generations of malware we label from v1-v4, with v4 being the most recent version deployed in 2017.\r\n\r\nThe preferred infection vector for ZooPark is waterhole attacks. We found several news websites that have been hacked by the attackers to redirect visitors to a downloading site that serves malicious APKs. Some of the themes observed in campaign include â€œKurdistan referendumâ€, â€œTelegramGroupsâ€ and â€œAlnaharegypt newsâ€, among others. \r\n\r\nTarget profile has evolved during the last years of campaign, focusing on victims in Egypt, Jordan, Morocco and Lebanon.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Watering  holes",
+                "timestamp":"1525433954",
+                "type":"url",
+                "value":"http://www.alnaharegypt.com/t~467369",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Watering  holes",
+                "timestamp":"1525433955",
+                "type":"url",
+                "value":"http://showroommontorgueil.com/modules/homepageadvertise2/slides/alnaharegypt.news_v2.0.apk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Watering  holes",
+                "timestamp":"1525433955",
+                "type":"url",
+                "value":"http://www.alhayatnews.com/ArabicRSS.apk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433956",
+                "type":"url",
+                "value":"http://www.rhubarb2.com/telg/sv/sv.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433956",
+                "type":"url",
+                "value":"http://www.rhubarb2.com/get/index.php?id=",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433957",
+                "type":"url",
+                "value":"http://www.rhubarb2.com/telg/index.php?set=show",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433958",
+                "type":"url",
+                "value":"http://www.rhubarb3.com/get/index.php?id=",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433958",
+                "type":"url",
+                "value":"androidupdaters.com/img.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433959",
+                "type":"url",
+                "value":"rhubarb3.com/telg/sv/sv.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433959",
+                "type":"url",
+                "value":"rhubarb3.com/telg/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525433959",
+                "type":"url",
+                "value":"rhubarb3.com/get/index.php",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Version 1.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525425014",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525425014",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525425014",
+                        "type":"filename",
+                        "value":"Entekhab10 V1.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525425014",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 1.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525425467",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525425467",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525425468",
+                        "type":"filename",
+                        "value":"Entekhab10-v3.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525425468",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 1.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426141",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426142",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426142",
+                        "type":"filename",
+                        "value":"TelegramGroups.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426142",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 2.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426173",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426174",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426174",
+                        "type":"filename",
+                        "value":"AllInOne.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426174",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 2.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426189",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426190",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426190",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 2.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426216",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426216",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426217",
+                        "type":"filename",
+                        "value":"Referendum Kurdistan.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426217",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 2.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426255",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426255",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426256",
+                        "type":"filename",
+                        "value":"Referendum Kurdistan.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426256",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 2.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426273",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426273",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426273",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 3.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426768",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426768",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426769",
+                        "type":"filename",
+                        "value":"Sexy_wallpaper.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426769",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 3.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426787",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426788",
+                        "type":"filename",
+                        "value":"ArabicRSS.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426788",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 3.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426887",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426887",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426887",
+                        "type":"filename",
+                        "value":"Alnaharegypt.news_v2.0.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426887",
+                        "type":"filename",
+                        "value":"familyinnovation_app.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426887",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 3.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525426901",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426901",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525426901",
+                        "type":"filename",
+                        "value":"com.ann.newspaper.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525426901",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 4.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525427652",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427652",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427653",
+                        "type":"filename",
+                        "value":"FirewallFA.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525427653",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 4.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525427669",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427670",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427670",
+                        "type":"filename",
+                        "value":"DVPNEasy.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525427670",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Version 4.0",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525427690",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427691",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525427691",
+                        "type":"filename",
+                        "value":"DeleteTelegram.apk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525427691",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1525432636",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432636",
+                        "type":"whois-registrant-email",
+                        "value":"asgharkhof@gmail.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432636",
+                        "type":"domain",
+                        "value":"androidupdaters.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432637",
+                        "type":"ip-src",
+                        "value":"178.162.214.146",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432637",
+                        "type":"whois-registrant-name",
+                        "value":"parspack 62555",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432638",
+                        "type":"whois-registrant-phone",
+                        "value":"+982188561212",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1525432732",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432733",
+                        "type":"whois-registrant-email",
+                        "value":"silent.city2020@mail.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432733",
+                        "type":"domain",
+                        "value":"dlgmail.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432734",
+                        "type":"ip-src",
+                        "value":"46.4.41.195",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432734",
+                        "type":"whois-registrant-name",
+                        "value":"mohammad hosein asna ashar",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432735",
+                        "type":"whois-registrant-phone",
+                        "value":"+982188888299",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Whois records information for a domain name or an IP address.",
+                "meta-category":"network",
+                "name":"whois",
+                "timestamp":"1525432816",
+                "Attribute":[
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432816",
+                        "type":"whois-registrant-email",
+                        "value":"pilton86@yahoo.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432817",
+                        "type":"domain",
+                        "value":"rhubarb2.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432817",
+                        "type":"ip-src",
+                        "value":"109.200.28.162",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432818",
+                        "type":"whois-registrant-name",
+                        "value":"Mohsen Malekian",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Attribution",
+                        "comment":"",
+                        "timestamp":"1525432818",
+                        "type":"whois-registrant-phone",
+                        "value":"+989303938251",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1525432873",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432873",
+                        "type":"ip-dst",
+                        "value":"5.144.130.33",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432874",
+                        "type":"ip-dst",
+                        "value":"46.4.74.56",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525432874",
+                        "type":"domain",
+                        "value":"rhubarb3.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433963",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433960",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433961",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433961",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433961",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433961",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:24",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433962",
+                        "type":"text",
+                        "value":"32/62",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433962",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/f7fe4e299599a60a4797f9a13468e366394dc2d86ab768f681a0876d8ff052e0/analysis/1525352784/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433965",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433962",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433963",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433963",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433964",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433964",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:05:58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433964",
+                        "type":"text",
+                        "value":"29/61",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433964",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/91659d5f35a8fea1c98f3ea32bcdd71a222f11095de680eb635ec8210fb5dc04/analysis/1525352758/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433968",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433965",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433965",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433966",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433966",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433967",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:17",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433967",
+                        "type":"text",
+                        "value":"5/62",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433967",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/041b4d2280cae9720a62350de4541172933909380bb02701a7d20f87e670bac4/analysis/1525352777/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433970",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433968",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433968",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433969",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433969",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433969",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:30",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433970",
+                        "type":"text",
+                        "value":"11/62",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433970",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/d7da061b55d24a54988a3fca60009da907d14c2bcd32f2e53ef13bd8085b96cc/analysis/1525352790/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433973",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433970",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433971",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433971",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433972",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433972",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:03",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433972",
+                        "type":"text",
+                        "value":"17/63",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433972",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/7a7eee78dfffa5974a2da9bdd3337fb16e5e1d658cbe5284ef352114ef446f6a/analysis/1525352763/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433976",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433973",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433973",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433974",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433974",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433975",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:47",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433975",
+                        "type":"text",
+                        "value":"29/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433975",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/24ee4589a7ed9c7fc630ecbb79d4114ab7ae8ae36b31da42e3fcfbb9edaafdc6/analysis/1525352807/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433978",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433976",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433976",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433976",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433977",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433977",
+                        "type":"datetime",
+                        "value":"2018-05-03T13:06:10",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433977",
+                        "type":"text",
+                        "value":"17/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433977",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/59ece87dfa254ba8d47503e069e5e2cb99e22140e9a2e6e56d382a6427171889/analysis/1525352770/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433981",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433978",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433978",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433979",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433979",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433979",
+                        "type":"datetime",
+                        "value":"2018-05-04T08:50:01",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433979",
+                        "type":"text",
+                        "value":"9/61",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433979",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/76fa36d35e0e16b0ea416726b0da2a66dfe7d7b35504cf6c475eac4cfa95fe3a/analysis/1525423801/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525433983",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433980",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433980",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525433981",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525433981",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433981",
+                        "type":"datetime",
+                        "value":"2018-05-03T21:28:50",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525433982",
+                        "type":"text",
+                        "value":"10/62",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525433982",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0601fc10951b780efb7da41b25f1e41fdb347374e81858cc894e8d8fd2106b7b/analysis/1525382930/",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

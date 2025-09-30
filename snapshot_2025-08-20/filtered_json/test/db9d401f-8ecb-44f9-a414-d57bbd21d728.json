@@ -1,0 +1,733 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-02-28",
+        "published":true,
+        "info":"Barco Clickshare themed Emotet",
+        "publish_timestamp":"1646061838",
+        "timestamp":"1646061824",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"NTFS File Attributes - T1096\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Emotet - S0367\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"ZIP password",
+                "timestamp":"1646061692",
+                "type":"comment",
+                "value":"IPBPEBMCC",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1646061500",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"carretilha.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061497",
+                        "type":"ip-dst",
+                        "value":"172.67.199.154",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061500",
+                        "type":"ip-dst",
+                        "value":"104.21.36.209",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1646061505",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061487",
+                        "type":"domain",
+                        "value":"shrinandrajoverseas.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061503",
+                        "type":"ip-dst",
+                        "value":"104.21.46.175",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061505",
+                        "type":"ip-dst",
+                        "value":"172.67.168.206",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1646061483",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061483",
+                        "type":"domain",
+                        "value":"zionimoveis.com.br",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"177.53.140.227",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1646061479",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"size-in-bytes",
+                        "value":"177714",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061468",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061471",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061475",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061479",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"mime-type",
+                        "value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"payment with a new address.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\desktop\\payment with a new address.xlsm",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"payment with a new address.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\desktop\\payment with a new address.xlsm",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"payment with a new address.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\desktop\\payment with a new address.xlsm",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"payment with a new address.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\desktop\\payment with a new address.xlsm",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"payment with a new address.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\desktop\\payment with a new address.xlsm",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1646061461",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Operations: get",
+                        "timestamp":"1646061461",
+                        "type":"url",
+                        "value":"http://vps36153.publiccloud.com.br/wp-admin/RfAZZ776uMNhSpOT/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"vps36153.publiccloud.com.br",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"191.252.223.79",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1646061447",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Operations: get",
+                        "timestamp":"1646061447",
+                        "type":"url",
+                        "value":"https://carretilha.net/whats/RSL50BlRP0a6hj/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"carretilha.net",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"172.67.199.154",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"104.21.36.209",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1646061444",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Operations: get",
+                        "timestamp":"1646061444",
+                        "type":"url",
+                        "value":"https://shrinandrajoverseas.com/old/wQXty0wnVDY/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"shrinandrajoverseas.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"104.21.46.175",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"172.67.168.206",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1646061440",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Operations: get",
+                        "timestamp":"1646061440",
+                        "type":"url",
+                        "value":"https://zionimoveis.com.br/wp-content/Bn00gaw/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"zionimoveis.com.br",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"177.53.140.227",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1646061436",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Operations: get",
+                        "timestamp":"1646061436",
+                        "type":"url",
+                        "value":"https://kontacsgo.pl/m/uwZYNUjGeWW/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"domain",
+                        "value":"kontacsgo.pl",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"ip-dst",
+                        "value":"92.222.73.151",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1646061429",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"size-in-bytes",
+                        "value":"524288",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061422",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061425",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061429",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061418",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"mime-type",
+                        "value":"application/vnd.microsoft.portable-executable",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"kxpvfk9vfdrr[1].dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\appdata\\local\\microsoft\\windows\\inetcache\\ie\\01iqfhlj\\kxpvfk9vfdrr[1].dll",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"xxw1.ocx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\xxw1.ocx",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"filename",
+                        "value":"gsbmnbfdntovf.cre",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"%USERPROFILE%\\appdata\\local\\efcvdmhupkkqbtxa\\gsbmnbfdntovf.cre",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1646061408",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"4196",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061404",
+                        "type":"text",
+                        "value":"%WINDIR%\\syswow64\\regsvr32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061408",
+                        "type":"text",
+                        "value":"%WINDIR%\\SysWow64\\regsvr32.exe /s ..\\xxw1.ocx",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1646061389",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"5088",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061328",
+                        "type":"text",
+                        "value":"2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061384",
+                        "type":"text",
+                        "value":"%WINDIR%\\syswow64\\regsvr32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1646061389",
+                        "type":"text",
+                        "value":"%WINDIR%\\SysWOW64\\regsvr32.exe /s \"%LOCALAPPDATA%\\Efcvdmhupkkqbtxa\\gsbmnbfdntovf.cre\"",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1646061642",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-body",
+                        "value":"<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nBarco Clickshare solution for wireless collaborating\r\n<br>\r\n<br>\r\nPayment with a new address.zip<br>\r\nPassword: IPBPEBMCC<br>\r\n<br>\r\n<br>\r\n<br>\r\n<br>\r\nFawaz Fuji<br>\r\nfawaz@gestetnersl.com<br>\r\n<a href=\"http://www.gestetnersl.com\">www.gestetnersl.com</a>\r\n<br>\r\n<br>\r\n<blockquote type=\"cite\" style=\"padding: 0 0.4em; border-left: #1010ff 2px solid; margin: 0\">\r\n\r\n  \r\n    \r\n  \r\n  \r\n    <img moz-do-not-send=\"false\"\r\n      src=\"cid:part1.C443BB98.00BD57CE@gestetnersl.com\" alt=\"\"\r\n      width=\"1000\" height=\"563\"><br>\r\n    <div class=\"moz-signature\">-- <br>\r\n      <img src=\"cid:part2.2BC0CEEB.B560A96A@gestetnersl.com\" border=\"0\"></div>\r\n  \r\n\r\n\r\n</blockquote>\r\n</body>\r\n</html>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-src",
+                        "value":"aline@mettaplanejados.com.br",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-src-display-name",
+                        "value":"Fawaz Fuji",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-subject",
+                        "value":"RE: Barco Clickshare solution for wireless collaborating",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-src",
+                        "value":"aline@mettaplanejados.com.br",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061642",
+                        "type":"email-message-id",
+                        "value":"<20220228110907.51A3B74017C@proxy.email-ssl.com.br>",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1646061765",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061765",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061765",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061765",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1646061765",
+                        "type":"filename",
+                        "value":"Payment with a new address.zip",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

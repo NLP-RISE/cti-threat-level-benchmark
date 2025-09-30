@@ -1,0 +1,579 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2019-05-28",
+        "published":true,
+        "info":"Emissary Panda Attacks Middle East Government Sharepoint Servers by Palo Alto Unit42",
+        "publish_timestamp":"1559307617",
+        "timestamp":"1559307564",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Threat Group-3390\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Threat Group-3390 - G0027\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Emissary Panda\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"LuckyMouse\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"OSINT"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1559302011",
+                "type":"link",
+                "value":"https://unit42.paloaltonetworks.com/emissary-panda-attacks-middle-east-government-sharepoint-servers/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1559302022",
+                "type":"vulnerability",
+                "value":"CVE-2019-0604",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302340",
+                "type":"filename",
+                "value":"/_layouts/15/error2.aspx",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302343",
+                "type":"filename",
+                "value":"/_layouts/15/errr.aspx",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302348",
+                "type":"filename",
+                "value":"stylecs.aspx",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"stylecs.aspx",
+                "timestamp":"1559302330",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302325",
+                "type":"filename",
+                "value":"stylecss.aspx",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"stylecss.aspx",
+                "timestamp":"1559302310",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302314",
+                "type":"filename",
+                "value":"test.aspx",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"test.aspx",
+                "timestamp":"1559302319",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302291",
+                "type":"filename",
+                "value":"tool.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1559302242",
+                "type":"vulnerability",
+                "value":"CVE-2017-0144",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"used to check to see if they are vulnerable to CVE-2017-0144 (EternalBlue) patched in MS07-010",
+                "timestamp":"1559302258",
+                "type":"filename",
+                "value":"checker1.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Not the psexec from sysinternals but a  remote execution functionality offered by a tool similar to PsExec offered by Impacket",
+                "timestamp":"1559302467",
+                "type":"filename",
+                "value":"psexec.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"m2.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"m2.exe",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"HyperBro backdoor",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"s.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"HyperBro backdoor",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate cURL.",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"curl.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate cURL",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate cURL.",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled EternalBlue checker script",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"C# Tool, likely from https://github.com/mubix/netview",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"etool.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"C# Tool, likely from https://github.com/mubix/netview",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate Sublime Text plugin host",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"plugin_host.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate Sublime Text plugin host",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Sideloaded DLL loaded by Sublime Text",
+                "timestamp":"1559302625",
+                "type":"filename",
+                "value":"PYTHON33.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Sideloaded DLL loaded by Sublime Text",
+                "timestamp":"1559302625",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"SMB backdoor based on smbrelay3",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"smb1.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"SMB backdoor based on smbrelay3",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled zzz_exploit.py",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"mcmd.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled zzz_exploit.py",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"zzz_exploit.py",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled zzz_exploit.py",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"mcafee.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled zzz_exploit.py",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"pwdump",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"dump.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"pwdump",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled MS17-010 checker",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Packed Mimikatz",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"memory.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Packed Mimikatz",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Compiled MS17-010 checker",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"checker.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"SMB backdoor based on smbrelay3",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"smb.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"SMB backdoor based on smbrelay3",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Termite",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"agent_Win32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Termite",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"httprelay",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"smb_exec.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"httprelay",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Incognito",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"incognito.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Incognito",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"nbtscan",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"nbtscan.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"nbtscan",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"pwdump",
+                "timestamp":"1559303137",
+                "type":"filename",
+                "value":"fgdump.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"pwdump",
+                "timestamp":"1559303137",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559303138",
+                "type":"filename",
+                "value":"smbexec.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559303138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate CreateMedia.exe application from Microsoftâ€™s System Center 2012 Configuration Manager",
+                "timestamp":"1559303316",
+                "type":"filename",
+                "value":"CreateMedia.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Legitimate CreateMedia.exe application from Microsoftâ€™s System Center 2012 Configuration Manager",
+                "timestamp":"1559303325",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Sideloaded DLL loaded by CreateMedia.exe",
+                "timestamp":"1559303335",
+                "type":"filename",
+                "value":"CreateTsMediaAdm.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Symantec pcAnywhere thinprobe application",
+                "timestamp":"1559303294",
+                "type":"filename",
+                "value":"thinprobe.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Symantec pcAnywhere thinprobe application",
+                "timestamp":"1559303297",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Sideloaded DLL loaded by thinprobe.exe",
+                "timestamp":"1559303300",
+                "type":"filename",
+                "value":"thinhostprobedll.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Sideloaded DLL loaded by thinprobe.exe",
+                "timestamp":"1559303305",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"thumb.db Contains encrypted and compressed DLL payload run by sideloaded DLL",
+                "timestamp":"1559303310",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1559303420",
+                "type":"url",
+                "value":"https://185.12.45.134:443/ajax",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1559303437",
+                "type":"ip-dst",
+                "value":"185.12.45.134",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1559307454",
+                "type":"named pipe",
+                "value":"\\\\.\\pipe\\testpipe",
+                "to_ids":true
+            }
+        ]
+    }
+}

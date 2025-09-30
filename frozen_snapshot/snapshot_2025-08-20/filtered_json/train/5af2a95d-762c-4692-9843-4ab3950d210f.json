@@ -1,0 +1,200 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-08",
+        "published":false,
+        "info":"OSINT - Maikspy Spyware Poses as Adult Game, Targets Windows and Android Users",
+        "publish_timestamp":"0",
+        "timestamp":"1525857538",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"mobile-malware\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Mimikatz\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Mimikatz - S0002\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525852709",
+                "type":"link",
+                "value":"https://blog.trendmicro.com/trendlabs-security-intelligence/maikspy-spyware-poses-as-adult-game-targets-windows-and-android-users/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525852709",
+                "type":"text",
+                "value":"We discovered a malware family called Maikspy — a multi-platform spyware that can steal users’ private data. The spyware targets Windows and Android users, and first posed as an adult game named after a popular U.S.-based adult film actress. Maikspy, which is an alias that combines the name of the adult film actress and spyware, has been around since 2016.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525853582",
+                "type":"url",
+                "value":"http://miakhalifagame.com/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525853924",
+                "type":"url",
+                "value":"http://miakhalifagame.com/get_access2.php",
+                "to_ids":true
+            },
+            {
+                "category":"Support Tool",
+                "comment":"",
+                "timestamp":"1525854812",
+                "type":"link",
+                "value":"https://github.com/gentilkiwi/mimikatz",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525854900",
+                "type":"filename",
+                "value":"VirtualGirlfriend.crx",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525854900",
+                "type":"url",
+                "value":"http://miakhalifagame.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525855011",
+                "type":"url",
+                "value":"https://miakhalifagame.com/testinn.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525855968",
+                "type":"url",
+                "value":"https://twitter.com/RoundYear_Fun",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525855968",
+                "type":"url",
+                "value":"http://www.roundyearfun.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525856184",
+                "type":"url",
+                "value":"http://roundyearfun.org/noavi/MiaKhalifa.apk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525856283",
+                "type":"url",
+                "value":"http://miakhalifagame.com/img/ryf.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1525856974",
+                "type":"ip-dst",
+                "value":"107.180.46.243",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1525856975",
+                "type":"ip-dst",
+                "value":"198.12.155.84",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1525856975",
+                "type":"ip-dst",
+                "value":"192.169.217.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1525856975",
+                "type":"ip-dst",
+                "value":"198.12.149.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525857241",
+                "type":"url",
+                "value":"http://roundyearfun.org/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525857274",
+                "type":"url",
+                "value":"http://fakeomegle.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525854244",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525854245",
+                        "type":"filename",
+                        "value":"MiaKhalifa.rar",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525854246",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

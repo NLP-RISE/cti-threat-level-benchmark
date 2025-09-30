@@ -1,0 +1,212 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-03-13",
+        "published":true,
+        "info":"FakeBat delivered via several active malvertising campaigns",
+        "publish_timestamp":"1710320263",
+        "timestamp":"1710320250",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malvertising - T1583.008\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1710320003",
+                "type":"link",
+                "value":"https://www.malwarebytes.com/blog/threat-intelligence/2024/03/fakebat-delivered-via-several-active-malvertising-campaigns",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hacked sites",
+                "timestamp":"1710320189",
+                "type":"hostname",
+                "value":"cecar.com.ar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hacked sites",
+                "timestamp":"1710320189",
+                "type":"hostname",
+                "value":"estiloplus.tur.ar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"obs-software.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"bandi-cam.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"breavas.app",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"open-project.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"onenote-download.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"epicgames-store.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Decoy sites",
+                "timestamp":"1710320202",
+                "type":"domain",
+                "value":"blcnder.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1710320215",
+                "type":"url",
+                "value":"bezynet.com/OBS-Studio-30.0.2-Full-Installer-x64.msix",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1710320215",
+                "type":"url",
+                "value":"bezynet.com/Bandicam_7.21_win64.msix",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1710320215",
+                "type":"url",
+                "value":"church-notes.com/Braavos-Wallet.msix",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1710320215",
+                "type":"url",
+                "value":"church-notes.com/Epic-Games_Setup.msix",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download URLs",
+                "timestamp":"1710320215",
+                "type":"url",
+                "value":"church-notes.com/Onenote_setup.msix",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File hashes",
+                "timestamp":"1710320233",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File hashes",
+                "timestamp":"1710320233",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File hashes",
+                "timestamp":"1710320233",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File hashes",
+                "timestamp":"1710320233",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File hashes",
+                "timestamp":"1710320233",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control servers",
+                "timestamp":"1710320250",
+                "type":"domain",
+                "value":"ads-pill.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control servers",
+                "timestamp":"1710320250",
+                "type":"domain",
+                "value":"ads-pill.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control servers",
+                "timestamp":"1710320250",
+                "type":"domain",
+                "value":"ads-tooth.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control servers",
+                "timestamp":"1710320250",
+                "type":"domain",
+                "value":"ads-analyze.top",
+                "to_ids":true
+            }
+        ]
+    }
+}

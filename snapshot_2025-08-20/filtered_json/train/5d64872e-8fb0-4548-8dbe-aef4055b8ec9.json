@@ -1,0 +1,62 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-12-30",
+        "published":true,
+        "info":"Peach Sandstorm delivers FalseFont to defense sector",
+        "publish_timestamp":"1703955782",
+        "timestamp":"1703955777",
+        "Tag":[
+            {
+                "name":"misp-galaxy:sector=\"Defense\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"Peach Sandstorm\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"APT33 - G0064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-groups=\"APT33\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT33 - G0064\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"MAGNALLIUM\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"APT33\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1703955644",
+                "type":"link",
+                "value":"https://twitter.com/MsftSecIntel/status/1737895710169628824",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1703955738",
+                "type":"domain",
+                "value":"digitalcodecrafters.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1703955738",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-02-20",
+        "published":true,
+        "info":"Log4j2 In The Wild | Iranian-Aligned Threat Actor “TunnelVision” Actively Exploiting VMware Horizon",
+        "publish_timestamp":"1645355919",
+        "timestamp":"1645355910",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1645355552",
+                "type":"vulnerability",
+                "value":"CVE-2018-13379",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server",
+                "timestamp":"1645355741",
+                "type":"ip-dst",
+                "value":"51.89.169.198",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server",
+                "timestamp":"1645355741",
+                "type":"ip-dst",
+                "value":"142.44.251.77",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload Server",
+                "timestamp":"1645355766",
+                "type":"ip-dst",
+                "value":"182.54.217.2",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tunneling Server",
+                "timestamp":"1645355760",
+                "type":"ip-dst",
+                "value":"142.44.135.86",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server",
+                "timestamp":"1645355741",
+                "type":"ip-dst",
+                "value":"51.89.190.128",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server",
+                "timestamp":"1645355741",
+                "type":"ip-dst",
+                "value":"51.89.135.142",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server,Tunneling Server",
+                "timestamp":"1645355780",
+                "type":"ip-dst",
+                "value":"51.89.178.210",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Payload server",
+                "timestamp":"1645355788",
+                "type":"hostname",
+                "value":"www.service-management.tk",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control (C2) Server",
+                "timestamp":"1645355741",
+                "type":"hostname",
+                "value":"www.microsoft-updateserver.cf",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1645355856",
+                "type":"link",
+                "value":"https://www.sentinelone.com/labs/log4j2-in-the-wild-iranian-aligned-threat-actor-tunnelvision-actively-exploiting-vmware-horizon/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1645355876",
+                "type":"comment",
+                "value":"SentinelLabs has been tracking the activity of an Iranian-aligned threat actor operating in the Middle-East and the US.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1645355876",
+                "type":"comment",
+                "value":"Due to the threat actor’s heavy reliance on tunneling tools, as well as the unique way it chooses to widely deploy those, we track this cluster of activity as TunnelVision.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1645355876",
+                "type":"comment",
+                "value":"Much like other Iranian threat actors operating in the region lately, TunnelVision’s activities were linked to deployment of ransomware, making the group a potentially destructive actor.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1645355898",
+                "type":"comment",
+                "value":"The exploitation of Log4j in VMware Horizon is characterized by a malicious process spawned from the Tomcat service of the VMware product (%PROGRAMFILES%\\VMware\\VMware View\\Server\\bin\\ws_TomcatService.exe)",
+                "to_ids":false
+            }
+        ]
+    }
+}

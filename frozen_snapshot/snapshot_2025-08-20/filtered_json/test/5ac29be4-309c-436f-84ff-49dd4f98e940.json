@@ -1,0 +1,204 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-12-10",
+        "published":true,
+        "info":"OSINT - Threat Advisory: Oh No Cleo! Cleo Software Actively Being Exploited in the Wild",
+        "publish_timestamp":"1733842710",
+        "timestamp":"1733842681",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"vulnerability:exploitability=\"industrialised\""
+            },
+            {
+                "name":"vulnerability:sighting=\"exploited\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1733840961",
+                "type":"vulnerability",
+                "value":"CVE-2024-50623",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"CVE-2024-50623: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1733840975",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1733840975",
+                        "type":"vulnerability",
+                        "value":"CVE-2024-50623",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1733840975",
+                        "type":"text",
+                        "value":"In Cleo Harmony before 5.8.0.20, VLTrader before 5.8.0.20, and LexiCom before 5.8.0.20, there is a JavaScript Injection vulnerability: unrestricted file upload and download could lead to remote code execution.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1733840976",
+                        "type":"datetime",
+                        "value":"2024-10-30T21:35:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1733840976",
+                        "type":"datetime",
+                        "value":"2024-10-28T00:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1733840976",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1733840976",
+                        "type":"link",
+                        "value":"https://support.cleo.com/hc/en-us/articles/27140294267799-Cleo-Product-Security-Advisory",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Observed IP addresses for callbacks",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1733841010",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"176.123.5.126",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"5.149.249.226",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"185.181.230.103",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"209.127.12.38",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"181.214.147.164",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1733841010",
+                        "type":"ip-dst",
+                        "value":"192.119.99.42",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Detects Powershell spawned from Cleo software.  Evidence of unknown threat actor exploiting the CLEO tooling using this pattern observed in Dec 2024",
+                "description":"An object describing a Sigma rule (or a Sigma rule name).",
+                "meta-category":"misc",
+                "name":"sigma",
+                "timestamp":"1733841191",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1733841191",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1733841191",
+                        "type":"sigma",
+                        "value":"title: Possible Cleo MFT Exploitation 2024\r\nid: f007b877-02e3-45b7-8501-1b78c2864029\r\nstatus: experimental\r\ndescription: Detects Powershell spawned from Cleo software.  Evidence of unknown threat actor exploiting the CLEO tooling using this pattern observed in Dec 2024.\r\nauthor: Tanner Filip, Austin Worline, Chad Hudson, Matt Anderson\r\nreferences: []\r\ndate: 2024/12/09\r\nlogsource:\r\n    category: process_creation\r\n    product: windows\r\ndetection:\r\n    selection:\r\n        ParentImage|endswith: '\\javaw.exe'\r\n        Image|endswith: '\\cmd.exe'\r\n        CommandLine|contains:\r\n            - 'powershell'\r\n            - ' -NonInteractive'\r\n            - ' -noni '\r\n            - ' -enc '\r\n            - ' -EncodedCommand'\r\n        ParentCommandLine|contains:\r\n            - 'VLTrader'\r\n            - 'lexicom'\r\n            - 'Harmony'\r\n            - 'VersaLex'\r\n\r\n    condition: selection\r\nfalsepositives:\r\n    - Unknown\r\nlevel: high",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a Sigma rule (or a Sigma rule name).",
+                "meta-category":"misc",
+                "name":"sigma",
+                "timestamp":"1733841235",
+                "Attribute":[
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1733841235",
+                        "type":"sigma",
+                        "value":"title: Javaw Spawning Suspicious Powershell Commands\r\nid: a0ec945f-2328-40e9-96f6-27dadf72861b\r\nstatus: experimental\r\ndescription: Detects Javaw spawning suspicious powershell commands. This has been observed as possible post-exploitation activity of Cleo software.\r\nauthor: Chad Hudson, Matt Anderson\r\nreferences: []\r\ndate: 2024/12/09\r\nlogsource:\r\n    category: process_creation\r\n    product: windows\r\ndetection:\r\n    selection:\r\n        ParentImage|endswith:\r\n            - '\\javaw.exe'\r\n        Image|endswith:\r\n            - '\\cmd.exe'\r\n    cmdline:\r\n        CommandLine|contains:\r\n            - ' -nop'\r\n            - ' -noni'\r\n            - ' -NonInteractive'\r\n            - ' -w hidden '\r\n            - ' -windowstyle hidden*'\r\n            - '(New-Object Net.WebClient).Download*'\r\n            - ' -enc '\r\n            - ' -EncodedCommand '\r\n    powershell:\r\n        CommandLine|contains: powershell\r\n    condition: selection and cmdline and powershell\r\nfalsepositives:\r\n    - Unknown\r\nDetects Javaw spawning suspicious powershell commands. This has been observed as possible post-exploitation activity of Cleo software.",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

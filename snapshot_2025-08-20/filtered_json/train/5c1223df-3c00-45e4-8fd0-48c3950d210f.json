@@ -1,0 +1,216 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-12-12",
+        "published":false,
+        "info":"OSINT - New Version of Disk-Wiping Shamoon/Disttrack Spotted: What You Need to Know",
+        "publish_timestamp":"0",
+        "timestamp":"1544695384",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Shamoon\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1544692802",
+                "type":"link",
+                "value":"https://www.trendmicro.com/vinfo/us/security/news/cybercrime-and-digital-threats/new-version-of-disk-wiping-shamoon-disttrack-spotted-what-you-need-to-know",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1544692955",
+                "type":"text",
+                "value":"We came across external reports that the notorious, disk-wiping worm Shamoon, also known as Disttrack, has reemerged with an updated version. We were also able to source several samples of this version of Shamoon that Trend Micro detects as Trojan.Win32.DISTTRACK.AA and Trojan.Win64.DISTTRACK.AA. While there are no obvious indications that this new version is currently in the wild, we are further analyzing the malware to verify its functions and capabilities given its destructive impact.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1544694140",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"_tdibth.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"mdmgcs_8.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"prngt6_4.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"prnsv0_56.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"vsmxraid.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"mdmusrk1g5.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"arcx6u0.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"netbxndxlg2.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"tsprint_ibv.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"wiacnt7001.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"prnlx00ctl.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"prncaz90x.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"megasasop.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"mdamx_5560.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"averfix2h826d_noaverir.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"hidirkbdmvs2.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"af0038bdax.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"acpipmi2z.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"filename",
+                        "value":"_wialx002.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1544694140",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

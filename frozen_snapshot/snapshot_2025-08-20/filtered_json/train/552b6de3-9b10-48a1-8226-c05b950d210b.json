@@ -1,0 +1,785 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2015-04-11",
+        "published":true,
+        "info":"FBI Flash Message: MC-000055-BT  EC3/IC4 takedown of the AAEH botnet",
+        "publish_timestamp":"1428923916",
+        "timestamp":"1428914519",
+        "Tag":[
+            {
+                "name":"tlp:green"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909603",
+                "type":"attachment",
+                "value":"FLASH-MC-000055-BT_TLP GREEN.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909678",
+                "type":"text",
+                "value":"AAEH",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909678",
+                "type":"text",
+                "value":"VObfus",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909678",
+                "type":"text",
+                "value":"VBObfus",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909678",
+                "type":"text",
+                "value":"Changeup",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428909678",
+                "type":"text",
+                "value":"Beebone",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Shadowserver foundation sinkhole",
+                "timestamp":"1428909712",
+                "type":"ip-dst",
+                "value":"46.244.21.4",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1428909960",
+                "type":"comment",
+                "value":"Sinkhole IP marked as useable for IDS. The idea being that it is not malicious, but it indicates that some malicious software is trying to connect to previously malicious hostnames or domains.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909974",
+                "type":"domain",
+                "value":"timechk1.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909974",
+                "type":"domain",
+                "value":"timechk23.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909974",
+                "type":"domain",
+                "value":"timechk1.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909974",
+                "type":"domain",
+                "value":"timechk23.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909974",
+                "type":"domain",
+                "value":"timechk2.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk24.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk2.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk24.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk3.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk25.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk3.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk25.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk4.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk26.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk4.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk26.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909975",
+                "type":"domain",
+                "value":"timechk5.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk27.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk5.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk27.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk6.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk28.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk6.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk28.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk7.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk29.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk7.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk29.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909976",
+                "type":"domain",
+                "value":"timechk8.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk1.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk8.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk2.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk9.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk3.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk9.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk4.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk10.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk5.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk10.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk6.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909977",
+                "type":"domain",
+                "value":"timechk11.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk7.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk11.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk8.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk12.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk9.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk12.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk10.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk13.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk11.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk13.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk12.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909978",
+                "type":"domain",
+                "value":"timechk14.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk13.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk14.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk14.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk15.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk15.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk15.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk16.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk16.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk17.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk16.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909979",
+                "type":"domain",
+                "value":"timechk18.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk17.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk19.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk17.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk20.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk18.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk21.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk18.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk22.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk19.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk23.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk19.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909980",
+                "type":"domain",
+                "value":"timechk24.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk20.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk25.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk20.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk26.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk21.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk27.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk21.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk28.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk22.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk29.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DNS requests",
+                "timestamp":"1428909981",
+                "type":"domain",
+                "value":"timechk22.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428910002",
+                "type":"text",
+                "value":"MC-000055-BT",
+                "to_ids":false
+            }
+        ]
+    }
+}

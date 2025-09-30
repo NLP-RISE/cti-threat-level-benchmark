@@ -1,0 +1,387 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-03-16",
+        "published":true,
+        "info":"OSINT - Sofacy Uses DealersChoice to Target European Government Agency",
+        "publish_timestamp":"1521231378",
+        "timestamp":"1521231369",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:mitre-mobile-attack-intrusion-set=\"APT28\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"STRONTIUM\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"b\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521231188",
+                "type":"link",
+                "value":"https://researchcenter.paloaltonetworks.com/2018/03/unit42-sofacy-uses-dealerschoice-target-european-government-agency/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521231188",
+                "type":"text",
+                "value":"Back in October 2016, Unit 42 published an initial analysis on a Flash exploitation framework used by the Sofacy threat group called DealersChoice. The attack consisted of Microsoft Word delivery documents that contained Adobe Flash objects capable of loading additional malicious Flash objects embedded in the file or directly provided by a command and control server. Sofacy continued to use DealersChoice throughout the fall of 2016, which we also documented in our December 2016 publication discussing Sofacyâ€™s larger campaign.\r\n\r\nOn March 12 and March 14, we observed the Sofacy group carrying out an attack on a European government agency involving an updated variant of DealersChoice. The updated DealersChoice documents used a similar process to obtain a malicious Flash object from a C2 server, but the inner mechanics of the Flash object contained significant differences in comparison to the original samples we analyzed.\r\n\r\nOne of the differences was a particularly clever evasion technique: to our knowledge this has never been observed in use. With the previous iterations of DealersChoice samples, the Flash object would immediately load and begin malicious tasks. In the March attacks, the Flash object is only loaded if the user scrolls through the entire content of the delivery document and views the specific page the Flash object is embedded on. Also, DealersChoice requires multiple interactions with an active C2 server to successfully exploit an end system.\r\n\r\nThe overall process to result in a successful exploitation is:\r\n\r\n    User must open the Microsoft Word email attachment\r\n    User must scroll to page three of the document, which will run the DealersChoice Flash object\r\n    The Flash object must contact an active C2 server to download an additional Flash object containing exploit code\r\n    The initial Flash object must contact the same C2 server to download a secondary payload\r\n    Victim host must have a vulnerable version of Flash installed",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Macro-ladened documents",
+                "timestamp":"1521231103",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Macro-ladened documents",
+                "timestamp":"1521231103",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Macro-ladened documents",
+                "timestamp":"1521231104",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1521231189",
+                "type":"domain",
+                "value":"ndpmedia24.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1521231176",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1521231176",
+                        "type":"text",
+                        "value":"DealersChoice",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1521231176",
+                        "type":"filename",
+                        "value":"Defence & Security 2018 Conference Agenda.docx",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1521231176",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1521231176",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1521231192",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1521231189",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1521231190",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1521231190",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1521231190",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1521231190",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0cd9ac328d858d8d83c9eb73bfdc59a958873b3d71b24c888d7408d9512a41d7/analysis/1521229058/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1521231191",
+                        "type":"text",
+                        "value":"7/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1521231191",
+                        "type":"datetime",
+                        "value":"2018-03-16T19:37:38",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1521231194",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231191",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231192",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231192",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1521231193",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231193",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/efb235776851502672dba5ef45d96cc65cb9ebba1b49949393a6a85b9c822f52/analysis/1521222896/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231193",
+                        "type":"text",
+                        "value":"37/59",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231193",
+                        "type":"datetime",
+                        "value":"2018-03-16T17:54:56",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1521231196",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231194",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231194",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231194",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1521231195",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231195",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e5511b22245e26a003923ba476d7c36029939b2d1936e17a9b35b396467179ae/analysis/1521222684/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231195",
+                        "type":"text",
+                        "value":"37/57",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231195",
+                        "type":"datetime",
+                        "value":"2018-03-16T17:51:24",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1521231199",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231196",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231196",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231196",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1521231197",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231197",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c4be15f9ccfecf7a463f3b1d4a17e7b4f95de939e057662c3f97b52f7fa3c52f/analysis/1521222974/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231197",
+                        "type":"text",
+                        "value":"17/39",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Macro-ladened documents",
+                        "timestamp":"1521231197",
+                        "type":"datetime",
+                        "value":"2018-03-16T17:56:14",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

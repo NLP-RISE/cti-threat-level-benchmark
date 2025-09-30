@@ -1,0 +1,196 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-27",
+        "published":true,
+        "info":"Malspam targeting github users",
+        "publish_timestamp":"1485530194",
+        "timestamp":"1485530168",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"sent by mail",
+                "timestamp":"1485520509",
+                "type":"malware-sample",
+                "value":"2701.zip|c1a735a029c9d64f6d12fbea6da629fd",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sent by mail",
+                "timestamp":"1485520510",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sent by mail",
+                "timestamp":"1485520512",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"text received by mail",
+                "timestamp":"1485520639",
+                "type":"text",
+                "value":"Hello,\r\n \r\nMy name is Adam Buchbinder, I saw your GitHub repo and i'm pretty amazed.\r\nThe point is that i have an open position in my company and looks like you\r\nare a good fit.\r\n \r\nPlease take a look into attachment to find details about company and job.\r\nDont hesitate to contact me directly via email highlighted in the document below.\r\n \r\n\r\nThanks and regards,\r\nAdam.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485521128",
+                "type":"hostname",
+                "value":"gw.yugo-star.ru",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"probably spoofed github user",
+                "timestamp":"1485526612",
+                "type":"email-src-display-name",
+                "value":"alec@cpan.org",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485526682",
+                "type":"email-subject",
+                "value":"Hello",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485526732",
+                "type":"email-attachment",
+                "value":"2701.zip",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485526807",
+                "type":"email-reply-to",
+                "value":"AdamBuchbinder@tutanota.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485526894",
+                "type":"email-message-id",
+                "value":"619BD3AF4490BE5D8184CD7A6E724E86@xpox",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Received: from lrjr (unknown [185.39.170.74])",
+                "timestamp":"1485527094",
+                "type":"ip-src",
+                "value":"185.39.170.74",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485527210",
+                "type":"email-x-mailer",
+                "value":"X-Mailer: Microsoft Windows Live Mail 16.4.3528.331",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1485527277",
+                "type":"email-mime-boundary",
+                "value":"\"----=_NextPart_001_1F9B_01D27892.CB6A37E0\"",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"extracted from 2701.zip",
+                "timestamp":"1485527518",
+                "type":"malware-sample",
+                "value":"2701.doc|2fecbe8848bac4001b692f63b33354d3",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"extracted from 2701.zip",
+                "timestamp":"1485527519",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"extracted from 2701.zip",
+                "timestamp":"1485527521",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Extracted from 2701.doc",
+                "timestamp":"1485528765",
+                "type":"malware-sample",
+                "value":"vba.txt|a40efe8a8510fecbc212d08518cce510",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Extracted from 2701.doc",
+                "timestamp":"1485528766",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Extracted from 2701.doc",
+                "timestamp":"1485528768",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"sent by mail - Xchecked via VT: 2690dc4ebde17e460aa9fb7c96fdaedba0702cc9737186af6efa66d1c92974ad",
+                "timestamp":"1485530138",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2690dc4ebde17e460aa9fb7c96fdaedba0702cc9737186af6efa66d1c92974ad/analysis/1485526438/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"extracted from 2701.zip - Xchecked via VT: 6b9af3290723f081e090cd29113c8755696dca88f06d072dd75bf5560ca9408e",
+                "timestamp":"1485530139",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6b9af3290723f081e090cd29113c8755696dca88f06d072dd75bf5560ca9408e/analysis/1485529768/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Enriched via the dns module",
+                "timestamp":"1485530167",
+                "type":"ip-src",
+                "value":"62.213.71.141",
+                "to_ids":false
+            }
+        ]
+    }
+}

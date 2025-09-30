@@ -1,0 +1,93 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2025-02-06",
+        "published":true,
+        "info":"Persistent Threats from the Kimsuky Group Using RDP Wrapper",
+        "publish_timestamp":"1738875286",
+        "timestamp":"1738875279",
+        "Tag":[
+            {
+                "name":"misp-galaxy:360net-threat-actor=\"Kimsuky - APT-C-55\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Kimsuky - G0094\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"PEBBLEDASH\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"RDP Wrapper\""
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1738874899",
+                "type":"link",
+                "value":"https://asec.ahnlab.com/en/86098/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738875260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738875260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738875260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738875260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1738875260",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1738875273",
+                "type":"ip-dst",
+                "value":"216.219.87.41",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1738875273",
+                "type":"ip-dst",
+                "value":"74.50.94.175",
+                "to_ids":true
+            }
+        ]
+    }
+}

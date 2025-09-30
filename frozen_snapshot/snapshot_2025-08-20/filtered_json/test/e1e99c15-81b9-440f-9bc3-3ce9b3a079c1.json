@@ -1,0 +1,71 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2025-04-07",
+        "published":true,
+        "info":"Fake trademark-related invoice",
+        "publish_timestamp":"1744025535",
+        "timestamp":"1744025457",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:financial-fraud=\"Buying/Renting Fraud\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"domain mentioned in the fake trademark publication.",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1744014103",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1744014103",
+                        "type":"domain",
+                        "value":"register-wps.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1744014103",
+                        "type":"ip-dst",
+                        "value":"5.44.111.164",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1744014178",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1744014178",
+                        "type":"email-reply-to",
+                        "value":"info@register-wps.com",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

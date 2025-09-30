@@ -1,0 +1,98 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-08-02",
+        "published":true,
+        "info":"OSINT - LuminosityLink RAT",
+        "publish_timestamp":"1470126226",
+        "timestamp":"1470126169",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"ecsirt:malicious-code=\"malware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1470125972",
+                "type":"link",
+                "value":"https://virustotal.com/en/file/e633fb678d91e5fe2a1468d13de42c4871be884885c23efe7456924ad7db5a85/analysis/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1470125992",
+                "type":"ip-dst",
+                "value":"190.123.44.134",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1470126010",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Used for signing the binary",
+                "timestamp":"1470126054",
+                "type":"domain",
+                "value":"zippa.biz",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Authenticode",
+                "timestamp":"1470126081",
+                "type":"x509-fingerprint-sha1",
+                "value":"c1e2727e8fb206f126c10c3ba9a5474874b6bb55",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: e633fb678d91e5fe2a1468d13de42c4871be884885c23efe7456924ad7db5a85",
+                "timestamp":"1470126111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: e633fb678d91e5fe2a1468d13de42c4871be884885c23efe7456924ad7db5a85",
+                "timestamp":"1470126112",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: e633fb678d91e5fe2a1468d13de42c4871be884885c23efe7456924ad7db5a85",
+                "timestamp":"1470126112",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e633fb678d91e5fe2a1468d13de42c4871be884885c23efe7456924ad7db5a85/analysis/1470111161/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"From https://virustotal.com/en/user/benkow_/",
+                "timestamp":"1470126169",
+                "type":"comment",
+                "value":"190.123.44.134|4288|190.123.44.134|Soundmgr.exe|Sound|Packet|Monitor|clientmonitor.exe|eb894fba356e3be7fb05313de362d5b1c44df50ce3e77ba89f295ee647a332d1|Nnamdi|1idsanmvhb|",
+                "to_ids":false
+            }
+        ]
+    }
+}

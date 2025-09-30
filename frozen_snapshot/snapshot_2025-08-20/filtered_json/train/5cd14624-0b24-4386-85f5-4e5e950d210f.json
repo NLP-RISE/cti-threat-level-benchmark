@@ -1,0 +1,584 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-04-22",
+        "published":true,
+        "info":"OSINT - CARBANAK Week - Fire Eye",
+        "publish_timestamp":"1557314563",
+        "timestamp":"1557308326",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Carbanak\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Carbanak - G0008\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-malware=\"Carbanak - S0030\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"FIN7 uses Carbanak\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Carbanak - G0008\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Carbanak - S0030\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Anunak\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"FIN7 - G0046\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"FIN7\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"FIN7 - G0046\""
+            },
+            {
+                "name":"ecsirt:intrusions=\"backdoor\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Backdoor\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557218891",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-one-a-rare-occurrence.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557218891",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-two-continuing-source-code-analysis.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557218891",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-three-behind-the-backdoor.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557218891",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/04/carbanak-week-part-four-desktop-video-player.html",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Commented out - Threat Group Association: Earlier CARBANAK activity",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"comixed.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Commented out - Threat Group Association: Earlier CARBANAK activity",
+                "timestamp":"1557236282",
+                "type":"ip-dst",
+                "value":"194.146.180.40",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Active",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"aaaabbbbccccc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Commented out - Threat Group Association: FIN7",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"stats10-google.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Commented out",
+                "timestamp":"1557236282",
+                "type":"ip-dst",
+                "value":"85.25.84.223",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Active",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"qwqreererwere.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Commented out - Threat Group Association: Earlier CARBANAK activity",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"akamai-technologies.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Compiled",
+                "timestamp":"1557236282",
+                "type":"domain",
+                "value":"hhklhlkhkjhjkjk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Status: Compiled - Threat Group Association: DNS infrastructure overlap with later FIN7 associated POWERSOURCE activity",
+                "timestamp":"1557236282",
+                "type":"hostname",
+                "value":"aaa.stage.4463714.news.meteonovosti.info",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557296520",
+                "type":"text",
+                "value":"CARBANAK is one of the most full-featured backdoors around. It was used to perpetrate millions of dollars in financial crimes, largely by the group we track as FIN7. In 2017, Tom Bennett and Barry Vengerik published Behind the CARBANAK Backdoor, which was the product of a deep and broad analysis of CARBANAK samples and FIN7 activity across several years. On the heels of that publication, our colleague Nick Carr uncovered a pair of RAR archives containing CARBANAK source code, builders, and other tools (both available in VirusTotal: kb3r1p and apwmie).",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #4905579 enriched by dns.",
+                "timestamp":"1557302578",
+                "type":"ip-src",
+                "value":"107.181.155.151",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #4905586 enriched by dns.",
+                "timestamp":"1557302581",
+                "type":"ip-src",
+                "value":"23.253.126.58",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557219940",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557219940",
+                        "type":"hostname",
+                        "value":"vds2.system-host.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557219941",
+                        "type":"ip-dst",
+                        "value":"104.193.252.151",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557219941",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557219941",
+                        "type":"datetime",
+                        "value":"2019-04-26T14:49:12",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557221122",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221122",
+                        "type":"hostname",
+                        "value":"customer.clientshostname.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221122",
+                        "type":"ip-dst",
+                        "value":"185.180.196.35",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221122",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557221122",
+                        "type":"datetime",
+                        "value":"2019-04-24T07:44:30",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557221244",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221244",
+                        "type":"ip-dst",
+                        "value":"213.227.155.8",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221244",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557221244",
+                        "type":"datetime",
+                        "value":"2019-04-24T04:33:52",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557221320",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221320",
+                        "type":"ip-dst",
+                        "value":"94.156.133.69",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557221320",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557221320",
+                        "type":"datetime",
+                        "value":"2018-11-15T10:27:07",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557222039",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557222039",
+                        "type":"ip-dst",
+                        "value":"185.174.172.241",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557222039",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557222039",
+                        "type":"datetime",
+                        "value":"2019-04-27T13:24:36",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557222113",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557222113",
+                        "type":"ip-dst",
+                        "value":"109.230.199.227",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557222113",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557222113",
+                        "type":"datetime",
+                        "value":"2019-04-27T13:24:36",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Commented out",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557224775",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557224775",
+                        "type":"ip-dst",
+                        "value":"37.1.212.100",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557224775",
+                        "type":"port",
+                        "value":"700",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Commented out - Threat Group Association: Earlier CARBANAK activity",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557224810",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557224810",
+                        "type":"ip-dst",
+                        "value":"188.138.98.105",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557224811",
+                        "type":"port",
+                        "value":"710",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Commented out",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557234557",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557234558",
+                        "type":"ip-dst",
+                        "value":"80.84.49.50",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557234558",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Commented out",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557235492",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557235492",
+                        "type":"ip-dst",
+                        "value":"52.11.125.44",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557235492",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Active",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557235569",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557308323",
+                        "type":"ip-dst",
+                        "value":"192.168.0.100",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557235569",
+                        "type":"port",
+                        "value":"700",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Compiled",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557235637",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557308326",
+                        "type":"ip-dst",
+                        "value":"192.168.0.100",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557235637",
+                        "type":"port",
+                        "value":"700",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Status: Active - Threat Group Association: Earlier CARBANAK activity",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1557236169",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557236169",
+                        "type":"ip-dst",
+                        "value":"193.203.48.23",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557236169",
+                        "type":"port",
+                        "value":"800",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,212 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-12-23",
+        "published":true,
+        "info":"OSINT - Reversing a real-world 249 bytes backdoor!",
+        "publish_timestamp":"1577112250",
+        "timestamp":"1577112228",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Backdoor\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1577112123",
+                "type":"link",
+                "value":"https://anee.me/reversing-a-real-world-249-bytes-backdoor-aadd876c0a32?gi=af1848a0c8d6",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Apparently it tries to make a socket and connect to the IP address: 104.248.237.194 on port number 1337. This ip address is owned by Digital Ocean.",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1577111942",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1577111942",
+                        "type":"ip-dst",
+                        "value":"104.248.237.194",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1577111943",
+                        "type":"port",
+                        "value":"1337",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Epic! This 249 byte backdoor can run any shellcode we give it. The attackers can deploy it on an offshore IP address and execute arbitrary instructions on the victimâ€™s box.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577112228",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111994",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577112202",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1577112076",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"datetime",
+                        "value":"2019-12-23T14:37:22",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/5141d29d0278c8da4eac177126cbf4d15623502d4763abd6d3a4dca2a3ea616e/analysis/1577111842/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577111995",
+                        "type":"text",
+                        "value":"16/60",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"The payload",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577112153",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577112153",
+                        "type":"malware-sample",
+                        "value":"pay.bin|93363683dcf1ccc4db296fa5fde69b71",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577112153",
+                        "type":"filename",
+                        "value":"pay.bin",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577112153",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577112153",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577112153",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577112154",
+                        "type":"size-in-bytes",
+                        "value":"249",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

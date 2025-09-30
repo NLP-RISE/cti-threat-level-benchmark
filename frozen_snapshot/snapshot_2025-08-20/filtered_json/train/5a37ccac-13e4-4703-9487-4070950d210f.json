@@ -1,0 +1,328 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-05",
+        "published":false,
+        "info":"OSINT - Graftor - But I Never Asked for This…",
+        "publish_timestamp":"0",
+        "timestamp":"1513630056",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Aumlib\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            },
+            {
+                "name":"workflow:todo=\"review-for-false-positive\""
+            },
+            {
+                "name":"workflow:todo=\"review-before-publication\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513606567",
+                "type":"link",
+                "value":"http://blog.talosintelligence.com/2017/09/graftor-but-i-never-asked-for-this.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Alternate Data Streams(ADS)",
+                "timestamp":"1513607067",
+                "type":"filename",
+                "value":"C:UsersdexAppDataLocalTemp2263387661.exe:Zone.Identifier",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Alternate Data Streams(ADS)",
+                "timestamp":"1513607067",
+                "type":"filename",
+                "value":"C:UsersdexAppDataLocalTempQBPO5ppcuhJG.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Alternate Data Streams(ADS)",
+                "timestamp":"1513607068",
+                "type":"filename",
+                "value":"C:UsersdexAppDataLocalTemp2263387661.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Alternate Data Streams(ADS)",
+                "timestamp":"1513607068",
+                "type":"filename",
+                "value":"C:UsersdexAppDataLocalTempAyWdp7tHPIeU.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Alternate Data Streams(ADS)",
+                "timestamp":"1513607068",
+                "type":"filename",
+                "value":"C:WindowsSystem32regsvr32.exe:Zone.Identifier",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and Control Server GET Request",
+                "timestamp":"1513607309",
+                "type":"url",
+                "value":"http://kskmasdqsjuzom.regularfood.gdn/J/ZGF0YV9maWxlcz0yMyZ0eXBlPXN0YXRpYyZuYW1lPVRlbXAlNUMyMjYzMzg3NjYxLmV4ZSZybmQ9ZTY5NjM5ZjJjYTdlNWNiNDU2ZmYwMDUyN2M2ODBlNDMxMTY0YmFhZGJlZWI3MTI5YjIwZGYzM2M3YzIzNTc1YQ",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and Control Server POST Request",
+                "timestamp":"1513607494",
+                "type":"url",
+                "value":"http://kskmasdqsjuzom.regularfood.gdn/J/ZGF0YV9maWxlcz0yMyZ0eXBlPXN0YXRpYyZuYW1lPVRlbXAlNUMyMjYzMzg3NjYxLmV4ZSZybmQ9ZTY5NjM5ZjJjYTdlNWNiNDU2ZmYwMDUyN2M2ODBlNDMxMTY0YmFhZGJlZWI3MTI5YjIwZGYzM2M3YzIzNTc1YSZkZWxheT0zODk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"arolina.torchpound.gdn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513630020",
+                "type":"hostname",
+                "value":"binupdate.mail.ru",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513630012",
+                "type":"hostname",
+                "value":"crl.microsoft.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"domain",
+                "value":"dreple.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"domain",
+                "value":"gambling577.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"jvusdtufhlreari.twiceprint.gdn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"kskmasdqsjuzom.regularfood.gdn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"domain",
+                "value":"mentalaware.gdn",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"mrds.mail.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"domain",
+                "value":"nottotrack.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"domain",
+                "value":"plugpackdownload.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"s2.symcb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"sputnikmailru.cdnmail.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"ss.symcd.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains from sandbox run",
+                "timestamp":"1513607522",
+                "type":"hostname",
+                "value":"xml.binupdate.mail.ru",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Graftor Dropper",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513607143",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607143",
+                        "type":"filename",
+                        "value":"2263387661.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607143",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607143",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dumped 2nd stage",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513607211",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607211",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607211",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607211",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dumped 3rd stage",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513607280",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607281",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607281",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513607281",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

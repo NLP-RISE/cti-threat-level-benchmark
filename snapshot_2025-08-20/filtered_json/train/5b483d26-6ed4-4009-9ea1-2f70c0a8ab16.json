@@ -1,0 +1,97 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-07-12",
+        "published":true,
+        "info":"Advanced Mobile Malware Campaign in India uses Malicious MDM",
+        "publish_timestamp":"1531461031",
+        "timestamp":"1531461024",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1531460917",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2018/07/Mobile-Malware-Campaign-uses-Malicious-MDM.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"AppsSLoader.ipa",
+                "timestamp":"1531461020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MyApp.ipa",
+                "timestamp":"1531461020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PrayTime.ipa",
+                "timestamp":"1531461020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Telegram.ipa",
+                "timestamp":"1531461020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wplus.ipa",
+                "timestamp":"1531461020",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MDM Domains",
+                "timestamp":"1531461020",
+                "type":"domain",
+                "value":"ios-certificate-update.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MDM Domains",
+                "timestamp":"1531461020",
+                "type":"hostname",
+                "value":"www.wpitcher.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains",
+                "timestamp":"1531461020",
+                "type":"domain",
+                "value":"voguextra.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domains",
+                "timestamp":"1531461020",
+                "type":"domain",
+                "value":"techwach.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,1299 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-10-23",
+        "published":true,
+        "info":"OSINT - Dans lâ€™Å“il de notre CyberSOC : la campagne malspam Aggah diversifie ses outils",
+        "publish_timestamp":"1575969912",
+        "timestamp":"1575969880",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command-Line Interface - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1086\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Execution through API - T1106\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Mshta - T1170\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1060\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Credentials in Files - T1081\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Input Capture - T1056\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Screen Capture - T1113\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Uncommonly Used Port - T1065\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572530885",
+                "type":"link",
+                "value":"https://cyberdefense.orange.com/fr/blog/dans-loeil-de-notre-cybersoc-la-campagne-malspam-aggah-diversifie-ses-outils/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"88.150.221.123/1/inc/0f176165c9879d.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"216.170.126.123/otu/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"185.215.148.217/ghost/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"216.170.126.107/done/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"216.170.126.107/xmen/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"url",
+                "value":"216.170.126.146/ahsan/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"dennisss.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"mozila-system.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"hetro.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"kimkinzo.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"filename",
+                "value":"?docora.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"fishwdme.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"john-osas11.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"ccmorgan.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1572877299",
+                "type":"hostname",
+                "value":"sukw.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1572880529",
+                "type":"hostname",
+                "value":"newandupdates1234.blogspot.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1572881266",
+                "type":"hostname",
+                "value":"asdiamecwecw8cew.blogspot.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"C2",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1572874391",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1572874391",
+                        "type":"ip-dst",
+                        "value":"216.170.126.107",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1572874392",
+                        "type":"port",
+                        "value":"777",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572874431",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572874576",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Nanocore",
+                        "timestamp":"1572874577",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572874604",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572874620",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874620",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572875589",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572875589",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"ASyncRAT",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572875611",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572875922",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572875922",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NanoCore",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572875958",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572875958",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572875980",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572875981",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876008",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876008",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876025",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876026",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876074",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876074",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876127",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876127",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876158",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876159",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Azorult",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876208",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"AgentTesla",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876231",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"AgentTesla",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876298",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Remcos",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876503",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Remcos",
+                        "timestamp":"1572876503",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"FormBook",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876521",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"FormBook",
+                        "timestamp":"1572876521",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"RevengeRAT",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876545",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"RevengeRAT",
+                        "timestamp":"1572876545",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"RevengeRAT",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876560",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"RevengeRAT",
+                        "timestamp":"1572876560",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876581",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876581",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876607",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876607",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876623",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876637",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1572876655",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876655",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1572877147",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1572877147",
+                        "type":"ip-dst",
+                        "value":"35.226.30.217",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"C2",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1572877161",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1572877161",
+                        "type":"ip-dst",
+                        "value":"88.150.221.123",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1572878525",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1572878525",
+                        "type":"email-subject",
+                        "value":"Payment Remittance",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1572878545",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1572878545",
+                        "type":"email-subject",
+                        "value":"Price Request",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1572878598",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1572878599",
+                        "type":"regkey",
+                        "value":"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1572878599",
+                        "type":"text",
+                        "value":"WinUpdate",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969876",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969876",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"datetime",
+                        "value":"2019-10-28T02:31:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/db5300741c649d489afcadcf574086f086e0c1dec660733ff3360bb8996e649f/analysis/1572229860/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876638",
+                        "type":"text",
+                        "value":"14/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969877",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969877",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"datetime",
+                        "value":"2019-10-09T21:55:56",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/92322a7f6e9c9f8befe87af8bd1369e5ee95d82b8c673d863f9f03eba2b4534e/analysis/1570658156/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Azorult",
+                        "timestamp":"1572876208",
+                        "type":"text",
+                        "value":"59/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969878",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969878",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"datetime",
+                        "value":"2019-10-23T12:51:58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/d0c803c5ea28bf5f31d48876fec6f813d312ec2df024974fdc6e641862ce68a1/analysis/1571835118/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876231",
+                        "type":"text",
+                        "value":"41/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969878",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969878",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"datetime",
+                        "value":"2019-10-20T11:44:02",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/83be3594bac7cf5b93de4fbb944c11feb844cce7ad0e7442922e647ab4117ced/analysis/1571571842/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874432",
+                        "type":"text",
+                        "value":"57/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969879",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969879",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"datetime",
+                        "value":"2019-10-13T12:32:04",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/fb9146f0e3045ad11c152b06b5a4e3ae9a87f09dec76253fec671a79da256d33/analysis/1570969924/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"NanoCore",
+                        "timestamp":"1572874604",
+                        "type":"text",
+                        "value":"60/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969879",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969879",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"datetime",
+                        "value":"2019-09-28T03:26:27",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/84833991f1705a01a11149c9d037c8379a9c2d463dc30a2fec27bfa52d218fa6/analysis/1569641187/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dll",
+                        "timestamp":"1572876623",
+                        "type":"text",
+                        "value":"44/67",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969880",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969880",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"datetime",
+                        "value":"2019-10-29T15:05:37",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/516c73d324fa23f5aaf50bf9306c2d5aa3d55b0b8c9be60e273ac3c1895f15f3/analysis/1572361537/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"ASyncRAT",
+                        "timestamp":"1572875611",
+                        "type":"text",
+                        "value":"36/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1575969880",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1575969880",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"datetime",
+                        "value":"2019-10-25T06:30:50",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/6c59ac2d51e7f06e82b33c697107a0ba27779382f07754fa9f0e283be84940e5/analysis/1571985050/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"AgentTesla",
+                        "timestamp":"1572876298",
+                        "type":"text",
+                        "value":"44/68",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

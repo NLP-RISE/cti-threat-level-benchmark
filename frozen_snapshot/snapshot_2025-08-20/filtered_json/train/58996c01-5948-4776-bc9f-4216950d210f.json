@@ -1,0 +1,273 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-07",
+        "published":true,
+        "info":"OSINT -  When A Pony Walks Out Of A Pub",
+        "publish_timestamp":"1487952038",
+        "timestamp":"1487927797",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486449936",
+                "type":"link",
+                "value":"http://blog.talosintel.com/2017/02/pony-pub-files.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486449715",
+                "type":"text",
+                "value":"Talos has observed a small email campaign leveraging the use of Microsoft Publisher files. These .pub files are normally used for the publishing of documents such as newsletters, allowing users to create such documents using familiar office functions such as mail merging. Unlike other applications within the Microsoft Office suite, Microsoft Publisher does not support a 'Protected View' mode. This is a read only mode which can help end users remain protected from malicious document files. Microsoft Publisher is included and installed by default in Office 365.\r\n\r\nThe file used in this campaign was aimed at infecting the victim with the, well known, Pony malware. Whilst Pony is well documented in technical capability it has not been known to use the .pub file format until now. Pony is a credential harvesting piece of malware with other trojan capabilities. In addition to credential harvesting, it is also commonly deployed as a malware loader and used to infect systems with additional malware in multi-stage infection chains. Pony is still used heavily as the sources of multiple Pony versions leaked thus making it much easier for other malicious actors to implement Pony into their infection chain.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"payload",
+                "timestamp":"1486449761",
+                "type":"url",
+                "value":"http://5.200.52.198/flex/3435dde3r.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449762",
+                "type":"url",
+                "value":"http://195.22.127.233/rec/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449763",
+                "type":"url",
+                "value":"http://kbfvzoboss.bid/alien/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449764",
+                "type":"url",
+                "value":"http://alphastand.win/alien/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449765",
+                "type":"url",
+                "value":"http://alphastand.top/alien/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449766",
+                "type":"url",
+                "value":"http://alphastand.trade/alien/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Pony CC",
+                "timestamp":"1486449767",
+                "type":"url",
+                "value":"http://195.22.127.233:80/rec/fre.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449768",
+                "type":"ip-dst",
+                "value":"5.200.52.198",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449769",
+                "type":"ip-dst",
+                "value":"195.22.127.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449770",
+                "type":"domain",
+                "value":"kbfvzoboss.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449770",
+                "type":"domain",
+                "value":"alphastand.win",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449771",
+                "type":"domain",
+                "value":"alphastand.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486449772",
+                "type":"domain",
+                "value":"alphastand.trade",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_fax45.pub",
+                "timestamp":"1486449833",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_faxreport34.pub",
+                "timestamp":"1486449834",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"letten.js",
+                "timestamp":"1486449835",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload",
+                "timestamp":"1486449835",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload",
+                "timestamp":"1486449836",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload - Xchecked via VT: c7ef89222d760fc915690e6394c61c84176e618f7c9508beca30aa9a0f1b1991",
+                "timestamp":"1486449912",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload - Xchecked via VT: c7ef89222d760fc915690e6394c61c84176e618f7c9508beca30aa9a0f1b1991",
+                "timestamp":"1486449913",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"payload - Xchecked via VT: c7ef89222d760fc915690e6394c61c84176e618f7c9508beca30aa9a0f1b1991",
+                "timestamp":"1487927797",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c7ef89222d760fc915690e6394c61c84176e618f7c9508beca30aa9a0f1b1991/analysis/1486387683/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload - Xchecked via VT: d214c89af1929af1171ac40999b14a4f6fbcfd13b88cade392853a2c61057122",
+                "timestamp":"1486449914",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"payload - Xchecked via VT: d214c89af1929af1171ac40999b14a4f6fbcfd13b88cade392853a2c61057122",
+                "timestamp":"1486449915",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"payload - Xchecked via VT: d214c89af1929af1171ac40999b14a4f6fbcfd13b88cade392853a2c61057122",
+                "timestamp":"1486449916",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d214c89af1929af1171ac40999b14a4f6fbcfd13b88cade392853a2c61057122/analysis/1486116167/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_faxreport34.pub - Xchecked via VT: 36baccd2a4fc4f683c839283123a75de61b01ce93205f4a34975263e9c66aaed",
+                "timestamp":"1486449916",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_faxreport34.pub - Xchecked via VT: 36baccd2a4fc4f683c839283123a75de61b01ce93205f4a34975263e9c66aaed",
+                "timestamp":"1486449917",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"skbmt_faxreport34.pub - Xchecked via VT: 36baccd2a4fc4f683c839283123a75de61b01ce93205f4a34975263e9c66aaed",
+                "timestamp":"1486449918",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/36baccd2a4fc4f683c839283123a75de61b01ce93205f4a34975263e9c66aaed/analysis/1486424559/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_fax45.pub - Xchecked via VT: 3cfd8919f095e048e0f24a41c2f132328f0d0efe19581b308d9d2d3ffad40c29",
+                "timestamp":"1486449919",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"skbmt_fax45.pub - Xchecked via VT: 3cfd8919f095e048e0f24a41c2f132328f0d0efe19581b308d9d2d3ffad40c29",
+                "timestamp":"1486449920",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"skbmt_fax45.pub - Xchecked via VT: 3cfd8919f095e048e0f24a41c2f132328f0d0efe19581b308d9d2d3ffad40c29",
+                "timestamp":"1486449920",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3cfd8919f095e048e0f24a41c2f132328f0d0efe19581b308d9d2d3ffad40c29/analysis/1486365572/",
+                "to_ids":false
+            }
+        ]
+    }
+}

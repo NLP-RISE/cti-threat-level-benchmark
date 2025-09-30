@@ -1,0 +1,111 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-27",
+        "published":true,
+        "info":"OSINT - DÃ©jÃ  vu: Petya ransomware appears with SMB propagation capabilities",
+        "publish_timestamp":"1498593909",
+        "timestamp":"1498593781",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Petya\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"text",
+                "value":"The Petya outbreak recorded on 27 June 2017 has had a significant impact on a number of global organisations, with media outlets reporting impacts as significant as the cessation of activity at the Port of Rotterdam in the Netherlands [1].\r\n\r\nWhile many may be loath to think back six weeks to the trauma of Mayâ€™s WannaCry outbreak (https://blogs.forcepoint.com/security-labs/wannacry-post-outbreak-analysis), there are a number of parallels between the two incidents ranging from the global reach of the outbreak to the techniques by which the malware is spread.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"https://blogs.forcepoint.com/security-labs/deja-vu-petya-ransomware-appears-smb-propagation-capabilities",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"orcepoint Security Labs has analysed one sample associated with the outbreak",
+                "timestamp":"1498593740",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"http://www.ad.nl/rotterdam/grote-hack-bij-maersk-legt-rotterdamse-containerterminal-plat~a60dd307/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"https://blockchain.info/address/1Mz7153HMuxXTuR2R1t78mGSdzaAtNbBWX",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"https://blogs.technet.microsoft.com/filecab/2016/09/16/stop-using-smb1/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"https://support.microsoft.com/en-us/help/2696547/how-to-enable-and-disable-smbv1,-smbv2,-and-smbv3-in-windows-vista,-windows-server-2008,-windows-7,-windows-server-2008-r2,-windows-8,-and-windows-server-2012",
+                "to_ids":false
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"",
+                "timestamp":"1498593740",
+                "type":"btc",
+                "value":"1Mz7153HMuxXTuR2R1t78mGSdzaAtNbBWX",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"orcepoint Security Labs has analysed one sample associated with the outbreak - Xchecked via VT: 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+                "timestamp":"1498593740",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"orcepoint Security Labs has analysed one sample associated with the outbreak - Xchecked via VT: 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+                "timestamp":"1498593740",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"orcepoint Security Labs has analysed one sample associated with the outbreak - Xchecked via VT: 027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+                "timestamp":"1498593740",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745/analysis/1498592986/",
+                "to_ids":false
+            }
+        ]
+    }
+}

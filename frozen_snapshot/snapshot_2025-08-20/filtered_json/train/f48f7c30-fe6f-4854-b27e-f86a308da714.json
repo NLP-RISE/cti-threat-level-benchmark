@@ -1,0 +1,1063 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-06-08",
+        "published":true,
+        "info":"Operation Crimson Palace: Sophos threat hunting unveils multiple clusters of Chinese state-sponsored activity targeting Southeast Asian government",
+        "publish_timestamp":"1718613209",
+        "timestamp":"1718613201",
+        "Tag":[
+            {
+                "name":"misp-galaxy:country=\"china\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"CCoreDoor C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"146.190.93.250",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PocoProxy C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"198.13.47.158",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PocoProxy C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"64.176.50.42",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PocoProxy C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"158.247.241.188",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PocoProxy C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"139.180.217.105",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"45.130.229.181",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"185.201.8.187",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Merlin C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"89.44.197.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"RUDEBIRD C2; EAGERBEE C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"185.195.237.123",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"RUDEBIRD C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"195.123.247.50",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2",
+                "timestamp":"1717863031",
+                "type":"ip-src",
+                "value":"172.67.130.71",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2; RUDEBIRD C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"45.90.58.103",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"185.195.237.121",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2",
+                "timestamp":"1717863039",
+                "type":"ip-src",
+                "value":"104.21.3.57",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"185.82.217.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"195.123.245.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PowHeartBeat C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"154.39.137.29",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PowHeartBeat C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"147.139.47.141",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PhantomNet C2; EAGERBEE C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"185.167.116.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EAGERBEE C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"91.220.202.143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"dllhost.exe",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"139.162.18.97",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"103.56.5.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"49.157.28.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"141.136.44.219",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"145.14.158.235",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"107.148.41.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2 / XiebroC2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"66.42.56.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"45.15.143.151",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2 payload host",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"198.244.237.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"123.253.35.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"mios.exe C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"178.128.221.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Interacted with webshell (VPN subnet)",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"192.142.18.15",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Interacted with webshell (VPN subnet)",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"192.142.18.27",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Dropped webshell (VPN subnet)",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"192.142.18.25",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2 / XiebroC2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"191.96.53.132",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2 / XiebroC2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"45.9.191.183",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"45.77.46.245",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863018",
+                "type":"ip-src",
+                "value":"64.176.37.107",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Merlin C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"cloud.keepasses.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CCoreDoor C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"message.ooguy.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"gsenergyspeedtest.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"hpupdate.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"cancelle.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"dmsz.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"swprv.dll C2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"gandeste.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Havoc C2 / XiebroC2",
+                "timestamp":"1717863160",
+                "type":"domain",
+                "value":"test1.zhangliyong.cn",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"3.ps1 (PowerShell script)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EvtxParser.exe (EVTX dump)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"2.vbs (VBS script)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"r.vbs (VBS script)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mscorsvc.dll (CCoreDoor)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mscorsvc.dll (CCoreDoor)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ntpsapi.dll (signed, benign, ntdll.dll used for EDR unhooking)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sslwnd64.exe (PhantomNet)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sslwnd64.exe (PhantomNet)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"nethood.exe (PhantomNet)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"oci.dll (PhantomNet)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"X64.dll (PhantomNet, renamed to oci.dll)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"wlbsctrl.dll (EAGERBEE)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TSVIPSrv.dll (EAGERBEE)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TSVIPSrv.dll (EAGERBEE)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\ProgramData\\Microsoft\\DeviceSync\\jli.dll (EAGERBEE)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\ProgramData\\Microsoft\\Vault\\vmnat.dll (Merlin)",
+                "timestamp":"1717863333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"pc2msupp.dll (Malicious DLL sideloaded by MOBPOPUP.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSI64.exe (RUDEBIRD)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ba0oddof.dll (CSC compilation artifact from 1.ps1 execution)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SophosUD.exe (PowHeartBeat)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SophosUD.exe (PowHeartBeat)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SophosUD2.exe (PowHeartBeat)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"SensAPI.dll (Malicious DLL sideloaded by ph.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\ProgramData\\Microsoft\\Windows\\svcchost.dll (Malicious DLL sideloaded by renamed vmnat.exe, svcchost.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"a8.txt (PocoProxy)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"s.dat (Malicious file)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msedge_elf.dll (HUI Loader)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"hideschtasks.exe (Custom binary; remotely creates scheduled tasks)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"log.ini (Masquerading DLL generating C2)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"11.log (LSASS credential interceptor)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1.dat (Cobalt Strike)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sssa.exe (Malicious file)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"McPvNs.dll (Malicious DLL sideloaded by McPvTray.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"rsndispot.sys , EDR evasion",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"rspot.sys, EDR evasion",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"tpyrced_ambs.exe",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"443.txt (PocoProxy)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"4413.txt (PocoProxy)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"chrome.log (PocoProxy)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"textinputhost.exe (renamed rc.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TextInputHost.dat",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"sc.cfg",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"appmgmt.dll (Stowaway)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"check.exe (NUPAKAGE)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"appmgmt.dll (Stowaway)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"swprvs.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"winbridge.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\ProgramData\\mios.exe (Malicious File) used in conjuction with cmdline containing  '172.19.120.60 65211' and '178.128.221.202 443'",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\Help\\Help\\mscorsvc.dll (Malicious DLL)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\ProgramData\\mscorsvc.dll (Malicious DLL)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\Temp\\ntpsapi.dll (EDR unhooking, benign version of ntdll.dll)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\windows\\syswow64\\WWindows.Data.Devices.Config.dll (SharpHound/BloodHound)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"locale.nlp (ATK/DonutLdr-A)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\debug\\net.LOG (Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"swprv.dll (Malicious DLL sideloaded by swprv service)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"iscsiexe.dll (MSiSCSI payload)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"version.dll (Malicious DLL sideloaded by swi_update.exe)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DecrptDumper.exe (Malicious File, no execution data)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"c:\\windows\\help\\prow.xml (Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"~docpdf.tmp (Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:/PerfLogs/libcef.dll (Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"<REDACTED>DOC20231100001603KMAP.pdf (webshell)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:/Windows/System32/wbem/ncobjapi.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"<REDACTED>DOC20231200001924KMAP.aspx",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"111 (Shellcode loader)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:/Windows/Vss/Writers/Application/libcef.dll (Shellcode Loader for Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:/Windows/Vss/Writers/Application/libcef.dll (Shellcode Loader for Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"<REDACTED>DOC20231200001922KMAP.asp (webshell)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"<REDACTED>DOC20231200002062KMAP.php (webshell)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"log.ini (Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1.exe (Invoke WMI)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msedge_elf.dll (Shellcode Loader, Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"chrome.exe (Shellcode Loader, Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msedge_elf.dll (Shellcode Loader, Havoc)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:/ProgramData/conhost.exe (Alcatraz Git Project EDR Evasion)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\Vss\\Writers\\Application\\libcef.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Windows\\Vss\\Writers\\libcef.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\PerfLogs\\vcruntime140.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\PerfLogs\\jli.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\PerfLogs\\pt.exe (unsigned executable with certificate stating that it is MS Edge)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\Users\\Public\\r2.exe (Unknown threat file)",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C:\\PerfLogs\\msedge_elf.dll",
+                "timestamp":"1717863334",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1717863351",
+                "type":"link",
+                "value":"https://news.sophos.com/en-us/2024/06/05/operation-crimson-palace-sophos-threat-hunting-unveils-multiple-clusters-of-chinese-state-sponsored-activity-targeting-southeast-asia/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,412 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2013-08-23",
+        "published":true,
+        "info":"OSINT Operation Molerats: Middle East Cyber Attacks Using Poison Ivy by Fire Eye",
+        "publish_timestamp":"1498161566",
+        "timestamp":"1498161545",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1439126109",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2013/08/operation-molerats-middle-east-cyber-attacks-using-poison-ivy.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886535",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1439886296",
+                "type":"mutex",
+                "value":"gdfgdfgdg",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"Password used",
+                "timestamp":"1439886311",
+                "type":"text",
+                "value":"!@#GooD#@!",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886378",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886379",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886379",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886379",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886394",
+                "type":"hostname",
+                "value":"toornt.servegame.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886394",
+                "type":"hostname",
+                "value":"updateo.servegame.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886394",
+                "type":"hostname",
+                "value":"egypttv.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886394",
+                "type":"hostname",
+                "value":"skype.servemp3.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886394",
+                "type":"hostname",
+                "value":"natco2.no-ip.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886428",
+                "type":"ip-dst",
+                "value":"209.200.39.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886429",
+                "type":"ip-dst",
+                "value":"209.200.39.88",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886429",
+                "type":"ip-dst",
+                "value":"173.225.126.166",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886429",
+                "type":"ip-dst",
+                "value":"173.225.126.103",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886429",
+                "type":"ip-dst",
+                "value":"209.200.39.220",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1439886429",
+                "type":"ip-dst",
+                "value":"173.225.126.179",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1498161545",
+                "type":"yara",
+                "value":"rule Molerats_certs\n{\nmeta:\n    author = \"FireEye Labs\"\n    description = \"this rule detections code signed with certificates used by the Molerats actor\"\n\nstrings:\n    $cert1 = {06 50 11 A5 BC BF 83 C0 93 28 16 5E 7E 85 27 75}\n    $cert2 = {03 e1 e1 aa a5 bc a1 9f ba 8c 42 05 8b 4a bf 28}\n    $cert3 = {0c c0 35 9c 9c 3c da 00 d7 e9 da 2d c6 ba 7b 6d}\n\ncondition:\n    1 of ($cert*)\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886515",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886515",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886515",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1439886517",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 16346b95e6deef9da7fe796c31b9dec4)",
+                "timestamp":"1455846383",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via a8714aac274a18f1724d9702d40030bf)",
+                "timestamp":"1455846385",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via d9a7c4a100cfefef995785f707be895c)",
+                "timestamp":"1455846386",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 9dff139bbbe476770294fb86f4e156ac)",
+                "timestamp":"1455846388",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 6350d1039742b87b7917a5e26de2c25c)",
+                "timestamp":"1455846389",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 5b740b4623b2d1049c0036a6aae684b0)",
+                "timestamp":"1455846391",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 973b5f2a5608d243e7305ee4f9249302)",
+                "timestamp":"1455846392",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via e85fc76362c2e9dc7329fddda8acc89e)",
+                "timestamp":"1455846393",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via b05603938a888018d4dcdc551c4be8ac)",
+                "timestamp":"1455846394",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 9ef9a631160b96322010a5238defc673)",
+                "timestamp":"1455846396",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 16346b95e6deef9da7fe796c31b9dec4)",
+                "timestamp":"1455846384",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via a8714aac274a18f1724d9702d40030bf)",
+                "timestamp":"1455846386",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via d9a7c4a100cfefef995785f707be895c)",
+                "timestamp":"1455846387",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 9dff139bbbe476770294fb86f4e156ac)",
+                "timestamp":"1455846388",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 6350d1039742b87b7917a5e26de2c25c)",
+                "timestamp":"1455846390",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 5b740b4623b2d1049c0036a6aae684b0)",
+                "timestamp":"1455846391",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 973b5f2a5608d243e7305ee4f9249302)",
+                "timestamp":"1455846393",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via e85fc76362c2e9dc7329fddda8acc89e)",
+                "timestamp":"1455846394",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via b05603938a888018d4dcdc551c4be8ac)",
+                "timestamp":"1455846395",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 9ef9a631160b96322010a5238defc673)",
+                "timestamp":"1455846396",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

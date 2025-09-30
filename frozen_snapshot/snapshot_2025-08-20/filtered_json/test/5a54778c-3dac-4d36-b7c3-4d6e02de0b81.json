@@ -1,0 +1,320 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-01-09",
+        "published":true,
+        "info":"OSINT - A North Korean Monero Cryptocurrency Miner",
+        "publish_timestamp":"1515696548",
+        "timestamp":"1515553226",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"2\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515485524",
+                "type":"link",
+                "value":"https://www.alienvault.com/blogs/labs-research/a-north-korean-monero-cryptocurrency-miner",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515485524",
+                "type":"text",
+                "value":"AlienVault labs recently analysed an application compiled on Christmas Eve 2017. It is an Installer for software to mine the Monero crypto-currency. Any mined currency is sent to Kim Il Sung University in Pyongyang, North Korea.\r\n\r\nThe Installer copies a file named intelservice.exe to the system. The filename intelservice.exe is often associated with crypto-currency mining malware. Based on the arguments itâ€™s executed with, itâ€™s likely a piece of software called xmrig. \r\n\r\nItâ€™s not unusual to see xmrig in malware campaigns. It was recently used in some wide campaigns exploiting unpatched IIS servers to mine Monero.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"We identified two other pieces of software which share some code:",
+                "timestamp":"1515485128",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"We identified two other pieces of software which share some code:",
+                "timestamp":"1515485128",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"has been active on BitCoin trading sites:",
+                "timestamp":"1515485410",
+                "type":"ip-src",
+                "value":"175.45.178.19",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Decompiled Code",
+                "timestamp":"1515485235",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1515485410",
+                "type":"yara",
+                "value":"rule nkminer_monero {\r\n\r\n   meta:\r\n\r\n       description = \"Detects installer of Monero miner that points to a NK domain\"\r\n\r\n       author = \"cdoman@alienvault.com\"\r\n\r\n       tlp = \"white\"\r\n\r\n       license = \"MIT License\"\r\n\r\n   strings:\r\n\r\n       $a = \"82e999fb-a6e0-4094-aa1f-1a306069d1a5\" nocase wide ascii\r\n\r\n       $b = \"4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRy5YeFCqgoUMnzumvS\" nocase wide ascii\r\n\r\n       $c = \"barjuok.ryongnamsan.edu.kp\" nocase wide ascii\r\n\r\n       $d = \"C:\\\\SoftwaresInstall\\\\soft\" nocase wide ascii\r\n\r\n       $e = \"C:\\\\Windows\\\\Sys64\\\\intelservice.exe\" nocase wide ascii\r\n\r\n       $f = \"C:\\\\Windows\\\\Sys64\\\\updater.exe\" nocase wide ascii\r\n\r\n       $g = \"C:\\\\Users\\\\Jawhar\\\\documents\\\\\" nocase wide ascii\r\n\r\n   condition:\r\n\r\n       any of them\r\n\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 5615",
+                "timestamp":"1515485410",
+                "type":"hostname",
+                "value":"barjuok.ryongnamsan.edu.kp",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1515485370",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1515485370",
+                        "type":"port",
+                        "value":"5615",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1515485370",
+                        "type":"ip-dst",
+                        "value":"175.45.178.19",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515485370",
+                        "type":"text",
+                        "value":"Arguments = ((\"-o barjuok.ryongnamsan.edu.kp:5615 -u 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRy5YeFCqgoUMnzumvS -p \" + str + \" -k -t \" + Conversions.ToString(value)) ?? \"\")",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515485413",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485410",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485410",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485410",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515485410",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/42300b6a09f183ae167d7a11d9c6df21d022a5f02df346350d3d875d557d3b76/analysis/1515484535/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"text",
+                        "value":"3/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"datetime",
+                        "value":"2018-01-09T07:55:35",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515485414",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515485411",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c599f3ca3417169e4a620b8231f8a97ccc63e291b9e09c888e6807dd90f1f17c/analysis/1515484533/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"text",
+                        "value":"6/68",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Decompiled Code",
+                        "timestamp":"1515485411",
+                        "type":"datetime",
+                        "value":"2018-01-09T07:55:33",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515485414",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515485411",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0024e32c0199ded445c0b968601f21cc92fc0c534d2642f2dd64c1c978ff01f3/analysis/1515484532/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"text",
+                        "value":"6/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"We identified two other pieces of software which share some code:",
+                        "timestamp":"1515485411",
+                        "type":"datetime",
+                        "value":"2018-01-09T07:55:32",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-09",
+        "published":false,
+        "info":"OSINT - Root cause analysis of the latest Internet Explorer zero day – CVE-2018-8174",
+        "publish_timestamp":"1526025886",
+        "timestamp":"1526026037",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525859347",
+                "type":"domain",
+                "value":"autosoundcheckers.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525859563",
+                "type":"link",
+                "value":"https://securelist.com/root-cause-analysis-of-cve-2018-8174/85486/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525859640",
+                "type":"text",
+                "value":"In late April 2018, a new zero-day vulnerability for Internet Explorer (IE) was found using our sandbox; more than two years since the last in the wild example (CVE-2016-0189). This particular vulnerability and subsequent exploit are interesting for many reasons. The following article will examine the core reasons behind the latest vulnerability, CVE-2018-8174.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"network",
+                "name":"vulnerability",
+                "timestamp":"1525857927",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525857927",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525857928",
+                        "type":"vulnerability",
+                        "value":"CVE-2018-8174",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":" RTF document",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1526025888",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525859236",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525859237",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Internet Explorer exploit (CVE-2018-8174)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525859277",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525859277",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525859278",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Payload",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525859333",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525859333",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525859334",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525957482"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525957480"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1526025885"
+            }
+        ]
+    }
+}

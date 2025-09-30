@@ -1,0 +1,689 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2025-04-03",
+        "published":true,
+        "info":"Operation AkaiRyū: MirrorFace invites Europe to Expo 2025 and revives ANEL backdoor",
+        "publish_timestamp":"1743662709",
+        "timestamp":"1743662669",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over C2 Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Command Shell - T1059.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious Link - T1204.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053.005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Email Accounts - T1585.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1566.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Cloud Accounts - T1585.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malware - T1587.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malware - T1588.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Tool - T1588.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Binary Proxy Execution - T1218\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Clear Windows Event Logs - T1070.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Files and Directories - T1564.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DLL Search Order Hijacking - T1574.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compile After Delivery - T1027.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Dynamic API Resolution - T1027.007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Double File Extension - T1036.007\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Run Virtual Instance - T1564.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Management Instrumentation - T1047\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Deletion - T1070.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Fileless Storage - T1027.011\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Window - T1564.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Modify Registry - T1112\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Template Injection - T1221\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Debugger Evasion - T1622\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Timestomp - T1070.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"MSBuild - T1127.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Transfer Size Limits - T1030\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Generation Algorithms - T1568.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Time Discovery - T1124\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Junk Data - T1001.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Account - T1087.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Encoding - T1132.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Screen Capture - T1113\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Clipboard Data - T1115\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Encrypted Channel - T1573\""
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"MirrorFace\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Diplomacy\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Research - Innovation\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace’s AsyncRAT C&C server.",
+                "timestamp":"1743662619",
+                "type":"domain",
+                "value":"vu4fleh3yd4ehpfpciinnwbnh4b77rdeypubhqr2dgfibjtvxpdxozid.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace’s AsyncRAT C&C server.",
+                "timestamp":"1743662669",
+                "type":"domain",
+                "value":"u4mrhg3y6jyfw2dmm2wnocz3g3etp2xc5thzx77uelk7mrk7qtjmc6qd.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace C2 IP (The Constant Company)",
+                "timestamp":"1743661551",
+                "type":"ip-dst",
+                "value":"45.32.116.146",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace C2 IP (The Constant Company)",
+                "timestamp":"1743661551",
+                "type":"ip-dst",
+                "value":"64.176.56.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace C2 IP (PEG-TKY1)",
+                "timestamp":"1743661551",
+                "type":"ip-dst",
+                "value":"104.233.167.135",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace C2 IP (DigitalOcean)",
+                "timestamp":"1743661551",
+                "type":"ip-dst",
+                "value":"152.42.202.137",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MirrorFace C2 IP (The Constant Company)",
+                "timestamp":"1743661551",
+                "type":"ip-dst",
+                "value":"208.85.18.4",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1743662353",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/en/eset-research/operation-akairyu-mirrorface-invites-europe-expo-2025-revives-anel-backdoor/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Filename from ESET table: N/A",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"N/A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: vsodscpl.dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"vsodscpl.dll",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: AtokLib.dll",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"AtokLib.dll",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: CodeStartUser.bat",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"CodeStartUser.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: erBkVRZT.bat",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"erBkVRZT.bat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: useractivitybroker.xml",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"useractivitybroker.xml",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/FaceXInjector.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: temp.log",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"temp.log",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: tmp.docx",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"tmp.docx",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: normal_.dotm",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"normal_.dotm",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: The EXPO Exhibition in Japan in 2025.docx.lnk",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"The EXPO Exhibition in Japan in 2025.docx.lnk",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: The EXPO Exhibition in Japan in 2025.zip",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"The EXPO Exhibition in Japan in 2025.zip",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: NK9C4PH_.zip",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"NK9C4PH_.zip",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: N/A",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"N/A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"MSIL/Riskware.Rubeus.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Filename from ESET table: Tk4AJbXk.wsb",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1743661551",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"filename",
+                        "value":"Tk4AJbXk.wsb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"text",
+                        "value":"Win32/MirrorFace.A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1743661551",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

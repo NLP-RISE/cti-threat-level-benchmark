@@ -1,0 +1,334 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-07-06",
+        "published":true,
+        "info":"[TLP:WHITE] Joint CSA: North Korean State-Sponsored Cyber Actors Use Maui Ransomware to Target the Healthcare and Public Health Sector",
+        "publish_timestamp":"1666860340",
+        "timestamp":"1666860331",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Maui Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Maui ransomware\""
+            },
+            {
+                "name":"target:healthcare"
+            },
+            {
+                "name":"misp-galaxy:country=\"north korea\""
+            },
+            {
+                "name":"dnc:malware-type=\"Ransomware\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"ransomware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Ransomware\""
+            },
+            {
+                "name":"Ransomware"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Ransom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532539",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1657532589",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1657282234",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1657282234",
+                        "type":"link",
+                        "value":"https://www.cisa.gov/uscert/ncas/alerts/aa22-187a",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1657282234",
+                        "type":"link",
+                        "value":"https://www.cisa.gov/uscert/sites/default/files/publications/aa22-187a-north-korean%20state-sponsored-cyber-actors-use-maui-ransomware-to-target-the-hph-sector.pdf",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1657282234",
+                        "type":"text",
+                        "value":"Since May 2021, the FBI has observed and responded to multiple Maui ransomware incidents at HPH Sector organizations. North Korean state-sponsored cyber actors used Maui ransomware in these incidents to encrypt servers responsible for healthcare services—including electronic health records services, diagnostics services, imaging services, and intranet services. In some cases, these incidents disrupted the services provided by the targeted HPH Sector organizations for prolonged periods. The initial access vector(s) for these incidents is unknown.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1657282234",
+                        "type":"text",
+                        "value":"Alert",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1657282234",
+                        "type":"attachment",
+                        "value":"aa22-187a-north-korean state-sponsored-cyber-actors-use-maui-ransomware-to-target-the-hph-sector.pdf",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1657531990",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1657531990",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1657531990",
+                        "type":"filename",
+                        "value":"maui.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1657532400",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"RSA private key",
+                        "timestamp":"1657532400",
+                        "type":"filename",
+                        "value":"maui.evd",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1657532407",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"contains output from Maui execution",
+                        "timestamp":"1657532407",
+                        "type":"filename",
+                        "value":"maui.log",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1657532413",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1657532413",
+                        "type":"filename",
+                        "value":"aui.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1657532419",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"RSA public key",
+                        "timestamp":"1657532419",
+                        "type":"filename",
+                        "value":"maui.key",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

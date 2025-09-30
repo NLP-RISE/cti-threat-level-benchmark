@@ -1,0 +1,189 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-25",
+        "published":true,
+        "info":"OSINT -   Sorpresa! JasperLoader targets Italy with a new bag of tricks",
+        "publish_timestamp":"1558772089",
+        "timestamp":"1558772061",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"JasperLoader\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558771718",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2019/05/sorpresa-jasperloader.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"observed to be associated with JasperLoader",
+                "timestamp":"1558771747",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"observed to be associated with JasperLoader",
+                "timestamp":"1558771747",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"observed to be associated with JasperLoader",
+                "timestamp":"1558771747",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"observed to be associated with JasperLoader",
+                "timestamp":"1558771773",
+                "type":"ip-dst",
+                "value":"185.158.251.171",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"observed to be associated with JasperLoader",
+                "timestamp":"1558771773",
+                "type":"ip-dst",
+                "value":"185.158.249.116",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"breed.wanttobea.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"zzi.aircargox.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"nono.littlebodiesbigsouls.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"tribunaledinapoli.recsinc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"tribunaledinapoli.prepperpillbox.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"tribunaledinapoli.lowellunderwood.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains observed to be associated with JasperLoader",
+                "timestamp":"1558771800",
+                "type":"hostname",
+                "value":"tribunaledinapoli.rntman.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #5945959 enriched by dns.",
+                "timestamp":"1558771814",
+                "type":"ip-src",
+                "value":"185.158.251.171",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #5945960 enriched by dns.",
+                "timestamp":"1558771814",
+                "type":"ip-src",
+                "value":"185.158.248.110",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #5945961 enriched by dns.",
+                "timestamp":"1558771814",
+                "type":"ip-src",
+                "value":"185.212.47.163",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #5945962 enriched by dns.",
+                "timestamp":"1558771814",
+                "type":"ip-src",
+                "value":"185.212.44.126",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558771850",
+                "type":"text",
+                "value":"Over the past few months, a new malware loader called JasperLoader has emerged that targets Italy and other European countries with banking trojans such as Gootkit. We recently released a comprehensive analysis of the functionality associated with JasperLoader. Shortly after the publication of our analysis, the distribution activity associated with these campaigns halted. But after several weeks of relatively low volumes of activity, we discovered a new version of JasperLoader being spread. This new version features several changes and improvements from the initial version we analyzed. JasperLoader is typically used to infect systems with additional malware payloads which can be used to exfiltrate sensitive information, damage systems or otherwise negatively impact organizations.\r\n\r\nThe attackers behind this specific threat have implemented additional mechanisms to control where the malware can spread and are now taking steps to avoid analysis by sandboxes and antivirus companies. There's also a new command and control (C2) mechanism to facilitate communications between infected systems and the infrastructure being used to control them. The campaigns that are currently distributing JasperLoader continue to target Italian victims and further demonstrate that while JasperLoader is a relatively new threat, the developers behind it are continuing to actively refine and improve upon this malware at a rapid pace and introduce sophistication that is not commonly seen in financially motivated malware.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1558771983",
+                "type":"url",
+                "value":"http://tribunaledinapoli.recsinc.com/documento.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1558771983",
+                "type":"url",
+                "value":"http://tribunaledinapoli.recsinc.com/documento.zip?214299",
+                "to_ids":true
+            }
+        ]
+    }
+}

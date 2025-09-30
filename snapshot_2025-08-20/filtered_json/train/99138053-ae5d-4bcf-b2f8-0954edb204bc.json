@@ -1,0 +1,351 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-11-01",
+        "published":true,
+        "info":"Scraper: Black Basta Ransomware | Attacks Deploy Custom EDR Evasion Tools Tied to FIN7 Threat Actor - SentinelOne",
+        "publish_timestamp":"1667736063",
+        "timestamp":"1667736035",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:banker=\"Qakbot\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Cobalt Strike\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"BloodHound - S0521\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"AdFind - S0552\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"FIN7\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"cmd\""
+            },
+            {
+                "name":"misp-galaxy:financial-fraud=\"Phishing\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"SocksBot\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"SystemBC\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-tactics=\"Evasion\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-tactics=\"Execution\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-tactics=\"Initial Access\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"Netsupport Manager\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DNS - T1071.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1667336072",
+                "type":"comment",
+                "value":"Black Basta Ransomware | Attacks Deploy Custom EDR Evasion Tools Tied to FIN7 Threat Actor - SentinelOne",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Feed URL",
+                "timestamp":"1667336072",
+                "type":"comment",
+                "value":"Manual",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1667336072",
+                "type":"link",
+                "value":"https://www.sentinelone.com/labs/black-basta-ransomware-attacks-deploy-custom-edr-evasion-tools-tied-to-fin7-threat-actor/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"192.168.171.1",
+                "timestamp":"1667336072",
+                "type":"comment",
+                "value":"Remote IP",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"regkey",
+                "value":"New-ItemProperty -Path 'HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows Defender' -Name DisableAntiSpyware -Value 1 -PropertyType DWORD -Force",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"regkey",
+                "value":"HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"regkey",
+                "value":"/namespace:\\\\root\\SecurityCenter2",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336229",
+                "type":"filename",
+                "value":"C:\\intel\\[REDACTED].csv",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"\\Windows\\ILUg69ql3.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"\\Windows\\ILUg69ql2.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"\\Windows\\ILUg69ql1.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"ip-dst",
+                "value":"45.67.229.148",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"RunTimeListen.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336212",
+                "type":"filename",
+                "value":"WindowsCodecs.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"WindefCheck.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"C:\\intel\\AF.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"vulnerability",
+                "value":"CVE-2022-30190",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"vulnerability",
+                "value":"CVE-2021-42278",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"vulnerability",
+                "value":"CVE-2021-42287",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"powershell.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"vulnerability",
+                "value":"CVE-2021-34527",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"vulnerability",
+                "value":"CVE-2020-1472",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"explorer.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"Svvhost.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"netscan.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336074",
+                "type":"filename",
+                "value":"zero22.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"spider.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"SERVI.bat",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"calc.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336184",
+                "type":"filename",
+                "value":"zero.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"run.bat",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"cmd.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1667336156",
+                "type":"filename",
+                "value":"AF.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1667336247",
+                "type":"ip-dst",
+                "value":"45.67.229.148",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cobalt Strike DNS beacon",
+                "timestamp":"1667735991",
+                "type":"domain",
+                "value":"jardinoks.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2020-04-02",
+        "published":true,
+        "info":"Attacks that exploit IE vulnerability (CVE-2020-0674) and Firefox vulnerability (CVE-2019-17026)",
+        "publish_timestamp":"1586202446",
+        "timestamp":"1586202441",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1586202421",
+                "type":"hostname",
+                "value":"last.tax-lab.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1586202421",
+                "type":"hostname",
+                "value":"cnnmedia.servepics.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1586202421",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1586202441",
+                "type":"link",
+                "value":"https://blogs.jpcert.or.jp/ja/2020/04/ie_firefox_0day.html",
+                "to_ids":false
+            }
+        ]
+    }
+}

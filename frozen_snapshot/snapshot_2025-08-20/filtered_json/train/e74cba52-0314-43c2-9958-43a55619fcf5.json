@@ -1,0 +1,204 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2021-04-17",
+        "published":true,
+        "info":"Detecting and Preventing Malicious Domains Proactively with DNS Security",
+        "publish_timestamp":"1620154203",
+        "timestamp":"1620154188",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"kelvinso412.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"kelvinso45.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"kelvinso4.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"kelvinsoirnt98.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"ophenhand.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Phishing Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"penguinsac.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"minorleage.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"69av19.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"99s13.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"cc222.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"fs10.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"hfcclixb.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"hobbytoypark.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"jemstutoring.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"krk13pearland.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Grayware Domain",
+                "timestamp":"1620154073",
+                "type":"domain",
+                "value":"theav9.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 IP Address",
+                "timestamp":"1620154175",
+                "type":"ip-dst",
+                "value":"104.24.100.218",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 IP Address",
+                "timestamp":"1620154172",
+                "type":"ip-dst",
+                "value":"104.24.101.218",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 IP Address",
+                "timestamp":"1620154170",
+                "type":"ip-dst",
+                "value":"172.67.167.27",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1620154118",
+                "type":"link",
+                "value":"https://unit42.paloaltonetworks.com/proactive-detector/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"JA3 is a new technique for creating SSL client fingerprints that are easy to produce and can be easily shared for threat intelligence. Fingerprints are composed of Client Hello packet; SSL Version, Accepted Ciphers, List of Extensions, Elliptic Curves, and Elliptic Curve Formats. https://github.com/salesforce/ja3",
+                "meta-category":"network",
+                "name":"ja3",
+                "timestamp":"1620154157",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1620154157",
+                        "type":"text",
+                        "value":"Trojan JA3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1620154157",
+                        "type":"ja3-fingerprint-md5",
+                        "value":"6312930a139fa3ed22b87abb75c16afa",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

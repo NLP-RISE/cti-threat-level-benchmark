@@ -1,0 +1,109 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-06",
+        "published":true,
+        "info":"OSINT - HC7 GOTYA Ransomware Installed via Remote Desktop Services. Spread with PsExec",
+        "publish_timestamp":"1512914174",
+        "timestamp":"1512914163",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"HC7\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512914157",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/hc7-gotya-ransomware-installed-via-remote-desktop-services-spread-with-psexec/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512914157",
+                "type":"comment",
+                "value":"A new ransomware called HC7 is infecting victims by hacking into Windows computers that are running publicly accessible Remote Desktop services. Once the developers gain access to the hacked computer, the HC7 ransomware is then installed on all accessible computers on the network.\r\n\r\nOriginally released as HC6, victims began posting about it in the BleepingComputer forums towards the end of November.  As this is a Python-to-exe executable, once the script was extracted ID Ransomware creator Michael Gillespie was able determine that it was decryptable and released a decryptor",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512914157",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512914157",
+                "type":"filename",
+                "value":"RECOVERY.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1512914157",
+                "type":"email-src",
+                "value":"m4zn0v@keemail.me",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85",
+                "timestamp":"1512914157",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85",
+                "timestamp":"1512914157",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85",
+                "timestamp":"1512914157",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85/analysis/1512615512/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85",
+                "timestamp":"1512914157",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85/analysis/1512777458/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85",
+                "timestamp":"1512914157",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/81a0ecf7ebec8f86d8042e3a3dbd756f6b8992c6cf3b4f94a9026d0192153b85/analysis/1512906125/",
+                "to_ids":false
+            }
+        ]
+    }
+}

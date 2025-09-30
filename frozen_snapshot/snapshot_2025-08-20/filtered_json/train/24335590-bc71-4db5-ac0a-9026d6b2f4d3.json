@@ -1,0 +1,115 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-10-20",
+        "published":true,
+        "info":"Threat analysis: Beast Ransomware",
+        "publish_timestamp":"1729443463",
+        "timestamp":"1729443411",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Configuration Discovery - T1016\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Management Instrumentation - T1047\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Share Discovery - T1135\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Default Accounts - T1078.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Accounts - T1078.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Service - T1543.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Native API - T1106\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Reflective Code Loading - T1620\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Inhibit System Recovery - T1490\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Packing - T1406.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Automated Collection - T1119\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Service Stop - T1489\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1729443200",
+                "type":"link",
+                "value":"https://www.cybereason.com/blog/threat-analysis-beast-ransomware",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Geofencing IP query",
+                "timestamp":"1729443274",
+                "type":"url",
+                "value":"iplogger.co/1v1i85.torrent",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Beast Windows Encryptor",
+                "timestamp":"1729443274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Beast Windows Encryptor",
+                "timestamp":"1729443274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Beast Windows Encryptor",
+                "timestamp":"1729443274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Beast Windows Encryptor",
+                "timestamp":"1729443274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Beast Windows Encryptor",
+                "timestamp":"1729443274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

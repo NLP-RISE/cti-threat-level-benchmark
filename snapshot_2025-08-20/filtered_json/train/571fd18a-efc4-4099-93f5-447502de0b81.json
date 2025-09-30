@@ -1,0 +1,100 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-26",
+        "published":true,
+        "info":"OSINT - Macro Malware Employs Advanced Obfuscation to Avoid Detection",
+        "publish_timestamp":"1461705018",
+        "timestamp":"1461705011",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1461703176",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1461703176",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: c1787d80ad7beb46646d5c20cdd7eff2",
+                "timestamp":"1461703369",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: c1787d80ad7beb46646d5c20cdd7eff2",
+                "timestamp":"1461703369",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: c1787d80ad7beb46646d5c20cdd7eff2",
+                "timestamp":"1461703370",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/25f7bf9246534c7aad3b728c0bad60dd62e31d9bd7695de8ac0ec7ec0270f104/analysis/1461421247/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: d80c15fd4ee1b10512d81bde32daaf30",
+                "timestamp":"1461703370",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: d80c15fd4ee1b10512d81bde32daaf30",
+                "timestamp":"1461703371",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: d80c15fd4ee1b10512d81bde32daaf30",
+                "timestamp":"1461703371",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1fcdc054fbd0ecefbb895502d271c94e4733dbb5dc0a0152d8d4864ce82cd916/analysis/1461421238/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461703392",
+                "type":"link",
+                "value":"https://blogs.mcafee.com/mcafee-labs/macro-malware-employs-advanced-obfuscation-to-avoid-detection/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461705011",
+                "type":"comment",
+                "value":"Attacks by macro malware carrying ransomware are growing, as we have recently reported on Blog Central here and here. Now McAfee Labs researchers have witnessed a new variant of macro malware that employs fudging techniques such as virtual machine awareness, sandbox awareness, and more.\r\n\r\nSince early March we have seen macro malware using high-obfuscation algorithms to protect itself from static and traditional antimalware detection techniques. These algorithms do not change frequently; we noticed updates only over a period of one month. This slow evolution suggests that the actors are able to sustain their binaries with few changes. So far we have seen three obfuscating algorithms deployed in such malware. The version we noticed in mid-April was quite interesting; here is our analysis.\r\n\r\nThis new variant of macro malware not only has high-level obfuscation techniques but also several layers of evasion. In addition to obfuscation, the functions are scattered across the macros. I have converted the obfuscation algorithm to an equivalent Python and the scripts used for evasion techniques into VBA scripts for easy understanding.",
+                "to_ids":false
+            }
+        ]
+    }
+}

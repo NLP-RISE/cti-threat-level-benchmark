@@ -1,0 +1,83 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-09-15",
+        "published":true,
+        "info":"On-memory post exploit payloads from encoded binary",
+        "publish_timestamp":"1568643213",
+        "timestamp":"1568643188",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"HackTool\""
+            },
+            {
+                "name":"poshc2 beacon"
+            },
+            {
+                "name":" C2"
+            },
+            {
+                "name":"misp-galaxy:course-of-action=\"PowerShell Mitigation\""
+            },
+            {
+                "name":"misp-galaxy:course-of-action=\"Network Sniffing Mitigation\""
+            },
+            {
+                "name":"misp-galaxy:course-of-action=\"Credential Dumping Mitigation\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Internal reference",
+                "comment":"Threat analysis report and analysis screenshots",
+                "timestamp":"1568520892",
+                "type":"link",
+                "value":"https://imgur.com/a/k60b8pm",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The attacker C2",
+                "timestamp":"1568520952",
+                "type":"ip-dst",
+                "value":"154.121.50.129",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The attacker C2",
+                "timestamp":"1568520989",
+                "type":"hostname",
+                "value":"amazon34.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The post exploitation outbound traffic for attack initiation (beacon and reverse HTTP)",
+                "timestamp":"1568521103",
+                "type":"url",
+                "value":"https://pastebin.com/Pgi3pMgj",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The post exploitation outbound traffic for attack initiation (beacon and reverse HTTP)",
+                "timestamp":"1568521103",
+                "type":"url",
+                "value":"https://pastebin.com/SAQRkmef",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The attacker C2's network AS Number",
+                "timestamp":"1568521195",
+                "type":"AS",
+                "value":"AS327712",
+                "to_ids":false
+            }
+        ]
+    }
+}

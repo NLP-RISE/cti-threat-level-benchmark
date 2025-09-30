@@ -1,0 +1,250 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-07",
+        "published":false,
+        "info":"OSINT - Sowbug: Cyber espionage group targets South American and Southeast Asian governments",
+        "publish_timestamp":"0",
+        "timestamp":"1510213600",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"Felismus RAT\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510213581",
+                "type":"comment",
+                "value":"Symantec has identified a previously unknown group called Sowbug that has been conducting highly targeted cyber attacks against organizations in South America and Southeast Asia and appears to be heavily focused on foreign policy institutions and diplomatic targets. Sowbug has been seen mounting classic espionage attacks by stealing documents from the organizations it infiltrates.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510213581",
+                "type":"link",
+                "value":"https://www.symantec.com/connect/blogs/sowbug-cyber-espionage-group-targets-south-american-and-southeast-asian-governments",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Starloader",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Mimikatz",
+                "timestamp":"1510213581",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1510213581",
+                "type":"regkey",
+                "value":"%WINDOWS%\\debug",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1510213581",
+                "type":"regkey",
+                "value":"%APPDATA%\\microsoft\\security",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control infrastructure",
+                "timestamp":"1510213581",
+                "type":"domain",
+                "value":"nasomember.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control infrastructure",
+                "timestamp":"1510213581",
+                "type":"domain",
+                "value":"cosecman.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command and control infrastructure",
+                "timestamp":"1510213581",
+                "type":"domain",
+                "value":"unifoxs.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Hacktool.Mimikatz - Xchecked via VT: e4e1c98feac9356dbfcac1d8c362ab22",
+                "timestamp":"1510213581",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cfd73f28a85ea63cedba5e4c3b09dc5b68117e65e19203a274c5cf7bef57e6c8/analysis/1510110893/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Mimikatz - Xchecked via VT: e4e1c98feac9356dbfcac1d8c362ab22",
+                "timestamp":"1510213581",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Mimikatz - Xchecked via VT: e4e1c98feac9356dbfcac1d8c362ab22",
+                "timestamp":"1510213581",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Starloader - Xchecked via VT: 4984e9e1a5d595c079cc490a22d67490",
+                "timestamp":"1510213581",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Starloader - Xchecked via VT: 4984e9e1a5d595c079cc490a22d67490",
+                "timestamp":"1510213581",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Trojan.Starloader - Xchecked via VT: 4984e9e1a5d595c079cc490a22d67490",
+                "timestamp":"1510213581",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2154a8c899dc488ca11c4cef5fec35e1bb65efc89f7a1ced6efa1aa9879f6557/analysis/1510110900/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 967d60c417d70a02030938a2ee8a0b74",
+                "timestamp":"1510213581",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 967d60c417d70a02030938a2ee8a0b74",
+                "timestamp":"1510213582",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 967d60c417d70a02030938a2ee8a0b74",
+                "timestamp":"1510213582",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d922f00862682369baa9ec966bc2f4de51c76f6e7d9d03aaf2e0683200a6462f/analysis/1510137094/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 00d356a7cf9f67dd5bb8b2a88e289bc8",
+                "timestamp":"1510213582",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 00d356a7cf9f67dd5bb8b2a88e289bc8",
+                "timestamp":"1510213582",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 00d356a7cf9f67dd5bb8b2a88e289bc8",
+                "timestamp":"1510213582",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/dcd8dc99aceb617cbba658d1b7d776013f53b00d818999d3d619a73eec8e6a8d/analysis/1510168279/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 514f85ebb05cad9e004eee89dde2ed07",
+                "timestamp":"1510213582",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 514f85ebb05cad9e004eee89dde2ed07",
+                "timestamp":"1510213582",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor.Felismus - Xchecked via VT: 514f85ebb05cad9e004eee89dde2ed07",
+                "timestamp":"1510213582",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/44108ae87289132294232616d54bdab768005fbdcf6fdc8aaf0a016d6a98a540/analysis/1510164484/",
+                "to_ids":false
+            }
+        ]
+    }
+}

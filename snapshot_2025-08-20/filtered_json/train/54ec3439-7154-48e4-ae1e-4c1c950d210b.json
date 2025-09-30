@@ -1,0 +1,396 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2015-02-24",
+        "published":true,
+        "info":"OSINT A deeper look into ScanBox TLP:WHITE report from PWC UK",
+        "publish_timestamp":"1456154126",
+        "timestamp":"1434353282",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424766047",
+                "type":"link",
+                "value":"http://pwc.blogs.com/cyber_security_updates/2015/02/my-entry.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424766047",
+                "type":"link",
+                "value":"http://pwc.blogs.com/files/2015-02-24--scanbox-ii---tlpwhite.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424766071",
+                "type":"text",
+                "value":"ScanBox",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malware distribution point",
+                "timestamp":"1424766144",
+                "type":"ip-dst",
+                "value":"88.80.190.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424766515",
+                "type":"domain",
+                "value":"googlecaches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised site",
+                "timestamp":"1424766645",
+                "type":"domain",
+                "value":"gokbayrak.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Legitimate compromised site",
+                "timestamp":"1424766703",
+                "type":"domain",
+                "value":"macanna.com.tw",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1424766722",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424766744",
+                "type":"hostname",
+                "value":"happynewyear.dns04.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP of happynewyear.dns04.com and hosts a lot of other malicious host names",
+                "timestamp":"1424766828",
+                "type":"ip-dst",
+                "value":"115.23.172.151",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424767422",
+                "type":"text",
+                "value":"TH3Bug",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767939",
+                "type":"hostname",
+                "value":"news.foundationssl.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424767470",
+                "type":"text",
+                "value":"Deep Panda",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767511",
+                "type":"domain",
+                "value":"qoog1e.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767530",
+                "type":"domain",
+                "value":"webmailgoogle.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - ScanBox and Targetted Watering Holes Content (plugin_pdf_ie())\"; flow:established,from_server; file_data; content:\"plugin_pdf_ie()\"; classtype:trojanactivity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanboxframework- whos-affected-and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - ScanBox Watering Hole Content (.item(0).appendChild(iframe_tag))\"; flow:established,from_server; file_data; content:\".item(0).appendChild(iframe_tag)\"; classtype:trojan-activity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanbox-framework-whosaffected- and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - ScanBox and Targetted Watering Holes Content (var version\\;var ax\\;var e\\;try{axo=new ActiveXObject)\"; flow:established,from_server; file_data; content:\"var version\\;var ax\\;var e\\;try{axo=new ActiveXObject\"; classtype:trojan-activity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanbox-framework-whosaffected- and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - ScanBox Watering Hole Content (document.getElementsByTagName('head').item(0).appendChild(form_tag)\\;)\"; flow:established,from_server; file_data; content:\"document.getElementsByTagName('head').item(0).appendChild(form_tag)\\;\"; classtype:trojan-activity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanbox-framework-whosaffected- and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - ScanBox Watering Hole Content (return ((!a) ? 'x-': a) + Math.floor(Math.random() * 99999)\\;)\"; flow:established,from_server; file_data; content:\"return ((!a) ? 'x-': a) + Math.floor(Math.random() * 99999)\\;\"; classtype:trojan-activity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanbox-framework-whosaffected- and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1424767781",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET any -> $HOME_NET any (msg:\"--[PwC CTD] -- MultiGroup - TH3BUG and Non-Targetted Groups Watering Hole Code (Chr(CInt(ns(i)) Xor n))\"; flow:established,from_server; file_data; content:\"Chr(CInt(ns(i)) Xor n)\"; classtype:trojan-activity; reference:url,pwc.blogs.com/cyber_security_updates/2014/10/scanbox-framework-whosaffected- and-whos-using-it-1.html; metadata:tlp WHITE,author CDD;  rev:2015021901;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767845",
+                "type":"ip-dst",
+                "value":"1.9.5.38",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767845",
+                "type":"ip-dst",
+                "value":"103.255.61.227",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767845",
+                "type":"ip-dst",
+                "value":"118.193.153.221",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767845",
+                "type":"ip-dst",
+                "value":"118.193.153.227",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767845",
+                "type":"ip-dst",
+                "value":"174.121.122.73",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767939",
+                "type":"hostname",
+                "value":"file.googlecaches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767939",
+                "type":"hostname",
+                "value":"gtm.googlecaches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767939",
+                "type":"hostname",
+                "value":"js.googlewebcache.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 1",
+                "timestamp":"1424767939",
+                "type":"hostname",
+                "value":"owa.outlookssl.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cluster 1",
+                "timestamp":"1424767971",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cluster 1",
+                "timestamp":"1424767971",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cluster 1",
+                "timestamp":"1424767972",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cluster 1",
+                "timestamp":"1424767972",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"ip-dst",
+                "value":"122.10.10.161",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"ip-dst",
+                "value":"204.152.199.43",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"ip-dst",
+                "value":"50.2.24.211",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"hostname",
+                "value":"bak.mailaunch.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"hostname",
+                "value":"us-mg6.mail.yahoo.mailaunch.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cluster 4",
+                "timestamp":"1424769246",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1434353282",
+                "type":"link",
+                "value":"http://pwc.blogs.com/files/cto-tib-20150223-01a.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via f1890cc9d6dc84021426834063394539414f68d8)",
+                "timestamp":"1455838627",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via e8a8ffe39040fe36e95217b4e4f1316177d675ed)",
+                "timestamp":"1455838628",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via 809959f390d5a49c8999ad6fff27fdc92ff1b2b0)",
+                "timestamp":"1455838630",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 3b8d7732de3b3c8823d241e7cd3185c4)",
+                "timestamp":"1455838625",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 3b8d7732de3b3c8823d241e7cd3185c4)",
+                "timestamp":"1455838626",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via f1890cc9d6dc84021426834063394539414f68d8)",
+                "timestamp":"1455838628",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

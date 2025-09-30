@@ -1,0 +1,156 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-11",
+        "published":true,
+        "info":"OSINT - Locky Ransomware Domains â€“ Followup Analysis Uncovers 130 New Indicators",
+        "publish_timestamp":"1460358688",
+        "timestamp":"1460358659",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1460358258",
+                "type":"link",
+                "value":"https://blog.threatstop.com/2016/04/08/locky-ransomware-domains-followup-research/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1460358276",
+                "type":"comment",
+                "value":"Recently, there has been a lot of buzz over a flourishing ransomware that goes by the name of Locky, which encrypts a victimâ€™s data using a strong RSA-2048+AES-128 encryption and then demands between 0.5-2 bitcoins for the decryption of that data.\r\n\r\nThe ransomware debuted in early 2016 and is currently being distributed in various ways, including spam emails that contain Word and Excel documents with malicious macros, as well as JS scripts. Locky is also delivered via popular Exploit Kits such as Nuclear and Neutrino.\r\n\r\nLocky has widespread reach, having been used to attack victims in over 100 countries. During its first days of activity, it managed to deploy 100,000 infection attempts per day. Just recently, the ransomware was used in an attack on a Kentucky hospital, which caused them to declare an â€œInternal State of Emergency.â€\r\n\r\nThe ThreatSTOP Research Team has been monitoring new Indicators of Compromise for this ransomware since its debut, and has analyzed hundreds of relevant indicators. During our analysis on these indicators, we noticed four outstanding domainsâ€“legitimate-looking domains with the addition of the string â€œqqâ€ or â€œffâ€ at the end of the domain name. These domains sparked a follow up analysis that led to amazing results.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The first step of the analysis was to map the IP connections between the 4 initial domains",
+                "timestamp":"1460358316",
+                "type":"domain",
+                "value":"hellomydearqq.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The first step of the analysis was to map the IP connections between the 4 initial domains",
+                "timestamp":"1460358316",
+                "type":"domain",
+                "value":"blablaworldqq.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The first step of the analysis was to map the IP connections between the 4 initial domains",
+                "timestamp":"1460358317",
+                "type":"domain",
+                "value":"hellomisterbiznesqq.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The first step of the analysis was to map the IP connections between the 4 initial domains",
+                "timestamp":"1460358338",
+                "type":"domain",
+                "value":"greetingsjamajcaff.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358376",
+                "type":"ip-dst",
+                "value":"202.120.42.190",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358377",
+                "type":"ip-dst",
+                "value":"51.255.10.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358377",
+                "type":"ip-dst",
+                "value":"146.148.55.44",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358377",
+                "type":"ip-dst",
+                "value":"185.118.142.154",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358378",
+                "type":"ip-dst",
+                "value":"51.254.226.223",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358378",
+                "type":"ip-dst",
+                "value":"78.135.108.94",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358378",
+                "type":"ip-dst",
+                "value":"173.82.74.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358379",
+                "type":"ip-dst",
+                "value":"104.239.213.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358379",
+                "type":"ip-dst",
+                "value":"198.105.244.11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460358380",
+                "type":"ip-dst",
+                "value":"198.105.254.11",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1460358659",
+                "type":"comment",
+                "value":"It seems they are some mixes in the indicators post about TeslaCrypt and Locky infrastructures. (Comment from CIRCL)",
+                "to_ids":false
+            }
+        ]
+    }
+}

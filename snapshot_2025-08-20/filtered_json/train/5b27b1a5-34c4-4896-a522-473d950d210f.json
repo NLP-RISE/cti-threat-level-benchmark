@@ -1,0 +1,161 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-15",
+        "published":false,
+        "info":"OSINT - New Paradise Ransomware variant",
+        "publish_timestamp":"0",
+        "timestamp":"1540563773",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Paradise Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1529328577",
+                "type":"email-src",
+                "value":"paradise@all-ransomware.info",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransomnote",
+                "timestamp":"1529328578",
+                "type":"email-src",
+                "value":"paradise_readme_paradise@all-ransomware.info.txt",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1529328121",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328121",
+                        "type":"text",
+                        "value":"The new Paradise ransomware version stores the config in a section called \"trump\"...\r\n😂\r\n@BleepinComputer @demonslay335",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328122",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1529328122",
+                        "type":"url",
+                        "value":"https://twitter.com/malwrhunterteam/status/993499349199056897",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328123",
+                        "type":"text",
+                        "value":"@BleepinComputer @demonslay335",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328125",
+                        "type":"datetime",
+                        "value":"7 May 2018",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328126",
+                        "type":"text",
+                        "value":"@malwrhunterteam",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1529328535",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328535",
+                        "type":"text",
+                        "value":"Latest sample of Paradise ransomware (RaaS?) still uses \"trump\" as section name ((link: https://twitter.com/malwrhunterteam/status/993499349199056897) twitter.com/malwrhuntertea…) and mutex.\r\nUses GetUserDefaultLangID & checks for 12 values, then uses an IP API & 12 checks again. \r\nIf can't guess the values, see screens...\r\n@BleepinComputer @demonslay335",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328536",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1529328536",
+                        "type":"url",
+                        "value":"https://twitter.com/malwrhunterteam/status/1005420103415017472",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328536",
+                        "type":"text",
+                        "value":"@BleepinComputer @demonslay335",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328537",
+                        "type":"datetime",
+                        "value":"9 Jun 2018",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529328537",
+                        "type":"text",
+                        "value":"@malwrhunterteam",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

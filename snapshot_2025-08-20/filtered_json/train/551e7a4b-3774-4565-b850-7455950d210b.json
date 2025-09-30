@@ -1,0 +1,260 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2015-04-03",
+        "published":true,
+        "info":"OSINT APT Volatile Cedar APT yara rules by Florian Roth",
+        "publish_timestamp":"1487757979",
+        "timestamp":"1487757919",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428060786",
+                "type":"link",
+                "value":"https://github.com/Neo23x0/Loki/blob/master/signatures/apt_volatile_cedar.yar",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428060786",
+                "type":"link",
+                "value":"https://github.com/Neo23x0/Loki/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1428060794",
+                "type":"text",
+                "value":"Volatile Cedar",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060813",
+                "type":"yara",
+                "value":"rule Explosion_Sample_1 {\r\n\tmeta:\r\n\t\tdescription = \"Explosion/Explosive Malware - Volatile Cedar APT - file b74bd5660baf67038353136978ed16dbc7d105c60c121cf64c61d8f3d31de32c\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"http://goo.gl/5vYaNb\"\r\n\t\tdate = \"2015/04/03\"\r\n\t\tscore = 70\r\n\t\thash = \"c97693ecb36247bdb44ab3f12dfeae8be4d299bb\"\r\n\tstrings:\r\n\t\t$s5 = \"REG ADD \\\"HKEY_LOCAL_MACHINE\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run\" ascii\r\n\t\t$s9 = \"WinAutologon From Winlogon Reg\" fullword ascii\r\n\t\t$s10 = \"82BD0E67-9FEA-4748-8672-D5EFE5B779B0\" fullword ascii\r\n\t\t$s11 = \"IE:Password-Protected sites\" fullword ascii\r\n\t\t$s12 = \"\\\\his.sys\" fullword ascii\r\n\t\t$s13 = \"HTTP Password\" fullword ascii\r\n\t\t$s14 = \"\\\\data.sys\" fullword ascii\r\n\t\t$s15 = \"EL$_RasDefaultCredentials#0\" fullword wide\r\n\t\t$s17 = \"Office Outlook HTTP\" fullword ascii\r\n\t\t$s20 = \"Hist :<b> %ws</b>  :%s </br></br>\" fullword ascii\r\n\tcondition:\r\n\t\tall of them and\r\n        uint16(0) == 0x5A4D\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060848",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060848",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060869",
+                "type":"yara",
+                "value":"rule Explosion_Sample_2 {\r\n\tmeta:\r\n\t\tdescription = \"Explosion/Explosive Malware - Volatile Cedar APT - file bfc63b30624332f4fc2e510f95b69d18dd0241eb0d2fcd33ed2e81b7275ab488\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"http://goo.gl/5vYaNb\"\r\n\t\tdate = \"2015/04/03\"\r\n\t\tscore = 70\r\n\t\thash = \"62fe6e9e395f70dd632c70d5d154a16ff38dcd29\"\r\n\tstrings:\r\n\t\t$s0 = \"serverhelp.dll\" fullword wide\r\n\t\t$s1 = \"Windows Help DLL\" fullword wide\r\n\t\t$s5 = \"SetWinHoK\" fullword ascii\r\n\tcondition:\r\n\t\tall of them and\r\n        uint16(0) == 0x5A4D\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060894",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060894",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060918",
+                "type":"yara",
+                "value":"rule Explosion_Generic_1 {\r\n\tmeta:\r\n\t\tdescription = \"Generic Rule for Explosion/Explosive Malware - Volatile Cedar APT\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"not set\"\r\n\t\tdate = \"2015/04/03\"\r\n\t\tscore = 70\r\n\t\tsuper_rule = 1\r\n\t\thash0 = \"d0f059ba21f06021579835a55220d1e822d1233f95879ea6f7cb9d301408c821\"\r\n\t\thash1 = \"1952fa94b582e9af9dca596b5e51c585a78b8b1610639e3b878bbfa365e8e908\"\r\n\t\thash2 = \"d8fdcdaad652c19f4f4676cd2f89ae834dbc19e2759a206044b18601875f2726\"\r\n\t\thash3 = \"e2e6ed82703de21eb4c5885730ba3db42f3ddda8b94beb2ee0c3af61bc435747\"\r\n\t\thash4 = \"03641e5632673615f23b2a8325d7355c4499a40f47b6ae094606a73c56e24ad0\"\r\n\tstrings:\r\n\t\t$s0 = \"autorun.exe\" fullword\r\n\t\t$s1 = \"User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; MSIE 6.0; Windows NT 5.1; .NET CL\"\r\n\t\t$s2 = \"%drp.exe\" fullword\r\n\t\t$s3 = \"%s_%s%d.exe\" fullword\r\n\t\t$s4 = \"open=autorun.exe\" fullword\r\n\t\t$s5 = \"http://www.microsoft.com/en-us/default.aspx\" fullword\r\n\t\t$s10 = \"error.renamefile\" fullword\r\n\t\t$s12 = \"insufficient lookahead\" fullword\r\n\t\t$s13 = \"%s %s|\" fullword\r\n\t\t$s16 = \":\\\\autorun.exe\" fullword\r\n\tcondition:\r\n\t\t7 of them and\r\n        uint16(0) == 0x5A4D\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060967",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428060991",
+                "type":"yara",
+                "value":"rule Explosive_UA {\r\n\tmeta:\r\n\t\tdescription = \"Explosive Malware Embedded User Agent - Volatile Cedar APT http://goo.gl/HQRCdw\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"http://goo.gl/HQRCdw\"\r\n\t\tdate = \"2015/04/03\"\r\n\t\tscore = 60\r\n\tstrings:\r\n\t\t$x1 = \"Mozilla/4.0 (compatible; MSIE 7.0; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727)\" fullword\r\n\tcondition:\r\n\t\t$x1 and\r\n        uint16(0) == 0x5A4D\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"copy/paste typo?",
+                "timestamp":"1487757919",
+                "type":"yara",
+                "value":"rule Webshell_Caterpillar_ASPX {\r\n\tmeta:\r\n\t\tdescription = \"Volatile Cedar Webshell - from file caterpillar.aspx\"\r\n\t\tauthor = \"Florian Roth\"\r\n\t\treference = \"http://goo.gl/emons5\"\r\n\t\tdate = \"2015/04/03\"\r\n\t\tsuper_rule = 1\r\n\t\thash0 = \"af4c99208fb92dc42bc98c4f96c3536ec8f3fe56\"\r\n\tstrings:\r\n\t\t$s0 = \"Dim objNewRequest As WebRequest = HttpWebRequest.Create(sURL)\" fullword\r\n\t\t$s1 = \"command = \\\"ipconfig /all\\\"\" fullword\r\n\t\t$s3 = \"For Each xfile In mydir.GetFiles()\" fullword\r\n\t\t$s6 = \"Dim oScriptNet = Server.CreateObject(\\\"WSCRIPT.NETWORK\\\")\" fullword\r\n\t\t$s10 = \"recResult = adoConn.Execute(strQuery)\" fullword\r\n\t\t$s12 = \"b = Request.QueryString(\\\"src\\\")\" fullword\r\n\t\t$s13 = \"rw(\\\"<a href='\\\" + link + \\\"' target='\\\" + target + \\\"'>\\\" + title + \\\"</a>\\\")\" fullword\r\n\tcondition:\r\n\t\tall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1428061029",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via c97693ecb36247bdb44ab3f12dfeae8be4d299bb)",
+                "timestamp":"1455839491",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 62fe6e9e395f70dd632c70d5d154a16ff38dcd29)",
+                "timestamp":"1455839492",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via d0f059ba21f06021579835a55220d1e822d1233f95879ea6f7cb9d301408c821)",
+                "timestamp":"1455839494",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 1952fa94b582e9af9dca596b5e51c585a78b8b1610639e3b878bbfa365e8e908)",
+                "timestamp":"1455839496",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via d8fdcdaad652c19f4f4676cd2f89ae834dbc19e2759a206044b18601875f2726)",
+                "timestamp":"1455839497",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via e2e6ed82703de21eb4c5885730ba3db42f3ddda8b94beb2ee0c3af61bc435747)",
+                "timestamp":"1455839499",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 03641e5632673615f23b2a8325d7355c4499a40f47b6ae094606a73c56e24ad0)",
+                "timestamp":"1455839501",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via d0f059ba21f06021579835a55220d1e822d1233f95879ea6f7cb9d301408c821)",
+                "timestamp":"1455839495",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 1952fa94b582e9af9dca596b5e51c585a78b8b1610639e3b878bbfa365e8e908)",
+                "timestamp":"1455839496",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via d8fdcdaad652c19f4f4676cd2f89ae834dbc19e2759a206044b18601875f2726)",
+                "timestamp":"1455839498",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via e2e6ed82703de21eb4c5885730ba3db42f3ddda8b94beb2ee0c3af61bc435747)",
+                "timestamp":"1455839500",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Automatically added (via 03641e5632673615f23b2a8325d7355c4499a40f47b6ae094606a73c56e24ad0)",
+                "timestamp":"1455839502",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            }
+        ]
+    }
+}

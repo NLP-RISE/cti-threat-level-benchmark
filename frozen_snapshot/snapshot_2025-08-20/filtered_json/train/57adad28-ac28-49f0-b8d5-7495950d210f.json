@@ -1,0 +1,84 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-08-12",
+        "published":true,
+        "info":"OSINT New C2 â€“ Neutrino Exploit Kit via pseudoDarkleech HOPTO.ORG gate delivers CrypMic Ransomware by Broad Analysis",
+        "publish_timestamp":"1471000507",
+        "timestamp":"1471000487",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1471000309",
+                "type":"link",
+                "value":"http://www.broadanalysis.com/2016/08/08/new-c2-neutrino-exploit-kit-via-pseudodarkleech-hopto-org-gate-delivers-crypmic-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirect GATE",
+                "timestamp":"1471000365",
+                "type":"ip-dst",
+                "value":"83.217.27.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Redirect GATE",
+                "timestamp":"1471000391",
+                "type":"hostname",
+                "value":"jkgbpsh.hopto.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Neutrino EK",
+                "timestamp":"1471000413",
+                "type":"ip-dst",
+                "value":"51.254.30.225",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Neutrino EK",
+                "timestamp":"1471000437",
+                "type":"hostname",
+                "value":"saveoldclinicas.propertymanager.eu.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Port 443 Clear text â€“ C2 Check-In â€“ POST INFECTION TRAFFIC Germany, AS24961 myLoc managed IT AG,",
+                "timestamp":"1471000460",
+                "type":"ip-dst",
+                "value":"85.14.243.9",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains for ransom payments",
+                "timestamp":"1471000487",
+                "type":"url",
+                "value":"http://ccjlwb22w6c22p2k.onion.to",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Domains for ransom payments",
+                "timestamp":"1471000487",
+                "type":"url",
+                "value":"http://ccjlwb22w6c22p2k.onion.city",
+                "to_ids":true
+            }
+        ]
+    }
+}

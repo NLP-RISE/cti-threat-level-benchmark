@@ -1,0 +1,95 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-05",
+        "published":true,
+        "info":"OSINT - Tale of the Two Payloads â€“ TrickBot and Nitol",
+        "publish_timestamp":"1501965248",
+        "timestamp":"1501965244",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"Trick Bot\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"europol-incident:availability=\"dos-ddos\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1501964277",
+                "type":"link",
+                "value":"https://www.trustwave.com/Resources/SpiderLabs-Blog/Tale-of-the-Two-Payloads-%E2%80%93-TrickBot-and-Nitol/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1501964277",
+                "type":"text",
+                "value":"A couple of weeks ago, we observed the Necurs botnet distributing a new malware spam campaign with a payload combo that includes Trickbot and Nitol. Trickbot is a banking trojan that first appeared late last year targeting banks in Europe, UK, Australia and other countries. This trojan injects malicious code into a web browser process and siphons sensitive data when the victim visits a target banking website. The Nitol family is well-known for its distributed denial of service (DDOS) and backdoor capabilities.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both spam campaign have the same payload:",
+                "timestamp":"1501964277",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Payloads â€“ Nitol and Trickbot Packages",
+                "timestamp":"1501964277",
+                "type":"attachment",
+                "value":"6a01676411d5a7970b01b7c9124d75970b-800wi.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both spam campaign have the same payload: - Xchecked via VT: d127c60b32fb4a83f711a4a38e9053f347ed90ec",
+                "timestamp":"1501964277",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both spam campaign have the same payload: - Xchecked via VT: d127c60b32fb4a83f711a4a38e9053f347ed90ec",
+                "timestamp":"1501964277",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Both spam campaign have the same payload: - Xchecked via VT: d127c60b32fb4a83f711a4a38e9053f347ed90ec",
+                "timestamp":"1501964277",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b50904ae9527ed6ea09576db81bca8dc46a1921ae4e90f7c388e17ee034123b2/analysis/1501775685/",
+                "to_ids":false
+            },
+            {
+                "category":"Support Tool",
+                "comment":"This malware avoids static analysis by encoding most of its strings using a lookup algorithm that involves a decoder table represented by this code:",
+                "timestamp":"1501964368",
+                "type":"text",
+                "value":"def trickbot_decode(text):\r\n\tts = \"aZbwIiWO39SuApBFcPC/RGYomVxUNL01nr56le47Hv8DJsjQgEkKy+fT2dXtzhMq\"\r\n\talphabet = [n for n in ts]\r\n\tbit_str = \"\"\r\n\ttext_str = \"\"\r\n\r\n\tfor char in text:\r\n\t\tif char in alphabet:\r\n\t\t\tbin_char = bin(alphabet.index(char)).lstrip(\"0b\")\r\n\t\t\tbin_char = bin_char.zfill(6)\r\n\t\t\tbit_str += bin_char\r\n\r\n\tbrackets = [bit_str[x:x+8] for x in range(0,len(bit_str),8)]\r\n\r\n\tfor bracket in brackets:\r\n\t\ttext_str += chr(int(bracket,2))\r\n\r\n\treturn text_str.encode(\"UTF-8\")",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 40",
+                "timestamp":"1501965244",
+                "type":"hostname",
+                "value":"e.googlex.me",
+                "to_ids":true
+            }
+        ]
+    }
+}

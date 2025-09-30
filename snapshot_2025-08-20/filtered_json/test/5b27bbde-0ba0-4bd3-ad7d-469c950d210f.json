@@ -1,0 +1,152 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-15",
+        "published":false,
+        "info":"OSINT - The Week in Ransomware - June 15th 2018 - DBGer, Scarab, and More",
+        "publish_timestamp":"0",
+        "timestamp":"1537775242",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Donut\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"NemeS1S Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Paradise Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"RotorCrypt(RotoCrypt, Tar) Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"B2DR Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Scarab\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"YYTO Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Xorist\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"DBGer Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Unnamed ramsomware 2\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Everbe Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529330776",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/the-week-in-ransomware-june-15th-2018-dbger-scarab-and-more/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"B2DR Ransomware Ransomnote",
+                "timestamp":"1529330842",
+                "type":"filename",
+                "value":"ScrewYou.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"YYTO Ransomware",
+                "timestamp":"1529391324",
+                "type":"email-src",
+                "value":"codyprince92@mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"YYTO Ransomware",
+                "timestamp":"1529391324",
+                "type":"url",
+                "value":"https://www.torproject.org/download/download-easy.html.en",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"YYTO Ransomware",
+                "timestamp":"1529391324",
+                "type":"domain",
+                "value":"torbox3uiot6wchz.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"YYTO Ransomware",
+                "timestamp":"1529391324",
+                "type":"email-src",
+                "value":"codyprince@torbox3uiot6wchz.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"B2DR Ransomware",
+                "timestamp":"1529393955",
+                "type":"email-src",
+                "value":"ssananunak1987@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"B2DR Ransomware",
+                "timestamp":"1529393956",
+                "type":"email-src",
+                "value":"ssananunak1987@torbox3uiot6wchz.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Everbe",
+                "timestamp":"1529400380",
+                "type":"email-src",
+                "value":"everbe@airmail.cc",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Everbe",
+                "timestamp":"1529400380",
+                "type":"filename",
+                "value":"!=How_recovery_files=!.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Scarab ransomware",
+                "timestamp":"1529400996",
+                "type":"email-src",
+                "value":"mr.leen@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Scarab ransomware",
+                "timestamp":"1529400997",
+                "type":"filename",
+                "value":"INSTRUCTIONS FOR RESTORING FILES.TXT",
+                "to_ids":true
+            }
+        ]
+    }
+}

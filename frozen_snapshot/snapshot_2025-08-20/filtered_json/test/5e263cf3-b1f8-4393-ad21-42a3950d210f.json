@@ -1,0 +1,209 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-01-20",
+        "published":true,
+        "info":"XMRig and OPSEC Fail",
+        "publish_timestamp":"1580456249",
+        "timestamp":"1580456204",
+        "Tag":[
+            {
+                "name":"dnc:malware-type=\"CoinMiner\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1579564422",
+                "type":"ip-src",
+                "value":"178.131.149.179",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz",
+                "timestamp":"1579564422",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz",
+                "timestamp":"1579564422",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"mimikatz",
+                "timestamp":"1579564422",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1579564687",
+                "type":"link",
+                "value":"https://www.wilbursecurity.com/2020/01/xmrig-and-opsec-fail/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1579564666",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579564666",
+                        "type":"regkey",
+                        "value":"HKCR\\exefile\\shell\\open\\command",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579564666",
+                        "type":"text",
+                        "value":"(Default)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579564666",
+                        "type":"text",
+                        "value":"%WINDIR%\\svchost.com \"%%1\" %%*",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Netshta",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1579564794",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564800",
+                        "type":"malware-sample",
+                        "value":"svchost.com|8307778ea1683bbb00eecb6f761314e2",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564806",
+                        "type":"filename",
+                        "value":"svchost.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564807",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564813",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564821",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1579564827",
+                        "type":"size-in-bytes",
+                        "value":"41472",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"XMRig",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1579564884",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564885",
+                        "type":"malware-sample",
+                        "value":"xmrig.exe|109a4ed5ee00374f64644344011b5157",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564891",
+                        "type":"filename",
+                        "value":"xmrig.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564891",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564891",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579564891",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1579564891",
+                        "type":"size-in-bytes",
+                        "value":"4552704",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

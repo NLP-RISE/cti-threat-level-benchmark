@@ -1,0 +1,86 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-02-26",
+        "published":true,
+        "info":"Interesting Recon Script",
+        "publish_timestamp":"1582912045",
+        "timestamp":"1582912038",
+        "Tag":[
+            {
+                "name":"kill-chain:Reconnaissance"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"User Execution - T1204\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command-Line Interface - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Account Discovery - T1087\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Trust Discovery - T1482\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Network Share Discovery - T1135\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Permission Groups Discovery - T1069\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote System Discovery - T1018\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Discovery - T1518\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Connections Discovery - T1049\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"Recon Script from zhacker.net",
+                "timestamp":"1582857122",
+                "type":"link",
+                "value":"https://pastebin.com/8QmnA7eE",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Commands ran by recon script",
+                "timestamp":"1582912038",
+                "type":"link",
+                "value":"https://pastebin.com/TixDfqZK",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog post",
+                "timestamp":"1582857541",
+                "type":"link",
+                "value":"https://www.wilbursecurity.com/2020/02/interesting-recon-script/",
+                "to_ids":false
+            }
+        ]
+    }
+}

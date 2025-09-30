@@ -1,0 +1,440 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2016-05-23",
+        "published":true,
+        "info":"OSINT - APT Case RUAG Technical Report",
+        "publish_timestamp":"1484923644",
+        "timestamp":"1484923617",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"b\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Turla Group\""
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Wipbot\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463991169",
+                "type":"link",
+                "value":"https://www.melani.admin.ch/melani/fr/home/documentation/rapports/rapports-techniques/technical-report_apt_case_ruag.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463991200",
+                "type":"comment",
+                "value":"The following is a short report with the intention to inform the public about Indicators of Compromise\r\n(IOCs) and Modus Operandi of the attacker group that is responsible for the RUAG cyber espionage\r\ncase, which has been made public on Wednesday, May 4th 2016.\r\nOne of the main tasks of MELANI is to support critical infrastructures during security incidents and the coordination\r\nof relevant actors involved. Regarding technical first response and support, GovCERT supported\r\nRUAG with log analysis, forensics, malware reverse engineering and security monitoring. The report below\r\nreflects our experiences during this case.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463991229",
+                "type":"link",
+                "value":"https://www.melani.admin.ch/dam/melani/fr/dokumente/2016/technical%20report%20ruag.pdf.download.pdf/Report_Ruag-Espionage-Case.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463991242",
+                "type":"link",
+                "value":"https://www.melani.admin.ch/dam/melani/fr/dokumente/2016/technischer_bericht_apt_case_ruag_summary.pdf.download.pdf/TR-ZF-f.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"srsvc.dll",
+                "timestamp":"1463991414",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"srsvc.dll",
+                "timestamp":"1463991414",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ximarsh.dll",
+                "timestamp":"1463991414",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msximl.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msximl.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ximarsh.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msximl.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msimghlp.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msimghlp.dll",
+                "timestamp":"1463991415",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ximarsh.dll",
+                "timestamp":"1463991416",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msssetup.exe",
+                "timestamp":"1463991416",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"msimghlp.dll",
+                "timestamp":"1463991440",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991507",
+                "type":"url",
+                "value":"airmax2015.leadingineurope.eu/wp-content/gallery/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991507",
+                "type":"url",
+                "value":"bestattung-eckl.at/typo3temp/wizard.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991507",
+                "type":"url",
+                "value":"buendnis-depression.at/typo3temp/ajaxify-rss.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"deutschland-feuerwerk.de/fileadmin/dekoservice/rosefeed.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"digitallaut.at/typo3temp/viewpage.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"florida4lottery.com/wp-content/languages/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"porkandmeadmag.com/wp-content/gallery/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"salenames.cn/wp-includes/pomo/js/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991508",
+                "type":"url",
+                "value":"shdv.de/fileadmin/shdv/Pressemappe/presserss.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"smartrip-israel.com/wp-content/gallery/about.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"woo.dev.ideefix.net/wp-content/info/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"www.asilocavalsassi.it/media/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"www.ljudochbild.se/wp-includes/category/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"www.millhavenplace.co.uk/wp-content/gallery/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL known to be part of the C&C infrastructure of the attacker. Please note that many of these systems have been hacked and that these domains are perfectly legitimate",
+                "timestamp":"1463991509",
+                "type":"url",
+                "value":"www.jagdhornschule.ch/typo3temp/rss-feed.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991636",
+                "type":"ip-dst",
+                "value":"5.255.93.228",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991636",
+                "type":"ip-dst",
+                "value":"195.3.105.50",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991636",
+                "type":"ip-dst",
+                "value":"85.25.120.177",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"195.63.103.228",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"81.223.14.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"155.94.65.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"193.26.18.117",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"85.214.40.111",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991637",
+                "type":"ip-dst",
+                "value":"92.53.126.118",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991638",
+                "type":"ip-dst",
+                "value":"94.242.60.104",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991638",
+                "type":"ip-dst",
+                "value":"217.10.138.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"g C&C having been used to send tasks and to exfiltrate data. Please note that most of these servers have been hacked by the attacker and the owners are victims of this actor group as well",
+                "timestamp":"1463991638",
+                "type":"ip-dst",
+                "value":"80.74.145.80",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Report - RUAG",
+                "timestamp":"1463991779",
+                "type":"attachment",
+                "value":"Report_Ruag-Espionage-Case (1).pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922067",
+                "type":"link",
+                "value":"https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922210",
+                "type":"link",
+                "value":"http://www.symantec.com/connect/blogs/turla-spying-tool-targets-governments-and-diplomats",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922197",
+                "type":"link",
+                "value":"https://www.circl.lu/pub/tr-25/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922177",
+                "type":"link",
+                "value":"https://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbugattack-group.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922165",
+                "type":"link",
+                "value":"http://www.kaspersky.com/about/news/virus/2014/Unraveling-mysteries-of-Turla-cyber-espionagecampaign",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922154",
+                "type":"link",
+                "value":"http://artemonsecurity.com/uroburos.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484922087",
+                "type":"link",
+                "value":"https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra",
+                "to_ids":false
+            }
+        ]
+    }
+}

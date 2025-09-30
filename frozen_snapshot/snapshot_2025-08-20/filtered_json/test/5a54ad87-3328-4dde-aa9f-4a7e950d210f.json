@@ -1,0 +1,677 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-25",
+        "published":true,
+        "info":"OSINT - MICROCIN MALWARE",
+        "publish_timestamp":"1518770781",
+        "timestamp":"1515726024",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Microcin\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515677438",
+                "type":"link",
+                "value":"https://cdn.securelist.com/files/2017/09/Microcin_Technical_4PDF_eng_final_s.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515677438",
+                "type":"link",
+                "value":"https://securelist.com/a-simple-example-of-a-complex-cyberattack/82636/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malicious documents",
+                "timestamp":"1515658586",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658669",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"backdoors",
+                "timestamp":"1515658670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1515677438",
+                "type":"comment",
+                "value":"Weâ€™re already used to the fact that complex cyberattacks use 0-day vulnerabilities, bypassing digital signature checks, virtual file systems, non-standard encryption algorithms and other tricks. Sometimes, however, all of this may be done in much simpler ways, as was the case in the malicious campaign that we detected a while ago â€“ we named it â€˜Microcinâ€™ after microini, one of the malicious components used in it.\r\n\r\nWe detected a suspicious RTF file. The document contained an exploit to the previously known and patched vulnerability CVE-2015-1641; however, its code had been modified considerably. Remarkably, the malicious document was delivered via websites that targeted a very narrow audience, so we suspected early on that we were dealing with a targeted attack. The threat actors took aim at users visiting forums with discussions on the state-subsidized housing that Russian military personnel and their families are entitled to.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515657347",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515657345",
+                        "type":"filename",
+                        "value":"ÐšÐ°ÐºÐŸÑ€Ð¸Ð½Ð¸Ð¼Ð°Ñ‚ÑŒÐšÐ²Ð°Ñ€Ñ‚Ð¸Ñ€Ñƒ-1.rtf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515657345",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515657345",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670249",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670246",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c950c3fa513a487acfe2f1809e8e25e39d407fdf51553f272af81d2368cbeb0c/analysis/1513681658/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"text",
+                        "value":"30/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"malicious documents",
+                        "timestamp":"1515670246",
+                        "type":"datetime",
+                        "value":"2017-12-19T11:07:38",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670249",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670246",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/cbd43e70dc55e94140099722d7b91b07a3997722d4a539ecc4015f37ea14a26e/analysis/1510610117/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"text",
+                        "value":"50/68",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"datetime",
+                        "value":"2017-11-13T21:55:17",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670249",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670246",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/8a7d04229722539f2480270851184d75b26c375a77b468d8cbad6dbdb0c99271/analysis/1514186505/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"text",
+                        "value":"46/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670246",
+                        "type":"datetime",
+                        "value":"2017-12-25T07:21:45",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670249",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515670246",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515670247",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1515670247",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670247",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515670247",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/66f0cbc0aa7e96bf937d5fb72374be454d1d6a6c85860df9d8ee8a26adc2a75e/analysis/1513683573/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515670247",
+                        "type":"text",
+                        "value":"30/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515670247",
+                        "type":"datetime",
+                        "value":"2017-12-19T11:39:33",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670247",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/871ab24fd6ae15783dd9df5010d794b6121c4316b11f30a55f23ba37eef4b87a/analysis/1510036080/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"text",
+                        "value":"48/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"datetime",
+                        "value":"2017-11-07T06:28:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1515670250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515670247",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/9dd9bb13c2698159eb78a0ecb4e8692fd96ca4ecb50eef194fa7479cb65efb7c/analysis/1511174150/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"text",
+                        "value":"37/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"backdoors",
+                        "timestamp":"1515670247",
+                        "type":"datetime",
+                        "value":"2017-11-20T10:35:50",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1515677438",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1515677438",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/66f0cbc0aa7e96bf937d5fb72374be454d1d6a6c85860df9d8ee8a26adc2a75e/analysis/1513683573/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515677438",
+                        "type":"text",
+                        "value":"30/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1515677438",
+                        "type":"datetime",
+                        "value":"2017-12-19T11:39:33",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

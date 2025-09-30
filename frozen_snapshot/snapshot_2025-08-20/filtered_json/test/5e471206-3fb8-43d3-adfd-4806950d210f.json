@@ -1,0 +1,222 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-02-14",
+        "published":true,
+        "info":"Dever Ransomware",
+        "publish_timestamp":"1581894421",
+        "timestamp":"1581894349",
+        "Tag":[
+            {
+                "name":"tlp:green"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1581812660",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\svhost.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1581812198",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\RUN\\\\svhost",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"RDP disconnect from this IP shortly after Dever was run",
+                "timestamp":"1581865066",
+                "type":"ip-src",
+                "value":"5.45.71.178",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1581885892",
+                "type":"link",
+                "value":"https://www.wilbursecurity.com/2020/02/the-dever-ransomware-experience/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Process Hacker",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581716636",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716636",
+                        "type":"malware-sample",
+                        "value":"ProcessHacker.exe|b365af317ae730a67c936f21432b9c71",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716636",
+                        "type":"filename",
+                        "value":"ProcessHacker.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"size-in-bytes",
+                        "value":"1719840",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Process Hacker",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581716637",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"malware-sample",
+                        "value":"kprocesshacker.sys|1b5c3c458e31bede55145d0644e88d75",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"filename",
+                        "value":"kprocesshacker.sys",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716637",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716638",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716638",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581716638",
+                        "type":"size-in-bytes",
+                        "value":"45208",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Dever Ransomware",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1581716959",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"malware-sample",
+                        "value":"svhost.exe|273045ac9e57532ba524a2ecedcbfad2",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"filename",
+                        "value":"svhost.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1581716959",
+                        "type":"size-in-bytes",
+                        "value":"51712",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

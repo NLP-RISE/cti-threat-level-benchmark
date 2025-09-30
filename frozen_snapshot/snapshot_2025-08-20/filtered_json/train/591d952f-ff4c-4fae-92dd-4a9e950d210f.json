@@ -1,0 +1,133 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-18",
+        "published":true,
+        "info":"OSINT - Uiwix Ransomware Using EternalBlue SMB Exploit To Infect Victims",
+        "publish_timestamp":"1495133320",
+        "timestamp":"1495133304",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Uiwix Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495118064",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/uiwix-ransomware-using-eternalblue-smb-exploit-to-infect-victims/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495118064",
+                "type":"comment",
+                "value":"A littler over a week ago, a member posted a topic in our forums looking for help regarding a new ransomware that they were infected with. For this particular victim, the ransomware was appending the _2883765424.UIWIX extension to their files and was creating ransom notes named _DECODE_FILES.txt. Over the next few days, a few more victims posted in the thread and we saw an increasing amount of encrypted files submitted to our malware submission system and ID-Ransomware.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1495117959",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":">>> ALL YOUR PERSONAL FILES ARE DECODED <<<\r\n\r\nYour personal code: [10_digit_victim_id]\r\n\r\nTo decrypt your files, you need to buy special software.\r\nDo not attempt to decode or modify files, it may be broken.\r\nTo restore data, follow the instructions!\r\n\r\nYou can learn more at this site:\r\nhttps://4ujngbdqqm6t2c53.onion.to\r\nhttps://4ujngbdqqm6t2c53.onion.cab\r\nhttps://4ujngbdqqm6t2c53.onion.nu\r\n\r\nIf a resource is unavailable for a long time to install and use the tor browser.\r\nAfter you start the Tor browser you need to open this link http://4ujngbdqqm6t2c53.onion",
+                "timestamp":"1495117959",
+                "type":"filename",
+                "value":"_DECODE_FILES.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"https://4ujngbdqqm6t2c53.onion.to",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"https://4ujngbdqqm6t2c53.onion.cab",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"https://4ujngbdqqm6t2c53.onion.nu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"http://4ujngbdqqm6t2c53.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"https://netcologne.dl.sourceforge.net/project/cyqlite/3.8.5/sqlite-dll-win32-x86-3080500.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Uiwix Network Connections",
+                "timestamp":"1495117959",
+                "type":"url",
+                "value":"http://sqlite.org/2014/sqlite-dll-win32-x86-3080500.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 146581f0b3fbe00026ee3ebe68797b0e57f39d1d8aecc99fdc3290e9cfadc4fc",
+                "timestamp":"1495117963",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 146581f0b3fbe00026ee3ebe68797b0e57f39d1d8aecc99fdc3290e9cfadc4fc",
+                "timestamp":"1495117964",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 146581f0b3fbe00026ee3ebe68797b0e57f39d1d8aecc99fdc3290e9cfadc4fc",
+                "timestamp":"1495117964",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/146581f0b3fbe00026ee3ebe68797b0e57f39d1d8aecc99fdc3290e9cfadc4fc/analysis/1495112647/",
+                "to_ids":false
+            }
+        ]
+    }
+}

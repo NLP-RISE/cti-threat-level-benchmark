@@ -1,0 +1,221 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2017-05-04",
+        "published":true,
+        "info":"OSINT - A Mole exposing itself to sunlight Snake: Coming soon in Mac OS X flavour",
+        "publish_timestamp":"1493900856",
+        "timestamp":"1493900587",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"APT 29\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1493900360",
+                "type":"text",
+                "value":"Snake, also known as Turla, Uroburos and Agent.BTZ, is a relatively complex malware framework used for targeted attacks1.\r\n\r\nOver the past year Fox-IT has been involved in multiple incident response cases where the Snake framework was used to steal sensitive information. Targets include government institutions, military and large corporates.\r\n\r\nResearchers who have previously analyzed compromises where Snake was used have attributed the attacks to Russia2. Compared to other prolific attackers with alleged ties to Russia, such as APT28 (Fancy Bear) and APT29 (Cozy Bear), Snakeâ€™s code is significantly more sophisticated, itâ€™s infrastructure more complex and targets more carefully selected.\r\n\r\nThe framework has traditionally focused on the Windows operating system, but in 2014 the first Linux variant was observed3.\r\n\r\nNow, Fox-IT has identified a version of Snake targeting Mac OS X.\r\nAs this version contains debug functionalities and was signed on February 21st, 2017 it is likely that the OS X version of Snake is not yet operational.\r\nFox-IT expects that the attackers using Snake will soon use the Mac OS X variant on targets.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Snake's queue file for HTTP network transport",
+                "timestamp":"1493900360",
+                "type":"hostname",
+                "value":"car-service.effers.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Snake's queue file for HTTP network transport - IP is a VSAT terminal",
+                "timestamp":"1493900360",
+                "type":"ip-dst",
+                "value":"83.229.87.11",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1493900360",
+                "type":"link",
+                "value":"https://blog.fox-it.com/2017/05/03/snake-coming-soon-in-mac-os-x-flavour/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player.app.z",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"install.sh",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Installdp",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"com.adobe.update",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"installd.sh",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"queue",
+                "timestamp":"1493900360",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Installdp - Xchecked via VT: d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2",
+                "timestamp":"1493900366",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Installdp - Xchecked via VT: d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2",
+                "timestamp":"1493900366",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Installdp - Xchecked via VT: d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2",
+                "timestamp":"1493900366",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d5ea79632a1a67abbf9fb1c2813b899c90a5fb9442966ed4f530e92715087ee2/analysis/1493893902/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player - Xchecked via VT: 7848f7808af02ba0466f3a0687cf949c4d29a2d94b035481a3299ec519aaaa30",
+                "timestamp":"1493900367",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player - Xchecked via VT: 7848f7808af02ba0466f3a0687cf949c4d29a2d94b035481a3299ec519aaaa30",
+                "timestamp":"1493900367",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Install Adobe Flash Player - Xchecked via VT: 7848f7808af02ba0466f3a0687cf949c4d29a2d94b035481a3299ec519aaaa30",
+                "timestamp":"1493900368",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7848f7808af02ba0466f3a0687cf949c4d29a2d94b035481a3299ec519aaaa30/analysis/1493898305/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install - Xchecked via VT: 5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060",
+                "timestamp":"1493900368",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install - Xchecked via VT: 5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060",
+                "timestamp":"1493900369",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Install - Xchecked via VT: 5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060",
+                "timestamp":"1493900369",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5b7792a16c6b7978fca389882c6aeeb2c792352076bf6a064e7b8b90eace8060/analysis/1493887382/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player.app.z - Xchecked via VT: b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea",
+                "timestamp":"1493900369",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Install Adobe Flash Player.app.z - Xchecked via VT: b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea",
+                "timestamp":"1493900370",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Install Adobe Flash Player.app.z - Xchecked via VT: b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea",
+                "timestamp":"1493900370",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b8ee4556dc09b28826359b98343a4e00680971a6f8c6602747bd5d723d26eaea/analysis/1493880806/",
+                "to_ids":false
+            }
+        ]
+    }
+}

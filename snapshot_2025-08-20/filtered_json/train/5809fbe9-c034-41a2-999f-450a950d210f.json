@@ -1,0 +1,98 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-10-21",
+        "published":true,
+        "info":"OSINT - Malspam delivers NanoCore RAT",
+        "publish_timestamp":"1477049706",
+        "timestamp":"1477049683",
+        "Tag":[
+            {
+                "name":"ms-caro-malware:malware-type=\"RemoteAccess\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"remote-access-tool\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477049422",
+                "type":"link",
+                "value":"http://www.dshield.org/forums/diary/Malspam+delivers+NanoCore+RAT/21615/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477049451",
+                "type":"comment",
+                "value":"NanoCore is a Remote Access Tool (RAT) that's currently available for a $25 license [1].  However, like many other RATs, NanoCore has been used by criminal groups to take over Windows computers.  Beta versions of NanoCore RAT have been available to criminals since 2013 [2], and a cracked full version was leaked last year in 2015 [3].\r\n\r\nSince then, the NanoCore RAT has been used in targeted phishing campaigns that are subtle and harder to detect [4].  Earlier this year, we saw it used in tax-themed emails as part of an increased distribution of the full-featured NanoCore RAT through phishing [5].\r\n\r\nSince then, I haven't noticed any public reporting on specific campaigns, even though I've noticed NanoCore RAT-based phishing emails on a near-daily basis.  These recent emails don't seem subtle, and the vast majority of them are blocked.  I consider these recent examples malicious spam (malspam).  They either have attached zip archives containing an executable file, or they have attached Microsoft Office documents with malicious macros designed to download and execute the NanoCore RAT.  One such malspam with a zip attachment was recently sent to my malware-traffic-analysis.net email address.  That one was easily caught by my spam filter.\r\n\r\nDue to a relative lack of publicly-posted info on recent NanoCore RAT malspam campaigns, I thought I'd examine the email I received for today's dairy.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1477049480",
+                "type":"email-attachment",
+                "value":"TKP-PO 332-2016131023.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Examining the email headers, we find the email came from a mail server at ps1.700tb.com on 119.18.103.60.",
+                "timestamp":"1477049551",
+                "type":"ip-src",
+                "value":"119.18.103.60",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1477049611",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Running the malware on a host in my lab environment gave me post-infection activity on 137.74.157.90 as encoded or encrypted traffic over TCP port 33338.",
+                "timestamp":"1477049642",
+                "type":"ip-dst",
+                "value":"137.74.157.90",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 69c32f18a33f922e253d39025e773211223c9af832314103410ca9eccf1a90f2",
+                "timestamp":"1477049683",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 69c32f18a33f922e253d39025e773211223c9af832314103410ca9eccf1a90f2",
+                "timestamp":"1477049684",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 69c32f18a33f922e253d39025e773211223c9af832314103410ca9eccf1a90f2",
+                "timestamp":"1477049684",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/69c32f18a33f922e253d39025e773211223c9af832314103410ca9eccf1a90f2/analysis/1477031597/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,380 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2023-01-09",
+        "published":true,
+        "info":"Turla: A Galaxy of Opportunity",
+        "publish_timestamp":"1673287028",
+        "timestamp":"1673286950",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Andromeda\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"KopiLuwak\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Window Discovery - T1010\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Deletion - T1070.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Window - T1564.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Modify Registry - T1112\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Connections Discovery - T1049\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Archive Collected Data - T1560\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Archive via Utility - T1560.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Asymmetric Cryptography - T1573.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Infrastructure - T1584\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Install Digital Certificate - T1608.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Discovery - T1518\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Shutdown/Reboot - T1529\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Turla - G0010\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"KOPILUWAK C2",
+                "timestamp":"1673276461",
+                "type":"hostname",
+                "value":"manager.surro.am",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"QUIETCANARY C2",
+                "timestamp":"1673277137",
+                "type":"ip-dst|port",
+                "value":"194.67.209.186|443",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KOPILUWAK",
+                "timestamp":"1673286680",
+                "type":"yara",
+                "value":"rule M_APT_Kopiluwak_Recon_1\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n    strings:\r\n\r\n        $rc4_1 = \".charCodeAt(i %\"\r\n\r\n        $rc4_2 = \".length)) % 256\"\r\n\r\n        $b64_1 = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\"\r\n\r\n        $b64_3 = \".charAt(parseInt(\"\r\n\r\n        $recon_1 = \"WScript.CreateObject\"\r\n\r\n        $recon_2 = \".Run(\"\r\n\r\n        $Arguments = \"WScript.Arguments\"\r\n\r\n    condition:\r\n\r\n        ($rc4_1 and $rc4_2 and $b64_1) and ($Arguments or ($b64_3 and $recon_1 and $recon_2))\r\n\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"QUIETCANARY",
+                "timestamp":"1673286707",
+                "type":"yara",
+                "value":"﻿rule M_HUNTING_QUIETCANARY_STRINGS {\r\n\r\n  meta:\r\n\r\n        author=\"Mandiant\"\r\n\r\n  strings:\r\n\r\n    $pdb1 = \"c:\\\\Users\\\\Scott\\\\source\\\\repos\\\\Kapushka.Client\\\\BrowserTelemetry\\\\obj\\\\Release\\\\CmService.pdb\" ascii wide nocase\r\n\r\n    $pdb2 = \"c:\\\\Users\\\\Scott\\\\source\\\\repos\\\\Kapushka.Client\\\\BrowserTelemetry\\\\obj\\\\Release\\\\BrowserTelemetry.pdb\" ascii wide nocase\r\n\r\n    $pdb3 = \"c:\\\\Users\\\\Scott\\\\source\\\\repos\\\\BrowserTelemetry\\\\BrowserTelemetry\\\\obj\\\\Release\\\\BrowserTelemetry.pdb\" ascii wide nocase\r\n\r\n    $orb1 = {  68 00 74 00 74 00 70 00 73 00 3A 00 2F 00 2F }\r\n\r\n    $orb2 = {  68 00 74 00 74 00 70 00 3A 00 2F 00 2F }\r\n\r\n    $command1 = \"get_Command\" ascii wide nocase\r\n\r\n    $command2 = \"set_Command\" ascii wide nocase\r\n\r\n    $command3 = \"DownloadCommand\" ascii wide nocase\r\n\r\n    $command4 = \"UploadCommand\"  ascii wide nocase\r\n\r\n    $command5 = \"AddCommand\" ascii wide nocase\r\n\r\n    $command6 = \"ExeCommand\" ascii wide nocase\r\n\r\n    $command7 = \"KillCommand\" ascii wide nocase\r\n\r\n    $command8 = \"ClearCommand\"  ascii wide nocase\r\n\r\n      $rc4 = {21 00 62 00 76 00 7A 00 65 00 26 00 78 00 61 00 62 00 72 00 39 00 7C 00 38 00 5B 00 3F 00 78 00 77 00 7C 00 7C 00 79 00 26 00 7A 00 6C 00 23 00 74 00 70 00\r\n\r\n6B 00 7A 00 6A 00 5E 00 62 00 39 00 61 00 38 00 6A 00 5D 00 40 00 6D 00 39 00 6E 00 28 00 67 00 67 00 24 00 40 00 74 00 74 00 65 00 33 00 33 00 6E 00 28 00 32 00 72 00 7A\r\n\r\n00 62 00 7A 00 69 00 74 00 75 00 31 00 2A 00 66 00 61 00 00 80 E9 4D 00 6F 00 7A 00 69 00 6C 00 6C 00 61 }\r\n\r\n  condition:\r\n\r\n    (1 of ($pdb*)) and (1 of ($orb*)) and (all of ($command*)) or ($rc4)\r\n\r\n}",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"ANDROMEDA",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673276318",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276247",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276247",
+                        "type":"filename",
+                        "value":"TrustedInstaller.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1673276247",
+                        "type":"text",
+                        "value":"C:\\Temp\\TrustedInstaller.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Dropped ANDROMEDA sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673276395",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276303",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276303",
+                        "type":"filename",
+                        "value":"mskmde.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1673276303",
+                        "type":"text",
+                        "value":"%ALLUSERSPROFILE%\\Local Settings\\Temp\\mskmde.com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"WinRAR Self-Extracting Archive",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673276752",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"KOPILUWAK",
+                        "timestamp":"1673276472",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276680",
+                        "type":"filename",
+                        "value":"0171ef74.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1673276680",
+                        "type":"text",
+                        "value":"%TEMP%\\0171ef74.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"KOPILUWAK",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673276732",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276732",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276732",
+                        "type":"filename",
+                        "value":"xpexplore.js",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1673276732",
+                        "type":"text",
+                        "value":"%WINDIR%\\Temp\\xpexplore.js",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"QUIETCANARY",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673277079",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673276825",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673277079",
+                        "type":"filename",
+                        "value":"00c3df3b.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1673276943",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"ANDROMEDA C2s",
+                        "timestamp":"1673276943",
+                        "type":"domain",
+                        "value":"anam0rph.su",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"ANDROMEDA C2s",
+                        "timestamp":"1673276943",
+                        "type":"ip-dst",
+                        "value":"212.114.52.24",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"ANDROMEDA C2s",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1673276993",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"ANDROMEDA injected process “wuauclt.exe” made a GET request to this domain",
+                        "timestamp":"1673276993",
+                        "type":"hostname",
+                        "value":"yelprope.cloudns.cl",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1673276993",
+                        "type":"ip-dst",
+                        "value":"212.114.52.24",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"ANDROMEDA C2s",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1673277040",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"C2 domain ANDROMEDA",
+                        "timestamp":"1673277040",
+                        "type":"domain",
+                        "value":"suckmycocklameavindustry.in",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1673277041",
+                        "type":"ip-dst",
+                        "value":"35.205.61.67",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1673277108",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673277108",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1673277108",
+                        "type":"filename",
+                        "value":"file.exe",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

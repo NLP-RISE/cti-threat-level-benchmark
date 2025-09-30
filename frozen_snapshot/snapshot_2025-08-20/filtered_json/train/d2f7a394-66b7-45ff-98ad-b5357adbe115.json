@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-09-14",
+        "published":true,
+        "info":"Vermilion Strike: Linux and Windows Re-implementation of Cobalt Strike",
+        "publish_timestamp":"1631628211",
+        "timestamp":"1631628196",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Cobalt Strike\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Cobalt Strike - S0154\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"ELF",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Stager",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Beacon",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Beacon",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Beacon",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE Beacon",
+                "timestamp":"1631628135",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1631628135",
+                "type":"ip-dst",
+                "value":"160.202.163.100",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1631628135",
+                "type":"hostname",
+                "value":"update.microsofthk.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1631628135",
+                "type":"hostname",
+                "value":"update.microsoftkernel.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1631628135",
+                "type":"hostname",
+                "value":"amazon.hksupd.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1631628195",
+                "type":"link",
+                "value":"https://www.intezer.com/blog/malware-analysis/vermilionstrike-reimplementation-cobaltstrike/",
+                "to_ids":false
+            }
+        ]
+    }
+}

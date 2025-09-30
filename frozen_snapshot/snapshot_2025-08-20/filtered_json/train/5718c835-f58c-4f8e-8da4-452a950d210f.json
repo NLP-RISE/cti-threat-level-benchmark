@@ -1,0 +1,527 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-18",
+        "published":true,
+        "info":"CryptXXX: New Ransomware From the Actors Behind Reveton, Dropping Via Angler",
+        "publish_timestamp":"1461251128",
+        "timestamp":"1461251080",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461241928",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/cryptxxx-new-ransomware-actors-behind-reveton-dropping-angler",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461241954",
+                "type":"comment",
+                "value":"Proofpoint researchers recently found a previously undocumented ransomware spreading since the end of March through Bedep after infection via the Angler Exploit Kit (EK). Combining our findings with intelligence shared by Frank Ruiz (Fox IT InTELL) lead us to the same conclusion: this project is conducted by the same group that was driving Reveton ransomware operations and is closely tied to Angler/Bedep. Dubbed \"CryptXXX\", this new ransomware is currently asking a relatively high $500 per computer to unlock encrypted files. Angler is the number one exploit kit by volume, making the potential impact of new ransomware in the hands of experienced actors with access to this vector quite significant.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1461242290",
+                "type":"filename",
+                "value":"%TEMP%\\{C3F31E62-344D-4056-BF01-BF77B94E0254}\\api-ms-win-system-softpub-l1-1-0.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1461242290",
+                "type":"filename",
+                "value":"%TEMP%\\{D075E5D0-4442-4108-850E-3AD2874B270C}\\api-ms-win-system-provsvc-l1-1-0.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1461242291",
+                "type":"filename",
+                "value":"%TEMP%\\{D4A2C643-5399-4F4F-B9BF-ECB1A25644A6}\\api-ms-win-system-wer-l1-1-0.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1461242291",
+                "type":"filename",
+                "value":"%TEMP%\\{FD68402A-8F8F-4B3D-9808-174323767296}\\api-ms-win-system-advpack-l1-1-0.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CryptXXX checkin server",
+                "timestamp":"1461242425",
+                "type":"ip-dst",
+                "value":"146.0.42.68",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CryptXXX payment site",
+                "timestamp":"1461242425",
+                "type":"url",
+                "value":"rp4roxeuhcf2vgft.onion.to",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CryptXXX payment site",
+                "timestamp":"1461242425",
+                "type":"url",
+                "value":"rp4roxeuhcf2vgft.onion.cab",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CryptXXX payment site",
+                "timestamp":"1461242426",
+                "type":"url",
+                "value":"rp4roxeuhcf2vgft.onion.city",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Bedep C&C IP",
+                "timestamp":"1461242426",
+                "type":"ip-dst",
+                "value":"104.193.252.245",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Zip archive with most of the mentioned content",
+                "timestamp":"1461242706",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Zip archive with most of the mentioned content",
+                "timestamp":"1461242706",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 first stream dll CryptXXX",
+                "timestamp":"1461242728",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 first stream dll CryptXXX",
+                "timestamp":"1461242728",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll1",
+                "timestamp":"1461242846",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll1 || Bedep 1809 update stream exe2 - Dridex 222",
+                "timestamp":"1461242846",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream exe2 - Dridex 222",
+                "timestamp":"1461242846",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll3",
+                "timestamp":"1461242847",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll3",
+                "timestamp":"1461242847",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242877",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242878",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242878",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242878",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242879",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX",
+                "timestamp":"1461242879",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€",
+                "timestamp":"1461243009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€",
+                "timestamp":"1461243010",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€",
+                "timestamp":"1461243010",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€",
+                "timestamp":"1461243010",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (May 2015)",
+                "timestamp":"1461243011",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (May 2015)",
+                "timestamp":"1461243011",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (December 2015)",
+                "timestamp":"1461243012",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (December 2015)",
+                "timestamp":"1461243012",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Reveton - 2015-04-14",
+                "timestamp":"1461243012",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Reveton - 2015-04-14",
+                "timestamp":"1461243012",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Reveton - 2015-04-14 - Xchecked via VT: dff7c0aac326f210705e4f53cd78a57cb277e80ecec7bdffd6f68db3bdda39c3",
+                "timestamp":"1461251080",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251081",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/dff7c0aac326f210705e4f53cd78a57cb277e80ecec7bdffd6f68db3bdda39c3/analysis/1461131947/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (December 2015) - Xchecked via VT: ad3cc219a818047d6d3c38a8e4662e21dfedc858578cb2bde2c127d66dfeb7de",
+                "timestamp":"1461251081",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251081",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ad3cc219a818047d6d3c38a8e4662e21dfedc858578cb2bde2c127d66dfeb7de/analysis/1461131953/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep Pony â€œnews.phpâ€ - (May 2015) - Xchecked via VT: 59ddf36a9e85f4cf82a6511b49cfcdd9e4521b17f7e245f005e18418176ff4aa",
+                "timestamp":"1461251082",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251082",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/59ddf36a9e85f4cf82a6511b49cfcdd9e4521b17f7e245f005e18418176ff4aa/analysis/1461131974/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€ - Xchecked via VT: 5bfae47c9fda81243b50b6df53ac4184d90a70000894fa2a516044fa44770cfd",
+                "timestamp":"1461251082",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251083",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5bfae47c9fda81243b50b6df53ac4184d90a70000894fa2a516044fa44770cfd/analysis/1461163306/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep â€œPrivate stealerâ€ - Xchecked via VT: eaa857c95fca38ca08411b757f4ad2a841cfb9782deca8abf64aada445923c0d",
+                "timestamp":"1461251083",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251084",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/eaa857c95fca38ca08411b757f4ad2a841cfb9782deca8abf64aada445923c0d/analysis/1461131964/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX - Xchecked via VT: 0b12584302a5a72f467a08046814593ea505fa397785f1012ab973dd961a6c0e",
+                "timestamp":"1461251084",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251084",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0b12584302a5a72f467a08046814593ea505fa397785f1012ab973dd961a6c0e/analysis/1461160828/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX - Xchecked via VT: 565dadb36e1d8b0c787d0d5e4cd7ec8c24cac1d6b37637427547ae465ab0fff0",
+                "timestamp":"1461251085",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251085",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/565dadb36e1d8b0c787d0d5e4cd7ec8c24cac1d6b37637427547ae465ab0fff0/analysis/1461162322/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"CryptXXX - Xchecked via VT: a4e9c151a50595b59e787dd3b361ac53d02dd7f212d6b22639dc01776c886d05",
+                "timestamp":"1461251086",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251086",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a4e9c151a50595b59e787dd3b361ac53d02dd7f212d6b22639dc01776c886d05/analysis/1461225821/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll3 - Xchecked via VT: e53610a977b65c01b275e37aefad7884368dfe00b50750e35b6c8c87556a2c06",
+                "timestamp":"1461251086",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251087",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e53610a977b65c01b275e37aefad7884368dfe00b50750e35b6c8c87556a2c06/analysis/1461164621/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream dll1 || Bedep 1809 update stream exe2 - Dridex 222 - Xchecked via VT: 1036c84a003378907560356642bb065caef961f9dbc5c3b2a4954d5cbe7100df",
+                "timestamp":"1461251087",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251087",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1036c84a003378907560356642bb065caef961f9dbc5c3b2a4954d5cbe7100df/analysis/1461131970/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 first stream dll CryptXXX - Xchecked via VT: ab7a58b6e50be6b9bcb926c550ff26669601bbd8bfd922a5b32756e663b25a67",
+                "timestamp":"1461251088",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251088",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ab7a58b6e50be6b9bcb926c550ff26669601bbd8bfd922a5b32756e663b25a67/analysis/1461226696/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Zip archive with most of the mentioned content - Xchecked via VT: 41dbbc60b8921709c5eb187cf03e60701e3b172e6deebdb67dd66c8cb3666b90",
+                "timestamp":"1461251089",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251089",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/41dbbc60b8921709c5eb187cf03e60701e3b172e6deebdb67dd66c8cb3666b90/analysis/1461162315/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream exe2 - Dridex 222 - Xchecked via VT: 3e75e8238a6bbd8817164658696198af",
+                "timestamp":"1461251089",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bedep 1809 update stream exe2 - Dridex 222 - Xchecked via VT: 3e75e8238a6bbd8817164658696198af",
+                "timestamp":"1461251090",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1461251090",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/669ae51d73a3fac117ec39195efb969cb41a16fadecfe412ad83b767b25ae2ae/analysis/1461160978/",
+                "to_ids":false
+            }
+        ]
+    }
+}

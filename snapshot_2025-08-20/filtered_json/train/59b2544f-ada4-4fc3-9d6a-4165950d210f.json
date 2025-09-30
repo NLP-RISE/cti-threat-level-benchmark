@@ -1,0 +1,266 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-21",
+        "published":true,
+        "info":"OSINT - Cryptocurrency Miner Uses WMI and EternalBlue To Spread Filelessly",
+        "publish_timestamp":"1504871176",
+        "timestamp":"1504871124",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"ETERNALBLUE\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/cryptocurrency-miner-uses-wmi-eternalblue-spread-filelessly/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504871111",
+                "type":"comment",
+                "value":"Fileless malware can be a difficult threat to analyze and detect. It shouldnâ€™t be a surprise that an increasing number of new malware threats are fileless, as threat actors use this technique to make both detection and forensic investigation more difficult. We recently found a new cryptocurrency miner (which we detect as TROJ64_COINMINER.QO) that uses this particular technique as well.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1504871111",
+                "type":"url",
+                "value":"http://wmi.mykings.top:8888/test.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1504871111",
+                "type":"url",
+                "value":"http://67.21.90.226:8888/32.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_COINMINER.AUSWQ",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.A",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.B",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ64_COINMINER.QO",
+                "timestamp":"1504871111",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1504871111",
+                "type":"hostname",
+                "value":"ftp.oo000oo.me",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8888",
+                "timestamp":"1504871111",
+                "type":"hostname",
+                "value":"wmi.mykings.top",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ64_COINMINER.QO - Xchecked via VT: f37a0d5f11078ef296a7c032b787f8fa485d73b0115cbd24d62cdf2c1a810625",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ64_COINMINER.QO - Xchecked via VT: f37a0d5f11078ef296a7c032b787f8fa485d73b0115cbd24d62cdf2c1a810625",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as TROJ64_COINMINER.QO - Xchecked via VT: f37a0d5f11078ef296a7c032b787f8fa485d73b0115cbd24d62cdf2c1a810625",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f37a0d5f11078ef296a7c032b787f8fa485d73b0115cbd24d62cdf2c1a810625/analysis/1504867505/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.B - Xchecked via VT: e6fc79a24d40aea81afdc7886a05f008385661a518422b22873d34496c3fb36b",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.B - Xchecked via VT: e6fc79a24d40aea81afdc7886a05f008385661a518422b22873d34496c3fb36b",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as BKDR_FORSHARE.B - Xchecked via VT: e6fc79a24d40aea81afdc7886a05f008385661a518422b22873d34496c3fb36b",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e6fc79a24d40aea81afdc7886a05f008385661a518422b22873d34496c3fb36b/analysis/1503741182/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.A - Xchecked via VT: a095f60ff79470c99752b73f8286b78926bc46eb2168b3ecd4783505a204a3b0",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BKDR_FORSHARE.A - Xchecked via VT: a095f60ff79470c99752b73f8286b78926bc46eb2168b3ecd4783505a204a3b0",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as BKDR_FORSHARE.A - Xchecked via VT: a095f60ff79470c99752b73f8286b78926bc46eb2168b3ecd4783505a204a3b0",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a095f60ff79470c99752b73f8286b78926bc46eb2168b3ecd4783505a204a3b0/analysis/1503595356/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 8c5bb89596cd732af59693b8da021a872fee9b3696927b61d4387b427834c461",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 8c5bb89596cd732af59693b8da021a872fee9b3696927b61d4387b427834c461",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 8c5bb89596cd732af59693b8da021a872fee9b3696927b61d4387b427834c461",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8c5bb89596cd732af59693b8da021a872fee9b3696927b61d4387b427834c461/analysis/1504836079/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_COINMINER.AUSWQ - Xchecked via VT: 674f2df2cdadab5be61271550605163a731a2df8f4c79732481cad532f00525d",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_COINMINER.AUSWQ - Xchecked via VT: 674f2df2cdadab5be61271550605163a731a2df8f4c79732481cad532f00525d",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as TROJ_COINMINER.AUSWQ - Xchecked via VT: 674f2df2cdadab5be61271550605163a731a2df8f4c79732481cad532f00525d",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/674f2df2cdadab5be61271550605163a731a2df8f4c79732481cad532f00525d/analysis/1504335809/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 6315657fd523118f51e294e35158f6bd89d032b26fe7749a4de985edc81e5f86",
+                "timestamp":"1504871111",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 6315657fd523118f51e294e35158f6bd89d032b26fe7749a4de985edc81e5f86",
+                "timestamp":"1504871111",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"detected as TROJ_CONMINER.CFG - Xchecked via VT: 6315657fd523118f51e294e35158f6bd89d032b26fe7749a4de985edc81e5f86",
+                "timestamp":"1504871111",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6315657fd523118f51e294e35158f6bd89d032b26fe7749a4de985edc81e5f86/analysis/1504835923/",
+                "to_ids":false
+            }
+        ]
+    }
+}

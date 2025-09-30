@@ -1,0 +1,1034 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-04-09",
+        "published":true,
+        "info":"OSINT - STUXSHOP The Oldest Stuxnet Component Dials Up",
+        "publish_timestamp":"1554837999",
+        "timestamp":"1554837719",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Stuxnet\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Stuxnet\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1554811041",
+                "type":"text",
+                "value":"During our research into the GossipGirl Supra Threat Actor (STA) cluster, we discovered apreviously unknown relationship exemplified in an early Stuxnet component â€“built in part on theFlowershop malware framework. While other known versions of Stuxnet were partially linked tothe Flame platform (a.k.a. Flamer, SkyWiper) or the â€˜Tilded Platformâ€™ (a.k.a. DuQu), this older1component shares code with Flowershop â€“an even older malware framework active as early as2002. In an interesting show of longevity, this Stuxnet component â€“which weâ€™ve dubbedStuxshopâ€‹â€“ is configured to communicate with known Stuxnet command-and-control (C&C)servers and even includes logic to suppress dial-up prompts for disconnected (or possiblyairgapped) machines.The value of this recent finding is twofold: First, it suggests that yet another team withits own malware platform was involved in the early development of Stuxnet. And secondly, itsupports the view that Stuxnet is in fact the product of a modular development frameworkmeant to enable collaboration among diverse, independent threat actors. Our recent findings,alongside the outstanding body of previously reported technical analysis on this threat, wouldplace the â€˜Flowershop teamâ€™ alongside Equation, Flame, and Duqu as those involved in toolingthe different phases of Stuxnet as an operation active perhaps as early as 2006. Perhaps themost apt metaphor for Stuxnet is that of a â€˜plane built as its being flownâ€™.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1554811060",
+                "type":"link",
+                "value":"https://storage.googleapis.com/chronicle-research/STUXSHOP%20Stuxnet%20Dials%20In%20.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stuxshop samples identified thus far contain four hardcoded C&C servers such as",
+                "timestamp":"1554812726",
+                "type":"url",
+                "value":"http://211.24.237.226/index.php?data=",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stuxshop samples identified thus far contain four hardcoded C&C servers such as",
+                "timestamp":"1554812726",
+                "type":"url",
+                "value":"http://todaysfutbol.com/index.php?data=",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stuxshop samples identified thus far contain four hardcoded C&C servers such as",
+                "timestamp":"1554812726",
+                "type":"url",
+                "value":"http://78.111.169.146/index.php?data=",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stuxshop samples identified thus far contain four hardcoded C&C servers such as",
+                "timestamp":"1554812726",
+                "type":"url",
+                "value":"http://mypremierfutbol.com/index.php?data=",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Stuxshop Modules",
+                "timestamp":"1554836031",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Stuxshop Modules",
+                "timestamp":"1554836031",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Stuxnet Installer with Embedded Stuxshop",
+                "timestamp":"1554836051",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Stuxnet Installers with Resource 231",
+                "timestamp":"1554836078",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Stuxnet Installers with Resource 231",
+                "timestamp":"1554836078",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Deobfuscated Resource 231/Stuxshop modules",
+                "timestamp":"1554836098",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flowershop samples with relevant code overlap",
+                "timestamp":"1554836138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flowershop samples with relevant code overlap",
+                "timestamp":"1554836138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flowershop samples with relevant code overlap",
+                "timestamp":"1554836138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flowershop samples with relevant code overlap",
+                "timestamp":"1554836138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Flowershop samples with relevant code overlap",
+                "timestamp":"1554836138",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1554836200",
+                "type":"yara",
+                "value":"rule STUXSHOP_OSCheck\r\n{\r\nmeta:\r\nauthor = \"â€‹ Silas Cutler (havex@Chronicle.Security)â€‹ \"\r\ndesc = \"â€‹ Identifies the OS Check function in STUXSHOP and CheshireCatâ€‹ \"\r\nhash = \"â€‹ c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579â€‹ \"\r\nstrings:\r\n$ = {10 F7 D8 1B C0 83 C0 ?? E9 ?? 01 00 00 39 85 7C FF FF FF 0F 85 ?? 01 00\r\n00 83 BD 70 FF FF FF 04 8B 8D 74 FF FF FF 75 0B 85 C9 0F 85 ?? 01 00 00 6A 05\r\n5E }\r\n$ = {01 00 00 3B FA 0F 84 ?? 01 00 00 80 7D 80 00 B1 62 74 1D 6A 0D 8D 45 80\r\n68 ?? ?? ?? 10 50 FF 15 ?? ?? ?? 10 83 C4 0C B1 6F 85 C0 75 03 8A 4D 8D 8B C6\r\n}\r\ncondition:\r\nany of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1554837205",
+                "type":"yara",
+                "value":"rule STUXSHOP_config\r\n{\r\n\tmeta:\r\n          desc â€‹ = â€‹ \"Stuxshop standalone sample configuration\"\r\n          author = \"JAG-S (turla@chronicle.security)\"\r\n          hash â€‹ = â€‹ \"c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579\"\r\n        strings:\r\n          $cnc1 = \"http://211.24.237.226/index.php?data=\"â€‹ ascii wide\r\n          $cnc2 = \"http://todaysfutbol.com/index.php?data=\"â€‹ ascii wide\r\n          $cnc3 = \"http://78.111.169.146/index.php?data=\"â€‹ ascii wide\"\r\n          $cnc4 = \"http://mypremierfutbol.com/index.php?data=\"â€‹ ascii wide\r\n\r\n\t  $regkey1 â€‹ = â€‹\"Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\MS-DOS Emulation\" ascii wide\r\n          $regkey2  = \"NTVDMParams\"â€‹ ascii wide\r\n          $flowerOverlap1 = {85 C0 75 3B 57 FF 75 1C FF 75 18 FF 75 14 50 FF 75 10 FF 75 FC FF 15â€‹}\r\n          $flowerOverlap2 = {85 C0 75 4C 8B 45 1C 89 45 0C 8D 45 0C 50 8D 45 08 FF 75 18 50 6A 00 FF 75 10 FF 75 20 FF 15â€‹}\r\n          $flowerOverlap3 = {55 8B EC 53 56 8B 75 20 85 F6 74 03 83 26 00 8D 45 20 50 68 19 00 02 00 6A 00 FF 75 0C FF 75 08â€‹}\r\n          $flowerOverlap4 = {55 8B EC 51 8D 4D FC 33 C0 51 50 6A 26 50 89 45 FC FF 15 }\r\n          $flowerOverlap5 â€‹= {85 DB 74 04 8B C3 EB 1A 8B 45 08 3B 45 14 74 07 B8 5D 06 00 00 EB 0B 85 F6 74 05 8B 45 0C 89 06â€‹}\r\n          $flowerOverlap6 = {85 FF 74 12 83 7D F8 01 75 0C FF 75 0C FF 75 08 FF 15â€‹}\r\n        condition:\r\n          all of â€‹ ( â€‹ $flowerOverlapâ€‹ *)\r\n          or\r\n          2â€‹ of â€‹ ( â€‹ $cncâ€‹ *)\r\n          or\r\n          all of â€‹ ( â€‹ $regkeyâ€‹ *)\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1554837622",
+                "type":"regkey",
+                "value":"HKEY_CURRENT_USER\\Control Panel\\Appearance\\Old",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554812513",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554811628",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"datetime",
+                        "value":"2019-04-09T09:00:19",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579/analysis/1554800419/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811306",
+                        "type":"text",
+                        "value":"44/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554812463",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"malware-sample",
+                        "value":"c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579|455abb43295b9a69e355e4e43457bf30",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"filename",
+                        "value":"c1961e54d60e34bbec397c9120564e8d08f2f243ae349d2fb20f736510716579",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554811695",
+                        "type":"size-in-bytes",
+                        "value":"72456",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1554812105",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1554812105",
+                        "type":"ip-dst",
+                        "value":"211.24.237.226",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1554812105",
+                        "type":"domain",
+                        "value":"todaysfutbol.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1554812353",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1554812353",
+                        "type":"ip-dst",
+                        "value":"78.111.169.146",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1554812354",
+                        "type":"domain",
+                        "value":"mypremierfutbol.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554835991",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554835991",
+                        "type":"text",
+                        "value":"We wondered about the deployment of these curious samples. All of the functionality pointed to\r\na command-and-control module meant to function alongside other components, and not as a\r\nstandalone piece. As we hunted, we came across an unpacked/unobfuscated sample of\r\nStuxnet presumably compiled in 2009 that contained Stuxshop in its entirety",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554835992",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554835992",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1554835992",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554835992",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"datetime",
+                        "value":"2019-04-09T14:27:10",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c074aeef97ce81e8c68b7376b124546cabf40e2cd3aff1719d9daa6c3f780532/analysis/1554820030/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"text",
+                        "value":"45/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"datetime",
+                        "value":"2019-04-09T17:37:54",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/683ce2c7c80b180768fe4d2a39030dc7c4f67db79d1953ee4803522131f533a3/analysis/1554831474/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"text",
+                        "value":"27/65",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"datetime",
+                        "value":"2019-04-09T14:27:24",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ec41b029c3ff4147b6a5252cb8b659f851f4538d4af0a574f7e16bc1cd14a300/analysis/1554820044/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"text",
+                        "value":"45/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837250",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"datetime",
+                        "value":"2019-04-09T14:25:43",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/32159d2a16397823bc882ddd3cd77ecdbabe0fde934e62f297b8ff4d7b89832a/analysis/1554819943/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"text",
+                        "value":"44/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"datetime",
+                        "value":"2019-04-09T17:37:53",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/1daa2b15b70e486927c8fc06eed434080ab408a1b320be9fefe193c20d1d9a7f/analysis/1554831473/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxshop Modules",
+                        "timestamp":"1554836031",
+                        "type":"text",
+                        "value":"43/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"datetime",
+                        "value":"2019-04-09T14:20:50",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/63735d555f219765d486b3d253e39bd316bbcb1c0ec595ea45ddf6e419bef3cb/analysis/1554819650/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Flowershop samples with relevant code overlap",
+                        "timestamp":"1554836138",
+                        "type":"text",
+                        "value":"45/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"datetime",
+                        "value":"2019-04-09T17:37:55",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/a01845255bdc61b610cac269a5562ad09415aaf2a1490d53d55c4c3597670803/analysis/1554831475/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"text",
+                        "value":"44/64",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1554837251",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"datetime",
+                        "value":"2019-04-09T17:37:55",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/77211838bb6783121fe1aeff182c8cc1cba9c9f0c1e5a0027e0c0b9dfa18e2ac/analysis/1554831475/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Stuxnet Installers with Resource 231",
+                        "timestamp":"1554836078",
+                        "type":"text",
+                        "value":"53/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"The control server response is decoded using the same 31-byte XOR encoding, with yet another\r\nkey",
+                "description":"Malware configuration recovered or extracted from a malicious binary.",
+                "meta-category":"file",
+                "name":"malware-config",
+                "timestamp":"1554837539",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554837539",
+                        "type":"text",
+                        "value":"F117FA1CE233C1D7BB7726C0E49615C4622E2D1895F0D8AD4B23BADC4FD70C",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554837539",
+                        "type":"text",
+                        "value":"not included",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554837539",
+                        "type":"text",
+                        "value":"other",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1554837719",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1554837719",
+                        "type":"regkey",
+                        "value":"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\MS-DOS Emulation",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1554837719",
+                        "type":"text",
+                        "value":"NTVDM â€‹ TRACE",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1554837719",
+                        "type":"text",
+                        "value":"19790509",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1554837719",
+                        "type":"text",
+                        "value":"HKCC",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1554837719",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

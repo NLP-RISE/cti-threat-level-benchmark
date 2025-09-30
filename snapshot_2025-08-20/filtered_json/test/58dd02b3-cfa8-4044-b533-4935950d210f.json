@@ -1,0 +1,159 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-30",
+        "published":true,
+        "info":"OSINT - Trochilus and New MoonWind RATs Used In Attack Against Thai Organizations",
+        "publish_timestamp":"1490879848",
+        "timestamp":"1490879821",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Trochilus\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"MoonWind\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490879753",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2017/03/unit42-trochilus-rat-new-moonwind-rat-used-attack-thai-utility-organizations/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490879753",
+                "type":"text",
+                "value":"From September 2016 through late November 2016, a threat actor group used both the Trochilus RAT and a newly idenfied RAT weâ€™ve named MoonWind to target organizations in Thailand, including a utility organization. We chose the name â€˜MoonWindâ€™ based on debugging strings we saw within the samples, as well as the compiler used to generate the samples. The attackers compromised two legitimate Thai websites to host the malware, which is a tactic this group has used in the past. Both the Trochilus and MoonWind RATs were hosted on the same compromised sites and used to target the same organization at the same time. The attackers used different command and control servers (C2s) for each malware family, a tactic we believe was meant to thwart attempts to tie the attacks together using infrastructure alone. The compromised websites are the site for a group of information technology companies in Thailand, and all the tools were stored in the same directory.\r\n\r\nWe were also able to find a post-compromise tool along with the two RATs, which afforeded us insight into one of the tools the attackers used once they gained a foothold inside an organization. In addition to Trochilus and MoonWind we found Mimikatz, a popular credential harvesting tool.\r\n\r\nFurther research led us to additional MoonWind samples using the same C2 (dns[.] webswindows [.]com) but hosted on a different compromised but legitimate website.  The attacks in that case took place in late September to early October 2016 and the attackers stored the MoonWind samples as RAR files, while in the November attacks the RATs were stored as executables. We were not able to find additional tools, but the attackers again compromised a legitimate Thai website to host their malware, in this case the student portal for a Thai University.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trochilus C&C",
+                "timestamp":"1490879753",
+                "type":"domain",
+                "value":"webswindows.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Trochilus C&C",
+                "timestamp":"1490879753",
+                "type":"ip-dst",
+                "value":"192.225.226.195",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trochilus",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind Persistence Mechanism",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind",
+                "timestamp":"1490879753",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1490879753",
+                "type":"hostname",
+                "value":"dns.webswindows.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind - Xchecked via VT: ce3da112e68e00621920911b1f9c72d7175894901173e703a44ac3700e4d427c",
+                "timestamp":"1490879763",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind - Xchecked via VT: ce3da112e68e00621920911b1f9c72d7175894901173e703a44ac3700e4d427c",
+                "timestamp":"1490879764",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MoonWind - Xchecked via VT: ce3da112e68e00621920911b1f9c72d7175894901173e703a44ac3700e4d427c",
+                "timestamp":"1490879765",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ce3da112e68e00621920911b1f9c72d7175894901173e703a44ac3700e4d427c/analysis/1477397321/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind - Xchecked via VT: fd4856f2ec676f273ff71e1b0a1729cf6251c82780fc9e7d628deca690b02928",
+                "timestamp":"1490879766",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MoonWind - Xchecked via VT: fd4856f2ec676f273ff71e1b0a1729cf6251c82780fc9e7d628deca690b02928",
+                "timestamp":"1490879767",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MoonWind - Xchecked via VT: fd4856f2ec676f273ff71e1b0a1729cf6251c82780fc9e7d628deca690b02928",
+                "timestamp":"1490879768",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fd4856f2ec676f273ff71e1b0a1729cf6251c82780fc9e7d628deca690b02928/analysis/1481830025/",
+                "to_ids":false
+            }
+        ]
+    }
+}

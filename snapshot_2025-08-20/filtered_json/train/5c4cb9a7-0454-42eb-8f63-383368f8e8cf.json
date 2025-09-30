@@ -1,0 +1,337 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-01-26",
+        "published":true,
+        "info":"2019-01-25: Lazarus Pakistan Toolkits",
+        "publish_timestamp":"1622020145",
+        "timestamp":"1621849995",
+        "Tag":[
+            {
+                "name":"Actor: Lazarus"
+            },
+            {
+                "name":"DPRK"
+            },
+            {
+                "name":"Malware: PowerRatankba,b"
+            },
+            {
+                "name":"PowerShell Installer"
+            },
+            {
+                "name":"Keylogger"
+            },
+            {
+                "name":"Country: Pakistan"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"PowerRatankba\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Lazarus Group\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Lazarus\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Lazarus Group - G0032\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Lazarus Group\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"PowerRatankba\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1548532135",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Lazarus Tools",
+                "timestamp":"1548532274",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Lazarus Tools",
+                "timestamp":"1548532274",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Lazarus Tools",
+                "timestamp":"1548532274",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1548532356",
+                "type":"url",
+                "value":"https://ecombox.store/tbl_add.php?action=cgetpsa",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1548532356",
+                "type":"url",
+                "value":"https://ecombox.store/tbl_add.php?action=cgetrun",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Yara for Keylogger",
+                "timestamp":"1548585989",
+                "type":"yara",
+                "value":"rule APT_Lazarus_Keylogger {\r\n   meta:\r\n      description = \"Detects possible Lazarus Keylogger\"\r\n      author = \"@VK_Intel\"\r\n      date = \"2019-01-25\"\r\n  strings:\r\n\t$s0 = \"%s%s\" fullword ascii wide\r\n\t$s1 = \"[ENTER]\" fullword ascii wide \r\n\t$s2 = \"[EX]\" fullword ascii wide\r\n\t$s3 = \"%02d:%02d\" fullword ascii wide\r\n        \r\n      \r\n\t$dll0 = \"PSLogger.dll\" fullword ascii wide\r\n\t$dll1 = \"capture_x64.dll\" fullword ascii wide        \r\n\t$exe = \"PSLogger.exe\" fullword ascii wide\r\n        \r\n condition:\r\n\tuint16(0) == 0x5a4d and all of ($s*) and (1 of ($dll*) or $exe)\r\n  }",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Original MISP event",
+                "timestamp":"1548586255",
+                "type":"link",
+                "value":"https://github.com/k-vitali/apt_lazarus_toolkits/blob/master/2019-01-26.lazarus_pakistan_misp_vk.json",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Original blog post",
+                "timestamp":"1548586254",
+                "type":"link",
+                "value":"https://www.vkremez.com/2019/01/lets-learn-dissecting-lazarus.html",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548586035",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548586036",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"datetime",
+                        "value":"2019-01-26T18:54:38",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/802efe9c41909354921009bd54be7dcf1ee14fcfaf62dacbcdaafbe051a711e3/analysis/1548528878/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"text",
+                        "value":"2/56",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548586036",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548586036",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"datetime",
+                        "value":"2019-01-25T21:10:16",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bed916831e8c9babfb6d08644058a61e3547d621f847c081309f616aed06c2fe/analysis/1548450616/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"text",
+                        "value":"3/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548586036",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548586036",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"datetime",
+                        "value":"2019-01-26T22:25:46",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/18f0ad8c58558d6eb8129f32cbc2905d0b63822185506b7c3bca49d423d837c7/analysis/1548541546/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548586036",
+                        "type":"text",
+                        "value":"3/56",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

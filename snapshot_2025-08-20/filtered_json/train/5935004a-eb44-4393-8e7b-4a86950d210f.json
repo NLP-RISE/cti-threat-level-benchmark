@@ -1,0 +1,146 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-05",
+        "published":true,
+        "info":"OSINT - Threat actors leverage EternalBlue exploit to deliver non-WannaCry payloads",
+        "publish_timestamp":"1496646208",
+        "timestamp":"1496646131",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"ETERNALBLUE\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"gh0st\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware-full:malware-family=\"Nitol\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1496646131",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2017/05/threat-actors-leverage-eternalblue-exploit-to-deliver-non-wannacry-payloads.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1496646131",
+                "type":"text",
+                "value":"The â€œEternalBlueâ€ exploit (MS017-010) was initially used by WannaCry ransomware and Adylkuzz cryptocurrency miner. Now more threat actors are leveraging the vulnerability in Microsoft Server Message Block (SMB) protocol â€“ this time to distribute Backdoor.Nitol and Trojan Gh0st RAT.\r\n\r\nFireEye Dynamic Threat Intelligence (DTI) has historically observed similar payloads delivered via exploitation of CVE-2014-6332 vulnerability as well as in some email spam campaigns using powershell commands. Specifically, Backdoor.Nitol has also been linked to campaigns involving a remote code execution vulnerability using the ADODB.Stream ActiveX Object that affects older versions of Internet Explorer. Both payloads have previously been involved in targeted cyber-attacks against the aerospace and defense industry.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1496646131",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1496646131",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"On port 45988 -  taskmgr.exe  (Nitol)",
+                "timestamp":"1496646131",
+                "type":"ip-dst|port",
+                "value":"121.201.9.204|45988",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 1541 - systemUpdate.exe (Gh0st)",
+                "timestamp":"1496646131",
+                "type":"hostname",
+                "value":"beiyeye.401hk.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 - (Nitol)",
+                "timestamp":"1496646131",
+                "type":"hostname",
+                "value":"hackqz.f3322.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C2 - On port 8880",
+                "timestamp":"1496646131",
+                "type":"ip-dst|port",
+                "value":"120.209.40.157|8880",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 (Gh0st)",
+                "timestamp":"1496646131",
+                "type":"hostname",
+                "value":"bj6po.a1free9bird.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309",
+                "timestamp":"1496646136",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309",
+                "timestamp":"1496646136",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309",
+                "timestamp":"1496646137",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4f49e17b457ef202ab0be905691ef2b2d2b0a086a7caddd1e70dd45e5ed3b309/analysis/1495688434/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946",
+                "timestamp":"1496646137",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946",
+                "timestamp":"1496646138",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946",
+                "timestamp":"1496646138",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cba19d228abf31ec8afab7330df3c9da60cd4dae376552b503aea6d7feff9946/analysis/1496639055/",
+                "to_ids":false
+            }
+        ]
+    }
+}

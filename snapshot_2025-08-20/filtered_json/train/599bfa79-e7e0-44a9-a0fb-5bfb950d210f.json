@@ -1,0 +1,266 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-21",
+        "published":true,
+        "info":"OSINT - Emotet, New high-volume spam campaign has links pointing to malicious documents that download banking Trojan",
+        "publish_timestamp":"1503407375",
+        "timestamp":"1503396657",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"spam\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet variant",
+                "timestamp":"1503395459",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"filename",
+                "value":"Invoice number <random digits>.doc",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"filename",
+                "value":"Invoice <random> reminder.doc",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"filename",
+                "value":"Invoice <random> Message.doc",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"attachment",
+                "value":"DHy6RZGUwAAW5Gb.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"attachment",
+                "value":"DHy6RZEVYAATaAD.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503395459",
+                "type":"link",
+                "value":"https://twitter.com/msftmmpc/status/899798902559318016",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet variant - Xchecked via VT: 9214359938285f26785f7eaf25a74dddea678065",
+                "timestamp":"1503395459",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Emotet variant - Xchecked via VT: 9214359938285f26785f7eaf25a74dddea678065",
+                "timestamp":"1503395459",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Emotet variant - Xchecked via VT: 9214359938285f26785f7eaf25a74dddea678065",
+                "timestamp":"1503395459",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/59639027a7fd487295bad10db896528ea223684e6595cae4ce9a0bec8d809087/analysis/1503373480/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://elabora.org/WNYK418522",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://magicians.co.nz/WQEL919279",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://poshevents.net/VJFH311487",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://kntfilms.com.ar/Galeria/PXNH119520",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://hercom.cl/GJBO609775",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://johnstonwells.com/joomla/STBD585747",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://yamtech.com.sa/WMZX43402",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395733",
+                "type":"url",
+                "value":"http://dekormc.pl/css/MQGK305215",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Emotet Links - 17th August 2017",
+                "timestamp":"1503395734",
+                "type":"url",
+                "value":"http://addidesign.com/LZIM941693",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://absoluteart.biz/Invoice-number-35490/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://dusk.be/Invoice-number-412790-Notification/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"https://polishbikers.com/3303-Invoice-Notice/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"bryntel.com/JWYFPGLBMH8935758/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://glacierhills.org/Rechnungs-Details-61357123952/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://showreggaeton.com/Invoice-827715/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://natech.com.br/wVZtWN/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://era.lt/wUGfcJn/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://omnisrecordings.com/HZKybTQwj/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://net5.com.au/WZwgR/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503396657",
+                "type":"url",
+                "value":"http://laguapafilms.com/BVgUGBfots/",
+                "to_ids":true
+            }
+        ]
+    }
+}

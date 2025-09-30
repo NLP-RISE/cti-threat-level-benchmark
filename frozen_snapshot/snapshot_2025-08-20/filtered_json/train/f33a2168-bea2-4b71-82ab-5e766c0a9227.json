@@ -1,0 +1,201 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2023-08-28",
+        "published":true,
+        "info":"Pandora analysis (INV0027378237.7z) - Malicious attachment",
+        "publish_timestamp":"1693208742",
+        "timestamp":"1693208729",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1693208501",
+                "type":"hostname",
+                "value":"rex1010.duckdns.org",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1693208159",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"filename",
+                        "value":"INV0027378237.7z",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"size-in-bytes",
+                        "value":"581791",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"float",
+                        "value":"7.99916572661",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"malware-sample",
+                        "value":"INV0027378237.7z|a86cc9672c8c4fdf34fba38b7c63562b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"mime-type",
+                        "value":"application/x-rar",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1693208159",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"1b254621918e9f35783c870d045e6bc0ed66696a: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1693208436",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1693208436",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/e8cdb541ecfffd85cd71fe64b08ed06728b7c14c4079a51b85b0032178338617",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1693208436",
+                        "type":"text",
+                        "value":"31/56",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"1b254621918e9f35783c870d045e6bc0ed66696a: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1693208436",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1693208436",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/ip_address/89.117.55.98",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1693208436",
+                        "type":"text",
+                        "value":"4/88",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"1b254621918e9f35783c870d045e6bc0ed66696a: Enriched via the virustotal module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1693208436",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1693208436",
+                        "type":"ip-dst",
+                        "value":"89.117.55.98",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

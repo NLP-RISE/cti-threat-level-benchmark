@@ -1,0 +1,478 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-01-31",
+        "published":true,
+        "info":"OSINT - Cutting Edge, Part 2: Investigating Ivanti Connect Secure VPN Zero-Day Exploitation",
+        "publish_timestamp":"1706730972",
+        "timestamp":"1706730921",
+        "Tag":[
+            {
+                "name":"misp-galaxy:country=\"china\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE C2 server",
+                "timestamp":"1706730201",
+                "type":"domain",
+                "value":"symantke.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730201",
+                "type":"domain",
+                "value":"miltonhouse.nl",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730201",
+                "type":"domain",
+                "value":"entraide-internationale.fr",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730201",
+                "type":"hostname",
+                "value":"api.d-n-s.name",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730201",
+                "type":"hostname",
+                "value":"cpanel.netbar.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730201",
+                "type":"domain",
+                "value":"clickcom.click",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"clicko.click",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"duorhytm.fun",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"line-api.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"areekaweb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"ehangmun.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730202",
+                "type":"domain",
+                "value":"secure-cama.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"146.0.228.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"159.65.130.146",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"8.137.112.245",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WARPWIRE variant C2 server",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"91.92.254.14",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Mass exploitation activity",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"186.179.39.235",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Post-exploitation activity",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"50.215.39.49",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Post-exploitation activity",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"45.61.136.14",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Post-exploitation activity",
+                "timestamp":"1706730921",
+                "type":"ip-dst",
+                "value":"173.220.106.166",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1706729402",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1706729402",
+                        "type":"link",
+                        "value":"https://www.mandiant.com/resources/blog/investigating-ivanti-zero-day-exploitation",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706729402",
+                        "type":"text",
+                        "value":"On Jan. 12, 2024, Mandiant published a blog post detailing two high-impact zero-day vulnerabilities, CVE-2023-46805 and CVE-2024-21887, affecting Ivanti Connect Secure VPN (CS, formerly Pulse Secure) and Ivanti Policy Secure (PS) appliances. On Jan. 31, 2024, Ivanti disclosed two additional vulnerabilities impacting CS and PS devices, CVE-2024-21888 and CVE-2024-21893.\r\n\r\nThe vulnerabilities allow for an unauthenticated threat actor to execute arbitrary commands on the appliance with elevated privileges. As previously reported, Mandiant has identified zero-day exploitation of these vulnerabilities in the wild beginning as early as Dec. 3, 2023 by a suspected China-nexus espionage threat actor currently being tracked as UNC5221. \r\n\r\nMandiant has identified broad exploitation activity following the disclosure of the two vulnerabilities, both by UNC5221 and other uncategorized threat groups. Mandiant assesses that a significant portion of the post-advisory activity has been performed through automated methods.\r\n\r\nIn this follow-up blog post, we detail additional tactics, techniques, and procedures (TTPs) employed by UNC5221 and other threat groups during post-exploitation activity across our incident response engagements. We also detail new malware families and variants to previously identified malware families being used by UNC5221. We acknowledge the possibility that one or more related groups may be associated with the activity described in this blog post. It is likely that additional groups beyond UNC5221 have adopted one or more of these tools.\r\n\r\nThese observations have been supported through Mandiant's incident response engagements, working with Ivanti, and our partners. Mandiant is also providing additional recommendations for network defenders, including indicators of compromise (IOCs), and YARA rules.\r\n\r\nNote: Ivanti has released its first round of patches starting today, and it is scheduled to continue rolling out additional patches over the coming weeks. Ivanti recommends customers awaiting patches to apply the mitigation, run the external Integrity Checker Tool (ICT) to check for evidence of exploitation, and continue following the KB article to receive product updates as they become available.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706729402",
+                        "type":"text",
+                        "value":"Cutting Edge, Part 2: Investigating Ivanti Connect Secure VPN Zero-Day Exploitation",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706729402",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"LIGHTWIRE web shell",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706729775",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729775",
+                        "type":"filename",
+                        "value":"compcheckresult.cgi",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729775",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"CHAINLINE web shell",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706729819",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729819",
+                        "type":"filename",
+                        "value":"health.py",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729819",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WARPWIRE credential harvester variant",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706729868",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729868",
+                        "type":"filename",
+                        "value":"lastauthserverused.js",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706729868",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1706730371",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730371",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1706730371",
+                        "type":"yara",
+                        "value":"rule M_Hunting_Webshell_BUSHWALK_1 {\r\n\r\n  meta:\r\n\r\n    author = \"Mandiant\"\r\n\r\n    description = \"This rule detects BUSHWALK, a webshell written in Perl CGI that is embedded into a legitimate Pulse Secure file to enable file transfers\"\r\n\r\n \r\n\r\n  strings:\r\n\r\n    $s1 = \"SafariiOS\" ascii\r\n\r\n    $s2 = \"command\" ascii\r\n\r\n    $s3 = \"change\" ascii\r\n\r\n    $s4 = \"update\" ascii\r\n\r\n    $s5 = \"$data = RC4($key, $data);\" ascii\r\n\r\n  condition:\r\n\r\n    filesize < 5KB\r\n\r\n    and all of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730371",
+                        "type":"text",
+                        "value":"M_Hunting_Webshell_BUSHWALK_1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1706730432",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730432",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1706730432",
+                        "type":"yara",
+                        "value":"rule M_Hunting_Webshell_CHAINLINE_1 {\r\n\r\n  meta:\r\n\r\n    author = \"Mandiant\"\r\n\r\n    description = \"This rule detects the CHAINLINE webshell, which receives \r\nRC4 encrypted commands and returns the execution result\"\r\n\r\n    md5 = \"3045f5b3d355a9ab26ab6f44cc831a83\"\r\n\r\n  strings:\r\n\r\n    $s1 = \"crypt(command: str)\" ascii\r\n\r\n    $s2 = \"tmp[i] = chr(ord(tmp[i])\" ascii\r\n\r\n    $s3 = \"ord(RC4_KEY[i % len(RC4_KEY)])\" ascii\r\n\r\n    $s4 = \"class Health(Resource)\" ascii\r\n\r\n    $s5 = \"crypt(base64.b64decode(command.encode(\" ascii\r\n\r\n    $s6 = \"base64.b64encode(crypt(result)\" ascii\r\n\r\n    $s7 = \"{\\\"message\\\": 'ok', \\\"stats\\\": result}\" ascii\r\n\r\n  condition:\r\n\r\n    filesize < 100KB and\r\n\r\n    any of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730432",
+                        "type":"text",
+                        "value":"M_Hunting_Webshell_CHAINLINE_1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1706730486",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730486",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1706730486",
+                        "type":"yara",
+                        "value":"rule M_HUNTING_APT_Webshell_FRAMESTING_result\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n        description = \"Detects strings associated with FRAMESTING webshell\"\r\n\r\n        md5 = \"465600cece80861497e8c1c86a07a23e\"\r\n\r\n    strings:\r\n\r\n        $s1 = \"exec(zlib.decompress(aes.decrypt(base64.b64decode(data))),{'request':request,'cache'\"\r\n\r\n        $s2 = \"result={'message':'','action':0}\"\r\n\r\n \r\n\r\n    condition:\r\n\r\n        any of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730486",
+                        "type":"text",
+                        "value":"M_HUNTING_APT_Webshell_FRAMESTING_result",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1706730524",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730524",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1706730524",
+                        "type":"yara",
+                        "value":"rule M_Hunting_Webshell_LIGHTWIRE_4 {\r\n\r\n  meta:\r\n\r\n    author = \"Mandiant\"\r\n\r\n    description = \"Detects LIGHTWIRE based on the RC4 \r\ndecoding and execution 1-liner.\"\r\n\r\n    md5 = \"3d97f55a03ceb4f71671aa2ecf5b24e9\"\r\n\r\n  strings:\r\n\r\n    $re1 = /eval\\{my.{1,20}Crypt::RC4->new\\(\\\".{1,50}->RC4\\(decode_base64\\(CGI::param\\(\\'.{1,30};eval\\s\\$.{1,30}\\\"Compatibility\\scheck:\\s\\$@\\\";\\}/\r\n\r\n  condition:\r\n\r\n    filesize < 1MB and all of them\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730524",
+                        "type":"text",
+                        "value":"M_Hunting_Webshell_LIGHTWIRE_4",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1706730577",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730577",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1706730577",
+                        "type":"yara",
+                        "value":"rule M_Hunting_CredTheft_WARPWIRE_strings\r\n\r\n{\r\n\r\n    meta:\r\n\r\n        author = \"Mandiant\"\r\n\r\n        description = \"Detects strings within WARPWIRE credential harvester\"\r\n\r\n        md5 = \"b15f47e234b5d26fb2cc81fc6fd89775\"\r\n\r\n    strings:\r\n\r\n        $header = \"function SetLastRealm(sValue) {\"\r\n\r\n \r\n\r\n        // password fields\r\n\r\n        $username = \"document.frmLogin.username.value;\"\r\n\r\n        $password = \"document.frmLogin.password.value;\"\r\n\r\n \r\n\r\n        // post version\r\n\r\n        $btoa = \"btoa(\"\r\n\r\n        $xhr_post = /xhr.open\\(.POST.,( )?url,/\r\n\r\n \r\n\r\n        // get version\r\n\r\n        $xhr_get = /xhr.open\\(.GET.,( )?url,/\r\n\r\n        $xhr_send = \"xhr.send(null);\"\r\n\r\n \r\n\r\n    condition:\r\n\r\n        $header in (0..100) \r\n\r\n        and $password in (@username[1]..@username[1]+100)\r\n\r\n        and ((#btoa > 1 and $xhr_post) or ($xhr_send in (@xhr_get[1]..@xhr_get[1]+50)))\r\n\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1706730577",
+                        "type":"text",
+                        "value":"M_Hunting_CredTheft_WARPWIRE_strings",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

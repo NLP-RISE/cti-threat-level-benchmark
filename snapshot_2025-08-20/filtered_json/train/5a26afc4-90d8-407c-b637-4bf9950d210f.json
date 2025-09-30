@@ -1,0 +1,1139 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-20",
+        "published":false,
+        "info":"OSINT - Mobile banking Trojan sneaks into Google Play targeting Wells Fargo, Chase and Citibank customers",
+        "publish_timestamp":"0",
+        "timestamp":"1512990858",
+        "Tag":[
+            {
+                "name":"workflow:state=\"incomplete\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"Android Malware"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"AndroidOS\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-platform=\"AndroidOS\""
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512484828",
+                "type":"link",
+                "value":"https://blog.avast.com/mobile-banking-trojan-sneaks-into-google-play-targeting-wells-fargo-chase-and-citibank-customers",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512984227",
+                "type":"comment",
+                "value":"The new version of BankBot has been hiding in apps that pose as supposedly trustworthy flashlight apps, tricking users into downloading them, in a first campaign. In a second campaign,  the solitaire games and a cleaner app have been dropping additional kinds of malware besides BankBot, called Mazar and Red Alert (Mazar was recently described by ESET and we won’t dive into the details here). However, instead of bringing light, joy and convenience into their users’ lives, the dark intention of these apps has been to spy on users, collect their bank login details and steal their money.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987343",
+                "type":"filename",
+                "value":"ar.nbad.emobile.android.mobilebank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987344",
+                "type":"filename",
+                "value":"at.bawag.mbanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987345",
+                "type":"filename",
+                "value":"at.spardat.bcrmobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987345",
+                "type":"filename",
+                "value":"at.spardat.netbanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987346",
+                "type":"filename",
+                "value":"au.com.bankwest.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987347",
+                "type":"filename",
+                "value":"au.com.cua.mb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987348",
+                "type":"filename",
+                "value":"au.com.nab.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987348",
+                "type":"filename",
+                "value":"au.com.newcastlepermanent",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987349",
+                "type":"filename",
+                "value":"au.com.suncorp.SuncorpBank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987350",
+                "type":"filename",
+                "value":"com.EurobankEFG",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987351",
+                "type":"filename",
+                "value":"com.adib.mbs",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987352",
+                "type":"filename",
+                "value":"com.advantage.RaiffeisenBank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987352",
+                "type":"filename",
+                "value":"com.anz.SingaporeDigitalBanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987353",
+                "type":"filename",
+                "value":"com.bankaustria.android.olb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987354",
+                "type":"filename",
+                "value":"com.bankofqueensland.boq",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987354",
+                "type":"filename",
+                "value":"com.barclays.ke.mobile.android.ui",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987355",
+                "type":"filename",
+                "value":"com.bbva.bbvacontigo",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987356",
+                "type":"filename",
+                "value":"com.bbva.netcash",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987357",
+                "type":"filename",
+                "value":"com.bendigobank.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987357",
+                "type":"filename",
+                "value":"com.bmo.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987358",
+                "type":"filename",
+                "value":"com.caisseepargne.android.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987359",
+                "type":"filename",
+                "value":"com.cajamar.Cajamar",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987360",
+                "type":"filename",
+                "value":"com.cbd.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987360",
+                "type":"filename",
+                "value":"com.clairmail.fth",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987361",
+                "type":"filename",
+                "value":"com.cm_prod.bad",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.comarch.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.csam.icici.bank.imobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.csg.cs.dnmb",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.db.mm.deutschebank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.db.mm.norisbank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.finansbank.mobile.cepsube",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.garanti.cepsubesi",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987362",
+                "type":"filename",
+                "value":"com.getingroup.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.htsu.hsbcpersonalbanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.imb.banking2",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.infonow.bofa",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.ing.diba.mbbr2",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.ing.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.konylabs.capitalone",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.mobileloft.alpha.droid",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.moneybookers.skrillpayments",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.moneybookers.skrillpayments.neteller",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.pozitron.iscep",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.rak",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.rsi",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.sbi.SBIFreedomPlus",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.snapwork.hdfc",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.starfinanz.smob.android.sfinanzstatus",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.suntrust.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.targo_prod.bad",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.tmobtech.halkbank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.unicredit",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.usaa.mobile.android.usaa",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.usbank.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.vakifbank.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.vipera.ts.starter.FGB",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.vipera.ts.starter.MashreqAE",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.wf.wellsfargomobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"com.ziraat.ziraatmobil",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"cz.csob.smartbanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"cz.sberbankcz",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"de.commerzbanking.mobil",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"de.direkt1822.banking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"de.dkb.portalapp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"de.fiducia.smartphone.android.banking.vr",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"de.postbank.finanzassistent",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"enbd.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"es.bancosantander.apps",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987363",
+                "type":"filename",
+                "value":"es.ibercaja.ibercajaapp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987364",
+                "type":"filename",
+                "value":"es.lacaixa.mobile.android.newwapicon",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987364",
+                "type":"filename",
+                "value":"es.univia.unicajamovil",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987365",
+                "type":"filename",
+                "value":"eu.eleader.mobilebanking.pekao",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987366",
+                "type":"filename",
+                "value":"eu.eleader.mobilebanking.pekao.firm",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987367",
+                "type":"filename",
+                "value":"eu.inmite.prj.kb.mobilbank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987367",
+                "type":"filename",
+                "value":"eu.unicreditgroup.hvbapptan",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987368",
+                "type":"filename",
+                "value":"fr.banquepopulaire.cyberplus",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987369",
+                "type":"filename",
+                "value":"fr.creditagricole.androidapp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987369",
+                "type":"filename",
+                "value":"fr.laposte.lapostemobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987370",
+                "type":"filename",
+                "value":"fr.lcl.android.customerarea",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987371",
+                "type":"filename",
+                "value":"gr.winbank.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987372",
+                "type":"filename",
+                "value":"in.co.bankofbaroda.mpassbook",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987372",
+                "type":"filename",
+                "value":"mbanking.NBG",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987373",
+                "type":"filename",
+                "value":"mobi.societegenerale.mobile.lappli",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987374",
+                "type":"filename",
+                "value":"net.bnpparibas.mescomptes",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987375",
+                "type":"filename",
+                "value":"nz.co.anz.android.mobilebanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987376",
+                "type":"filename",
+                "value":"nz.co.asb.asbmobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987376",
+                "type":"filename",
+                "value":"nz.co.bnz.droidbanking",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987377",
+                "type":"filename",
+                "value":"nz.co.kiwibank.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987378",
+                "type":"filename",
+                "value":"nz.co.westpac",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987378",
+                "type":"filename",
+                "value":"pl.bzwbk.bzwbk24",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987379",
+                "type":"filename",
+                "value":"pl.bzwbk.ibiznes24",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987380",
+                "type":"filename",
+                "value":"pl.ipko.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987381",
+                "type":"filename",
+                "value":"pl.mbank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987381",
+                "type":"filename",
+                "value":"pt.bancobpi.mobile.fiabilizacao",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987382",
+                "type":"filename",
+                "value":"pt.cgd.caixadirecta",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987383",
+                "type":"filename",
+                "value":"pt.novobanco.nbapp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987383",
+                "type":"filename",
+                "value":"ro.btrl.mobile",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987383",
+                "type":"filename",
+                "value":"src.com.idbi",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987383",
+                "type":"filename",
+                "value":"wit.android.bcpBankingApp.activoBank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987383",
+                "type":"filename",
+                "value":"wit.android.bcpBankingApp.millennium",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987384",
+                "type":"filename",
+                "value":"wit.android.bcpBankingApp.millenniumPL",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987384",
+                "type":"filename",
+                "value":"www.ingdirect.nativeframe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987451",
+                "type":"filename",
+                "value":"au.com.ingdirect.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987451",
+                "type":"filename",
+                "value":"ch.raiffeisen.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987452",
+                "type":"filename",
+                "value":"com.adcb.bank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987453",
+                "type":"filename",
+                "value":"com.dib.app",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987454",
+                "type":"filename",
+                "value":"com.cibc.android.mobi",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987455",
+                "type":"filename",
+                "value":"com.chase.sig.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987455",
+                "type":"filename",
+                "value":"com.commbank.netbank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987456",
+                "type":"filename",
+                "value":"com.comarch.mobile.banking.bnpparibas",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987457",
+                "type":"filename",
+                "value":"com.citibank.mobile.au",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987457",
+                "type":"filename",
+                "value":"com.finanteq.finance.ca",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987458",
+                "type":"filename",
+                "value":"hr.asseco.android.jimba.mUCI.ro",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987459",
+                "type":"filename",
+                "value":"com.unionbank.ecommerce.mobile.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987460",
+                "type":"filename",
+                "value":"com.scb.breezebanking.hk",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987460",
+                "type":"filename",
+                "value":"cz.airbank.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987461",
+                "type":"filename",
+                "value":"com.ykb.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987462",
+                "type":"filename",
+                "value":"com.ubs.swidKXJ.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987463",
+                "type":"filename",
+                "value":"de.comdirect.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987463",
+                "type":"filename",
+                "value":"es.cm.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987464",
+                "type":"filename",
+                "value":"may.maybank.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987465",
+                "type":"filename",
+                "value":"de.sdvrz.ihb.mobile.app",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987466",
+                "type":"filename",
+                "value":"mobile.santander.de",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987466",
+                "type":"filename",
+                "value":"com.palatine.android.mobilebanking.prod",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987467",
+                "type":"filename",
+                "value":"org.stgeorge.bank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987468",
+                "type":"filename",
+                "value":"org.banksa.bank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987469",
+                "type":"filename",
+                "value":"net.inverline.bancosabadell.officelocator.android",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987469",
+                "type":"filename",
+                "value":"org.westpac.bank",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Targeted Apps",
+                "timestamp":"1512987470",
+                "type":"filename",
+                "value":"org.bom.bank",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Samples in Play Store - First Campaign",
+                "timestamp":"1512989394",
+                "type":"attachment",
+                "value":"Section1Chart1.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"First Campaign - Payload Downloaded",
+                "timestamp":"1512989499",
+                "type":"attachment",
+                "value":"Section1Chart2.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Second Campaign",
+                "timestamp":"1512989381",
+                "type":"attachment",
+                "value":"Section2Chart1.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Second Campaign - Payload Downloaded",
+                "timestamp":"1512989414",
+                "type":"attachment",
+                "value":"Section3.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Second Campaign",
+                "timestamp":"1512989507",
+                "type":"attachment",
+                "value":"Section2Chart2.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Control Panel",
+                "timestamp":"1512989530",
+                "type":"attachment",
+                "value":"Section4ControlPanel.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Hosts",
+                "timestamp":"1512989517",
+                "type":"attachment",
+                "value":"Section4Hosts.jpg",
+                "to_ids":false
+            }
+        ]
+    }
+}

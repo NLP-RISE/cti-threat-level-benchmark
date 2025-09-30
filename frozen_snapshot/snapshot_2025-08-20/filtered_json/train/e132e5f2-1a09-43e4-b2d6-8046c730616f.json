@@ -1,0 +1,393 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-12-13",
+        "published":true,
+        "info":"OSINT - Fortinet says SSL-VPN pre-auth RCE bug is exploited in attacks",
+        "publish_timestamp":"1671440309",
+        "timestamp":"1671440259",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/lib/libips.bak",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/lib/libgif.so",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/lib/libiptcp.so",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/lib/libipudp.so",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/lib/libjepg.so",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/var/.sslvpnconfigbk",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/data/etc/wxd.conf",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"IDS not flag not set (as many FPs are possible) but for forensic evaluation it could be useful (as mentioned in Fortinet report as \"Presence of the following artifacts in the filesystem:\").",
+                "timestamp":"1670918523",
+                "type":"filename-pattern",
+                "value":"/flash",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"139.180.184.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"66.42.91.32",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"158.247.221.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"107.148.27.117",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"139.180.128.142",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"155.138.224.122",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1671440259",
+                "type":"ip-dst",
+                "value":"185.174.136.20",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1670917344",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1670917344",
+                        "type":"link",
+                        "value":"https://www.bleepingcomputer.com/news/security/fortinet-says-ssl-vpn-pre-auth-rce-bug-is-exploited-in-attacks/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670917344",
+                        "type":"text",
+                        "value":"Fortinet urges customers to patch their appliances against an actively exploited FortiOS SSL-VPN vulnerability that could allow unauthenticated remote code execution on devices.\r\n\r\nThe security flaw is tracked as CVE-2022-42475 and is a heap-based buffer overflow bug in FortiOS sslvpnd. When exploited, the flaw could allow unauthenticated users to crash devices remotely and potentially perform code execution.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670917344",
+                        "type":"text",
+                        "value":"Webpage",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1670917384",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917384",
+                        "type":"port",
+                        "value":"444",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917384",
+                        "type":"ip-dst",
+                        "value":"188.34.130.40",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1670917433",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917433",
+                        "type":"port",
+                        "value":"30080",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917433",
+                        "type":"port",
+                        "value":"30081",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917433",
+                        "type":"port",
+                        "value":"30443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917433",
+                        "type":"port",
+                        "value":"20443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917433",
+                        "type":"ip-dst",
+                        "value":"103.131.189.143",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1670917487",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917487",
+                        "type":"port",
+                        "value":"8443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917487",
+                        "type":"port",
+                        "value":"444",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917487",
+                        "type":"ip-dst",
+                        "value":"192.36.119.61",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1670917560",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917560",
+                        "type":"port",
+                        "value":"8033",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1670917560",
+                        "type":"ip-dst",
+                        "value":"172.247.168.153",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1670917641",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1670917641",
+                        "type":"link",
+                        "value":"https://www.fortiguard.com/psirt/FG-IR-22-398",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670917641",
+                        "type":"text",
+                        "value":"A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670917641",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1670918093",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670918093",
+                        "type":"text",
+                        "value":"FG-IR-22-398",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1670918093",
+                        "type":"vulnerability",
+                        "value":"CVE-2022-42475",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Internal reference",
+                        "comment":"",
+                        "timestamp":"1670918093",
+                        "type":"text",
+                        "value":"Vulnerability ID Assigned",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1670918093",
+                        "type":"text",
+                        "value":"FortiOS version 7.2.0 through 7.2.2\r\nFortiOS version 7.0.0 through 7.0.8\r\nFortiOS version 6.4.0 through 6.4.10\r\nFortiOS version 6.2.0 through 6.2.11\r\nFortiOS-6K7K version 7.0.0 through 7.0.7\r\nFortiOS-6K7K version 6.4.0 through 6.4.9\r\nFortiOS-6K7K version 6.2.0 through 6.2.11\r\nFortiOS-6K7K version 6.0.0 through 6.0.14\r\nare vulnerable",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

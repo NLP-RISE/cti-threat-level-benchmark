@@ -1,0 +1,148 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-07-19",
+        "published":true,
+        "info":"Email Credential Phish, Dropbox Theme",
+        "publish_timestamp":"1593669716",
+        "timestamp":"1621849813",
+        "Tag":[
+            {
+                "name":"veris:action:social:variety=\"Phishing\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015584",
+                "type":"url",
+                "value":"https://ahqcs.fr/.quantum/1/direct.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015584",
+                "type":"url",
+                "value":"https://abri.org/.q/1/emailprovider/signin/off.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015584",
+                "type":"url",
+                "value":"https://abri.org/.q/1/emailprovider/signin/other.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015584",
+                "type":"url",
+                "value":"https://abri.org/.q/1/emailprovider/signin/Gmaildocs.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015584",
+                "type":"url",
+                "value":"https://abri.org/.q/1/emailprovider/signin/connect.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised WordPress Site",
+                "timestamp":"1532015670",
+                "type":"domain",
+                "value":"ahqcs.fr",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised WordPress Site",
+                "timestamp":"1532015672",
+                "type":"domain",
+                "value":"abri.org",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015867",
+                "type":"attachment",
+                "value":"other mail phish page.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015867",
+                "type":"attachment",
+                "value":"gmail phish page.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015867",
+                "type":"attachment",
+                "value":"0365 phish page.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1532015867",
+                "type":"attachment",
+                "value":"phishing site.jpg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1532015776",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1532015810",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1532015810",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1532015810",
+                        "type":"filename",
+                        "value":"Quantum Logistics 07192018.pdf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1532015819",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

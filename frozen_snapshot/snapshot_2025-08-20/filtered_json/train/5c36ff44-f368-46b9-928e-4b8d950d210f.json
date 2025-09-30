@@ -1,0 +1,144 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-09",
+        "published":false,
+        "info":"OSINT -  CryptoMix Ransomware Exploits Crowdfunding Sites for Child Cancer Treatment",
+        "publish_timestamp":"0",
+        "timestamp":"1547113008",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"CryptoMix\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547108661",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/cryptomix-ransomware-exploits-sick-children-to-coerce-payments/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547108661",
+                "type":"link",
+                "value":"https://www.coveware.com/blog/cryptomix-ransomware-exploits-cancer-crowdfunding",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547108610",
+                "type":"attachment",
+                "value":"scam-header.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547108660",
+                "type":"text",
+                "value":"With people becoming more aware of ransomware, criminals are coming up with some pretty low life schemes in order to coerce victims into paying ransomware. Such is the case with a CryptoMix ransomware, who pretends to represent a sick children's charity and is asking for a ransom payment as if it was a charitable donation.\r\n\r\nCryptoMix pretending to be a children's charity is not new, but this latest iteration is taking it to the next level of depravity by including stories and information taken from legitimate crowdfunding pages for sick children.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108802",
+                "type":"email-src",
+                "value":"windat@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108803",
+                "type":"email-src",
+                "value":"windat1@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108803",
+                "type":"email-src",
+                "value":"windat@dr.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108804",
+                "type":"email-src",
+                "value":"windat@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108804",
+                "type":"email-src",
+                "value":"windat1@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contact email",
+                "timestamp":"1547108804",
+                "type":"email-src",
+                "value":"windat2@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547109533",
+                "type":"attachment",
+                "value":"ransom-note.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547109754",
+                "type":"attachment",
+                "value":"email-correspondence.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547109765",
+                "type":"attachment",
+                "value":"onetimesecret-message.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547109775",
+                "type":"attachment",
+                "value":"payment-message.jpg",
+                "to_ids":false
+            }
+        ]
+    }
+}

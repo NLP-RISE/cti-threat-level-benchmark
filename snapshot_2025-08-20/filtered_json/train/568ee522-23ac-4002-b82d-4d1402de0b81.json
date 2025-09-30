@@ -1,0 +1,98 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-01-07",
+        "published":true,
+        "info":"OSINT -  Clickjacking Campaign Plays on European Cookie Law",
+        "publish_timestamp":"1452526919",
+        "timestamp":"1452526911",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"c\""
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"3\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1452205465",
+                "type":"link",
+                "value":"https://blog.malwarebytes.org/fraud-scam/2016/01/clickjacking-campaign-plays-on-european-cookie-law/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Ad network involved",
+                "timestamp":"1452526911",
+                "type":"domain",
+                "value":"popcash.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1452205526",
+                "type":"domain",
+                "value":"featurewebhosting.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1452205526",
+                "type":"domain",
+                "value":"elitewebhostings.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1452205527",
+                "type":"domain",
+                "value":"bestcartoday.info",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1452205527",
+                "type":"domain",
+                "value":"hotcartop.online",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1452205527",
+                "type":"domain",
+                "value":"ivirtualcloudhost.com",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1452205637",
+                "type":"comment",
+                "value":"Weâ€™ve spotted an advertising campaign that tricks users into clicking on what looks like a notification alert that actually hides a legitimate advert, therefore abusing both the advertiser and the ad network hosting the ad (Google Ads Services).\r\n\r\nThe rogue actors behind this fraudulent activity are cleverly leveraging a European law on the use of cookies to seemingly prompt visitors to answer a question.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1452205705",
+                "type":"comment",
+                "value":"No IDS flags set as it seems to be only clickjacking fraud.",
+                "to_ids":false
+            }
+        ]
+    }
+}

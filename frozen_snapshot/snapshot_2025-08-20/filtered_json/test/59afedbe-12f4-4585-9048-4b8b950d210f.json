@@ -1,0 +1,280 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-06",
+        "published":true,
+        "info":"OSINT - Dragonfly: Western energy sector targeted by sophisticated attack group",
+        "publish_timestamp":"1504707371",
+        "timestamp":"1504707359",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Dragonfly\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Energetic Bear\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"certsi:critical-sector=\"energy\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.symantec.com/connect/blogs/dragonfly-western-energy-sector-targeted-sophisticated-attack-group",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504707351",
+                "type":"comment",
+                "value":"The energy sector in Europe and North America is being targeted by a new wave of cyber attacks that could provide attackers with the means to severely disrupt affected operations. The group behind these attacks is known as Dragonfly. The group has been in operation since at least 2011 but has re-emerged over the past two years from a quiet period following exposure by Symantec and a number of other researchers in 2014. This â€œDragonfly 2.0â€ campaign, which appears to have begun in late 2015, shares tactics and tools used in earlier campaigns by the group.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Dorshel",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Karagany.B",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Heriplor",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Listrix",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Credrix",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Goodor",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Phisherly",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Screenutil",
+                "timestamp":"1504707351",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command & Control for Backdoor.Dorshel",
+                "timestamp":"1504707351",
+                "type":"url",
+                "value":"http://103.41.177.69/A56WY",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command & Control for Trojan.Karagany.B",
+                "timestamp":"1504707351",
+                "type":"url",
+                "value":"http://37.1.202.26/getimage/622622.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Command & Control for Trojan.Phisherly",
+                "timestamp":"1504707351",
+                "type":"ip-dst",
+                "value":"184.154.150.66",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Phisherly - Xchecked via VT: 141e78d16456a072c9697454fc6d5f58",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Phisherly - Xchecked via VT: 141e78d16456a072c9697454fc6d5f58",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Trojan.Phisherly - Xchecked via VT: 141e78d16456a072c9697454fc6d5f58",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c272a2d96aefdef746f983e7f8720792e8a6dee97a766a651dc55f70f605b23d/analysis/1504702236/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Credrix - Xchecked via VT: a4cf567f27f3b2f8b73ae15e2e487f00",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hacktool.Credrix - Xchecked via VT: a4cf567f27f3b2f8b73ae15e2e487f00",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Hacktool.Credrix - Xchecked via VT: a4cf567f27f3b2f8b73ae15e2e487f00",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/178348c14324bc0a3e57559a01a6ae6aa0cb4013aabbe324b51f906dcf5d537e/analysis/1504704171/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Listrix - Xchecked via VT: da9d8c78efe0c6c8be70e6b857400fb1",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Listrix - Xchecked via VT: da9d8c78efe0c6c8be70e6b857400fb1",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Trojan.Listrix - Xchecked via VT: da9d8c78efe0c6c8be70e6b857400fb1",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fc54d8afd2ce5cb6cc53c46783bf91d0dd19de604308d536827320826bc36ed9/analysis/1504707156/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Heriplor - Xchecked via VT: e02603178c8c47d198f7d34bcf2d68b8",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Heriplor - Xchecked via VT: e02603178c8c47d198f7d34bcf2d68b8",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Trojan.Heriplor - Xchecked via VT: e02603178c8c47d198f7d34bcf2d68b8",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b051a5997267a5d7fa8316005124f3506574807ab2b25b037086e2e971564291/analysis/1504704663/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Karagany.B - Xchecked via VT: 1560f68403c5a41e96b28d3f882de7f1",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Trojan.Karagany.B - Xchecked via VT: 1560f68403c5a41e96b28d3f882de7f1",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Trojan.Karagany.B - Xchecked via VT: 1560f68403c5a41e96b28d3f882de7f1",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/28143c7638f22342bff8edcd0bedd708e265948a5fcca750c302e2dca95ed9f0/analysis/1504696978/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Dorshel - Xchecked via VT: b3b5d67f5bbf5a043f5bf5d079dbcb56",
+                "timestamp":"1504707351",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor.Dorshel - Xchecked via VT: b3b5d67f5bbf5a043f5bf5d079dbcb56",
+                "timestamp":"1504707351",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor.Dorshel - Xchecked via VT: b3b5d67f5bbf5a043f5bf5d079dbcb56",
+                "timestamp":"1504707351",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cee4211af96df184236e816ab0b11d95d1075148299a29719fcd9675b2714426/analysis/1504696840/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,393 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-11-21",
+        "published":true,
+        "info":"Is Hagga Threat Actor (ab)using FSociety framework ?",
+        "publish_timestamp":"1683878282",
+        "timestamp":"1683878227",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1683876737",
+                "type":"ip-dst",
+                "value":"4.204.233.44",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1683876713",
+                "type":"ip-dst",
+                "value":"69.174.99.181",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1683876720",
+                "type":"ip-dst",
+                "value":"103.151.123.121",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Drop and Execute",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1683876806",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683876770",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683876782",
+                        "type":"filename",
+                        "value":"update.js",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Drop, evasion and Memory Invoke",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1683877360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877340",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877352",
+                        "type":"filename",
+                        "value":"Dll.ppam",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1683877461",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877421",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877461",
+                        "type":"filename",
+                        "value":"Rump.xls",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"post exploitation tool, C2 communication decoded",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1683877608",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877578",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1683877608",
+                        "type":"filename",
+                        "value":"Rump.xls.inverted.charsReplaced.decoded",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"x509 object describing a X.509 certificate",
+                "meta-category":"network",
+                "name":"x509",
+                "timestamp":"1683877767",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683877767",
+                        "type":"x509-fingerprint-sha1",
+                        "value":"970f993ad1a289620b5f5033ff5e0b5c4491bb2b",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877767",
+                        "type":"text",
+                        "value":"servidor",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877767",
+                        "type":"text",
+                        "value":"136234453590953102797263558291395548452",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877767",
+                        "type":"boolean",
+                        "value":"0",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"x509 object describing a X.509 certificate",
+                "meta-category":"network",
+                "name":"x509",
+                "timestamp":"1683877818",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683877818",
+                        "type":"x509-fingerprint-sha1",
+                        "value":"b0238c547a905bfa119c4e8baccaeacf36491ff6",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877818",
+                        "type":"text",
+                        "value":"localhost",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877818",
+                        "type":"text",
+                        "value":"13098529066745705731",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683877818",
+                        "type":"boolean",
+                        "value":"0",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Command And Control",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1683877880",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683877880",
+                        "type":"port",
+                        "value":"8895",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683877880",
+                        "type":"ip-dst",
+                        "value":"103.151.123.121",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Enriched via the url_import module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1683878027",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878027",
+                        "type":"url",
+                        "value":"http://4.204.233.44/Rump/Rump.xls",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878027",
+                        "type":"text",
+                        "value":"/Rump/Rump.xls",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878027",
+                        "type":"hostname",
+                        "value":"4.204.233.44",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878027",
+                        "type":"text",
+                        "value":"4.204.233.44",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878027",
+                        "type":"domain",
+                        "value":"4.204.233.44",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Enriched via the url_import module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1683878052",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878052",
+                        "type":"url",
+                        "value":"http://4.204.233.44/Dll/Dll.ppam",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878052",
+                        "type":"text",
+                        "value":"/Dll/Dll.ppam",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878052",
+                        "type":"hostname",
+                        "value":"4.204.233.44",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878052",
+                        "type":"text",
+                        "value":"4.204.233.44",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1683878052",
+                        "type":"domain",
+                        "value":"4.204.233.44",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1683878227",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1683878227",
+                        "type":"link",
+                        "value":"https://marcoramilli.com/2022/11/21/is-hagga-threat-actor-abusing-fsociety-framework/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878227",
+                        "type":"text",
+                        "value":"Is Hagga Threat Actor (ab)using FSociety framework ?\r\napt cybersecurity malwareNovember 21, 2022\r\nIntroduction\r\n\r\nToday I’d like to share a quick analysis initiated during a threat hunting process. The first observable was found during hunting process over OSINT sources, the entire infrastructure was still up and running during the analyses as well as malicious payload were downloadable.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1683878227",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2021-09-05",
+        "published":true,
+        "info":"Domain Propagation Test",
+        "publish_timestamp":"1630839616",
+        "timestamp":"1630839554",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"This is a dummy domain to test how quickly domains propagate to other blocklists. Also see https://www.botvrij.eu/domain-propagation.htm",
+                "timestamp":"1630839488",
+                "type":"domain",
+                "value":"domain-propagation-test.be",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"This is a dummy domain to test how quickly domains propagate to other blocklists. Also see https://www.botvrij.eu/domain-propagation.htm",
+                "timestamp":"1630839488",
+                "type":"url",
+                "value":"https://domain-propagation-test.be",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"This is a dummy domain to test how quickly domains propagate to other blocklists. Also see https://www.botvrij.eu/domain-propagation.htm",
+                "timestamp":"1630839488",
+                "type":"hostname",
+                "value":"domain-propagation-test.be",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1630839439",
+                "type":"comment",
+                "value":"This is a dummy domain to test how quickly domains propagate to other blocklists. Also see https://www.botvrij.eu/domain-propagation.html",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1630839473",
+                "type":"comment",
+                "value":"This domain does not point to malicious content, and does not have a malicious history.",
+                "to_ids":false
+            }
+        ]
+    }
+}

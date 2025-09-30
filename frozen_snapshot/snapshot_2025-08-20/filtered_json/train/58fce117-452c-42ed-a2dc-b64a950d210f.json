@@ -1,0 +1,92 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-23",
+        "published":true,
+        "info":"OSINT - FlexSpy Application Analysis",
+        "publish_timestamp":"1492981296",
+        "timestamp":"1492981249",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1492967971",
+                "type":"link",
+                "value":"http://www.cybermerchantsofdeath.com/blog/2017/04/23/FlexiSpy.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1492967972",
+                "type":"text",
+                "value":"On 04/22/2017 FlexiDie released source code and binaries for FlexiSpyâ€™s mobile spyware program. Being a good reverse engineer that I am, my analysis is below. The IOC section is intended for other reverse engineers and antivirus vendors. General Overview is intended for journalists. I will release a detailed technical teardown in a day or two.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"(found in com.vvt.phoenix.prot.test.CSMTest",
+                "timestamp":"1492967795",
+                "type":"url",
+                "value":"http://58.137.119.229/RainbowCore/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"found in source//location_capture/tests/location_capture_tests/src/com/vvt/locationcapture/tests/Location_capture_testsActivity.java:",
+                "timestamp":"1492967796",
+                "type":"url",
+                "value":"http://trkps.com/m.php?lat=%f&long=%f&t=%s&i=%s&z=5",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8880",
+                "timestamp":"1492967797",
+                "type":"url",
+                "value":"http://202.176.88.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Another IP address was found commented out in the code base //private String mUrl =",
+                "timestamp":"1492967868",
+                "type":"ip-dst",
+                "value":"202.176.88.55",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"(found in com.vvt.phoenix.prot.test.CSMTest)",
+                "timestamp":"1492967869",
+                "type":"ip-dst",
+                "value":"58.137.119.229",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"In sample comments",
+                "timestamp":"1492981246",
+                "type":"ip-dst",
+                "value":"58.137.119.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"In sample comments",
+                "timestamp":"1492981248",
+                "type":"ip-dst",
+                "value":"58.137.119.239",
+                "to_ids":true
+            }
+        ]
+    }
+}

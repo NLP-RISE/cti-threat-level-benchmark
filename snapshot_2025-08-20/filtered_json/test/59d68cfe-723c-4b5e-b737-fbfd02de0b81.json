@@ -1,0 +1,457 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-05",
+        "published":true,
+        "info":"OSINT - FreeMilk: A Highly Targeted Spear Phishing Campaign",
+        "publish_timestamp":"1507283587",
+        "timestamp":"1507283579",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://researchcenter.paloaltonetworks.com/2017/10/unit42-freemilk-highly-targeted-spear-phishing-campaign/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"text",
+                "value":"In May 2017, Palo Alto Networks Unit 42 identified a limited spear phishing campaign targeting various individuals across the world. The threat actor leveraged the CVE-2017-0199 Microsoft Word Office/WordPad Remote Code Execution Vulnerability with carefully crafted decoy content customized for each target recipient. Our research showed that the spear phishing emails came from multiple compromised email accounts tied to a legitimate domain in North East Asia. We believe that the threat actor hijacked an existing, legitimate in-progress conversation and posed as the legitimate senders to send malicious spear phishing emails to the recipients",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JavaScript to extract and run the payload",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"url",
+                "value":"http://old.jrchina.com/btob_asiana/udel_ok.ipp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fake image extracts to Freenki downloader",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"url",
+                "value":"http://old.jrchina.com/btob_asiana/appach01.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PoohMilk loader",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"vulnerability",
+                "value":"CVE-2017-0199",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Windows-KB276133-x86.exe",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Windows-KB251952-x86.exe",
+                "timestamp":"1507283579",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"http://www.ethanpublishing.com/ethanpublishing/phpcms/templates/default/member/pub/jquery_min_2.2.6.js",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"hostname",
+                "value":"old.jrchina.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"hostname",
+                "value":"foodforu.heliohost.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"hostname",
+                "value":"www.ethanpublishing.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507233592",
+                "type":"domain",
+                "value":"discgolfglow.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ef40f7ddff404d1193e025081780e32f88883fa4dd496f4189084d772a435cb2",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ef40f7ddff404d1193e025081780e32f88883fa4dd496f4189084d772a435cb2",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: ef40f7ddff404d1193e025081780e32f88883fa4dd496f4189084d772a435cb2",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ef40f7ddff404d1193e025081780e32f88883fa4dd496f4189084d772a435cb2/analysis/1507220836/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 34478d6692f8c28332751b31fd695b799d4ab36a8c12f7b728e2cb99ae2efcd9",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 34478d6692f8c28332751b31fd695b799d4ab36a8c12f7b728e2cb99ae2efcd9",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 34478d6692f8c28332751b31fd695b799d4ab36a8c12f7b728e2cb99ae2efcd9",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/34478d6692f8c28332751b31fd695b799d4ab36a8c12f7b728e2cb99ae2efcd9/analysis/1507217555/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0f82ea2f92c7e906ee9ffbbd8212be6a8545b9bb0200eda09cce0ba9d7cb1313",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0f82ea2f92c7e906ee9ffbbd8212be6a8545b9bb0200eda09cce0ba9d7cb1313",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 0f82ea2f92c7e906ee9ffbbd8212be6a8545b9bb0200eda09cce0ba9d7cb1313",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0f82ea2f92c7e906ee9ffbbd8212be6a8545b9bb0200eda09cce0ba9d7cb1313/analysis/1507217556/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 201b876bcb97f6c8972cc677bdf1e3e2b2f069ae2ec4653db8af4797884efa30",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 201b876bcb97f6c8972cc677bdf1e3e2b2f069ae2ec4653db8af4797884efa30",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 201b876bcb97f6c8972cc677bdf1e3e2b2f069ae2ec4653db8af4797884efa30",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/201b876bcb97f6c8972cc677bdf1e3e2b2f069ae2ec4653db8af4797884efa30/analysis/1506334002/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: a50543919c52ccaea40155ce35aa791bc86bd634240fb51922827223aca5c88a",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: a50543919c52ccaea40155ce35aa791bc86bd634240fb51922827223aca5c88a",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: a50543919c52ccaea40155ce35aa791bc86bd634240fb51922827223aca5c88a",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a50543919c52ccaea40155ce35aa791bc86bd634240fb51922827223aca5c88a/analysis/1507233005/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"http://www.ethanpublishing.com/ethanpublishing/phpcms/templates/default/member/pub/jquery_min_2.2.6.js - Xchecked via VT: 99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"http://www.ethanpublishing.com/ethanpublishing/phpcms/templates/default/member/pub/jquery_min_2.2.6.js - Xchecked via VT: 99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"http://www.ethanpublishing.com/ethanpublishing/phpcms/templates/default/member/pub/jquery_min_2.2.6.js - Xchecked via VT: 99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/99c1b4887d96cb94f32b280c1039b3a7e39ad996859ffa6dd011cf3cca4f1ba5/analysis/1507217555/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 35273d6c25665a19ac14d469e1436223202be655ee19b5b247cb1afef626c9f2",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 35273d6c25665a19ac14d469e1436223202be655ee19b5b247cb1afef626c9f2",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 35273d6c25665a19ac14d469e1436223202be655ee19b5b247cb1afef626c9f2",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/35273d6c25665a19ac14d469e1436223202be655ee19b5b247cb1afef626c9f2/analysis/1496397207/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PoohMilk loader - Xchecked via VT: 40572e1fc37f4376fdb2a33a6c376631ff7bc00b1e64538a0385bc1e09a85574",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PoohMilk loader - Xchecked via VT: 40572e1fc37f4376fdb2a33a6c376631ff7bc00b1e64538a0385bc1e09a85574",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"PoohMilk loader - Xchecked via VT: 40572e1fc37f4376fdb2a33a6c376631ff7bc00b1e64538a0385bc1e09a85574",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/40572e1fc37f4376fdb2a33a6c376631ff7bc00b1e64538a0385bc1e09a85574/analysis/1503367656/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7f35521cdbaa4e86143656ff9c52cef8d1e5e5f8245860c205364138f82c54df",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 7f35521cdbaa4e86143656ff9c52cef8d1e5e5f8245860c205364138f82c54df",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 7f35521cdbaa4e86143656ff9c52cef8d1e5e5f8245860c205364138f82c54df",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7f35521cdbaa4e86143656ff9c52cef8d1e5e5f8245860c205364138f82c54df/analysis/1502302846/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fake image extracts to Freenki downloader - Xchecked via VT: 64ef80e7639c8c5dddf239883617e6740c6b3589f995d11314d36ab64fcfc54c",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fake image extracts to Freenki downloader - Xchecked via VT: 64ef80e7639c8c5dddf239883617e6740c6b3589f995d11314d36ab64fcfc54c",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Fake image extracts to Freenki downloader - Xchecked via VT: 64ef80e7639c8c5dddf239883617e6740c6b3589f995d11314d36ab64fcfc54c",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/64ef80e7639c8c5dddf239883617e6740c6b3589f995d11314d36ab64fcfc54c/analysis/1502714265/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JavaScript to extract and run the payload - Xchecked via VT: 1893af524edea4541c317df288adbf17ae4fcc3a30d403331eae541281c71a3c",
+                "timestamp":"1507233592",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JavaScript to extract and run the payload - Xchecked via VT: 1893af524edea4541c317df288adbf17ae4fcc3a30d403331eae541281c71a3c",
+                "timestamp":"1507233592",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JavaScript to extract and run the payload - Xchecked via VT: 1893af524edea4541c317df288adbf17ae4fcc3a30d403331eae541281c71a3c",
+                "timestamp":"1507233592",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1893af524edea4541c317df288adbf17ae4fcc3a30d403331eae541281c71a3c/analysis/1502714265/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,497 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-14",
+        "published":true,
+        "info":"HIDDEN COBRA - North Korean Malicious Cyber Activity (MAR-10135536.r21.v2)",
+        "publish_timestamp":"1558450567",
+        "timestamp":"1558450447",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 1",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 2",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 3",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 4",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 5",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 6",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558444938",
+                "type":"attachment",
+                "value":"Figure 7",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558444938",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444938",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444938",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444938",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444938",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"2.590786",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"1024",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"6.595856",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"text",
+                        "value":".text",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"983040",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"6.187858",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"text",
+                        "value":".rdata",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"340480",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"4.714377",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"text",
+                        "value":".data",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"37888",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"5.112624",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"text",
+                        "value":".rsrc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"512",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"6.015022",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"text",
+                        "value":".reloc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"59392",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a Portable Executable",
+                "meta-category":"file",
+                "name":"pe",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"filename",
+                        "value":"a1260fd3e9221d1bc5b9ece6e7a5a98669c79e124453f2ac58625085759ed3bb",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"filename",
+                        "value":"a1260fd3e9221d1bc5b9ece6e7a5a98669c79e124453f2ac58625085759ed3bb",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"counter",
+                        "value":"6",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558444939",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"filename",
+                        "value":"a1260fd3e9221d1bc5b9ece6e7a5a98669c79e124453f2ac58625085759ed3bb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"mime-type",
+                        "value":"PE32 executable (GUI) Intel 80386, for MS Windows",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"size-in-bytes",
+                        "value":"1422336",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444939",
+                        "type":"float",
+                        "value":"6.703195",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing the original file used to import data in MISP.",
+                "meta-category":"file",
+                "name":"original-imported-file",
+                "timestamp":"1558444940",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1558444940",
+                        "type":"attachment",
+                        "value":"MAR-10135536-21.stix.xml",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558444940",
+                        "type":"text",
+                        "value":"STIX 1.1",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

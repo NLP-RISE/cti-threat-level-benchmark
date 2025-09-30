@@ -1,0 +1,118 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2022-06-11",
+        "published":true,
+        "info":"Phishing mail impersonating Belgian utility \"De Watergroep\"",
+        "publish_timestamp":"1654964198",
+        "timestamp":"1654964161",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"phishing\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1654964039",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-body",
+                        "value":"Geachte heer/ mevrouw,\r\n\r\nWij maken uw afvalwater schoon en zorgen ervoor dat het water in uw omgeving schoon blijft.\r\nOok letten we erop dat het water niet te hoog of te laag komt te staan. En houden we de dijken veilig.\r\nU betaalt hiervoor waterschapsbelasting. Deze jaarlijkse belasting verschilt per huishouden.\r\n\r\nHieronder ziet u een rekeningoverzicht:\r\n\r\nUw verbruik\r\n\r\nZuiveringsheffing woonruimte\r\n€115,76\r\nWatersysteemheffing ingezetenen\r\n€39,56\r\nWatersysteemheffing gebouwd\r\n€11,59\r\n\r\nTotaal te voldoen: €165,91\r\n\r\nHoe kunt u betalen?\r\nMaak het bedrag over op rekeningnummer DE28 1101 0101 5007 1160 30  \r\nT.N.V. Derdengelden Payq Incasso \r\nOnder vermelding of omschrijving van: 1847-2938-4918-3938\r\n\r\nZou u alstublieft uw openstaande rekening willen betalen?\r\nZo werken we samen aan schoon water en het voorkomen van wateroverlast in uw woongebied.\r\n\r\nBetaalt u niet op tijd? Dan ontvangt u een aanmaning.\r\nHeeft u vragen over de betaalmogelijkheden, kijk dan op www.dewatergroep.be \r\n\r\nMet vriendelijke groet,\r\n\r\nRaymond Smits, \r\nDe Watergroep\r\n                 \r\n\r\n \r\n\r\nInstellingen wijzigen\r\n\r\nAls duurzame organisatie kiezen we er bewust voor zo min mogelijk per post te versturen. Want hoe minder papier we met z’n allen verbruiken, hoe beter. Geeft u toch de voorkeur aan post? Klik dan hier om u af te melden.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-src",
+                        "value":"safehands@safehandsschool.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-src-display-name",
+                        "value":"De Watergroep",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-subject",
+                        "value":"Er staat een bericht voor u klaar message",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-src",
+                        "value":"safehands@safehandsschool.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"hostname",
+                        "value":"217-23-3-76.hosted-by-worldstream.net",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654964039",
+                        "type":"email-header",
+                        "value":"X-AntiAbuse: This header was added to track abuse, please include it with any abuse report\r\nX-AntiAbuse: Primary Hostname - premium71.web-hosting.com\r\nX-AntiAbuse: Original Domain - cudeso.be\r\nX-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]\r\nX-AntiAbuse: Sender Address Domain - safehandsschool.com\r\nX-Get-Message-Sender-Via: premium71.web-hosting.com: authenticated_id: safehands@safehandsschool.com\r\nX-Authenticated-Sender: premium71.web-hosting.com: safehands@safehandsschool.com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing bank account information based on account description from goAML 4.0.",
+                "meta-category":"financial",
+                "name":"bank-account",
+                "timestamp":"1654964113",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1654964113",
+                        "type":"iban",
+                        "value":"DE28110101015007116030",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654964113",
+                        "type":"text",
+                        "value":"1847-2938-4918-3938",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654964113",
+                        "type":"text",
+                        "value":"Derdengelden Payq Incasso",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,300 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-08",
+        "published":true,
+        "info":"OSINT - InvisiMole: surprisingly equipped spyware, undercover since 2013",
+        "publish_timestamp":"1528487226",
+        "timestamp":"1528487219",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528483381",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2018/06/07/invisimole-equipped-spyware-undercover/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1528483403",
+                "type":"text",
+                "value":"This is the modus operandi of the two malicious components of InvisiMole. They turn the affected computer into a video camera, letting the attackers see and hear whatâ€™s going on in the victimâ€™s office or wherever their device may be. Uninvited, InvisiMoleâ€™s operators access the system, closely monitoring the victimâ€™s activities and stealing the victimâ€™s secrets.\r\n\r\nOur telemetry indicates that the malicious actors behind this malware have been active at least since 2013, yet the cyber-espionage tool was never analyzed nor detected until discovered by ESET products on compromised computers in Ukraine and Russia.\r\n\r\nThe campaign is highly targeted â€“ no wonder the malware has a low infection ratio, with only a few dozen computers being affected.\r\n\r\nInvisiMole has a modular architecture, starting its journey with a wrapper DLL, and performing its activities using two other modules that are embedded in its resources. Both of the modules are feature-rich backdoors, which together give it the ability to gather as much information about the target as possible.\r\n\r\nExtra measures are taken to avoid attracting the attention of the compromised user, enabling the malware to reside on the system for a longer period of time. How the spyware was spread to the infected machines is yet to be determined by further investigation. All infection vectors are possible, including installation facilitated by physical access to the machine.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1528483424",
+                "type":"hostname",
+                "value":"activationstate.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1528483425",
+                "type":"hostname",
+                "value":"advstatecheck.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1528483425",
+                "type":"hostname",
+                "value":"akamai.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1528483426",
+                "type":"hostname",
+                "value":"statbfnl.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1528483426",
+                "type":"hostname",
+                "value":"updchecking.sytes.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2013-2014 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483602",
+                "type":"ip-dst",
+                "value":"46.165.231.85",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2013-2014 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483602",
+                "type":"ip-dst",
+                "value":"213.239.220.41",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014-2017 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483603",
+                "type":"ip-dst",
+                "value":"46.165.241.129",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014-2016 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483603",
+                "type":"ip-dst",
+                "value":"46.165.241.153",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014-2018 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483604",
+                "type":"ip-dst",
+                "value":"78.46.35.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2016-2016 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483604",
+                "type":"ip-dst",
+                "value":"95.215.111.109",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2016-2018 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483604",
+                "type":"ip-dst",
+                "value":"185.118.66.163",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2017-2017 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483605",
+                "type":"ip-dst",
+                "value":"185.118.67.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2017-2018 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483605",
+                "type":"ip-dst",
+                "value":"185.156.173.92",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2018-2018 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483606",
+                "type":"ip-dst",
+                "value":"46.165.230.241",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2018-2018 - InvisiMoleâ€™s C&C servers IP addresses",
+                "timestamp":"1528483606",
+                "type":"ip-dst",
+                "value":"194.187.249.157",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528483638",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528483638",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528483639",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528483639",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1528483640",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win32/InvisiMole.A",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win32/InvisiMole.B",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win32/InvisiMole.C",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win32/InvisiMole.D",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win64/InvisiMole.B",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win64/InvisiMole.C",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1528483655",
+                "type":"text",
+                "value":"Win64/InvisiMole.D",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1528483713",
+                "type":"filename",
+                "value":"%APPDATA%\\Microsoft\\Internet Explorer\\Cache\\AMB6HER8\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1528483713",
+                "type":"filename",
+                "value":"%APPDATA%\\Microsoft\\Internet Explorer\\Cache\\MX0ROSB1\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1528483713",
+                "type":"filename",
+                "value":"%APPDATA%\\Microsoft\\Internet Explorer\\Cache\\index0.dat",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1528483790"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1528483788"
+            }
+        ]
+    }
+}

@@ -1,0 +1,274 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-11-30",
+        "published":true,
+        "info":"OSINT -  Shamoon 2: Return of the Disttrack Wiper",
+        "publish_timestamp":"1480715122",
+        "timestamp":"1480715024",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"TERBIUM\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1480667531",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2016/11/unit42-shamoon-2-return-disttrack-wiper/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1480667558",
+                "type":"comment",
+                "value":"In August 2012, an attack campaign known as Shamoon targeted a Saudi Arabian energy company to deliver a malware called Disttrack. Disttrack is a multipurpose tool that exhibits worm-like behavior by attempting to spread to other systems on a local network using stolen administrator credentials. More importantly, its claim to fame is the ability to destroy data and to render infected systems unusable. The attack four years ago resulted in 30,000 or more systems being damaged.\r\n\r\nLast week, Unit 42 came across new Disttrack samples that appear to have been used in an updated attack campaign. The attack targeted at least one organization in Saudi Arabia, which aligns with the targeting of the initial Shamoon attacks. It appears the purpose of the new Disttrack samples were solely focused on destruction, as the samples were configured with a non-operational C2 server to report to and were set to begin wiping data exactly on 2016/11/17 20:45. In another similarity to Shamoon, this is the end of the work week in Saudi Arabia (their work week is from Sunday to Thursdays), so the malware had potentially the entire weekend to spread.  The Shamoon attacks took place on Lailat al Qadr, the holiest night of the year for Muslims; another time the attackers could be reasonably certain employees would not be at work.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers",
+                "timestamp":"1480667635",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers",
+                "timestamp":"1480667636",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Communication Components",
+                "timestamp":"1480667636",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Communication Components",
+                "timestamp":"1480667636",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components",
+                "timestamp":"1480667636",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components",
+                "timestamp":"1480667637",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples",
+                "timestamp":"1480667637",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples",
+                "timestamp":"1480667637",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6",
+                "timestamp":"1480715024",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6",
+                "timestamp":"1480715024",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6",
+                "timestamp":"1480715024",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4744df6ac02ff0a3f9ad0bf47b15854bbebb73c936dd02f7c79293a2828406f6/analysis/1480627726/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a",
+                "timestamp":"1480715025",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a",
+                "timestamp":"1480715025",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"EldoS RawDisk Samples - Xchecked via VT: 5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a",
+                "timestamp":"1480715025",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a/analysis/1480709297/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components - Xchecked via VT: 128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd",
+                "timestamp":"1480715026",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components - Xchecked via VT: 128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd",
+                "timestamp":"1480715026",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Wiper Components - Xchecked via VT: 128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd",
+                "timestamp":"1480715026",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/128fa5815c6fee68463b18051c1a1ccdf28c599ce321691686b1efa4838a2acd/analysis/1480658187/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components - Xchecked via VT: c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a",
+                "timestamp":"1480715026",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Wiper Components - Xchecked via VT: c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a",
+                "timestamp":"1480715027",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Wiper Components - Xchecked via VT: c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a",
+                "timestamp":"1480715027",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c7fc1f9c2bed748b50a599ee2fa609eb7c9ddaeb9cd16633ba0d10cf66891d8a/analysis/1480658982/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Communication Components - Xchecked via VT: 61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842",
+                "timestamp":"1480715027",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Communication Components - Xchecked via VT: 61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842",
+                "timestamp":"1480715027",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Communication Components - Xchecked via VT: 61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842",
+                "timestamp":"1480715028",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/61c1c8fc8b268127751ac565ed4abd6bdab8d2d0f2ff6074291b2d54b0228842/analysis/1480657971/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers - Xchecked via VT: 394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b",
+                "timestamp":"1480715028",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers - Xchecked via VT: 394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b",
+                "timestamp":"1480715028",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Disttrack Droppers - Xchecked via VT: 394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b",
+                "timestamp":"1480715028",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/394a7ebad5dfc13d6c75945a61063470dc3b68f7a207613b79ef000e1990909b/analysis/1480691328/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers - Xchecked via VT: 47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34",
+                "timestamp":"1480715029",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Disttrack Droppers - Xchecked via VT: 47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34",
+                "timestamp":"1480715029",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Disttrack Droppers - Xchecked via VT: 47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34",
+                "timestamp":"1480715029",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/47bb36cd2832a18b5ae951cf5a7d44fba6d8f5dca0a372392d40f51d1fe1ac34/analysis/1480695517/",
+                "to_ids":false
+            }
+        ]
+    }
+}

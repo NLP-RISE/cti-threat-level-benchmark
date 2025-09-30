@@ -1,0 +1,269 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-15",
+        "published":true,
+        "info":"OSINT - Who Ran Leakedsource.com?",
+        "publish_timestamp":"1487188477",
+        "timestamp":"1487188408",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"c\""
+            },
+            {
+                "name":"admiralty-scale:information-credibility=\"3\""
+            },
+            {
+                "name":"circl:incident-classification=\"information-leak\""
+            },
+            {
+                "name":"osint:certainty=\"75\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487187734",
+                "type":"link",
+                "value":"https://krebsonsecurity.com/2017/02/who-ran-leakedsource-com/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487187734",
+                "type":"comment",
+                "value":"Late last month, multiple news outlets reported that unspecified law enforcement officials had seized the servers for Leakedsource.com, perhaps the largest online collection of usernames and passwords leaked or stolen in some of the worst data breaches â€” including billions of credentials for accounts at top sites like LinkedIn, Myspace, and Yahoo.\r\n\r\nIn a development that could turn out to be deeply ironic, it seems that the real-life identity of LeakedSourceâ€™s principal owner may have been exposed by many of the same stolen databases heâ€™s been peddling.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"That one of the administrators of LeakedSource also was the admin of abusewith[dot]us, a site unabashedly dedicated to helping people hack email and online gaming accounts.",
+                "timestamp":"1487187734",
+                "type":"domain",
+                "value":"abusewith.us",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"The administrator of Abusewith[dot]us is a hacker who uses the nickname â€œXerx3s.â€",
+                "timestamp":"1487188262",
+                "type":"threat-actor",
+                "value":"Xerx3s",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"I sought an interview by reaching out to the email listed on the site (leakedsourceonline@gmail.com).",
+                "timestamp":"1487187734",
+                "type":"text",
+                "value":"leakedsourceonline@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"",
+                "timestamp":"1487187734",
+                "type":"jabber-id",
+                "value":"leakedsource@chatme.im",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"The entirety of that brief interview",
+                "timestamp":"1487187734",
+                "type":"link",
+                "value":"https://krebsonsecurity.com/wp-content/uploads/2017/02/LeakedSourceAdminChat.txt",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"My source told me heâ€™d recently chatted with Xerx3s using the Jabber address Xerx3s has long used prior to the creation of LeakedSource",
+                "timestamp":"1487187734",
+                "type":"jabber-id",
+                "value":"xerx3s@chatme.im",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"This is in reference to a pseudonym Xerx3s frequently used, â€œJeremy Wade.â€",
+                "timestamp":"1487188278",
+                "type":"threat-actor",
+                "value":"Jeremy Wade",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"",
+                "timestamp":"1487187734",
+                "type":"text",
+                "value":"imjeremywade@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to a â€œreverse WHOISâ€ record search ordered through Domaintools.com, that email address is tied to two domain names registered in 2015: abusing[dot]rs, and cyberpay[dot]info.",
+                "timestamp":"1487187734",
+                "type":"domain",
+                "value":"cyberpay.info",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to a â€œreverse WHOISâ€ record search ordered through Domaintools.com, that email address is tied to two domain names registered in 2015: abusing[dot]rs, and cyberpay[dot]info.",
+                "timestamp":"1487187734",
+                "type":"domain",
+                "value":"abusing.rs",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"paid $5 to cover a subscription for a user named â€œjeremywade;â€",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"eadeh_andrew@yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"The leaked Panicstresser database shows the Jeremywade account was tied to the email address xdavros@gmail.com, and that the account was created in July 2012.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"xdavros@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"According to a large number of forum postings, it appears that whoever used the xdavros@gmail.com address also created several variations on that address, including alexdavros@gmail.com, davrosalex3@yahoo.com, davrosalex4@yahoo.com, as well as themarketsales@gmail.com.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"xdavros@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"According to a large number of forum postings, it appears that whoever used the xdavros@gmail.com address also created several variations on that address, including alexdavros@gmail.com, davrosalex3@yahoo.com, davrosalex4@yahoo.com, as well as themarketsales@gmail.com.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"alexdavros@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"According to a large number of forum postings, it appears that whoever used the xdavros@gmail.com address also created several variations on that address, including alexdavros@gmail.com, davrosalex3@yahoo.com, davrosalex4@yahoo.com, as well as themarketsales@gmail.com.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"davrosalex3@yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"According to a large number of forum postings, it appears that whoever used the xdavros@gmail.com address also created several variations on that address, including alexdavros@gmail.com, davrosalex3@yahoo.com, davrosalex4@yahoo.com, as well as themarketsales@gmail.com.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"davrosalex4@yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"According to a large number of forum postings, it appears that whoever used the xdavros@gmail.com address also created several variations on that address, including alexdavros@gmail.com, davrosalex3@yahoo.com, davrosalex4@yahoo.com, as well as themarketsales@gmail.com.",
+                "timestamp":"1487187734",
+                "type":"email-src",
+                "value":"themarketsales@gmail.com",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"The Gmail account xdavros@gmail.com was used to register at least four domain names almost six years ago in 2011. Two of those domains â€” daily-streaming.com and tiny-chats.com â€” were originally registered to a â€œNick Davrosâ€ at 3757 Dunes Parkway, Muskegon, Mich. The other two were registered to a Nick or Alex Davros at 868 W. Hile Rd., Muskegon, Mich. All four domain registration records included the phone number +12313430295.",
+                "timestamp":"1487187734",
+                "type":"text",
+                "value":"+12313430295",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"were originally registered to a â€œNick Davrosâ€ at 3757 Dunes Parkway, Muskegon, Mich. The other two were registered to a Nick or Alex Davros at 868 W. Hile Rd., Muskegon, Mich.",
+                "timestamp":"1487187734",
+                "type":"domain",
+                "value":"daily-streaming.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"were originally registered to a â€œNick Davrosâ€ at 3757 Dunes Parkway, Muskegon, Mich. The other two were registered to a Nick or Alex Davros at 868 W. Hile Rd., Muskegon, Mich.",
+                "timestamp":"1487187734",
+                "type":"domain",
+                "value":"tiny-chats.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Farsight reports that the address 68.41.238.208 maps back to three different dynamic IP domains,",
+                "timestamp":"1487187734",
+                "type":"filename",
+                "value":"jwade69.no-ip.biz",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Farsight reports that the address 68.41.238.208 maps back to three different dynamic IP domains,",
+                "timestamp":"1487187734",
+                "type":"filename",
+                "value":"wadewon.no-ip.biz",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Farsight reports that the address 68.41.238.208 maps back to three different dynamic IP domains,",
+                "timestamp":"1487187734",
+                "type":"filename",
+                "value":"jrat6969.zapto.org",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Screenshot of compromised account",
+                "timestamp":"1487187906",
+                "type":"attachment",
+                "value":"alexdavrosleakedsource.png",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Screenshot of compromised account",
+                "timestamp":"1487187954",
+                "type":"attachment",
+                "value":"themarketsalespage1.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"two email addresses connected to domains associated with the Jeremy Wade alias â€” matt96sk@yahoo.com and skythekiddy@yahoo.com â€” are tied to Facebook accounts for Michigan residents who both list Alex Davros among their Facebook friends.",
+                "timestamp":"1487188059",
+                "type":"email-src",
+                "value":"matt96sk@yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"two email addresses connected to domains associated with the Jeremy Wade alias â€” matt96sk@yahoo.com and skythekiddy@yahoo.com â€” are tied to Facebook accounts for Michigan residents who both list Alex Davros among their Facebook friends.",
+                "timestamp":"1487188059",
+                "type":"email-src",
+                "value":"skythekiddy@yahoo.com",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1487188135",
+                "type":"attachment",
+                "value":"ls-aw-mindmap.png",
+                "to_ids":false
+            }
+        ]
+    }
+}

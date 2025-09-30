@@ -1,0 +1,306 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-06-21",
+        "published":true,
+        "info":"Lookout Uncovers Android Spyware Deployed in Kazakhstan",
+        "publish_timestamp":"1655836316",
+        "timestamp":"1655836311",
+        "Tag":[
+            {
+                "name":"misp-galaxy:country=\"kazakhstan\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1566.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Encrypted Channel - T1573\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"We first detected samples from this campaign in April 2022. They were titled “oppo.service” and impersonated Chinese electronic manufacturer Oppo. The website the malware used to mask its malicious activity is an official Oppo support page (http://oppo-kz.custhelp[.]com) in the Kazakh language that has since gone offline.",
+                "timestamp":"1655835609",
+                "type":"url",
+                "value":"http://oppo-kz.custhelp.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 / On port 58442",
+                "timestamp":"1655835649",
+                "type":"ip-dst|port",
+                "value":"45.148.30.122|58442",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 / On port 8442",
+                "timestamp":"1655835649",
+                "type":"ip-dst|port",
+                "value":"85.159.27.61|8442",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The domain we found (rojavanetwork[.]info) specifically imitates “Rojava Network,” a social media brand on Facebook and Twitter that provides news coverage and political analysis of the region, often in support of SDF operations.",
+                "timestamp":"1655835670",
+                "type":"domain",
+                "value":"rojavanetwork.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 communications",
+                "timestamp":"1655835717",
+                "type":"ip-dst",
+                "value":"93.51.226.53",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"we can tell that an exploited device will have a local root service listening on 127.0.0.1:500 that the malware will “ping” for / On port 500",
+                "timestamp":"1655835812",
+                "type":"ip-dst|port",
+                "value":"127.0.0.1|500",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1655835851",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8442",
+                "timestamp":"1655835906",
+                "type":"ip-dst|port",
+                "value":"2.229.68.182|8442",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1655835906",
+                "type":"ip-dst|port",
+                "value":"2.228.150.86|8443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1655835906",
+                "type":"ip-dst|port",
+                "value":"93.57.84.78|8443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"On port 8443",
+                "timestamp":"1655835906",
+                "type":"ip-dst|port",
+                "value":"93.39.197.234|8443",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"119-tim.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"133-tre.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"146-fastweb.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"155-wind.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"159-windtre.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"iliad.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"amex-co.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"cloud-apple.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"fb-techsupport.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"milf.house",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"mobdemo.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"mobilepays.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"kena-mobile.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"poste-it.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"store-apple.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"domains used in Hermit’s targeting operations",
+                "timestamp":"1655835926",
+                "type":"domain",
+                "value":"wind-h3g.info",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1655836299",
+                "type":"link",
+                "value":"https://www.lookout.com/blog/hermit-spyware-discovery",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-09-18",
+        "published":false,
+        "info":"OSINT - Tortoiseshell Group Targets IT Providers in Saudi Arabia in Probable Supply Chain Attacks",
+        "publish_timestamp":"0",
+        "timestamp":"1568986366",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"OilRig\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"OilRig\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"OilRig - G0049\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"OilRig\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"OilRig - G0049\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"CHRYSENE\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"OilRig\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"APT34\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"APT34\""
+            },
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1568878018",
+                "type":"link",
+                "value":"https://www.symantec.com/blogs/threat-intelligence/tortoiseshell-apt-supply-chain",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1568878055",
+                "type":"text",
+                "value":"Previously undocumented group hits IT providers in the Middle East.\r\n\r\nA previously undocumented attack group is using both custom and off-the-shelf malware to target IT providers in Saudi Arabia in what appear to be supply chain attacks with the end goal of compromising the IT providers’ customers.\r\n\r\nThe group, which we are calling Tortoiseshell, has been active since at least July 2018. Symantec has identified a total of 11 organizations hit by the group, the majority of which are based in Saudi Arabia. In at least two organizations, evidence suggests that the attackers gained domain admin-level access.\r\n\r\nAnother notable element of this attack is that, on two of the compromised networks, several hundred computers were infected with malware. This is an unusually large number of computers to be compromised in a targeted attack. It is possible that the attackers were forced to infect many machines before finding those that were of most interest to them.\r\n\r\nWe have seen Tortoiseshell activity as recently as July 2019.",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1568982932",
+                "type":"regkey",
+                "value":"HKEY_LOCAL_MACHINE\\software\\microsoft\\windows\\currentversion\\policies\\system\\Enablevmd",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1568982939",
+                "type":"regkey",
+                "value":"HKEY_LOCAL_MACHINE\\software\\microsoft\\windows\\currentversion\\policies\\system\\Sendvmd",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1568983498",
+                "type":"url",
+                "value":"Infostealer/Sha.exe/Sha432.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1568983498",
+                "type":"url",
+                "value":"Infostealer/stereoversioncontrol.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1568983498",
+                "type":"filename",
+                "value":"get-logon-history.ps1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Backdoor.Syskit C&C server",
+                "timestamp":"1568986019",
+                "type":"ip-dst",
+                "value":"64.235.60.123",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Backdoor.Syskit C&C server",
+                "timestamp":"1568986019",
+                "type":"ip-dst",
+                "value":"64.235.39.45",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1568982591",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1568982591",
+                        "type":"filename",
+                        "value":"%Windir%\\temp\\rconfig.xml",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1568983679",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1568983680",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":" Backdoor.Syskit ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1568985945",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1568985945",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":" Backdoor.Syskit ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1568985968",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1568985968",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":" Backdoor.Syskit ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1568985998",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1568985998",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

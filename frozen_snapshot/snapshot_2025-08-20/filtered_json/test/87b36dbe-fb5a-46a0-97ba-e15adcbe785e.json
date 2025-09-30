@@ -1,0 +1,150 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-05-21",
+        "published":true,
+        "info":"CloudWizard APT: the bad magic story goes on",
+        "publish_timestamp":"1684759582",
+        "timestamp":"1684674577",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1684674030",
+                "type":"link",
+                "value":"https://securelist.com/cloudwizard-apt/109722/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1684674183",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\Apparition Storage\\syncobjsup.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1684674202",
+                "type":"windows-service-name",
+                "value":"syncobjsup",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1684674553",
+                "type":"ip-dst",
+                "value":"91.228.147.23",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1684674553",
+                "type":"domain",
+                "value":"curveroad.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"NSIS installer",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1684674464",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674464",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674464",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Loader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1684674503",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674503",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674503",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674503",
+                        "type":"filename",
+                        "value":"syncobjsup.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Orchestrator",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1684674561",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674541",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674541",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1684674561",
+                        "type":"filename",
+                        "value":"main.dll",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

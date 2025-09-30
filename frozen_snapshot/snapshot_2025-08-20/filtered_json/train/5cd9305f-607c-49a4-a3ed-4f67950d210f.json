@@ -1,0 +1,96 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-10",
+        "published":false,
+        "info":"OSINT - RYUK Ransomware Hits MSP-Centric Cloud Service Provider",
+        "publish_timestamp":"0",
+        "timestamp":"1557740282",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Ryuk\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Ryuk ransomware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557738240",
+                "type":"text",
+                "value":"RYUK Ransomware has hit a cloud service provider (CSP) that works closely with MSPs. The twist: The limited attack hit a data center system that the CSP acquired through M&A. The situation appears under control, no ransomware was paid and the CSP has nearly completed the data restore as of about 4:00 p.m. ET on Friday, May 10, MSSP Alert has learned.\r\n\r\nFor MSPs and CSPs considering mergers and acquisitions, the attack offers a timely cyber due diligence reminder: Carefully study the security standards and best practices of the asset you are acquiring. In this particular case, the CSP was in the process of decommissioning the acquired data center when the attack occurred this week.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1557738028",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557738029",
+                        "type":"text",
+                        "value":"Another #RYUK #Ransomware attack hits cloud services provider, impacting some #MSPs. Full recovery expected. Details from MSSP Alert",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557738029",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1557738029",
+                        "type":"url",
+                        "value":"https://twitter.com/msspalert/status/1126974706979094528",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1557738058",
+                        "type":"link",
+                        "value":"https://www.msspalert.com/cybersecurity-breaches-and-attacks/ransomware/ryuk-ransomware-hits-msp-centric-csp/",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557738029",
+                        "type":"datetime",
+                        "value":"10 May 2019 3:18 PM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557738029",
+                        "type":"text",
+                        "value":"msspalert",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

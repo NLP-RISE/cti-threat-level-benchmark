@@ -1,0 +1,66 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-10-21",
+        "published":false,
+        "info":"OSINT -Advisory: Turla group exploits Iranian APT to expand coverage of victims",
+        "publish_timestamp":"0",
+        "timestamp":"1572868042",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Turla - G0010\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Turla Group\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Nautilus\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Neuron\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Nautilus\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Neuron\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Custom Command and Control Protocol - T1094\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572528854",
+                "type":"link",
+                "value":"https://www.ncsc.gov.uk/news/turla-group-exploits-iran-apt-to-expand-coverage-of-victims",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1572536107",
+                "type":"attachment",
+                "value":"Turla advisory UK FINAL.pdf",
+                "to_ids":false
+            }
+        ]
+    }
+}

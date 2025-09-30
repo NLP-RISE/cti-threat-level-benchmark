@@ -1,0 +1,81 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2020-09-01",
+        "published":true,
+        "info":"Epic Manchego â€“ atypical maldoc delivery brings flurry of infostealers",
+        "publish_timestamp":"1600365508",
+        "timestamp":"1600365503",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Scan Order List.xlsm",
+                "timestamp":"1600365333",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Scan Order List.xlsm",
+                "timestamp":"1600365333",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"2nd stage crefgyu.exe",
+                "timestamp":"1600365382",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"2nd stage crefgyu.exe",
+                "timestamp":"1600365382",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"New order _2608.xlsm",
+                "timestamp":"1600365418",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"New order _2608.xlsm",
+                "timestamp":"1600365418",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1600365465",
+                "type":"yara",
+                "value":"rule xlsm_without_metadata_and_with_date {\r\n    meta:\r\n        description = \"Identifies .xlsm files created with EPPlus\"\r\n        author = \"NVISO (Didier Stevens)\"\r\n        date = \"2020-07-12\"\r\n        reference = \"http://blog.nviso.eu/2020/09/01/epic-manchego-atypical-maldoc-delivery-brings-flurry-of-infostealers\"\r\n        tlp = \"White\"\r\n    strings:\r\n        $opc = \"[Content_Types].xml\"\r\n        $ooxml = \"xl/workbook.xml\"\r\n        $vba = \"xl/vbaProject.bin\"\r\n        $meta1 = \"docProps/core.xml\"\r\n        $meta2 = \"docProps/app.xml\"\r\n        $timestamp = {50 4B 03 04 ?? ?? ?? ?? ?? ?? 00 00 21 00}\r\n    condition:\r\n        uint32be(0) == 0x504B0304 and ($opc and $ooxml and $vba)\r\n        and not (any of ($meta*) and $timestamp)\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1600365503",
+                "type":"link",
+                "value":"https://blog.nviso.eu/2020/09/01/epic-manchego-atypical-maldoc-delivery-brings-flurry-of-infostealers/",
+                "to_ids":false
+            }
+        ]
+    }
+}

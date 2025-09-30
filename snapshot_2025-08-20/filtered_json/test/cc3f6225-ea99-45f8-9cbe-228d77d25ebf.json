@@ -1,0 +1,342 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2025-06-04",
+        "published":true,
+        "info":"OSINT - New Russia-affiliated actor Void Blizzard targets critical sectors for espionage",
+        "publish_timestamp":"1749022657",
+        "timestamp":"1749022636",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Void Blizzard\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Actor-controlled spear-phishing domain (Evilginx)",
+                "timestamp":"1749018609",
+                "type":"domain",
+                "value":"micsrosoftonline.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Actor-controlled spear-phishing domain (malicious sender)",
+                "timestamp":"1749018626",
+                "type":"domain",
+                "value":"ebsumrnit.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Actor controlled spear-phishing domain",
+                "timestamp":"1749018645",
+                "type":"hostname",
+                "value":"outlook-office.micsrosoftonline.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious email attachment",
+                "timestamp":"1749018664",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"micsrosoftonline.com: Enriched via the circl_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1749018773",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"counter",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"https://www.circl.lu/pdns/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"104.21.58.35",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"micsrosoftonline.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"datetime",
+                        "value":"2025-04-26T19:44:21+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"datetime",
+                        "value":"2025-04-26T19:44:21+00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"micsrosoftonline.com: Enriched via the circl_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1749022636",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"counter",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"https://www.circl.lu/pdns/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Cloudflare (as usual)",
+                        "timestamp":"1749022636",
+                        "type":"text",
+                        "value":"172.67.199.124",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"text",
+                        "value":"micsrosoftonline.com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"datetime",
+                        "value":"2025-04-26T19:44:21+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1749018773",
+                        "type":"datetime",
+                        "value":"2025-04-26T19:44:21+00:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"outlook-office.micsrosoftonline.com: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1749018868",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"104.21.58.35",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"172.67.199.124",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"counter",
+                        "value":"124",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"datetime",
+                        "value":"2025-05-27T16:36:31+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"datetime",
+                        "value":"2025-06-03T12:54:10+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"outlook-office.micsrosoftonline.com.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"domain",
+                        "value":"micsrosoftonline.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"outlook-office.micsrosoftonline.com: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1749018868",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"2606:4700:3030::ac43:c77c",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"2606:4700:3037::6815:3a23",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"counter",
+                        "value":"2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"datetime",
+                        "value":"2025-05-28T15:00:06+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"datetime",
+                        "value":"2025-05-30T17:03:20+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"outlook-office.micsrosoftonline.com.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"text",
+                        "value":"AAAA",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: outlook-office.micsrosoftonline.com",
+                        "timestamp":"1749018868",
+                        "type":"domain",
+                        "value":"micsrosoftonline.com",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

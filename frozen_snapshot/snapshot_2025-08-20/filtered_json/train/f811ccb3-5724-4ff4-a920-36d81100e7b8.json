@@ -1,0 +1,270 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-08-03",
+        "published":true,
+        "info":"Github Repo Compromise Domain MyJino RU",
+        "publish_timestamp":"1659524114",
+        "timestamp":"1659520660",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Software Supply Chain - T1195.002\""
+            },
+            {
+                "name":"osint:source-type=\"microblog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2 domain",
+                "timestamp":"1659513139",
+                "type":"hostname",
+                "value":"ovz1.j19544519.pr46m.vps.myjino.ru",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"ovz1.j19544519.pr46m.vps.myjino.ru: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1659520432",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659520428",
+                        "type":"text",
+                        "value":"195.161.41.221",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659519079",
+                        "type":"counter",
+                        "value":"4",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659519079",
+                        "type":"datetime",
+                        "value":"2022-07-28T11:22:53+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659519079",
+                        "type":"datetime",
+                        "value":"2022-08-03T06:19:30+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659520432",
+                        "type":"text",
+                        "value":"ovz1.j19544519.pr46m.vps.myjino.ru.",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659519079",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: ovz1.j19544519.pr46m.vps.myjino.ru",
+                        "timestamp":"1659520417",
+                        "type":"domain",
+                        "value":"myjino.ru",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Origin: https://raw.githubusercontent.com/Neo23x0/signature-base/master/yara/gen_github_repo_compromise_myjino_ru.yar",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1659519265",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659519265",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1659519265",
+                        "type":"yara",
+                        "value":"rule MAL_Github_Repo_Compromise_MyJino_Ru_Aug22 {\r\n   meta:\r\n      description = \"Detects URL mentioned in report on compromised Github repositories in August 2022\"\r\n      author = \"Florian Roth\"\r\n      reference = \"https://twitter.com/stephenlacy/status/1554697077430505473\"\r\n      date = \"2022-08-03\"\r\n      score = 90\r\n   strings:\r\n      $x1 = \"curl http://ovz1.j19544519.pr46m.vps.myjino.ru\" ascii wide\r\n      $x2 = \"http__.Post(\\\"http://ovz1.j19544519.pr46m.vps.myjino.ru\" ascii wide\r\n   condition:\r\n      1 of them\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659519265",
+                        "type":"text",
+                        "value":"MAL_Github_Repo_Compromise_MyJino_Ru_Aug22",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a Sigma rule (or a Sigma rule name).",
+                "meta-category":"misc",
+                "name":"sigma",
+                "timestamp":"1659520396",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"comment",
+                        "value":"Detects connections to the host used in a big repository compromise discovered in August 2022",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"text",
+                        "value":"dns",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"text",
+                        "value":"network",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"link",
+                        "value":"https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/windows/network_connection/net_connection_win_github_myjino_ru.yml",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"sigma",
+                        "value":"title: Github Repo Compromise Domain MyJino RU\r\nid: 3a9f4c77-8e2e-45eb-abc1-4754f670d3a9\r\nstatus: test\r\ndescription: Detects connections to the host used in a big repository compromise discovered in August 2022\r\nreferences:\r\n   - https://twitter.com/stephenlacy/status/1554697077430505473\r\ndate: 2022/08/03\r\nauthor: Florian Roth\r\nlogsource:\r\n   category: network_connection\r\n   product: windows\r\ndetection:\r\n   selection:\r\n      Initiated: 'true'\r\n      DestinationHostname: 'ovz1.j19544519.pr46m.vps.myjino.ru'\r\n   condition: selection\r\nfalsepositives:\r\n    - Users looking up that domain after reading the report (unlikely)\r\nlevel: high",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520396",
+                        "type":"text",
+                        "value":"Github Repo Compromise Domain MyJino RU",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a Sigma rule (or a Sigma rule name).",
+                "meta-category":"misc",
+                "name":"sigma",
+                "timestamp":"1659520547",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520547",
+                        "type":"text",
+                        "value":"dns",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520547",
+                        "type":"text",
+                        "value":"network",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1659520547",
+                        "type":"link",
+                        "value":"https://raw.githubusercontent.com/SigmaHQ/sigma/master/rules/linux/network_connection/net_connection_github_myjino_ru.yml",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1659520547",
+                        "type":"sigma",
+                        "value":"title: Github Repo Compromise Domain MyJino RU\r\nid: 242e0911-294a-44ea-a54e-7eea97aa2622\r\nstatus: test\r\ndescription: Detects connections to the host used in a big repository compromise discovered in August 2022\r\nreferences:\r\n   - https://twitter.com/stephenlacy/status/1554697077430505473\r\ndate: 2022/08/03\r\nauthor: Florian Roth\r\nlogsource:\r\n    product: linux\r\n    category: network_connection\r\ndetection:\r\n    selection:\r\n        DestinationHostname: 'ovz1.j19544519.pr46m.vps.myjino.ru'\r\n    condition: selection\r\nfalsepositives:\r\n    - Users looking up that domain after reading the report (unlikely)\r\nlevel: high",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520547",
+                        "type":"text",
+                        "value":"Github Repo Compromise Domain MyJino RU",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a Sigma rule (or a Sigma rule name).",
+                "meta-category":"misc",
+                "name":"sigma",
+                "timestamp":"1659520633",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520633",
+                        "type":"text",
+                        "value":"dns",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1659520633",
+                        "type":"sigma",
+                        "value":"title: DNS Lookup Github Repo Compromise Domain MyJino RU\r\nid: 6b0dd2e4-13ff-4eff-b79b-4444fad43644\r\nstatus: test\r\ndescription: Detects connections to the host used in a big repository compromise discovered in August 2022\r\nreferences:\r\n   - https://twitter.com/stephenlacy/status/1554697077430505473\r\ndate: 2022/08/03\r\nauthor: Florian Roth\r\nlogsource:\r\n    category: dns\r\ndetection:\r\n    selection:\r\n        query: 'ovz1.j19544519.pr46m.vps.myjino.ru'\r\n    condition: selection\r\nfalsepositives:\r\n    - Users looking up that domain after reading the report (unlikely)\r\n    - Web proxy or other security device DNS lookups of the domain\r\nlevel: high",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1659520633",
+                        "type":"text",
+                        "value":"DNS Lookup Github Repo Compromise Domain MyJino RU",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

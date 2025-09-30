@@ -1,0 +1,513 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-07-12",
+        "published":true,
+        "info":"OSINT - BitPaymer Source Code Fork: Meet DoppelPaymer Ransomware and Dridex 2.0",
+        "publish_timestamp":"1573070572",
+        "timestamp":"1573070402",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Dridex\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"FriedEx\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Bitpaymer\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"INDRIK SPIDER\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                "timestamp":"1573070042",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1573070193",
+                "type":"text",
+                "value":"CrowdStrikeÂ® Intelligence has identified a new ransomware variant identifying itself as BitPaymer. This new variant was behind a series of ransomware campaigns beginning in June 2019, including attacks against the City of Edcouch, Texas and the Chilean Ministry of Agriculture. \r\n\r\nWe have dubbed this new ransomware DoppelPaymer because it shares most of its code with the BitPaymer ransomware operated by INDRIK SPIDER. However, there are a number of differences between DoppelPaymer and BitPaymer, which may signify that one or more members of INDRIK SPIDER have split from the group and forked the source code of both Dridex and BitPaymer to start their own Big Game Hunting ransomware operation.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DoppelPaymer",
+                "timestamp":"1573070265",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Dridex 2.0",
+                "timestamp":"1573070265",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1573070309",
+                "type":"link",
+                "value":"https://www.crowdstrike.com/blog/doppelpaymer-ransomware-and-dridex-2/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070355",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070355",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"datetime",
+                        "value":"2019-11-05T13:32:39",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/70211a3f90376bbc61f49c22a63075d1d4ddd53f0aefa976216c46e6ba39a9f4/analysis/1572960759/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"text",
+                        "value":"15/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070355",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070356",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"datetime",
+                        "value":"2019-11-05T15:07:41",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/d4a0fe56316a2c45b9ba9ac1005363309a3edc7acf9e4df64d326a0ff273e80f/analysis/1572966461/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"text",
+                        "value":"17/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070356",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070357",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"datetime",
+                        "value":"2019-11-04T12:24:35",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/0f97f6d53fff47914174bc3a05fb016e2c02ed0b43c827e5e5aadba2d244aecc/analysis/1572870275/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"text",
+                        "value":"14/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070357",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070357",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"datetime",
+                        "value":"2019-11-04T12:37:45",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/813d8020f32fefe01b66bea0ce63834adef2e725801b4b761f5ea90ac4facd3a/analysis/1572871065/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Dridex 2.0",
+                        "timestamp":"1573070265",
+                        "type":"text",
+                        "value":"54/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070358",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070358",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"datetime",
+                        "value":"2019-11-04T23:59:41",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/801b04a1504f167c25f568f8d7cbac13bdde6440a609d0dcd64ebe225c197f9b/analysis/1572911981/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DoppelPaymer",
+                        "timestamp":"1573070265",
+                        "type":"text",
+                        "value":"54/68",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1573070358",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1573070358",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"datetime",
+                        "value":"2019-11-05T08:08:47",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bd2c2cf0631d881ed382817afcce2b093f4e412ffb170a719e2762f250abfea4/analysis/1572941327/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Encrypted PE Files Embedded in DoppelPaymer",
+                        "timestamp":"1573070042",
+                        "type":"text",
+                        "value":"17/71",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

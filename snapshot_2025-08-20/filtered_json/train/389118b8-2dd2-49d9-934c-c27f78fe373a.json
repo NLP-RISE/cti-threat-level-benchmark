@@ -1,0 +1,55 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-05-22",
+        "published":true,
+        "info":"Sandworm uses a new version of ArguePatch to attack targets in Ukraine",
+        "publish_timestamp":"1653248022",
+        "timestamp":"1653248001",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Sandworm Team - G0034\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Sandworm Team - G0034\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1653248001",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2022/05/20/sandworm-ukraine-new-version-arguepatch-malware-loader/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"ESET detection name: Win32/Agent.AEGY\r\n\r\nESET detection name: Win32/Agent.AEGY",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1653247984",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1653247984",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1653247984",
+                        "type":"filename",
+                        "value":"eset_ssl_filtered_cert_importer.exe",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

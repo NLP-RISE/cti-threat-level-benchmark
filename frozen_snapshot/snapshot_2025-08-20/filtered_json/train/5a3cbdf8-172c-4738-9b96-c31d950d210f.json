@@ -1,0 +1,288 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-21",
+        "published":false,
+        "info":"OSINT - Digmine Cryptocurrency Miner Spreading via Facebook Messenger",
+        "publish_timestamp":"1518771398",
+        "timestamp":"1540909727",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Digmine\""
+            },
+            {
+                "name":"dnc:malware-type=\"CoinMiner\""
+            },
+            {
+                "name":"workflow:state=\"complete\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518184914",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/digmine-cryptocurrency-miner-spreading-via-facebook-messenger/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518184915",
+                "type":"comment",
+                "value":"We found a new cryptocurrency-mining bot spreading through Facebook Messenger, which we first observed in South Korea. We named this Digmine based on the moniker (비트코인 채굴기 bot) it was referred to in a report of recent related incidents in South Korea. We’ve also seen Digmine spreading in other regions such as Vietnam, Azerbaijan, Ukraine, Vietnam, Philippines, Thailand, and Venezuela. It’s not far-off for Digmine to reach other countries given the way it propagates.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184915",
+                "type":"domain",
+                "value":"vijus.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184915",
+                "type":"domain",
+                "value":"ozivu.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184916",
+                "type":"domain",
+                "value":"thisdayfunnyday.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184916",
+                "type":"domain",
+                "value":"thisaworkstation.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184917",
+                "type":"domain",
+                "value":"mybigthink.space",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184917",
+                "type":"domain",
+                "value":"mokuz.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184917",
+                "type":"domain",
+                "value":"pabus.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184918",
+                "type":"domain",
+                "value":"yezav.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184918",
+                "type":"domain",
+                "value":"bigih.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184919",
+                "type":"domain",
+                "value":"taraz.bid",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1518184919",
+                "type":"domain",
+                "value":"megu.info",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_DIGMINEIN.A",
+                "timestamp":"1516027875",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as BREX_DIGMINEEX.A",
+                "timestamp":"1516027876",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"detected as TROJ_DIGMINE.A",
+                "timestamp":"1516027876",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1518184923",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184920",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184920",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184921",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1518184921",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184921",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/beb7274d78c63aa44515fe6bbfd324f49ec2cc0b8650aeb2d6c8ab61a0ae9f1d/analysis/1515510769/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184922",
+                        "type":"text",
+                        "value":"47/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"detected as TROJ_DIGMINEIN.A",
+                        "timestamp":"1518184922",
+                        "type":"datetime",
+                        "value":"2018-01-09 15:12:49",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1518184925",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184923",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184923",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184923",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1518184924",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184924",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/f7e0398ae1f5a2f48055cf712b08972a1b6eb14579333bf038d37ed862c55909/analysis/1515510846/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184924",
+                        "type":"text",
+                        "value":"45/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"detected as TROJ_DIGMINE.A",
+                        "timestamp":"1518184925",
+                        "type":"datetime",
+                        "value":"2018-01-09 15:14:06",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

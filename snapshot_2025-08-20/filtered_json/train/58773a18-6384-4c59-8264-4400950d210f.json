@@ -1,0 +1,143 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-12",
+        "published":true,
+        "info":"OSINT - New Variant of Ploutus ATM Malware Observed in the Wild in Latin America",
+        "publish_timestamp":"1484208979",
+        "timestamp":"1484208963",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484208736",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2017/01/new_ploutus_variant.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484208756",
+                "type":"comment",
+                "value":"Ploutus is one of the most advanced ATM malware families weâ€™ve seen in the last few years. Discovered for the first time in Mexico back in 2013, Ploutus enabled criminals to empty ATMs using either an external keyboard attached to the machine or via SMS message, a technique that had never been seen before.\r\n\r\nFireEye Labs recently identified a previously unobserved version of Ploutus, dubbed Ploutus-D, that interacts with KALâ€™s Kalignite multivendor ATM platform. The samples we identified target the ATM vendor Diebold. However, minimal code change to Ploutus-D would greatly expand its ATM vendor targets since Kalignite Platform runs on 40 different ATM vendors in 80 countries.\r\n\r\nOnce deployed to an ATM, Ploutus-D makes it possible for a money mule to obtain thousands of dollars in minutes. A money mule must have a master key to open the top portion of the ATM (or be able to pick it), a physical keyboard to connect to the machine, and an activation code (provided by the boss in charge of the operation) in order to dispense money from the ATM. While there are some risks of the money mule being caught by cameras, the speed in which the operation is carried out minimizes the muleâ€™s risk.\r\n\r\nThis blog covers the changes, improvements, and Indicators of Compromise (IOC) of Ploutus-D in order to help financial organizations identify and defend against this threat.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Launcher â€“ Diebold.exe (.NET)",
+                "timestamp":"1484208798",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Ploutus-D â€“ AgilisConfigurationUtility.exe (.NET)",
+                "timestamp":"1484208827",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1484208866",
+                "type":"filename",
+                "value":"C:\\Diebold\\EDC\\edclocal.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1484208894",
+                "type":"mutex",
+                "value":"Ploutos",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1484208895",
+                "type":"mutex",
+                "value":"DIEBOLDPL",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1484208896",
+                "type":"mutex",
+                "value":"KaligniteAPP",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1484208926",
+                "type":"windows-service-name",
+                "value":"DIEBOLDP",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Ploutus-D â€“ AgilisConfigurationUtility.exe (.NET) - Xchecked via VT: 5af1f92832378772a7e3b07a0cad4fc5",
+                "timestamp":"1484208952",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Ploutus-D â€“ AgilisConfigurationUtility.exe (.NET) - Xchecked via VT: 5af1f92832378772a7e3b07a0cad4fc5",
+                "timestamp":"1484208952",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Ploutus-D â€“ AgilisConfigurationUtility.exe (.NET) - Xchecked via VT: 5af1f92832378772a7e3b07a0cad4fc5",
+                "timestamp":"1484208953",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/aee97881d3e45ba0cae91f471db78aded16bcff1468d9e66edf9d3c0223d238f/analysis/1482659688/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Launcher â€“ Diebold.exe (.NET) - Xchecked via VT: c04a7cb926ccbf829d0a36a91ebf91bd",
+                "timestamp":"1484208954",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Launcher â€“ Diebold.exe (.NET) - Xchecked via VT: c04a7cb926ccbf829d0a36a91ebf91bd",
+                "timestamp":"1484208955",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Launcher â€“ Diebold.exe (.NET) - Xchecked via VT: c04a7cb926ccbf829d0a36a91ebf91bd",
+                "timestamp":"1484208955",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/04db39463012add2eece6dfe6f311ad46b76dae55460eea30dec02d3d3f1c00a/analysis/1481662423/",
+                "to_ids":false
+            }
+        ]
+    }
+}

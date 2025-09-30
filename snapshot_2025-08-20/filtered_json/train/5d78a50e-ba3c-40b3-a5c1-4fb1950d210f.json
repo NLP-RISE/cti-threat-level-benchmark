@@ -1,0 +1,450 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-09-09",
+        "published":true,
+        "info":"OSINT - ESET discovered an undocumented backdoor used by the infamous Stealth Falcon group",
+        "publish_timestamp":"1568204241",
+        "timestamp":"1568193300",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Stealth Falcon\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Stealth Falcon - G0038\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Stealth Falcon\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Stealth Falcon - G0038\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Stealth Falcon\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"BITS Jobs - T1197\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"BITS Jobs - T1197\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1568188868",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2019/09/09/backdoor-stealth-falcon-group/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1568188891",
+                "type":"text",
+                "value":"Stealth Falcon is a threat group, active since 2012, that targets political activists and journalists in the Middle East. It has been tracked by the Citizen Lab, a non-profit organization focusing on security and human rights, which published an analysis of a particular cyberattack in 2016. In January of 2019, Reuters published an investigative report into Project Raven, an initiative allegedly employing former NSA operatives and aiming at the same types of targets as Stealth Falcon.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1568189620",
+                "type":"domain",
+                "value":"footballtimes.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1568189620",
+                "type":"domain",
+                "value":"vegetableportfolio.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1568189620",
+                "type":"domain",
+                "value":"windowsearchcache.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1568189620",
+                "type":"domain",
+                "value":"electricalweb.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1568189620",
+                "type":"domain",
+                "value":"upnpdiscover.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware as detected by ESET",
+                "timestamp":"1568189662",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware as detected by ESET",
+                "timestamp":"1568189662",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware as detected by ESET",
+                "timestamp":"1568189662",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware as detected by ESET",
+                "timestamp":"1568189662",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1568193151",
+                "type":"text",
+                "value":"Win32/StealthFalcon",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7611029 enriched by dns.",
+                "timestamp":"1568193349",
+                "type":"ip-src",
+                "value":"185.227.82.19",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7611030 enriched by dns.",
+                "timestamp":"1568193349",
+                "type":"ip-src",
+                "value":"46.183.219.85",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7611032 enriched by dns.",
+                "timestamp":"1568193350",
+                "type":"ip-src",
+                "value":"193.105.134.75",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189161",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189161",
+                        "type":"text",
+                        "value":"Uninstall itself",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189167",
+                        "type":"text",
+                        "value":"K",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189276",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189276",
+                        "type":"text",
+                        "value":"Update configuration data",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189282",
+                        "type":"text",
+                        "value":"CFG",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189713",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189713",
+                        "type":"text",
+                        "value":"Execute the specified application",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189713",
+                        "type":"text",
+                        "value":"RC",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189734",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189734",
+                        "type":"text",
+                        "value":"Write downloaded data to file",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189734",
+                        "type":"text",
+                        "value":"DL",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189754",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189754",
+                        "type":"text",
+                        "value":"Prepare a file for exfiltration",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189754",
+                        "type":"text",
+                        "value":"CF",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189792",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189792",
+                        "type":"text",
+                        "value":"Not implemented/no operation",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189792",
+                        "type":"text",
+                        "value":"CFWD",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Command line and option related to a software malicious or not to execute specific commands.",
+                "meta-category":"misc",
+                "name":"command-line",
+                "timestamp":"1568189869",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189869",
+                        "type":"text",
+                        "value":"Exfiltrate and delete files",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568189869",
+                        "type":"text",
+                        "value":"CFW",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"RC4 keys",
+                "description":"Credential describes one or more credential(s) including password(s), api key(s) or decryption key(s).",
+                "meta-category":"misc",
+                "name":"credential",
+                "timestamp":"1568190180",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"clear-text",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"malware-analysis",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"encryption-key",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"258A4A9D139823F55D7B9DA1825D101107FBF88634A870DE9800580DAD556BA3",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"2519DB0FFEC604D6C9A655CF56B98EDCE10405DE36810BC3DCF125CDE30BA5A2",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"3EDB6EA77CD0987668B360365D5F39FDCF6B366D0DEAC9ECE5ADC6FFD20227F6",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"8DFFDE77A39F3AF46D0CE0B84A189DB25A2A0FEFD71A0CD0054D8E0D60AB08DE",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568190180",
+                        "type":"text",
+                        "value":"Note: Malware derives a second RC4 key by XORing each byte of the hardcoded key with 0x3D.",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Backdoor commands",
+                "description":"Command functionalities related to a software malicious or not to execute specific commands. Command-line are attached to this object for the related commands.",
+                "meta-category":"misc",
+                "name":"command",
+                "timestamp":"1568193120",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568193120",
+                        "type":"text",
+                        "value":"Win32/StealthFalcon is a DLL file which, after execution, schedules itself as a task running on each user login. It only supports basic commands but displays a systematic approach to data collection, data exfiltration, employing further malicious tools, and updating its configuration.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568193120",
+                        "type":"text",
+                        "value":"Network",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1568193120",
+                        "type":"text",
+                        "value":"Bundled",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

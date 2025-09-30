@@ -1,0 +1,764 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-04-25",
+        "published":true,
+        "info":"OSINT - ArcaneDoor - New espionage-focused campaign found targeting perimeter network devices",
+        "publish_timestamp":"1714132948",
+        "timestamp":"1714132910",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"ArcaneDoor\""
+            },
+            {
+                "name":"misp-galaxy:producer=\"Cisco Talos Intelligence Group\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1714044155",
+                "type":"vulnerability",
+                "value":"CVE-2024-20353",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1714044345",
+                "type":"vulnerability",
+                "value":"CVE-2024-20359",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"CVE-2024-20353: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1714044165",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"vulnerability",
+                        "value":"CVE-2024-20353",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"text",
+                        "value":"A vulnerability in the management and VPN web servers for Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.\n\n This vulnerability is due to incomplete error checking when parsing an HTTP header. An attacker could exploit this vulnerability by sending a crafted HTTP request to a targeted web server on a device. A successful exploit could allow the attacker to cause a DoS condition when the device reloads.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"datetime",
+                        "value":"2024-04-24T19:58:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"datetime",
+                        "value":"2024-04-24T19:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714044165",
+                        "type":"link",
+                        "value":"https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-websrvs-dos-X8gNucD2",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.",
+                "meta-category":"misc",
+                "name":"script",
+                "timestamp":"1714044298",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044298",
+                        "type":"text",
+                        "value":"show memory region | include lina",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044271",
+                        "type":"text",
+                        "value":"Additionally, organizations can issue the command show memory region | include lina to identify another indicator of compromise. If the output indicates more than one executable memory region (memory regions having r-xp permissions, see output examples), especially if one of these memory sections is exactly 0x1000 bytes, then this is a sign of potential tampering.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044271",
+                        "type":"text",
+                        "value":"Trusted",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2024-20359: Enriched via the cve_advanced module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1714044355",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"vulnerability",
+                        "value":"CVE-2024-20359",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"text",
+                        "value":"A vulnerability in a legacy capability that allowed for the preloading of VPN clients and plug-ins and that has been available in Cisco Adaptive Security Appliance (ASA) Software and Cisco Firepower Threat Defense (FTD) Software could allow an authenticated, local attacker to execute arbitrary code with root-level privileges. Administrator-level privileges are required to exploit this vulnerability.\n\n This vulnerability is due to improper validation of a file when it is read from system flash memory. An attacker could exploit this vulnerability by copying a crafted file to the disk0: file system of an affected device. A successful exploit could allow the attacker to execute arbitrary code on the affected device after the next reload of the device, which could alter system behavior. Because the injected code could persist across device reboots, Cisco has raised the Security Impact Rating (SIR) of this advisory from Medium to High.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"datetime",
+                        "value":"2024-04-24T19:58:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"datetime",
+                        "value":"2024-04-24T19:15:00+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"text",
+                        "value":"Published",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714044355",
+                        "type":"link",
+                        "value":"https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-asaftd-persist-rce-FLsNXF4h",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Adversary controlled as mentioned in the blog post",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1714125199",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"192.36.57.181",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"185.167.60.85",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"185.227.111.17",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"176.31.18.153",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"172.105.90.154",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"185.244.210.120",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"45.86.163.224",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"172.105.94.93",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"213.156.138.77",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"89.44.198.189",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"45.77.52.253",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"103.114.200.230",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"212.193.2.48",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"51.15.145.37",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"89.44.198.196",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"131.196.252.148",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"213.156.138.78",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"121.227.168.69",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"213.156.138.68",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"194.4.49.6",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"185.244.210.65",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Likely Actor-Controlled Infrastructure",
+                        "timestamp":"1714125203",
+                        "type":"ip-dst",
+                        "value":"216.238.75.155",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Multi-tenant infrastructure",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1714125413",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125413",
+                        "type":"ip-dst",
+                        "value":"5.183.95.95",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125413",
+                        "type":"ip-dst",
+                        "value":"45.63.119.131",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125413",
+                        "type":"ip-dst",
+                        "value":"45.76.118.87",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125413",
+                        "type":"ip-dst",
+                        "value":"45.77.54.14",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125413",
+                        "type":"ip-dst",
+                        "value":"45.86.163.244",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"45.128.134.189",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"89.44.198.16",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"96.44.159.46",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"103.20.222.218",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"103.27.132.69",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"103.51.140.101",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"103.119.3.230",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"103.125.218.198",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"104.156.232.22",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"107.148.19.88",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"107.172.16.208",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"107.173.140.111",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"121.37.174.139",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"139.162.135.12",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"149.28.166.244",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"152.70.83.47",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"154.22.235.13",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"154.22.235.17",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"154.39.142.47",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"172.233.245.241",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"185.123.101.250",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"192.210.137.35",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"194.32.78.183",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"205.234.232.196",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"207.148.74.250",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"216.155.157.136",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"216.238.66.251",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125414",
+                        "type":"ip-dst",
+                        "value":"216.238.71.49",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125415",
+                        "type":"ip-dst",
+                        "value":"216.238.72.201",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125415",
+                        "type":"ip-dst",
+                        "value":"216.238.74.95",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125415",
+                        "type":"ip-dst",
+                        "value":"216.238.81.149",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125415",
+                        "type":"ip-dst",
+                        "value":"216.238.85.220",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Multi-Tenant Infrastructure",
+                        "timestamp":"1714125415",
+                        "type":"ip-dst",
+                        "value":"216.238.86.24",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1714125746",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714125618",
+                        "type":"link",
+                        "value":"https://www.circl.lu/pub/tr-85/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714125618",
+                        "type":"text",
+                        "value":"TR-85 - Three vulnerabilities in Cisco ASA software/applicance and FTD software being exploited",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714125618",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1714125783",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1714125656",
+                        "type":"link",
+                        "value":"https://blog.talosintelligence.com/arcanedoor-new-espionage-focused-campaign-found-targeting-perimeter-network-devices/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714125656",
+                        "type":"text",
+                        "value":"ArcaneDoor - New espionage-focused campaign found targeting perimeter network devices",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1714125656",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

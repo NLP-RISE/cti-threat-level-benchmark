@@ -1,0 +1,183 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-24",
+        "published":true,
+        "info":"OSINT - Malicious Chrome Extensions Stealing Roblox In-Game Currency, Sending Cookies via Discord",
+        "publish_timestamp":"1507138118",
+        "timestamp":"1507138112",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/malicous-chrome-extensions-stealing-roblox-game-currency-sending-cookies-via-discord/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"comment",
+                "value":"We recently discussed how cyber criminals are using the popular voice/chat client Discord to steal cookies from the running Roblox process on a Windows PC. Since then, weâ€™ve noticed another attack going after the same information, only this time it is via Chrome extensions (CRX files).\r\n\r\nWhile it currently only targets Roblox users, the same technique can be used to steal cookies from any website. The stolen information is sent via Discord, but this could also be configured to use other chat platforms. We learned this particular Chrome extension was, in fact, for sale on the Dream Market underground marketplace for only 99 cents",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"filename",
+                "value":"ROBLOX BOT.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"filename",
+                "value":"Crm5extension.crx",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"filename",
+                "value":"Roblox Enhancer.crx",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"filename",
+                "value":"danktrades.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"filename",
+                "value":"bgWork.js",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"domain",
+                "value":"3rmillion.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1507138112",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: d9f21e401ef0197a2af66133e3f7fc3a4ea3efb4437884a4383076bad4060b02",
+                "timestamp":"1507138112",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: d9f21e401ef0197a2af66133e3f7fc3a4ea3efb4437884a4383076bad4060b02",
+                "timestamp":"1507138112",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: d9f21e401ef0197a2af66133e3f7fc3a4ea3efb4437884a4383076bad4060b02",
+                "timestamp":"1507138112",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d9f21e401ef0197a2af66133e3f7fc3a4ea3efb4437884a4383076bad4060b02/analysis/1503970956/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 4c4af30a94cd25b23579e12b64191a056bda3c51b6e531a2202d3863b19432b3",
+                "timestamp":"1507138112",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 4c4af30a94cd25b23579e12b64191a056bda3c51b6e531a2202d3863b19432b3",
+                "timestamp":"1507138112",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 4c4af30a94cd25b23579e12b64191a056bda3c51b6e531a2202d3863b19432b3",
+                "timestamp":"1507138112",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4c4af30a94cd25b23579e12b64191a056bda3c51b6e531a2202d3863b19432b3/analysis/1503951674/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0061a5f52c5b577f679e81da3ab3ad3803c20e345c16ffc4dbc8b76386d42a00",
+                "timestamp":"1507138112",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 0061a5f52c5b577f679e81da3ab3ad3803c20e345c16ffc4dbc8b76386d42a00",
+                "timestamp":"1507138112",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 0061a5f52c5b577f679e81da3ab3ad3803c20e345c16ffc4dbc8b76386d42a00",
+                "timestamp":"1507138113",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0061a5f52c5b577f679e81da3ab3ad3803c20e345c16ffc4dbc8b76386d42a00/analysis/1504020369/",
+                "to_ids":false
+            }
+        ]
+    }
+}

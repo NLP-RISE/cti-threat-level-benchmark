@@ -1,0 +1,551 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-12-30",
+        "published":true,
+        "info":"ICS Threat Analysis: New, Experimental Malware Can Kill Engineering Processes",
+        "publish_timestamp":"1735652162",
+        "timestamp":"1735652026",
+        "Tag":[
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:botnet=\"Ramnit\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Ramnit\""
+            },
+            {
+                "name":"misp-galaxy:country=\"belgium\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1735595572",
+                "type":"link",
+                "value":"https://www.forescout.com/blog/ics-threat-analysis-new-experimental-malware-can-kill-engineering-processes/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit: Cluster 1: This cluster contained a single executable of Mitsubishi GX Works",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ramnit : Cluster 2: This cluster consisted of 9 DLLs associated with the same executable",
+                "timestamp":"1735650527",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download location DesktopLayer.exe",
+                "timestamp":"1735650526",
+                "type":"domain",
+                "value":"432i.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download location DesktopLayer.exe",
+                "timestamp":"1735650526",
+                "type":"domain",
+                "value":"az-security.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download location DesktopLayer.exe",
+                "timestamp":"1735650526",
+                "type":"domain",
+                "value":"0g0d.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download location DesktopLayer.exe",
+                "timestamp":"1735650526",
+                "type":"domain",
+                "value":"grpaper.com",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1735650460",
+                "type":"text",
+                "value":"x86assembly.xyz",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Discord web hook in the first iteration of Chaya_003",
+                "timestamp":"1735650460",
+                "type":"url",
+                "value":"discord.com/api/webhooks/iamawebhookfrfr/69696969",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Discord web hook in the second and third iterations",
+                "timestamp":"1735650460",
+                "type":"url",
+                "value":"discord.com/api/webhooks/1291410641793454080/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Possibly associated with the creators of Chaya_003",
+                "timestamp":"1735650460",
+                "type":"ip-dst",
+                "value":"198.185.159.144",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Ramnit: dropped by DLLs",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650945",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650526",
+                        "type":"filename",
+                        "value":"DesktopLayer.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650526",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1735650526",
+                        "type":"text",
+                        "value":":\\Program Files (x86)\\Microsoft\\DesktopLayer.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Submitted from Belgium; with Dutch strings",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650973",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Chaya_003: Killing Engineering Processes",
+                        "timestamp":"1735650460",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"filename",
+                        "value":"test.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Submitted from Belgium; with Dutch strings",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650997",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Chaya_003: Killing Engineering Processes",
+                        "timestamp":"1735650460",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"filename",
+                        "value":"elsass.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Submitted from Belgium; with Dutch strings",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735651020",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Chaya_003: Killing Engineering Processes",
+                        "timestamp":"1735650460",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"filename",
+                        "value":"Isass.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"9579c6987ac8969d0b0cc0cc2a9da3b034fac41525d96fa79fa02d05813e70f9: Enriched via the virustotal_public module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1735650460",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/9579c6987ac8969d0b0cc0cc2a9da3b034fac41525d96fa79fa02d05813e70f9",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"text",
+                        "value":"19/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"9579c6987ac8969d0b0cc0cc2a9da3b034fac41525d96fa79fa02d05813e70f9: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1735650926",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"domain",
+                        "value":"discord.com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"9579c6987ac8969d0b0cc0cc2a9da3b034fac41525d96fa79fa02d05813e70f9: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650459",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"517e35b32c4a1dedb155bbd208422cd5c5d34b5ec378712b7e8182fd26473c7e: Enriched via the virustotal_public module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1735650460",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/517e35b32c4a1dedb155bbd208422cd5c5d34b5ec378712b7e8182fd26473c7e",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1735650460",
+                        "type":"text",
+                        "value":"24/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"517e35b32c4a1dedb155bbd208422cd5c5d34b5ec378712b7e8182fd26473c7e: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650459",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"b16a67f49ce5aa057236d2bff3e1ab2dcc2c6d3f2551e4520f54e125b2e289d8: Enriched via the virustotal_public module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1735650459",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/b16a67f49ce5aa057236d2bff3e1ab2dcc2c6d3f2551e4520f54e125b2e289d8",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"text",
+                        "value":"12/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"b16a67f49ce5aa057236d2bff3e1ab2dcc2c6d3f2551e4520f54e125b2e289d8: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1735650459",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1735650459",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

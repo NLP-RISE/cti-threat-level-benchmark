@@ -1,0 +1,836 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-06-20",
+        "published":true,
+        "info":"Malicious activities linked to the Nobelium intrusion set",
+        "publish_timestamp":"1718887049",
+        "timestamp":"1718887042",
+        "Tag":[
+            {
+                "name":"fr-classif:non-classifiees=\"NON-CLASSIFIEES\""
+            },
+            {
+                "name":"cert-fr:fiabilite=\"Moderee\""
+            },
+            {
+                "name":"PAP:CLEAR"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"NOBELIUM\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"NOBELIUM\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"Midnight Blizzard\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"APT29 - G0016\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"UNC2452 - G0118\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"UNC2452 - G0118\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Government, Administration\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Diplomacy\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1718642252",
+                "type":"comment",
+                "value":"Phishing emails were sent using German-language lure content and bearing a logo from the Christian Democratic Union (CDU), a major political party in Germany.\r\n\r\nThe German-language lure document contains a phishing link directing victims to an actor-controlled compromised website hosting a malicious ZIP file containing a dropper. The dropper uses https://github.com/javascript-obfuscator/javascript-obfuscator and deliver a second-stage CDU-themed lure document and the next stage payload (WINELOADER).\r\n\r\nThe payload is decoded using Windows Certutil, then decompressed using tar. Finally, the legitimate Windows binary SqlDumper.exe is executed by the actor.",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1717494800",
+                "type":"url",
+                "value":"https://waterforvoiceless.org/invite.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1717494800",
+                "type":"url",
+                "value":"https://waterforvoiceless.org/util.php*",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1717494800",
+                "type":"url",
+                "value":"https://siestakeying.com/auth.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1718886848",
+                "type":"link",
+                "value":"https://www.cert.ssi.gouv.fr/uploads/CERTFR-2024-CTI-006.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1718784997",
+                "type":"comment",
+                "value":"IOC from a blogpost presenting an analysis of a MOA SPIKEDWINE campaign. This campaign exploits geopolitical relations between India and European diplomats. It uses spearphishing in order to drop WINELOADER backdoor on compromised machine.",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"WINELOADER C2",
+                "timestamp":"1709117940",
+                "type":"url",
+                "value":"https://castechtools.com/api.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Downloads base64-encoded ZIP archive from this URL",
+                "timestamp":"1709117940",
+                "type":"url",
+                "value":"https://seeceafcleaners.co.uk/cert.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Downloads the ZIP archive containing the wine.hta file",
+                "timestamp":"1709117940",
+                "type":"url",
+                "value":"https://seeceafcleaners.co.uk/wine.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Downloads the ZIP archive containing the wine.hta file (IOC from July 2023)",
+                "timestamp":"1709117940",
+                "type":"url",
+                "value":"https://passatempobasico.com.br/wine.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1709117940",
+                "type":"domain",
+                "value":"castechtools.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1709117940",
+                "type":"domain",
+                "value":"seeceafcleaners.co.uk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1709117940",
+                "type":"domain",
+                "value":"passatempobasico.com.br",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1709117941",
+                "type":"filename",
+                "value":"%WINDIR%\\Tasks\\text.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1709117941",
+                "type":"filename",
+                "value":"%WINDIR%\\Tasks\\text.zip",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1709215510",
+                "type":"comment",
+                "value":"2023-07-01",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Second CDU-themed PDF lure document",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494800",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"filename",
+                        "value":"Invite.pdf",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Zip file containing ROOTSAW",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494800",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"filename",
+                        "value":"invite.php",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494800",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"ROOTSAW downloader containing obfuscated code",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"filename",
+                        "value":"invite.hta",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious certificate file, extracted using Windows Certutil",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"filename",
+                        "value":"invite.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER downloader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"filename",
+                        "value":"vcruntime140.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER downloader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"filename",
+                        "value":"Vcruntime140.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Malicious zip containing WINELOADER",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1717494801",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"filename",
+                        "value":"invite.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1717494801",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER core module loader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"size-in-bytes",
+                        "value":"98736",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"float",
+                        "value":"7.1357010202951",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"mime-type",
+                        "value":"PE32+ executable (DLL) (console) x86-64, for MS Windows",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"filename",
+                        "value":"vcruntime140.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"July 2023 invitation",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"size-in-bytes",
+                        "value":"41459",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"float",
+                        "value":"7.9059738858361",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"mime-type",
+                        "value":"PDF document, version 1.5, 1 pages",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"filename",
+                        "value":"wine.pdf",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Feb 2024 invitation",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"size-in-bytes",
+                        "value":"41311",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"float",
+                        "value":"7.9051312944466",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"mime-type",
+                        "value":"PDF document, version 1.5, 1 pages",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"filename",
+                        "value":"wine.pdf",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"size-in-bytes",
+                        "value":"211547",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"float",
+                        "value":"6.0447401809426",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"mime-type",
+                        "value":"HTML document, ASCII text, with very long lines (60629)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"filename",
+                        "value":"wine.hta",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER core module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER core module (RC4-encrypted)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER persistence module loader",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER persistence module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117941",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117941",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"WINELOADER persistence module (RC4-encrypted)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1709117942",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1709117942",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

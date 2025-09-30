@@ -1,0 +1,470 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2024-01-24",
+        "published":true,
+        "info":"NSPX30: A sophisticated AitM-enabled implant evolving since 2005",
+        "publish_timestamp":"1706125207",
+        "timestamp":"1706125183",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:country=\"china\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"China\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Japan\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"United Kingdom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1706123971",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/en/eset-research/que-tipos-de-hackers-existem-e-o-que-os-distingue/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PDB paths found in plugin samples",
+                "timestamp":"1706124225",
+                "type":"filename",
+                "value":"Z:\\Workspace\\mm\\32\\NSPX30\\Plugins\\plugin\\b001.pdb",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PDB paths found in plugin samples",
+                "timestamp":"1706124225",
+                "type":"filename",
+                "value":"Z:\\Workspace\\Code\\MM\\X30Pro\\trunk\\MM\\Plugins\\hookdll\\Release\\hookdll.pdb",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"The installer attempts to disable the submission of samples by Windows Defender, and adds an exclusion rule for the loader DLL msnsp.dll.",
+                "timestamp":"1706124448",
+                "type":"comment",
+                "value":"cmd /c powershell -inputformat none -outputformat none -NonInteractive -Command Set-MpPreference -SubmitSamplesConsent 0",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"The installer attempts to disable the submission of samples by Windows Defender, and adds an exclusion rule for the loader DLL msnsp.dll.",
+                "timestamp":"1706124504",
+                "type":"comment",
+                "value":"cmd /c powershell -inputformat none -outputformat none -NonInteractive -Command Add-MpPreference -ExclusionPath “%PROGRAMFILES%\\(x86)\\Common Files\\microsoft shared\\TextConv\\msnsp.dll”",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"persistent loader DLL",
+                "timestamp":"1706124571",
+                "type":"filename",
+                "value":"%PROGRAMFILES%\\(x86)\\Common Files\\microsoft shared\\TextConv\\msnsp.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1706124627",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\Windows\\mshlp.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1706124627",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\Windows\\WIN.cfg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124773",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124773",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124773",
+                        "type":"filename",
+                        "value":"comx3.dll.txt",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125031",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124807",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125031",
+                        "type":"filename",
+                        "value":"WIN.cfg",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124830",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124830",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124830",
+                        "type":"filename",
+                        "value":"msfmtkl.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124849",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124849",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124849",
+                        "type":"filename",
+                        "value":"c001.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125022",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124887",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125022",
+                        "type":"filename",
+                        "value":"mshlp.dll",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124909",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124909",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124909",
+                        "type":"filename",
+                        "value":"c002.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124942",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124942",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124942",
+                        "type":"filename",
+                        "value":"c003.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124957",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124957",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124958",
+                        "type":"filename",
+                        "value":"a010.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706124985",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124985",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706124985",
+                        "type":"filename",
+                        "value":"b011.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125013",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125013",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125013",
+                        "type":"filename",
+                        "value":"msnsp.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125052",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125052",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125052",
+                        "type":"filename",
+                        "value":"comx3.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125070",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125070",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125070",
+                        "type":"filename",
+                        "value":"minibrowser_shell.dll",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1706125100",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125083",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1706125100",
+                        "type":"filename",
+                        "value":"b010.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1706125150",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1706125144",
+                        "type":"ip-dst",
+                        "value":"104.193.88.123",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1706125150",
+                        "type":"hostname",
+                        "value":"www.baidu.com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1706125183",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1706125161",
+                        "type":"ip-dst",
+                        "value":"183.134.93.171",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1706125183",
+                        "type":"domain",
+                        "value":"dl_dir.qq.com",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

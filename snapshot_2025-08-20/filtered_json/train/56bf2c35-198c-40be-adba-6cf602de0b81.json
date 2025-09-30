@@ -1,0 +1,180 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-02-13",
+        "published":true,
+        "info":"OSINT - A Look Into Fysbis: Sofacyâ€™s Linux Backdoor",
+        "publish_timestamp":"1455369699",
+        "timestamp":"1455369626",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1455369383",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2016/02/a-look-into-fysbis-sofacys-linux-backdoor/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1455369401",
+                "type":"comment",
+                "value":"The Sofacy group, also known as APT28 and Sednit, is a fairly well known cyber espionage group believed to have ties to Russia. Their targets have spanned all across the world, with a focus on government, defense organizations and various Eastern European governments. There have been numerous reports on their activities, to the extent that a Wikipedia entry has even been created for them.\r\nFrom these reports, we know that the group uses an abundance of tools and tactics, ranging across zero-day exploits targeting common applications such as Java or Microsoft Office, heavy use of spear-phishing attacks, compromising legitimate websites to stage watering-hole attacks, and targeting over a variety of operating systems â€“ Windows, OSX, Linux, even mobile iOS.\r\nThe Linux malware Fysbis is a preferred tool of Sofacy, and though it is not particularly sophisticated, Linux security in general is still a maturing area, especially in regards to malware. In short, it is entirely plausible that this tool has contributed to the success of associated attacks by this group. This blog post focuses specifically on this Linux tool preferred by Sofacy and describes considerations and implications when it comes to Linux malware.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1455369422",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 364ff454dcf00420cff13a57bcb78467",
+                "timestamp":"1455369444",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 364ff454dcf00420cff13a57bcb78467",
+                "timestamp":"1455369444",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1455369444",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8bca0031f3b691421cb15f9c6e71ce193355d2d8cf2b190438b6962761d0c6bb/analysis/1443639905/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1455369497",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 075b6695ab63f36af65f7ffd45cccd39",
+                "timestamp":"1455369511",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 075b6695ab63f36af65f7ffd45cccd39",
+                "timestamp":"1455369511",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1455369511",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/02c7cf55fd5c5809ce2dce56085ba43795f2480423a4256537bfdfda0df85592/analysis/1450364865/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1455369532",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: e107c5c84ded6cd9391aede7f04d64c8",
+                "timestamp":"1455369540",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: e107c5c84ded6cd9391aede7f04d64c8",
+                "timestamp":"1455369540",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1455369540",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fd8b2ea9a2e8a67e4cb3904b49c789d57ed9b1ce5bebfe54fe3d98214d6a0f61/analysis/1450713631/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1455369592",
+                "type":"domain",
+                "value":"azureon-line.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1455369592",
+                "type":"ip-dst",
+                "value":"198.105.125.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1455369592",
+                "type":"domain",
+                "value":"mozilla-plugins.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1455369593",
+                "type":"domain",
+                "value":"mozillaplagins.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1455369626",
+                "type":"filename",
+                "value":"~/.config/ksysdef/ksysdefd",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1455369627",
+                "type":"filename",
+                "value":"~/.config/dbus-notifier/dbus-inotifier",
+                "to_ids":true
+            }
+        ]
+    }
+}

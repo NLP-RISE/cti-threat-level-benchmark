@@ -1,0 +1,57 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2020-04-06",
+        "published":true,
+        "info":"New RedLine Stealer Distributed Using Coronavirus-themed Email Campaign",
+        "publish_timestamp":"1586203772",
+        "timestamp":"1586203767",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"URL hosting RedLine Stealer",
+                "timestamp":"1586203657",
+                "type":"url",
+                "value":"https://bitbucket.org/example123321/download/downloads/foldingathomeapp.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RedLine Stealer Payload",
+                "timestamp":"1586203667",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RedLine Stealer C2",
+                "timestamp":"1586203674",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"RedLine Stealer Payload",
+                "timestamp":"1586203664",
+                "type":"ip-dst",
+                "value":"66.206.18.186",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1586203754",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/new-redline-stealer-distributed-using-coronavirus-themed-email-campaign",
+                "to_ids":false
+            }
+        ]
+    }
+}

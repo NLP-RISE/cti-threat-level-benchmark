@@ -1,0 +1,375 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-27",
+        "published":true,
+        "info":"OSINT - Tizi: Detecting and blocking socially engineered spyware on Android",
+        "publish_timestamp":"1514467618",
+        "timestamp":"1512356440",
+        "Tag":[
+            {
+                "name":"misp-galaxy:android=\"Tizi\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"AndroidOS\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"Google blog post - Tizi: Detecting and blocking socially engineered spyware on Android",
+                "timestamp":"1512294575",
+                "type":"link",
+                "value":"https://security.googleblog.com/2017/11/tizi-detecting-and-blocking-socially.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1512294574",
+                "type":"text",
+                "value":"Google is constantly working to improve our systems that protect users from Potentially Harmful Applications (PHAs). Usually, PHA authors attempt to install their harmful apps on as many devices as possible. However, a few PHA authors spend substantial effort, time, and money to create and install their harmful app on a small number of devices to achieve a certain goal. This blog post covers Tizi, a backdoor family with some rooting capabilities that was used in a targeted attack against devices in African countries, specifically: Kenya, Nigeria, and Tanzania. We'll talk about how the Google Play Protect and Threat Analysis teams worked together to detect and investigate Tizi-infected apps and remove and block them from Android devices.",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1512298989",
+                "type":"target-location",
+                "value":"Kenya",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1512298989",
+                "type":"target-location",
+                "value":"Nigeria",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"",
+                "timestamp":"1512298989",
+                "type":"target-location",
+                "value":"Tanzania",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2012-4220",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2013-2596",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2013-2597",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2013-2595",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2013-2094",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2013-6282",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2014-3153",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2015-3636",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Tizi can root the device by exploiting one of the following local vulnerabilities:",
+                "timestamp":"1512299428",
+                "type":"vulnerability",
+                "value":"CVE-2015-1805",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Here is an example social media post promoting a Tizi-infected app",
+                "timestamp":"1512299720",
+                "type":"attachment",
+                "value":"tizi1.png",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512297690",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512297690",
+                        "type":"filename",
+                        "value":"com.press.nasa.com.tanofresh",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512297690",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512297690",
+                        "type":"x509-fingerprint-sha1",
+                        "value":"816bbee3cab5eed00b8bd16df56032a96e243201",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512297690",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"To encourage further research in the security community, here are some sample applications embedding Tizi that were already on VirusTotal.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512298628",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298628",
+                        "type":"filename",
+                        "value":"com.dailyworkout.tizi",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298628",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298628",
+                        "type":"x509-fingerprint-sha1",
+                        "value":"404b4d1a7176e219eaa457b0050b4081c22a9a1a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512298628",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"To encourage further research in the security community, here are some sample applications embedding Tizi that were already on VirusTotal.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512298712",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298712",
+                        "type":"filename",
+                        "value":"com.system.update.systemupdate",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298712",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298712",
+                        "type":"x509-fingerprint-sha1",
+                        "value":"4d2962ac1f6551435709a5a874595d855b1fa8ab",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512298712",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"To encourage further research in the security community, here are some sample digests of exploits and utilities that were used or abused by Tizi.",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512298774",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298774",
+                        "type":"filename",
+                        "value":"run_root_shell",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298774",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512298774",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1512298862",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512298862",
+                        "type":"text",
+                        "value":"To encourage further research in the security community, here are some sample digests of exploits and utilities that were used or abused by Tizi.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298862",
+                        "type":"filename",
+                        "value":"iovyroot",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1512298862",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512298862",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Victim object describes the target of an attack or abuse.",
+                "meta-category":"misc",
+                "name":"victim",
+                "timestamp":"1512299195",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512299195",
+                        "type":"text",
+                        "value":"class",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512299195",
+                        "type":"text",
+                        "value":"Kenya, Nigeria, and Tanzania",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1512299195",
+                        "type":"text",
+                        "value":"This blog post covers Tizi, a backdoor family with some rooting capabilities that was used in a targeted attack against devices in African countries, specifically: Kenya, Nigeria, and Tanzania.",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

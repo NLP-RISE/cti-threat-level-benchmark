@@ -1,0 +1,215 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-07-12",
+        "published":true,
+        "info":"OSINT - Spam Campaign Delivers Cross-platform Remote Access Trojan Adwind",
+        "publish_timestamp":"1499873068",
+        "timestamp":"1499872080",
+        "Tag":[
+            {
+                "name":"misp-galaxy:rat=\"Adwind RAT\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1499872080",
+                "type":"link",
+                "value":"https://blog.trendmicro.com/trendlabs-security-intelligence/spam-remote-access-trojan-adwind-jrat/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1499872080",
+                "type":"text",
+                "value":"Cybercriminals are opportunists. As other operating systems (OS) are more widely used, they, too, would diversify their targets, tools, and techniques in order to cash in on more victims. Thatâ€™s the value proposition of malware that can adapt and cross over different platforms. And when combined with a business model that can commercially peddle this malware to other bad guys, the impact becomes more pervasive.\r\n\r\nCase in point: Adwind/jRAT, which Trend Micro detects as JAVA_ADWIND. Itâ€™s a cross-platform remote access Trojan (RAT) that can be run on any machine installed with Java, including Windows, Mac OSX, Linux, and Android.\r\n\r\nUnsurprisingly we saw it resurface in another spam campaign. This time, however, itâ€™s mainly targeting enterprises in the aerospace industry, with Switzerland, Ukraine, Austria, and the US the most affected countries.\r\n\r\nAdwind operators are active\r\nThe spam campaign actually corresponds to our telemetry for JAVA_ADWIND. In fact, the malware has had a steady increase in detections since the start of the year. From a mere 5,286 in January 2017, it surged to 117,649 in June. Itâ€™s notable, too, that JAVA_ADWIND detections from May to June, 2017 increased by 107%, indicating that cybercriminals are actively pushing and distributing the malware.\r\n\r\nAdwind/jRAT can steal credentials, record and harvest keystrokes, take pictures or screenshots, film and retrieve videos, and exfiltrate data. Adwind iterations were used to target banks and Danish businesses, and even turned infected machines into botnets.\r\n\r\nNotorious as a multiplatform do-it-yourself RAT, Adwind has many aliases: jRAT, Universal Remote Control Multi-Platform (UNRECOM), AlienSpy, Frutas, and JSocket. In 2014 we found an Android version of Adwind/jRAT modified to add a cryptocurrency-mining capability. The fact that itâ€™s sold as a service means this threat can be deployed by more cybercriminals who can customize their own builds and equip them with diverse functionalities.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Related C&C servers - Port 1033",
+                "timestamp":"1499872080",
+                "type":"ip-dst|port",
+                "value":"174.127.99.234|1033",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Related C&C servers:",
+                "timestamp":"1499872080",
+                "type":"url",
+                "value":"http://vacanzaimmobiliare.it/testla/WebPanel/post.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Files and URLs related to Adwind/jRAT",
+                "timestamp":"1499872080",
+                "type":"url",
+                "value":"http://ccb-ba.adv.br/wp-admin/network/ok/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Files and URLs related to Adwind/jRAT",
+                "timestamp":"1499872080",
+                "type":"url",
+                "value":"http://www.employersfinder.com/2017-MYBA-Charter.Agreement.pif",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Files and URLs related to Adwind/jRAT",
+                "timestamp":"1499872080",
+                "type":"url",
+                "value":"https://nup.pw/e2BXtK.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Files and URLs related to Adwind/jRAT",
+                "timestamp":"1499872080",
+                "type":"url",
+                "value":"https://nup.pw/Qcaq5e.jar",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TROJ_DLOADR.AUSUDT",
+                "timestamp":"1499872080",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.JEJPCO",
+                "timestamp":"1499872080",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.AUJC",
+                "timestamp":"1499872080",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"BKDR64_AGENT.TYUCT",
+                "timestamp":"1499872080",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TROJ_DLOADR.AUSUDT - Xchecked via VT: 3fc826ce8eb9e69b3c384b84351b7af63f558f774dc547fccc23d2f9788ebab4",
+                "timestamp":"1499872080",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TROJ_DLOADR.AUSUDT - Xchecked via VT: 3fc826ce8eb9e69b3c384b84351b7af63f558f774dc547fccc23d2f9788ebab4",
+                "timestamp":"1499872080",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"TROJ_DLOADR.AUSUDT - Xchecked via VT: 3fc826ce8eb9e69b3c384b84351b7af63f558f774dc547fccc23d2f9788ebab4",
+                "timestamp":"1499872080",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3fc826ce8eb9e69b3c384b84351b7af63f558f774dc547fccc23d2f9788ebab4/analysis/1499861768/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.AUJC - Xchecked via VT: 97d585b6aff62fb4e43e7e6a5f816dcd7a14be11a88b109a9ba9e8cd4c456eb9",
+                "timestamp":"1499872080",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.AUJC - Xchecked via VT: 97d585b6aff62fb4e43e7e6a5f816dcd7a14be11a88b109a9ba9e8cd4c456eb9",
+                "timestamp":"1499872081",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JAVA_ADWIND.AUJC - Xchecked via VT: 97d585b6aff62fb4e43e7e6a5f816dcd7a14be11a88b109a9ba9e8cd4c456eb9",
+                "timestamp":"1499872081",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/97d585b6aff62fb4e43e7e6a5f816dcd7a14be11a88b109a9ba9e8cd4c456eb9/analysis/1499851519/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.JEJPCO - Xchecked via VT: c16519f1de64c6768c698de89549804c1223addd88964c57ee036f65d57fd39b",
+                "timestamp":"1499872081",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"JAVA_ADWIND.JEJPCO - Xchecked via VT: c16519f1de64c6768c698de89549804c1223addd88964c57ee036f65d57fd39b",
+                "timestamp":"1499872081",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"JAVA_ADWIND.JEJPCO - Xchecked via VT: c16519f1de64c6768c698de89549804c1223addd88964c57ee036f65d57fd39b",
+                "timestamp":"1499872081",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c16519f1de64c6768c698de89549804c1223addd88964c57ee036f65d57fd39b/analysis/1499871432/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"BKDR64_AGENT.TYUCT - Xchecked via VT: 705325922cffac1bca8b1854913176f8b2df83a70e0df0c8d683ec56c6632ddb",
+                "timestamp":"1499872081",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"BKDR64_AGENT.TYUCT - Xchecked via VT: 705325922cffac1bca8b1854913176f8b2df83a70e0df0c8d683ec56c6632ddb",
+                "timestamp":"1499872081",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"BKDR64_AGENT.TYUCT - Xchecked via VT: 705325922cffac1bca8b1854913176f8b2df83a70e0df0c8d683ec56c6632ddb",
+                "timestamp":"1499872081",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/705325922cffac1bca8b1854913176f8b2df83a70e0df0c8d683ec56c6632ddb/analysis/1499247775/",
+                "to_ids":false
+            }
+        ]
+    }
+}

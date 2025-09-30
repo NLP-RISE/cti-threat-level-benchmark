@@ -1,0 +1,84 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-03",
+        "published":true,
+        "info":"OSINT - Update on the Fancy Bear Android malware (poprd30.apk)",
+        "publish_timestamp":"1488545461",
+        "timestamp":"1488545347",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1488545347",
+                "type":"text",
+                "value":"The APK file, that was investigated by Crowd Strike and us is actually corrupt, unzipping yields two warnings and a CRC Error.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1488545347",
+                "type":"link",
+                "value":"http://blog.crysys.hu/2017/03/update-on-the-fancy-bear-android-malware-poprd30-apk/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The repair process consisted of finding and removing an extra byte from the file â€œwarnings.pngâ€. By changing only this byte and getting a valid APK file, this might be the original file. After repair, we got the following file - REPAIRED.apk",
+                "timestamp":"1488545347",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Recommended yara for the linux versions",
+                "timestamp":"1488545347",
+                "type":"yara",
+                "value":"rule sofacy_xagent {\r\nmeta:\r\nauthor = \"AKG\"\r\ndescription = \"Sofacy - XAgent\"\r\nstrings:\r\n$service = \"ksysdefd\"\r\n$x1 = \"AgentKernel\"\r\n$x2 = \"Cryptor\"\r\n$x3 = \"AgentModule\"\r\n$x4 = \"ChannelController\"\r\n$x5 = \"RemoteKeylogger\"\r\n$a1 = \"UNCORRECT DISPLAY NAME\"\r\n$a2 = \"Keylogger started\"\r\n$a3 = \"Keylog thread exit\"\r\n$a4 = \"Keylogger yet started\"\r\ncondition:\r\n$service or (2 of ($x*)) or (2 of ($a*))\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"These XAgent linux samples are very similar to a Windows version that has been found in november, 2013",
+                "timestamp":"1488545347",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"These XAgent linux samples are very similar to a Windows version that has been found in november, 2013 - Xchecked via VT: 5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1",
+                "timestamp":"1488545352",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"These XAgent linux samples are very similar to a Windows version that has been found in november, 2013 - Xchecked via VT: 5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1",
+                "timestamp":"1488545353",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"These XAgent linux samples are very similar to a Windows version that has been found in november, 2013 - Xchecked via VT: 5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1",
+                "timestamp":"1488545353",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5f6b2a0d1d966fc4f1ed292b46240767f4acb06c13512b0061b434ae2a692fa1/analysis/1478070568/",
+                "to_ids":false
+            }
+        ]
+    }
+}

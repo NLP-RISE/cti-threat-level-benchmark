@@ -1,0 +1,68 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-26",
+        "published":true,
+        "info":"Malware 2017-01-26 (.js in .zip) - Cerber",
+        "publish_timestamp":"1485509878",
+        "timestamp":"1485448229",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1485444744",
+                "type":"url",
+                "value":"http://sonnystafgy.top/search.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1485444744",
+                "type":"domain",
+                "value":"sonnystafgy.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1485444745",
+                "type":"ip-dst",
+                "value":"54.200.117.224",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1485444804",
+                "type":"malware-sample",
+                "value":"1|35e1b2fcc8945d84c240c66d3b20c108",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1485444805",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded malware",
+                "timestamp":"1485444807",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

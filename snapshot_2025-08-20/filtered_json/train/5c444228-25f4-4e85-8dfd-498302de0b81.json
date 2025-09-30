@@ -1,0 +1,70 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-20",
+        "published":false,
+        "info":"Economical analysis of the sextortion emails",
+        "publish_timestamp":"1547982887",
+        "timestamp":"1558815488",
+        "Tag":[
+            {
+                "name":"adversary:infrastructure-action=\"passive-only\""
+            },
+            {
+                "name":"circl:incident-classification=\"scam\""
+            },
+            {
+                "name":"economical-impact:gain=\"less-than-1M-euro\""
+            },
+            {
+                "name":"veris:action:social:variety=\"Extortion\""
+            },
+            {
+                "name":"veris:action:social:variety=\"Scam\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Support Tool",
+                "comment":"python3 btc.py -e 11430 using https://github.com/rommelfs/misp_btc",
+                "timestamp":"1547979665",
+                "type":"attachment",
+                "value":"btc-11430.txt",
+                "to_ids":false
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"Total BTC received and cashed out from the known BTC addresses gathered from extortions",
+                "timestamp":"1547979620",
+                "type":"text",
+                "value":"Total received:\t164.20879967 BTC  930489.07 USD\t 804322.59 EUR\r\nTotal spent:\t131.84920417 BTC  688650.07 USD\t 598495.89 EUR",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547982873",
+                "type":"link",
+                "value":"https://twitter.com/circl_lu/status/1086939051658264576",
+                "to_ids":false
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"Total BTC received and cashed out from the known BTC addresses gathered from extortions (2019-05-25)",
+                "timestamp":"1558814970",
+                "type":"text",
+                "value":"Total received:\t 274.34008846 BTC 1405178.94 USD\t1221847.10 EUR\r\nTotal spent:\t 246.44414303 BTC 1208662.78 USD\t1057750.02 EUR",
+                "to_ids":false
+            }
+        ]
+    }
+}

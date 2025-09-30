@@ -1,0 +1,191 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-06-12",
+        "published":true,
+        "info":"OSINT -  Communications of the Bolek Trojan",
+        "publish_timestamp":"1465739926",
+        "timestamp":"1465739647",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1465739178",
+                "type":"comment",
+                "value":"A few weeks ago CERT Polska released a short blog post introducing a new malware family now known as Bolek. PhishMe and Dr.Web have since added some additional insight into the family. Browsing through a memory dump of the malware, a Webinjects section sticks out. Webinjects usually imply banking malware, so it seems Bolek picks up where its predecessor, Carberp, leaves off. This post takes a closer look at its command and control (C2) mechanism and what it takes to elicit a configuration file from its C2 servers.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1465739191",
+                "type":"link",
+                "value":"https://www.arbornetworks.com/blog/asert/communications-bolek-trojan/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The sample used for reverse engineering",
+                "timestamp":"1465739260",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1465739309",
+                "type":"domain",
+                "value":"mensabuxus.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1465739310",
+                "type":"domain",
+                "value":"ogrthuvwfdcfri5euwg.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1465739310",
+                "type":"domain",
+                "value":"ogrthuvfewfdcfri5euwg.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"At the time of this research, the C2 servers were down (one of them was a sinkhole already), so a second sample was also used.",
+                "timestamp":"1465739352",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"278028 bytes of binary data. Contains a PE file starting at offset 524.",
+                "timestamp":"1465739424",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"323084 bytes of binary data. Contains a PE file starting at offset 524.",
+                "timestamp":"1465739472",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"323084 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: 000a09c86232724445353a8d2e2e9c46eef042669a24b3421d8428105856cc12",
+                "timestamp":"1465739647",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"323084 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: 000a09c86232724445353a8d2e2e9c46eef042669a24b3421d8428105856cc12",
+                "timestamp":"1465739648",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"323084 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: 000a09c86232724445353a8d2e2e9c46eef042669a24b3421d8428105856cc12",
+                "timestamp":"1465739648",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/000a09c86232724445353a8d2e2e9c46eef042669a24b3421d8428105856cc12/analysis/1465310991/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"At the time of this research, the C2 servers were down (one of them was a sinkhole already), so a second sample was also used. - Xchecked via VT: cdbd348df2c1d80c9fea63a6d958095b4188c462d17380131d3508d770d3a875",
+                "timestamp":"1465739649",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"At the time of this research, the C2 servers were down (one of them was a sinkhole already), so a second sample was also used. - Xchecked via VT: cdbd348df2c1d80c9fea63a6d958095b4188c462d17380131d3508d770d3a875",
+                "timestamp":"1465739649",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"At the time of this research, the C2 servers were down (one of them was a sinkhole already), so a second sample was also used. - Xchecked via VT: cdbd348df2c1d80c9fea63a6d958095b4188c462d17380131d3508d770d3a875",
+                "timestamp":"1465739650",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cdbd348df2c1d80c9fea63a6d958095b4188c462d17380131d3508d770d3a875/analysis/1465655808/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"278028 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: a0d92950267539d7054843cdbca8976caf7ed4e755d9f9d97622feb6104a4885",
+                "timestamp":"1465739650",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"278028 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: a0d92950267539d7054843cdbca8976caf7ed4e755d9f9d97622feb6104a4885",
+                "timestamp":"1465739650",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"278028 bytes of binary data. Contains a PE file starting at offset 524. - Xchecked via VT: a0d92950267539d7054843cdbca8976caf7ed4e755d9f9d97622feb6104a4885",
+                "timestamp":"1465739651",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a0d92950267539d7054843cdbca8976caf7ed4e755d9f9d97622feb6104a4885/analysis/1465310749/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The sample used for reverse engineering - Xchecked via VT: 62962da720d478bb3510dabc691db37df546749b440caa45d75d9fbfb69d82f9",
+                "timestamp":"1465739651",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The sample used for reverse engineering - Xchecked via VT: 62962da720d478bb3510dabc691db37df546749b440caa45d75d9fbfb69d82f9",
+                "timestamp":"1465739652",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"The sample used for reverse engineering - Xchecked via VT: 62962da720d478bb3510dabc691db37df546749b440caa45d75d9fbfb69d82f9",
+                "timestamp":"1465739652",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/62962da720d478bb3510dabc691db37df546749b440caa45d75d9fbfb69d82f9/analysis/1465505769/",
+                "to_ids":false
+            }
+        ]
+    }
+}

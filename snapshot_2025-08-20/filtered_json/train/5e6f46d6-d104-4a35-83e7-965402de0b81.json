@@ -1,0 +1,192 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-03-16",
+        "published":true,
+        "info":"OSINT - new sample of operation lagtime TA428",
+        "publish_timestamp":"1584352304",
+        "timestamp":"1584352112",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"TA428\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploitation for Client Execution - T1203\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"rtf royal road",
+                "timestamp":"1584351009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1584351051",
+                "type":"ip-dst",
+                "value":"103.249.87.72",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1584351069",
+                "type":"link",
+                "value":"https://app.any.run/tasks/8937295d-ea36-4398-96bd-20e7f3b193cb/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1584351148",
+                "type":"vulnerability",
+                "value":"CVE-2017-11882",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584352112",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1584351018",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"datetime",
+                        "value":"2020-03-13T05:08:55+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/b7bebe92a5802aa922e5719c948e35716f908e67701cfffaeebfcadc7a6e650a/analysis/1584076135/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"rtf royal road",
+                        "timestamp":"1584351009",
+                        "type":"text",
+                        "value":"10/58",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1584352031",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"text",
+                        "value":"new sample of operation lagtime TA428\r\n\r\nrtf royal road: 08ebd6388b1194ca824199da49ff5769 \r\n\r\nip: 103.249.87.72\r\n\r\nTarget: Mongolia",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"attachment",
+                        "value":"Screenshot 2020-03-16 at 10.38.07.png",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"text",
+                        "value":"Sebdraven",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"text",
+                        "value":"Informative",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584351555",
+                        "type":"text",
+                        "value":"Unknown",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

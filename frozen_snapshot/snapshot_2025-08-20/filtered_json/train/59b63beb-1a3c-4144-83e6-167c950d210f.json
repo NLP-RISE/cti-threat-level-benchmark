@@ -1,0 +1,103 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-09",
+        "published":true,
+        "info":"OSINT - Malware Group Uses Facebook CDN to Bypass Security Solutions",
+        "publish_timestamp":"1505131350",
+        "timestamp":"1505131342",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1505131313",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/malware-group-uses-facebook-cdn-to-bypass-security-solutions/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1505131313",
+                "type":"comment",
+                "value":"A malware group is using Facebook's CDN servers to store malicious files that it later uses to infect users with banking trojans.\r\n\r\nResearchers spotted several campaigns using Facebook's CDN servers in the last two weeks, and previously, the same group also used Dropbox and Google's cloud storage services to store the same malicious payloads.\r\n\r\nThe previous attacks that used Google and Dropbox URLs were documented by Palo Alto's Brad Duncan in a July write-up, and are almost identical to the ones detected last week by security researcher MalwareHunter.\r\n\r\nThe group uses Facebook's CDN because the domain is trusted by most security solutions and there are low chances of having it blocked, compared to hosting malware on domains rarely active inside a business network.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RAR file",
+                "timestamp":"1505131313",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL file",
+                "timestamp":"1505131313",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL file - Xchecked via VT: 41e463cd5d4cf20d02bb7cd23b70465480d1cd5cd3c9f8653e9f93b3a85124d8",
+                "timestamp":"1505131313",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL file - Xchecked via VT: 41e463cd5d4cf20d02bb7cd23b70465480d1cd5cd3c9f8653e9f93b3a85124d8",
+                "timestamp":"1505131313",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"DLL file - Xchecked via VT: 41e463cd5d4cf20d02bb7cd23b70465480d1cd5cd3c9f8653e9f93b3a85124d8",
+                "timestamp":"1505131313",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/41e463cd5d4cf20d02bb7cd23b70465480d1cd5cd3c9f8653e9f93b3a85124d8/analysis/1505098449/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RAR file - Xchecked via VT: 1faa46ba708e3405e7053cde872c65cc7a7d7fbf6411374eb6e977f20c160e16",
+                "timestamp":"1505131313",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RAR file - Xchecked via VT: 1faa46ba708e3405e7053cde872c65cc7a7d7fbf6411374eb6e977f20c160e16",
+                "timestamp":"1505131313",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"RAR file - Xchecked via VT: 1faa46ba708e3405e7053cde872c65cc7a7d7fbf6411374eb6e977f20c160e16",
+                "timestamp":"1505131313",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1faa46ba708e3405e7053cde872c65cc7a7d7fbf6411374eb6e977f20c160e16/analysis/1505098357/",
+                "to_ids":false
+            }
+        ]
+    }
+}

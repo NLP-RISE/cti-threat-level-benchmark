@@ -1,0 +1,114 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-12",
+        "published":true,
+        "info":"OSINT - MacRansom: Offered as Ransomware as a Service",
+        "publish_timestamp":"1497258829",
+        "timestamp":"1497258805",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"MacOS_X\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1497258805",
+                "type":"link",
+                "value":"https://blog.fortinet.com/2017/06/09/macransom-offered-as-ransomware-as-a-service",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1497258805",
+                "type":"text",
+                "value":"Many Mac OS users might assume that their computer is exempt from things like ransomware attacks and think that their system is somehow essentially â€œsecure.â€ It is true that itâ€™s less likely for a Mac OS user to be attacked or infected by malware than a Windows user, but this has nothing to do with the level of vulnerability in the operating system. It is largely caused by the fact that over 90% of personal computers run on Microsoft Windows and only around 6% on Apple Mac OS.\r\n\r\n\r\n\r\nFigure 1: Market share for desktop OS (reference: NetMarketShare)\r\n\r\nMacRansom Portal\r\nJust recently, we here at FortiGuard Labs discovered a Ransomware-as-a-service (RaaS) that uses a web portal hosted in a TOR network which has become a trend nowadays. However, in this case it was rather interesting to see cybercriminals attack an operating system other than Windows. And this could be the first time to see RaaS that targets Mac OS",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1497258805",
+                "type":"text",
+                "value":"OSX/MacRansom.A!tr",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Zip",
+                "timestamp":"1497258805",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mach-O file",
+                "timestamp":"1497258805",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Dropped files",
+                "timestamp":"1497258805",
+                "type":"filename",
+                "value":"~/LaunchAgent/com.apple.finder.plist",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Dropped files",
+                "timestamp":"1497258805",
+                "type":"filename",
+                "value":"~/Library/.FS_Store",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"FAQ from the MacRansom portal",
+                "timestamp":"1497258805",
+                "type":"attachment",
+                "value":"mac17.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mach-O file - Xchecked via VT: 617f7301fd67e8b5d8ad42d4e94e02cb313fe5ad51770ef93323c6115e52fe98",
+                "timestamp":"1497258809",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Mach-O file - Xchecked via VT: 617f7301fd67e8b5d8ad42d4e94e02cb313fe5ad51770ef93323c6115e52fe98",
+                "timestamp":"1497258809",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Mach-O file - Xchecked via VT: 617f7301fd67e8b5d8ad42d4e94e02cb313fe5ad51770ef93323c6115e52fe98",
+                "timestamp":"1497258810",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/617f7301fd67e8b5d8ad42d4e94e02cb313fe5ad51770ef93323c6115e52fe98/analysis/1497256956/",
+                "to_ids":false
+            }
+        ]
+    }
+}

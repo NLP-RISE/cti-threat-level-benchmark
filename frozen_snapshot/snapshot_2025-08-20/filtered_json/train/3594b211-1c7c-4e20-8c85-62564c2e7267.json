@@ -1,0 +1,387 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-08-23",
+        "published":true,
+        "info":"OSINT - NGate Android malware relays NFC traffic to steal cash",
+        "publish_timestamp":"1724415888",
+        "timestamp":"1724415650",
+        "Tag":[
+            {
+                "name":"misp-galaxy:sector=\"Finance\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Retail\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Phishing - T1660\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"NGate C&C server.",
+                "timestamp":"1724414986",
+                "type":"ip-dst",
+                "value":"172.187.98.211",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1724414846",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724414846",
+                        "type":"link",
+                        "value":"https://www.welivesecurity.com/en/eset-research/ngate-android-malware-relays-nfc-traffic-to-steal-cash/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724414846",
+                        "type":"text",
+                        "value":"Android malware discovered by ESET Research relays NFC data from victims’ payment cards, via victims’ mobile phones, to the device of a perpetrator waiting at an ATM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724414846",
+                        "type":"text",
+                        "value":"NGate Android malware relays NFC traffic to steal cash",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724414846",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"NGate distribution website.",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1724414934",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724414934",
+                        "type":"ip-dst",
+                        "value":"91.222.136.153",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724414934",
+                        "type":"domain",
+                        "value":"raiffeisen-cz.eu",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Phishing website.",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1724414957",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724414957",
+                        "type":"ip-dst",
+                        "value":"104.21.7.213",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724414957",
+                        "type":"hostname",
+                        "value":"client.nfcpay.workers.dev",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NGate distribution website.",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1724415006",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724415006",
+                        "type":"ip-dst",
+                        "value":"185.104.45.51",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724415006",
+                        "type":"hostname",
+                        "value":"app.mobil-csob-cz.eu",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"NGate C&C server.",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1724415045",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724415045",
+                        "type":"ip-dst",
+                        "value":"185.181.165.124",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724415045",
+                        "type":"hostname",
+                        "value":"nfc.cryptomaker.info",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415189",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415189",
+                        "type":"text",
+                        "value":"NGate has been distributed using dedicated websites impersonating legitimate services.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415169",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415169",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415284",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415284",
+                        "type":"text",
+                        "value":"NGate tries to obtain victims’ sensitive information via a phishing WebView pretending to be a banking service.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415235",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415235",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415353",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415353",
+                        "type":"text",
+                        "value":"NGate can extract information about the device including device model, Android version, and information about NFC.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415322",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415322",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415428",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415428",
+                        "type":"text",
+                        "value":"NGate uses a JavaScript interface to send and execute commands to compromised devices.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415399",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415399",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415516",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415516",
+                        "type":"text",
+                        "value":"NGate uses port 5566 to communicate with its server to exfiltrate NFC traffic.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415482",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415482",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object defining a singular attack-step. Especially useful for red/purple teaming, but can also be used for actual attacks.",
+                "meta-category":"misc",
+                "name":"attack-step",
+                "timestamp":"1724415600",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415600",
+                        "type":"text",
+                        "value":"NGate can exfiltrate NFC traffic.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415565",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724415565",
+                        "type":"boolean",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

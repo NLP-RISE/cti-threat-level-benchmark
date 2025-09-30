@@ -1,0 +1,190 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-02-02",
+        "published":true,
+        "info":"Mustang Panda APT Group Uses European Commission-Themed Lure to Deliver PlugX Malware",
+        "publish_timestamp":"1679574359",
+        "timestamp":"1679574355",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Mustang Panda - G0129\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"PlugX - S0013\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1679573864",
+                "type":"ip-dst",
+                "value":"217.12.206.116",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1679573864",
+                "type":"ip-dst",
+                "value":"45.134.83.29",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679574177",
+                "type":"comment",
+                "value":"%WINDIR%\\System32\\cmd.exe /q /c \"System Volume Information\\  \\test2022.ucp\"",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1679574344",
+                "type":"link",
+                "value":"https://blog.eclecticiq.com/mustang-panda-apt-group-uses-european-commission-themed-lure-to-deliver-plugx-malware",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679573893",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679573880",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679573893",
+                        "type":"filename",
+                        "value":"LMIGuardianDll.dll",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679573911",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679573911",
+                        "type":"filename",
+                        "value":"LMIGuardianDat.dat",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679573911",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679574151",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679573938",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574151",
+                        "type":"filename",
+                        "value":"draft letter to European Commission RUSSIAN OIL PRICE CAP sg de.iso",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679574135",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574135",
+                        "type":"filename",
+                        "value":"draft letter to European Commission RUSSIAN OIL PRICE CAPde.doc.lnk",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574004",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679574030",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574030",
+                        "type":"filename",
+                        "value":"LMIGuardianSvc.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574026",
+                        "type":"filename",
+                        "value":"test2022.ucp",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679574026",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-05-13",
+        "published":true,
+        "info":"OSINT DarkHotel samples at WooYun",
+        "publish_timestamp":"1498162438",
+        "timestamp":"1498162340",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"darkhotel\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1467482777",
+                "type":"domain",
+                "value":"all-microsoft-control.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1467482777",
+                "type":"domain",
+                "value":"view-drama-online.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1467482936",
+                "type":"link",
+                "value":"http://drops.wooyun.org/papers/15755",
+                "to_ids":false
+            }
+        ]
+    }
+}

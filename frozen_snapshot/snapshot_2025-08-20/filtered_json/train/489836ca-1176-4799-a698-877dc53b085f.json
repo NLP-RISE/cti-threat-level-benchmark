@@ -1,0 +1,149 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-08-23",
+        "published":true,
+        "info":"Fake booking.com service website gathering PII including passport",
+        "publish_timestamp":"1724404149",
+        "timestamp":"1724404100",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:sector=\"Hospitality\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Identify people of interest - T1269\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Conduct social engineering - T1268\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Identify sensitive personnel information - T1274\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Initial IP used for the setup of the malicious domains",
+                "timestamp":"1724402790",
+                "type":"ip-dst",
+                "value":"93.157.63.150",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1724402820",
+                "type":"domain",
+                "value":"1fcaa.sbs",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1724402821",
+                "type":"domain",
+                "value":"1fcca.pw",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Email src trying to get PII documents",
+                "description":"Email object describing an email with meta-information",
+                "meta-category":"network",
+                "name":"email",
+                "timestamp":"1724403391",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724403391",
+                        "type":"email-src",
+                        "value":"michael.gutbier@posteo.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Enriched via the url_import module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1724403803",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"url",
+                        "value":"https://booking-0ef4-8213-ae7f-3fec3e22.1facc.pw/",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"text",
+                        "value":"pw",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"text",
+                        "value":"booking-0ef4-8213-ae7f-3fec3e22",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"text",
+                        "value":"/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"hostname",
+                        "value":"booking-0ef4-8213-ae7f-3fec3e22.1facc.pw",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"text",
+                        "value":"1facc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724403803",
+                        "type":"domain",
+                        "value":"1facc.pw",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

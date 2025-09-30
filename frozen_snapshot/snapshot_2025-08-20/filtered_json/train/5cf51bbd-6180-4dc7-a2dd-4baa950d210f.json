@@ -1,0 +1,105 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-06-02",
+        "published":true,
+        "info":"OSINT - FlawedAmmy RAT",
+        "publish_timestamp":"1566895453",
+        "timestamp":"1566894446",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:rat=\"FlawedAmmy\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1559571387",
+                "type":"ip-dst",
+                "value":"185.117.89.130",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1559571065",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1559571065",
+                        "type":"text",
+                        "value":"2019-06-02: #FlawedAmmy RAT #Signed \r\nðŸ€\r\n\r\nDigital Signature -> [JIN CONSULTANCY LIMITED] Thawte\r\nh/t @malwrhunterteam\r\n \r\nC2: 185[.]117.89.130\r\nMD5: fe3e4635f555f86b64be6e8c9cfa6d6f\r\nLeaked AmmyAdmin Source Code Still Relevant as Compiled Into RAT \r\nðŸ¤”",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1559571065",
+                        "type":"url",
+                        "value":"https://mobile.twitter.com/VK_Intel/status/1135497995351449600",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1559571065",
+                        "type":"text",
+                        "value":"@malwrhunterteam",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1559571065",
+                        "type":"text",
+                        "value":"VK_Intel",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1559571065",
+                        "type":"datetime",
+                        "value":"2019-06-03T12:46:00",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1559571629",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1559571630",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

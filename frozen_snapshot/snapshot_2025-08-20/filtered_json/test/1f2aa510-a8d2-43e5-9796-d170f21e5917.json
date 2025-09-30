@@ -1,0 +1,347 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2024-02-13",
+        "published":true,
+        "info":"Zip uploaded from Iran exploiting cve-2023-38831",
+        "publish_timestamp":"1707858200",
+        "timestamp":"1707858174",
+        "Tag":[
+            {
+                "name":"misp-galaxy:country=\"iran\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Palestine\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707857553",
+                "type":"vulnerability",
+                "value":"CVE-2023-38831",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1707857593",
+                "type":"link",
+                "value":"https://twitter.com/joseliyo_jstnk/status/1757340523130474789?s=61&t=EJCvJdCaV-LXJ5t01BxTcw",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Image",
+                "timestamp":"1707857721",
+                "type":"link",
+                "value":"https://www.virustotal.com/gui/file/81606e8a2cd50c0b12a54e86553a10b9ff14f5f8c9b752a32ab4cb083e206a2d",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Backdoor",
+                "timestamp":"1707857727",
+                "type":"link",
+                "value":"https://www.virustotal.com/gui/file/45e90fd65bd353ad8ea1b7c4e3e8d010e2cf53cc24bde823dcae44ad42c78184",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"ZIP",
+                "timestamp":"1707857742",
+                "type":"link",
+                "value":"https://www.virustotal.com/gui/file/e7cafdd9c1d3506e5d165d0215d8e3bdd7a22ef28a6e4bcd736c71d595170e95",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707857758",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707857815",
+                "type":"filename",
+                "value":"%TEMP%\\unarchiver.log",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Image",
+                "timestamp":"1707857921",
+                "type":"attachment",
+                "value":"meeting.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1707857934",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"147379128e6ca29f1e07473f0ac1388f: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707857778",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707857778",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1707858023",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858023",
+                        "type":"url",
+                        "value":"http://107.172.79.5/h51z7qpNe35DecAvOKdf/index.php?dC1Zk3F=0193F0800193F080",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1707858023",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858023",
+                        "type":"url",
+                        "value":"http://107.172.79.5/h51z7qpNe35DecAvOKdf/index.php?dC1Zk3F=00AFF00000AFF000",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1707858023",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858023",
+                        "type":"url",
+                        "value":"http://107.172.79.5/h51z7qpNe35DecAvOKdf/index.php?dC1Zk3F=0018EAE00018EAE0",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1707858023",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858023",
+                        "type":"ip-dst",
+                        "value":"107.172.79.5",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1707858174",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858174",
+                        "type":"ip-dst",
+                        "value":"13.107.21.200",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1707858170",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858170",
+                        "type":"ip-dst",
+                        "value":"192.229.211.108",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1707858167",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858167",
+                        "type":"ip-dst",
+                        "value":"20.99.133.109",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1707858164",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1707858164",
+                        "type":"ip-dst",
+                        "value":"204.79.197.200",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"f2712906abec23d140ccafbf4a9a0622: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1707858023",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1707858024",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

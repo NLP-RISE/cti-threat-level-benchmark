@@ -1,0 +1,273 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-02-14",
+        "published":true,
+        "info":"IcedID infection from fake Microsoft Teams page",
+        "publish_timestamp":"1676379552",
+        "timestamp":"1676379521",
+        "Tag":[
+            {
+                "name":"misp-galaxy:banker=\"IcedID\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"IcedID\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1676378689",
+                "type":"link",
+                "value":"https://twitter.com/unit42_intel/status/1625218084288987136",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1676378713",
+                "type":"link",
+                "value":"https://github.com/pan-unit42/tweets/blob/master/2023-02-13-IOCs-for-IcedID-infection-from-fake-Microsoft-Teams-page.txt",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"ZIP archive download",
+                "timestamp":"1676378795",
+                "type":"url",
+                "value":"https://firebasestorage.googleapis.com/v0/b/hardy-city-377704.appspot.com/o/B3WPGiNEK2%2FSetup_Win_13-02-2023_16-33-16.zip?alt=media&token=ea9a5843-8216-4883-b45b-d0af1a1d80c8",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"gzip binary from alishabrindeader[.]com retrieved by IcedID installer",
+                "timestamp":"1676379222",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1676379521",
+                "type":"link",
+                "value":"https://www.malware-traffic-analysis.net/2023/02/13/index.html",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1676378756",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Fake Teams page",
+                        "timestamp":"1676378756",
+                        "type":"url",
+                        "value":"https://microsofteamsus.top/en-us/teams/download-app/",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Fake Teams page",
+                        "timestamp":"1676378756",
+                        "type":"ip-dst",
+                        "value":"85.193.93.125",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1676378944",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID installer retrieving GZIP binary",
+                        "timestamp":"1676378926",
+                        "type":"ip-dst",
+                        "value":"45.61.139.138",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID installer retrieving GZIP binary",
+                        "timestamp":"1676378927",
+                        "type":"url",
+                        "value":"http://alishabrindeader.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1676378944",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1676379056",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID C2",
+                        "timestamp":"1676379056",
+                        "type":"ip-dst",
+                        "value":"192.3.76.227",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID C2",
+                        "timestamp":"1676379056",
+                        "type":"domain",
+                        "value":"qonavlecher.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1676379064",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID C2",
+                        "timestamp":"1676379064",
+                        "type":"domain",
+                        "value":"treylercompandium.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"IcedID C2",
+                        "timestamp":"1676379064",
+                        "type":"hostname",
+                        "value":"192.3.76.227",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Zip archive downloaded from the fake Microsoft Teams page",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1676379183",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379183",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379183",
+                        "type":"filename",
+                        "value":"Setup_Win_13-02-2023_16-33-16.zip",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Extracted from the above zip archive, an inflated 64-bit EXE to install IcedID",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1676379205",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379205",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379205",
+                        "type":"filename",
+                        "value":"Setup_Win_13-02-2023_16-33-14.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Data binary used to run persistent IcedID DLL",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1676379239",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379239",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379239",
+                        "type":"filename",
+                        "value":"%APPDATA%\\ClothOriginal\\license.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Persistent IcedID DLL (64-bit DLL)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1676379344",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379344",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1676379344",
+                        "type":"filename",
+                        "value":"%LOCALAPPDATA%\\{C7AD9C9E-113F-1954-F746-CE738D27118A}\\zeayexta2.dll",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

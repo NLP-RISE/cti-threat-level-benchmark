@@ -1,0 +1,241 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-12-27",
+        "published":true,
+        "info":"OSINT - The #BronzeUnion/#LuckyMouse/#APT27 infection checker",
+        "publish_timestamp":"1577444887",
+        "timestamp":"1577444825",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Threat Group-3390\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Threat Group-3390 - G0027\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Emissary Panda\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1577443247",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"The #BronzeUnion/#LuckyMouse/#APT27 infection checker. Possibly from http://cert.ir\r\nMD5: 86c9e95dcf69f6eca2a176407dcb99ff\r\nRahaSecIOC-x86.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"link",
+                        "value":"https://twitter.com/Vishnyak0v/status/1210476931143098368",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"#BronzeUnion",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"#LuckyMouse",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"#APT27",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"Unverified",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"Informative",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442392",
+                        "type":"text",
+                        "value":"Vishnyak0v",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Screenshot of IDA from the tweet",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577442616",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1577442617",
+                        "type":"attachment",
+                        "value":"EMx6WdSXUAEgz_A.jpeg",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Screenshot of IDA from the tweet",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577442648",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1577442648",
+                        "type":"attachment",
+                        "value":"EMx6WdRXYAAAazi.jpeg",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Screenshot of IDA from the tweet",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577442672",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1577442672",
+                        "type":"attachment",
+                        "value":"EMx6WdXWoAA5Vuc.jpeg",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Detection files containing IoCs",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1577442853",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577442853",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577442853",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577442853",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442854",
+                        "type":"text",
+                        "value":"Harmless",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1577442736",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1577442729",
+                        "type":"datetime",
+                        "value":"2019-12-24T18:47:46",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577442729",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/caa63ee08af3716c6dc7495a448daa923ac8e8992f6cab3b7ec3f3e6e087bb02/analysis/1577213266/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1577442729",
+                        "type":"text",
+                        "value":"10/70",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

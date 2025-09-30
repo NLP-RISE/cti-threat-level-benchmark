@@ -1,0 +1,157 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-14",
+        "published":false,
+        "info":"OSINT - Malicious applications stayed at Google Appstore for months",
+        "publish_timestamp":"0",
+        "timestamp":"1521797622",
+        "Tag":[
+            {
+                "name":"Android Malware"
+            },
+            {
+                "name":"ms-caro-malware-full:malware-platform=\"AndroidOS\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521796197",
+                "type":"link",
+                "value":"https://blog.fosec.vn/malicious-applications-stayed-at-google-appstore-for-months-d8834ff4de59",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1521796188",
+                "type":"comment",
+                "value":"According to estimates from downloads, at least 640,000 and at most 2.6 million Android subscribers have been infected with this malicious code. If the subscription price is just 0.1$/day, then every day the subscriber was hooked 64.000$-260.000$, so no one knows how many USD a year.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1521796692",
+                "type":"ip-dst",
+                "value":"139.162.12.9",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1521796717",
+                "type":"url",
+                "value":"gamestore.vn/?page=wapreg&mm=2201",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"vn.lichvannien.lichamduongvietnam",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.antivirus.virusremover.security",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.weatherforecast.weatherwidget",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.captain.qrcodescanner.barcodescannerreader",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.captainstudio.musicplayerandvideoplayer",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.captain.lovebyte.lovedaycounter",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.captain.callrecorder",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.crackscreen.prankscreencrack",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.weed.assistivetouch.easytouch",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.hidepicturesandvideos.applocker",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.cameraselfie.filtercamera",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1521797111",
+                "type":"filename",
+                "value":"com.memorycleaner.speedbooster.memorybooster",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-11-24",
+        "published":true,
+        "info":"OSINT -  Fareit Spam: Rocking Out to a New File Type",
+        "publish_timestamp":"1479974461",
+        "timestamp":"1479974391",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"very-likely\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Fareit\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1479974186",
+                "type":"link",
+                "value":"http://blog.talosintel.com/2016/11/fareit-spam-mht.html?m=1",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1479974198",
+                "type":"comment",
+                "value":"Talos is constantly monitoring the threat landscape including the email threat landscape. Lately this landscape has been dominated with Locky distribution. During a recent Locky vacation Talos noticed an interesting shift in file types being used to distribute another well known malware family, Fareit.\r\n\r\nWe've discussed Fareit before, it's a trojan used to steal credentials and distribute multiple different types of malware. The focus of this post will not be on Fareit but on a new way attackers are working to distribute it via email. Locky has been a case study in how to leverage different file extensions in email to distribute malware. The use of various file types such as .js, .wsf, and .hta have been used quite successfully for Locky. We've already noted other threats making use of .js for distribution largely due to Locky's success. Recently we observed another uncommon file type associated with email and decided to dig a little further on the infection chain.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File.hta",
+                "timestamp":"1479974242",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"j.exe",
+                "timestamp":"1479974242",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".mht File",
+                "timestamp":"1479974243",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 Domain",
+                "timestamp":"1479974271",
+                "type":"domain",
+                "value":"jerryotis.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1479974288",
+                "type":"ip-dst",
+                "value":"185.117.75.186",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"j.exe - Xchecked via VT: 27689bcbab872e321f4c9f9b5b01a6c7e1eca0ee7442afc80c5af48e62d3c5f3",
+                "timestamp":"1479974391",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"j.exe - Xchecked via VT: 27689bcbab872e321f4c9f9b5b01a6c7e1eca0ee7442afc80c5af48e62d3c5f3",
+                "timestamp":"1479974392",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"j.exe - Xchecked via VT: 27689bcbab872e321f4c9f9b5b01a6c7e1eca0ee7442afc80c5af48e62d3c5f3",
+                "timestamp":"1479974392",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/27689bcbab872e321f4c9f9b5b01a6c7e1eca0ee7442afc80c5af48e62d3c5f3/analysis/1479749349/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File.hta - Xchecked via VT: a95a01472fdb42a123e1beb6332cb42c9372fdfe33066b94a7cabdac3d78efe1",
+                "timestamp":"1479974393",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File.hta - Xchecked via VT: a95a01472fdb42a123e1beb6332cb42c9372fdfe33066b94a7cabdac3d78efe1",
+                "timestamp":"1479974393",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"File.hta - Xchecked via VT: a95a01472fdb42a123e1beb6332cb42c9372fdfe33066b94a7cabdac3d78efe1",
+                "timestamp":"1479974394",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a95a01472fdb42a123e1beb6332cb42c9372fdfe33066b94a7cabdac3d78efe1/analysis/1479873331/",
+                "to_ids":false
+            }
+        ]
+    }
+}

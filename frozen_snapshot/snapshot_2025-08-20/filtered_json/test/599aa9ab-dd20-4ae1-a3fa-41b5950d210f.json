@@ -1,0 +1,189 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2017-08-17",
+        "published":true,
+        "info":"OSINT - Turla APT actor refreshes KopiLuwak JavaScript backdoor for use in G20-themed attack",
+        "publish_timestamp":"1503394300",
+        "timestamp":"1503394295",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Turla\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Turla Group\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Wipbot\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503394208",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/turla-apt-actor-refreshes-kopiluwak-javascript-backdoor-use-g20-themed-attack",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503394208",
+                "type":"comment",
+                "value":"Proofpoint researchers have observed a well-known Russian-speaking APT actor usually referred to as Turla using a new .NET/MSIL dropper for an existing backdoor called JS/KopiLuwak. The backdoor has been analyzed previously and is a robust tool associated with this group, likely being used as an early stage reconnaissance tool.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak MSIL Dropper",
+                "timestamp":"1503394208",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JS Dropper",
+                "timestamp":"1503394208",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JavaScript Decryptor",
+                "timestamp":"1503394208",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Benign PDF Decoy",
+                "timestamp":"1503394208",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"KopiLuwak C&C",
+                "timestamp":"1503394208",
+                "type":"url",
+                "value":"http://www.huluwa.uk/wp-content/plugins/woocommerce/includes/class-wc-log.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"KopiLuwak C&C",
+                "timestamp":"1503394208",
+                "type":"url",
+                "value":"http://tresor-rare.com.hk/wp-content/plugins/wordpress-seo/vendor/xrstf/composer-php52/lib/xrstf/Composer52/LogsLoader.php",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1503394208",
+                "type":"text",
+                "value":"TROJAN Turla JS/KopiLuwak",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JavaScript Decryptor - Xchecked via VT: 5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185",
+                "timestamp":"1503394208",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JavaScript Decryptor - Xchecked via VT: 5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185",
+                "timestamp":"1503394208",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"KopiLuwak JavaScript Decryptor - Xchecked via VT: 5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185",
+                "timestamp":"1503394208",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185/analysis/1503295126/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JS Dropper - Xchecked via VT: 1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19",
+                "timestamp":"1503394208",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak JS Dropper - Xchecked via VT: 1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19",
+                "timestamp":"1503394208",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"KopiLuwak JS Dropper - Xchecked via VT: 1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19",
+                "timestamp":"1503394208",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19/analysis/1503311389/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak MSIL Dropper - Xchecked via VT: 7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b",
+                "timestamp":"1503394208",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"KopiLuwak MSIL Dropper - Xchecked via VT: 7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b",
+                "timestamp":"1503394208",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"KopiLuwak MSIL Dropper - Xchecked via VT: 7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b",
+                "timestamp":"1503394208",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b/analysis/1503304107/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503394208",
+                "type":"filename",
+                "value":"Runer.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"KopiLuwak MSIL Dropper - Xchecked via VT: 7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b",
+                "timestamp":"1503394209",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b/analysis/1503382271/",
+                "to_ids":false
+            }
+        ]
+    }
+}

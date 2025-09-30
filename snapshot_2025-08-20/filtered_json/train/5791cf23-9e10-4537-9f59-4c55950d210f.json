@@ -1,0 +1,170 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-07-22",
+        "published":true,
+        "info":"Malspam 2016-07-22 .js in .zip with embedded Locky (campaign: \"Financial statement\")",
+        "publish_timestamp":"1469176364",
+        "timestamp":"1469176338",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"almost-certain\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173570",
+                "type":"url",
+                "value":"http://176.111.63.51/upload/_dispatch.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173571",
+                "type":"ip-dst",
+                "value":"176.111.63.51",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173571",
+                "type":"url",
+                "value":"http://185.117.153.176/upload/_dispatch.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173571",
+                "type":"ip-dst",
+                "value":"185.117.153.176",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173571",
+                "type":"url",
+                "value":"http://77.222.54.202/upload/_dispatch.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173571",
+                "type":"ip-dst",
+                "value":"77.222.54.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173572",
+                "type":"url",
+                "value":"http://194.1.236.126/upload/_dispatch.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Locky C&C",
+                "timestamp":"1469173572",
+                "type":"ip-dst",
+                "value":"194.1.236.126",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173602",
+                "type":"malware-sample",
+                "value":"INV000 9fd.js|e802a725dd53386dc25f27ad7f831d01",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173603",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173603",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173603",
+                "type":"malware-sample",
+                "value":"INV000 3648.js|b39be556ba98ed955d987f81a2d56872",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173604",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".js with embedded Locky",
+                "timestamp":"1469173604",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1469173732",
+                "type":"email-subject",
+                "value":"Financial statement",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1469173765",
+                "type":"user-agent",
+                "value":"Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/7.0; .NET4.0E; .NET4.0C)",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":".js with embedded Locky - Xchecked via VT: 00f3d67cb462fb0091f25a94ff974348ed51a1823fada1e68242d1d1419ee6ef",
+                "timestamp":"1469176338",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/00f3d67cb462fb0091f25a94ff974348ed51a1823fada1e68242d1d1419ee6ef/analysis/1469130716/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":".js with embedded Locky - Xchecked via VT: 838ad87b5c2af12b7f6eca84dc1f31907649ffcac0f51ade3036a262073ae08f",
+                "timestamp":"1469176338",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/838ad87b5c2af12b7f6eca84dc1f31907649ffcac0f51ade3036a262073ae08f/analysis/1469147126/",
+                "to_ids":false
+            }
+        ]
+    }
+}

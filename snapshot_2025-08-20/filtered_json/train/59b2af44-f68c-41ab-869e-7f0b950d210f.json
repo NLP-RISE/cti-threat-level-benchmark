@@ -1,0 +1,215 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-08",
+        "published":true,
+        "info":"Malspam 2017-09-08 - 'Microsoft Store E-invoice for your order #'",
+        "publish_timestamp":"1504883477",
+        "timestamp":"1504883454",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"Locky\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"url",
+                "value":"http://brandingforbuyout.com/3936jkgHGdcm",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"domain",
+                "value":"brandingforbuyout.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"ip-dst",
+                "value":"74.208.163.59",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"url",
+                "value":"http://etforhartohat.info/af/3936jkgHGdcm",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"domain",
+                "value":"etforhartohat.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"url",
+                "value":"http://lagrangeglassandmirrorco.com/3936jkgHGdcm",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"domain",
+                "value":"lagrangeglassandmirrorco.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"initial download location",
+                "timestamp":"1504882656",
+                "type":"ip-dst",
+                "value":"65.182.175.15",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"malware-sample",
+                "value":"3936jkgHGdcm|63ed156f8d2efad83cb2d835c3575d16",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"malware-sample",
+                "value":"MS_INV_4391.7z|77226ba9d1c415aeb85babdbec626c60",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"malware-sample",
+                "value":"MS_INV_5783.vbs|222c318880815e76b9426c70b6cb5453",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504882701",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504883091",
+                "type":"malware-sample",
+                "value":"3936jkgHGdcm.decoded|0b2a54d74f5e6b3833c6fcc2180acb64",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504883091",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504883091",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"secondary download location",
+                "timestamp":"1504883387",
+                "type":"url",
+                "value":"http://anloandy.co.uk/MS_INV_1046.7z",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"secondary download location",
+                "timestamp":"1504883388",
+                "type":"hostname",
+                "value":"anloandy.co.uk",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"secondary download location",
+                "timestamp":"1504883388",
+                "type":"ip-dst",
+                "value":"213.246.110.104",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504883454",
+                "type":"email-body",
+                "value":"--Boundary_ID_66HcBTplKwBgWnOL\r\nContent-type: text/html; CHARSET=US-ASCII\r\nContent-transfer-encoding: 8BIT\r\nContent-disposition: inline\r\nContent-description: Microsoft Store E-invoice for your order #3355505101\r\n\r\nDear Customer,<br />\r\nThank you for shopping with Microsoft Store<br />\r\n<br />\r\nPlease find enclosed or <a href=http://anloandy.co.uk/MS_INV_1046.7z>download</a> your official Microsoft Store Invoice.<br />\r\nPlease retain a copy of this invoice for your records. Your Microsoft<br />\r\ninvoice may also be required to obtain warranty services.<br />\r\n<br />\r\nThank you<br />\r\n<br />\r\nMicrosoft Store 2017<br />\r\n\r\n\r\n\r\n--Boundary_ID_66HcBTplKwBgWnOL\r\nContent-type: application/octet-stream; name=MS_INV_4391.7z\r\nContent-transfer-encoding: base64\r\nContent-disposition: attachment; filename=MS_INV_4391.7z\r\nContent-description: MS_INV_4391.7z\r\n...",
+                "to_ids":false
+            }
+        ]
+    }
+}

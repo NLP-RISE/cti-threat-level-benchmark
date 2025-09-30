@@ -1,0 +1,412 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-26",
+        "published":true,
+        "info":"OSINT - EITest Nabbing Chrome Users with a â€œChrome Fontâ€ Social Engineering Scheme",
+        "publish_timestamp":"1485467854",
+        "timestamp":"1485467665",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"very-likely\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1485467532",
+                "type":"text",
+                "value":"â€œEITestâ€ is a well-documented infection chain that generally relies on compromised websites to direct users to exploit kit (EK) landing pages. EITest has been involved in the delivery of a variety of ransomware, information stealers, and other malware, with clear evidence of its use dating back to 2014. Elements of EITest may be much older, though, with hints pointing to EITest being an evolution of the â€œGlazunovâ€ infection chain from 2011 [1]. The first server side documentation of this evolution came from Sucuri in July 2014 [2]  associated with waves of Wordpress exploitation via the MailPoet plugin vulnerability. KahuSecurity recently analyzed the server side script in October 2016 [3].",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1485467523",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/EITest-Nabbing-Chrome-Users-Chrome-Font-Social-Engineering-Scheme",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Fleercivet C&C",
+                "timestamp":"1485467183",
+                "type":"ip-dst",
+                "value":"198.37.112.248",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Server initiating Fleercivet Fraud Scheme (potentially legitimate)",
+                "timestamp":"1485467184",
+                "type":"filename",
+                "value":"searchtopresults.com|209.126.122.139",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Initial Call before Fleercivet clickfraud",
+                "timestamp":"1485467185",
+                "type":"url",
+                "value":"searchtopresults.com/search.php?aff=8320",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Later Call tied to Fleercivet activity",
+                "timestamp":"1485467185",
+                "type":"url",
+                "value":"searchtopresults.com/search.php?aff=8170&saff=1203",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fiddler capture (index and post)",
+                "timestamp":"1485467196",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014-07-14 - Early â€œflash redirectingâ€ EITest Domain",
+                "timestamp":"1485467252",
+                "type":"ip-dst",
+                "value":"48.251.102.176",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"2014-07-14 - Early â€œflash redirectingâ€ EITest Domain",
+                "timestamp":"1485467277",
+                "type":"domain",
+                "value":"vidvi.cf",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EITest node replying to Compromised Server",
+                "timestamp":"1485467290",
+                "type":"ip-dst",
+                "value":"31.184.192.163",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EITest node replying to Compromised Server",
+                "timestamp":"1485467323",
+                "type":"domain",
+                "value":"54dfa1cb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EITest node replying to Compromised Server",
+                "timestamp":"1485467324",
+                "type":"domain",
+                "value":"e5b57288.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EITest node replying to Compromised Server",
+                "timestamp":"1485467324",
+                "type":"domain",
+                "value":"33db9538.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"EITest node replying to Compromised Server",
+                "timestamp":"1485467325",
+                "type":"domain",
+                "value":"9507c4e8.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15",
+                "timestamp":"1485467355",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15",
+                "timestamp":"1485467356",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-16",
+                "timestamp":"1485467357",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-17",
+                "timestamp":"1485467357",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467420",
+                "type":"domain",
+                "value":"starrer.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467421",
+                "type":"ip-dst",
+                "value":"209.126.118.146",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467422",
+                "type":"domain",
+                "value":"askcom.me",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467423",
+                "type":"ip-dst",
+                "value":"209.126.123.39",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467424",
+                "type":"domain",
+                "value":"twittertravels.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467424",
+                "type":"ip-dst",
+                "value":"173.224.124.110",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467425",
+                "type":"domain",
+                "value":"shareyourfashion.net",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467426",
+                "type":"ip-dst",
+                "value":"209.126.103.104",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467427",
+                "type":"domain",
+                "value":"techgnews.com",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Some servers (potentially legitimate) receiving Fleercivet generated traffic.",
+                "timestamp":"1485467427",
+                "type":"ip-dst",
+                "value":"209.239.115.50",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467550",
+                "type":"url",
+                "value":"kyle.dark7.org/download.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467561",
+                "type":"url",
+                "value":"oblubienica.odnowa.org/download.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467580",
+                "type":"url",
+                "value":"sriswamidikshananda.org/download.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467593",
+                "type":"url",
+                "value":"demo.signgo.com/help.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467603",
+                "type":"url",
+                "value":"retail.uvapoint.com/help.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exemple of EITest compromised Website acting as download server (POST request with MZ as reply)",
+                "timestamp":"1485467617",
+                "type":"url",
+                "value":"chovek5.lozenetz.org/download.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-17 - Xchecked via VT: ebeaaef3323331e7ea0e47eac6437dcf5548d9fd759943d2e5c1f3d1fb786167",
+                "timestamp":"1485467665",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-17 - Xchecked via VT: ebeaaef3323331e7ea0e47eac6437dcf5548d9fd759943d2e5c1f3d1fb786167",
+                "timestamp":"1485467665",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"FleerCivet 2017-01-17 - Xchecked via VT: ebeaaef3323331e7ea0e47eac6437dcf5548d9fd759943d2e5c1f3d1fb786167",
+                "timestamp":"1485467666",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ebeaaef3323331e7ea0e47eac6437dcf5548d9fd759943d2e5c1f3d1fb786167/analysis/1484834402/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-16 - Xchecked via VT: 9190c865c214cf2b1c602edcfe4ab8858806298ca4b6de16bfbd0377385ffe63",
+                "timestamp":"1485467667",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-16 - Xchecked via VT: 9190c865c214cf2b1c602edcfe4ab8858806298ca4b6de16bfbd0377385ffe63",
+                "timestamp":"1485467667",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"FleerCivet 2017-01-16 - Xchecked via VT: 9190c865c214cf2b1c602edcfe4ab8858806298ca4b6de16bfbd0377385ffe63",
+                "timestamp":"1485467668",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9190c865c214cf2b1c602edcfe4ab8858806298ca4b6de16bfbd0377385ffe63/analysis/1484886904/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7bb7848270e76aa1fcb9d11acb46c8421b86c7d528c108d8f179ec829ff977fc",
+                "timestamp":"1485467669",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7bb7848270e76aa1fcb9d11acb46c8421b86c7d528c108d8f179ec829ff977fc",
+                "timestamp":"1485467670",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7bb7848270e76aa1fcb9d11acb46c8421b86c7d528c108d8f179ec829ff977fc",
+                "timestamp":"1485467670",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7bb7848270e76aa1fcb9d11acb46c8421b86c7d528c108d8f179ec829ff977fc/analysis/1484541299/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7fc9721cc648de138a61ec3452d63a83fc76ef527d41f4a7aba78f52df13338a",
+                "timestamp":"1485467671",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7fc9721cc648de138a61ec3452d63a83fc76ef527d41f4a7aba78f52df13338a",
+                "timestamp":"1485467672",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"FleerCivet 2017-01-15 - Xchecked via VT: 7fc9721cc648de138a61ec3452d63a83fc76ef527d41f4a7aba78f52df13338a",
+                "timestamp":"1485467672",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7fc9721cc648de138a61ec3452d63a83fc76ef527d41f4a7aba78f52df13338a/analysis/1485239703/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fiddler capture (index and post) - Xchecked via VT: 7a444891c642ec17459471be40bcc1ea9eef6aeb478318a679908f94bf1e7e74",
+                "timestamp":"1485467673",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fiddler capture (index and post) - Xchecked via VT: 7a444891c642ec17459471be40bcc1ea9eef6aeb478318a679908f94bf1e7e74",
+                "timestamp":"1485467674",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Fiddler capture (index and post) - Xchecked via VT: 7a444891c642ec17459471be40bcc1ea9eef6aeb478318a679908f94bf1e7e74",
+                "timestamp":"1485467674",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7a444891c642ec17459471be40bcc1ea9eef6aeb478318a679908f94bf1e7e74/analysis/1484822761/",
+                "to_ids":false
+            }
+        ]
+    }
+}

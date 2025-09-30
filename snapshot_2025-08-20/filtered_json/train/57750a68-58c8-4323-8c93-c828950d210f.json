@@ -1,0 +1,117 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-06-30",
+        "published":true,
+        "info":"OSINT - Apocalypse: Ransomware which targets companies through insecure RDP",
+        "publish_timestamp":"1467288991",
+        "timestamp":"1467288974",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1467288191",
+                "type":"comment",
+                "value":"Beyond a shadow of a doubt 2016 has been the year of the ransomware. So it comes as no surprise that new ransomware families are popping up on weekly basis. Emsisoft has been on the frontline battling ransomware for years now, providing users with valuable tools allowing them to recover their files after ransomware attacks. As a result Emsisoft researchers often find themselves at the receiving end of hate from ransomware authors. Late last year, we took a look at Radamant, whose authors included some rather unkind messages after our research team broke their amateurish ransomware. Today, we want to take a look at a new ransomware family Apocalypse, that reared its ugly head about 2 months ago, that recently started spewing insults towards our team as well.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1467288214",
+                "type":"link",
+                "value":"http://blog.emsisoft.com/2016/06/29/apocalypse-ransomware-which-targets-companies-through-insecure-rdp/",
+                "to_ids":false
+            },
+            {
+                "category":"Attribution",
+                "comment":"email addresses are used in the ransom note",
+                "timestamp":"1467288278",
+                "type":"campaign-id",
+                "value":"r.compress@us1.l.a",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"email addresses are used in the ransom note",
+                "timestamp":"1467288278",
+                "type":"campaign-id",
+                "value":"dr.compress@bk.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"email addresses are used in the ransom note",
+                "timestamp":"1467288278",
+                "type":"campaign-id",
+                "value":"dr.jimbo@bk.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"email addresses are used in the ransom note",
+                "timestamp":"1467288279",
+                "type":"campaign-id",
+                "value":"dr.decrypter@bk.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"email addresses are used in the ransom note",
+                "timestamp":"1467288279",
+                "type":"campaign-id",
+                "value":"decryptionservice@mail.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"New sample",
+                "timestamp":"1467288493",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"New sample - Xchecked via VT: ac70f2517698ca81bf161645413f168c",
+                "timestamp":"1467288974",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"New sample - Xchecked via VT: ac70f2517698ca81bf161645413f168c",
+                "timestamp":"1467288975",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"New sample - Xchecked via VT: ac70f2517698ca81bf161645413f168c",
+                "timestamp":"1467288975",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/aab148f9445f8ea69a6992a245037919b96c7b6457d35732f4171e371359aee5/analysis/1466865459/",
+                "to_ids":false
+            }
+        ]
+    }
+}

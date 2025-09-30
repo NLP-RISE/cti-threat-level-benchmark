@@ -1,0 +1,152 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-01-17",
+        "published":true,
+        "info":"Ako Ransomware",
+        "publish_timestamp":"1580456344",
+        "timestamp":"1580456326",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":" Ransomware"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload installation",
+                "comment":"Locker.exe",
+                "timestamp":"1579228479",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Locker.exe",
+                "timestamp":"1579228480",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Locker.exe",
+                "timestamp":"1579228480",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1579229116",
+                "type":"other",
+                "value":"Commands Run\r\nvssadmin.exe Delete Shadows /All /Quiet\r\nbcdedit.exe /set {default} recoveryenabled No\r\nbcdedit.exe /set {default} bootstatuspolicy ignoreallfailures\r\nwbadmin DELETE SYSTEMSTATEBACKUP\r\nwbadmin DELETE SYSTEMSTATEBACKUP -deleteOldest\r\nwmic.exe SHADOWCOPY /nointeractive",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1579274836",
+                "type":"link",
+                "value":"https://app.any.run/tasks/5f4740c6-023a-4214-a96a-97b05e8b440e/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1579228985",
+                "type":"ip-src",
+                "value":"185.167.160.83",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1579274830",
+                "type":"other",
+                "value":"Tor Ransom page\r\n\r\nhttp://kwvhrdibgmmpkhkidrby4mccwqpds5za6uo2thcw5gz75qncv7rbhyad.onion/C2SNJM7PHLUI0QQV",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1579275691",
+                "type":"link",
+                "value":"https://wilbursecurity.com/2020/01/ako-ransomware",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1579275850",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579275850",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579275850",
+                        "type":"text",
+                        "value":"EnableLinkedConnections",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1579275850",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1579275314",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579275335",
+                        "type":"regkey",
+                        "value":"HKEY_CURRENT_USER\\Software\\acfg",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579275340",
+                        "type":"text",
+                        "value":"aid",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1579275350",
+                        "type":"text",
+                        "value":".(randomly generated key)",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

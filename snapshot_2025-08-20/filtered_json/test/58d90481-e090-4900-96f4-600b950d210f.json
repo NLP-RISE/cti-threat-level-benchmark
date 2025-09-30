@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-27",
+        "published":true,
+        "info":"OSINT - APT29 Domain Fronting With TOR",
+        "publish_timestamp":"1490617834",
+        "timestamp":"1490617717",
+        "Tag":[
+            {
+                "name":"misp-galaxy:threat-actor=\"APT 29\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490617717",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2017/03/apt29_domain_frontin.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490617717",
+                "type":"text",
+                "value":"Mandiant has observed Russian nation-state attackers APT29 employing domain fronting techniques for stealthy backdoor access to victim environments for at least two years. There has been considerable discussion about domain fronting following the release of a paper detailing these techniques. Domain fronting provides outbound network connections that are indistinguishable from legitimate requests for popular websites.\r\n\r\nAPT29 has used The Onion Router (TOR) and the TOR domain fronting plugin meek to create a hidden, encrypted network tunnel that appeared to connect to Google services over TLS. This tunnel provided the attacker remote access to the host system using the Terminal Services (TS), NetBIOS, and Server Message Block (SMB) services, while appearing to be traffic to legitimate websites. The attackers also leveraged a common Windows exploit to access a privileged command shell without authenticating.\r\n\r\nWe first discussed APT29â€™s use of these techniques as part of our â€œNo Easy Breachâ€ talk at DerbyCon 6.0. For additional details on how we first identified this backdoor, and the epic investigation it was part of, see the slides and presentation.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"googleService.exe the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections.",
+                "timestamp":"1490617717",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"GoogleUpdate.exe - the meek-client plugin, which obfuscates the TOR connection.",
+                "timestamp":"1490617717",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Bridge traffic using the meek plugin to https://meek-reflect.appspot.com and obfuscate HTTPS and DNS requests to appear destined for www.google.com",
+                "timestamp":"1490617717",
+                "type":"url",
+                "value":"https://meek-reflect.appspot.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"GoogleUpdate.exe - the meek-client plugin, which obfuscates the TOR connection. - Xchecked via VT: 2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+                "timestamp":"1490617726",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"GoogleUpdate.exe - the meek-client plugin, which obfuscates the TOR connection. - Xchecked via VT: 2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+                "timestamp":"1490617728",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"GoogleUpdate.exe - the meek-client plugin, which obfuscates the TOR connection. - Xchecked via VT: 2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+                "timestamp":"1490617729",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36/analysis/1490381093/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"googleService.exe the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections. - Xchecked via VT: fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+                "timestamp":"1490617731",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"googleService.exe the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections. - Xchecked via VT: fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+                "timestamp":"1490617733",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"googleService.exe the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections. - Xchecked via VT: fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+                "timestamp":"1490617735",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5/analysis/1490588868/",
+                "to_ids":false
+            }
+        ]
+    }
+}

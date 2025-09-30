@@ -1,0 +1,138 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-01-24",
+        "published":true,
+        "info":"Fake Job Application incl. Macro",
+        "publish_timestamp":"1516976583",
+        "timestamp":"1516976580",
+        "Tag":[
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"malware\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Smoke Loader\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516792376",
+                "type":"email-subject",
+                "value":"Website Job Application",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Office file with VBA",
+                "timestamp":"1516792464",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Office file with VBA",
+                "timestamp":"1516792762",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Stage 2 executable",
+                "timestamp":"1516796020",
+                "type":"url",
+                "value":"http://80.82.67.217/poop.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516793000",
+                "type":"ip-dst",
+                "value":"80.82.67.217",
+                "to_ids":false
+            },
+            {
+                "category":"Internal reference",
+                "comment":"",
+                "timestamp":"1516795482",
+                "type":"comment",
+                "value":"Smokeloader",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516795503",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1516792911",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516792911",
+                        "type":"malware-sample",
+                        "value":"poop.jpg|82abe64c84e906789ea4fde853ebb9fc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516792912",
+                        "type":"filename",
+                        "value":"poop.jpg",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516792913",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516792913",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516792913",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1516792914",
+                        "type":"size-in-bytes",
+                        "value":"290816",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

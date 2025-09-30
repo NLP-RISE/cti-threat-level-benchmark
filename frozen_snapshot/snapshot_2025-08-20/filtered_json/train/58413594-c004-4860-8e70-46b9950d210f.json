@@ -1,0 +1,156 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2013-01-04",
+        "published":true,
+        "info":"OSINT - A PBot (PHP + Perl Backdoor IRC Bot + Network Attack Tool) Infection on hegeman.com",
+        "publish_timestamp":"1480715684",
+        "timestamp":"1480669989",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1480668791",
+                "type":"link",
+                "value":"http://blog.malwaremustdie.org/2013/01/a-pbot-php-perl-backdoor-irc-bot.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1480668835",
+                "type":"comment",
+                "value":"PBot is a remote IRC Protocol Bot for usually used for taking over the infected machine into network malicious tool for PortScanning, DoS + etc acts.\r\nIt has been a long time for analyzing an active PBot, our previous post abut Pbot are here>>http://malwaremustdie.blogspot.jp/2012/09/cracking-of-strong-encrypted-phpirc-bot.html. This new one just spotted accidentally in my watch this new year. I trailed back infection started from before Christmas and noted its activities until yesterday. There's nothing special about this infection instead the ignorance of the domain owner which I informed him by severeal times, without getting response nor removal act.\r\nThis PBot is a plain textual script, camouflage its filename with a JPEG file extension, yes it contains some severe malicious functionalities of PBot which people should know about.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"url",
+                "value":"http://hegeman.com/configs.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"url",
+                "value":"http://hegeman.com/images/configs.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"filename",
+                "value":"http://hegeman.com/tmp/configs.jpgï¼Ÿ",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"url",
+                "value":"http://www.hegeman.com/configs.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"url",
+                "value":"http://www.hegeman.com/images/configs.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Infected/Injected URL",
+                "timestamp":"1480668976",
+                "type":"url",
+                "value":"http://www.hegeman.com/tmp/configs.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669980",
+                "type":"filename",
+                "value":"http://eskipazari.com/images/products/large/rabot.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669989",
+                "type":"filename",
+                "value":"http://www.bohmans.ru/netcat/modules/forum2/images/pbbb.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669966",
+                "type":"filename",
+                "value":"http://asiandogs.ãƒ»u/dog/crime/byroe.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669966",
+                "type":"filename",
+                "value":"http://agefocusãƒ»net/wp-includes/js/jcrop/six/star.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669966",
+                "type":"filename",
+                "value":"http://myghost.myqrãƒ»sg/bbs/logs/rabot.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669967",
+                "type":"filename",
+                "value":"http://www.nenskinderãƒ»com/wp-content/rabot.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669967",
+                "type":"filename",
+                "value":"http://www.airsoftparkãƒ»com/custompatchimg/pa.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669967",
+                "type":"filename",
+                "value":"http://neverbeentobaliãƒ»com/wp-content/rabot.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"infected url",
+                "timestamp":"1480669967",
+                "type":"filename",
+                "value":"http://flickr.com.oyun-maxãƒ»com/bot.txt",
+                "to_ids":true
+            }
+        ]
+    }
+}

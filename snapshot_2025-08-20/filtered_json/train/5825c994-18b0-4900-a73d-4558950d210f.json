@@ -1,0 +1,82 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-11-11",
+        "published":true,
+        "info":"OSINT - BlackNurse Denial of Service Attack",
+        "publish_timestamp":"1484165842",
+        "timestamp":"1483344746",
+        "Tag":[
+            {
+                "name":"ecsirt:availability=\"ddos\""
+            },
+            {
+                "name":"europol-incident:availability=\"dos-ddos\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1478871596",
+                "type":"link",
+                "value":"http://www.netresec.com/?page=Blog&month=2016-11&post=BlackNurse-Denial-of-Service-Attack",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1478871648",
+                "type":"link",
+                "value":"http://soc.tdc.dk/blacknurse/blacknurse.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1478871672",
+                "type":"snort",
+                "value":"alert icmp $EXTERNAL_NET any -> $HOME_NET any (msg:\"TDC-SOC - Possible BlackNurse attack from external source \"; itype:3; icode:3; detection_filter:track by_dst, count 250, seconds 1; reference:url, soc.tdc.dk/blacknurse/blacknurse.pdf; metadata:TDC-SOC-CERT,18032016; priority:3; sid:88000012; rev:1;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1478871687",
+                "type":"snort",
+                "value":"alert icmp $HOME_NET any -> $EXTERNAL_NET any (msg:\"TDC-SOC - Possible BlackNurse attack from internal source\"; itype:3; icode:3; detection_filter:track by_dst, count 250, seconds 1; reference:url, soc.tdc.dk/blacknurse/blacknurse.pdf; metadata:TDC-SOC-CERT,18032016; priority:3; sid:88000013; rev:1;)",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483344708",
+                "type":"attachment",
+                "value":"Blacknurse_v.1.7.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1479210539",
+                "type":"comment",
+                "value":"â€œWe recommend that you grant permission for the ICMP unreachable message type (type 3). Denying ICMP unreachable messages disables ICMP Path MTU discovery, which can halt IPSec and PPTP traffic. See RFC 1195 and RFC 1435 for details about Path MTU Discovery.â€",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1483344746",
+                "type":"link",
+                "value":"http://www.blacknurse.dk/",
+                "to_ids":false
+            }
+        ]
+    }
+}

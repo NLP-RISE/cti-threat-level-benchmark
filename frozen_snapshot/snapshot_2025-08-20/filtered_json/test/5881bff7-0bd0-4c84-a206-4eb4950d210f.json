@@ -1,0 +1,192 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-20",
+        "published":true,
+        "info":"OSINT - Spora - the Shortcut Worm that is also a Ransomware",
+        "publish_timestamp":"1484898922",
+        "timestamp":"1484898903",
+        "Tag":[
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:preventive-measure=\"Backup and Restore Process\""
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"very-likely\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Ransom\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484898385",
+                "type":"link",
+                "value":"https://blog.gdatasoftware.com/2017/01/29442-spora-worm-and-ransomware",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484898407",
+                "type":"text",
+                "value":"Spora spreads via USB drives like Gamarue and Dinihou aka Jenxcus whilst also encrypting files. The sophistication of this threat could easily make it the new Locky. We discuss its infection and encryption procedure and show how it uses statistical values about encrypted files to calculate the ransom amount.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484898514",
+                "type":"filename",
+                "value":"Ð¡ÐºÐ°Ð½-ÐºÐ¾Ð¿Ð¸Ñ _ 10 ÑÐ½Ð²Ð°Ñ€Ñ 2017Ð³. Ð¡Ð¾ÑÑ‚Ð°Ð²Ð»ÐµÐ½Ð¾ Ð¸ Ð¿Ð¾Ð´Ð¿Ð¸ÑÐ°Ð½Ð¾ Ð³Ð»Ð°Ð²Ð½Ñ‹Ð¼ Ð±ÑƒÑ…Ð³Ð°Ð»Ñ‚ÐµÑ€Ð¾Ð¼. Ð­ÐºÑÐ¿Ð¾Ñ€Ñ‚ Ð¸Ð· 1Ð¡.a01e743_Ñ€df.hta",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484898568",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Script.Trojan-Dropper.Spora.G - close.js",
+                "timestamp":"1484898595",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32.Worm.Spora.B -  a277a133-ecde-c0f5-1591-ab36e22428bb.exe -  81063163ded.exe",
+                "timestamp":"1484898648",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Corrupt Word document\t doc_6d518e.docx",
+                "timestamp":"1484898679",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ransom note",
+                "timestamp":"1484898723",
+                "type":"filename",
+                "value":"RU302-15XRK-GXTFO-GZTET-KTXFF-ORTXA-AYYYY.HTML",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Contains statistics, campaignID, username, locale, timestamp and private RSA key C1; encrypted",
+                "timestamp":"1484898724",
+                "type":"filename",
+                "value":"RU302-15XRK-GXTFO-GZTET-KTXFF-ORTXA-AYYYY.KEY",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"List of encrypted files; encrypted",
+                "timestamp":"1484898724",
+                "type":"filename",
+                "value":"RU302-15XRK-GXTFO-GZTET-KTXFF-ORTXA-AYYYY.LST",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"spora encryption",
+                "timestamp":"1484898761",
+                "type":"attachment",
+                "value":"G_DATA_spora_encryption_infographic_web_78175w894h615.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32.Worm.Spora.B -  a277a133-ecde-c0f5-1591-ab36e22428bb.exe -  81063163ded.exe - Xchecked via VT: dbfd24cd70f02ddea6de0a851c1ef0f45f18b4f70e6f3d0f2e2aec0d1b4a2cbf",
+                "timestamp":"1484898812",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Win32.Worm.Spora.B -  a277a133-ecde-c0f5-1591-ab36e22428bb.exe -  81063163ded.exe - Xchecked via VT: dbfd24cd70f02ddea6de0a851c1ef0f45f18b4f70e6f3d0f2e2aec0d1b4a2cbf",
+                "timestamp":"1484898813",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Win32.Worm.Spora.B -  a277a133-ecde-c0f5-1591-ab36e22428bb.exe -  81063163ded.exe - Xchecked via VT: dbfd24cd70f02ddea6de0a851c1ef0f45f18b4f70e6f3d0f2e2aec0d1b4a2cbf",
+                "timestamp":"1484898814",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/dbfd24cd70f02ddea6de0a851c1ef0f45f18b4f70e6f3d0f2e2aec0d1b4a2cbf/analysis/1484855168/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Script.Trojan-Dropper.Spora.G - close.js - Xchecked via VT: e2fe74d890ddb516b4f21a6588c6e0bdbf3dd6f8c5116d707d08db7ebddf505a",
+                "timestamp":"1484898814",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Script.Trojan-Dropper.Spora.G - close.js - Xchecked via VT: e2fe74d890ddb516b4f21a6588c6e0bdbf3dd6f8c5116d707d08db7ebddf505a",
+                "timestamp":"1484898815",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Script.Trojan-Dropper.Spora.G - close.js - Xchecked via VT: e2fe74d890ddb516b4f21a6588c6e0bdbf3dd6f8c5116d707d08db7ebddf505a",
+                "timestamp":"1484898816",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e2fe74d890ddb516b4f21a6588c6e0bdbf3dd6f8c5116d707d08db7ebddf505a/analysis/1484641209/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3fb2e50764dea9266ca8c20681a0e0bf60feaa34a52699cf2cf0c07d96a22553",
+                "timestamp":"1484898817",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 3fb2e50764dea9266ca8c20681a0e0bf60feaa34a52699cf2cf0c07d96a22553",
+                "timestamp":"1484898817",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 3fb2e50764dea9266ca8c20681a0e0bf60feaa34a52699cf2cf0c07d96a22553",
+                "timestamp":"1484898818",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3fb2e50764dea9266ca8c20681a0e0bf60feaa34a52699cf2cf0c07d96a22553/analysis/1484819616/",
+                "to_ids":false
+            }
+        ]
+    }
+}

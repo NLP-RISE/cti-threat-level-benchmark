@@ -1,0 +1,109 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-06-30",
+        "published":true,
+        "info":"OSINT - Satana ransomware â€“ threat coming soon?",
+        "publish_timestamp":"1467286823",
+        "timestamp":"1467286805",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1467286602",
+                "type":"link",
+                "value":"https://blog.malwarebytes.com/threat-analysis/2016/06/satana-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1467286622",
+                "type":"comment",
+                "value":"Petya ransomware is quickly becoming a household name and in typical cyber-criminal fashion, copycat families are starting to emerge.\r\n\r\nIn this post, we have the benefit of analyzing â€œmalware-in-developmentâ€ and can observe its growth over the coming weeks. The ransomware is called Satana (devil/satan in Italian) and similar to the Petya and Mischa bundle, Satana works in two modes.\r\n\r\nThe first mode behaves like Petya, a dropper (that is a typical PE file) writes to the beginning of the infected disk a low-level module which is a bootloader with a tiny custom kernel.\r\n\r\nThe second mode behaves like typical ransomware and encrypts files one by one (just like Mischa).\r\n\r\nContrary to the Petya and Mischa bundle, these modes are not used as alternatives, but are both utilized, one after the other, to infect the system.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"main sample",
+                "timestamp":"1467286646",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"unpacked",
+                "timestamp":"1467286666",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"unpacked - Xchecked via VT: d236fcc8789f94f085137058311e848b",
+                "timestamp":"1467286806",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"unpacked - Xchecked via VT: d236fcc8789f94f085137058311e848b",
+                "timestamp":"1467286806",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"unpacked - Xchecked via VT: d236fcc8789f94f085137058311e848b",
+                "timestamp":"1467286806",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ee937717efe9a2e076b9497498b628beb0c84a8476bd288105a59c5aeea01f3d/analysis/1467267018/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"main sample - Xchecked via VT: 46bfd4f1d581d7c0121d2b19a005d3df",
+                "timestamp":"1467286807",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"main sample - Xchecked via VT: 46bfd4f1d581d7c0121d2b19a005d3df",
+                "timestamp":"1467286807",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"main sample - Xchecked via VT: 46bfd4f1d581d7c0121d2b19a005d3df",
+                "timestamp":"1467286808",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/683a09da219918258c58a7f61f7dc4161a3a7a377cf82a31b840baabfb9a4a96/analysis/1467247188/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,330 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-11",
+        "published":true,
+        "info":"OSINT - File Spider Ransomware Targeting the Balkans With Malspam",
+        "publish_timestamp":"1514467803",
+        "timestamp":"1513393222",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513346300",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/file-spider-ransomware-targeting-the-balkans-with-malspam/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"comment",
+                "value":"A new ransomware called File Spider is being distributed through spam that targets victims in Bosnia and Herzegovina, Serbia, and Croatia.  These spam emails contains malicious Word documents that will download and install the File Spider ransomware onto a victims computer.",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"regkey",
+                "value":"%UserProfile%\\AppData\\Roaming\\Spider\\",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"regkey",
+                "value":"%UserProfile%\\AppData\\Roaming\\Spider\\5p1d3r",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%AppDataRoamingSpiderdec.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%AppDataRoamingSpiderenc.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%AppDataRoamingSpiderfiles.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%AppDataRoamingSpiderid.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%AppDataRoamingSpiderrun.bat",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"filename",
+                "value":"%UserProfile%DesktopDECRYPTER.url",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"url",
+                "value":"http://spiderwjzbmsmu7y.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"url",
+                "value":"https://vid.me/embedded/CGyDc?autoplay=1&stats=1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"url",
+                "value":"http://yourjavascript.com/5118631477/javascript-dec-2-25-2.js",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"url",
+                "value":"http://yourjavascript.com/53103201277/javascript-enc-1-0-9.js",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513346301",
+                "type":"email-src",
+                "value":"file-spider@protonmail.ch",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513332853",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513332853",
+                        "type":"filename",
+                        "value":"dec.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346315",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513332902",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513332902",
+                        "type":"filename",
+                        "value":"enc.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346318",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513346304",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513346301",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/6500a1baa13e0698e3ed41b4465e5824e9a316b22209223754f0ab04a6e1b853/analysis/1513287978/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"text",
+                        "value":"43/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"datetime",
+                        "value":"2017-12-14T21:46:18",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513346304",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513346301",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/74e5096f09a031800216640a8455bc487e9a32b2e56fbad9d083c3810ed5488e/analysis/1513279943/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"text",
+                        "value":"46/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513346301",
+                        "type":"datetime",
+                        "value":"2017-12-14T19:32:23",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

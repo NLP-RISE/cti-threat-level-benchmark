@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-01-13",
+        "published":true,
+        "info":"OSINT - Targeted Threat Leads to Keylogger via Fake Silverlight Update",
+        "publish_timestamp":"1484305746",
+        "timestamp":"1484303923",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484303571",
+                "type":"text",
+                "value":"Proofpoint researchers recently discovered a small email-based campaign attacking a major financial services provider. This attack was notable for a few reasons:\r\n\r\nThe attack was very narrow in scope - a small number of malicious emails appear to have been sent to users in a single organization\r\nThe emails included a Microsoft Word attachment that used an embedded object rather than macros to avoid detection; the embedded object was also highly obfuscated\r\nThe payload was an unidentified keylogger hardcoded to send logs from infected computers to two Gmail addresses.\r\nWhile the use of embedded objects instead of macros is not new, malicious macros remain the vector of choice for most threat actors at this time. However, we expect that this technique will become more popular in 2017.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1484303586",
+                "type":"link",
+                "value":"https://www.proofpoint.com/us/threat-insight/post/targeted-threat-leads-to-keylogger-via-fake-silverlight-update",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Attachment",
+                "timestamp":"1484303648",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Hosted keylogger (since removed)",
+                "timestamp":"1484303649",
+                "type":"url",
+                "value":"https://a.pomf.cat/sfkpiff.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Keylogger",
+                "timestamp":"1484303649",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Attachment - Xchecked via VT: 8b7845f5487847085753f940dbbd65c7e75e6be48918fcf9f0d98df169607003",
+                "timestamp":"1484303924",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Attachment - Xchecked via VT: 8b7845f5487847085753f940dbbd65c7e75e6be48918fcf9f0d98df169607003",
+                "timestamp":"1484303924",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Attachment - Xchecked via VT: 8b7845f5487847085753f940dbbd65c7e75e6be48918fcf9f0d98df169607003",
+                "timestamp":"1484303925",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8b7845f5487847085753f940dbbd65c7e75e6be48918fcf9f0d98df169607003/analysis/1483629467/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Keylogger - Xchecked via VT: 9a0b0832ac47b48475901269a0eb67f6287a2da64ec9a5cc8faf351ecd91d0e3",
+                "timestamp":"1484303926",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Keylogger - Xchecked via VT: 9a0b0832ac47b48475901269a0eb67f6287a2da64ec9a5cc8faf351ecd91d0e3",
+                "timestamp":"1484303926",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Keylogger - Xchecked via VT: 9a0b0832ac47b48475901269a0eb67f6287a2da64ec9a5cc8faf351ecd91d0e3",
+                "timestamp":"1484303927",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9a0b0832ac47b48475901269a0eb67f6287a2da64ec9a5cc8faf351ecd91d0e3/analysis/1483629543/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,1020 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-04-23",
+        "published":true,
+        "info":"OSINT - FINTEAM: Trojanized TeamViewer Against Government Targets",
+        "publish_timestamp":"1556049219",
+        "timestamp":"1556049198",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Screen Capture - T1113\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1556048432",
+                "type":"text",
+                "value":"Recently, Check Point researchers spotted a targeted attack against officials within government finance authorities and representatives in several embassies in Europe. The attack, which starts with a malicious attachment disguised as a top secret US document, weaponizes TeamViewer, the popular remote access and desktop sharing software, to gain full control of the infected computer.\r\n\r\nBy investigating the entire infection chain and attack infrastructure, we were able to track previous operations that share many characteristics with this attackâ€™s inner workings. We also came across an online avatar of a Russian speaking hacker, who seems to be in charge of the tools developed and used in this attack.\r\n\r\nIn this article, we will discuss the infection chain, those targeted, the tools used and a possible attribution to one of the hackers behind the attack.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1556048446",
+                "type":"link",
+                "value":"https://research.checkpoint.com/finteam-trojanized-teamviewer-against-government-targets/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"The infection chain",
+                "timestamp":"1556048744",
+                "type":"attachment",
+                "value":"fig2-2.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DLL",
+                "timestamp":"1556048787",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Document",
+                "timestamp":"1556048806",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Document",
+                "timestamp":"1556048806",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"1c-ru.net/check/license",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"intersys32.com/3307/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"146.0.72.180/3307/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"146.0.72.180/newcpanel_gate/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"185.70.186.145/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"185.70.186.145/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"193.109.69.5/3307/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1556048825",
+                "type":"url",
+                "value":"193.109.69.5/9125/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1556048849",
+                "type":"yara",
+                "value":"rule \"TeamViwer_backdoor\"\r\n{\r\n\r\nmeta:\r\ndate = \"2019-04-14\"\r\ndescription = \"Detects malicious TeamViewer DLLs\"\r\n\r\nstrings:\r\n\r\n// PostMessageW hook function\r\n$x1 = {55 8b ec 8b 45 0c 3d 12 01 00 00 75 05 83 c8 ff eb 12 8b 55 14 52 8b 55 10 52 50 8b 45 08 50 e8}\r\n\r\ncondition:\r\nuint16(0) == 0x5a4d and $x1\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"Banks being targeted on compromised system",
+                "timestamp":"1556048966",
+                "type":"comment",
+                "value":"bankofamerica.com,pacwestbancorp.com,alipay.com,cbbank.com,firstrepublic.com,chase.com\r\ncitibank.com,bankamerica.com,wellsfargo.com,citicorp.com,pncbank.com,us.hsbc.com,bnymellon.com\r\nusbank.com,suntrust.com,statestreet.com,capitalone.com,bbt.com,tdbank.com,rbs.com,regions.com\r\n53.com,ingdirect.com,keybank.com,ntrs.com,www4.bmo.com,usa.bnpparibas.com,mufg.jp,aibgroup.com\r\ncomerica.com,zionsbank.com,mibank.com,bbvabancomerusa.com,huntington.com,bank.etrade.com,synovus.com\r\nbancopopular.com,navyfcu.org,schwab.com,rbcbankusa.com,colonialbank.com,hudsoncitysavingsbank.com,db.com\r\npeoples.com,ncsecu.org,associatedbank.com,bankofoklahoma.com,mynycb.com,firsthorizon.com,firstcitizens.com\r\nastoriafederal.com,firstbankpr.com,commercebank.com,cnb.com,websterbank.com,fbopcorporation.com\r\nfrostbank.com,guarantygroup.com,amtrust.com,nypbt.com,wbpr.com,fult.com,penfed.org,tcfbank.com,lehman.com\r\nbancorpsouthonline.com,valleynationalbank.com,thesouthgroup.com,whitneybank.com,susquehanna.net,citizensonline.com\r\nucbh.com,raymondjames.com,firstbanks.com,wilmingtontrust.com,bankunited.com,thirdfederal.com,wintrustfinancial.com\r\nsterlingsavingsbank.com,boh.com,arvest.com,eastwestbank.com,efirstbank.com,theprivatebank.com,flagstar.com\r\nbecu.org,umb.com,firstmerit.com,corusbank.com,svb.com,prosperitybanktx.com,washingtonfederal.com\r\nucbi.com,metlife.com,ibc.com,cathaybank.com,trustmark.com,centralbancompany.com,umpquabank.com\r\npcbancorp.com,schoolsfirstfcu.org,mbfinancial.com,natpennbank.com,fnbcorporation.com,fnfg.com,golden1.com\r\nhancockbank.com,firstcitizensonline.com,ubsi-wv.com,firstmidwest.com,oldnational.com,ottobremer.org\r\nfirstinterstatebank.com,northwestsavingsbank.com,easternbank.com,suncoastfcu.org,santander.com\r\neverbank.com,bostonprivate.com,firstfedca.com,english.leumi.co.il,aacreditunion.org,rabobank.com\r\nparknationalbank.com,provbank.com,alliantcreditunion.org,capitolbancorp.com,newalliancebank.com\r\njohnsonbank.com,doralbank.com,fcfbank.com,pinnaclebancorp.net,providentnj.com,oceanbank.com\r\nssfcu.org,capfed.com,iberiabank.com,sdccu.com,americafirst.com,hncbank.com,bfcfinancial.com\r\namcore.com,nbtbank.com,centralpacificbank.com,banksterling.com,bannerbank.com,firstmerchants.com,communitybankna.com\r\nhsbc.com,rbs.co.uk,bankofinternet.com,ally.com,bankofindia.co.in,boi.com.sg,unionbankofindia.co.in,bankofindia.uk.com\r\nunionbankonline.co.in,hdfcbank.com,axisbank.com,icicibank.com,paypal.com,pnm.com,wmtransfer.com,skrill.com,neteller.com\r\npayeer.com,westernunion.com,payoneer.com,capitalone.com,moneygram.com,payza.com",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Bitcoin market targeted on compromised system",
+                "timestamp":"1556048998",
+                "type":"comment",
+                "value":"blockchain.info,cryptonator.com,bitpay.com,bitcoinpay.com,binance.com,bitfinex.com,okex.com\r\nhuobi.pro,bitflyer.jp,bitstamp.net,kraken.com,zb.com,upbit.com,bithumb.com,bittrex.com,bitflyer.jp\r\netherdelta.com,hitbtc.com,poloniex.com,coinone.co.kr,wex.nz,gate.io,exmo.com,exmo.me,yobit.net\r\nkorbit.co.kr,kucoin.com,livecoin.net,cex.io,c-cex.com,localbitcoins.net,localbitcoins.com,luno.com\r\nallcoin.com,anxpro.com,big.one,mercatox.com,therocktrading.com,okcoin.com,bleutrade.com,exchange.btcc.com\r\nbitkonan.com,coinbase.com,bitgo.com,greenaddress.it,strongcoin.com,xapo.com\r\nelectrum.org,etherscan.io,myetherwallet.com,bitcoin.com",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Online services targeted on the compromised system",
+                "timestamp":"1556049035",
+                "type":"comment",
+                "value":"ebay,amazon,wish.com,aliexpress,flipkart.com,rakuten.com,walmart.com\r\ntarget.com,bestbuy.com,banggood.com,tinydeal.com,dx.com,zalando,jd.com\r\njd.id,gearbest.com,lightinthebox.com,miniinthebox.co",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"The infection flow starts with an XLSM document with malicious macros, which is sent to potential victims via e-mail under the subject â€œMilitary Financing Programâ€",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556048684",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1556048684",
+                        "type":"filename",
+                        "value":"Military Financing.xlsm",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1556048684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1556048684",
+                        "type":"text",
+                        "value":"Adobe-Standard-Encoding",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1556048684",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049067",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:40:32",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/68f543331aee74b8da5cb4351ef46d8102e912e44f9bd602a1d6a945e65492a8/analysis/1556041232/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"25/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"datetime",
+                        "value":"2019-04-23T16:49:44",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/efe51c2453821310c7a34dca3054021d0f6d453b7133c381d75e3140901efd12/analysis/1556038184/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Document",
+                        "timestamp":"1556048806",
+                        "type":"text",
+                        "value":"39/61",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:39:46",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/41f749bdca8c2abed3e1c8c520b6734b819e241af370eb5921fbecaa514171fe/analysis/1556041186/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"34/67",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049068",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:39:45",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/3fd738d510d3f503a871d30c05a4ecda11fb7d1c63a628cdbfcc4164a8d867f4/analysis/1556041185/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"30/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:41:42",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/a3d0d9b1b830fcb48f312634b2ec045e2859f051a9c415a37cd5ba30b70c1224/analysis/1556041302/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"35/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:38:52",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/b4b5f7d0778c7954461536bca8943d3f87a7808bc33632ca899660b0f62f43aa/analysis/1556041132/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"23/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:38:49",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/b2ab87d5408a19b0d65d49b74c0f3d879ac55c3e57117e4117ff500394e2ad17/analysis/1556041129/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"42/64",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:41:19",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/8fbeaabbe09e9e2c97c49e5d9352001df044e7ce277f35d4a617add07216da07/analysis/1556041279/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"12/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049069",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049070",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:39:59",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/4e676f83ebb765ee3d2215b9e957b966947049fcffc251c2b2f97121a19ef4fc/analysis/1556041199/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"25/67",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049070",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049070",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:41:36",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/9f262e3f57d8dbb1778b8eff2e82165719dd2cf85ce2f292c87d7080d085d0fa/analysis/1556041296/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"39/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556049070",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556049070",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"datetime",
+                        "value":"2019-04-23T17:39:57",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/fa7aab5d6e62cd1d9d5c92d793cbd3f570d9d4c3c6b1744a25382e93c679f570/analysis/1556041197/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DLL",
+                        "timestamp":"1556048787",
+                        "type":"text",
+                        "value":"21/65",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

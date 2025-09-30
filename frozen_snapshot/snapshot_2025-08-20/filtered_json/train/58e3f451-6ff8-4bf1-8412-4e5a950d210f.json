@@ -1,0 +1,215 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-04",
+        "published":false,
+        "info":"OSINT - Introducing ROKRAT",
+        "publish_timestamp":"1491334593",
+        "timestamp":"1511874210",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"rokrat\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491334504",
+                "type":"link",
+                "value":"http://blog.talosintelligence.com/2017/04/introducing-rokrat.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491334504",
+                "type":"text",
+                "value":"A few weeks ago, Talos published research on a Korean MalDoc. As we previously discussed this actor is quick to cover their tracks and very quickly cleaned up their compromised hosts. We believe the compromised infrastructure was live for a mere matter of hours during any campaign. We identified a new campaign, again leveraging a malicious Hangul Word Processor (HWP) document. After analyzing the final payload, we determined the winner was… a Remote Administration Tool, which we have named ROKRAT.\r\n\r\nLike in the previous post, the campaign started with a spear phishing email containing a malicious attachment, the HWP document. One of the identified emails was sent from the email server of Yonsei, a private university in Seoul. The address used in the email was 'kgf2016@yonsei.ac.kr' which is the contact email of the Korea Global Forum where the slogan in 2016 was \"Peace and Unification of the Korean Peninsula\". This fact gives more credit and legitimacy to the email.\r\n\r\nThe HWP document contained an embedded Encapsulated PostScript (EPS) object. As with our previous publication this again is zlib compressed and trivial to obtain. The purpose of the EPS is to exploit a well-known vulnerability (CVE-2013-0808) to download a binary disguised as a .jpg file. This file is decoded and finally an executable is launched: ROKRAT. This RAT has the added complexity that the command and control servers are legitimate websites. The malware uses Twitter and two cloud platforms, Yandex and Mediafire, apparently for both C2 communications and exfiltration platforms. Unfortunately, these platforms are difficult to block globally within organizations as their use can be viewed as legitimate in most cases. Additionally, these 3 platforms all make use of HTTPS connectivity, making it much more difficult to identify specific patterns or the usage of specific tokens.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents",
+                "timestamp":"1491334504",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents",
+                "timestamp":"1491334504",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32",
+                "timestamp":"1491334504",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32",
+                "timestamp":"1491334504",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URL",
+                "timestamp":"1491334504",
+                "type":"url",
+                "value":"http://discgolfglow.com/wp-content/plugins/maintenance/images/worker.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URL",
+                "timestamp":"1491334504",
+                "type":"url",
+                "value":"http://acddesigns.com.au/clients/ACPRCM/kingstone.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Not malicious URLs but could be use to identify RAT execution:",
+                "timestamp":"1491334504",
+                "type":"url",
+                "value":"https://www.amazon.com/Men-War-PC/dp/B001QZGVEC/EsoftTeam/watchcom.jpg",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Not malicious URLs but could be use to identify RAT execution:",
+                "timestamp":"1491334504",
+                "type":"url",
+                "value":"http://www.hulu.com/watch/559035/episode3.mp4",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TOKENS",
+                "timestamp":"1491334504",
+                "type":"text",
+                "value":"MEDIAFIRE\r\nAccount #1\r\nUsername: ksy182824@gmail.com\r\nApplication ID: 81342\r\nTWITTER\r\nAccount #1\r\nConsumer key: sOPcUKjJteYrg8klXC4XUlk9l\r\nToken: 722226174008315904-u6P1FlI7IDg8VIYe720X0gqDYcAMQAR\r\n\r\nAccount #2\r\nConsumer key: sgpalyF1KukVKaPAePb3EGeMT\r\nToken: 759577633630593029-CQzXMfvsQ2RztFYawUPeVbAzcSnwllX\r\n\r\nAccount #3\r\nConsumer key: XVvauoXKfnAUm2qdR1nNEZqkN\r\nToken: 752302142474051585-r2TH1Dk8tU5TetUyfnw9c5OgA1popTj\r\n\r\nAccount #4\r\nConsumer key: U1AoCSLLHxfeDbtxRXVgj7y00\r\nToken: 779546496603561984-Qm8CknTvS4nKxWOB4tJvbtBUMBfNCKE\r\n\r\nAccount #5\r\nConsumer key: 9ndXAB6UcxhQVoBAkEKnwzt4C\r\nToken: 777852155245080576-H0kXYcQCpV6qiFER38h3wS1tBFdROcQ\r\n\r\nAccount #6\r\nConsumer key: QCDXTaOCPBQM4VZigrRj2CnJi\r\nToken: 775849572124307457-4ICTjYmOfAy5MX2FxUHVdUfqeNTYYqj\r\n\r\nAccount #7\r\nConsumer key: 2DQ8GqKhDWp55XIl77Es9oFRV\r\nToken: 778855419785154560-0YUVZtZjKblo2gTGWKiNF67ROwS9MMq\r\nYANDEX\r\nToken #1: AQAAAAAYm4qtAANss-XFfX3FjU8VmVR76k4aMA0\r\nToken #2: AQAAAAAA8uDKAANxExojbqps-UOIi8kc8EAhcq8\r\nToken #3: AQAAAAAY9j8KAANyULDuYU1240rjvpNXcRdF5Tw\r\nToken #4: AQAAAAAZDPB1AAN6l1Ht3ctALU1flix57TvuMa4",
+                "to_ids":false
+            },
+            {
+                "category":"Social network",
+                "comment":"MEDIAFIRE account",
+                "timestamp":"1491334504",
+                "type":"email-src",
+                "value":"ksy182824@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32 - Xchecked via VT: 051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00",
+                "timestamp":"1491334515",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32 - Xchecked via VT: 051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00",
+                "timestamp":"1491334516",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"ROKRAT PE32 - Xchecked via VT: 051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00",
+                "timestamp":"1491334517",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/051463a14767c6477b6dacd639f30a8a5b9e126ff31532b58fc29c8364604d00/analysis/1491317438/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32 - Xchecked via VT: cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c",
+                "timestamp":"1491334518",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ROKRAT PE32 - Xchecked via VT: cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c",
+                "timestamp":"1491334519",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"ROKRAT PE32 - Xchecked via VT: cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c",
+                "timestamp":"1491334520",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cd166565ce09ef410c5bba40bad0b49441af6cfb48772e7e4a9de3d646b4851c/analysis/1491235235/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents - Xchecked via VT: 5441f45df22af63498c63a49aae82065086964f9067cfa75987951831017bd4f",
+                "timestamp":"1491334521",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents - Xchecked via VT: 5441f45df22af63498c63a49aae82065086964f9067cfa75987951831017bd4f",
+                "timestamp":"1491334522",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"HWP Documents - Xchecked via VT: 5441f45df22af63498c63a49aae82065086964f9067cfa75987951831017bd4f",
+                "timestamp":"1491334523",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/5441f45df22af63498c63a49aae82065086964f9067cfa75987951831017bd4f/analysis/1491235236/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents - Xchecked via VT: 7d163e36f47ec56c9fe08d758a0770f1778fa30af68f39aac80441a3f037761e",
+                "timestamp":"1491334524",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"HWP Documents - Xchecked via VT: 7d163e36f47ec56c9fe08d758a0770f1778fa30af68f39aac80441a3f037761e",
+                "timestamp":"1491334525",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"HWP Documents - Xchecked via VT: 7d163e36f47ec56c9fe08d758a0770f1778fa30af68f39aac80441a3f037761e",
+                "timestamp":"1491334526",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7d163e36f47ec56c9fe08d758a0770f1778fa30af68f39aac80441a3f037761e/analysis/1491280391/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,936 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-08-27",
+        "published":true,
+        "info":"Malicious comment on GitHub pointing to malware",
+        "publish_timestamp":"1725351437",
+        "timestamp":"1725351365",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spear phishing messages with malicious attachments - T1367\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Original RAR file",
+                "timestamp":"1724749019",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Malicious account posting malicious links (compromise?)",
+                "description":"GitHub user",
+                "meta-category":"misc",
+                "name":"github-user",
+                "timestamp":"1724749149",
+                "Attribute":[
+                    {
+                        "category":"Social network",
+                        "comment":"",
+                        "timestamp":"1724748475",
+                        "type":"github-username",
+                        "value":"MirsonMboa",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724748475",
+                        "type":"attachment",
+                        "value":"114339026.jpeg",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"to fix your trouble try download this fix, i see it in another issue,\nhttps://app.mediafire.com/3ag3jpquii3of\npassword: changeme\nwhen you installing, you need to place a check in install to path and select \"gcc.\"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1724749100",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"url",
+                        "value":"https://app.mediafire.com/3ag3jpquii3of",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"text",
+                        "value":"com",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"text",
+                        "value":"app",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"text",
+                        "value":"/3ag3jpquii3of",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"hostname",
+                        "value":"app.mediafire.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"text",
+                        "value":"mediafire",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724748545",
+                        "type":"domain",
+                        "value":"mediafire.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"7edc546f741eff3e13590a62ce2856bb39d8f71d: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1724749065",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724749065",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/973af24203f9944fb0c37899a0a9c951706e7f2181aac186774798c799f6832d",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724749065",
+                        "type":"text",
+                        "value":"0/63",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724749065",
+                        "type":"text",
+                        "value":"zero detection as the RAR is encrypted with a password",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"7edc546f741eff3e13590a62ce2856bb39d8f71d: Enriched via the virustotal module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1724749119",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749032",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749032",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749032",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749032",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749032",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1724749684",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":".text",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"size-in-bytes",
+                        "value":"205312",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"float",
+                        "value":"6.6109726378592",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1724749684",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":".rdata",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"size-in-bytes",
+                        "value":"27648",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"float",
+                        "value":"4.9748897647804",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1724749684",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":".data",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"size-in-bytes",
+                        "value":"2560",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"float",
+                        "value":"2.3709432940388",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a section of a Portable Executable",
+                "meta-category":"file",
+                "name":"pe-section",
+                "timestamp":"1724749684",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":".reloc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"size-in-bytes",
+                        "value":"7680",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"float",
+                        "value":"6.6712439836418",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a Portable Executable",
+                "meta-category":"file",
+                "name":"pe",
+                "timestamp":"1724749734",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":"exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"text",
+                        "value":"4344345",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"datetime",
+                        "value":"2024-08-27T04:27:13+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"imphash",
+                        "value":"<imphash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"authentihash",
+                        "value":"<authentihash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"counter",
+                        "value":"4",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1724749684",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"filename",
+                        "value":"Win64.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"size-in-bytes",
+                        "value":"244224",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"float",
+                        "value":"6.5708563734307",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"malware-sample",
+                        "value":"Win64.exe|01b8c89eb83646a038d9cb368e686bdb",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"mime-type",
+                        "value":"application/x-dosexec",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724749684",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Download\r\nhttps://www.mediafire.com/file/o50xaz6wgtazqnx/fix.zip/file\r\npassword: changeme\r\nIn the installer menu, select \"gcc.\"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1724752024",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"url",
+                        "value":"https://www.mediafire.com/file/o50xaz6wgtazqnx/fix.zip/file",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"domain",
+                        "value":"mediafire.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"text",
+                        "value":"mediafire",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"text",
+                        "value":"file/o50xaz6wgtazqnx/fix.zip/file",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"text",
+                        "value":"https",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724751075",
+                        "type":"text",
+                        "value":"com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"GitHub user",
+                "meta-category":"misc",
+                "name":"github-user",
+                "timestamp":"1724751966",
+                "Attribute":[
+                    {
+                        "category":"Social network",
+                        "comment":"",
+                        "timestamp":"1724751844",
+                        "type":"github-username",
+                        "value":"Wanderx13",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"GitHub user",
+                "meta-category":"misc",
+                "name":"github-user",
+                "timestamp":"1724751993",
+                "Attribute":[
+                    {
+                        "category":"Social network",
+                        "comment":"",
+                        "timestamp":"1724751858",
+                        "type":"github-username",
+                        "value":"llowvxe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1724753078",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"malware-sample",
+                        "value":"fix.zip|70fe41f4e0ba092e841fad1aafa46400",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"filename",
+                        "value":"fix.zip",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724751903",
+                        "type":"size-in-bytes",
+                        "value":"295208",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1724753019",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"malware-sample",
+                        "value":"libssp-0.dll|ed79026082a5acdf3c0d803411007933",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"filename",
+                        "value":"libssp-0.dll",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724753019",
+                        "type":"size-in-bytes",
+                        "value":"13824",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1724753029",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"malware-sample",
+                        "value":"x86_64-w64-ranlib.exe|b58fe0a5a58266e2d16703e7725a6f77",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"filename",
+                        "value":"x86_64-w64-ranlib.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724753029",
+                        "type":"size-in-bytes",
+                        "value":"292352",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"b58fe0a5a58266e2d16703e7725a6f77: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1724753268",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1724753268",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/b127de888f09ce23937c12b7fccfa47a8f48312b0e43eb59b6243f665c6d366a",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1724753268",
+                        "type":"text",
+                        "value":"49/74",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

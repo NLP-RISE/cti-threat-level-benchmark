@@ -1,0 +1,639 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-21",
+        "published":true,
+        "info":"Malspam 2017-06-21 'Job Application'",
+        "publish_timestamp":"1498035047",
+        "timestamp":"1498035038",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"MalSpam"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload installation",
+                "comment":"Executable VB file",
+                "timestamp":"1498031174",
+                "type":"malware-sample",
+                "value":"poop.jpg|3ae5a13c50cfcce5e65624072782d0aa",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Executable VB file",
+                "timestamp":"1498031174",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"Executable VB file",
+                "timestamp":"1498031174",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".doc container via Email",
+                "timestamp":"1498031307",
+                "type":"malware-sample",
+                "value":"Deborah-Resume.doc|2424b4664e5b5aac9b20886f179dc766",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".doc container via Email",
+                "timestamp":"1498031307",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".doc container via Email",
+                "timestamp":"1498031307",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1498031338",
+                "type":"email-subject",
+                "value":"Job Application",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1498031442",
+                "type":"email-src",
+                "value":"miller@securityupdateserver.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1498031513",
+                "type":"email-body",
+                "value":"Hi \r\nI visited your website recently.. \r\nI'm currently looking for employment either part time or as a intern to get experience in the field. \r\nPlease review my Resume and let me know what you think.\r\n\r\nBest regards, \r\n\r\n--",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"204.79.197.203",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"2.16.4.219",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"207.46.194.10",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"195.93.42.3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"204.79.197.200",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"195.93.42.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"207.200.74.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"151.101.1.108",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"185.33.222.62",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"151.101.2.49",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"185.33.223.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"152.163.56.3",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"66.225.197.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"188.93.174.137",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"151.101.0.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"176.34.190.222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"13.107.5.80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"209.85.202.155",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"193.0.160.206",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"35.158.14.190",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"213.19.162.80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"185.29.135.234",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"95.172.94.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"178.250.2.76",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"54.247.166.89",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"62.216.247.226",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"52.45.217.171",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"185.62.216.248",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"52.29.136.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"161.170.238.122",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"23.210.249.91",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"34.206.167.59",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"188.93.174.145",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"52.94.232.32",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"173.241.240.143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"152.195.39.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"37.187.86.42",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"52.85.249.98",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"104.103.134.242",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"188.93.174.139",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"104.40.210.32",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"23.23.220.195",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1498032363",
+                "type":"ip-dst",
+                "value":"78.47.139.102",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.2vdddxc5vcyqvi3.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.v6p42kbjuaalj2qbzfigrbat.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.o2tzcp735ikw4tdl.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.hirhirfgvv6vcz755govs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.2dvsqalysndq7p23ua.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.s6ge54m523awtazeyfy7g3rel.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.nhmzwx46jrudevpwr6j66ofc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.swhchi4p4ttru2.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.6qrgzi6kjnhzy.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.cgosduh6pevgnmpe4ii6.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.nl2dtb6uf3jo.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.gbaa.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.mduplmhmz4cbsmmk6m.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.qhkdidhn4xlwjvblnsrgfk.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.qm5tx4h63hfcn3kocon.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.4pp47cijiskr6iwojw.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.53gnzw3wsuax.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.pzfaq3j7xxs5fj7ose.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.qymvrmjf4.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.iujmgu7vachgnu6sn5wrh3ad.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.g3ww2iuerd.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.gmqb7bi4djxfb5ivljf5.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.4jw7nf72zheawfzd.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.4xjxngsrp4m.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Sample of generated domains (DGA)",
+                "timestamp":"1498032565",
+                "type":"hostname",
+                "value":"www.jp4ktooobethywp6xsh.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-11",
+        "published":true,
+        "info":"OSINT - Fake Snapchat in Google Play Store",
+        "publish_timestamp":"1502462432",
+        "timestamp":"1502462398",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"AndroidOS\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1502462398",
+                "type":"link",
+                "value":"https://blog.zimperium.com/fake-snapchat-google-play-store/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1502462398",
+                "type":"text",
+                "value":"Zimperium discovered and reported a fake version of the popular Snapchat app in the official Google Play Store; At the time of our discovery, it was the second result when searching for â€œSnapchatâ€. The fake version of Snapchat app is using â€œSnap Inc .â€ as Company Name, with a  â€ .â€ appended to original name.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1502462398",
+                "type":"mobile-application-id",
+                "value":"com.snacha.android",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1502462398",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: f1049a50763fd4a8dddd45735ee97a419caac0997a0c99393af111a24afdf146",
+                "timestamp":"1502462398",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: f1049a50763fd4a8dddd45735ee97a419caac0997a0c99393af111a24afdf146",
+                "timestamp":"1502462398",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: f1049a50763fd4a8dddd45735ee97a419caac0997a0c99393af111a24afdf146",
+                "timestamp":"1502462398",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f1049a50763fd4a8dddd45735ee97a419caac0997a0c99393af111a24afdf146/analysis/1502452010/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,380 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-03",
+        "published":true,
+        "info":"OSINT - APT28 malicious NATO document",
+        "publish_timestamp":"1525782504",
+        "timestamp":"1525782502",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"APT28\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"STRONTIUM\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"misp-galaxy:mitre-mobile-attack-intrusion-set=\"APT28 - G0007\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525782470",
+                "type":"link",
+                "value":"https://threatreconblog.com/2017/02/03/apt28-malicious-document/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"NATO Secretary meeting.doc",
+                "timestamp":"1525782018",
+                "type":"attachment",
+                "value":"screen1.png",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525782471",
+                "type":"link",
+                "value":"http://malware.prevenity.com/2017/01/ataki-na-instytucje-rzadowe-grudzien.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1525782017",
+                "type":"text",
+                "value":"In our quest to track criminals and expose their misconduct, we regularly monitor the threat actor that goes by the name APT28, Fancy Bear, STRONTIUM, Pawn Storm, Sednit. Granted some of these names are toolsets used by the criminals a name for a group. If tomorrow, theyâ€™d come to use different toolsets these names would have no real meaning. Iâ€™d prefer to use the term APT28 because it is easier than making up ours, and there are enough already. Sofacy/Sednit are the toolsets used by APT28 among others such as XAgent.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782021",
+                "type":"hostname",
+                "value":"ulli_neu80.mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782020",
+                "type":"email-src",
+                "value":"ulli_neu80@mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782020",
+                "type":"hostname",
+                "value":"wee7_nim.centrum.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782019",
+                "type":"email-src",
+                "value":"wee7_nim@centrum.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525782019",
+                "type":"hostname",
+                "value":"info.bacloud.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782019",
+                "type":"email-src",
+                "value":"olavi_nieminen@suomi24.fi",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525782022",
+                "type":"domain",
+                "value":"lxwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525782022",
+                "type":"hostname",
+                "value":"mail.lxwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782021",
+                "type":"email-src",
+                "value":"ter_bafian@centrum.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1525782022",
+                "type":"domain",
+                "value":"rolstug.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1525782023",
+                "type":"email-src",
+                "value":"nemolin1@gmx.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525766118",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525766115",
+                        "type":"filename",
+                        "value":"NATO Secretary meeting.doc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525766115",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525766115",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1525769677",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525765463",
+                        "type":"ip-dst",
+                        "value":"86.106.131.43",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525765464",
+                        "type":"domain",
+                        "value":"miropc.org",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525767998",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525767998",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525767998",
+                        "type":"filename",
+                        "value":"prtray.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525767998",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1525769705",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525768553",
+                        "type":"ip-dst",
+                        "value":"89.42.212.141",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525768553",
+                        "type":"domain",
+                        "value":"gtranm.com",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"A domain and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1525770653",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525770650",
+                        "type":"ip-dst",
+                        "value":"94.177.12.74",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525770650",
+                        "type":"domain",
+                        "value":"zpfgr.com",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525770650",
+                        "type":"ip-dst",
+                        "value":"91.216.163.80",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1525770651",
+                        "type":"ip-dst",
+                        "value":"185.86.149.54",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1525782026",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525782023",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525782024",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1525782024",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1525782025",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525782025",
+                        "type":"datetime",
+                        "value":"2018-03-01T10:40:02",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1525782025",
+                        "type":"text",
+                        "value":"30/58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1525782025",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ffd5bd7548ab35c97841c31cf83ad2ea5ec02c741560317fc9602a49ce36a763/analysis/1519900802/",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

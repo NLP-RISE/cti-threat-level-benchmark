@@ -1,0 +1,572 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-08-08",
+        "published":true,
+        "info":"OSINT - Strider: Cyberespionage group turns eye of Sauron on targets",
+        "publish_timestamp":"1470751041",
+        "timestamp":"1470751030",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1470661458",
+                "type":"link",
+                "value":"http://www.symantec.com/connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1470661498",
+                "type":"comment",
+                "value":"A previously unknown group called Strider has been conducting cyberespionage-style attacks against selected targets in Russia, China, Sweden, and Belgium. The group uses an advanced piece of malware known as Remsec (Backdoor.Remsec) to conduct its attacks. Remsec is a stealthy tool that appears to be primarily designed for spying purposes. Its code contains a reference to Sauron, the all-seeing antagonist in Lord of the Rings.\r\n\r\nStriderâ€™s attacks have tentative links with a previously uncovered group, Flamer. The use of Lua modules, which weâ€™ll discuss later, is a technique that has previously been used by Flamer. One of Striderâ€™s targets had also previously been infected by Regin.",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1470661556",
+                "type":"text",
+                "value":"Backdoor.Remsec",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Only a small number of organizations in four countries are impacted by Strider",
+                "timestamp":"1470661657",
+                "type":"target-location",
+                "value":"Belgium",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Only a small number of organizations in four countries are impacted by Strider",
+                "timestamp":"1470661658",
+                "type":"target-location",
+                "value":"Sweden",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Only a small number of organizations in four countries are impacted by Strider",
+                "timestamp":"1470661658",
+                "type":"target-location",
+                "value":"Russia",
+                "to_ids":false
+            },
+            {
+                "category":"Targeting data",
+                "comment":"Only a small number of organizations in four countries are impacted by Strider",
+                "timestamp":"1470661658",
+                "type":"target-location",
+                "value":"China",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470661716",
+                "type":"filename",
+                "value":"MSAOSSPC.DLL",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1470662076",
+                "type":"link",
+                "value":"http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/Symantec_Remsec_IOCs.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1470662141",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The loaded  executable blobs may be retrieved from the following path",
+                "timestamp":"1470662256",
+                "type":"filename",
+                "value":"c:\\System Volume Information\\_restore{ED650925-A32C-4E9C-8A73-8E6F0509309A}\\RP0\\A0000002.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"is to  receive executable modules from remote attackers and run  them from memory on the local  computer . (Network loader)",
+                "timestamp":"1470662346",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Host loader",
+                "timestamp":"1470662419",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Host loader",
+                "timestamp":"1470662419",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 2a8785bf45f4f03c10cd929bb0685c2d",
+                "timestamp":"1470662438",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 2a8785bf45f4f03c10cd929bb0685c2d",
+                "timestamp":"1470662439",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 2a8785bf45f4f03c10cd929bb0685c2d",
+                "timestamp":"1470662439",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6c8c93069831a1b60279d2b316fd36bffa0d4c407068dbef81b8e2fe8fd8e8cd/analysis/1470296379/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Host loader - Xchecked via VT: 7261230a43a40bb29227a169c2c8e1be",
+                "timestamp":"1470662440",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Host loader - Xchecked via VT: 7261230a43a40bb29227a169c2c8e1be",
+                "timestamp":"1470662440",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Host loader - Xchecked via VT: 7261230a43a40bb29227a169c2c8e1be",
+                "timestamp":"1470662441",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d737644d612e5051f66fb97a34ec592b3508be06e33f743a2fdb31cdf6bd2718/analysis/1470649331/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The keylogger logs data to the following location",
+                "timestamp":"1470662704",
+                "type":"filename",
+                "value":"%WINDIR%\\\\temp\\\\bka*.da",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The keylogger logs data to the following location",
+                "timestamp":"1470662763",
+                "type":"filename",
+                "value":"%WINDIR%\\\\temp\\\\bka*.dat",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The keylogger logs data to the following location",
+                "timestamp":"1470662819",
+                "type":"filename",
+                "value":"C:\\\\System Volume Information\\\\_restore{ED650925-A32C-4E9C-8A73-8E6F0509309A}\\\\RP0\\\\change.log",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"The keylogger logs data to the following location",
+                "timestamp":"1470662896",
+                "type":"filename",
+                "value":"C:\\\\System Volume Information\\\\_restore{ED650925-A32C-4E9C-8A73-8E6F0509309A}\\\\RP1\\\\A*",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662936",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662936",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662936",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662936",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662937",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662937",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners",
+                "timestamp":"1470662937",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 7c3eecfb5174ca5cb1e03b8bf4b06f19",
+                "timestamp":"1470662958",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 7c3eecfb5174ca5cb1e03b8bf4b06f19",
+                "timestamp":"1470662958",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 7c3eecfb5174ca5cb1e03b8bf4b06f19",
+                "timestamp":"1470662958",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/02a9b52c88199e5611871d634b6188c35a174944f75f6d8a2110b5b1c5e60a48/analysis/1470649329/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: cf6c049bd7cd9e04cc365b73f3f6098e",
+                "timestamp":"1470662959",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: cf6c049bd7cd9e04cc365b73f3f6098e",
+                "timestamp":"1470662959",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: cf6c049bd7cd9e04cc365b73f3f6098e",
+                "timestamp":"1470662959",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6b06522f803437d51c15832dbd6b91d8d8b244440b4d2f09bd952f335351b06d/analysis/1470649331/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 7b8a3bf6fd266593db96eddaa3fae6f9",
+                "timestamp":"1470662959",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 7b8a3bf6fd266593db96eddaa3fae6f9",
+                "timestamp":"1470662959",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 7b8a3bf6fd266593db96eddaa3fae6f9",
+                "timestamp":"1470662960",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/3782b63d7f6f688a5ccb1b72be89a6a98bb722218c9f22402709af97a41973c8/analysis/1470653929/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 1f316e14e773ca0f468d0d160b5d0307",
+                "timestamp":"1470662960",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 1f316e14e773ca0f468d0d160b5d0307",
+                "timestamp":"1470662960",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 1f316e14e773ca0f468d0d160b5d0307",
+                "timestamp":"1470662960",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9572624b6026311a0e122835bcd7200eca396802000d0777dba118afaaf9f2a9/analysis/1470653936/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 1d9d7d05ab7c68bdc257afb1c086fb88",
+                "timestamp":"1470662961",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 1d9d7d05ab7c68bdc257afb1c086fb88",
+                "timestamp":"1470662961",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 1d9d7d05ab7c68bdc257afb1c086fb88",
+                "timestamp":"1470662961",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c8f95bf8a76ff124cc1d7a8439beff360d0eb9c0972d42a8684c3bd4e91c6600/analysis/1470653946/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 113050c3e3140bf631d186d78d4b1dc0",
+                "timestamp":"1470662961",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 113050c3e3140bf631d186d78d4b1dc0",
+                "timestamp":"1470662961",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 113050c3e3140bf631d186d78d4b1dc0",
+                "timestamp":"1470662962",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/bde264ceb211089f6a9c8cfbaf3974bf3d7bf4843d22186684464152c432f8a5/analysis/1470173246/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 0a0948d871ef5a3006c0ab2997ad330e",
+                "timestamp":"1470662962",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Network listeners - Xchecked via VT: 0a0948d871ef5a3006c0ab2997ad330e",
+                "timestamp":"1470662962",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network listeners - Xchecked via VT: 0a0948d871ef5a3006c0ab2997ad330e",
+                "timestamp":"1470662962",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ab8181ae5cc205f1d3cae00d8b34011e47b735a553bd5a4f079f03052b74a06d/analysis/1470649324/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Backdoor. Remsec",
+                "timestamp":"1470663912",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664006",
+                "type":"url",
+                "value":"http://flowershop22.110mb.com/flowers.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664007",
+                "type":"url",
+                "value":"http://flowershop22.110mb.com/shop.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664007",
+                "type":"url",
+                "value":"http://wildhorses.awardspace.info/hindex.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664007",
+                "type":"url",
+                "value":"http://wildhorses.awardspace.info/horses.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664007",
+                "type":"url",
+                "value":"http://www.myhomemusic.com/music.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1470664007",
+                "type":"url",
+                "value":"http://www.myhomemusic.com/mymusic.php",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470664161",
+                "type":"yara",
+                "value":"rule remsec_encrypted_api\r\n{\r\nmeta:\r\ncopyright = \"Symantec\"\r\nstrings:\r\n$open_process =\r\n/*\r\n\"OpenProcess\\x00\" in encrypted form\r\n*/\r\n{ 91 9A 8F B0 9C 90 8D AF 8C 8C 9A FF }\r\ncondition:\r\nall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470664197",
+                "type":"yara",
+                "value":"rule remsec_packer_A\r\n{\r\nmeta:\r\ncopyright = \"Symantec\"\r\nstrings:\r\n$code =\r\n/*\r\n69 ?? AB 00 00 00\r\nimul\r\nr0, 0ABh\r\n81 C? CD 2B 00 00\r\nadd\r\nr0, 2BCDh\r\nF7 E?\r\nmul\r\nr0\r\nC1 E? 0D\r\nshr\r\nr1, 0Dh\r\n69 ?? 85 CF 00 00\r\nimul\r\nr1, 0CF85h\r\n2B\r\nsub\r\nr0, r1\r\n*/\r\n{\r\n69 ( C? | D? | E? | F? ) AB 00 00 00\r\n( 81 | 41 81 ) C? CD 2B 00 00\r\n( F7 | 41 F7 ) E?\r\n( C1 | 41 C1 ) E? 0D\r\n( 69 | 45 69 ) ( C? | D? | E? | F? ) 85 CF 00 00\r\n( 29 | 41 29 | 44 29 | 45 29 | 2B | 41 2B | 44 2B | 45 2B )\r\n}\r\ncondition:\r\nall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470664325",
+                "type":"yara",
+                "value":"rule remsec_packer_B\r\n{\r\nmeta:\r\ncopyright = \"Symantec\"\r\nstrings:\r\n$code =\r\n{\r\n48 8B 05 ?? ?? ?? ??\r\n48 89 44 24 ??\r\n48 8B 05 ?? ?? ?? ??\r\n48 8D 4C 24 ??\r\n48 89 44 24 ??\r\n48 8D ( 45 ?? | 84 24 ?? ?? 00 00 )\r\n( 44 88 6? 24 ?? | C6 44 24 ?? 00 )\r\n48 89 44 24 ??\r\n48 8D ( 45 ?? | 84 24 ?? ?? 00 00 )\r\nC7 44 24 ?? 0? 00 00 00\r\n2B ?8\r\n48 89 ?C 24 ??\r\n44 89 6? 24 ??\r\n83 C? 08\r\n89 ?C 24 ??\r\n( FF | 41 FF ) D?\r\n( 05 | 8D 88 ) 00 00 00 3A\r\n}\r\ncondition:\r\nall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470664392",
+                "type":"yara",
+                "value":"rule remsec_executable_blob_32\r\n{\r\nmeta:\r\ncopyright = \"Symantec\"\r\nstrings:\r\n$code =\r\n{\r\n31 06\r\n83 C6 04\r\nD1 E8\r\n73 05\r\n35 01 00 00 D0\r\nE2 F0\r\n}\r\ncondition:\r\nall of them\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1470665034",
+                "type":"hostname",
+                "value":"flowershop22.110mb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1470665034",
+                "type":"hostname",
+                "value":"wildhorses.awardspace.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1470665053",
+                "type":"domain",
+                "value":"myhomemusic.com",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Configuration data for host loader (version with MD5: 7261230a43a40bb29227a169c2c8e1be)",
+                "timestamp":"1470665114",
+                "type":"filename",
+                "value":"c:\\\\System Volume Information\\\\{aa112c99-f343-4107-8ba1-22951714a641}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Configuration data for host loader (version with MD5: 7261230a43a40bb29227a169c2c8e1be)",
+                "timestamp":"1470665194",
+                "type":"filename",
+                "value":"c:\\\\System Volume Information\\\\{951841cb-d1a4-4d7c-b44e-2c3d25996e37}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1470751030",
+                "type":"mutex",
+                "value":"Global\\\\{b3898039-f3d8-4965-b618-a8a0d031cc5a}",
+                "to_ids":true
+            }
+        ]
+    }
+}

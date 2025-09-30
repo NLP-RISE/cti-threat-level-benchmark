@@ -1,0 +1,145 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-06",
+        "published":true,
+        "info":"OSINT - ikittens: iranian actor resurfaces with malware for mac (macdownloader)",
+        "publish_timestamp":"1486404542",
+        "timestamp":"1486403490",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486401475",
+                "type":"link",
+                "value":"https://iranthreats.github.io/resources/macdownloader-macos-malware/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486401369",
+                "type":"text",
+                "value":"A macOS malware agent, named MacDownloader, was observed in the wild as targeting the defense industrial base, and reported elsewhere to have been used against an human rights advocate. MacDownloader strangely attempts to pose as both an installer for Adobe Flash, as well as the Bitdefender Adware Removal Tool, in order to extract system information and copies of OS X keychain databases. Based on observations on infrastructure, and the state of the code, we believe these incidents represent the first attempts to deploy the agent, and features such as persistence do not appear to work. Instead, MacDownloader is a simple exfiltration agent, with broader ambitions.\r\n\r\nThe macOS malware also mirrors the approach of the ExtremeDownloader dropper previously documented in our research, and samples of the latter identified during this time used the same infrastructure. Lastly, the exposure of test victim data and code references provide a unique insight into the development of the malware, with potential connections to agents developed by long dormant threat groups.\r\n\r\nSince the Technical Preview of our forthcoming Carnegie Endowment publication about state-sponsored espionage campaigns was released at Black Hat USA, we have continued to disclose information about current Iranian activities in order to promote public education and to provide indicators of compromise. While this agent is neither sophisticated nor full-featured, its sudden appearance is concerning given the popularity of Apple computers with certain community, and inaccurate perceptions about the security of those devices.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"addone flashplayer.app.zip",
+                "timestamp":"1486403059",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bitdefender Adware Removal Tool",
+                "timestamp":"1486403076",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486403168",
+                "type":"ip-dst",
+                "value":"46.17.97.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486403170",
+                "type":"domain",
+                "value":"officialswebsites.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486403171",
+                "type":"hostname",
+                "value":"utc.officialswebsites.info",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1486403209",
+                "type":"pdb",
+                "value":"%USERPROFILE%\\Desktop\\Projects\\Tiny_st\\BlackBerry\\obj\\Debug\\MSSUP.pdb",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The malware reads from the embedded Resources folder the \"checkadr.txt,\" which contains the URL for the first beacon. 192.168.3.217 is internal development server address",
+                "timestamp":"1486403324",
+                "type":"url",
+                "value":"http://192.168.3.217/DroperTest",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The malware reads from the embedded Resources folder the \"checkadr.txt,\" which contains the URL for the first beacon. 192.168.3.217 is internal development server address",
+                "timestamp":"1486403326",
+                "type":"url",
+                "value":"http://46.17.97.37/Servermac.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bitdefender Adware Removal Tool - Xchecked via VT: 7a9cdb9d608b88bd7afce001cb285c2bb2ae76f5027977e8635aa04bd064ffb7",
+                "timestamp":"1486403491",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Bitdefender Adware Removal Tool - Xchecked via VT: 7a9cdb9d608b88bd7afce001cb285c2bb2ae76f5027977e8635aa04bd064ffb7",
+                "timestamp":"1486403493",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Bitdefender Adware Removal Tool - Xchecked via VT: 7a9cdb9d608b88bd7afce001cb285c2bb2ae76f5027977e8635aa04bd064ffb7",
+                "timestamp":"1486403494",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7a9cdb9d608b88bd7afce001cb285c2bb2ae76f5027977e8635aa04bd064ffb7/analysis/1486400681/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"addone flashplayer.app.zip - Xchecked via VT: 52efcfe30f96a85c9c068880c20663db64f0e08346e0f3b59c2e5bbcb41ba73c",
+                "timestamp":"1486403495",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"addone flashplayer.app.zip - Xchecked via VT: 52efcfe30f96a85c9c068880c20663db64f0e08346e0f3b59c2e5bbcb41ba73c",
+                "timestamp":"1486403496",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"addone flashplayer.app.zip - Xchecked via VT: 52efcfe30f96a85c9c068880c20663db64f0e08346e0f3b59c2e5bbcb41ba73c",
+                "timestamp":"1486403496",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/52efcfe30f96a85c9c068880c20663db64f0e08346e0f3b59c2e5bbcb41ba73c/analysis/1486400701/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,538 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-12-08",
+        "published":true,
+        "info":"Suspected Russian Activity Targeting Government and Business Entities Around the Globe",
+        "publish_timestamp":"1641068007",
+        "timestamp":"1641067974",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"CryptBot\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Cobalt Strike - S0154\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Cobalt Strike\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1641066850",
+                "type":"link",
+                "value":"https://www.mandiant.com/resources/russian-targeting-gov-business",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Staging Directories",
+                "timestamp":"1641067453",
+                "type":"regkey",
+                "value":"%PROGRAMFILES%\\Microsoft SQL Server\\ms",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Staging Directories",
+                "timestamp":"1641067453",
+                "type":"regkey",
+                "value":"%WINDIR%\\Temp",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Staging Directories",
+                "timestamp":"1641067453",
+                "type":"regkey",
+                "value":"%WINDIR%\\Temp\\d",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"d.7z",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"vcredist.ps1",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"fc.r",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"d.ps1",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"d.z",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"megatools.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"mt.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"mtt.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"ntds.dit",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"handle64.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"movefile.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"diagview.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"diag.ps1",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Staging Names",
+                "timestamp":"1641067501",
+                "type":"filename",
+                "value":"diag.bat",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1641067535",
+                "type":"windows-scheduled-task",
+                "value":"Microsoft Diagnostics",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1641067535",
+                "type":"windows-scheduled-task",
+                "value":"Microsoft Azure Diagnostics",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1641067535",
+                "type":"windows-scheduled-task",
+                "value":"Google Chrome Update",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"Azure Run Command",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"Sysinternals Handle",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"Sysinternals MoveFile",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"ntdsutil",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"netstat",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"net",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"tasklist",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"RAR / 7zip",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"AADInternals",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"vSphere PowerCLI",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"Sysinternals Procdump",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Administrative or Utility Tools",
+                "timestamp":"1641067583",
+                "type":"comment",
+                "value":"Windows Task Manager",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"url",
+                "value":"http://23.106.123.15/logo.png",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"domain",
+                "value":"stonecrestnews.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"filename",
+                "value":"LocalData.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"url",
+                "value":"http://theandersonco.com/wp_info.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1641067711",
+                "type":"url",
+                "value":"http://tomasubiera.com/wp_getcontent.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067974",
+                "type":"ip-dst",
+                "value":"20.52.144.179",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067974",
+                "type":"ip-dst",
+                "value":"20.52.156.76",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067974",
+                "type":"ip-dst",
+                "value":"20.52.47.99",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067974",
+                "type":"ip-dst",
+                "value":"51.140.220.157",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067974",
+                "type":"ip-dst",
+                "value":"51.104.51.92",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067727",
+                "type":"ip-dst",
+                "value":"146.105.10.215",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067727",
+                "type":"ip-dst",
+                "value":"176.67.86.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating Through Public VPN Providers:",
+                "timestamp":"1641067727",
+                "type":"ip-dst",
+                "value":"176.67.86.52",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"216.155.158.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.75.244.119",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.162.179.166",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.162.179.94",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.75.245.144",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.75.245.239",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Authenticating From the Mobile Proxy Providers:",
+                "timestamp":"1641067742",
+                "type":"ip-dst",
+                "value":"63.75.247.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Command and Control",
+                "timestamp":"1641067755",
+                "type":"ip-dst",
+                "value":"91.234.254.144",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"IP Addresses Used for Command and Control",
+                "timestamp":"1641067755",
+                "type":"ip-dst",
+                "value":"23.106.123.15",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL Addresses Used for Command and Control",
+                "timestamp":"1641067775",
+                "type":"domain",
+                "value":"nordicmademedia.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL Addresses of Compromised WordPress Sites Hosting CEELOADER Payloads",
+                "timestamp":"1641067793",
+                "type":"domain",
+                "value":"tomasubiera.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"URL Addresses of Compromised WordPress Sites Hosting CEELOADER Payloads",
+                "timestamp":"1641067793",
+                "type":"domain",
+                "value":"theandersonco.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

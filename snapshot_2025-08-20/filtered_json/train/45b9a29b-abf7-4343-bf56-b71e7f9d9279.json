@@ -1,0 +1,424 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-09-15",
+        "published":true,
+        "info":"Gamaredon APT targets Ukrainian government agencies in new campaign",
+        "publish_timestamp":"1679497706",
+        "timestamp":"1679497698",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Gamaredon Group - G0047\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Phishing - T1566\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command and Scripting Interpreter - T1059\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Malicious document",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"LNK file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RAR file",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Infostealer",
+                "timestamp":"1679497005",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0698649.xsph.ru/barley/barley.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0700343.xsph.ru/new/preach.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0700462.xsph.ru/grow/guests.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0700462.xsph.ru/seek/lost.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0701919.xsph.ru/head/selling.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0701919.xsph.ru/predator/decimal.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0701919.xsph.ru/registry/prediction.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0704093.xsph.ru/basement/insufficient.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0704093.xsph.ru/bass/grudge.xml",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705076.xsph.ru/ramzeses1.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705076.xsph.ru/regiment.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705269.xsph.ru/bars/dearest.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705269.xsph.ru/instruct/deaf.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705269.xsph.ru/prok/gur.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705581.xsph.ru/guinea/preservation.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705880.xsph.ru/band/sentiment.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705880.xsph.ru/based/pre.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0705880.xsph.ru/selection/seedling.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0706248.xsph.ru/reject/headlong.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Malicious URLs",
+                "timestamp":"1679497031",
+                "type":"url",
+                "value":"http://a0707763.xsph.ru/decipher/prayer.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"url",
+                "value":"http://155.138.252.221/get.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"url",
+                "value":"http://45.77.237.252/get.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"url",
+                "value":"http://motoristo.ru/get.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"url",
+                "value":"http://heato.ru/index.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"domain",
+                "value":"celticso.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"ip-dst",
+                "value":"162.33.178.129",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"domain",
+                "value":"kuckuduk.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Additional payload drop sites",
+                "timestamp":"1679497051",
+                "type":"domain",
+                "value":"pasamart.ru",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1679497080",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/gamaredon-apt-targets-ukrainian-agencies/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497322",
+                "type":"comment",
+                "value":"malicious LNK files distributed in RAR archives",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497322",
+                "type":"comment",
+                "value":"deliver information-stealing malware to Ukrainian victim machines and makes heavy use of multiple modular PowerShell and VBScript (VBS) scripts as part of the infection chain",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497322",
+                "type":"comment",
+                "value":"phishing emails to deliver Microsoft Office documents containing remote templates with malicious VBScript macros",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497322",
+                "type":"comment",
+                "value":"the LNKs will attempt to execute MSHTA.EXE to download and parse a remote XML file to execute a malicious PowerShell script",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497413",
+                "type":"comment",
+                "value":"The following information is then collected and exfiltrated to a hardcoded C2 URL: Computer name, Volume serial number, Base64-encoded screenshot",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1679497558",
+                "type":"comment",
+                "value":"One of the executables deployed by the attackers via the PowerShell script consisted of an information stealer that exfiltrates files of specific extensions from the infected endpoint: .doc, .docx, .xls, .rtf, .odt, .txt, .jpg, .jpeg, .pdf, .ps1, .rar, .zip, .7z and .mdb.\r\nkeeps track of what has been exfiltrated in a file named \"profiles_c.ini\" in the \"%USERPROFILE%\\Appdata\\Local\" folder.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Exfiltrated files",
+                "timestamp":"1679497573",
+                "type":"filename",
+                "value":"profiles_c.ini",
+                "to_ids":false
+            }
+        ]
+    }
+}

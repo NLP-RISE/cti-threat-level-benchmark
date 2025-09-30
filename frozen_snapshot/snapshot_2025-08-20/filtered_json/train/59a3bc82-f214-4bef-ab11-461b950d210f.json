@@ -1,0 +1,197 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-07-24",
+        "published":true,
+        "info":"OSINT - Ursnif variant found using mouse movement for decryption and evasion",
+        "publish_timestamp":"1503930240",
+        "timestamp":"1503930235",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Trojan\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Snifula\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"link",
+                "value":"https://blogs.forcepoint.com/security-labs/ursnif-variant-found-using-mouse-movement-decryption-and-evasion",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"comment",
+                "value":"In January 2016 Forcepoint Security Labs reported an email campaign delivering the Ursnif banking Trojan which used the â€˜Rangeâ€™ feature within its initial HTTP requests to avoid detection.\r\n\r\nIn July 2017 we discovered a malicious email sample delivering a new variant of Ursnif, attached within an encrypted Word document with the plaintext password within the email body. As recorded in several other Ursnif campaigns reported since April 2017, this Word document contains several obfuscated VBS files which load malicious DLLs through WMI.\r\n\r\nHowever, these samples appear to exhibit new features including anti-sandboxing features that use a combination of mouse position and file timestamps to decode their internal data and the ability to steal data from the Thunderbird application.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download locations",
+                "timestamp":"1503930230",
+                "type":"url",
+                "value":"http://46.17.40.22/hyey.pnj",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download locations",
+                "timestamp":"1503930230",
+                "type":"url",
+                "value":"46.17.40.142/45.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download locations",
+                "timestamp":"1503930230",
+                "type":"url",
+                "value":"http://inshaengineeringindustries.com/head.pkl",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download locations",
+                "timestamp":"1503930230",
+                "type":"url",
+                "value":"http://ardshinbank.at/key/x32.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download locations",
+                "timestamp":"1503930230",
+                "type":"url",
+                "value":"http://ardshinbank.at/key/x64.bin",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C2",
+                "timestamp":"1503930230",
+                "type":"filename",
+                "value":"aaxvkah7dudzoloq.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1503930230",
+                "type":"domain",
+                "value":"0x7293c971.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1503930230",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"Name:  Random String",
+                "timestamp":"1503930230",
+                "type":"regkey",
+                "value":"HKEY_USERS\\S-1-5-21-746137067-1417001333-1606980848-500\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 73fdde182759e644a3d7296537a048a6980e8526",
+                "timestamp":"1503930231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 73fdde182759e644a3d7296537a048a6980e8526",
+                "timestamp":"1503930231",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 73fdde182759e644a3d7296537a048a6980e8526",
+                "timestamp":"1503930231",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/48dbf539d756d61a1eae7f6c87d4ccb6beae1b14e0273c87e53402e040b02f91/analysis/1503556363/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: bdcb4b96a281da3e09e29071dc9661ce39d442f1",
+                "timestamp":"1503930231",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: bdcb4b96a281da3e09e29071dc9661ce39d442f1",
+                "timestamp":"1503930231",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: bdcb4b96a281da3e09e29071dc9661ce39d442f1",
+                "timestamp":"1503930231",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1e2efef5ae950993d8393f17ffd7752a0b3aefec77e97bebb2940fdb323e22ce/analysis/1502176481/",
+                "to_ids":false
+            }
+        ]
+    }
+}

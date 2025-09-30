@@ -1,0 +1,103 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2016-02-29",
+        "published":true,
+        "info":"OSINT - New Hacking team samples (OSX)",
+        "publish_timestamp":"1456781112",
+        "timestamp":"1456781102",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"tlp:green"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"ZIP with dropper",
+                "timestamp":"1456780424",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Dropper binary",
+                "timestamp":"1456780425",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1456780425",
+                "type":"ip-dst",
+                "value":"212.71.254.212",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1456781102",
+                "type":"link",
+                "value":"https://reverse.put.as/2016/02/29/the-italian-morons-are-back-what-are-they-up-to-this-time/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Dropper binary - Xchecked via VT: 58e4e4853c6cfbb43afd49e5238046596ee5b78eca439c7d76bd95a34115a273",
+                "timestamp":"1456780639",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Dropper binary - Xchecked via VT: 58e4e4853c6cfbb43afd49e5238046596ee5b78eca439c7d76bd95a34115a273",
+                "timestamp":"1456780639",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456780640",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/58e4e4853c6cfbb43afd49e5238046596ee5b78eca439c7d76bd95a34115a273/analysis/1456779730/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ZIP with dropper - Xchecked via VT: 2ee9e9d9a0cd3cee6519e7b950821d5c90af03da665879615e52fd093dd8e947",
+                "timestamp":"1456780640",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ZIP with dropper - Xchecked via VT: 2ee9e9d9a0cd3cee6519e7b950821d5c90af03da665879615e52fd093dd8e947",
+                "timestamp":"1456780640",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1456780641",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2ee9e9d9a0cd3cee6519e7b950821d5c90af03da665879615e52fd093dd8e947/analysis/1456767669/",
+                "to_ids":false
+            }
+        ]
+    }
+}

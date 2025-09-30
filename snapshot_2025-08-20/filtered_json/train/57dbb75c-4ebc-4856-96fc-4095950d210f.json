@@ -1,0 +1,84 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-09-16",
+        "published":true,
+        "info":"OSINT - ELF.Rex",
+        "publish_timestamp":"1515753296",
+        "timestamp":"1474017220",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"Linux\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1474017136",
+                "type":"link",
+                "value":"https://twitter.com/benkow_/status/776683844011450368",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1474017191",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: ab2b707d7993aee44ad98bf55fdd9ff02c00fa422abeb8eb10d9f275f5f6e55a",
+                "timestamp":"1474017220",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: ab2b707d7993aee44ad98bf55fdd9ff02c00fa422abeb8eb10d9f275f5f6e55a",
+                "timestamp":"1474017220",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: ab2b707d7993aee44ad98bf55fdd9ff02c00fa422abeb8eb10d9f275f5f6e55a",
+                "timestamp":"1474017221",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ab2b707d7993aee44ad98bf55fdd9ff02c00fa422abeb8eb10d9f275f5f6e55a/analysis/1474010565/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Unpacked go compiled binaries",
+                "timestamp":"1474018079",
+                "type":"malware-sample",
+                "value":"ab2b707d7993aee44ad98bf55fdd9ff02c00fa422abeb8eb10d9f275f5f6e55a|33ec152761d37a349433572df4b6dfc7",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Unpacked go compiled binaries",
+                "timestamp":"1474018080",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Unpacked go compiled binaries",
+                "timestamp":"1474018081",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

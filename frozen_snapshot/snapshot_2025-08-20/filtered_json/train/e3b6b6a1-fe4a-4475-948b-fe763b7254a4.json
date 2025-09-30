@@ -1,0 +1,215 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2023-09-11",
+        "published":true,
+        "info":"Spyware Telegram mod distributed via Google Play - Evil Telegram doppelganger attacks Chinese users",
+        "publish_timestamp":"1694415526",
+        "timestamp":"1694415518",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deliver Malicious App via Authorized App Store - T1475\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"China\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Manipulation - T1565\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1694414890",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1694414919",
+                "type":"hostname",
+                "value":"sg.telegrnm.org",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"sg.telegrnm.org: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1694414969",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"text",
+                        "value":"103.148.186.32",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"counter",
+                        "value":"258",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"datetime",
+                        "value":"2023-02-12T15:26:41+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"datetime",
+                        "value":"2023-09-10T14:33:58+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"text",
+                        "value":"sg.telegrnm.org.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: sg.telegrnm.org",
+                        "timestamp":"1694414969",
+                        "type":"domain",
+                        "value":"telegrnm.org",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1694415447",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1694415447",
+                        "type":"link",
+                        "value":"https://securelist.com/trojanized-telegram-mod-attacking-chinese-users/110482/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1694415447",
+                        "type":"text",
+                        "value":"Evil Telegram doppelganger attacks Chinese users",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1694415447",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

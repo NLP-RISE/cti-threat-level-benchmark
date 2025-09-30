@@ -1,0 +1,229 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-03",
+        "published":true,
+        "info":"OSINT - Javascript malware hosted on US government site which launches powershell to connect to C2.",
+        "publish_timestamp":"1513594406",
+        "timestamp":"1513594323",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"osint:source-type=\"pastie-website\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513594315",
+                "type":"link",
+                "value":"https://pastebin.com/0eAPV7Lc",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513594315",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                "timestamp":"1513594315",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                "timestamp":"1504461849",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                "timestamp":"1513594315",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd/analysis/1504118595/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Javascript malware hosted on US government site which launches powershell to connect to C2.",
+                "timestamp":"1513594315",
+                "type":"url",
+                "value":"http://dms.nwcg.gov/pipermail/ross-suggestion/attachments/20170304/9ee8a89e/attachment.zip",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513594315",
+                "type":"link",
+                "value":"https://blog.newskysecurity.com/us-government-site-unwittingly-hosting-malware-f1f4f11b6a1d",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Cerber Ransomware",
+                "timestamp":"1513587291",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Configuration of Cerber hosted on US Gov website",
+                "timestamp":"1513594315",
+                "type":"link",
+                "value":"https://pastebin.com/HAiqH0Wq",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513594318",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513594315",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd/analysis/1504922776/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"text",
+                        "value":"36/60",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"- Xchecked via VT: 1e6851e6e0ff2e0e430e882c8326334471ab2e35ebbac4104bd2aa27128ea6bd",
+                        "timestamp":"1513594315",
+                        "type":"datetime",
+                        "value":"2017-09-09T02:06:16",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513594318",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513594315",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/1f15415da53df8a8e0197aa7e17e594d24ea6d7fbe80fe3bb4a5cd41bc8f09f6/analysis/1504623436/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"text",
+                        "value":"51/64",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Cerber Ransomware",
+                        "timestamp":"1513594315",
+                        "type":"datetime",
+                        "value":"2017-09-05T14:57:16",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

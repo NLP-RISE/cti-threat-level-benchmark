@@ -1,0 +1,404 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2018-04-26",
+        "published":true,
+        "info":"OSINT - Analyzing Operation GhostSecret: Attack Seeks to Steal Data Worldwide",
+        "publish_timestamp":"1524766440",
+        "timestamp":"1524766410",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Service Execution - T1035\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Automated Collection - T1119\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data from Local System - T1005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"System Time Discovery - T1124\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"File Deletion - T1107\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1524766406",
+                "type":"link",
+                "value":"https://securingtomorrow.mcafee.com/mcafee-labs/analyzing-operation-ghostsecret-attack-seeks-to-steal-data-worldwide/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1524766407",
+                "type":"text",
+                "value":"McAfee Advanced Threat Research analysts have uncovered a global data reconnaissance campaign assaulting a wide number of industries including critical infrastructure, entertainment, finance, health care, and telecommunications. This campaign, dubbed Operation GhostSecret, leverages multiple implants, tools, and malware variants associated with the state-sponsored cyber group Hidden Cobra. The infrastructure currently remains active. In this post, we dive deeply into this campaign. For a brief overview of this threat, see â€œGlobal Malware Campaign Pilfers Data from Critical Infrastructure, Entertainment, Finance, Health Care, and Other Industries.â€\r\n\r\nOur investigation into this campaign reveals that the actor used multiple malware implants, including an unknown implant with capabilities similar to Bankshot. From March 18 to 26 we observed the malware operating in multiple areas of the world. This new variant resembles parts of the Destover malware, which was used in the 2014 Sony Pictures attack.\r\n\r\nFurthermore, the Advanced Threat Research team has discovered Proxysvc, which appears to be an undocumented implant. We have also uncovered additional control servers that are still active and associated with these new implants. Based on our analysis of public and private information from submissions, along with product telemetry, it appears Proxysvc was used alongside the 2017 Destover variant and has operated undetected since mid-2017.\r\n\r\nThe attackers behind Operation GhostSecret used a similar infrastructure to earlier threats, including SSL certificates used by FakeTLS in implants found in the Destover backdoor variant known as Escad, which was used in the Sony Pictures attack. Based on our technical analysis, telemetry, and data from submissions, we can assert with high confidence that this is the work of the Hidden Cobra group. The Advanced Threat Research team uncovered activity related to this campaign in March 2018, when the actors targeted Turkish banks. These initial findings appear to be the first stage of Operation GhostSecret. For more on the global aspect of this threat, see â€œGlobal Malware Campaign Pilfers Data from Critical Infrastructure of Entertainment, Finance, Health Care, and Other Industries.â€",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1524765393",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1524765394",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1524765394",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1524766131",
+                "type":"ip-dst",
+                "value":"203.131.222.83",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1524766131",
+                "type":"ip-dst",
+                "value":"14.140.116.172",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1524766131",
+                "type":"ip-dst",
+                "value":"203.131.222.109",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1524766132",
+                "type":"text",
+                "value":"Trojan-Bankshot2",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766132",
+                "type":"ip-src",
+                "value":"121.240.155.74",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766133",
+                "type":"ip-src",
+                "value":"121.240.155.76",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766133",
+                "type":"ip-src",
+                "value":"121.240.155.77",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766134",
+                "type":"ip-src",
+                "value":"121.240.155.78",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766134",
+                "type":"ip-src",
+                "value":"223.30.98.169",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766134",
+                "type":"ip-src",
+                "value":"223.30.98.170",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Proxysvc makes an interesting check while accepting connections from a potential control server. It checks against a list of IP addresses to make sure the incoming connection is not from any of the following addresses. If the incoming request does come from one of these, the implant offers a zero response (ASCII â€œ0â€) and shuts down the connection.",
+                "timestamp":"1524766135",
+                "type":"ip-src",
+                "value":"14.140.116.172",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Both of these control servers used the PolarSSL certificate",
+                "timestamp":"1524766135",
+                "type":"x509-fingerprint-sha1",
+                "value":"d0cb9b2d4809575e1bc1f4657e0eb56f307c7a76",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The 2015 implant does not contain a hardcoded value of the IP address it must connect to. Instead it contains a hardcoded sockaddr_in data structure (positioned at 0x270 bytes before the end of the binary) used by the connect() API to specify port 443 and control server IP addresses:",
+                "timestamp":"1524766136",
+                "type":"ip-dst",
+                "value":"193.248.247.59",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The 2015 implant does not contain a hardcoded value of the IP address it must connect to. Instead it contains a hardcoded sockaddr_in data structure (positioned at 0x270 bytes before the end of the binary) used by the connect() API to specify port 443 and control server IP addresses:",
+                "timestamp":"1524766136",
+                "type":"ip-dst",
+                "value":"196.4.67.45",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Further investigation into the control server infrastructure reveals the SSL certificate d0cb9b2d4809575e1bc1f4657e0eb56f307c7a76, which is tied to the control server 203.131.222.83, used by the February 2018 implant. This server resides at Thammasat University in Bangkok, Thailand. The same entity hosted the control server for the Sony Pictures implants. This SSL certificate has been used in Hidden Cobra operations since the Sony Pictures attack. Analyzing this certificate reveals additional control servers using the same PolarSSL certificate. Further analysis of McAfee telemetry data reveals several IP addresses that are active, two within the same network block as the 2018 Destover-like implant.",
+                "timestamp":"1524766136",
+                "type":"ip-dst",
+                "value":"203.131.222.95",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1524766140",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766137",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766137",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766138",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1524766138",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766138",
+                        "type":"datetime",
+                        "value":"2018-04-26T00:30:02",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1524766139",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/ae65288f5c96b4656402853b14acd1d060b2a6303d833df5b1f10cc7a34b0025/analysis/1524702602/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766139",
+                        "type":"text",
+                        "value":"48/67",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1524766142",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766139",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766140",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766140",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1524766141",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766141",
+                        "type":"datetime",
+                        "value":"2018-04-26T00:30:05",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1524766141",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/45e68dce0f75353c448865b9abafbef5d4ed6492cd7058f65bf6aac182a9176a/analysis/1524702605/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766142",
+                        "type":"text",
+                        "value":"44/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1524766145",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766142",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766142",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1524766143",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1524766143",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766143",
+                        "type":"datetime",
+                        "value":"2018-04-26T00:29:58",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1524766143",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/05a567fe3f7c22a0ef78cc39dcf2d9ff283580c82bdbe880af9549e7014becfc/analysis/1524702598/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1524766144",
+                        "type":"text",
+                        "value":"49/67",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

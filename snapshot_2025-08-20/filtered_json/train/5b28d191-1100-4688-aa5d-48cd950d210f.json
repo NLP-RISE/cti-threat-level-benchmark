@@ -1,0 +1,111 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-06-14",
+        "published":true,
+        "info":"OSINT - DBGer Ransomware Uses EternalBlue and Mimikatz to Spread Across Networks",
+        "publish_timestamp":"1529820254",
+        "timestamp":"1529820217",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"DBGer Ransomware\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"ETERNALBLUE\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Mimikatz\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Mimikatz - S0002\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529402161",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/dbger-ransomware-uses-eternalblue-and-mimikatz-to-spread-across-networks/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1529402131",
+                "type":"text",
+                "value":"The authors of the Satan ransomware have rebranded their \"product\" and they now go by the name of DBGer ransomware, according to security researcher MalwareHunter, who spotted this new version earlier today.\r\n\r\nThe change was not only in name but also in the ransomware's modus operandi. According to the researcher, whose discovery was later confirmed by an Intezer code similarity analysis, the new (Satan) DBGer ransomware now also incorporates Mimikatz, an open-source password-dumping utility.\r\n\r\nThe purpose of DBGer incorporating Mimikatz is for lateral movement inside compromised networks. This fits a recently observed trend in Satan's modus operandi.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1529404690",
+                "type":"filename",
+                "value":"_How_to_decrypt_files.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1529404691",
+                "type":"email-src",
+                "value":"dbger@protonmail.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529404667",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1529406088",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1529404667",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1529657040"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1529657039"
+            }
+        ]
+    }
+}

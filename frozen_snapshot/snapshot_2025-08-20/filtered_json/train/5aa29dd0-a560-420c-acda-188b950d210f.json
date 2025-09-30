@@ -1,0 +1,85 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-03-06",
+        "published":false,
+        "info":"GandCrab Ransomware Version 2 Released With New .Crab Extension & Other Changes",
+        "publish_timestamp":"0",
+        "timestamp":"1521188536",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"GandCrab\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520606729",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/gandcrab-ransomware-version-2-released-with-new-crab-extension-and-other-changes/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1520606774",
+                "type":"comment",
+                "value":"Last week, security firm Bitdefender, the Romanian Police, and Europol allegedly gained access to the GandCrab Ransomware's Command & Control servers, which allowed them to recover some of the victim's decryption keys. This allowed Bitdefender to release a tool that could decrypt some victim's files.\r\n\r\nAfter this breach, the GandCrab developers stated that they would release a second version of GandCrab that included a more secure command & control server in order to prevent a similar compromise in the future.\r\n\r\nYesterday, MalwareHunterTeam discovered that GandCrab version 2 was released, which contains changes that supposedly make it more secure and allow us to differentiate it from the original version. In this article we will provide a quick overview as to what has changed and how you can identify that you are are infected with the GandCrab Ransomware.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1520606925",
+                "type":"domain",
+                "value":"malwarehunterteam.bit",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1520606925",
+                "type":"domain",
+                "value":"politiaromana.bit",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1520606925",
+                "type":"domain",
+                "value":"gdcb.bit",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1520606953",
+                "type":"filename",
+                "value":"CRAB-Decrypt.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1520607046",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,137 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-30",
+        "published":false,
+        "info":"OSINT - Threat Analysis: Recent Attack Technique Leveraging cmd.exe and PowerShell Demonstrates How Attackers Are Using Trusted Microsoft Applications for Malicious Behavior",
+        "publish_timestamp":"0",
+        "timestamp":"1535704898",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1535703162",
+                "type":"link",
+                "value":"https://www.carbonblack.com/2018/08/27/threat-analysis-recent-attack-technique-leveraging-cmd-exe-and-powershell-demonstrates-how-attackers-are-using-trusted-microsoft-applications-for-malicious-behavior/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1535701167",
+                "type":"filename",
+                "value":"%WINDIR%\\Temp\\__PSScriptPolicyTest_mcnxgxch.sw5.ps1",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":" Execute.bat variant",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1535697048",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1535697048",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1535697049",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1535697049",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1535702983",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1535702980",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1535702981",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1535702981",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1535702981",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1535702982",
+                        "type":"datetime",
+                        "value":"2018-07-19 23:13:18",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1535702982",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e952b9e53974c194794a36491af46c4a08ecebb08aed005eeab9d3b336e384a9/analysis/1532041998/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1535702982",
+                        "type":"text",
+                        "value":"8/59",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

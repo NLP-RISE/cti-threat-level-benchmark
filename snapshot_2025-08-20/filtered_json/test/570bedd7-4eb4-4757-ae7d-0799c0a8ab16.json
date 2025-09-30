@@ -1,0 +1,945 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-11",
+        "published":true,
+        "info":"Click-Fraud Ramdo Malware Family Continues to Plague Users",
+        "publish_timestamp":"1466511089",
+        "timestamp":"1466510982",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1466510982",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2016/04/unit42-ramdo/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\SOFTWARE\\Adobe\\Acrobat Reader\\14.0\\Globals\\LastLoggedOnProvider",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\SOFTWARE\\Adobe\\Acrobat Reader\\14.0\\Globals\\IconUnderline",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\SOFTWARE\\Adobe\\Acrobat Reader\\14.0\\Globals\\HangDetect",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\SOFTWARE\\Adobe\\Acrobat Reader\\14.0\\Globals\\LastProgress",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\SOFTWARE\\Adobe\\Acrobat Reader\\14.0\\Globals\\ShowTabletKeyboard",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Artifacts dropped (Registry key)",
+                "timestamp":"1460399721",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\BluetoothManage",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1460399765",
+                "type":"text",
+                "value":"File Modifications\r\n%APPDATA%\\Microsoft\\btstack.dl",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qggeieyeemioyoym.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"gmqqsmgoeamkmmuq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eiuksoyigkmysqww.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kusumyekqaaskcqw.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skaaaymcieiewcwk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skqgakcyowmwcomc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywywuqmswcyuqueg.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgkogkwosuuugaey.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myqoeeuiyguqisiu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywseaqwkgaecqumy.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skoqqgkoaymgmigi.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wskugoswmwomsciy.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uoyksmyysmoeocwa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"iqeukamwqoicckwu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myyacsmsimwoiygq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kuqwwqywmikmogwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uocsaqcaigosuwqk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kucuyusiqsseqmso.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kucmcamaqsgmaiye.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uosqmakeosgssquc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skmggwaiuwuywgwy.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myiskosuiikykagi.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"cegauoqsykgqecqc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skkikukwuauawigs.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kuyuacgsiowawsqa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aaiwiciisemsauee.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kukciamwyywywege.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywyoyicywkuuyuye.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywcswiwiseiwuqik.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eiaecgesauokiigq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"gmaeesguiokeyqwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ceyueaeiogooemgq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgswmomeoygasskq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywoekqumwmygouka.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsecooueqmaykqco.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wscswugeiuayswqg.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ocsomesgaqgoacga.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"gmgigoiogeosyawm.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uoukqqyamggcssee.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"mycsawomqiqkgqgu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ceigqweqwaywiqgu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"gmaaesccmakkekuc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kuawkswesmaaaqwm.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsucmwkccgaiwkuq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myqmcqiycymqouas.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eimsgkqemekuggss.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywuwegokskgcowec.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywkyogwycimaciua.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgukscwooqacqumu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kuseseaywucqwkqk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ywsksuaigquqyiuc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ocswikyocogewgmu.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skmkmwgesgyacois.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsmckqcuqgiqamwq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aaokguquwimiegys.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsgqwkeysmqmwiwy.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsgggmmsciugqmsi.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgkgkqwymkaakias.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"iquocuamkwawywsk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myuickmykcuoqekg.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eiuqwoiwkqqicmgm.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uociwiiqgmqwwmkq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aaiiyceccigqwgua.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kukwweimqccqmgii.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"wsqqusgiaayeseik.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"ocqaywqqgwgquame.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"iqumgmcqwuqgaaus.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aacmmqgiaumygkcw.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"kuqqqgskcsmkgyai.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"myaooqysgucekccq.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eicseqoesyiqawii.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aacaeqieqoaiykws.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skmymmeiaoooigke.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"skagmesgiuwoygsg.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eiswaaguaiagwyki.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgyyeqwswuqaecia.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgqumocaowgkkiic.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eikscoeocssaqcgk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aaukqiooaseseuke.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"gmumwmiwoqegwiwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uokkwqswimaamcwe.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uoooqoeoycaegcwy.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"occckkseyiwaqgqo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgwccyckcsuyiuwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"eimqqakugeccgwak.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"uogwoigiuweyccsw.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aamsmqscyuycigcw.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"iqswksmkegumawkm.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"cemecwmgkyqayekw.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"qgmcgoqeasgommee.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"cequgkoesycwquwa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"aaiwoisiaeygwwoo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399862",
+                "type":"domain",
+                "value":"cemkacimaqsyomam.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"iqwoocisysswikqa.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"kumsyycmsakisuwo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"ywaiukgcmmmcwqmk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"kuqoiwicemaqwuok.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"sksgusukmqqomysk.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"iqkggemqmeyceguo.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"eiwesimwaeqauiek.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"kuqcuyqmaggguqum.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"gmykmcguecgigese.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"skaakuomwgacoqyg.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"skoiuagogwwkccoc.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"gmewmeycikyooqsi.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"sksqqagakeicoeso.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1460399863",
+                "type":"domain",
+                "value":"uoewuismooowgcui.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1462455101",
+                "type":"hostname",
+                "value":"download.mozilla.org",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2015-11-27",
+        "published":true,
+        "info":"OSINT Expansion on APT-28 - Evolving Threats: dissection of a Cyber-Espionage attack",
+        "publish_timestamp":"1468246298",
+        "timestamp":"1448612175",
+        "Tag":[
+            {
+                "name":"tlp:green"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448608932",
+                "type":"text",
+                "value":"APT28",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448608932",
+                "type":"text",
+                "value":"Sednit",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448608933",
+                "type":"text",
+                "value":"Sofacy",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608981",
+                "type":"domain",
+                "value":"microsofthelpcenter.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608982",
+                "type":"domain",
+                "value":"1oo7.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608982",
+                "type":"domain",
+                "value":"microsoftdriver.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608983",
+                "type":"ip-dst",
+                "value":"198.105.125.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608983",
+                "type":"ip-dst",
+                "value":"66.172.12.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608984",
+                "type":"ip-dst",
+                "value":"45.64.105.23",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608984",
+                "type":"ip-dst",
+                "value":"176.31.112.10",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608985",
+                "type":"ip-dst",
+                "value":"176.31.96.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608985",
+                "type":"ip-dst",
+                "value":"87.236.215.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608986",
+                "type":"ip-dst",
+                "value":"46.19.138.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CnC list paragraph",
+                "timestamp":"1448608986",
+                "type":"ip-dst",
+                "value":"5.199.171.58",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448609035",
+                "type":"link",
+                "value":"http://www.rsaconference.com/writable/presentations/file_upload/cct-w08_evolving-threats-dissection-of-a-cyber-espionage-attack.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448609036",
+                "type":"link",
+                "value":"https://github.com/gasgas4/APTnotes/blob/master/2015/2015.11.04_Evolving_Threats/cct-w08_evolving-threats-dissection-of-a-cyber-espionage-attack.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Combing through screenshots",
+                "timestamp":"1448609210",
+                "type":"domain",
+                "value":"militaryexponews.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Combing through screenshots",
+                "timestamp":"1448609212",
+                "type":"domain",
+                "value":"irwing.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Combing through screenshots",
+                "timestamp":"1448609212",
+                "type":"domain",
+                "value":"eservicesystems.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Combing through screenshots",
+                "timestamp":"1448609213",
+                "type":"domain",
+                "value":"windowsappstore.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Combing through screenshots",
+                "timestamp":"1448609213",
+                "type":"ip-dst",
+                "value":"131.72.136.10",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1448611989",
+                "type":"comment",
+                "value":"Additional IOCs found combing through screenshots & using threatCrowd.org",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1448612064",
+                "type":"comment",
+                "value":"GET to URLs containing the follwoing tokens: /find/?itwm= &from= &utm= &oprnd= &from=\r\nPOST to URLs containing the follwoing tokens: /open/?ags= &ags= &oprnd= &channel= &itwm=",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Resolution of domain irwing.org",
+                "timestamp":"1448612173",
+                "type":"ip-dst",
+                "value":"204.12.244.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Resolution of domain irwing.org",
+                "timestamp":"1448612174",
+                "type":"ip-dst",
+                "value":"104.200.17.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Resolution of domain irwing.org",
+                "timestamp":"1448612174",
+                "type":"ip-dst",
+                "value":"104.200.17.53",
+                "to_ids":true
+            }
+        ]
+    }
+}

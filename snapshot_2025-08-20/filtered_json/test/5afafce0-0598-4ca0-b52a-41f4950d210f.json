@@ -1,0 +1,117 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-15",
+        "published":true,
+        "info":"OSINT - A tale of two zero-days",
+        "publish_timestamp":"1526398981",
+        "timestamp":"1526398950",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"osint:certainty=\"75\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1526398191",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2018/05/15/tale-two-zero-days/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1526398212",
+                "type":"text",
+                "value":"Late in March 2018, ESET researchers identified an interesting malicious PDF sample. A closer look revealed that the sample exploits two previously unknown vulnerabilities: a remote-code execution vulnerability in Adobe Reader and a privilege escalation vulnerability in Microsoft Windows.\r\n\r\nThe use of the combined vulnerabilities is extremely powerful, as it allows an attacker to execute arbitrary code with the highest possible privileges on the vulnerable target, and with only the most minimal of user interaction. APT groups regularly use such combinations to perform their attacks, such as in the Sednit campaign from last year.\r\n\r\nOnce the PDF sample was discovered, ESET contacted and worked together with the Microsoft Security Response Center, Windows Defender ATP research team, and Adobe Product Security Incident Response Team as they fixed these bugs.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1526398245",
+                "type":"vulnerability",
+                "value":"CVE-2018-4990",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1526398263",
+                "type":"vulnerability",
+                "value":"CVE-2018-8120",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1526398282",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1526398283",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1526398926",
+                "type":"link",
+                "value":"http://www.ivanlef0u.tuxfamily.org/?p=86",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1526398947",
+                "type":"link",
+                "value":"http://j00ru.vexillium.org/?p=290",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1526398358"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1526398356"
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1526398360"
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1526398358"
+            }
+        ]
+    }
+}

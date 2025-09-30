@@ -1,0 +1,344 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2025-07-21",
+        "published":true,
+        "info":"Microsoft SharePoint Server Remote Code Execution Vulnerability - CVE-2025-53770",
+        "publish_timestamp":"1753170209",
+        "timestamp":"1753170196",
+        "Tag":[
+            {
+                "name":"vulnerability:sighting=\"exploited\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"SharPyShell\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1753094902",
+                "type":"vulnerability",
+                "value":"CVE-2025-53770",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1753096128",
+                "type":"vulnerability",
+                "value":"CVE-2025-53771",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1753096496",
+                "type":"ip-dst",
+                "value":"107.191.58.76",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1753096496",
+                "type":"ip-dst",
+                "value":"104.238.159.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1753096496",
+                "type":"ip-dst",
+                "value":"96.9.125.147",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1753096496",
+                "type":"ip-dst",
+                "value":"103.186.30.186",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1753096721",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1753097003",
+                "type":"vulnerability",
+                "value":"CVE-2025-49706",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Found from BitDefender writeup https://www.bitdefender.com/en-us/blog/businessinsights/bitdefender-advisory-rce-vulnerability-microsoft-sharepoint-server-cve-2025-53770ce",
+                "timestamp":"1753118824",
+                "type":"ip-src",
+                "value":"162.159.140.229",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Another observed malicious IP address from the Bitdefender report",
+                "timestamp":"1753170018",
+                "type":"ip-src",
+                "value":"172.66.0.227",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Bitdefender blog post for: CVE-2025-53770",
+                "timestamp":"1753170196",
+                "type":"link",
+                "value":"https://www.bitdefender.com/en-us/blog/businessinsights/bitdefender-advisory-rce-vulnerability-microsoft-sharepoint-server-cve-2025-53770ce",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Blog post like Medium or WordPress.",
+                "meta-category":"misc",
+                "name":"blog",
+                "timestamp":"1753095515",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753095515",
+                        "type":"text",
+                        "value":"SharePoint 0-day uncovered (CVE-2025-53770)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753095515",
+                        "type":"link",
+                        "value":"https://research.eye.security/sharepoint-under-siege/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514: Enriched via the virustotal_public module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1753096912",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"text",
+                        "value":"9/63",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1753096912",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1753096912",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2025-53770: Enriched via the vulnerability_lookup module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1753102728",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"link",
+                        "value":"https://vulnerability.circl.lu/vuln/CVE-2025-53770",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"vulnerability",
+                        "value":"CVE-2025-53770",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"datetime",
+                        "value":"2025-07-20T01:06:33.607000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"datetime",
+                        "value":"2025-07-21T03:55:24.703000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"text",
+                        "value":"PUBLISHED",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753102728",
+                        "type":"link",
+                        "value":"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53770",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"CVE-2025-53771: Enriched via the vulnerability_lookup module",
+                "description":"Vulnerability object describing a common vulnerability enumeration which can describe published, unpublished, under review or embargo vulnerability for software, equipments or hardware.",
+                "meta-category":"vulnerability",
+                "name":"vulnerability",
+                "timestamp":"1753103499",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"link",
+                        "value":"https://vulnerability.circl.lu/vuln/CVE-2025-53771",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"vulnerability",
+                        "value":"CVE-2025-53771",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"datetime",
+                        "value":"2025-07-20T22:16:52.203000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"datetime",
+                        "value":"2025-07-21T12:41:28.261000+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"text",
+                        "value":"PUBLISHED",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1753103499",
+                        "type":"link",
+                        "value":"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-53771",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,254 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2020-03-21",
+        "published":true,
+        "info":"Lokibot Equation Editor Sample",
+        "publish_timestamp":"1642616464",
+        "timestamp":"1621850735",
+        "Tag":[
+            {
+                "name":"Lokibot"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"cert-ist:threat_targeted_system=\"Windows\""
+            },
+            {
+                "name":"cert-ist:malware_type=\"Stealer\""
+            },
+            {
+                "name":"cert-ist:malware_type=\"Keylogger\""
+            },
+            {
+                "name":"cert-ist:enriched"
+            },
+            {
+                "name":"cert-ist:ioc_accuracy=\"medium\""
+            },
+            {
+                "name":"misp-galaxy:android=\"LokiBot\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"LokiBot\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Loki Password Stealer (PWS)\""
+            },
+            {
+                "name":"cert-ist:threat_level=\"low\""
+            },
+            {
+                "name":"cert-ist:threat_type=\"malware_outbreak\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1584795949",
+                "type":"ip-dst",
+                "value":"23.95.132.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1584795959",
+                "type":"ip-dst",
+                "value":"216.170.122.34",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1584796222",
+                "type":"vulnerability",
+                "value":"CVE-2017-11882",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1584797893",
+                "type":"url",
+                "value":"http://shgshg9nationalobjwsdyindustrialgoogler.duckdns.org/shgdocument/vbc.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1584797913",
+                "type":"url",
+                "value":"http://23.95.132.48/~main/.isuoxiso/w.php/tOEYLz76bbT79",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1584798456",
+                "type":"link",
+                "value":"https://laskowski-tech.com/2020/03/21/til-how-to-unpatch-office-and-get-that-sweet-execution/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Attack name",
+                "timestamp":"1584960604",
+                "type":"text",
+                "value":"Malspam-2020.03",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST External link",
+                "timestamp":"1584960604",
+                "type":"link",
+                "value":"https://wws.cert-ist.com/private/fr/IocAttack_details?format=html&objectType=ATK&ref=CERT-IST/ATK-2020.024",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Description",
+                "timestamp":"1584960604",
+                "type":"comment",
+                "value":"IOCs coming from a report published on the Laskowski Tech web site regarding a sample of Lokibot. The attack attempt involves an attached crafted Excel document.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Cert-IST Malware Name",
+                "timestamp":"1584960604",
+                "type":"comment",
+                "value":"Lokibot",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Cert-IST First Disclosed Date",
+                "timestamp":"1584960604",
+                "type":"datetime",
+                "value":"2020-03-20T23:00:00+00:00",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584795972",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"malware-sample",
+                        "value":"SOA AS AT 29 FEB. 2020.xlsx|71f2c5eb6d2e98447d1716cacba2b561",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"filename",
+                        "value":"SOA AS AT 29 FEB. 2020.xlsx",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584795972",
+                        "type":"size-in-bytes",
+                        "value":"908288",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1584797675",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584797675",
+                        "type":"malware-sample",
+                        "value":"vbc.exe|588f7435c0f60c626ef1aa6686d498c3",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584797640",
+                        "type":"filename",
+                        "value":"vbc.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584797640",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584797640",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1584797640",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1584797640",
+                        "type":"size-in-bytes",
+                        "value":"1124352",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

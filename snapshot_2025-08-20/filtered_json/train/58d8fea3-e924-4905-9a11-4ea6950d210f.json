@@ -1,0 +1,116 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-27",
+        "published":true,
+        "info":"OSINT - Shamoon 2: Delivering Disttrack",
+        "publish_timestamp":"1490617391",
+        "timestamp":"1490616352",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Shamoon\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490616352",
+                "type":"link",
+                "value":"http://researchcenter.paloaltonetworks.com/2017/03/unit42-shamoon-2-delivering-disttrack/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1490616352",
+                "type":"text",
+                "value":"Since late November 2016, the Shamoon 2 attack campaign has brought three waves of destructive attacks to organizations within Saudi Arabia. Our investigation into these attacks has unearthed more details into the method by which the threat actors delivered the Disttrack payload. We have found evidence that the actors use a combination of legitimate tools and batch scripts to deploy the Disttrack payload to hostnames known to the attackers to exist in the targeted network.\r\n\r\nOur analysis shows that the actors likely gathered the list of known hostnames directly from Active Directory or during their network reconnaissance activities conducted from a compromised host. This network reconnaissance, coupled with the credential theft needed to hardcode Disttrack payloads with legitimate username and password credentials, leads us to believe that it is highly likely the threat actors had sustained access to the targeted networks prior to Shamoon 2 attacks. Our research confirms that successful credential theft from targeted organizations was an integral part of the Shamoon 2 attackersâ€™ playbook, and they used these stolen credentials for remote access and lateral movement.\r\n\r\nOur analysis also shows an actor distributes Disttrack within the targeted network by first compromising a system that is used as the Disttrack distribution server on that network. The actor then uses this server to compromise other systems on the network by using the hostname to copy over and execute the Disttrack malware. On each of these named systems that are successfully compromised, the Disttrack malware will attempt to propagate itself to 256 additional IP addresses on the local network. This rudimentary, but effective, distribution system can enable Disttrack to propagate to additional systems from a single, initially compromised system in a semi-automated fashion.\r\n\r\nIn this posting we also explore a possible connection between Shamoon 2 and the Magic Hound campaign, where we outline evidence of a potential connection between these two attack campaigns. Furthermore, we explore a possible scenario on how these two attack campaigns could have worked in conjunction with each other to execute the Shamoon 2 attacks.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"exec-template.txt",
+                "timestamp":"1490616352",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ok.bat",
+                "timestamp":"1490616352",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"pa.exe",
+                "timestamp":"1490616352",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ntertmgr32.bat",
+                "timestamp":"1490616352",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ntertmgr32.bat - Xchecked via VT: c7f937375e8b21dca10ea125e644133de3afc7766a8ca4fc8376470277832d95",
+                "timestamp":"1490616363",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ntertmgr32.bat - Xchecked via VT: c7f937375e8b21dca10ea125e644133de3afc7766a8ca4fc8376470277832d95",
+                "timestamp":"1490616365",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"ntertmgr32.bat - Xchecked via VT: c7f937375e8b21dca10ea125e644133de3afc7766a8ca4fc8376470277832d95",
+                "timestamp":"1490616367",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c7f937375e8b21dca10ea125e644133de3afc7766a8ca4fc8376470277832d95/analysis/1488902359/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"pa.exe - Xchecked via VT: 01a461ad68d11b5b5096f45eb54df9ba62c5af413fa9eb544eacb598373a26bc",
+                "timestamp":"1490616369",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"pa.exe - Xchecked via VT: 01a461ad68d11b5b5096f45eb54df9ba62c5af413fa9eb544eacb598373a26bc",
+                "timestamp":"1490616371",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"pa.exe - Xchecked via VT: 01a461ad68d11b5b5096f45eb54df9ba62c5af413fa9eb544eacb598373a26bc",
+                "timestamp":"1490616372",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/01a461ad68d11b5b5096f45eb54df9ba62c5af413fa9eb544eacb598373a26bc/analysis/1490509472/",
+                "to_ids":false
+            }
+        ]
+    }
+}

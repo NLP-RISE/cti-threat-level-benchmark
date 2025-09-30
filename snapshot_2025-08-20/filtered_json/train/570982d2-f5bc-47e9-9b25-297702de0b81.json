@@ -1,0 +1,84 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-04-09",
+        "published":true,
+        "info":"OSINT - ModPOS: A Framework Lurking in Point-of-Sale System Kernels",
+        "publish_timestamp":"1460241389",
+        "timestamp":"1460241377",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1460241136",
+                "type":"link",
+                "value":"http://labs.lastline.com/modpos-a-framework-lurking-in-point-of-sale-system-kernels",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1460241153",
+                "type":"comment",
+                "value":"Diving deeply into the ModPOS malware framework using sandbox process snapshotting\r\n\r\nPoint-of-sale (POS) systems are amongst the most valuable targets for attackers today: with direct access to systems processing payment information, miscreants are able to circumvent any encryption between point-of-sale devices and the payment processor, allowing them to spy on - or even tamper with - sensitive payment information.\r\n\r\nWith ModPOS malware authors have developed a system that not only compromises payment processes at the origin device, but, at the same time, it does so from the kernel of these systems, well outside the reach of most security solutions.\r\n\r\nAs we will describe in this post, the ModPOS malware is much more than a system for compromising POS systems: it is a versatile framework that allows an  attacker to leverage a practically unlimited range of tools to interfere with a compromised system. Even more, this malware works on any 32-bit Microsoft Windows system (many POS systems on the market today are still running on Microsoft Windows XP) allowing to use this malware on more than just POS systems.\r\n\r\nBy leveraging process snapshots extracted by the Lastline FUSE sandbox, we walk through the most important parts of this versatile framework. We will show in detail how the infection spreads through the entire operating system, and how the attackers behind ModPOS can leverage the framework to load arbitrary plugins into user- and kernel-space of an infected system.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The variant that we analyzed for this blog uses an HTTP POST for requesting the page \"/robots.txt\" on the following IPs",
+                "timestamp":"1460241186",
+                "type":"ip-dst",
+                "value":"130.0.237.22",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The variant that we analyzed for this blog uses an HTTP POST for requesting the page \"/robots.txt\" on the following IPs",
+                "timestamp":"1460241187",
+                "type":"ip-dst",
+                "value":"109.72.149.42",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1460241352",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: cf446e1d423afb9933b211d28d3ea33a",
+                "timestamp":"1460241377",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: cf446e1d423afb9933b211d28d3ea33a",
+                "timestamp":"1460241377",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1460241378",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/2aa35ae062f83248585b924dd668ed0a1a3089550a772900789b0feba1a923bb/analysis/1449594049/",
+                "to_ids":false
+            }
+        ]
+    }
+}

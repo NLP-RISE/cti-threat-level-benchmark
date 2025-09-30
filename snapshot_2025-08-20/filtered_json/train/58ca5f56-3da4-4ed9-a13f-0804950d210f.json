@@ -1,0 +1,95 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-15",
+        "published":true,
+        "info":"Revenge Ransomware, a CryptoMix Variant, Being Distributed by RIG Exploit Kit",
+        "publish_timestamp":"1489759923",
+        "timestamp":"1489759859",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489658490",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\Microsofts\\Windows NT\\svchost.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489658490",
+                "type":"filename",
+                "value":"# !!!HELP_FILE!!! #.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489658490",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: f5bceebaecb329380385509d263f55e3d7bddde02377636a0e15f8bfd77a84a6",
+                "timestamp":"1489658494",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: f5bceebaecb329380385509d263f55e3d7bddde02377636a0e15f8bfd77a84a6",
+                "timestamp":"1489658495",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: f5bceebaecb329380385509d263f55e3d7bddde02377636a0e15f8bfd77a84a6",
+                "timestamp":"1489658496",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f5bceebaecb329380385509d263f55e3d7bddde02377636a0e15f8bfd77a84a6/analysis/1489641720/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1489658604",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/revenge-ransomware-a-cryptomix-variant-being-distributed-by-rig-exploit-kit/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1489658642",
+                "type":"url",
+                "value":"109.236.87.201/js/other_scripts/get.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Compromised server",
+                "timestamp":"1489661388",
+                "type":"ip-dst",
+                "value":"109.236.87.201",
+                "to_ids":false
+            }
+        ]
+    }
+}

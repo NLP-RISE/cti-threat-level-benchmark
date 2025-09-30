@@ -1,0 +1,41 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-03",
+        "published":true,
+        "info":"OSINT - Windows SMBv3 Denial of Service Proof of Concept (0 Day Exploit)",
+        "publish_timestamp":"1486156232",
+        "timestamp":"1486156219",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Based on this understanding of the exploit (please let me know if I didn't get it right or missed something), I wrote a simple snort signature that looks for Tree Connect messages that exceed 1000 bytes in size. Use this at your own risk. It is in \"works for me\" state:",
+                "timestamp":"1486156118",
+                "type":"snort",
+                "value":"alert tcp $EXTERNAL_NET 445 -> $HOME_NET any  (sid: 10001515; msg: \"SMB Excessive Large Tree Connect Response\"; byte_test: 3,>,1000,1; content: \"|fe 53 4d 42 40 00|\"; offset: 4; depth: 6; content: \"|03 00|\"; offset: 16; depth:2 ;)",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1486156165",
+                "type":"link",
+                "value":"https://github.com/lgandx/PoC/tree/master/SMBv3%20Tree%20Connect",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486156219",
+                "type":"link",
+                "value":"https://isc.sans.edu/diary/Windows%2BSMBv3%2BDenial%2Bof%2BService%2BProof%2Bof%2BConcept%2B%280%2BDay%2BExploit%29/22029",
+                "to_ids":false
+            }
+        ]
+    }
+}

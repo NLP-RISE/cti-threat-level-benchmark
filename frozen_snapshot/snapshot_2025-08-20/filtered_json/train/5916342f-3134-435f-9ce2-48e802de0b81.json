@@ -1,0 +1,130 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-12",
+        "published":true,
+        "info":"OSINT - Massive outbreak of ransomware variant infects large amounts of computers around the world",
+        "publish_timestamp":"1494772934",
+        "timestamp":"1494772913",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"b\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"WannaCry\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1494627454",
+                "type":"link",
+                "value":"https://blog.fox-it.com/2017/05/12/massive-outbreak-of-ransomware-variant-infects-large-amounts-of-computers-around-the-world/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1494627454",
+                "type":"text",
+                "value":"Today, May 12th 2017, a ransomware variant known as WanaCry is being spread on a massive scale around the world. The initial infection vector appear to be phishing e-mails.\r\nOnce a computer is infected it will attempt to infect other machines on the same network using a recently patched Windows vulnerability.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Snort signatures from Emerging Threats are available for the ETERNALBLUE exploit:",
+                "timestamp":"1494627488",
+                "type":"snort",
+                "value":"alert tcp any any -&gt; $HOME_NET any (msg:&quot;ET EXPLOIT Possible ETERNALBLUE MS17-010 Heap Spray&quot;; flow:to_server,established; content:&quot;|ff|SMB|33 00 00 00 00 18 07 c0 00 00 00 00 00 00 00 00 00 00 00 00 00|&quot;; offset:4; depth:25; content:&quot;|08 ff fe 00 08 41 00 09 00 00 00 10|&quot;; within:12; fast_pattern; content:&quot;|00 00 00 00 00 00 00 10|&quot;; within:8; content:&quot;|00 00 00 10|&quot;; distance:4; within:4; pcre:&quot;/^[a-zA-Z0-9+/]{1000,}/R&quot;; threshold: type threshold, track by_src, count 12, seconds 1; classtype:trojan-activity; sid:2024217; rev:1;)\r\nalert tcp any any -&gt; $HOME_NET any (msg:&quot;ET EXPLOIT Possible ETERNALBLUE MS17-010 Echo Request (set)&quot;; flow:to_server,established; content:&quot;|00 00 00 31 ff|SMB|2b 00 00 00 00 18 07 c0|&quot;; depth:16; fast_pattern; content:&quot;|4a 6c 4a 6d 49 68 43 6c 42 73 72 00|&quot;; distance:0; flowbits:set,ETPRO.ETERNALBLUE; flowbits:noalert; classtype:trojan-activity; sid:2024220; rev:1;)\r\nalert tcp $HOME_NET any -&gt; any any (msg:&quot;ET EXPLOIT Possible ETERNALBLUE MS17-010 Echo Response&quot;; flow:from_server,established; content:&quot;|00 00 00 31 ff|SMB|2b 00 00 00 00 98 07 c0|&quot;; depth:16; fast_pattern; content:&quot;|4a 6c 4a 6d 49 68 43 6c 42 73 72 00|&quot;; distance:0; flowbits:isset,ETPRO.ETERNALBLUE; classtype:trojan-activity; sid:2024218; rev:1;)",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"An e-mail containing a link or a PDF file with a similar link rerieves an .hta file.",
+                "timestamp":"1494627517",
+                "type":"url",
+                "value":"http://www.rentasyventas.com/incluir/rk/imagenes.html?retencion=081525418",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The .hta file retrieves a payload, which will retrieve or install the malware.",
+                "timestamp":"1494627517",
+                "type":"url",
+                "value":"http://graficagbin.com.br/loja/q.hta",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control servers",
+                "timestamp":"1494627534",
+                "type":"filename",
+                "value":"cwwnhwhlz52ma.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control servers",
+                "timestamp":"1494627535",
+                "type":"filename",
+                "value":"gx7ekbenv2riucmf.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control servers",
+                "timestamp":"1494627535",
+                "type":"filename",
+                "value":"xxlvbrloxvriy2c5.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control servers",
+                "timestamp":"1494627535",
+                "type":"filename",
+                "value":"57g7spgrzlojinas.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Command and Control servers",
+                "timestamp":"1494627536",
+                "type":"filename",
+                "value":"76jdd2ir2embyv47.onion",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Bitcoin addresses",
+                "timestamp":"1494627551",
+                "type":"link",
+                "value":"https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Bitcoin addresses",
+                "timestamp":"1494627552",
+                "type":"link",
+                "value":"https://blockchain.info/address/12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Bitcoin addresses",
+                "timestamp":"1494627552",
+                "type":"link",
+                "value":"https://blockchain.info/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94",
+                "to_ids":false
+            }
+        ]
+    }
+}

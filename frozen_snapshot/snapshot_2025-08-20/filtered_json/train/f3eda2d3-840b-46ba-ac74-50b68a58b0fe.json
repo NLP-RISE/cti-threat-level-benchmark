@@ -1,0 +1,315 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2023-03-22",
+        "published":true,
+        "info":"OSINT - Bad magic: new APT found in the area of Russo-Ukrainian conflict",
+        "publish_timestamp":"1679481891",
+        "timestamp":"1679481690",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"collaborative-intelligence:request=\"context\""
+            },
+            {
+                "name":"estimative-language:confidence-in-analytic-judgment=\"moderate\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:country=\"ukraine\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Distribution servers",
+                "timestamp":"1679479043",
+                "type":"domain",
+                "value":"webservice-srv.online",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution servers",
+                "timestamp":"1679479043",
+                "type":"domain",
+                "value":"webservice-srv1.online",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution servers",
+                "timestamp":"1679479043",
+                "type":"ip-dst",
+                "value":"185.166.217.184",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481527",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481579",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481603",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481627",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481665",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Lure archives",
+                "timestamp":"1679481690",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"CommonMagic network communication module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679480373",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679480373",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679480373",
+                        "type":"filename",
+                        "value":"Overall.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679480596",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"CommonMagic cryptography module",
+                        "timestamp":"1679480596",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"CommonMagic cryptography module",
+                        "timestamp":"1679480596",
+                        "type":"filename",
+                        "value":"Clean.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679480540",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"CommonMagic loader",
+                        "timestamp":"1679480540",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"CommonMagic loader",
+                        "timestamp":"1679480540",
+                        "type":"filename",
+                        "value":"All.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679479220",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"PowerMagic backdoor",
+                        "timestamp":"1679479220",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679480430",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"PowerMagic loader",
+                        "timestamp":"1679480430",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"PowerMagic loader",
+                        "timestamp":"1679480430",
+                        "type":"filename",
+                        "value":"manutil.vbs",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679479275",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"PowerMagic dropper",
+                        "timestamp":"1679479275",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"PowerMagic dropper",
+                        "timestamp":"1679479275",
+                        "type":"filename",
+                        "value":"service_pack.dat",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"PowerMagic installer",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1679480479",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679480479",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1679480479",
+                        "type":"filename",
+                        "value":"attachment.msi",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1679479592",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1679479592",
+                        "type":"link",
+                        "value":"https://securelist.com/bad-magic-apt/109087/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1679479592",
+                        "type":"text",
+                        "value":"Since the start of the Russo-Ukrainian conflict, Kaspersky researchers and the international community at large have identified a significant number of cyberattacks executed in a political and geopolitical context. We previously published an overview of cyber activities and the threat landscape related to the conflict between Russia and Ukraine and continue to monitor new threats in these regions.\r\n\r\nIn October 2022, we identified an active infection of government, agriculture and transportation organizations located in the Donetsk, Lugansk, and Crimea regions. Although the initial vector of compromise is unclear, the details of the next stage imply the use of spear phishing or similar methods. The victims navigated to a URL pointing to a ZIP archive hosted on a malicious web server.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1679479592",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

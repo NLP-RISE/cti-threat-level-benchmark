@@ -1,0 +1,282 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2023-11-13",
+        "published":true,
+        "info":"The attack against Danish critical infrastructure",
+        "publish_timestamp":"1699899679",
+        "timestamp":"1699899584",
+        "Tag":[
+            {
+                "name":"misp-galaxy:sector=\"Energy\""
+            },
+            {
+                "name":"misp-galaxy:target-information=\"Denmark\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1699899017",
+                "type":"link",
+                "value":"https://sektorcert.dk/wp-content/uploads/2023/11/SektorCERT-The-attack-against-Danish-critical-infrastructure-TLP-CLEAR.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1699899061",
+                "type":"vulnerability",
+                "value":"CVE-2023-28771",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1699899061",
+                "type":"vulnerability",
+                "value":"CVE-2023-33009",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1699899061",
+                "type":"vulnerability",
+                "value":"CVE-2023-33010",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"45.89.106.147",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"145.239.54.169",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"176.124.32.84",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"185.180.223.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"91.235.234.81",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"205.147.101.170",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"45.128.232.143",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899120",
+                "type":"ip-dst",
+                "value":"91.235.234.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"firewalls in question contacted the IP address\r\n46.8.198.196 on port 8080/8081",
+                "timestamp":"1699899243",
+                "type":"ip-dst",
+                "value":"46.8.198.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DDoS target",
+                "timestamp":"1699899387",
+                "type":"ip-dst",
+                "value":"156.241.86.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"DDoS target",
+                "timestamp":"1699899383",
+                "type":"ip-dst",
+                "value":"63.79.171.112",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"SektorCERT observed traffic to 217.57.80[.]18 on port 10049 over protocol TCP. The traffic\r\nconsisted of one network packet of 1340 bytes and no response was returned. This IP\r\naddress previously belonged to the Sandworm group.",
+                "timestamp":"1699899495",
+                "type":"ip-dst",
+                "value":"217.57.80.18",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"the attackers sent a single packet to another\r\nsuspected Sandworm server:\r\n70.62.153[.]174 on port 20600 over protocol TCP.\r\nAgain, it was a single packet of 1340 bytes",
+                "timestamp":"1699899558",
+                "type":"ip-dst",
+                "value":"70.62.153.174",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://45.89.106.147:8080/mpsl",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloaded from http://45.89.106.147:8080/mpsl",
+                "timestamp":"1699899191",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://45.89.106.147:8080/mips",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Downloaded from http://45.89.106.147:8080/mips",
+                "timestamp":"1699899191",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://145.239.54.169/mipskiller",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://176.124.32.84/mipskiller",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://185.180.223.48/mipskiller",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://91.235.234.81/proxy2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://205.147.101.170:82/fuckjewishpeople.mips",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://45.128.232.143/bins/paraiso.mips",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://45.128.232.143/bins/libcurl1337.mips",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1699899191",
+                "type":"url",
+                "value":"http://91.235.234.251/proxy1",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1699899584",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"Command and Control communication was established with 185.44.81[.]147 on port\r\n56999 over protocol TCP",
+                        "timestamp":"1699899584",
+                        "type":"ip-dst",
+                        "value":"185.44.81.147",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"firewall started communicating with a server named ”www.joshan[.]\r\npro” which had the IP address 185.44.81[.]147",
+                        "timestamp":"1699899327",
+                        "type":"hostname",
+                        "value":"www.joshan.pro",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

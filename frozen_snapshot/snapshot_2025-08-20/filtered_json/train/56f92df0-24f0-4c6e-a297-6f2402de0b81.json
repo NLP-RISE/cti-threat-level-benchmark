@@ -1,0 +1,452 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-28",
+        "published":true,
+        "info":"OSINT - TREASUREHUNT: A CUSTOM POS MALWARE TOOL",
+        "publish_timestamp":"1459171231",
+        "timestamp":"1459171202",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459170858",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2016/03/treasurehunt_a_cust.html",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1459170876",
+                "type":"pattern-in-file",
+                "value":"%USERPROFILE%\\documents\\visual studio 2012\\Projects\\treasureHunter\\Release\\treasureHunter.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459170927",
+                "type":"comment",
+                "value":"Since early 2015, FireEye Threat Intelligence has observed the significant growth of point-of-sale (POS) malware families in underground cyber crime forums. POS malware refers to malicious software that extracts payment card information from memory and usually uploads that data to a command and control (CnC) server.\r\n\r\nAlthough the PCI DSS rules changed in October 2015, leaving retailers who have not transitioned from existing â€œswipeâ€ cards to EMV or â€œchipâ€ enabled cards liable for card present fraud in more ways than before, many retailers are still in the process of transitioning to chip-enabled card technology. Criminals appear to be racing to infect POS systems in the United States before US retailers complete this transition. In 2015, more than a dozen new POS malware families were discovered.[1]\r\n\r\nPOS malware may be freely available, available for purchase, or custom-built for specific cyber criminals. Free tools are often a result of malware source code being leaked, and tend to be older and more easily detected by security software. POS malware available for purchase may be newly developed tools or modified versions of older tools. Then there is another class of POS malware that is developed for use exclusively by a particular threat group.\r\n\r\nIn this article we examine TREASUREHUNT, POS malware that appears to have been custom-built for the operations of a particular â€œdump shop,â€ which sells stolen credit card data. TREASUREHUNT enumerates running processes, extracts payment card information from memory, and then transmits this information to a command and control server.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170981",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170983",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170983",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170983",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1",
+                "timestamp":"1459170984",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: cec2810556c63e9c225afb6a5ca58bc1",
+                "timestamp":"1459171050",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: cec2810556c63e9c225afb6a5ca58bc1",
+                "timestamp":"1459171051",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171051",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/046d0b8024cea9c6aea2ef04b51ce9fd482214fbb3ef068a85c0f91f193f248f/analysis/1458803364/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 6a9348f582b2e121a5d9bff1e8f0935f",
+                "timestamp":"1459171051",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 6a9348f582b2e121a5d9bff1e8f0935f",
+                "timestamp":"1459171052",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171052",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fe5f50fce2f430432a636ef899919505e9477968d8caff7506e888cffed0b5f8/analysis/1450248638/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 070e9a317ee53ac3814eb86bc7d5bf49",
+                "timestamp":"1459171052",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 070e9a317ee53ac3814eb86bc7d5bf49",
+                "timestamp":"1459171053",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171053",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ceed84d8d76ee27c92d48dd01c96e6345fb3981319151601f78f4e9ec754a73b/analysis/1440623335/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 3e2003878b364b5d77790109f24c9137",
+                "timestamp":"1459171053",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 3e2003878b364b5d77790109f24c9137",
+                "timestamp":"1459171054",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171054",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/68358c49d084939ecae7b78f2c0df0eb8d5b98f31dc13fb5878d8bfbdd5db86f/analysis/1458802637/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 21f99135f836fb4d3f4685d704a4460d",
+                "timestamp":"1459171054",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 21f99135f836fb4d3f4685d704a4460d",
+                "timestamp":"1459171055",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171055",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/442bca26dddfe4a5d1c0b4adaaaab205a1dca856c41d9353ba45e0794e3660ed/analysis/1458802460/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: ea6248e4ddd080e60e6140ab0f8562e1",
+                "timestamp":"1459171055",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: ea6248e4ddd080e60e6140ab0f8562e1",
+                "timestamp":"1459171056",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171056",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7eca8bf6d17891529c74d8fce85471135a203f312ae09fe3d907355c7dea9f59/analysis/1458803543/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 48692beb88058652115b5c447cd28589",
+                "timestamp":"1459171056",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 48692beb88058652115b5c447cd28589",
+                "timestamp":"1459171057",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171057",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/6a6b099dd313cfd9009d28f42613ed0375ffac9e03e5392329a2a3a4a5c358cd/analysis/1458802694/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 9f9c2e6072e0a233631d234bdcf1b293",
+                "timestamp":"1459171057",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"TREASUREHUNT 0.1 - Xchecked via VT: 9f9c2e6072e0a233631d234bdcf1b293",
+                "timestamp":"1459171057",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1459171058",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ab7ac10833cf5936c98554c20a123c395631e09200b4f87a610195bf49dda8e1/analysis/1458803121/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171122",
+                "type":"url",
+                "value":"millionjam.eu/megastock/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171123",
+                "type":"url",
+                "value":"cortykopl.com/sdfsgsdsdssdf/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171123",
+                "type":"url",
+                "value":"91.232.29.83/sdfsgsdsdssdf/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171123",
+                "type":"url",
+                "value":"179.43.160.34/wp-content/temp/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171123",
+                "type":"url",
+                "value":"3sipiojt.com/noth/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171124",
+                "type":"url",
+                "value":"friltopyes.com/southcal/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171124",
+                "type":"url",
+                "value":"seatrip888.eu/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171124",
+                "type":"url",
+                "value":"friltopyes.com/alabol/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171125",
+                "type":"url",
+                "value":"friltopyes.com/nothcal/gate.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171157",
+                "type":"domain",
+                "value":"millionjam.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171158",
+                "type":"domain",
+                "value":"cortykopl.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171158",
+                "type":"ip-dst",
+                "value":"91.232.29.83",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171158",
+                "type":"ip-dst",
+                "value":"179.43.160.34",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171159",
+                "type":"domain",
+                "value":"3sipiojt.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171159",
+                "type":"domain",
+                "value":"friltopyes.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1",
+                "timestamp":"1459171160",
+                "type":"domain",
+                "value":"seatrip888.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1459171177",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"TREASUREHUNT v0.1.1",
+                "timestamp":"1459171202",
+                "type":"hostname",
+                "value":"logmeinrescue.us.com",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,486 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-06-26",
+        "published":true,
+        "info":"Soft Cell case - guessed indicators (via Twitter discussion)",
+        "publish_timestamp":"1561575125",
+        "timestamp":"1561575047",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1561574568",
+                "type":"link",
+                "value":"https://www.cybereason.com/blog/operation-soft-cell-a-worldwide-campaign-against-telecommunications-providers",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574629",
+                "type":"hostname",
+                "value":"asyspy256.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574630",
+                "type":"hostname",
+                "value":"cvdfhjh1231.myftp.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574630",
+                "type":"hostname",
+                "value":"dffwescwer4325.myftp.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574630",
+                "type":"hostname",
+                "value":"hotkillmail9sddcc.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574630",
+                "type":"hostname",
+                "value":"rosaf112.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"A few C2s associated with the hashes Tom posted:",
+                "timestamp":"1561574630",
+                "type":"hostname",
+                "value":"sz2016rose.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Based on the writeup, likely associated file",
+                "timestamp":"1561574654",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Based on the writeup, likely associated file",
+                "timestamp":"1561574654",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Based on the writeup, likely associated file",
+                "timestamp":"1561574654",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                "timestamp":"1561574705",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                "timestamp":"1561574706",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1561574865",
+                "type":"link",
+                "value":"https://twitter.com/tlansec/status/1143451202736336896",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7381380 enriched by dns.",
+                "timestamp":"1561574884",
+                "type":"ip-src",
+                "value":"210.56.60.240",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7381381 enriched by dns.",
+                "timestamp":"1561574884",
+                "type":"ip-src",
+                "value":"45.121.48.106",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #7381382 enriched by dns.",
+                "timestamp":"1561574884",
+                "type":"ip-src",
+                "value":"45.77.226.209",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561574752",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"datetime",
+                        "value":"2019-06-25T22:39:22",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/fa599fddd6b6df4b654e022fe7a91c82152f983e1ce0b97406eb27bb2fb4c3ab/analysis/1561502362/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"text",
+                        "value":"49/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"datetime",
+                        "value":"2019-06-25T04:55:52",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/95817d8c742dd667225273847ea15f46445ab1439e634c05785084af7cb39a58/analysis/1561438552/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574706",
+                        "type":"text",
+                        "value":"34/67",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"datetime",
+                        "value":"2019-06-25T22:39:18",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/12979d85d37a7e246757d5ebf238c6ac91e6641950cf45d95b104eb7dbb7db71/analysis/1561502358/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"text",
+                        "value":"52/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"datetime",
+                        "value":"2019-06-25T22:39:23",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/c81dd8dd3623181cbc117ca7255e6ea530f770c05624c6896362f03fbfc06280/analysis/1561502363/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Based on the writeup, likely associated file",
+                        "timestamp":"1561574654",
+                        "type":"text",
+                        "value":"54/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1561574753",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1561574754",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"datetime",
+                        "value":"2019-02-14T01:23:14",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/5bf80b871278a29f356bd42af1e35428aead20cd90b0c7642247afcaaa95b022/analysis/1550107394/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Adding two more hashes of mal-ssMUIDLL.dlls:",
+                        "timestamp":"1561574705",
+                        "type":"text",
+                        "value":"42/69",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

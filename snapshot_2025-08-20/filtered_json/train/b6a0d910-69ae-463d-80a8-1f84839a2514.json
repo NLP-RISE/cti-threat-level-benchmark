@@ -1,0 +1,468 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2021-08-17",
+        "published":true,
+        "info":"Nanocore 20210816",
+        "publish_timestamp":"1629204289",
+        "timestamp":"1629204277",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Nanocore RAT\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"NanoCoreRAT\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1629203718",
+                "type":"hostname",
+                "value":"coc88.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1629203718",
+                "type":"hostname",
+                "value":"torok1111112.ddns.net",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1629203773",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1629203805",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1629203805",
+                        "type":"link",
+                        "value":"https://otx.alienvault.com/pulse/611ba6128fe8c7c18b06861f",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1629203805",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1629203900",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1629203900",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"datetime",
+                        "value":"2021-08-14T23:15:37+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/060dc5124e4d0f8869856b52016cbed32339b8ac456b8cb5fea50f628961fc73/detection/f-060dc5124e4d0f8869856b52016cbed32339b8ac456b8cb5fea50f628961fc73-1628982937",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"text",
+                        "value":"56/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1629203900",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1629203900",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"datetime",
+                        "value":"2021-08-15T19:04:24+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/2a2c0a635beba215a9e3f21c398d684dc1d2ad487356e29140247b14f2c6838f/detection/f-2a2c0a635beba215a9e3f21c398d684dc1d2ad487356e29140247b14f2c6838f-1629054264",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"text",
+                        "value":"55/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1629203901",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1629203902",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"datetime",
+                        "value":"2021-08-17T01:10:57+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/67b695b139106a73c333aa2fdd0f08ae160ff5ee38d843cb9999146ad605da73/detection/f-67b695b139106a73c333aa2fdd0f08ae160ff5ee38d843cb9999146ad605da73-1629162657",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"text",
+                        "value":"35/70",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1629203902",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1629203903",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"datetime",
+                        "value":"2021-08-16T14:55:59+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/afdcfeac16d321fef57c2aae9b001952544a53fc785ba78a6ad794a81bef0c05/detection/f-afdcfeac16d321fef57c2aae9b001952544a53fc785ba78a6ad794a81bef0c05-1629125759",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1629203773",
+                        "type":"text",
+                        "value":"34/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"torok1111112.ddns.net: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-01",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1629204035",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204035",
+                        "type":"text",
+                        "value":"86.125.138.162",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204003",
+                        "type":"counter",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204003",
+                        "type":"datetime",
+                        "value":"2021-08-17T04:15:12+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204003",
+                        "type":"datetime",
+                        "value":"2021-08-17T04:15:12+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204003",
+                        "type":"text",
+                        "value":"torok1111112.ddns.net.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204003",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the hostname: torok1111112.ddns.net",
+                        "timestamp":"1629204029",
+                        "type":"domain",
+                        "value":"ddns.net",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

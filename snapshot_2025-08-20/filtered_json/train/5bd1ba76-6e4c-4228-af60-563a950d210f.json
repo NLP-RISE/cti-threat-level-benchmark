@@ -1,0 +1,50 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-10-23",
+        "published":false,
+        "info":"OSINT - TRITON Attribution: Russian Government-Owned Lab Most Likely Built Custom Intrusion Tools for TRITON Attackers",
+        "publish_timestamp":"0",
+        "timestamp":"1540474156",
+        "Tag":[
+            {
+                "name":"misp-galaxy:tool=\"TRISIS\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"win.triton\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1540472734",
+                "type":"text",
+                "value":"In a previous blog post we detailed the TRITON intrusion that impacted industrial control systems (ICS) at a critical infrastructure facility. We now track this activity set as TEMP.Veles. In this blog post we provide additional information linking TEMP.Veles and their activity surrounding the TRITON intrusion to a Russian government-owned research institute.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1540472750",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2018/10/triton-attribution-russian-government-owned-lab-most-likely-built-tools.html",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540472492",
+                "type":"ip-dst",
+                "value":"87.245.143.140",
+                "to_ids":true
+            }
+        ]
+    }
+}

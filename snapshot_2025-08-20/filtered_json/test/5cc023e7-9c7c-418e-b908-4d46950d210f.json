@@ -1,0 +1,471 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-04-24",
+        "published":true,
+        "info":"OSINT -  DNSpionage brings out the Karkoff",
+        "publish_timestamp":"1556104895",
+        "timestamp":"1556104870",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"DNSpionage\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"DNSpionage\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Karkoff\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1556095991",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2019/04/dnspionage-brings-out-karkoff.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1556096012",
+                "type":"text",
+                "value":"In November 2018, Cisco Talos discovered an attack campaign, called DNSpionage, in which threat actors created a new remote administrative tool that supports HTTP and DNS communication with the attackers' command and control(C2). Since then, there have been several other public reports of additional DNSpionage attacks, and in January, the U.S. Department of Homeland Security issued an alert warning users about this threat activity.\r\n\r\nIn addition to increased reports of threat activity, we have also discovered new evidence that the threat actors behind the DNSpionage campaign continue to change their tactics, likely in an attempt to improve the efficacy of their operations. In February, we discovered some changes to the actors' tactics, techniques and procedures (TTPs), including the use of a new reconnaissance phase that selectively chooses which targets to infect with malware. In April 2019, we also discovered the actors using a new malware, which we are calling \"Karkoff.\"\r\n\r\nThis post will cover the aforementioned DNSpionage updates, the discovery of the Karkoff malware and an analysis of the recent Oilrig malware toolset leak â€” and how it could be connected to these two attacks.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Karkoff sample",
+                "timestamp":"1556096043",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Karkoff sample",
+                "timestamp":"1556096043",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Karkoff sample",
+                "timestamp":"1556096043",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Karkoff sample",
+                "timestamp":"1556096043",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 server",
+                "timestamp":"1556096086",
+                "type":"domain",
+                "value":"coldfart.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 server",
+                "timestamp":"1556096086",
+                "type":"domain",
+                "value":"rimrun.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2 server",
+                "timestamp":"1556096086",
+                "type":"domain",
+                "value":"kuternull.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #4346152 enriched by dns.",
+                "timestamp":"1556096170",
+                "type":"ip-src",
+                "value":"108.62.141.247",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attribute #4346153 enriched by dns.",
+                "timestamp":"1556096185",
+                "type":"ip-src",
+                "value":"74.118.138.192",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DNSpionage XLS document",
+                "timestamp":"1556097659",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"DNSpionage",
+                "timestamp":"1556097713",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556097770",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"datetime",
+                        "value":"2019-04-24T08:58:49",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/cd4b9d0f2d1c0468750855f0ed352c1ed6d4f512d66e0e44ce308688235295b5/analysis/1556096329/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"text",
+                        "value":"38/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"datetime",
+                        "value":"2019-04-24T09:05:37",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e398dac59f604d42362ffe8a2947d4351a652516ebfb25ddf0838dd2c8523be8/analysis/1556096737/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"DNSpionage",
+                        "timestamp":"1556097713",
+                        "type":"text",
+                        "value":"48/69",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"datetime",
+                        "value":"2019-04-24T07:39:13",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/6a251ed6a2c6a0a2be11f2a945ec68c814d27e2b6ef445f4b2c7a779620baa11/analysis/1556091553/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"text",
+                        "value":"39/66",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"datetime",
+                        "value":"2019-04-24T07:39:16",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/5b102bf4d997688268bab45336cead7cdf188eb0d6355764e53b4f62e1cdf30c/analysis/1556091556/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"text",
+                        "value":"42/71",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1556097771",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"datetime",
+                        "value":"2019-04-24T07:39:18",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/b017b9fc2484ce0a5629ff1fed15bca9f62f942eafbb74da6a40f40337187b04/analysis/1556091558/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Karkoff sample",
+                        "timestamp":"1556096043",
+                        "type":"text",
+                        "value":"41/65",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

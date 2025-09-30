@@ -1,0 +1,118 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-05-31",
+        "published":true,
+        "info":"OSINT - Advisory: Active exploitation of Check Point Remote Access VPN vulnerability (CVE-2024-24919)",
+        "publish_timestamp":"1717137297",
+        "timestamp":"1717137286",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exploit Public-Facing Application - T1190\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"External Remote Services - T1133\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Reconnaissance",
+                "timestamp":"1717136692",
+                "type":"ip-dst",
+                "value":"82.180.133.120",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exploitation",
+                "timestamp":"1717136692",
+                "type":"ip-dst",
+                "value":"87.120.8.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exploitation",
+                "timestamp":"1717136692",
+                "type":"ip-dst",
+                "value":"23.227.203.36",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Exploitation",
+                "timestamp":"1717136692",
+                "type":"ip-dst",
+                "value":"203.160.68.12",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1717136814",
+                "type":"vulnerability",
+                "value":"CVE-2024-24919",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1717136935",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1717136935",
+                        "type":"link",
+                        "value":"https://www.mnemonic.io/resources/blog/advisory-check-point-remote-access-vpn-vulnerability-cve-2024-24919/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1717136935",
+                        "type":"text",
+                        "value":"Advisory: Active exploitation of Check Point Remote Access VPN vulnerability (CVE-2024-24919)\r\n\r\nPublished date:29.05.2024\r\n\r\nmnemonic has several observations of the exploit being used in the wild. The vulnerability is particularly critical because it does not require any user interaction or privileges, making it easy to exploit remotely.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1717136935",
+                        "type":"text",
+                        "value":"Advisory: Active exploitation of Check Point Remote Access VPN vulnerability (CVE-2024-24919)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1717136935",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

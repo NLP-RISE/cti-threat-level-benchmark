@@ -1,0 +1,223 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2023-12-05",
+        "published":true,
+        "info":"PSA: Fake CVE-2023-45124 Phishing Scam Tricks Users Into Installing Backdoor Plugin",
+        "publish_timestamp":"1701869294",
+        "timestamp":"1701869265",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1701786607",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1701786653",
+                "type":"domain",
+                "value":"en-gb-wordpress.org",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1701786581",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1701786581",
+                        "type":"link",
+                        "value":"https://www.wordfence.com/blog/2023/12/psa-fake-cve-2023-45124-phishing-scam-tricks-users-into-installing-backdoor-plugin/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1701786581",
+                        "type":"text",
+                        "value":"The Wordfence Threat Intelligence Team has recently been informed of a phishing campaign targeting WordPress users. The Phishing email claims to be from the WordPress team and warns of a Remote Code Execution vulnerability on the user’s site with an identifier of CVE-2023-45124, which is not currently a valid CVE. The email prompts the victim to download a “Patch” plugin and install it.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1701786581",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"en-gb-wordpress.org: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1701787598",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"104.21.91.135",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"172.67.220.234",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"counter",
+                        "value":"18",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"datetime",
+                        "value":"2023-11-16T00:46:40+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"datetime",
+                        "value":"2023-12-05T03:32:16+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701787598",
+                        "type":"text",
+                        "value":"en-gb-wordpress.org.",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"domain",
+                        "value":"en-gb-wordpress.org",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"en-gb-wordpress.org: Enriched via the farsight_passivedns module",
+                "description":"Passive DNS records as expressed in draft-dulaunoy-dnsop-passive-dns-cof-07. See https://tools.ietf.org/id/draft-dulaunoy-dnsop-passive-dns-cof-07.html",
+                "meta-category":"network",
+                "name":"passive-dns",
+                "timestamp":"1701786849",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"188.114.96.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"188.114.97.0",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"counter",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"datetime",
+                        "value":"2023-12-05T02:34:39+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"datetime",
+                        "value":"2023-12-05T03:32:16+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"en-gb-wordpress.org.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"text",
+                        "value":"A",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"Result from a rrset lookup on DNSDB about the domain name: en-gb-wordpress.org",
+                        "timestamp":"1701786849",
+                        "type":"domain",
+                        "value":"en-gb-wordpress.org",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

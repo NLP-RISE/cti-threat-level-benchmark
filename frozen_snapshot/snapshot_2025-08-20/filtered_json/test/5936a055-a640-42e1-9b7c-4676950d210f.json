@@ -1,0 +1,124 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-06",
+        "published":true,
+        "info":"OSINT - â€œZusyâ€ PowerPoint Malware Spreads Without Needing Macros",
+        "publish_timestamp":"1496752510",
+        "timestamp":"1496752474",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Tinba\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"First-stage JSE payload",
+                "timestamp":"1496752448",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Second-stage EXE payload",
+                "timestamp":"1496752448",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PowerPoint dropper",
+                "timestamp":"1496752448",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1496752448",
+                "type":"text",
+                "value":"A new variant of a malware called â€œZusyâ€ has been found in the wild spreading as a PowerPoint file attached to spam emails with titles like â€œPurchase Order #130527â€ and â€œConfirmation.â€ Itâ€™s interesting because it doesnâ€™t require the user to enable macros to execute. Most Office malware relies on users activating macros to download some executable payload which does most of the malicious stuff, but this malware uses the external program feature instead.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"First-stage JSE payload - Xchecked via VT: 55821b2be825629d6674884d93006440d131f77bed216d36ea20e4930a280302",
+                "timestamp":"1496752450",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"First-stage JSE payload - Xchecked via VT: 55821b2be825629d6674884d93006440d131f77bed216d36ea20e4930a280302",
+                "timestamp":"1496752450",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"First-stage JSE payload - Xchecked via VT: 55821b2be825629d6674884d93006440d131f77bed216d36ea20e4930a280302",
+                "timestamp":"1496752451",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/55821b2be825629d6674884d93006440d131f77bed216d36ea20e4930a280302/analysis/1496733775/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PowerPoint dropper - Xchecked via VT: 796a386b43f12b99568f55166e339fcf43a4792d292bdd05dafa97ee32518921",
+                "timestamp":"1496752451",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PowerPoint dropper - Xchecked via VT: 796a386b43f12b99568f55166e339fcf43a4792d292bdd05dafa97ee32518921",
+                "timestamp":"1496752452",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"PowerPoint dropper - Xchecked via VT: 796a386b43f12b99568f55166e339fcf43a4792d292bdd05dafa97ee32518921",
+                "timestamp":"1496752452",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/796a386b43f12b99568f55166e339fcf43a4792d292bdd05dafa97ee32518921/analysis/1496730542/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Second-stage EXE payload - Xchecked via VT: 55c69d2b82addd7a0cd3bebe910cd42b7343bd3faa7593356bcdca13dd73a0ef",
+                "timestamp":"1496752453",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Second-stage EXE payload - Xchecked via VT: 55c69d2b82addd7a0cd3bebe910cd42b7343bd3faa7593356bcdca13dd73a0ef",
+                "timestamp":"1496752453",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Second-stage EXE payload - Xchecked via VT: 55c69d2b82addd7a0cd3bebe910cd42b7343bd3faa7593356bcdca13dd73a0ef",
+                "timestamp":"1496752453",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/55c69d2b82addd7a0cd3bebe910cd42b7343bd3faa7593356bcdca13dd73a0ef/analysis/1496717087/",
+                "to_ids":false
+            }
+        ]
+    }
+}

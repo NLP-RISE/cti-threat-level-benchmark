@@ -1,0 +1,971 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2017-07-21",
+        "published":true,
+        "info":"Finding Nemo(hosts) from Sofacy by ThreatConnect",
+        "publish_timestamp":"1516105510",
+        "timestamp":"1516105507",
+        "Tag":[
+            {
+                "name":"admiralty-scale:information-credibility=\"3\""
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"c\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sofacy\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"APT"
+            },
+            {
+                "name":"Threat:Sofacy/APT28"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1516102570",
+                "type":"link",
+                "value":"https://www.threatconnect.com/blog/finding-nemohost-fancy-bear-infrastructure/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516102589",
+                "type":"domain",
+                "value":"unisecproper.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516102590",
+                "type":"ip-dst",
+                "value":"92.114.92.134",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"",
+                "timestamp":"1516102780",
+                "type":"x509-fingerprint-sha256",
+                "value":"f27c4270b9b9291f465ba5962c36ce38f438377acff300b5c82b3b145f0c9e94",
+                "to_ids":true
+            },
+            {
+                "category":"Attribution",
+                "comment":"",
+                "timestamp":"1516104113",
+                "type":"x509-fingerprint-md5",
+                "value":"6e51db99647450387e583ecb67de7f6e",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104093",
+                "type":"x509-fingerprint-sha1",
+                "value":"a1833c32d5f61d6ef9d1bb0133585112069d770e",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104276",
+                "type":"ip-dst",
+                "value":"86.107.42.11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104398",
+                "type":"ip-dst",
+                "value":"179.43.128.218",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104436",
+                "type":"ip-dst",
+                "value":"208.91.197.91",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104437",
+                "type":"domain",
+                "value":"wmiapp.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104437",
+                "type":"domain",
+                "value":"networkxc.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104438",
+                "type":"ip-dst",
+                "value":"185.183.107.38",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104438",
+                "type":"domain",
+                "value":"ndsee.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104439",
+                "type":"ip-dst",
+                "value":"185.86.150.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104439",
+                "type":"domain",
+                "value":"neoderb.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104439",
+                "type":"ip-dst",
+                "value":"188.40.155.241",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104440",
+                "type":"domain",
+                "value":"remnet.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104440",
+                "type":"domain",
+                "value":"remotemanagesvc.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104441",
+                "type":"domain",
+                "value":"netcorpscanprotect.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104441",
+                "type":"ip-dst",
+                "value":"94.177.12.157",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104441",
+                "type":"domain",
+                "value":"zpfgr.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104442",
+                "type":"ip-dst",
+                "value":"94.177.12.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104442",
+                "type":"domain",
+                "value":"connectsmd.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104443",
+                "type":"domain",
+                "value":"ckgob.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104443",
+                "type":"ip-dst",
+                "value":"88.99.21.169",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104538",
+                "type":"whois-registrant-email",
+                "value":"le0nard0@mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104539",
+                "type":"whois-registrant-email",
+                "value":"bertfuhrmann@gmx.de",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104539",
+                "type":"whois-registrant-email",
+                "value":"manuel.herez@centrum.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104540",
+                "type":"whois-registrant-email",
+                "value":"cameron_gordon@centrum.cz",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104540",
+                "type":"whois-registrant-email",
+                "value":"ernesto.rivero@mail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104541",
+                "type":"whois-registrant-email",
+                "value":"olavi_nieminen@suomi24.fi",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516104541",
+                "type":"whois-registrant-email",
+                "value":"luc_ma@iname.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104713",
+                "type":"domain",
+                "value":"dmsclock.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104713",
+                "type":"ip-dst",
+                "value":"89.187.151.16",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104714",
+                "type":"domain",
+                "value":"systemfromcuriousmoment.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104714",
+                "type":"ip-dst",
+                "value":"185.86.150.188",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104714",
+                "type":"domain",
+                "value":"driverfordell.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104715",
+                "type":"ip-dst",
+                "value":"5.255.80.50",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104715",
+                "type":"domain",
+                "value":"hostsvcnet.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104716",
+                "type":"ip-dst",
+                "value":"185.94.190.199",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104716",
+                "type":"domain",
+                "value":"intelstatistics.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104716",
+                "type":"ip-dst",
+                "value":"5.135.199.10",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104717",
+                "type":"domain",
+                "value":"knightconsults.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104717",
+                "type":"ip-dst",
+                "value":"174.128.253.215",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104718",
+                "type":"domain",
+                "value":"lopback.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104718",
+                "type":"ip-dst",
+                "value":"185.86.150.151",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104718",
+                "type":"domain",
+                "value":"nethostnet.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104719",
+                "type":"ip-dst",
+                "value":"86.105.1.12",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104719",
+                "type":"domain",
+                "value":"perfect-remote-service.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104720",
+                "type":"ip-dst",
+                "value":"188.241.68.175",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104720",
+                "type":"domain",
+                "value":"probenet.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104720",
+                "type":"ip-dst",
+                "value":"86.105.1.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104721",
+                "type":"domain",
+                "value":"remonitor.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104721",
+                "type":"ip-dst",
+                "value":"185.94.192.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104722",
+                "type":"domain",
+                "value":"societyatcuriousteacher.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104722",
+                "type":"domain",
+                "value":"spelns.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104722",
+                "type":"ip-dst",
+                "value":"89.44.103.18",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104723",
+                "type":"domain",
+                "value":"unitedprosoftcompany.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104723",
+                "type":"ip-dst",
+                "value":"95.153.31.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104835",
+                "type":"domain",
+                "value":"90update.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104836",
+                "type":"ip-dst",
+                "value":"213.252.244.105",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104836",
+                "type":"domain",
+                "value":"aljazeera-news.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104837",
+                "type":"ip-dst",
+                "value":"213.252.244.114",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104837",
+                "type":"domain",
+                "value":"ambcomission.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104838",
+                "type":"ip-dst",
+                "value":"185.25.51.38",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104838",
+                "type":"domain",
+                "value":"cryptokind.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104838",
+                "type":"ip-dst",
+                "value":"213.252.246.24",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104839",
+                "type":"domain",
+                "value":"deshcoin.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104839",
+                "type":"ip-dst",
+                "value":"185.25.48.249",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104840",
+                "type":"domain",
+                "value":"dochardproofing.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104840",
+                "type":"ip-dst",
+                "value":"185.25.51.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104841",
+                "type":"domain",
+                "value":"ebramka.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104841",
+                "type":"ip-dst",
+                "value":"185.25.50.156",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104842",
+                "type":"domain",
+                "value":"fes-auth.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104842",
+                "type":"ip-dst",
+                "value":"91.108.68.209",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104842",
+                "type":"domain",
+                "value":"hello76.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104843",
+                "type":"ip-dst",
+                "value":"185.64.105.7",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104843",
+                "type":"domain",
+                "value":"hostedopenfiles.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104844",
+                "type":"ip-dst",
+                "value":"185.25.50.93",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104844",
+                "type":"domain",
+                "value":"kiteim.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104845",
+                "type":"ip-dst",
+                "value":"5.255.80.68",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104845",
+                "type":"domain",
+                "value":"kremotevn.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104846",
+                "type":"ip-dst",
+                "value":"86.105.1.128",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104846",
+                "type":"domain",
+                "value":"lasarenas.lt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104847",
+                "type":"ip-dst",
+                "value":"91.216.163.204",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104847",
+                "type":"domain",
+                "value":"megauploadfiles.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104848",
+                "type":"ip-dst",
+                "value":"5.135.199.24",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104848",
+                "type":"domain",
+                "value":"nemaskalitnium.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104849",
+                "type":"ip-dst",
+                "value":"173.44.58.240",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104849",
+                "type":"domain",
+                "value":"networkfilehosting.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104850",
+                "type":"ip-dst",
+                "value":"213.252.247.167",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104850",
+                "type":"domain",
+                "value":"news-almasirah.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104851",
+                "type":"ip-dst",
+                "value":"213.252.244.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104851",
+                "type":"domain",
+                "value":"newsfromsource.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104851",
+                "type":"ip-dst",
+                "value":"91.216.163.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104852",
+                "type":"domain",
+                "value":"platnosci.biz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104852",
+                "type":"ip-dst",
+                "value":"213.252.247.121",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104853",
+                "type":"domain",
+                "value":"postmarksmtp.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104853",
+                "type":"ip-dst",
+                "value":"185.25.51.120",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104854",
+                "type":"domain",
+                "value":"remsvc.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104854",
+                "type":"ip-dst",
+                "value":"91.108.68.180",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104855",
+                "type":"domain",
+                "value":"rhfcoin.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104855",
+                "type":"ip-dst",
+                "value":"91.216.163.229",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104855",
+                "type":"domain",
+                "value":"sa7efa.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104856",
+                "type":"ip-dst",
+                "value":"91.216.163.237",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104856",
+                "type":"domain",
+                "value":"searchbrain.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104857",
+                "type":"ip-dst",
+                "value":"91.216.163.203",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104857",
+                "type":"domain",
+                "value":"serbview.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104858",
+                "type":"ip-dst",
+                "value":"5.255.93.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104858",
+                "type":"domain",
+                "value":"startthedownload.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104859",
+                "type":"ip-dst",
+                "value":"213.252.247.168",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104859",
+                "type":"domain",
+                "value":"showitem.lt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104860",
+                "type":"ip-dst",
+                "value":"213.252.247.159",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104860",
+                "type":"domain",
+                "value":"uploadsforyou.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104860",
+                "type":"ip-dst",
+                "value":"185.25.50.144",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104861",
+                "type":"domain",
+                "value":"wintwinbtc.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516104861",
+                "type":"ip-dst",
+                "value":"185.25.48.27",
+                "to_ids":true
+            }
+        ]
+    }
+}

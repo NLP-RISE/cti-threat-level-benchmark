@@ -1,0 +1,111 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-11",
+        "published":true,
+        "info":"'Surprise' Ransomware (2016-03-11)",
+        "publish_timestamp":"1457709051",
+        "timestamp":"1457708105",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C&C (down)",
+                "timestamp":"1457706780",
+                "type":"url",
+                "value":"http://pulseaudio.duckdns.org/pull.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Email to request payment info",
+                "timestamp":"1457708098",
+                "type":"email-dst",
+                "value":"nowayout@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Email to request payment info",
+                "timestamp":"1457708105",
+                "type":"email-dst",
+                "value":"nowayout@sigaint.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"File displaying information",
+                "timestamp":"1457706781",
+                "type":"filename",
+                "value":"DECRYPTION_HOWTO.Notepad",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the freetext import.",
+                "timestamp":"1457706793",
+                "type":"hostname",
+                "value":"pulseaudio.duckdns.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457706813",
+                "type":"malware-sample",
+                "value":"surprise.exe|c34fb15c5f93c2bd1b8a1ba29566837f",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457706814",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1457706814",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"DECRYPTION_HOWTO.Notepad",
+                "timestamp":"1457707414",
+                "type":"text",
+                "value":"What happened to your files ?\r\nAll of your files were protected by a strong encryption.\r\nThere is no way to decrypt your files without the key.\r\nIf your files not important for you just reinstall your system.\r\nIf your files is important just email us to discuss the price and how to decrypt your files.\r\nYou can email us to nowayout@protonmail.com and nowayout@sigaint.org \r\nWrite your Email to both email addresses PLS\r\nWe accept just BITCOIN if you dont know what it is just google it.\r\nWe will give instructions where and how you buy bitcoin in your country.\r\nPrice depends on how important your files and network is.it could be 0.5 bitcoin to 25 bitcoin.\r\nYou can send us a 1 encrypted file for decryption.\r\nFeel free to email us with your country and computer name and username of the infected system.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1457707851",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ddb0c54759fada5cff7bb60237ace601fcbd526208627fdee170d9ed41e91c7a/analysis/1457588432/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Automatically added (via surprise.exe|bee22913ad9d6c9a37152aa65daa6bd9beca00eb)",
+                "timestamp":"1457708314",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ]
+    }
+}

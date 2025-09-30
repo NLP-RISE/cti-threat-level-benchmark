@@ -1,0 +1,308 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-18",
+        "published":false,
+        "info":"OSINT - ATM Malware using CSCWCNG device handler",
+        "publish_timestamp":"0",
+        "timestamp":"1558336246",
+        "Tag":[
+            {
+                "name":"misp-galaxy:financial-fraud=\"ATM Black Box Attack\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1558334423",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"text",
+                        "value":"Another shitty #ATM #Malware using CSCWCNG device handler. Uploaded to VT yesterday from Mexico. 0 detected rate by AV vendors currently. (link: https://www.virustotal.com/gui/file/4a75be18a3fe0033a9ebdb8f4af81c94e03581d19b5b4373e74e41283fd2615f/summary) virustotal.com/gui/file/4a75b…",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"url",
+                        "value":"https://mobile.twitter.com/r3c0nst/status/1129641730813366274",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"url",
+                        "value":"https://t.co/ZSAQ5vmLko?amp=1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"url",
+                        "value":"https://www.virustotal.com/gui/file/4a75be18a3fe0033a9ebdb8f4af81c94e03581d19b5b4373e74e41283fd2615f/summary",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"datetime",
+                        "value":"May 18, 2019 8:55 AM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334423",
+                        "type":"text",
+                        "value":"r3c0nst",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Microblog post like a Twitter tweet or a post on a Facebook wall.",
+                "meta-category":"misc",
+                "name":"microblog",
+                "timestamp":"1558334830",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"text",
+                        "value":"Another Sample, same origin -> (link: https://www.virustotal.com/gui/file/7dde7f6da73c44cb19cf12e5e9174c2b8b2635e380aff5b89a045204803488a6/summary) virustotal.com/gui/file/7dde7…",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"text",
+                        "value":"Twitter",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"url",
+                        "value":"https://mobile.twitter.com/r3c0nst/status/1129651569006383104",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"url",
+                        "value":"https://t.co/DCidfeiD8X?amp=1",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"url",
+                        "value":"https://www.virustotal.com/gui/file/7dde7f6da73c44cb19cf12e5e9174c2b8b2635e380aff5b89a045204803488a6/summary",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"datetime",
+                        "value":"May 18, 2019 9:34 AM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558334830",
+                        "type":"text",
+                        "value":"r3c0nst",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558335541",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"filename",
+                        "value":"USBLOGGER.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"authentihash",
+                        "value":"<authentihash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335541",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558335542",
+                        "type":"size-in-bytes",
+                        "value":"15360",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558335514",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"filename",
+                        "value":"USBLOGGERzz.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"authentihash",
+                        "value":"<authentihash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558335514",
+                        "type":"size-in-bytes",
+                        "value":"15360",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

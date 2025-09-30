@@ -1,0 +1,268 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-03-16",
+        "published":true,
+        "info":"Tech Support Scam Synchs Alerts with App Crashes in Windows Event Logs",
+        "publish_timestamp":"1489759834",
+        "timestamp":"1489759787",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"scam\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1489759787",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/tech-support-scam-synchs-alerts-with-app-crashes-in-windows-event-logs/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743087",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743087",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\em.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743089",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\eng_em.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743090",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\French_em.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743091",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\German_em.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743093",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\ininotfound0.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743096",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\isxdl.dll",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743098",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\japan_em.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743099",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\log_03-15-2017.log",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743101",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Event Monitor\\update.ini",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1489743103",
+                "type":"filename",
+                "value":"%WINDIR%\\System32\\Tasks\\RunAtStartup",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744598",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tree\\RunAtStartup",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744600",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Schedule\\TaskCache\\Tasks\\{51740577-F69A-46ED-A677-2D8DE276C921}",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744602",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Event Monitor",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744603",
+                "type":"regkey",
+                "value":"HKCU\\Software\\Event Monitor\\LANG",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744605",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489744607",
+                "type":"regkey",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\LANG",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489745155",
+                "type":"regkey|value",
+                "value":"HKCU\\Software\\Event Monitor\\LANG\\LangCode|en",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746601",
+                "type":"regkey|value",
+                "value":"HKCU\\Software\\Event Monitor\\LANG\\LangID|0",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746602",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNO|(844) 763-5838",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746604",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNOFR|01.76.54.05.61",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746606",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNODE|(800) 180-6512",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746608",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNOJP|03-5050-1410",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746610",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNOAU|1800 154 231",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746612",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\TELNOUK|0800 031 4657",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746614",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\bShowCongratsAfterUpdateRestart|0",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746615",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\Expired|0",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746616",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\first|1",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746618",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\LANG\\LangCode|en",
+                "to_ids":false
+            },
+            {
+                "category":"Persistence mechanism",
+                "comment":"",
+                "timestamp":"1489746620",
+                "type":"regkey|value",
+                "value":"HKLM\\SOFTWARE\\Wow6432Node\\Event Monitor\\LANG\\LangID|0",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-05-12",
+        "published":true,
+        "info":"OSINT - Chinese-language Ransomware Makes An Appearance",
+        "publish_timestamp":"1463082244",
+        "timestamp":"1463082164",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"ecsirt:malicious-code=\"ransomware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463082060",
+                "type":"link",
+                "value":"http://blog.trendmicro.com/trendlabs-security-intelligence/chinese-language-ransomware-makes-appearance/",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1463082077",
+                "type":"text",
+                "value":"Ransom_SHUJIN.A",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1463082096",
+                "type":"comment",
+                "value":"Whenever a threat is â€œlocalizedâ€ to a specific region, itâ€™s a sign that attackers believe there is money to be made. Ransomware has made millions of dollars around the world, and it looks like itâ€™s poking its nose into a new part of the world: China. However, the initial foray into this market made several mistakes.\r\n\r\nWe recently came across multiple samples of what appeared to be Chinese-language ransomware. We detect this as Ransom_SHUJIN.A. All of these samples could be decompressed into the same executable file. While this is not the first time that Chinese-language ransomware has been found, this may be the first time that one used simplified Chinese characters. This character set is favored for use in mainland China. As of this writing, the infection vector of this attack is not yet known.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1463082123",
+                "type":"url",
+                "value":"http://eqlc75eumpb77ced.onion/Decrypt.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1463082124",
+                "type":"url",
+                "value":"http://eqlc75eumpb77ced.onion/GetMKey.JPG",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1463082124",
+                "type":"url",
+                "value":"http://eqlc75eumpb77ced.onion/btc/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1463082124",
+                "type":"url",
+                "value":"http://eqlc75eumpb77ced.onion/btc/help.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1463082124",
+                "type":"url",
+                "value":"http://eqlc75eumpb77ced.onion/DeFile.JPG",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1463082164",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            }
+        ]
+    }
+}

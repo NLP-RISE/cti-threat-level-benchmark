@@ -1,0 +1,479 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-13",
+        "published":true,
+        "info":"OSINT - Callisto Group",
+        "publish_timestamp":"1492583302",
+        "timestamp":"1492583294",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1492583285",
+                "type":"link",
+                "value":"https://www.f-secure.com/documents/996508/1030745/callisto-group",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1492583294",
+                "type":"comment",
+                "value":"The Callisto Group is an advanced threat actor whose known targets include military personnel, government officials, think tanks, and journalists in Europe and the South Caucasus. Their primary interest appears to be gathering intelligence related to foreign and security policy in the Eastern Europe and South Caucasus regions.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RCS Galileo",
+                "timestamp":"1492173673",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Upon infection, known samples of  Callisto Group â€™s RCS  Galileo have stored copies of themselves in this file",
+                "timestamp":"1492173673",
+                "type":"filename",
+                "value":"%TEMP%\\Microsoft Word.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Upon infection, known samples of  Callisto Group â€™s RCS  Galileo have stored copies of themselves in this file",
+                "timestamp":"1492173673",
+                "type":"filename",
+                "value":"%TEMP%\\WinWord.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Upon infection, known samples of  Callisto Group â€™s RCS  Galileo have stored copies of themselves in this file",
+                "timestamp":"1492173673",
+                "type":"filename",
+                "value":">startup folder<\\bleachbit.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Upon infection, known samples of  Callisto Group â€™s RCS  Galileo have stored copies of themselves in this file",
+                "timestamp":"1492173673",
+                "type":"filename",
+                "value":">startup folder<\\BluetoothView.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Known command & control server",
+                "timestamp":"1492173673",
+                "type":"ip-dst",
+                "value":"89.46.102.43",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"accounts-google.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"accounts-mail.asia",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"authentification-request.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"auth-login.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"drive-login.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"drive-meet-goodle.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"emailapp.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"fco-gov.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"fco-net.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"google-accounts.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"google-plus.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"google-service.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"hotmail-online.eu",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"icloud-service.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"live-com.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"live-login.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"login-access.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"login-live.review",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"login-livecom.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"login-livecom.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"login-live-com.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"misrcosofts.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"node005-prevention-aol.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"node03-prevention-icloud.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"platforma.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"prevention-aol.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"prevention-aol.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"prevention-icloud.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"qooqle-support-mail.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"screenname.click",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"screenname-aol.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"secure-lcloud.accountant",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"secure-store-lcloud.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"service-mail.asia",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"service-mail.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"serv-login-com.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"shared-docs.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"store-icloud.link",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"support-gmail.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"support-mail.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"support-mail.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"updatemail.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"yahoocentermail.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"yahoocentermail.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"yahoomailfree.pw",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"PHISHING INFRASTRUCTURE - Domains known or believed to be used in relation to phishing . These may be used as targets of links or as domains for sender email addresses.",
+                "timestamp":"1492173673",
+                "type":"domain",
+                "value":"go-veryfication.link",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RCS Galileo - Xchecked via VT: 07cdc67d211d175cd9d418dc5482b3f17d93526a",
+                "timestamp":"1492173816",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"RCS Galileo - Xchecked via VT: 07cdc67d211d175cd9d418dc5482b3f17d93526a",
+                "timestamp":"1492173818",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"RCS Galileo - Xchecked via VT: 07cdc67d211d175cd9d418dc5482b3f17d93526a",
+                "timestamp":"1492173819",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/974f6ceebeb889bd97e6641100dddf823376561ddde9e4749f3ea3d77f63a8f9/analysis/1492108895/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,100 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-07-04",
+        "published":true,
+        "info":"Malspam 2016-07-04 (testrun, subject 'Scanned image'), .docm",
+        "publish_timestamp":"1467638283",
+        "timestamp":"1467638241",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1467636579",
+                "type":"url",
+                "value":"http://greatlakessawingsolutions.com/nb4vervge",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1467636579",
+                "type":"domain",
+                "value":"greatlakessawingsolutions.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"download location",
+                "timestamp":"1467636580",
+                "type":"ip-dst",
+                "value":"199.166.6.15",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"maldoc",
+                "timestamp":"1467636657",
+                "type":"malware-sample",
+                "value":"04-07-2016_rndnum(4,9)}}.docm|4015805b8153f65c94be43b500c1b69b",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"maldoc",
+                "timestamp":"1467636624",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"maldoc",
+                "timestamp":"1467636644",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Locky",
+                "timestamp":"1467636662",
+                "type":"malware-sample",
+                "value":"nb4vervge|71e4ef080806be527ac4c3ecf5aa3374",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Locky",
+                "timestamp":"1467636636",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Locky",
+                "timestamp":"1467636652",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1467638241",
+                "type":"email-subject",
+                "value":"Scanned image",
+                "to_ids":false
+            }
+        ]
+    }
+}

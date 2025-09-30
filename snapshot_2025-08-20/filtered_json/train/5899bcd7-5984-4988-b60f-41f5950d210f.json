@@ -1,0 +1,71 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-02-07",
+        "published":false,
+        "info":"OSINT -  Zeus Panda Webinjects: a case study",
+        "publish_timestamp":"1486471149",
+        "timestamp":"1486473096",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"Zeus\""
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486471140",
+                "type":"link",
+                "value":"https://cyber.wtf/2017/02/03/zeus-panda-webinjects-a-case-study/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1486471140",
+                "type":"comment",
+                "value":"Our mothership G DATA runs extensive automated sample processing infrastructure as part of providing up to date protection to their AV customers. At G DATA Advanced Analytics, we have integrated these processes within our own routines in order to maintain the fraud detection solutions we provide to our customers from the financial sector.\r\n\r\nWe have been observing an increase in Zeus Panda infections recently. When we decrypted the config files from samples of Zeus Panda Banking Trojans that went through our processing this week, we decided to have a closer look at the current features. The low level functionality of the Zeus Panda Banking Trojan is already known quite well, so we focus our analysis on the webinjects. These webinjects are used to manipulate the functionality of the target online banking websites on the client. The one we found here was pretty interesting.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1st Stage - Loader",
+                "timestamp":"1486471140",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1st stage initial webinject - Loader",
+                "timestamp":"1486471140",
+                "type":"filename",
+                "value":"_brows.botid",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1st stage initial webinject - Loader",
+                "timestamp":"1486471140",
+                "type":"filename",
+                "value":"_brows.inject",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"2nd stage Exfiltration",
+                "timestamp":"1486471140",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-08-03",
+        "published":true,
+        "info":"Fake Maersk shipping notice phishing",
+        "publish_timestamp":"1533276311",
+        "timestamp":"1533276306",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1533276276",
+                "type":"hostname",
+                "value":"tamboresdelcomahue.com.ar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1533276276",
+                "type":"url",
+                "value":"http://tamboresdelcomahue.com.ar/files/bill.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1533276276",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1533276276",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1533276297",
+                "type":"link",
+                "value":"https://www.virustotal.com/#/file/482984a5dcd82e820233571fb5598d9fb653e202f5a95e9d1c0d2c241a045e8b/details",
+                "to_ids":false
+            }
+        ]
+    }
+}

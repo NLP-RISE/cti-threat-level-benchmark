@@ -1,0 +1,161 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-13",
+        "published":false,
+        "info":"OSINT - XZZX Cryptomix Ransomware Variant Released",
+        "publish_timestamp":"0",
+        "timestamp":"1513180871",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513180795",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/xzzx-cryptomix-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1511357648",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180795",
+                "type":"filename",
+                "value":"_HELP_INSTRUCTION.TXT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180795",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180796",
+                "type":"email-src",
+                "value":"xzzx@tuta.io",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180796",
+                "type":"email-src",
+                "value":"xzzx1@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180796",
+                "type":"email-src",
+                "value":"xzzx10@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513180796",
+                "type":"email-src",
+                "value":"xzzx101@yandex.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513180799",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513180796",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/33a60a16e50b8df2a731023951475ff0f973fc66334d2cfa6ce30aa36bb36414/analysis/1511330808/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"text",
+                        "value":"49/68",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513180796",
+                        "type":"datetime",
+                        "value":"2017-11-22 06:06:48",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

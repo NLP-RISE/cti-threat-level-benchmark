@@ -1,0 +1,244 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2016-05-30",
+        "published":true,
+        "info":"OSINT - Keep Calm and (Donâ€™t) Enable Macros: A New Threat Actor Targets UAE Dissidents",
+        "publish_timestamp":"1464615631",
+        "timestamp":"1464615557",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1464614334",
+                "type":"link",
+                "value":"https://citizenlab.org/2016/05/stealth-falcon/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1464614364",
+                "type":"comment",
+                "value":"This report describes a campaign of targeted spyware attacks carried out by a sophisticated operator, which we call Stealth Falcon.  The attacks have been conducted from 2012 until the present, against Emirati journalists, activists, and dissidents.  We discovered this campaign when an individual purporting to be from an apparently fictitious organization called â€œThe Right to Fightâ€ contacted Rori Donaghy.  Donaghy, a UK-based journalist and founder of the Emirates Center for Human Rights, received a spyware-laden email in November 2015, purporting to offer him a position on a human rights panel.  Donaghy has written critically of the United Arab Emirates (UAE) government in the past,1 and had recently published a series of articles based on leaked emails involving members of the UAE government.2\r\n\r\nCircumstantial evidence suggests a link between Stealth Falcon and the UAE government.  We traced digital artifacts used in this campaign to links sent from an activistâ€™s Twitter account in December 2012, a period when it appears to have been under government control.  We also identified other bait content employed by this threat actor.  We found 31 public tweets sent by Stealth Falcon, 30 of which were directly targeted at one of 27 victims.  Of the 27 targets, 24 were obviously linked to the UAE, based on their profile information (e.g., photos, â€œUAEâ€ in account name, location), and at least six targets appeared to be operated by people who were arrested, sought for arrest, or convicted in absentia by the UAE government, in relation to their Twitter activity.\r\n\r\nThe attack on Donaghy â€” and the Twitter attacks â€” involved a malicious URL shortening site.  When a user clicks on a URL shortened by Stealth Falcon operators, the site profiles the software on a userâ€™s computer, perhaps for future exploitation, before redirecting the user to a benign website containing bait content.  We queried the URL shortener with every possible short URL, and identified 402 instances of bait content which we believe were sent by Stealth Falcon, 73% of which obviously referenced UAE issues.  Of these URLs, only the one sent to Donaghy definitively contained spyware.  However, we were able to trace the spyware Donaghy received to a network of 67 active command and control (C2) servers, suggesting broader use of the spyware, perhaps by the same or other operators.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Fake invitation",
+                "timestamp":"1464614633",
+                "type":"email-src",
+                "value":"the_right_to_fight@openmailbox.org",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"loaded a page containing a redirect to the website of Al Jazeera.  Before completing the redirect, it invoked JavaScript to profile the targetâ€™s computer.",
+                "timestamp":"1464614671",
+                "type":"url",
+                "value":"http://aax.me/d0dde",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1464614693",
+                "type":"url",
+                "value":"http://aax.me/a6faa",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"This is a password-protected link to a file shared on an ownCloud15 instance.  We obtained this file, and found it to be a Microsoft Word document.",
+                "timestamp":"1464614716",
+                "type":"url",
+                "value":"https://cloud.openmailbox.org/index.php/s/ujDNWMmg8pdG3AL/authenticate",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"right2fight.docm (malicious document)",
+                "timestamp":"1464614746",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"right2fight.docm (malicious document)",
+                "timestamp":"1464614791",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"right2fight.docm (malicious document)",
+                "timestamp":"1464614819",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Gathered information is returned to and  the serverâ€™s response is executed as a PowerShell command.",
+                "timestamp":"1464614876",
+                "type":"url",
+                "value":"http://adhostingcache.com/ehhe/eh4g4/adcache.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1464614889",
+                "type":"ip-dst",
+                "value":"95.215.44.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1464614905",
+                "type":"domain",
+                "value":"adhostingcache.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"registered on December 3rd,",
+                "timestamp":"1464614953",
+                "type":"domain",
+                "value":"adhostingcaches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1464614969",
+                "type":"url",
+                "value":"https://incapsulawebcache.com/cache/cache.nfo",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"to profile a userâ€™s system, perhaps to gather intelligence about potentially exploitable vulnerabilities.",
+                "timestamp":"1464615021",
+                "type":"url",
+                "value":"http://aax.me/redirect.js",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1464615207",
+                "type":"url",
+                "value":"http://goo.gl/60HAqJ",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Imported via the Freetext Import Tool",
+                "timestamp":"1464615208",
+                "type":"url",
+                "value":"http://aax.me/0b152",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"The Case of the Fake Journalist",
+                "timestamp":"1464615239",
+                "type":"email-src",
+                "value":"andrew.dwight389@outlook.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"message_032456944343.docm",
+                "timestamp":"1464615307",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"message_032456944343.docm",
+                "timestamp":"1464615307",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"message_032456944343.docm",
+                "timestamp":"1464615308",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The documentâ€™s macro was identical to the one sent to Donaghy, except it reported back to, and downloaded Stage Two from a different URL",
+                "timestamp":"1464615408",
+                "type":"url",
+                "value":"http://optimizedimghosting.com/wddf/hrrw/ggrr.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The documentâ€™s macro was identical to the one sent to Donaghy, except it reported back to, and downloaded Stage Two from a different URL",
+                "timestamp":"1464615408",
+                "type":"domain",
+                "value":"optimizedimghosting.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"The Stage Two in this case reported back to",
+                "timestamp":"1464615437",
+                "type":"url",
+                "value":"https://edgecacheimagehosting.com/images/image.nfo",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage two server",
+                "timestamp":"1464615468",
+                "type":"domain",
+                "value":"edgecacheimagehosting.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage two server",
+                "timestamp":"1464615468",
+                "type":"domain",
+                "value":"incapsulawebcache.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"message_032456944343.docm - Xchecked via VT: 4320204d577ef8b939115d16110e97ff04cb4f7d1e77ba5ce011d43f74abc7be",
+                "timestamp":"1464615525",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/4320204d577ef8b939115d16110e97ff04cb4f7d1e77ba5ce011d43f74abc7be/analysis/1464593985/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Enriched via the dns module",
+                "timestamp":"1464615556",
+                "type":"ip-src",
+                "value":"87.120.37.83",
+                "to_ids":false
+            }
+        ]
+    }
+}

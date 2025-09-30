@@ -1,0 +1,136 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-10-13",
+        "published":true,
+        "info":"Scraper: Ransomware Actor Abuses Genshin Impact Anti-Cheat Driver to Kill Antivirus",
+        "publish_timestamp":"1665780645",
+        "timestamp":"1665780635",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"PsExec - S0029\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-tool=\"Cobalt Strike - S0154\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1665780080",
+                "type":"comment",
+                "value":"Ransomware Actor Abuses Genshin Impact Anti-Cheat Driver to Kill Antivirus",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Feed URL",
+                "timestamp":"1665780080",
+                "type":"link",
+                "value":"http://feeds.trendmicro.com/TrendMicroSimplySecurity",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1665780080",
+                "type":"link",
+                "value":"https://www.trendmicro.com/en_us/research/22/h/ransomware-actor-abuses-genshin-impact-anti-cheat-driver-to-kill-antivirus.html",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665681070",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"*mhyprot2.sys",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665681070",
+                "type":"filename",
+                "value":"mhyprot2.sys",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"HelpPane.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"rdpclip.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"svchost.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"logon.bat",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"avg.msi",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"avg.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1665780080",
+                "type":"filename",
+                "value":"b.bat",
+                "to_ids":false
+            }
+        ]
+    }
+}

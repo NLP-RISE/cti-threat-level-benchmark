@@ -1,0 +1,993 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-05-29",
+        "published":true,
+        "info":"US-CERT Alert (TA18-149A) HIDDEN COBRA – Joanap Backdoor Trojan and Brambul Server Message Block Worm",
+        "publish_timestamp":"1607838920",
+        "timestamp":"1621849752",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Lazarus Group (G0032) uses Remote File Copy (T1105)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Lazarus Group (G0032) uses Brute Force (T1110)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Lazarus Group (G0032) uses Connection Proxy (T1090)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Lazarus Group (G0032) uses Command-Line Interface (T1059)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-relationship=\"Lazarus Group (G0032) uses System Information Discovery (T1082)\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527616200",
+                "type":"link",
+                "value":"https://www.us-cert.gov/ncas/alerts/TA18-149A",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"181.1.253.234",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"200.82.62.24",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"81.243.151.226",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1560524441",
+                "type":"ip-dst",
+                "value":"81.247.219.196",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"138.204.211.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"177.221.11.176",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"177.221.11.233",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"177.41.74.199",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"179.107.219.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"187.127.112.60",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"187.127.115.206",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"189.15.173.106",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"103.227.174.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"146.88.205.56",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"113.57.34.213",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"117.179.224.33",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"181.234.231.152",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"190.60.109.166",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"196.204.141.76",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"196.221.41.109",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"1.186.218.107",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"103.71.212.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"106.51.226.188",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"114.79.191.185",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"117.213.169.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"117.213.170.132",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"117.213.170.252",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"117.214.92.199",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"117.254.85.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"123.201.161.60",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"157.49.171.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"202.142.71.166",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"49.206.100.19",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"49.206.105.206",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.69.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.69.23",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.69.254",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.69.51",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.70.122",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.70.162",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.92.70.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.95.151.28",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768664",
+                "type":"ip-dst",
+                "value":"59.97.22.192",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"61.3.239.224",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"2.182.31.181",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"2.182.31.195",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"2.182.31.84",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"2.187.201.47",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"82.212.93.217",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"110.36.226.146",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"203.130.24.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"176.45.234.206",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"176.45.248.239",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"176.47.60.110",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"188.49.198.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"188.54.209.88",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"188.54.251.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"5.156.110.212",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"5.156.137.47",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"51.235.186.186",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"90.148.206.252",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"95.184.0.49",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"95.218.39.84",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"2.137.162.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"124.43.35.86",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"124.43.39.105",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"124.43.41.213",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"124.43.41.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"124.43.42.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"90.236.254.71",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"1.160.139.122",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"1.169.112.88",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"1.170.194.142",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"111.253.145.11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"111.255.198.92",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"114.26.231.136",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"114.36.15.80",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"114.36.3.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"114.39.179.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"114.46.75.51",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"122.121.9.203",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"36.229.45.69",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"36.231.179.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768663",
+                "type":"ip-dst",
+                "value":"36.231.36.64",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768662",
+                "type":"ip-dst",
+                "value":"36.235.81.169",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"According to DHS and FBI analysis, this IP address is compromised infrastructure.",
+                "timestamp":"1527768665",
+                "type":"ip-dst",
+                "value":"36.238.65.99",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Enriched via the stiximport module",
+                "timestamp":"1527768544",
+                "type":"email-src",
+                "value":"misswang8107@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Enriched via the stiximport module",
+                "timestamp":"1527768544",
+                "type":"email-src",
+                "value":"redhat@gmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527770140",
+                "type":"attachment",
+                "value":"TA18-194A.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1527770140",
+                "type":"attachment",
+                "value":"MAR-10135536-3_WHITE.pdf",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527768832",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527768972",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527768832",
+                        "type":"text",
+                        "value":"According to DHS and FBI analysis, this Dynamic Link Library (DLL) is a Remote Access Tool (RAT) capable of providing an array of remote command and control capabilities. It has the ability to exfiltrate data, drop and run secondary payloads, and provide proxy capabilities on a compromised Windows device. The malware binds and listens on port 443 for incoming connections from a remote operator.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527768972",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527768972",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527768832",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527768832",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527769079",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769079",
+                        "type":"text",
+                        "value":"According to DHS and FBI analysis, this is a malicious Portable Executable 32-bit (PE32) file designed to scan the local network and the internet for machines that are accessible and have open Server Message Block (SMB) ports. Once the malware gains access to a remote machine it will deliver a malicious payload.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769079",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769079",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527769345",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769345",
+                        "type":"text",
+                        "value":"According to DHS and FBI analysis, this file is a malicious 32-bit Windows Dynamic Link Library (DLL), dropped and loaded by [MD5: 4731CBAEE7ACA37B596E38690160A749]. When executed, the DLL attempts to contact all of the Internet Protocol (IP) addresses on the victim's local subnet. If the file is able to connect to these IPs, it will attempt to gain unauthorized access via the Server Message Block (SMB) protocol on port 445 utilizing a brute-force password attack.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769467",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769345",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769345",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1527769546",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769652",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769546",
+                        "type":"text",
+                        "value":"According to DHS and FBI analysis, this is a Portable Executable 32-bit (PE32) file that can be used to drop and install other malware on the compromised host.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769650",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769648",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1527769546",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1527769546",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

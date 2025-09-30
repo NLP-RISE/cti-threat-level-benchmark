@@ -1,0 +1,290 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-04-07",
+        "published":true,
+        "info":"OSINT - Matrix Ransomware Spreads to Other PCs Using Malicious Shortcuts",
+        "publish_timestamp":"1538401644",
+        "timestamp":"1538401642",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Matrix\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/matrix-ransomware-spreads-to-other-pcs-using-malicious-shortcuts/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\[random].hta",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[victim_id].pek",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[victim_id].sek",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\errlog.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[random].cmd",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[random].afn",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[random].ast",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"%UserProfile%\\AppData\\Roaming\\[random].hta",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"matrix-readme.rtf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"Bl0cked-ReadMe.rtf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"filename",
+                "value":"WhatHappenedWithFiles.rtf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"url",
+                "value":"stat3.s76.r53.com.ua/addrecord.php",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1491848012",
+                "type":"url",
+                "value":"stat3.s76.r53.com.ua/uploadextlist.php",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 467c2b23b785df7b45758143387e9cc5a588718ae0640b3f01b1c19679b011be",
+                "timestamp":"1491848026",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: 467c2b23b785df7b45758143387e9cc5a588718ae0640b3f01b1c19679b011be",
+                "timestamp":"1491848027",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: 467c2b23b785df7b45758143387e9cc5a588718ae0640b3f01b1c19679b011be",
+                "timestamp":"1491848028",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/467c2b23b785df7b45758143387e9cc5a588718ae0640b3f01b1c19679b011be/analysis/1491798251/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"url object describes an url along with its normalized field (like extracted using faup parsing library) and its metadata.",
+                "meta-category":"network",
+                "name":"url",
+                "timestamp":"1538400598",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1538400598",
+                        "type":"url",
+                        "value":"stat3.s76.r53.com.ua/addrecord.phph",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1538400600",
+                        "type":"hostname",
+                        "value":"stat3.s76.r53.com.ua",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538400601",
+                        "type":"text",
+                        "value":"http",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538400601",
+                        "type":"text",
+                        "value":"addrecord.php",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538400602",
+                        "type":"text",
+                        "value":"uploadextlist.php",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1538401625",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538401625",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538401628",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1538401631",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1538401634",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538401638",
+                        "type":"datetime",
+                        "value":"2018-08-24T19:09:51",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1538401641",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/467c2b23b785df7b45758143387e9cc5a588718ae0640b3f01b1c19679b011be/analysis/1535137791/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1538401644",
+                        "type":"text",
+                        "value":"56/68",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

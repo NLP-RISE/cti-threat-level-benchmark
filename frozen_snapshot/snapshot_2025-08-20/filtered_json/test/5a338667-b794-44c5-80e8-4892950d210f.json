@@ -1,0 +1,177 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-13",
+        "published":true,
+        "info":"OSINT -  WORK Cryptomix Ransomware Variant Released",
+        "publish_timestamp":"1518771517",
+        "timestamp":"1518231654",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"CryptoMix\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518185240",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/work-cryptomix-ransomware-variant-released/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518185241",
+                "type":"comment",
+                "value":"Today, BleepingComputer discovered a new variant of the CryptoMix ransomware that appends the .WORK extension to encrypted files and changes the contact emails used by the ransomware.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1513327009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185241",
+                "type":"filename",
+                "value":"_HELP_INSTRUCTION.TXT",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185241",
+                "type":"filename",
+                "value":"C:ProgramData[random].exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185242",
+                "type":"email-src",
+                "value":"worknow@keemail.me",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185242",
+                "type":"email-src",
+                "value":"worknow@protonmail.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185243",
+                "type":"email-src",
+                "value":"worknow8@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185243",
+                "type":"email-src",
+                "value":"worknow9@yandex.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1518185243",
+                "type":"email-src",
+                "value":"worknow@techie.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1518185247",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185244",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185244",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185245",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1518185245",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1518185245",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/69fa88c5b353f55edbb7187c090bee377e54900e1c78c580d7b3b3084c9d7d0b/analysis/1513332835/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1518185246",
+                        "type":"text",
+                        "value":"48/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1518185246",
+                        "type":"datetime",
+                        "value":"2017-12-15T10:13:55",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

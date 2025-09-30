@@ -1,0 +1,492 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-14",
+        "published":true,
+        "info":"OSINT - Attackers Deploy New ICS Attack Framework â€œTRITONâ€ and Cause Operational Disruption to Critical Infrastructure",
+        "publish_timestamp":"1518770742",
+        "timestamp":"1515812452",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"industry\""
+            },
+            {
+                "name":"veris:asset:variety=\"S - SCADA\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513267804",
+                "type":"text",
+                "value":"Mandiant recently responded to an incident at a critical infrastructure organization where an attacker deployed malware designed to manipulate industrial safety systems. The targeted systems provided emergency shutdown capability for industrial processes. We assess with moderate confidence that the attacker was developing the capability to cause physical damage and inadvertently shutdown operations. This malware, which we call TRITON, is an attack framework built to interact with Triconex Safety Instrumented System (SIS) controllers. We have not attributed the incident to a threat actor, though we believe the activity is consistent with a nation state preparing for an attack.\r\n\r\nTRITON is one of a limited number of publicly identified malicious software families targeted at industrial control systems (ICS). It follows Stuxnet which was used against Iran in 2010 and Industroyer which we believe was deployed by Sandworm Team against Ukraine in 2016. TRITON is consistent with these attacks, in that it could prevent safety mechanisms from executing their intended function, resulting in a physical consequence.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1513267804",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2017/12/attackers-deploy-new-ics-attack-framework-triton.html",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1513267804",
+                "type":"yara",
+                "value":"rule TRITON_ICS_FRAMEWORK\r\n{\r\n      meta:\r\n          author = \"nicholas.carr @itsreallynick\"\r\n          md5 = \"0face841f7b2953e7c29c064d6886523\"\r\n          description = \"TRITON framework recovered during Mandiant ICS incident response\"\r\n      strings:\r\n          $python_compiled = \".pyc\" nocase ascii wide\r\n          $python_module_01 = \"__module__\" nocase ascii wide\r\n          $python_module_02 = \"<module>\" nocase ascii wide\r\n          $python_script_01 = \"import Ts\" nocase ascii wide\r\n          $python_script_02 = \"def ts_\" nocase ascii wide  \r\n\r\n          $py_cnames_01 = \"TS_cnames.py\" nocase ascii wide\r\n          $py_cnames_02 = \"TRICON\" nocase ascii wide\r\n          $py_cnames_03 = \"TriStation \" nocase ascii wide\r\n          $py_cnames_04 = \" chassis \" nocase ascii wide  \r\n\r\n          $py_tslibs_01 = \"GetCpStatus\" nocase ascii wide\r\n          $py_tslibs_02 = \"ts_\" ascii wide\r\n          $py_tslibs_03 = \" sequence\" nocase ascii wide\r\n          $py_tslibs_04 = /import Ts(Hi|Low|Base)[^:alpha:]/ nocase ascii wide\r\n          $py_tslibs_05 = /module\\s?version/ nocase ascii wide\r\n          $py_tslibs_06 = \"bad \" nocase ascii wide\r\n          $py_tslibs_07 = \"prog_cnt\" nocase ascii wide  \r\n\r\n          $py_tsbase_01 = \"TsBase.py\" nocase ascii wide\r\n          $py_tsbase_02 = \".TsBase(\" nocase ascii wide \r\n         \r\n          $py_tshi_01 = \"TsHi.py\" nocase ascii wide\r\n          $py_tshi_02 = \"keystate\" nocase ascii wide\r\n          $py_tshi_03 = \"GetProjectInfo\" nocase ascii wide\r\n          $py_tshi_04 = \"GetProgramTable\" nocase ascii wide\r\n          $py_tshi_05 = \"SafeAppendProgramMod\" nocase ascii wide\r\n          $py_tshi_06 = \".TsHi(\" ascii nocase wide  \r\n\r\n          $py_tslow_01 = \"TsLow.py\" nocase ascii wide\r\n          $py_tslow_02 = \"print_last_error\" ascii nocase wide\r\n          $py_tslow_03 = \".TsLow(\" ascii nocase wide\r\n          $py_tslow_04 = \"tcm_\" ascii wide\r\n          $py_tslow_05 = \" TCM found\" nocase ascii wide  \r\n\r\n          $py_crc_01 = \"crc.pyc\" nocase ascii wide\r\n          $py_crc_02 = \"CRC16_MODBUS\" ascii wide\r\n          $py_crc_03 = \"Kotov Alaxander\" nocase ascii wide\r\n          $py_crc_04 = \"CRC_CCITT_XMODEM\" ascii wide\r\n          $py_crc_05 = \"crc16ret\" ascii wide\r\n          $py_crc_06 = \"CRC16_CCITT_x1D0F\" ascii wide\r\n          $py_crc_07 = /CRC16_CCITT[^_]/ ascii wide  \r\n\r\n          $py_sh_01 = \"sh.pyc\" nocase ascii wide  \r\n\r\n          $py_keyword_01 = \" FAILURE\" ascii wide\r\n          $py_keyword_02 = \"symbol table\" nocase ascii wide  \r\n\r\n          $py_TRIDENT_01 = \"inject.bin\" ascii nocase wide\r\n          $py_TRIDENT_02 = \"imain.bin\" ascii nocase wide  \r\n\r\n      condition:\r\n          2 of ($python_*) and 7 of ($py_*) and filesize < 3MB\r\n}",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"TRITON Architecture and Attack Scenario",
+                "timestamp":"1513267804",
+                "type":"attachment",
+                "value":"Fig4.png",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674203",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674200",
+                        "type":"filename",
+                        "value":"trilog.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674200",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674200",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674200",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674225",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674225",
+                        "type":"filename",
+                        "value":"imain.bin",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674225",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674225",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674226",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674358",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674358",
+                        "type":"filename",
+                        "value":"inject.bin",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674358",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674358",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674359",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674396",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674396",
+                        "type":"filename",
+                        "value":"library.zip",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674396",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674396",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674396",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674423",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674423",
+                        "type":"filename",
+                        "value":"TS_cnames.pyc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674423",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674423",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674423",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674452",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674452",
+                        "type":"filename",
+                        "value":"TsBase.pyc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674452",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674452",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674452",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674471",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674471",
+                        "type":"filename",
+                        "value":"TsHi.pyc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674471",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674471",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674472",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674490",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674490",
+                        "type":"filename",
+                        "value":"TsLow.pyc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674490",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674490",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674490",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513674509",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674509",
+                        "type":"filename",
+                        "value":"sh.pyc",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674509",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513674509",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513674510",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513267807",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513267804",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513267804",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513267804",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1513267804",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1513267804",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230/analysis/1513264635/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513267805",
+                        "type":"text",
+                        "value":"1/66",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513267805",
+                        "type":"datetime",
+                        "value":"2017-12-14T15:17:15",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

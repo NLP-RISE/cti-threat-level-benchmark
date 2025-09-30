@@ -1,0 +1,237 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-06-01",
+        "published":true,
+        "info":"Sample Linux miner - XMring",
+        "publish_timestamp":"1654067784",
+        "timestamp":"1654067773",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Leverage compromised 3rd party resources - T1375\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application or System Exploitation - T1499.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Resource Hijacking - T1496\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Object describing a Executable and Linkable Format",
+                "meta-category":"file",
+                "name":"elf",
+                "timestamp":"1654067521",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"text",
+                        "value":"DYNAMIC",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"text",
+                        "value":"940656",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"text",
+                        "value":"x86_64",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"text",
+                        "value":"SYSTEMV",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"counter",
+                        "value":"0",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1654067522",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"filename",
+                        "value":"31fe8c12206d590afe61ebaff9d277793af34c8f201e9025f10d7a44a7f52e35",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"size-in-bytes",
+                        "value":"945904",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"float",
+                        "value":"7.9996700818425",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067521",
+                        "type":"sha512",
+                        "value":"<sha512>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067522",
+                        "type":"malware-sample",
+                        "value":"31fe8c12206d590afe61ebaff9d277793af34c8f201e9025f10d7a44a7f52e35|a3d50f130c57b5f9b3c81bb237912c83",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1654067522",
+                        "type":"mime-type",
+                        "value":"ELF 64-bit LSB shared object, x86-64, version 1 (SYSV)",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1654067522",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1654067549",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                        "timestamp":"1654067549",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/31fe8c12206d590afe61ebaff9d277793af34c8f201e9025f10d7a44a7f52e35",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                        "timestamp":"1654067549",
+                        "type":"text",
+                        "value":"14/59",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1654067549",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                        "timestamp":"1654067549",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/ip_address/136.243.90.99",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                        "timestamp":"1654067549",
+                        "type":"text",
+                        "value":"3/91",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1654067594",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"b8e9bb170890e44785cdfbb0b00ea4233ba6dd73: Enriched via the virustotal module",
+                        "timestamp":"1654067594",
+                        "type":"ip-dst",
+                        "value":"136.243.90.99",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-10-09",
+        "published":true,
+        "info":"FIN6 Compromised E-commerce Platform via Magecart to Inject Credit Card Skimmers Into Thousands of Online Shops",
+        "publish_timestamp":"1570891841",
+        "timestamp":"1570891832",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"FIN6 exfiltration server domain",
+                "timestamp":"1570891827",
+                "type":"domain",
+                "value":"volusion-cdn.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"FIN6 exfiltration server URL",
+                "timestamp":"1570891827",
+                "type":"url",
+                "value":"https://volusion-cdn.com/analytics/beacon",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"FIN6 credit card skimmer URL",
+                "timestamp":"1570891827",
+                "type":"url",
+                "value":"https://storage.googleapis.com/volusionapi/resources.js",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FIN6 credit card skimmer hash",
+                "timestamp":"1570891827",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FIN6 credit card skimmer hash",
+                "timestamp":"1570891827",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"FIN6 credit card skimmer hash",
+                "timestamp":"1570891827",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,340 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2015-02-10",
+        "published":true,
+        "info":"OSINT MSRT February update from Microsoft",
+        "publish_timestamp":"1424078776",
+        "timestamp":"1424074675",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:green"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424073859",
+                "type":"link",
+                "value":"http://blogs.technet.com/b/mmpc/archive/2015/02/10/msrt-february-escad-and-nukesped.aspx",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"ansi.nls",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"dayipmr.tbl",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"netmonsvc.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"pmsconfig.msi",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"pmslog.msi",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"rdmgr.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"remoteevtmanager.dll",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Escad",
+                "timestamp":"1424073829",
+                "type":"filename",
+                "value":"tmscompg.msi",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424073842",
+                "type":"text",
+                "value":"Escad",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424073842",
+                "type":"text",
+                "value":"Nukesped",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424073886",
+                "type":"link",
+                "value":"http://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Win32/Jinupd",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424073886",
+                "type":"link",
+                "value":"http://www.microsoft.com/security/portal/threat/encyclopedia/entry.aspx?Name=Win32/NukeSped",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073937",
+                "type":"filename",
+                "value":"comon32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073937",
+                "type":"filename",
+                "value":"diskpartmg16.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073937",
+                "type":"filename",
+                "value":"dpnsvr16.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073937",
+                "type":"filename",
+                "value":"expandmn32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073937",
+                "type":"filename",
+                "value":"hwrcompsvc64.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073938",
+                "type":"filename",
+                "value":"mobsynclm64.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073938",
+                "type":"filename",
+                "value":"rdpshellex32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073938",
+                "type":"filename",
+                "value":"recdiscm32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073938",
+                "type":"filename",
+                "value":"taskchg16.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424073938",
+                "type":"filename",
+                "value":"taskhosts64.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074195",
+                "type":"comment",
+                "value":"Seems to be related to Sony hack based on the screenshots on the february update page",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074207",
+                "type":"comment",
+                "value":"Data entered by David AndrÃ©",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Jinupd",
+                "timestamp":"1424074349",
+                "type":"domain",
+                "value":"dailygiftclub.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Jinupd",
+                "timestamp":"1424074349",
+                "type":"domain",
+                "value":"dailygiftclub1.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Jinupd",
+                "timestamp":"1424074349",
+                "type":"domain",
+                "value":"priv8darkshop.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Jinupd",
+                "timestamp":"1424074349",
+                "type":"domain",
+                "value":"sopvps.hk",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074363",
+                "type":"text",
+                "value":"Jinupd",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Jinupd",
+                "timestamp":"1424074431",
+                "type":"filename",
+                "value":"%APPDATA%\\java se platform updater\\jusched.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Jinupd",
+                "timestamp":"1424074431",
+                "type":"filename",
+                "value":"%APPDATA%\\java platform updater\\jusched.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Jinupd",
+                "timestamp":"1424074431",
+                "type":"filename",
+                "value":"%TEMP%\\svchost.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424074477",
+                "type":"filename",
+                "value":"%TEMP% \\usbdrv3.sys",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424074511",
+                "type":"filename",
+                "value":"%windir% \\iissvr.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074559",
+                "type":"link",
+                "value":"http://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Trojan:Win32/NukeSped.C!dha",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074559",
+                "type":"link",
+                "value":"http://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Trojan:Win32/NukeSped.B!dha",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1424074559",
+                "type":"link",
+                "value":"http://www.microsoft.com/security/portal/threat/encyclopedia/Entry.aspx?Name=Trojan:Win32/NukeSped.A!dha",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424074675",
+                "type":"filename",
+                "value":"usbdrv3_32bit.sys",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"NukeSped",
+                "timestamp":"1424074675",
+                "type":"filename",
+                "value":"usbdrv3_64bit.sys",
+                "to_ids":true
+            }
+        ]
+    }
+}

@@ -1,0 +1,341 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-04-13",
+        "published":true,
+        "info":"Industroyer2: Industroyer reloaded",
+        "publish_timestamp":"1649878976",
+        "timestamp":"1649878899",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"Industroyer\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"Sandworm Team - G0034\""
+            },
+            {
+                "name":"misp-galaxy:mitre-ics-software=\"Industroyer\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"Sandworm Team - G0034\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Sandworm\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task/Job - T1053\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"dhs-ciip-sectors:DHS-critical-sectors=\"energy\""
+            },
+            {
+                "name":"dhs-ciip-sectors:DHS-critical-sectors=\"financial-services\""
+            },
+            {
+                "name":"dhs-ciip-sectors:DHS-critical-sectors=\"government-facilities\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877111",
+                "type":"comment",
+                "value":"ESET researchers collaborated with CERT-UA to analyze the attack against the Ukrainian energy company",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877111",
+                "type":"comment",
+                "value":"The destructive actions were scheduled for 2022-04-08 but artifacts suggest that the attack had been planned for at least two weeks",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877111",
+                "type":"comment",
+                "value":"The attack used ICS-capable malware and regular disk wipers for Windows, Linux and Solaris operating systems",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877111",
+                "type":"comment",
+                "value":"We assess with high confidence that the attackers used a new version of the Industroyer malware, which was used in 2016 to cut power in Ukraine",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877111",
+                "type":"comment",
+                "value":"We assess with high confidence that the APT group Sandworm is responsible for this new attack",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877335",
+                "type":"comment",
+                "value":"Industroyer2 was deployed as a single Windows executable named 108_100.exe and executed using a scheduled task on 2022-04-08 at 16:10:00 UTC. It was compiled on 2022-03-23, according to the PE timestamp, suggesting that attackers had planned their attack for more than two weeks.",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1649877652",
+                "type":"comment",
+                "value":"It contains a detailed configuration hardcoded in its body, driving the malware actions. This is different from Industroyer, stores configuration in a separate .INI file. Thus, attackers need to recompile Industroyer2 for each new victim or environment.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1649877702",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2022/04/12/industroyer2-industroyer-reloaded/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1649877702",
+                "type":"link",
+                "value":"https://cert.gov.ua/article/39518",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Industroyer2",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649877756",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649877756",
+                        "type":"text",
+                        "value":"Win32/Industroyer.B",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877756",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877756",
+                        "type":"filename",
+                        "value":"108_100.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"ArguePatch",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649877792",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649877792",
+                        "type":"text",
+                        "value":"Win32/Agent.AECG",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877792",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877792",
+                        "type":"filename",
+                        "value":"zrada.exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"TailJump (Encrypted CaddyWiper)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649878827",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649878827",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877852",
+                        "type":"filename",
+                        "value":"pa.pay",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Script which enumerates GPO",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649877965",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649877886",
+                        "type":"text",
+                        "value":"PowerShell/HackTool.Agent.AH",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877886",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877886",
+                        "type":"filename",
+                        "value":"link.ps1",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"OrcShred (Linux worm)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649877928",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649877928",
+                        "type":"text",
+                        "value":"Linux/Agent.PC trojan",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877928",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649877928",
+                        "type":"filename",
+                        "value":"sc.sh",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"AwfulShred (Linux wiper)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649878019",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649878019",
+                        "type":"text",
+                        "value":"Linux/KillFiles.C trojan",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649878019",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649878019",
+                        "type":"filename",
+                        "value":"wobf.sh",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"SoloShred (Solaris wiper)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1649878477",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1649878477",
+                        "type":"text",
+                        "value":"Linux/KillFiles.B trojan",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649878477",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1649878477",
+                        "type":"filename",
+                        "value":"wsol.sh",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

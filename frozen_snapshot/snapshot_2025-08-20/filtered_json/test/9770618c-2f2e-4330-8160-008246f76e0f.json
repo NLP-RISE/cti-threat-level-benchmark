@@ -1,0 +1,65 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-05-21",
+        "published":true,
+        "info":"Minas – on the way to complexity",
+        "publish_timestamp":"1684759583",
+        "timestamp":"1684675846",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1684675681",
+                "type":"link",
+                "value":"https://securelist.com/minas-miner-on-the-way-to-complexity/109692/",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"",
+                "timestamp":"1684675753",
+                "type":"comment",
+                "value":"PowerShell script runs via the Task Scheduler and downloads the lgntoerr.gif file from a remote server.\r\n    The script decrypts lgntoerr.gif, resulting in a .NET DLL, which is then loaded.\r\n    The .NET DLL extracts and decrypts three files from its resources: two DLLs and an encrypted payload. The extracted files are placed in the ProgramData directory.\r\n    The .NET DLL creates a task to autorun the legitimate ilasm.exe component at system startup via Task Scheduler.\r\n    Task Scheduler starts ilasm.exe from the ProgramData directory.\r\n    ilasm.exe launches fusion.dll, a malicious DLL hijacker, from the same directory.\r\n    fusion.dll loads the second decrypted DLL.\r\n    That DLL creates a suspended dllhost.exe process.\r\n    It then decrypts the payload from the encrypted binary file.\r\n    The decrypted payload is loaded into the dllhost.exe process as a DLL.\r\n    The PID of the dllhost.exe process is saved to a file in the ProgramData directory.\r\n    The dllhost.exe process passes control to the decrypted payload.\r\n    The payload DLL extracts and launches the miner DLL in memory.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1684675840",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1684675840",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1684675840",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1684675840",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            }
+        ]
+    }
+}

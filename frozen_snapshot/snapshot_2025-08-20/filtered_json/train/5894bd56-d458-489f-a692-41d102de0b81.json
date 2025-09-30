@@ -1,0 +1,207 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2017-02-03",
+        "published":true,
+        "info":"OSINT: Malicious software targeting financial sector internals",
+        "publish_timestamp":"1486155976",
+        "timestamp":"1486155965",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            },
+            {
+                "name":"Threat Type:RAT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143093",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143095",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143096",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143097",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143097",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143098",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware hash",
+                "timestamp":"1486143099",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1486143100",
+                "type":"ip-dst",
+                "value":"125.214.195.17",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1486143100",
+                "type":"ip-dst",
+                "value":"196.29.166.218",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"injected URL in compromised website",
+                "timestamp":"1486143101",
+                "type":"url",
+                "value":"http://sap.misapor.ch/vishop/view.jsp?pagenum=1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486143102",
+                "type":"hostname",
+                "value":"sap.misapor.ch",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"sap.misapor.ch",
+                "timestamp":"1486143103",
+                "type":"ip-dst",
+                "value":"109.164.247.169",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"injected URL in compromised website",
+                "timestamp":"1486143103",
+                "type":"url",
+                "value":"https://www.eye-watch.in/design/fancybox/Pnf.action",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1486143104",
+                "type":"hostname",
+                "value":"www.eye-watch.in",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"www.eye-watch.in",
+                "timestamp":"1486143105",
+                "type":"ip-dst",
+                "value":"54.225.154.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"www.eye-watch.in",
+                "timestamp":"1486143105",
+                "type":"ip-dst",
+                "value":"54.235.128.97",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised website for distribution",
+                "timestamp":"1486143106",
+                "type":"url",
+                "value":"http://www.knf.gov.pl/DefaultDesign/Layouts/KNF2013/resources/accordian-src.js?ver=11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised website for distribution",
+                "timestamp":"1486143107",
+                "type":"hostname",
+                "value":"www.knf.gov.pl",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised website for distribution",
+                "timestamp":"1486143108",
+                "type":"hostname",
+                "value":"knf.gov.pl",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"compromised website for distribution",
+                "timestamp":"1486155965",
+                "type":"link",
+                "value":"https://badcyber.com/several-polish-banks-hacked-information-stolen-by-unknown-attackers/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"malware hash - Xchecked via VT: d4616f9706403a0d5a2f9a8726230a4693e4c95c58df5c753ccc684f1d3542e2",
+                "timestamp":"1486155927",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d4616f9706403a0d5a2f9a8726230a4693e4c95c58df5c753ccc684f1d3542e2/analysis/1486132198/",
+                "to_ids":false
+            }
+        ]
+    }
+}

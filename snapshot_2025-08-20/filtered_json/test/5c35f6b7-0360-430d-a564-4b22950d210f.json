@@ -1,0 +1,54 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-08",
+        "published":false,
+        "info":"OSINT - Adware Disguised as Game, TV, Remote Control Apps Infect 9 Million Google Play Users",
+        "publish_timestamp":"0",
+        "timestamp":"1547046426",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"veris:action:malware:variety=\"Adware\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Adware\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Adware\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"spyware-or-deceptive-adware\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Adware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547040828",
+                "type":"link",
+                "value":"https://blog.trendmicro.com/trendlabs-security-intelligence/adware-disguised-as-game-tv-remote-control-apps-infect-9-million-google-play-users/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1547040827",
+                "type":"text",
+                "value":"Adware is bothersome, disruptive, and have been around for a long time, but they’re still around. In fact, we recently discovered an active adware family (detected by Trend Micro as AndroidOS_HidenAd) disguised as 85 game, TV, and remote control simulator apps on the Google Play store. This adware is capable of displaying full-screen ads, hiding itself, monitoring a device’s screen unlocking functionality, and running in the mobile device’s background. The 85 fake apps, which have been downloaded a total of 9 million times around the world. After verifying our report, Google swiftly suspended the fake apps from the Play store.",
+                "to_ids":false
+            }
+        ]
+    }
+}

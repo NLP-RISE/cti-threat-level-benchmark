@@ -1,0 +1,82 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-12-07",
+        "published":true,
+        "info":"Threat Analysis: MSI - Masquerading as a Software Installer",
+        "publish_timestamp":"1670442590",
+        "timestamp":"1670442581",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1670433806",
+                "type":"comment",
+                "value":"Threat Analysis: MSI - Masquerading as a Software Installer",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1670433806",
+                "type":"link",
+                "value":"https://www.cybereason.com/blog/threat-analysis-msi-masquerading-as-software-installer",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MatanBuchus Loader",
+                "timestamp":"1670433959",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Magniber Ransomware",
+                "timestamp":"1670433948",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Qbot / Qakbot",
+                "timestamp":"1670433989",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped into the INSTALLLOCATION directory",
+                "timestamp":"1670434163",
+                "type":"filename",
+                "value":"notify.vbs",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"dropped into the INSTALLLOCATION directory",
+                "timestamp":"1670434152",
+                "type":"filename",
+                "value":"main.dll",
+                "to_ids":false
+            }
+        ]
+    }
+}

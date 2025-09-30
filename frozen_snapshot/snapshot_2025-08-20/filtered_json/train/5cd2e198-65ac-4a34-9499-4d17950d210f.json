@@ -1,0 +1,220 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-04-30",
+        "published":false,
+        "info":"OSINT -  Sodinokibi ransomware exploits WebLogic Server vulnerability",
+        "publish_timestamp":"0",
+        "timestamp":"1557730264",
+        "Tag":[
+            {
+                "name":"workflow:state=\"incomplete\""
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557324568",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2019/04/sodinokibi-ransomware-exploits-weblogic.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1557729374",
+                "type":"text",
+                "value":"Attackers are actively exploiting a recently disclosed vulnerability in Oracle WebLogic to install a new variant of ransomware called \"Sodinokibi.\" Sodinokibi attempts to encrypt data in a user's directory and delete shadow copy backups to make data recovery more difficult. Oracle first patched the issue on April 26, outside of their normal patch cycle, and assigned it CVE-2019-2725. This vulnerability is easy for attackers to exploit, as anyone with HTTP access to the WebLogic server could carry out an attack. Because of this, the bug has a CVSS score of 9.8/10. Attackers have been making use of this exploit in the wild since at least April 17. Cisco's Incident Response (IR) team, along with Cisco Talos, are actively investigating these attacks and Sodinokibi.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL",
+                "timestamp":"1557729830",
+                "type":"url",
+                "value":"http://188.166.74.218/office.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL",
+                "timestamp":"1557729831",
+                "type":"url",
+                "value":"http://188.166.74.218/radm.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL",
+                "timestamp":"1557729831",
+                "type":"url",
+                "value":"http://188.166.74.218/untitled.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL",
+                "timestamp":"1557729831",
+                "type":"url",
+                "value":"http://45.55.211.79/.cache/untitled.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attacker IP",
+                "timestamp":"1557729901",
+                "type":"ip-dst",
+                "value":"130.61.54.136",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Attacker domain",
+                "timestamp":"1557729902",
+                "type":"domain",
+                "value":"decryptor.top",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Ransomware sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557729680",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557729680",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557729681",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomware sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557729708",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557729708",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557729708",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomware sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557729728",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557729728",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557729728",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomware sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557729779",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557729779",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557729780",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ransomware sample",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1557729798",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1557729799",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1557729799",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

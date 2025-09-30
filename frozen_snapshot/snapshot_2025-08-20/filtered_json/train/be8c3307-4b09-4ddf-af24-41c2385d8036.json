@@ -1,0 +1,167 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-08-29",
+        "published":true,
+        "info":"Remcos RAT New TTPS – Detection & Response",
+        "publish_timestamp":"1666619765",
+        "timestamp":"1661935212",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Remcos\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Remcos - S0332\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"Remcos\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661929982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661929982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661929982",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1661929997",
+                "type":"url",
+                "value":"http://geoplugin.net/json.gp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1661929997",
+                "type":"hostname",
+                "value":"falimore001.hopto.org",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1661929997",
+                "type":"ip-dst",
+                "value":"178.237.33.50",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1661929997",
+                "type":"ip-dst",
+                "value":"194.147.140.29",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661930088",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661930088",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661930088",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661935212",
+                "type":"filename",
+                "value":"%WINDIR%\\Microsoft.NET\\Framework64\\v4.0.30319\\vbc.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1661935212",
+                "type":"filename",
+                "value":"%WINDIR%\\Microsoft.NET\\Framework64\\v4.0.30319\\vbc.exe.config",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1661863367",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1661863367",
+                        "type":"link",
+                        "value":"https://www.socinvestigation.com/remcos-rat-new-ttps-detection-response/",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1661868209",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1661868209",
+                        "type":"link",
+                        "value":"https://otx.alienvault.com/pulse/630cbb6eb1975f82211a702f",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

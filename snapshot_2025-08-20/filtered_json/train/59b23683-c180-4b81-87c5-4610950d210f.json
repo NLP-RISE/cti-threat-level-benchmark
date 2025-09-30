@@ -1,0 +1,74 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-24",
+        "published":true,
+        "info":"OSINT -  New multi platform malware/adware spreading via Facebook Messenger",
+        "publish_timestamp":"1504870931",
+        "timestamp":"1504870925",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504870919",
+                "type":"link",
+                "value":"https://securelist.com/new-multi-platform-malwareadware-spreading-via-facebook-messenger/81590/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1504870919",
+                "type":"comment",
+                "value":"One good thing about having a lot of Facebook friends is that you simply act as a honey pot when your friends click on malicious things. A few days ago I got a message on Facebook from a person I very rarely speak to, and I knew that something fishy was going on.\r\n\r\nAfter just a few minutes analyzing the message, I understood that I was just peeking at the top of this iceberg. This malware was spreading via Facebook Messenger, serving multi platform malware/adware, using tons of domains to prevent tracking, and earning clicks. The code is advanced and obfuscated.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1504870919",
+                "type":"filename|md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ebc117c0cf03ad4b13184d1253862586",
+                "timestamp":"1504870919",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"- Xchecked via VT: ebc117c0cf03ad4b13184d1253862586",
+                "timestamp":"1504870919",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"- Xchecked via VT: ebc117c0cf03ad4b13184d1253862586",
+                "timestamp":"1504870919",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ad1b11cb053df4e8cb890872fa4a25057d514a8c2778b6b745c5aaf5b3f984cd/analysis/1504836659/",
+                "to_ids":false
+            }
+        ]
+    }
+}

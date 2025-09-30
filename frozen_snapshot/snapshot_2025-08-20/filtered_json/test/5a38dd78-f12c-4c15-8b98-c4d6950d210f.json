@@ -1,0 +1,154 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-12-08",
+        "published":true,
+        "info":"OSINT - GratefulPOS credit card stealing malware - just in time for the shopping season",
+        "publish_timestamp":"1518771480",
+        "timestamp":"1518231662",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"riskiq:threat-type=\"credit-card-stealer\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518185205",
+                "type":"link",
+                "value":"https://community.rsa.com/community/products/netwitness/blog/2017/12/08/gratefulpos-credit-card-stealing-malware-just-in-time-for-the-shopping-season",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1518185206",
+                "type":"comment",
+                "value":"Well into the holiday season, people are making their shopping lists, recovering from Black Friday and Cyber Monday, and perhaps contemplating the many things for which they are grateful.  Criminals, too, are making their lists, and posturing for the big shopping days ahead.  \r\n\r\nThreat researchers are still at work of course, so it was inevitable that FirstWatch contemplated which things credit card stealing criminals--AKA â€œcardersâ€ appreciate.  This is what we came up with.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"GratefulPOS exfiltration domain",
+                "timestamp":"1518185206",
+                "type":"domain",
+                "value":"a193-108-94-56-deploy-akamaitechnologies.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Current Exfiltration DNS server",
+                "timestamp":"1518185206",
+                "type":"ip-dst",
+                "value":"96.44.135.70",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"GratefulPOS",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1513676354",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1513676354",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1513676354",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1518185210",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185207",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185207",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1518185208",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1518185208",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1518185208",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/5540b8d51f2190c45aaa5212c866c402f834d5988752537c388dcfecdf89f4e4/analysis/1514451231/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1518185209",
+                        "type":"text",
+                        "value":"41/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1518185209",
+                        "type":"datetime",
+                        "value":"2017-12-28T08:53:51",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

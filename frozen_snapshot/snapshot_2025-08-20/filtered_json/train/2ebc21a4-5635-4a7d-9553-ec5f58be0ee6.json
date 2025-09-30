@@ -1,0 +1,954 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2021-02-02",
+        "published":true,
+        "info":"OSINT - Kobalos – A complex Linux threat to high performance computing infrastructure",
+        "publish_timestamp":"1612271515",
+        "timestamp":"1612271360",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"estimative-language:confidence-in-analytic-judgment=\"high\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Client Software Binary - T1554\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Traffic Signaling - T1205\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Clear Command History - T1070.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Timestomp - T1070.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Software Packing - T1027.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Encrypted Channel - T1573\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Proxy - T1090\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1612270940",
+                "type":"link",
+                "value":"https://github.com/eset/malware-ioc/blob/master/kobalos/README.adoc",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1612270940",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2021/02/02/kobalos-complex-linux-threat-high-performance-computing-infrastructure/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Static RC4 key for strings",
+                "description":"Cryptographic materials such as public or/and private keys.",
+                "meta-category":"misc",
+                "name":"crypto-material",
+                "timestamp":"1612264069",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264069",
+                        "type":"text",
+                        "value":"RC4",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264069",
+                        "type":"text",
+                        "value":"AE0E05090F3AC2B50B1BC6E91D2FE3CE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Cryptographic materials such as public or/and private keys.",
+                "meta-category":"misc",
+                "name":"crypto-material",
+                "timestamp":"1612264120",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264120",
+                        "type":"text",
+                        "value":"RSA",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264120",
+                        "type":"text",
+                        "value":"-----BEGIN PUBLIC KEY-----\r\nMFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAOUgD8sEF1kZ04QxCd60HrB+TxWnLQED\r\nwzb0sZ8vMMD6xnUAJspdYzSVDnRnKYjTOM43qtLNcJOwVj6cuC1uHHMCAwEAAQ==\r\n-----END PUBLIC KEY-----",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1612264189",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1612264189",
+                        "type":"port",
+                        "value":"7070",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1612264189",
+                        "type":"ip-dst",
+                        "value":"151.80.57.191",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Stand-alone binary - (Debian OS) - Connects to 151.80.57.191:7070",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264326",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612264327",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"datetime",
+                        "value":"2021-02-01T18:56:46+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/73576d5a21ec2f164fe37bea86964e18dca1b800a8c7a104223cc35d74e7bd58/detection/f-73576d5a21ec2f164fe37bea86964e18dca1b800a8c7a104223cc35d74e7bd58-1612205806",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"text",
+                        "value":"3/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"RHEL\r\n\t\r\n\r\nsshd\r\n\t\r\n\r\nWait for connection from source port 55201",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264495",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"FreeBSD\r\n\t\r\n\r\nsshd Wait for connection from source port 55201",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264674",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Ubuntu\r\n\t\r\n\r\nsshd\r\n\t\r\n\r\nWait for connection from source port 55201",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264719",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264719",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264719",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Arch Linux\r\n\t\r\n\r\nsshd\r\n\t\r\n\r\nWait for connection from source port 55201",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264794",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264794",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264794",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SSH credential stealer ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270166",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612264961",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264961",
+                        "type":"text",
+                        "value":"/var/run/nscd/ns.pid",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SSH credential stealer ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270308",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270284",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270284",
+                        "type":"text",
+                        "value":"/var/run/udev/ud.pid",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SSH credential stealer FreeBSD",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270584",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270548",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270548",
+                        "type":"text",
+                        "value":"/var/run/udevd.pid",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SSH credential stealer ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270670",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270625",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270625",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"SSH credential stealer ",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270756",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270708",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270708",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612270731",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270731",
+                        "type":"text",
+                        "value":"/var/run/sshd/sshd.pid",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1612270820",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270820",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1612270820",
+                        "type":"yara",
+                        "value":"rule kobalos\r\n{\r\n    meta:\r\n        description = \"Kobalos malware\"\r\n        author = \"Marc-Etienne M.Léveillé\"\r\n        date = \"2020-11-02\"\r\n        reference = \"http://www.welivesecurity.com\"\r\n        source = \"https://github.com/eset/malware-ioc/\"\r\n        license = \"BSD 2-Clause\"\r\n        version = \"1\"\r\n\r\n    strings:\r\n        $encrypted_strings_sizes = {\r\n            05 00 00 00 09 00 00 00  04 00 00 00 06 00 00 00\r\n            08 00 00 00 08 00 00 00  02 00 00 00 02 00 00 00\r\n            01 00 00 00 01 00 00 00  05 00 00 00 07 00 00 00\r\n            05 00 00 00 05 00 00 00  05 00 00 00 0A 00 00 00\r\n        }\r\n        $password_md5_digest = { 3ADD48192654BD558A4A4CED9C255C4C }\r\n        $rsa_512_mod_header = { 10 11 02 00 09 02 00 }\r\n        $strings_rc4_key = { AE0E05090F3AC2B50B1BC6E91D2FE3CE }\r\n\r\n    condition:\r\n        any of them\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1612270855",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270855",
+                        "type":"text",
+                        "value":"all",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1612270855",
+                        "type":"yara",
+                        "value":"rule kobalos_ssh_credential_stealer {\r\n    meta:\r\n        description = \"Kobalos SSH credential stealer seen in OpenSSH client\"\r\n        author = \"Marc-Etienne M.Léveillé\"\r\n        date = \"2020-11-02\"\r\n        reference = \"http://www.welivesecurity.com\"\r\n        source = \"https://github.com/eset/malware-ioc/\"\r\n        license = \"BSD 2-Clause\"\r\n        version = \"1\"\r\n\r\n    strings:\r\n        $ = \"user: %.128s host: %.128s port %05d user: %.128s password: %.128s\"\r\n\r\n    condition:\r\n        any of them\r\n}",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1612271004",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270903",
+                        "type":"text",
+                        "value":"ESET researchers have analyzed malware that has been targeting high performance computing (HPC) clusters, among other high-profile targets. We reverse engineered this small, yet complex, malware that is portable to many operating systems including Linux, BSD, Solaris, and possibly AIX and Windows. We have named this malware Kobalos for its tiny code size and many tricks; in Greek mythology, a Kobalos is a small, mischievous creature. Today we publish a paper titled “A wild Kobalos appears: Tricksy Linux malware goes after HPCs” describing the inner working of this threat.",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"datetime",
+                        "value":"2020-03-04T18:41:56+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/75edf6662811d001da179b96bd06d675aa2439fd88a981cc84f24b4a5b4f8f45/detection/f-75edf6662811d001da179b96bd06d675aa2439fd88a981cc84f24b4a5b4f8f45-1583347316",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270230",
+                        "type":"text",
+                        "value":"0/61",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"datetime",
+                        "value":"2021-02-02T11:56:14+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/6c36e0341ea1529665de88b690a19a18ea02d2a2a5bae6d745e01efc194e486a/detection/f-6c36e0341ea1529665de88b690a19a18ea02d2a2a5bae6d745e01efc194e486a-1612266974",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264902",
+                        "type":"text",
+                        "value":"1/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"datetime",
+                        "value":"2021-02-01T18:56:46+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/73576d5a21ec2f164fe37bea86964e18dca1b800a8c7a104223cc35d74e7bd58/detection/f-73576d5a21ec2f164fe37bea86964e18dca1b800a8c7a104223cc35d74e7bd58-1612205806",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264260",
+                        "type":"text",
+                        "value":"3/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"datetime",
+                        "value":"2021-02-02T08:05:42+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/d51cb52136931af5ebd8628b64d6cd1327a99196b102d246f52d878ffb581983/detection/f-d51cb52136931af5ebd8628b64d6cd1327a99196b102d246f52d878ffb581983-1612253142",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264495",
+                        "type":"text",
+                        "value":"1/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"datetime",
+                        "value":"2021-02-01T18:58:25+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/9ed33b43e679ad98615e1a4e8c46dbeb9b93271625e46f4b4d021099b4b6fb74/detection/f-9ed33b43e679ad98615e1a4e8c46dbeb9b93271625e46f4b4d021099b4b6fb74-1612205905",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612264674",
+                        "type":"text",
+                        "value":"1/61",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1612271360",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"datetime",
+                        "value":"2020-03-09T08:44:44+00:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/13cbde1b79ca195a06697df937580c82c0e1cd90cc91c18ddfe4a7802e8e923a/detection/f-13cbde1b79ca195a06697df937580c82c0e1cd90cc91c18ddfe4a7802e8e923a-1583743484",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1612270522",
+                        "type":"text",
+                        "value":"0/59",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

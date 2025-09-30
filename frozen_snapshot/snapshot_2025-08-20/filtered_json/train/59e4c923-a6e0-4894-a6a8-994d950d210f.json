@@ -1,0 +1,92 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-10-16",
+        "published":true,
+        "info":"OSINT - BlackOasis APT and new targeted attacks leveraging zero-day exploit",
+        "publish_timestamp":"1508166265",
+        "timestamp":"1508166251",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:tool=\"FINSPY\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1508166188",
+                "type":"vulnerability",
+                "value":"CVE-2017-11292",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"As mentioned earlier, the â€œmo.exeâ€ payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma Internationalâ€™s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations.",
+                "timestamp":"1508166188",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download the final payload (FinSpy) from",
+                "timestamp":"1508166188",
+                "type":"ip-dst",
+                "value":"89.45.67.107",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Download the final payload (FinSpy) from",
+                "timestamp":"1508166188",
+                "type":"url",
+                "value":"http://89.45.67.107/rss/mo.exe",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508166188",
+                "type":"link",
+                "value":"https://securelist.com/blackoasis-apt-and-new-targeted-attacks-leveraging-zero-day-exploit/82732/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1508166188",
+                "type":"text",
+                "value":"Kaspersky Lab has always worked closely with vendors to protect users. As soon as we find new vulnerabilities we immediately inform the vendor in a responsible manner and provide all the details required for a fix.\r\n\r\nOn October 10, 2017, Kaspersky Labâ€™s advanced exploit prevention systems identified a new Adobe Flash zero day exploit used in the wild against our customers. The exploit was delivered through a Microsoft Office document and the final payload was the latest version of FinSpy malware. We have reported the bug to Adobe who assigned it CVE-2017-11292 and released a patch earlier today:\r\n\r\nSo far only one attack has been observed in our customer base, leading us to believe the number of attacks are minimal and highly targeted.\r\n\r\nAnalysis of the payload allowed us to confidently link this attack to an actor we track as â€œBlackOasisâ€. We are also highly confident that BlackOasis was also responsible for another zero day exploit (CVE-2017-8759) discovered by FireEye in September 2017.  The FinSpy payload used in the current attacks (CVE-2017-11292) shares the same command and control (C2) server as the payload used with CVE-2017-8759 uncovered by FireEye.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"As mentioned earlier, the â€œmo.exeâ€ payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma Internationalâ€™s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations. - Xchecked via VT: 4a49135d2ecc07085a8b7c5925a36c0a",
+                "timestamp":"1508166188",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"As mentioned earlier, the â€œmo.exeâ€ payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma Internationalâ€™s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations. - Xchecked via VT: 4a49135d2ecc07085a8b7c5925a36c0a",
+                "timestamp":"1508166188",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"As mentioned earlier, the â€œmo.exeâ€ payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma Internationalâ€™s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations. - Xchecked via VT: 4a49135d2ecc07085a8b7c5925a36c0a",
+                "timestamp":"1508166188",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/16070014b86f2254dcf273bbce78fb6eca43df9a6fc3c6ab85ec8f06a4063b06/analysis/1508127395/",
+                "to_ids":false
+            }
+        ]
+    }
+}

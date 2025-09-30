@@ -1,0 +1,107 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-09-14",
+        "published":false,
+        "info":"OSINT - Fallout Exploit Kit Pushing the SAVEfiles Ransomware",
+        "publish_timestamp":"0",
+        "timestamp":"1540555043",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"riskiq:threat-type=\"exploit-kit\""
+            },
+            {
+                "name":"workflow:todo=\"add-missing-misp-galaxy-cluster-values\""
+            },
+            {
+                "name":"misp-galaxy:exploit-kit=\"Fallout\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1539173592",
+                "type":"url",
+                "value":"http://xxxart.pp.ua/1/get.php",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1539173867",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/fallout-exploit-kit-pushing-the-savefiles-ransomware/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539174122",
+                "type":"email-src",
+                "value":"bm-2cxonzj9ovn5qdx2mrwmk4j3qcquxbko4h@bitmessage.ch",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1539174123",
+                "type":"email-src",
+                "value":"savefiles@india.com",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"ransomnote",
+                "timestamp":"1539174215",
+                "type":"attachment",
+                "value":"ransom-note-red.jpg",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1539174357",
+                "type":"text",
+                "value":"Last week the Fallout Exploit kit was distributing the GandCrab ransomware. This week, it has started to distribute a new ransomware called SAVEfiles, for lack of a better name, through malvertising campaigns.\r\n\r\nThis ransomware was first discovered by Michael Gillespie, but it was not known how it was being distributed. Today, exploit kit expert Kafeine, discovered it being distributed in malvertising campaigns where IP addresses in Japan, France, and other locations have been targeted.",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Ransomnote",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1539174180",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1539174180",
+                        "type":"filename",
+                        "value":"!!!SAVE__FILES__INFO!!!.txt",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1539174180",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

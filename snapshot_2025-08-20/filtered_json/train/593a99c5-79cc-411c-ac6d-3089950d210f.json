@@ -1,0 +1,473 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-06-09",
+        "published":true,
+        "info":"OSINT - FIREBALL â€“ The Chinese Malware of 250 Million Computers Infected",
+        "publish_timestamp":"1497013733",
+        "timestamp":"1497013712",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1497013712",
+                "type":"text",
+                "value":"Check Point Threat Intelligence and research teams recently discovered a high volume Chinese threat operation which has infected over 250 million computers worldwide. The installed malware,  Fireball, takes over target browsers and turns them into zombies. Fireball has two main functionalities:  the ability of running any code on victim computersâ€“downloading any file or malware, and  hijacking and manipulating infected usersâ€™ web-traffic to generate ad-revenue. Currently, Fireball installs plug-ins and additional configurations to boost its advertisements, but just as easily it can turn into a prominent distributor for any additional malware.\r\n\r\nThis operation is run by Rafotech, a large digital marketing agency based in Beijing. Rafotech uses Fireball to manipulate the victimsâ€™ browsers and turn their default search engines and home-pages into fake search engines. This redirects the queries to either yahoo.com or Google.com. The fake search engines include tracking pixels used to collect the usersâ€™ private information. Fireball has the ability to  spy on victims, perform efficient malware dropping, and execute any malicious code in the infected machines, this creates a massive security flaw in targeted machines and networks.\r\n\r\n \r\n\r\nKEY FINDINGS\r\n\r\n    Check Point analysts uncovered a high volume Chinese threat operation which has infected over 250 million computers worldwide, and 20% of corporate networks.\r\n    The malware, called Fireball, acts as a browser-hijacker but and can be turned into a full-functioning malware downloader. Fireball is capable of executing any code on the victim machines, resulting in a wide range of actions from stealing credentials to dropping additional malware.\r\n    Fireball is spread mostly via bundling i.e. installed on victim machines alongside a wanted program, often without the userâ€™s consent.\r\n    The operation is run by Chinese digital marketing agency.\r\n    Top infected countries are India (10.1%) and Brazil (9.6%)",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1497013711",
+                "type":"link",
+                "value":"http://blog.checkpoint.com/2017/06/01/fireball-chinese-malware-250-million-infection/",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"attirerpage.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"s2s.rafotech.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"trotux.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"startpageing123.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"funcionapage.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"universalsearches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"thewebanswers.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"nicesearches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"youndoo.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"giqepofa.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"mustang-browser.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"forestbrowser.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"luckysearch123.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"ooxxsearch.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"search2000s.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"walasearch.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"hohosearch.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"domain",
+                "value":"yessearches.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d3l4qa0kmel7is.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d5ou3dytze6uf.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d1vh0xkmncek4z.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d26r15y2ken1t9.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d11eq81k50lwgi.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"ddyv8sl7ewq1w.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d3i1asoswufp5k.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"dc44qjwal3p07.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"dv2m1uumnsgtu.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"d1mxvenloqrqmu.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"dfrs12kz9qye2.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1497013658",
+                "type":"hostname",
+                "value":"dgkytklfjrqkb.cloudfront.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1497013658",
+                "type":"url",
+                "value":"dgkytklfjrqkb.cloudfront.net/main/trmz.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample",
+                "timestamp":"1497013658",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: fab40a7bde5250a6bc8644f4d6b9c28f",
+                "timestamp":"1497013673",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: fab40a7bde5250a6bc8644f4d6b9c28f",
+                "timestamp":"1497013673",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: fab40a7bde5250a6bc8644f4d6b9c28f",
+                "timestamp":"1497013674",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9b4971349ae85aa09c0a69852ed3e626c954954a3927b3d1b6646f139b930022/analysis/1497008302/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 69ffdf99149d19be7dc1c52f33aaa651",
+                "timestamp":"1497013674",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 69ffdf99149d19be7dc1c52f33aaa651",
+                "timestamp":"1497013675",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 69ffdf99149d19be7dc1c52f33aaa651",
+                "timestamp":"1497013675",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e3f69a1fb6fcaf9fd93386b6ba1d86731cd9e5648f7cff5242763188129cd158/analysis/1497008303/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: b56d1d35d46630335e03af9add84b488",
+                "timestamp":"1497013675",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: b56d1d35d46630335e03af9add84b488",
+                "timestamp":"1497013676",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: b56d1d35d46630335e03af9add84b488",
+                "timestamp":"1497013676",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c7244d139ef9ea431a5b9cc6a2176a6a9908710892c74e215431b99cd5228359/analysis/1497008303/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 8c61a6937963507dc87d8bf00385c0bc",
+                "timestamp":"1497013676",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 8c61a6937963507dc87d8bf00385c0bc",
+                "timestamp":"1497013677",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 8c61a6937963507dc87d8bf00385c0bc",
+                "timestamp":"1497013677",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/14093ce6d0fe8ab60963771f48937c669103842a0400b8d97f829b33c420f7e3/analysis/1497008304/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 7adb7f56e81456f3b421c01ab19b1900",
+                "timestamp":"1497013677",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 7adb7f56e81456f3b421c01ab19b1900",
+                "timestamp":"1497013678",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 7adb7f56e81456f3b421c01ab19b1900",
+                "timestamp":"1497013678",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fff2818caa9040486a634896f329b8aebaec9121bdf9982841f0646763a1686b/analysis/1497008304/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 2b307e28ce531157611825eb0854c15f",
+                "timestamp":"1497013679",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Sample - Xchecked via VT: 2b307e28ce531157611825eb0854c15f",
+                "timestamp":"1497013679",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Sample - Xchecked via VT: 2b307e28ce531157611825eb0854c15f",
+                "timestamp":"1497013679",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7d68386554e514f38f98f24e8056c11c0a227602ed179d54ed08f2251dc9ea93/analysis/1497008376/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,1100 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-11-14",
+        "published":false,
+        "info":"OSINT - HIDDEN COBRA – North Korean Remote Administration Tool: FALLCHILL",
+        "publish_timestamp":"0",
+        "timestamp":"1511183733",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"technical-report\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"Lazarus Group\""
+            },
+            {
+                "name":"misp-galaxy:rat=\"FALLCHILL\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"98.101.211.162",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"81.0.213.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510825132",
+                "type":"ip-dst",
+                "value":"175.100.189.174",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510825131",
+                "type":"ip-dst",
+                "value":"125.212.132.222",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510922092",
+                "type":"comment",
+                "value":"This joint Technical Alert (TA) is the result of analytic efforts between the Department of Homeland Security (DHS) and the Federal Bureau of Investigation (FBI). Working with U.S. government partners, DHS and FBI identified Internet Protocol (IP) addresses and other indicators of compromise (IOCs) associated with a remote administration tool (RAT) used by the North Korean government—commonly known as FALLCHILL. The U.S. Government refers to malicious cyber activity by the North Korean government as HIDDEN COBRA. For more information on HIDDEN COBRA activity, visit https://www.us-cert.gov/hiddencobra.\r\n\r\nFBI has high confidence that HIDDEN COBRA actors are using the IP addresses—listed in this report’s IOC files—to maintain a presence on victims’ networks and to further network exploitation. DHS and FBI are distributing these IP addresses to enable network defense and reduce exposure to any North Korean government malicious cyber activity.\r\n\r\nThis alert includes IOCs related to HIDDEN COBRA, IP addresses linked to systems infected with FALLCHILL malware, malware descriptions, and associated signatures. This alert also includes suggested response actions to the IOCs provided, recommended mitigation techniques, and information on reporting incidents. If users or administrators detect activity associated with the FALLCHILL malware, they should immediately flag it, report it to the DHS National Cybersecurity and Communications Integration Center (NCCIC) or the FBI Cyber Watch (CyWatch), and give it the highest priority for enhanced mitigation.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510922092",
+                "type":"link",
+                "value":"https://www.us-cert.gov/ncas/alerts/TA17-318A",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.118",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.141",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.5",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.50",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.54",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.56",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"181.119.19.74",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"190.105.225.232",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"41.92.208.194",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"41.92.208.196",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"41.92.208.197",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922092",
+                "type":"ip-dst",
+                "value":"209.183.21.222",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"190.82.74.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"190.82.86.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"111.207.78.204",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"119.10.74.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"122.114.89.131",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"122.114.94.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"139.217.27.203",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"221.208.194.72",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"221.235.53.229",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"77.78.100.101",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"62.243.45.227",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"117.232.100.154",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"59.90.93.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"125.160.213.239",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"27.123.221.66",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"36.71.90.4",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"191.233.33.177",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"200.57.90.108",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"5.79.99.169",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"203.160.191.116",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"196.25.89.30",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"82.223.213.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"82.223.73.81",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"91.116.139.195",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"195.74.38.115",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"210.202.40.35",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"104.192.193.149",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"173.0.129.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"173.0.129.83",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"191.234.40.112",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"199.167.100.46",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"208.180.64.10",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"208.78.33.70",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"208.78.33.82",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"216.163.20.178",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"50.62.168.157",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"64.29.144.201",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"66.175.41.191",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922093",
+                "type":"ip-dst",
+                "value":"66.232.121.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.12",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.13",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.134",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.140",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.158",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.162",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.163",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.164",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.170",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.173",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.179",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.181",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.185",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.186",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"66.242.128.223",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"71.125.1.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"71.125.1.132",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"71.125.1.133",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"71.125.1.138",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"72.167.53.183",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"75.103.110.134",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"96.65.90.58",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"98.101.211.140",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"98.101.211.170",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"98.101.211.251",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"98.113.84.130",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"98.159.16.132",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1510922094",
+                "type":"ip-dst",
+                "value":"197.211.212.14",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"INSTALLATION",
+                "timestamp":"1510825133",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"INSTALLATION",
+                "timestamp":"1510825133",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1510827459",
+                "type":"ip-dst",
+                "value":"10.10.30.110",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"(header)",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".text",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".rdata",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".data",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".rsrc",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"On port 443",
+                "timestamp":"1510922094",
+                "type":"ip-dst|port",
+                "value":"125.212.132.222|443",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"On port 443",
+                "timestamp":"1510922094",
+                "type":"ip-dst|port",
+                "value":"175.100.189.174|443",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"On port 1992",
+                "timestamp":"1510922094",
+                "type":"ip-dst|port",
+                "value":"10.10.30.110|1992",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1510922094",
+                "type":"attachment",
+                "value":"MAR-10135536-A_WHITE_S508C.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"(header)",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".test",
+                "timestamp":"1510922094",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".rdata",
+                "timestamp":"1510922095",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".data",
+                "timestamp":"1510922095",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".pdata",
+                "timestamp":"1510922095",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".rsrc",
+                "timestamp":"1510922095",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":".reloc",
+                "timestamp":"1510922095",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"INSTALLATION - Xchecked via VT: e48fe20eb1f5a5887f2ac631fed9ed63",
+                "timestamp":"1510922095",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"INSTALLATION - Xchecked via VT: e48fe20eb1f5a5887f2ac631fed9ed63",
+                "timestamp":"1510922095",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a606716355035d4a1ea0b15f3bee30aad41a2c32df28c2d468eafd18361d60d6/analysis/1510823064/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"INSTALLATION - Xchecked via VT: 1216da2b3d6e64075e8434be1058de06",
+                "timestamp":"1510922095",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"INSTALLATION - Xchecked via VT: 1216da2b3d6e64075e8434be1058de06",
+                "timestamp":"1510922095",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/0a118eb23399000d148186b9079fa59caf4c3faa7e7a8f91533e467ac9b6ff41/analysis/1510822839/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1510828210",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"float",
+                        "value":"5.49321665686",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"filename",
+                        "value":"E48FE20EB1F5A5887F2AC631FED9ED63",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1510828211",
+                        "type":"size-in-bytes",
+                        "value":"94208",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510828710",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828710",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828710",
+                        "type":"ip-dst",
+                        "value":"125.212.132.222",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510828731",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828731",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828731",
+                        "type":"ip-dst",
+                        "value":"175.100.189.174",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1510828762",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828762",
+                        "type":"port",
+                        "value":"1992",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1510828762",
+                        "type":"ip-dst",
+                        "value":"10.10.30.110",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1510829354",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510829354",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1510829355",
+                        "type":"float",
+                        "value":"6.27082111511",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510829355",
+                        "type":"filename",
+                        "value":"1216DA2B3D6E64075E8434BE1058DE06",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510829355",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1510829355",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

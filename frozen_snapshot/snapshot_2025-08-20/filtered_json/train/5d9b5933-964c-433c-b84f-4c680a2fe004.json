@@ -1,0 +1,742 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-10-07",
+        "published":true,
+        "info":"Emotet in Depth TTP 10-07-19",
+        "publish_timestamp":"1592358012",
+        "timestamp":"1621850615",
+        "Tag":[
+            {
+                "name":"Emotet"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1193\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command-Line Interface - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scripting - T1064\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Management Instrumentation - T1047\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1060\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Injection - T1055\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Account Discovery - T1087\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Trust Discovery - T1482\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Application Layer Protocol - T1071\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Empire - S0363\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"Emotet\""
+            },
+            {
+                "name":"misp-galaxy:mitre-tool=\"Cobalt Strike - S0154\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1086\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"New Service - T1050\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Maldoc 1st stage Download URL's",
+                "timestamp":"1570462687",
+                "type":"url",
+                "value":"http://dulich.goasiatravel.com/calendar/u8hsm_46c4yi-6024747470/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Maldoc 1st stage Download URL's",
+                "timestamp":"1570462687",
+                "type":"url",
+                "value":"https://drewnianazagroda.pl/c0nm/PtlOoIWOzs/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Maldoc 1st stage Download URL's",
+                "timestamp":"1570462687",
+                "type":"url",
+                "value":"http://latestgovernment.com/pramodchoudhary.examqualify.com/CKBOIhWtjs/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Maldoc 1st stage Download URL's",
+                "timestamp":"1570462687",
+                "type":"url",
+                "value":"https://kurumsalinternetsitesi.com/wp-content/wgSCKDClY/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Maldoc 1st stage Download URL's",
+                "timestamp":"1570462687",
+                "type":"url",
+                "value":"https://edealsadvisor.com/wp-includes/ZqLAroEkK/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/ban/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/cone/dma/arizona/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/health/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/iplk/enable/loadan/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/loadan/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/sess/pnp/ringin/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/site/vermont/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://201.184.105.242/symbols/schema/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://45.123.3.54/badge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://45.123.3.54/publish/acquire/enabled/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://45.123.3.54/site/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://80.79.23.144/free/schema/scripts/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://80.79.23.144/results/cone/window/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://80.79.23.144/splash/prov/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://104.131.11.150/cookies/usbccid/enabled/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://104.131.11.150/dma/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://104.131.11.150/img/enabled/scripts/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://142.44.162.209/pnp/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://142.44.162.209/report/chunk/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://142.44.162.209/results/glitch/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://178.254.6.27/site/results/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://178.254.6.27/stubs/pnp/window/merge/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://178.254.6.27/taskbar/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://192.254.173.31/child/",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1571266221",
+                "type":"url",
+                "value":"http://192.254.173.31/json/add/",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Source of the MISP event",
+                "timestamp":"1576589797",
+                "type":"link",
+                "value":"https://github.com/Hestat/intel-sharing/blob/master/powershell-empire-12-16-19/misp.event.7941.json",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Selected Malware Document for sandbox run",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570462332",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"malware-sample",
+                        "value":"SCAN_10079460983_IB_1007.doc|9ce5126ffcbc936ad6c0155763898f19",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"filename",
+                        "value":"SCAN_10079460983_IB_1007.doc",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570462332",
+                        "type":"size-in-bytes",
+                        "value":"175104",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Cobalt strike payload called by powershell",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570462376",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"malware-sample",
+                        "value":"ikillyou.txt|26017e97acce09276f3b4c6800dec256",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"filename",
+                        "value":"ikillyou.txt",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570462376",
+                        "type":"size-in-bytes",
+                        "value":"2789",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570467114",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1570467114",
+                        "type":"malware-sample",
+                        "value":"26017e97acce09276f3b4c6800dec256_unzipped_decoded.zip|0e8c5174646dcd87ac893271b80c9633",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Emotet Exe",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570472117",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"malware-sample",
+                        "value":"pixelproc.exe|9afcbf6f4f13a40791d368df767b4304",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"filename",
+                        "value":"pixelproc.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570472117",
+                        "type":"size-in-bytes",
+                        "value":"221184",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Trickbot Exe",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570472258",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"malware-sample",
+                        "value":".exe|9240845226d22642cbe5e0d39205d869",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"filename",
+                        "value":".exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570472258",
+                        "type":"size-in-bytes",
+                        "value":"393309",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Trickbot artifact",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570472290",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"malware-sample",
+                        "value":"settings.ini|03dfc482ccecbbbc16c5c208ae55d49a",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"filename",
+                        "value":"settings.ini",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570472290",
+                        "type":"size-in-bytes",
+                        "value":"63950",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Exchange DB file from trickbot",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1570472314",
+                "Attribute":[
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"malware-sample",
+                        "value":"grabber_temp.INTEG.RAW|b65e8c666af6ff39c67552e0c98f55d5",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"filename",
+                        "value":"grabber_temp.INTEG.RAW",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Artifacts dropped",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1570472314",
+                        "type":"size-in-bytes",
+                        "value":"138246",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Cobalt Strike C2 Server",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1570472706",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1570472706",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1570472706",
+                        "type":"ip-dst",
+                        "value":"144.202.75.93",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Powershell Empire C2",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1570472771",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1570472771",
+                        "type":"port",
+                        "value":"443",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1570472771",
+                        "type":"ip-dst",
+                        "value":"91.200.102.245",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

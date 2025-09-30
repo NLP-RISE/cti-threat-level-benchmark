@@ -1,0 +1,212 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-25",
+        "published":true,
+        "info":"OSINT - New self-protecting USB trojan able to avoid detection",
+        "publish_timestamp":"1458913170",
+        "timestamp":"1458913144",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"type:OSINT"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458912821",
+                "type":"link",
+                "value":"http://blog.eset.ie/2016/03/23/new-self-protecting-usb-trojan-able-to-avoid-detection/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458912838",
+                "type":"comment",
+                "value":"A unique data-stealing trojan has been spotted on USB devices in the wild â€“ and it is different from typical data-stealing malware. Each instance of this trojan relies on the particular USB device on which it is installed and it leaves no evidence on the compromised system. Moreover, it uses a very special mechanism to protect itself from being reproduced or copied, which makes it even harder to detect.\r\n\r\nIn this article we will examine the technical details of this interesting malware.\r\n\r\nâ€What really sets this malware apart is its self-protection mechanism.â€\r\n\r\nWhere other malware uses â€˜good old-fashioned approachesâ€™ like Autorun files or crafted shortcuts in order to get users to run it, USB Thief uses also another technique. This method depends on the increasingly common practice of storing portable versions of popular applications such as Firefox, NotePad++ and TrueCrypt on USB drives.\r\n\r\nThe malware takes advantage of this trend by inserting itself into the command chain of such applications, in the form of a plugin or a dynamically linked library (DLL). And therefore, whenever such an application is executed, the malware will also be run in the background.\r\n\r\nWhat really sets this malware apart, however, is its self-protection mechanism.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries",
+                "timestamp":"1458912969",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries",
+                "timestamp":"1458912969",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries",
+                "timestamp":"1458912970",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries",
+                "timestamp":"1458912970",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries",
+                "timestamp":"1458912970",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"payload",
+                "timestamp":"1458912993",
+                "type":"text",
+                "value":"Win32/PSW.Stealer.NAI trojan",
+                "to_ids":false
+            },
+            {
+                "category":"Antivirus detection",
+                "comment":"",
+                "timestamp":"1458913016",
+                "type":"text",
+                "value":"Win32/TrojanDropper.Agent.RFT trojan",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 2c188c395ab32eaa00e6b7aa031632248ff38b2e",
+                "timestamp":"1458913144",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 2c188c395ab32eaa00e6b7aa031632248ff38b2e",
+                "timestamp":"1458913144",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458913145",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9b07058b787c40aead135554108d12d4edde6b9d3dd5847a0cf4c03eb55cae50/analysis/1458896127/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: b03abe820c0517ccef98bc1785b7fd4cdf958278",
+                "timestamp":"1458913145",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: b03abe820c0517ccef98bc1785b7fd4cdf958278",
+                "timestamp":"1458913145",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458913145",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f2734d702a76fddcf1f6683b289b3d68cbece905ec6a4951ecf500ef8ee966ab/analysis/1458896995/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 66d169e1e503725a720d903e1dfaf456db172767",
+                "timestamp":"1458913146",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 66d169e1e503725a720d903e1dfaf456db172767",
+                "timestamp":"1458913146",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458913146",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/8e7f3a2e664e530015fd20fc4034bb957c97da500564d0d9354127896b6458cd/analysis/1458896043/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 4b2c60d77915c5695ec9d3c4364e6cd6946bd33c",
+                "timestamp":"1458913147",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 4b2c60d77915c5695ec9d3c4364e6cd6946bd33c",
+                "timestamp":"1458913147",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458913147",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a5b504fced6daf4f58989e7451441a2281d5e494dcf973ce19308da5e07514cc/analysis/1458896212/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 76471b0f34abb3c2530a16f39e10e4478cb6816d",
+                "timestamp":"1458913147",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"SHA1 hashes of decrypted binaries - Xchecked via VT: 76471b0f34abb3c2530a16f39e10e4478cb6816d",
+                "timestamp":"1458913148",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458913148",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b297ef8df5c954a033c9c40200619f9a0c61d57bdd86197e36c92e3397913c48/analysis/1458896666/",
+                "to_ids":false
+            }
+        ]
+    }
+}

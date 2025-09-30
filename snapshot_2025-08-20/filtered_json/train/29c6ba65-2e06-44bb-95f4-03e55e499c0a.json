@@ -1,0 +1,248 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-11-02",
+        "published":true,
+        "info":"Windows version of the Bibi Wiper by BiBiGun",
+        "publish_timestamp":"1698924457",
+        "timestamp":"1698924424",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Command and Scripting Interpreter - T1059\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Command Shell - T1059.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Shared Modules - T1129\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Indicator Removal - T1070\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Clear Windows Event Logs - T1070.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Steal Web Session Cookie - T1539\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"OS Credential Dumping - T1003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Indirect Command Execution - T1202\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Inhibit System Recovery - T1490\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Deletion - T1070.004\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hidden Window - T1564.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Virtualization/Sandbox Evasion - T1497\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Hide Artifacts - T1564\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Destruction - T1485\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Masquerading - T1036\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data from Local System - T1005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Security Software Discovery - T1518.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Window Discovery - T1010\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Application Layer Protocol - T1071\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1698924424",
+                "type":"link",
+                "value":"https://twitter.com/esetresearch/status/1719437301900595444",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"e26bba0304f14ef96beb60376791d32c: Enriched via the virustotal_public module",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1698923487",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/gui/file/40417e937cd244b2f928150cae6fa0eff5551fdb401ea072f6ecdda67a747e17",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"text",
+                        "value":"44/72",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e26bba0304f14ef96beb60376791d32c: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1698923487",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"domain",
+                        "value":"dns.msftncsi.com",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e26bba0304f14ef96beb60376791d32c: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1698923720",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"AS3598 - Microsoft",
+                        "timestamp":"1698923720",
+                        "type":"ip-dst",
+                        "value":"131.107.255.255",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e26bba0304f14ef96beb60376791d32c: Enriched via the virustotal_public module",
+                "description":"A domain/hostname and IP address seen as a tuple in a specific time frame.",
+                "meta-category":"network",
+                "name":"domain-ip",
+                "timestamp":"1698923724",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"AS3356 - Level3",
+                        "timestamp":"1698923724",
+                        "type":"ip-dst",
+                        "value":"67.26.241.254",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"e26bba0304f14ef96beb60376791d32c: Enriched via the virustotal_public module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1698923925",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"tlsh",
+                        "value":"<tlsh>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"vhash",
+                        "value":"<vhash>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923487",
+                        "type":"ssdeep",
+                        "value":"<ssdeep>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923899",
+                        "type":"filename",
+                        "value":"bibi.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1698923925",
+                        "type":"filename",
+                        "value":"bibi.exe.dnr",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,295 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-19",
+        "published":true,
+        "info":"OSINT - EngineBox Malware Supports 10+ Brazilian Banks",
+        "publish_timestamp":"1503137633",
+        "timestamp":"1503128009",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"veris:actor:motive=\"Financial\""
+            },
+            {
+                "name":"circl:topic=\"finance\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503128009",
+                "type":"text",
+                "value":"After receiving quite a big amount of malspam with similar messages in my honeypots this week, I decided to dedicate some time to analyze what it was about. To my surprise, after peeling multiple encoding layers protecting the malwareâ€™s core (felt like peeling an onion), I could finally find a sophisticated and well structured  banker malware capable of stealing victims' credentials of at least 10 of the biggest Brazilian public and private banks and other financial institutions. Additionally, it can also steal browser, SSH and FTP local stored credentials.\r\n\r\nThe main malware capabilities include a privilege escalation attempt using MS16â€“032 exploitation; a HTTP Proxy to intercept banking transactions; a backdoor to make it possible for the attacker to issue arbitrary remote commands and a C&C through a IRC channel. As it's being identified as a \"Generic Trojan\" by most of VirusTotal (VT) engines, let's name it \"EngineBox\"â€” the core malware class I saw after reverse engineering it.\r\n\r\nIn today's diary, I'm going to describe the main technical aspects of EngineBox. Let's start with the fluxogram in Figure 1, which illustrates the malware's behavior since the infection vector to the malicious actions. Follow the numbers in blue.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://isc.sans.edu/diary/22736",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Overview",
+                "timestamp":"1503128009",
+                "type":"attachment",
+                "value":"EB-Figure1.png",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"W7.zip",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"W7.dll",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1508201700016067882247230289631.vbs",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.tiff",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.dll",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware-binary.exe",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"westeros-x.ps",
+                "timestamp":"1503128009",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503128009",
+                "type":"url",
+                "value":"http://vimfvl6s.bslah3d1ajofjeatqu1qlkiurm0iyzwd.xyz/vzcD8L.php?vzcD8L=vIMfVL6sSUPORTE",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1503128009",
+                "type":"url",
+                "value":"http://170.254.236.10/westeros/x",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"On port 443 but (the connection is not over SSL)",
+                "timestamp":"1503128009",
+                "type":"ip-dst|port",
+                "value":"54.232.207.222|443",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Additional references",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://technet.microsoft.com/en-us/library/security/ms16-032.aspx",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Additional references",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/Invoke-MS16-032.ps1",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Additional references",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"http://www.ilspy.net/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"westeros-x.ps - Xchecked via VT: f476db89c2f6621cc36c4a7a11e1e7a3",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"westeros-x.ps - Xchecked via VT: f476db89c2f6621cc36c4a7a11e1e7a3",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"westeros-x.ps - Xchecked via VT: f476db89c2f6621cc36c4a7a11e1e7a3",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e3fe4546a5930d584f9a1ccd0ab0cb8eac041821cc238010f18190cfc25f845a/analysis/1503114310/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware-binary.exe - Xchecked via VT: eb32c070e658937aa9fa9f3ae629b2b8",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"malware-binary.exe - Xchecked via VT: eb32c070e658937aa9fa9f3ae629b2b8",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"malware-binary.exe - Xchecked via VT: eb32c070e658937aa9fa9f3ae629b2b8",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/70ba57fb0bf2f34b86426d21559f5f6d05c1268193904de8e959d7b06ce964ce/analysis/1503098248/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.dll - Xchecked via VT: 90ce84d389eabf96b4ad2f3bb083dada",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.dll - Xchecked via VT: 90ce84d389eabf96b4ad2f3bb083dada",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"aw7.dll - Xchecked via VT: 90ce84d389eabf96b4ad2f3bb083dada",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/7e476e43a56a56420b5ca05db29979332b327b1c2ccd79f86943a10714afd730/analysis/1503123304/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.tiff - Xchecked via VT: bb6756c97ab58fdfeecfe8c75b4bb81e",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"aw7.tiff - Xchecked via VT: bb6756c97ab58fdfeecfe8c75b4bb81e",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"aw7.tiff - Xchecked via VT: bb6756c97ab58fdfeecfe8c75b4bb81e",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9663e164be742893c6d1b4586796bff9b778d695823a09cfada18bec0106414a/analysis/1502992532/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1508201700016067882247230289631.vbs - Xchecked via VT: 78b86206541debb3819e51b7e9c48434",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"1508201700016067882247230289631.vbs - Xchecked via VT: 78b86206541debb3819e51b7e9c48434",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"1508201700016067882247230289631.vbs - Xchecked via VT: 78b86206541debb3819e51b7e9c48434",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c05836c76d0e462bb817742f1c4a9ea2db523161c5b9c8506cfb8c7335060e57/analysis/1503123770/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"W7.zip - Xchecked via VT: f9f6bc998dcb8a3f04dffcc6b81dcfc3",
+                "timestamp":"1503128009",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"W7.zip - Xchecked via VT: f9f6bc998dcb8a3f04dffcc6b81dcfc3",
+                "timestamp":"1503128009",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"W7.zip - Xchecked via VT: f9f6bc998dcb8a3f04dffcc6b81dcfc3",
+                "timestamp":"1503128009",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/66c3cae1464231a801b0388a5ea858883118b9ef529fa7071146fae0bdb93565/analysis/1502994328/",
+                "to_ids":false
+            }
+        ]
+    }
+}

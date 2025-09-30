@@ -1,0 +1,60 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-10-30",
+        "published":false,
+        "info":"OSINT - CloudFanta Malware Campaign Technical Analysis",
+        "publish_timestamp":"0",
+        "timestamp":"1477844947",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477844702",
+                "type":"link",
+                "value":"https://resources.netskope.com/h/i/297473838-cloudfanta-malware-campaign-technical-analysis",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1477844722",
+                "type":"comment",
+                "value":"We recently published an overview blog about the CloudFanta malware campaign that uses the Sugarsync cloud storage app to deliver malware capable of stealing user credentials and monitoring online banking activities. This blog will detail the technical aspects of CloudFanta.\r\n\r\nAlthough CloudSquirrel and CloudFanta malware are not similar, we believe that both malware campaigns are deployed by the same actor based on the following similarities.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The Sugarsync URL we observed delivering CloudFanta malware was at",
+                "timestamp":"1477844754",
+                "type":"url",
+                "value":"https://www.sugarsync.com/pf/D3202366_07280196_66523?directDownload=true",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1477844933",
+                "type":"url",
+                "value":"http://192.95.39.246/xx/config/msg.txt",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1477844947",
+                "type":"ip-dst",
+                "value":"192.95.39.246",
+                "to_ids":true
+            }
+        ]
+    }
+}

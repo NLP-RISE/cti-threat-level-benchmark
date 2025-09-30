@@ -1,0 +1,452 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2022-09-12",
+        "published":true,
+        "info":"Ragnar Locker Ransomware Targeting the Energy Sector",
+        "publish_timestamp":"1662991705",
+        "timestamp":"1662991697",
+        "Tag":[
+            {
+                "name":"misp:tool=\"misp-scraper\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"misp:event-type=\"collection\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Energy\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"RagnarLocker (Windows)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Ragnar Locker - S0481\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Ragnar Locker\""
+            },
+            {
+                "name":"misp-galaxy:country=\"greece\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Disable or Modify Tools - T1562.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Inhibit System Recovery - T1490\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Service Stop - T1489\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Location Discovery - T1614\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Owner/User Discovery - T1033\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Other",
+                "comment":"Blog title",
+                "timestamp":"1662984886",
+                "type":"comment",
+                "value":"THREAT ANALYSIS REPORT: Ragnar Locker Ransomware Targeting the Energy Sector",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Blog URL",
+                "timestamp":"1662984886",
+                "type":"link",
+                "value":"https://www.cybereason.com/blog/threat-analysis-report-ragnar-locker-ransomware-targeting-the-energy-sector",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1662984887",
+                "type":"regkey",
+                "value":"*%LOCALAPPDATA%\\packages\\microsoft.windows.cortana\\_cw5n1h2txyewy\\localstate\\devicesearchcache\\appcache133057346751796032.txt.ragnar\\_aabbddcc*",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Ragnar Locker Binary",
+                "timestamp":"1662986006",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662986023",
+                "type":"filename",
+                "value":"ntuser.dat.log",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1662986021",
+                "type":"filename",
+                "value":"bootfront.bin",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Ragnar Locker spawns the following children process:",
+                "timestamp":"1662985236",
+                "type":"comment",
+                "value":"wmic.exe shadowcopy delete: This system command deletes all shadow copies on the victim’s system, preventing data recovery by the victim",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Ragnar Locker spawns the following children process:",
+                "timestamp":"1662985236",
+                "type":"comment",
+                "value":"vssadmin delete shadows /all /quiet: This system command also deletes shadow copies, preventing data recovery by the victim",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Ragnar Locker spawns the following children process:",
+                "timestamp":"1662985236",
+                "type":"comment",
+                "value":"notepad.exe [User path]\\RGNR_AABBCCDD.txt : This command launches Notepad.exe to show the ransom note to the victim",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Excluded countries",
+                "timestamp":"1662985447",
+                "type":"comment",
+                "value":"Azerbaijan\r\nArmenia\r\nBelarus\r\nKazakhstan\r\nKyrgyzstan\r\nMoldova\r\nTajikistan\r\nRussia\r\nTurkmenistan\r\nUzbekistan\r\nUkraine\r\nGeorgia",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Stopped services",
+                "timestamp":"1662985503",
+                "type":"comment",
+                "value":"vss, sql, memtas, mepocs, sophos, veeam, backup, pulseway, logme, logmein, connectwise, splashtop, kaseya, vmcompute, Hyper-v, vmms, Dfs",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1662985628",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"Replace with the hashed computer name",
+                        "timestamp":"1662985607",
+                        "type":"filename",
+                        "value":"RGNR_AABBCCDD.txt",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1662985628",
+                        "type":"text",
+                        "value":"%PUBLIC%\\Documents\\",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

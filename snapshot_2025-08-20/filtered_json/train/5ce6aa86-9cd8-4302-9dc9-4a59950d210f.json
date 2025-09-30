@@ -1,0 +1,344 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-05-22",
+        "published":true,
+        "info":"OSINT - A journey to Zebrocy land",
+        "publish_timestamp":"1563528093",
+        "timestamp":"1563528054",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Link - T1192\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Rundll32 - T1085\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"User Execution - T1204\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Management Instrumentation - T1047\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Scheduled Task - T1053\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Component Object Model Hijacking - T1122\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1060\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Disabling Security Tools - T1089\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File Deletion - T1107\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Query Registry - T1012\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Process Discovery - T1057\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data from Local System - T1005\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data from Network Shared Drive - T1039\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data from Removable Media - T1025\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Staged - T1074\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Input Capture - T1056\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Screen Capture - T1113\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Automated Exfiltration - T1020\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted - T1022\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Exfiltration Over Command and Control Channel - T1041\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Commonly Used Port - T1043\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Custom Cryptographic Protocol - T1024\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encoding - T1132\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Obfuscation - T1001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Fallback Channels - T1008\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Multilayer Encryption - T1079\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Application Layer Protocol - T1071\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Standard Cryptographic Protocol - T1032\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Zebrocy\""
+            },
+            {
+                "name":"misp-galaxy:malpedia=\"Zebrocy (AutoIT)\""
+            },
+            {
+                "name":"misp-galaxy:mitre-malware=\"Zebrocy - S0251\""
+            },
+            {
+                "name":"misp-galaxy:tool=\"ZEBROCY\""
+            },
+            {
+                "name":"ecsirt:intrusions=\"backdoor\""
+            },
+            {
+                "name":"veris:action:malware:variety=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware:malware-type=\"Backdoor\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Backdoor\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"workflow:todo=\"expansion\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558680572",
+                "type":"link",
+                "value":"https://www.welivesecurity.com/2019/05/22/journey-zebrocy-land/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558680597",
+                "type":"text",
+                "value":"What happens when a victim is compromised by a backdoor and the operator is controlling it? Itâ€™s a difficult question that is not possible to answer entirely by reverse engineering the code. In this article we will analyze commands sent by the operator to their targets.\r\n\r\nThe Sednit group â€“ also known as APT28, Fancy Bear, Sofacy or STRONTIUM â€“ has been operating since at least 2004 and has made headlines frequently in past years.\r\n\r\nRecently, we unveiled the existence of a UEFI rootkit, called LoJax, which we attribute to the Sednit group. This is a first for an APT group, and shows Sednit has access to very sophisticated tools to conduct its espionage operations.\r\n\r\nThree years ago, the Sednit group unleashed new components targeting victims in various countries in the Middle East and Central Asia. Since then, the number and diversity of components has increased drastically. ESET researchers and colleagues from other companies have documented these components; however, in this article we will focus on whatâ€™s beyond the compromise, what the operators do once a victim system is running a Zebrocy Delphi backdoor.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1558688219",
+                "type":"attachment",
+                "value":"Figure-1-WM.png",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Distribution URL",
+                "timestamp":"1558691566",
+                "type":"url",
+                "value":"http://45.124.132.127/DOVIDNIL - (2018).zip",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1558689889",
+                "type":"url",
+                "value":"bitly.com/2vZyzgL",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C server",
+                "timestamp":"1558691583",
+                "type":"url",
+                "value":"http://45.124.132.127/action-center/centerforserviceandaction/service-and-action.php",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":".exe, displays .doc icon",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558681272",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558681272",
+                        "type":"filename",
+                        "value":"Ð”ÐžÐ’IÐ”ÐIÐš - (2018).exe",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558681229",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558681229",
+                        "type":"filename",
+                        "value":"Ð”Ð¾Ñ€ÑƒÑ‡ÐµÐ½Ð½Ñ 97.pdf",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/TrojanDownloader.Sednit.CMT",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558692091",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/HackTool.PSWDump.D",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558692124",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692124",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"Win32/PSW.Agent.OGE",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1558692165",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692165",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1563528053",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1563528054",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"datetime",
+                        "value":"2019-06-14T09:31:17",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/b677cce4a844495a20eed2486ef71f4782c06630df34a6ce085880a045a07902/analysis/1560504677/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1558692092",
+                        "type":"text",
+                        "value":"44/62",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

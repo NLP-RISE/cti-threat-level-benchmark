@@ -1,0 +1,116 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2019-10-10",
+        "published":true,
+        "info":"Mahalo FIN7: Responding to the Criminal Operatorsâ€™ New Tools and Techniques",
+        "publish_timestamp":"1570891295",
+        "timestamp":"1570891290",
+        "Tag":[
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Data Encrypted - T1022\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Obfuscated Files or Information - T1027\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"DLL Search Order Hijacking - T1038\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Code Signing - T1116\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Execution through Module Load - T1129\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Execution through API - T1106\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"File Deletion - T1107\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-attack-pattern=\"Hooking - T1179\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (signed)",
+                "timestamp":"1570891028",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (signed)",
+                "timestamp":"1570891028",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (signed)",
+                "timestamp":"1570891028",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C2",
+                "timestamp":"1570891028",
+                "type":"ip-dst",
+                "value":"109.230.199.227",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (unsigned)",
+                "timestamp":"1570891028",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (unsigned)",
+                "timestamp":"1570891028",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Boostwrite (unsigned)",
+                "timestamp":"1570891028",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"C2",
+                "timestamp":"1570891028",
+                "type":"filename",
+                "value":"F:\\projects\\DWriteImpl\\Release\\DWriteImpl.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1570891290",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2019/10/mahalo-fin7-responding-to-new-tools-and-techniques.html",
+                "to_ids":false
+            }
+        ]
+    }
+}

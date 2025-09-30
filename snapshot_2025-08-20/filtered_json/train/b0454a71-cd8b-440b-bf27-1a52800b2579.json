@@ -1,0 +1,282 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2024-10-01",
+        "published":true,
+        "info":"OSINT - Inside the Dragon: DragonForce Ransomware Group",
+        "publish_timestamp":"1727768670",
+        "timestamp":"1727768647",
+        "Tag":[
+            {
+                "name":"misp-galaxy:ransomware=\"dragonforce\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Valid Accounts - T1078\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"PowerShell - T1059.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Accounts - T1078.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Windows Service - T1543.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Clear Windows Event Logs - T1070.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"LSASS Memory - T1003.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Domain Trust Discovery - T1482\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote System Discovery - T1018\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Network Configuration Discovery - T1016\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"System Information Discovery - T1082\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"File and Directory Discovery - T1083\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Remote Desktop Protocol - T1021.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Web Protocols - T1071.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Data Encrypted for Impact - T1486\""
+            },
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1727768071",
+                "type":"ip-dst",
+                "value":"185.73.125.8",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1727768071",
+                "type":"ip-dst",
+                "value":"94.232.46.202",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1727768260",
+                "type":"ip-dst",
+                "value":"69.4.234.20",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1727768199",
+                "type":"ip-dst",
+                "value":"2.147.68.96",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1727768155",
+                "type":"ip-dst",
+                "value":"185.59.221.75",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1727767860",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767860",
+                        "type":"filename",
+                        "value":"aug\\socks.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767860",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1727767876",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767877",
+                        "type":"filename",
+                        "value":"%TEMP%\\2\\a65.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767877",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1727767897",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767897",
+                        "type":"filename",
+                        "value":"%TEMP%\\2\\netscanold.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767897",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1727767923",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767923",
+                        "type":"filename",
+                        "value":"df.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727767923",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Report object to describe a report along with its metadata.",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1727767975",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1727767975",
+                        "type":"link",
+                        "value":"https://www.group-ib.com/blog/dragonforce-ransomware/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1727767975",
+                        "type":"text",
+                        "value":"In light of the escalating frequency and complexity of ransomware attacks, are security leaders confident in their organization’s defenses? According to Group-IB’s Hi-Tech Crime Trends 2023/2024 Report, ransomware will have an increasingly significant impact in 2024 and beyond. Key trends driving this include the expansion of the Ransomware-as-a-Service (RaaS) market, the proliferation of stolen data on Dedicated Leak Sites (DLS), and a rise in affiliate programs.\r\n\r\nFurthermore, the evolution of ransomware variants is outpacing the advancements in cyber defence, leaving organizations unprepared for the threats on the horizon. To stay ahead, businesses must stay updated on the most pressing cybersecurity threats, and prominent threat actors that have recently emerged and continue to pose significant risks this year and in the future.\r\n\r\nIn this blog, we delve into the inner workings of the DragonForce ransomware group. Discovered in August 2023, DragonForce has been targeting companies in critical sectors using a variant of a leaked LockBit3.0 builder, and more recently in July 2024 with their own variant of ransomware.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1727767975",
+                        "type":"text",
+                        "value":"Blog",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Cobalt Strike Beacon Config",
+                "meta-category":"file",
+                "name":"cs-beacon-config",
+                "timestamp":"1727768390",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1727768390",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1727768390",
+                        "type":"ip-dst",
+                        "value":"185.73.125.8",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1727768390",
+                        "type":"text",
+                        "value":"http://185.73.125.8/",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

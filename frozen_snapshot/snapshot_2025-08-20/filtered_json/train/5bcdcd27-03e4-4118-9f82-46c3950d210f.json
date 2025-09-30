@@ -1,0 +1,737 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-10-19",
+        "published":false,
+        "info":"OSINT - How we discovered a Ukranian cybercrime hotspot",
+        "publish_timestamp":"0",
+        "timestamp":"1540287402",
+        "Tag":[
+            {
+                "name":"misp-galaxy:malpedia=\"win.gandcrab\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"GandCrab\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1540214113",
+                "type":"link",
+                "value":"https://www.gdatasoftware.com/blog/2018/10/31187-ukranian-cybercrime-hotspot-ransomware",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1540214125",
+                "type":"text",
+                "value":"While analysing a new version of the GandCrab Ransomware, G DATA security researchers discovered a whole network of criminal activities that are operated from a continuous IP range out of Ukraine. The IP addresses, registered presumably under false addresses, show indications of illegal cryptojacking, phishing sites and dating portals.\r\n\r\n\r\nRansomware is sold or rented to criminals in underground forums. This is probably also the case with GandCrab v5. However, the person behind the IP address obviously doesn't want to rely on just one criminal activity to generate revenue.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540214524",
+                "type":"ip-dst",
+                "value":"92.63.197.48",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540214825",
+                "type":"ip-dst",
+                "value":"92.63.197.127",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1540215347",
+                "type":"filename",
+                "value":"%WINDIR%\\T08606085085860\\winsvc32.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215557",
+                "type":"url",
+                "value":"http://92.63.197.48/v/t.php?new=1",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1540215696",
+                "type":"link",
+                "value":"https://www.gdata.de/fileadmin/web/de/documents/whitepaper/G_Data_WhitePaper_-_Analysis_of_Win32.Trojan-Ransom.GandCrab.R.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215754",
+                "type":"url",
+                "value":"http://92.63.197.48/v/t.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215758",
+                "type":"url",
+                "value":"http://92.63.197.48/v/m.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215759",
+                "type":"url",
+                "value":"http://92.63.197.48/v/p.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215759",
+                "type":"url",
+                "value":"http://92.63.197.48/v/s.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540215760",
+                "type":"url",
+                "value":"http://92.63.197.48/v/o.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1540281966",
+                "type":"ip-dst",
+                "value":"92.63.197.0/24",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"Active domain",
+                "timestamp":"1540284713",
+                "type":"domain",
+                "value":"frim0ney.info",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540284677",
+                "type":"domain",
+                "value":"lucky-chances.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540284680",
+                "type":"domain",
+                "value":"earn-your-money.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540284685",
+                "type":"domain",
+                "value":"global-profits1.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540284688",
+                "type":"domain",
+                "value":"best-profits-here12.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Active domain",
+                "timestamp":"1540285699",
+                "type":"domain",
+                "value":"dating-future69.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Active domain",
+                "timestamp":"1540285705",
+                "type":"domain",
+                "value":"sewryus.xyz",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285891",
+                "type":"domain",
+                "value":"100sexual-partner-found.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285894",
+                "type":"domain",
+                "value":"realflirtdating11.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285894",
+                "type":"domain",
+                "value":"your-dating-now11.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285895",
+                "type":"domain",
+                "value":"great-hookup-online.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285901",
+                "type":"domain",
+                "value":"dating-hearts.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285906",
+                "type":"domain",
+                "value":"yourdating-menus.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285911",
+                "type":"domain",
+                "value":"hotdatingspot.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285912",
+                "type":"domain",
+                "value":"datingsworld1.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285913",
+                "type":"domain",
+                "value":"dating-opportunities.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285913",
+                "type":"domain",
+                "value":"hot-kisses-finder.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285914",
+                "type":"domain",
+                "value":"night-calldates.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - Under construction",
+                "timestamp":"1540285914",
+                "type":"domain",
+                "value":"secret-flirtparadise.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - resolves a streaming site",
+                "timestamp":"1540285915",
+                "type":"domain",
+                "value":"findyour-dating1.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Inactive domain - resolves a warez site",
+                "timestamp":"1540285915",
+                "type":"domain",
+                "value":"myhookup-clubs.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Shows a casino offer",
+                "timestamp":"1540286022",
+                "type":"domain",
+                "value":"os-print.win",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ERR_CONNECTION_TIMED_OUT",
+                "timestamp":"1540286025",
+                "type":"domain",
+                "value":"vrb-kontosicherheit.top",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Empty page",
+                "timestamp":"1540286026",
+                "type":"domain",
+                "value":"enterwords.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Empty page",
+                "timestamp":"1540286026",
+                "type":"domain",
+                "value":"improbablead.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Empty page",
+                "timestamp":"1540286027",
+                "type":"domain",
+                "value":"honeyindoc.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Empty page",
+                "timestamp":"1540286027",
+                "type":"domain",
+                "value":"vivedoc.ru",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"appears to be a cryptocurrency exchange website",
+                "timestamp":"1540286166",
+                "type":"domain",
+                "value":"wex.ac",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"Windows security center stops monitoring the \r\nstatus of an antivirus protection",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540216901",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540216901",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\AntiVirusOverride",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540216903",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540216913",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540216913",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"No clear documentation available but it seems like it disables the antivirus updates.",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540279038",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540279039",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\UpdatesOverride",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540279042",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540279047",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540279049",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Turns of the firewall",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280108",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280108",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\FirewallOverride",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280108",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280108",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280108",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Disables the antivirus notifications",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280026",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280026",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\AntiVirusDisableNotify",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280026",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280026",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280026",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Disables security center update notifications",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280006",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280006",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\AutoUpdateDisableNotify",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280007",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280007",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280007",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Disables firewall notifications",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280147",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280147",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Security Center\\FirewallDisableNotify",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280151",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280156",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280160",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Disables system restore points",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280241",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280241",
+                        "type":"regkey",
+                        "value":"HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\SystemRestore\\DisableSR",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280245",
+                        "type":"text",
+                        "value":"1",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280246",
+                        "type":"text",
+                        "value":"HKLM",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280246",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Creates an autostart entry",
+                "description":"Registry key object describing a Windows registry key with value and last-modified timestamp",
+                "meta-category":"file",
+                "name":"registry-key",
+                "timestamp":"1540280503",
+                "Attribute":[
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280504",
+                        "type":"regkey",
+                        "value":"HKCU\\SOFTWARE\\Microsoft\\CurrentVersion\\Run",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280508",
+                        "type":"text",
+                        "value":"%WINDIR%\\T08606085085860\\winsvc32.exe",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540280510",
+                        "type":"text",
+                        "value":"HKCU",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Persistence mechanism",
+                        "comment":"",
+                        "timestamp":"1540280510",
+                        "type":"text",
+                        "value":"REG_NONE",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1540281512",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1540281513",
+                        "type":"filename",
+                        "value":"DEVICEMANAGER.EXE",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1540281514",
+                        "type":"text",
+                        "value":"Malicious",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An IP address (or domain or hostname) and a port seen as a tuple (or as a triple) in a specific time frame.",
+                "meta-category":"network",
+                "name":"ip-port",
+                "timestamp":"1540286221",
+                "Attribute":[
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1540286222",
+                        "type":"ip-dst",
+                        "value":"92.63.197.48",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Network activity",
+                        "comment":"",
+                        "timestamp":"1540286226",
+                        "type":"port",
+                        "value":"8080",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

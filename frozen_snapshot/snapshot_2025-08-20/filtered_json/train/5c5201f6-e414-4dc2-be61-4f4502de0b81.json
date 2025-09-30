@@ -1,0 +1,224 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2019-01-30",
+        "published":true,
+        "info":"OSINT - Cisco Job Posting Targets Korean Candidates",
+        "publish_timestamp":"1548878721",
+        "timestamp":"1548878619",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"osint:certainty=\"50\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548878338",
+                "type":"link",
+                "value":"https://blog.talosintelligence.com/2019/01/fake-korean-job-posting.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1548878356",
+                "type":"text",
+                "value":"Cisco Talos recently observed a targeted malware campaign being leveraged in an attempt to compromise specific organizations. The infection vector associated with this campaign was a Microsoft Word document that was disguised as a job posting for Cisco Korea, and leveraged legitimate content available as part of job postings on various websites. EST Security also described this campaign in a blog post this week. This malicious Office document appears to have been the initial portion of what was designed to be a multi-stage infection process. \r\n\r\nDuring our analysis of this campaign, we located additional samples that we believe are linked to multiple previous campaigns associated with the same threat actor. Each of the campaigns leveraged malicious documents and initial stage payloads that all featured similar tactics, techniques, and procedures (TTP). Due to the targeted nature of this campaign, the lack of widespread indicator of compromise data, and the apparent nature of the targeting, this appears to be associated with a sophisticated attacker. This sort of attack has become more common as threat actors continue to target users to gain an initial foothold in environments. Organizations are encouraged to employ a defense-in-depth approach to security and disallow the execution of macros where possible.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"The C2 server used in this campaign was ilovesvc[.]com, another example of a legitimate website that had been compromised by the threat actor and used to host malicious content.",
+                "timestamp":"1548878477",
+                "type":"domain",
+                "value":"ilovesvc.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"the Office document",
+                "timestamp":"1548878405",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"PE32",
+                "timestamp":"1548878423",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548878458",
+                "type":"hostname",
+                "value":"www.secuvision.co.kr",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1548878458",
+                "type":"hostname",
+                "value":"www.syadplus.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Screenshot of the word document",
+                "timestamp":"1548878544",
+                "type":"attachment",
+                "value":"image11.jpg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548878618",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548878619",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"datetime",
+                        "value":"2017-07-03T03:11:00",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/1497ab6ddccf91ef7f2cd75ce020bb3bf39979210351deaa6e0025997ddfda5a/analysis/1499051460/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"text",
+                        "value":"32/62",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1548878619",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1548878619",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"datetime",
+                        "value":"2019-01-30T10:52:43",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/bf27c1631ef64c1e75676375a85d48f8ae97e1ea9a5f67c2beefc02c609fc18b/analysis/1548845563/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1548878619",
+                        "type":"text",
+                        "value":"34/58",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

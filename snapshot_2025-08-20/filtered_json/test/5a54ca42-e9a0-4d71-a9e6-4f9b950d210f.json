@@ -1,0 +1,218 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-09-27",
+        "published":true,
+        "info":"OSINT - Experts analyzed an Advanced \"all in memory\" CryptoWorm",
+        "publish_timestamp":"1518771036",
+        "timestamp":"1516071630",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1516008849",
+                "type":"link",
+                "value":"http://securityaffairs.co/wordpress/63488/malware/advanced-memory-cryptoworm.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1516008850",
+                "type":"comment",
+                "value":"Today I want to share a nice Malware analysis having an interesting flow. The â€œinterestingâ€ adjective comes from the abilities the given sample owns. Capabilities of exploiting, hard obfuscations and usage of advanced techniques to steal credentials and run commands.\r\n\r\nThe analyzed sample has been provided by a colleague of mine (Alessandro) who received the first stage by eMail. A special thanks to Luca and Edoardo for having recognized XMRig during the last infection stage.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516008850",
+                "type":"filename",
+                "value":"info6.ps1",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1516008850",
+                "type":"url",
+                "value":"http://118.184.48.95:8000/",
+                "to_ids":true
+            },
+            {
+                "category":"Financial fraud",
+                "comment":"Monero Address",
+                "timestamp":"1516008851",
+                "type":"other",
+                "value":"46CJt5F7qiJiNhAFnSPN1G7BMTftxtpikUjt8QXRFwFH2c3e1h6QdJA5dFYpTXK27dEL9RN3H2vLc6eG2wGahxpBK5zmCuE",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516002831",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516002831",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1516008851",
+                "type":"filename",
+                "value":"y1.bat",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1516008854",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008852",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008852",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008852",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1516008853",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1516008853",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/038d4ef30a0bfebe3bfd48a5b6fed1b47d1e9b2ed737e8ca0447d6b1848ce309/analysis/1513112352/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1516008853",
+                        "type":"text",
+                        "value":"47/67",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1516008854",
+                        "type":"datetime",
+                        "value":"2017-12-12T20:59:12",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1516008857",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008854",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008854",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1516008855",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1516008855",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1516008856",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/19e15a4288e109405f0181d921d3645e4622c87c4050004357355b7a9bf862cc/analysis/1513112312/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1516008857",
+                        "type":"text",
+                        "value":"30/65",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1516008857",
+                        "type":"datetime",
+                        "value":"2017-12-12T20:58:32",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

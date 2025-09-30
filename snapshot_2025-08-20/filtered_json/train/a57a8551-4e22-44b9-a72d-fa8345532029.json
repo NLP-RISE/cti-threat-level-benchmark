@@ -1,0 +1,594 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2023-04-13",
+        "published":true,
+        "info":"HALFRIG - Malware Analysis Report",
+        "publish_timestamp":"1681907498",
+        "timestamp":"1681907481",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"osint:lifetime=\"perpetual\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"tlp:clear"
+            },
+            {
+                "name":"misp-galaxy:tool=\"HALFRIG\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Virtual Private Server - T1583.003\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Compromise Infrastructure - T1584\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Phishing - T1566\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Spearphishing Attachment - T1566.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"User Execution - T1204\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Malicious File - T1204.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Registry Run Keys / Startup Folder - T1547.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DLL Search Order Hijacking - T1574.001\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"DLL Side-Loading - T1574.002\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"HTML Smuggling - T1027.006\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Deobfuscate/Decode Files or Information - T1140\""
+            },
+            {
+                "name":"misp-galaxy:mitre-attack-pattern=\"Mark-of-the-Web Bypass - T1553.005\""
+            },
+            {
+                "name":"admiralty-scale:source-reliability=\"a\""
+            },
+            {
+                "name":"estimative-language:confidence-in-analytic-judgment=\"high\""
+            },
+            {
+                "name":"estimative-language:likelihood-probability=\"almost-certain\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"Pattern-ENVYSCOUT backend fingerprint collector",
+                "timestamp":"1681903524",
+                "type":"pattern-in-traffic",
+                "value":"sawabfoundation.net/p.php?ip=<IP>&ua=<USER_AGENT>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"ENVYSCOUT",
+                "timestamp":"1681903127",
+                "type":"url",
+                "value":"sawabfoundation.net/note.html",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"compromised hosting used for ENVYSCOUT",
+                "timestamp":"1681903133",
+                "type":"domain",
+                "value":"sawabfoundation.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"CobaltStrike redirector",
+                "timestamp":"1681903139",
+                "type":"domain",
+                "value":"communitypowersports.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"Actual CobaltStrike C2",
+                "timestamp":"1681903145",
+                "type":"domain",
+                "value":"sanjosemotosport.com",
+                "to_ids":true
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"Metadata used to generate an executive level report",
+                "meta-category":"misc",
+                "name":"report",
+                "timestamp":"1681803944",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1681803944",
+                        "type":"link",
+                        "value":"https://www.gov.pl/attachment/64193e8d-05e2-4cbf-bb4c-5f58da21fefb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681803944",
+                        "type":"text",
+                        "value":"HALFRIG is a stager for CobaltStrike Beacon that was used in an espionage campaign significantly\r\noverlapping with publicly described activity linked to the APT291 and NOBELIUM2 activity sets. HALFRIG\r\nhas significant code overlap with the QUARTERRIG and it is highly probable that it was developed\r\nby the same team.",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681803944",
+                        "type":"text",
+                        "value":"Report",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1681803944",
+                        "type":"attachment",
+                        "value":"HALFRIG_.pdf",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"An object describing a YARA rule (or a YARA rule name) along with its version.",
+                "meta-category":"misc",
+                "name":"yara",
+                "timestamp":"1681826311",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681826311",
+                        "type":"comment",
+                        "value":"A rule that can be used to scan for HALFRIG",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1681826311",
+                        "type":"link",
+                        "value":"https://www.gov.pl/attachment/64193e8d-05e2-4cbf-bb4c-5f58da21fefb",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Payload installation",
+                        "comment":"",
+                        "timestamp":"1681826311",
+                        "type":"yara",
+                        "value":"rule APT29_HALFRIG_OBFUSCATION\r\n{\r\nmeta:\r\ndescription = \"Detects obfuscation patterns used in HALFRIG. This rule wasn't tested against large dataset, it should be used for threat hunting and not on services like VTI.\"\r\n\r\nstrings:\r\n\r\n// Decryption constants and decryption operation\r\n\r\n$ = {48 BB 0B 91 09 19 4D FD 9B F3 }\r\n\r\n\r\n$ = {4D 8D 40 01 48 8B CA 48 8B C2 48 C1 E9 38 48 83 C9 01 48 C1 E0 08 48 8B D1 48 33 D0}\r\n\r\n\r\n$ = {C7 05 [3] 00 F7 91 4D 01 }\r\n\r\n condition:\r\n\r\nuint16(0) == 0x5A4D\r\n\r\nand\r\n\r\nfilesize < 500KB\r\n\r\nand\r\n\r\nall of them\r\n}",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681826311",
+                        "type":"text",
+                        "value":"APT29_HALFRIG_OBFUSCATION",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Legitimate binary used for loading malicious DLL",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681902818",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894020",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894020",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894020",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894020",
+                        "type":"filename",
+                        "value":"Note.exe",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894020",
+                        "type":"size-in-bytes",
+                        "value":"1597000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"Virtual disc container",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681897981",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894160",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894160",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894160",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894160",
+                        "type":"filename",
+                        "value":"Note.iso",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894160",
+                        "type":"size-in-bytes",
+                        "value":"2688000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"1st module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681902838",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894547",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894547",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894547",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894547",
+                        "type":"filename",
+                        "value":"AppvIsvSubsystems64.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894547",
+                        "type":"size-in-bytes",
+                        "value":"27000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"2nd module\r\n",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681902852",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894650",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894650",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894650",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894650",
+                        "type":"filename",
+                        "value":"msword.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894650",
+                        "type":"size-in-bytes",
+                        "value":"53000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"3rd module",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681902873",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894839",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894839",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894839",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894839",
+                        "type":"filename",
+                        "value":"envsrv.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894839",
+                        "type":"size-in-bytes",
+                        "value":"56000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"4 module (shellcode stager)",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1681894913",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894913",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894913",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894913",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1681894913",
+                        "type":"filename",
+                        "value":"mschost.dll",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894913",
+                        "type":"size-in-bytes",
+                        "value":"391000",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681894972",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681894972",
+                        "type":"text",
+                        "value":"RunTimeBroker.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681895005",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681895005",
+                        "type":"text",
+                        "value":"TaskHostW.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681895042",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681895042",
+                        "type":"text",
+                        "value":"Svchost.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681895104",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681895104",
+                        "type":"text",
+                        "value":"IpfHelper.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681895119",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681895119",
+                        "type":"text",
+                        "value":"SecurityHealthService.exe",
+                        "to_ids":false
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"Object describing a system process.",
+                "meta-category":"misc",
+                "name":"process",
+                "timestamp":"1681895145",
+                "Attribute":[
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1681895145",
+                        "type":"text",
+                        "value":"ApplicationFrameHost.exe",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

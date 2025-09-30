@@ -1,0 +1,129 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2018-04-09",
+        "published":true,
+        "info":"OSINT - PUBG Ransomware Decrypts Your Files If You Play PlayerUnknown's Battlegrounds",
+        "publish_timestamp":"1523391236",
+        "timestamp":"1523391234",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"malware_classification:malware-category=\"Ransomware\""
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"ms-caro-malware-full:malware-type=\"Joke\""
+            },
+            {
+                "name":"workflow:todo=\"create-missing-misp-galaxy-cluster-values\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523391188",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/pubg-ransomware-decrypts-your-files-if-you-play-playerunknowns-battlegrounds/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1523391188",
+                "type":"comment",
+                "value":"In what could only be a joke, a new ransomware has been discovered called \"PUBG Ransomware\" that will decrypt your files if you play the game called PlayerUnknown's Battlegrounds.\r\n\r\nDiscovered by MalwareHunterTeam, when the PUBG Ransomware is launched it will encrypt a user's files and folders on the user's desktop and append the .PUBG extension to them. When it has finished encrypting the files, it will display a screen giving you two methods that you can use to decrypt the encrypted files.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1523356033",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"ransomnote screen",
+                "timestamp":"1523391188",
+                "type":"attachment",
+                "value":"pubg-ransomware.jpg",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"File object describing a file with meta-information",
+                "meta-category":"file",
+                "name":"file",
+                "timestamp":"1523391192",
+                "Attribute":[
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523391189",
+                        "type":"sha1",
+                        "value":"<sha1>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523391189",
+                        "type":"sha256",
+                        "value":"<sha256>",
+                        "to_ids":true
+                    },
+                    {
+                        "category":"Payload delivery",
+                        "comment":"",
+                        "timestamp":"1523391190",
+                        "type":"md5",
+                        "value":"<md5>",
+                        "to_ids":true
+                    }
+                ]
+            },
+            {
+                "comment":"",
+                "description":"VirusTotal report",
+                "meta-category":"misc",
+                "name":"virustotal-report",
+                "timestamp":"1523391190",
+                "Attribute":[
+                    {
+                        "category":"External analysis",
+                        "comment":"",
+                        "timestamp":"1523391190",
+                        "type":"link",
+                        "value":"https://www.virustotal.com/file/3208efe96d14f5a6a2840daecbead6b0f4d73c5a05192a1a8eef8b50bbfb4bc1/analysis/1523371298/",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523391191",
+                        "type":"text",
+                        "value":"44/66",
+                        "to_ids":false
+                    },
+                    {
+                        "category":"Other",
+                        "comment":"",
+                        "timestamp":"1523391191",
+                        "type":"datetime",
+                        "value":"2018-04-10T14:41:38",
+                        "to_ids":false
+                    }
+                ]
+            }
+        ]
+    }
+}

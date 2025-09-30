@@ -1,0 +1,383 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-08-25",
+        "published":true,
+        "info":"Malspam 2017-08-25 'Your Sage subscription invoice is ready'",
+        "publish_timestamp":"1503643423",
+        "timestamp":"1503643332",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"circl:incident-classification=\"malware\""
+            },
+            {
+                "name":"misp-galaxy:ransomware=\"Locky\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"url",
+                "value":"http://gumart.com/SINV0709.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"domain",
+                "value":"gumart.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"ip-dst",
+                "value":"204.197.248.45",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"url",
+                "value":"http://haleshomesales.com/SINV0709.rar",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"domain",
+                "value":"haleshomesales.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"1st stage download location",
+                "timestamp":"1503642719",
+                "type":"ip-dst",
+                "value":"173.192.66.137",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"malware-sample",
+                "value":"SINV0709.rar|24b270b4a106da35e395d97760c7d4bf",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"malware-sample",
+                "value":"SINV0709.vbs|b2de4893f687e0416fde35ef9ea59095",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"downloaded stage 1",
+                "timestamp":"1503643084",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://bromesterionod.net/af/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"bromesterionod.net",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"47.89.246.2",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://go-coo.jp/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"go-coo.jp",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"203.183.65.225",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://haboosh-law.com/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"haboosh-law.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"80.244.168.26",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hansstock.de/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hansstock.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"85.25.124.78",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hartwig-mau.de/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hartwig-mau.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"81.169.168.153",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hausgadum.de/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hausgadum.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"138.201.230.90",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hausgerhard.com/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hausgerhard.com",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"92.51.164.62",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hbwconsultants.nl/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hbwconsultants.nl",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"109.237.218.40",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://hecam.de/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"hecam.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"83.169.22.79",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"url",
+                "value":"http://heimatverein-menne.de/HygHGF",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"domain",
+                "value":"heimatverein-menne.de",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"stage 2 download location",
+                "timestamp":"1503643215",
+                "type":"ip-dst",
+                "value":"62.75.191.150",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"stage 2 - Locky",
+                "timestamp":"1503643405",
+                "type":"malware-sample",
+                "value":"HygHGF|5e8a183a5fe1b0b36eaf6a7a10b30fa5",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"stage 2 - Locky",
+                "timestamp":"1503643405",
+                "type":"filename|sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"stage 2 - Locky",
+                "timestamp":"1503643405",
+                "type":"filename|sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            }
+        ]
+    }
+}

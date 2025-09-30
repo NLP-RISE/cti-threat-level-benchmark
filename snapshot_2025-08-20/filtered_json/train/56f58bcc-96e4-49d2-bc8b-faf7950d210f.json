@@ -1,0 +1,108 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-03-25",
+        "published":true,
+        "info":"OSINT - SURGE IN SPAM CAMPAIGN DELIVERING LOCKY RANSOMWARE DOWNLOADERS",
+        "publish_timestamp":"1458932887",
+        "timestamp":"1458932871",
+        "Tag":[
+            {
+                "name":"type:OSINT"
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458932721",
+                "type":"link",
+                "value":"https://www.fireeye.com/blog/threat-research/2016/03/surge_in_spam_campai.html",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458932741",
+                "type":"comment",
+                "value":"FireEye Labs is detecting a significant spike in Locky ransomware downloaders due to a pair of concurrent email spam campaigns impacting users in over 50 countries. Some of the top affected countries are depicted in Figure 1.",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1458932760",
+                "type":"ip-dst",
+                "value":"188.138.88.184",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1458932761",
+                "type":"ip-dst",
+                "value":"31.41.47.37",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1458932761",
+                "type":"ip-dst",
+                "value":"5.34.183.136",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"C&C",
+                "timestamp":"1458932761",
+                "type":"ip-dst",
+                "value":"91.121.97.170",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"",
+                "timestamp":"1458932795",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1458932828",
+                "type":"regkey|value",
+                "value":"HKCU\\Control Panel\\Desktop\\Wallpaper|%CSIDL_DESKTOPDIRECTORY%\\_Locky_recover_instructions.bmp",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 3f118d0b888430ab9f58fc2589207988",
+                "timestamp":"1458932871",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload installation",
+                "comment":"- Xchecked via VT: 3f118d0b888430ab9f58fc2589207988",
+                "timestamp":"1458932872",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1458932872",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/f927efd7cd2da3a052d857632f78ccf04b673e2774f6ce9a075e654dfd77d940/analysis/1458838562/",
+                "to_ids":false
+            }
+        ]
+    }
+}

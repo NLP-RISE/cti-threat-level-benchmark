@@ -1,0 +1,652 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-05-21",
+        "published":true,
+        "info":"OSINT - New SMB Worm Uses Seven NSA Hacking Tools. WannaCry Used Just Two",
+        "publish_timestamp":"1495353273",
+        "timestamp":"1495353225",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"Win64\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"link",
+                "value":"https://www.bleepingcomputer.com/news/security/new-smb-worm-uses-seven-nsa-hacking-tools-wannacry-used-just-two/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"text",
+                "value":"Researchers have detected a new worm that is spreading via SMB, but unlike the worm component of the WannaCry ransomware, this one is using seven NSA tools instead of two.\r\n\r\nThe worm's existence first came to light on Wednesday, after it infected the SMB honeypot of Miroslav Stampar, member of the Croatian Government CERT, and creator of the sqlmap tool used for detecting and exploiting SQL injection flaws.\r\n\r\nEternalRocks uses seven NSA tools\r\nThe worm, which Stampar named EternalRocks based on worm executable properties found in one sample, works by using six SMB-centric NSA tools to infect a computer with SMB ports exposed online. These are ETERNALBLUE, ETERNALCHAMPION, ETERNALROMANCE, and ETERNALSYNERGY, which are SMB exploits used to compromise vulnerable computers, while SMBTOUCH and ARCHITOUCH are two NSA tools used for SMB reconnaissance operations.\r\n\r\nOnce the worm has obtained this initial foothold, it then uses another NSA tool, DOUBLEPULSAR, to propagate to new vulnerable machines.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"link",
+                "value":"https://github.com/stamparm/EternalRocks/",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"mutex",
+                "value":"{8F6F00C4-B901-45fd-08CF-72FDEFF}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"mutex",
+                "value":"{8F6F0AC4-B9A1-45fd-A8CF-72FDEFF}",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"mutex",
+                "value":"20b70e57-1c2e-4de9-99e5-69f369006912",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (captured)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"filename",
+                "value":"UpdateInstaller.exe",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (captured)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (variant)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# shadowbrokers.zip (exploits)",
+                "timestamp":"1495353225",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"domain",
+                "value":"ubgdgno5eswkhmpy.onion",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Debug strings",
+                "timestamp":"1495353225",
+                "type":"pattern-in-file",
+                "value":"%PROGRAMFILES%\\(x86)\\Microsoft Visual Studio\\VB98\\VB6.OLB",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Debug strings",
+                "timestamp":"1495353225",
+                "type":"pattern-in-file",
+                "value":"%USERPROFILE%\\Documents\\DownLoader\\Project1.vbp",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Debug strings",
+                "timestamp":"1495353225",
+                "type":"pattern-in-file",
+                "value":"%USERPROFILE%\\Documents\\TorUnzip\\Project1.vbp",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Debug strings",
+                "timestamp":"1495353225",
+                "type":"pattern-in-file",
+                "value":"%USERPROFILE%\\Documents\\Visual Studio 2015\\Projects\\MicroBotMassiveNet\\taskhost\\obj\\x86\\Debug\\taskhost.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"Debug strings",
+                "timestamp":"1495353225",
+                "type":"pattern-in-file",
+                "value":"%USERPROFILE%\\Documents\\Visual Studio 2015\\Projects\\WindowsServices\\svchost\\bin\\svchost.pdb",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"Network traffic capture (PCAP)",
+                "timestamp":"1495353225",
+                "type":"link",
+                "value":"https://raw.githubusercontent.com/stamparm/EternalRocks/master/misc/exploitation.pcap",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"Decompilation of an older sample - 1ee894c0b91f3b2f836288c22ebeab44798f222f17c255f557af2260b8c6a32d",
+                "timestamp":"1495353225",
+                "type":"link",
+                "value":"https://raw.githubusercontent.com/stamparm/EternalRocks/master/misc/svchost.7z",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"# older (VB6) variants of UpdateInstaller.exe",
+                "timestamp":"1495353225",
+                "type":"imphash",
+                "value":"<imphash>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"filename",
+                "value":"%PROGRAMFILES%\\Microsoft Updates\\",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"windows-scheduled-task",
+                "value":"ServiceHost",
+                "to_ids":false
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1495353225",
+                "type":"windows-scheduled-task",
+                "value":"TaskHost",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# shadowbrokers.zip (exploits) - Xchecked via VT: 70ec0e2b6f9ff88b54618a5f7fbd55b383cf62f8e7c3795c25e2f613bfddf45d",
+                "timestamp":"1495353240",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# shadowbrokers.zip (exploits) - Xchecked via VT: 70ec0e2b6f9ff88b54618a5f7fbd55b383cf62f8e7c3795c25e2f613bfddf45d",
+                "timestamp":"1495353240",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"# shadowbrokers.zip (exploits) - Xchecked via VT: 70ec0e2b6f9ff88b54618a5f7fbd55b383cf62f8e7c3795c25e2f613bfddf45d",
+                "timestamp":"1495353241",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/70ec0e2b6f9ff88b54618a5f7fbd55b383cf62f8e7c3795c25e2f613bfddf45d/analysis/1495120618/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (variant) - Xchecked via VT: a77c61e86bc69fdc909560bb7a0fa1dd61ee6c86afceb9ea17462a97e7114ab0",
+                "timestamp":"1495353241",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (variant) - Xchecked via VT: a77c61e86bc69fdc909560bb7a0fa1dd61ee6c86afceb9ea17462a97e7114ab0",
+                "timestamp":"1495353241",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"# taskhost.exe (variant) - Xchecked via VT: a77c61e86bc69fdc909560bb7a0fa1dd61ee6c86afceb9ea17462a97e7114ab0",
+                "timestamp":"1495353242",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a77c61e86bc69fdc909560bb7a0fa1dd61ee6c86afceb9ea17462a97e7114ab0/analysis/1495206561/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (captured) - Xchecked via VT: cf8533849ee5e82023ad7adbdbd6543cb6db596c53048b1a0c00b3643a72db30",
+                "timestamp":"1495353242",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"# taskhost.exe (captured) - Xchecked via VT: cf8533849ee5e82023ad7adbdbd6543cb6db596c53048b1a0c00b3643a72db30",
+                "timestamp":"1495353243",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"# taskhost.exe (captured) - Xchecked via VT: cf8533849ee5e82023ad7adbdbd6543cb6db596c53048b1a0c00b3643a72db30",
+                "timestamp":"1495353243",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/cf8533849ee5e82023ad7adbdbd6543cb6db596c53048b1a0c00b3643a72db30/analysis/1495334571/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: fc75410aa8f76154f5ae8fe035b9a13c76f6e132077346101a0d673ed9f3a0dd",
+                "timestamp":"1495353243",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: fc75410aa8f76154f5ae8fe035b9a13c76f6e132077346101a0d673ed9f3a0dd",
+                "timestamp":"1495353244",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: fc75410aa8f76154f5ae8fe035b9a13c76f6e132077346101a0d673ed9f3a0dd",
+                "timestamp":"1495353244",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/fc75410aa8f76154f5ae8fe035b9a13c76f6e132077346101a0d673ed9f3a0dd/analysis/1495312487/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d86af736644e20e62807f03c49f4d0ad7de9cbd0723049f34ec79f8c7308fdd5",
+                "timestamp":"1495353244",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d86af736644e20e62807f03c49f4d0ad7de9cbd0723049f34ec79f8c7308fdd5",
+                "timestamp":"1495353245",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d86af736644e20e62807f03c49f4d0ad7de9cbd0723049f34ec79f8c7308fdd5",
+                "timestamp":"1495353245",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d86af736644e20e62807f03c49f4d0ad7de9cbd0723049f34ec79f8c7308fdd5/analysis/1495132402/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d43c10a2c983049d4a32487ab1e8fe7727646052228554e0112f6651f4833d2c",
+                "timestamp":"1495353246",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d43c10a2c983049d4a32487ab1e8fe7727646052228554e0112f6651f4833d2c",
+                "timestamp":"1495353246",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: d43c10a2c983049d4a32487ab1e8fe7727646052228554e0112f6651f4833d2c",
+                "timestamp":"1495353246",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d43c10a2c983049d4a32487ab1e8fe7727646052228554e0112f6651f4833d2c/analysis/1495133936/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: c999bf5da5ea3960408d3cba154f965d3436b497ac9d4959b412bfcd956c8491",
+                "timestamp":"1495353247",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: c999bf5da5ea3960408d3cba154f965d3436b497ac9d4959b412bfcd956c8491",
+                "timestamp":"1495353247",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: c999bf5da5ea3960408d3cba154f965d3436b497ac9d4959b412bfcd956c8491",
+                "timestamp":"1495353248",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/c999bf5da5ea3960408d3cba154f965d3436b497ac9d4959b412bfcd956c8491/analysis/1495319617/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: b2ca4093b2e0271cb7a3230118843fccc094e0160a0968994ed9f10c8702d867",
+                "timestamp":"1495353248",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: b2ca4093b2e0271cb7a3230118843fccc094e0160a0968994ed9f10c8702d867",
+                "timestamp":"1495353249",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: b2ca4093b2e0271cb7a3230118843fccc094e0160a0968994ed9f10c8702d867",
+                "timestamp":"1495353249",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b2ca4093b2e0271cb7a3230118843fccc094e0160a0968994ed9f10c8702d867/analysis/1495133695/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: ad8965e531424cb34120bf0c1b4b98d4ab769bed534d9a36583364e9572332fa",
+                "timestamp":"1495353250",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: ad8965e531424cb34120bf0c1b4b98d4ab769bed534d9a36583364e9572332fa",
+                "timestamp":"1495353250",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: ad8965e531424cb34120bf0c1b4b98d4ab769bed534d9a36583364e9572332fa",
+                "timestamp":"1495353250",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/ad8965e531424cb34120bf0c1b4b98d4ab769bed534d9a36583364e9572332fa/analysis/1495132708/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: a7c387b4929f51e38706d8b0f8641e032253b07bc2869a450dfa3df5663d7392",
+                "timestamp":"1495353251",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: a7c387b4929f51e38706d8b0f8641e032253b07bc2869a450dfa3df5663d7392",
+                "timestamp":"1495353251",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: a7c387b4929f51e38706d8b0f8641e032253b07bc2869a450dfa3df5663d7392",
+                "timestamp":"1495353251",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/a7c387b4929f51e38706d8b0f8641e032253b07bc2869a450dfa3df5663d7392/analysis/1495116317/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 9bd32162e0a50f8661fd19e3b26ff65868ab5ea636916bd54c244b0148bd9c1b",
+                "timestamp":"1495353252",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 9bd32162e0a50f8661fd19e3b26ff65868ab5ea636916bd54c244b0148bd9c1b",
+                "timestamp":"1495353252",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 9bd32162e0a50f8661fd19e3b26ff65868ab5ea636916bd54c244b0148bd9c1b",
+                "timestamp":"1495353253",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/9bd32162e0a50f8661fd19e3b26ff65868ab5ea636916bd54c244b0148bd9c1b/analysis/1495206518/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 94189147ba9749fd0f184fe94b345b7385348361480360a59f12adf477f61c97",
+                "timestamp":"1495353253",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 94189147ba9749fd0f184fe94b345b7385348361480360a59f12adf477f61c97",
+                "timestamp":"1495353253",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 94189147ba9749fd0f184fe94b345b7385348361480360a59f12adf477f61c97",
+                "timestamp":"1495353254",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/94189147ba9749fd0f184fe94b345b7385348361480360a59f12adf477f61c97/analysis/1495116293/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 64442cceb7d618e70c62d461cfaafdb8e653b8d98ac4765a6b3d8fd1ea3bce15",
+                "timestamp":"1495353254",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 64442cceb7d618e70c62d461cfaafdb8e653b8d98ac4765a6b3d8fd1ea3bce15",
+                "timestamp":"1495353255",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 64442cceb7d618e70c62d461cfaafdb8e653b8d98ac4765a6b3d8fd1ea3bce15",
+                "timestamp":"1495353255",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/64442cceb7d618e70c62d461cfaafdb8e653b8d98ac4765a6b3d8fd1ea3bce15/analysis/1495260898/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 1ee894c0b91f3b2f836288c22ebeab44798f222f17c255f557af2260b8c6a32d",
+                "timestamp":"1495353255",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 1ee894c0b91f3b2f836288c22ebeab44798f222f17c255f557af2260b8c6a32d",
+                "timestamp":"1495353256",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (variant) - Xchecked via VT: 1ee894c0b91f3b2f836288c22ebeab44798f222f17c255f557af2260b8c6a32d",
+                "timestamp":"1495353256",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/1ee894c0b91f3b2f836288c22ebeab44798f222f17c255f557af2260b8c6a32d/analysis/1495312044/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (captured) - Xchecked via VT: e049d8f69ddee0c2d360c27b98fa9e61b7202bb0d3884dd3ca63f8aa288422dc",
+                "timestamp":"1495353257",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"UpdateInstaller.exe (captured) - Xchecked via VT: e049d8f69ddee0c2d360c27b98fa9e61b7202bb0d3884dd3ca63f8aa288422dc",
+                "timestamp":"1495353257",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"UpdateInstaller.exe (captured) - Xchecked via VT: e049d8f69ddee0c2d360c27b98fa9e61b7202bb0d3884dd3ca63f8aa288422dc",
+                "timestamp":"1495353257",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/e049d8f69ddee0c2d360c27b98fa9e61b7202bb0d3884dd3ca63f8aa288422dc/analysis/1495348433/",
+                "to_ids":false
+            }
+        ]
+    }
+}

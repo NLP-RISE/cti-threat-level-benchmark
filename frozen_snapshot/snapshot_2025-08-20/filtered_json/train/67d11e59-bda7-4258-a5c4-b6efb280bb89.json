@@ -1,0 +1,124 @@
+{
+    "Event":{
+        "threat_level_id":"1",
+        "date":"2022-01-16",
+        "published":true,
+        "info":"Destructive malware targeting Ukrainian organizations",
+        "publish_timestamp":"1642349470",
+        "timestamp":"1642349463",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"Hash of destructive malware stage1.exe",
+                "timestamp":"1642349026",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Hash of stage2.exe",
+                "timestamp":"1642349026",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Other",
+                "comment":"Example Impacket command line showing the execution of the destructive malware. The working directory has varied in observed intrusions.",
+                "timestamp":"1642349060",
+                "type":"comment",
+                "value":"cmd.exe /Q /c start c:\\stage1.exe 1> \\\\127.0.0.1\\ADMIN$\\__[TIMESTAMP] 2>&1",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349094",
+                "type":"filename",
+                "value":"stage1.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349094",
+                "type":"filename",
+                "value":"stage2.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349151",
+                "type":"filename",
+                "value":"C:\\PerfLogs\\stage1.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349151",
+                "type":"filename",
+                "value":"%ALLUSERSPROFILE%\\stage1.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349151",
+                "type":"filename",
+                "value":"C:\\\\stage1.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1642349151",
+                "type":"filename",
+                "value":"C:\\temp\\stage1.exe",
+                "to_ids":false
+            },
+            {
+                "category":"Other",
+                "comment":"Ransom note",
+                "timestamp":"1642349314",
+                "type":"comment",
+                "value":"Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1642349403",
+                "type":"link",
+                "value":"https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/",
+                "to_ids":false
+            }
+        ],
+        "Object":[
+            {
+                "comment":"",
+                "description":"An object to describe a Bitcoin wallet. Best to be used with bitcoin-transactions.",
+                "meta-category":"financial",
+                "name":"btc-wallet",
+                "timestamp":"1642349350",
+                "Attribute":[
+                    {
+                        "category":"Financial fraud",
+                        "comment":"",
+                        "timestamp":"1642349350",
+                        "type":"btc",
+                        "value":"1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv",
+                        "to_ids":true
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,177 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2017-07-21",
+        "published":true,
+        "info":"OSINT - Rurktar - Spyware under Construction",
+        "publish_timestamp":"1500647729",
+        "timestamp":"1500647714",
+        "Tag":[
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1500647714",
+                "type":"link",
+                "value":"https://www.gdatasoftware.com/blog/2017/07/29896-rurktar-spyware-under-construction",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1500647714",
+                "type":"text",
+                "value":"Researchers at G DATA - have examined a new spyware which still seems to be in a development stage. But what is it about and what are its objectives?\r\nThe development of any kind of software takes time. Not every function that is planned for the final product is implemented right from the start. It does not come as a surprise that this is also true for the development of malware. At the G DATA Security Labs, a file has sparked the interest of our researchers - this file is interesting for a number of reasons.\r\n\r\nWho commissioned it?\r\nThe new espionage tool which was was christened \"Rurktar\" allows some conclusions as to its origin. It is very likely that it originates from Russia. There is quite some evidence to support this: some of the internal error messages of Rurktar are in Russian. Also, the IP addresses used for remote control of the spyware are located in Russia.\r\n\r\nIt is not 100 per cent clear whether Rurktar is the work of a single individual or a development team. What we can say, though, is that a Dropbox folder is used as a working directory. There are several possible reasons for this. One of them is that several developers are cooperating here and consolidate their work through a Dropbox. What Dropbox can also be used for by a single individual is a crude and very basic versioning system - some Dropbox accounts offer the possibility of restoring earlier versions of a file. Therefore, it can be used to track changes, but it is not ideal from a developer's stand point. Using Dropbox as a backup is, of course, also a possibility to be considered here.",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1500647714",
+                "type":"link",
+                "value":"https://file.gdatasoftware.com/web/en/documents/whitepaper/Rurktar.pdf",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A",
+                "timestamp":"1500647714",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A",
+                "timestamp":"1500647714",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A",
+                "timestamp":"1500647714",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A",
+                "timestamp":"1500647714",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Artifacts dropped",
+                "comment":"",
+                "timestamp":"1500647714",
+                "type":"yara",
+                "value":"rule Rurktar\r\n{\r\nmeta:\r\nauthor = \"Nathan Stern\"\r\ndescription = \"Rurktar detection rule\"\r\nstrings:\r\n $a = \"FriendlyID\" wide ascii nocase\r\n $a2 = \"CaptureMode\" wide ascii nocase\r\n $a3 = \"CaptureStart\" wide ascii nocase\r\n $a4 = \"CaptureMonikerString\" wide ascii nocase\r\n $a5 = \"ACaptureMonikerString\" wide ascii nocase\r\n $a6 = \"VideoCap\" wide ascii nocase\r\n $a7 = \"SkipFrames\" wide ascii nocase\r\n $a8 = \"SkipDetectionFrames\" wide ascii nocase\r\n $a9 = \"SkipTakeFrames\" wide ascii nocase\r\n $a10 = \"DetectionPreBuffer\" wide ascii nocase\r\n $a11 = \"MaxCaptureFrames\" wide ascii nocase\r\n $a12 = \"MaxCaptureFolderSize\" wide ascii nocase\r\n $a13 = \"NetworkImageQ\" wide ascii nocase\r\n $a14 = \"CaptureDirectory\" wide ascii nocase\r\n $a15 = \"DefPass\" wide ascii nocase\r\n $a16 = \"CaptureStopProcess1\" wide ascii nocase\r\n $a17 = \"CaptureStopProcess2\" wide ascii nocase\r\n$a18 = \"DetectPorog\" wide ascii nocase\r\n $a19 = \"WatchFiles\" wide ascii nocase\r\n $a20 = \"AutoSendPreviews\" wide ascii nocase\r\n $a21 = \"ControlExt\" wide ascii nocase\r\n $a22 = \"SendOriginPreviews\" wide ascii nocase\r\n $a23 = \"CopyOriginsToCaptureDir\" wide ascii nocase\r\n $a24 = \"WatchProc\" wide ascii nocase\r\n $a25 = \"ScreenshotExt\" wide ascii nocase\r\n $a26 = \"ScreenshotAutoCapture\" wide ascii nocase\r\n $a27 = \"ScreenshotAutoStartProcess\" wide ascii nocase\r\n $a28 = \"ScreenshotPause\" wide ascii nocase\r\n $a29 = \"ProxyEnabled\" wide ascii nocase\r\n $b = \"\\\\R_C_S.ini\" wide ascii nocase\r\n $b2 = \"\\\\RCS.ini\" wide ascii nocase\r\n $b3 = \"RCS.log\" wide ascii nocase\r\n $b4 = \"RCSU.exe\" wide ascii nocase\r\n $b5 = \"RCS.log\" wide ascii nocase\r\n $c = \"?share*\" wide ascii nocase\r\n $c2 = \"?find*\" wide ascii nocase\r\n $c3 = \"user?\" wide ascii nocase\r\n $c4 = \"?prefs*\" wide ascii nocase\r\n $c5 = \"?type*abstract\" wide ascii nocase\r\n $c6 = \"?FriendlyID*\" wide ascii nocase\r\n $c7 = \"?disc*\" wide ascii nocase\r\ncondition:\r\n5 of ($a*) or\r\n3 of ($b*) or\r\n 4 of ($c*)\r\n}",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 618908e3d368301a323ee8ae7df867db8d7f5a98b513cfb8c961fb945e62a9b6",
+                "timestamp":"1500647715",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 618908e3d368301a323ee8ae7df867db8d7f5a98b513cfb8c961fb945e62a9b6",
+                "timestamp":"1500647715",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 618908e3d368301a323ee8ae7df867db8d7f5a98b513cfb8c961fb945e62a9b6",
+                "timestamp":"1500647715",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/618908e3d368301a323ee8ae7df867db8d7f5a98b513cfb8c961fb945e62a9b6/analysis/1489348132/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 89110710eddd0da23ea206a6047c252bf1e16a2d1957729973d77a58219e614b",
+                "timestamp":"1500647715",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 89110710eddd0da23ea206a6047c252bf1e16a2d1957729973d77a58219e614b",
+                "timestamp":"1500647715",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 89110710eddd0da23ea206a6047c252bf1e16a2d1957729973d77a58219e614b",
+                "timestamp":"1500647715",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/89110710eddd0da23ea206a6047c252bf1e16a2d1957729973d77a58219e614b/analysis/1489377772/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 54f25a6820b8a0e3fc26bdf4599e7db695ef7aefb7dcefaa2c2581bb58426a40",
+                "timestamp":"1500647715",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 54f25a6820b8a0e3fc26bdf4599e7db695ef7aefb7dcefaa2c2581bb58426a40",
+                "timestamp":"1500647715",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: 54f25a6820b8a0e3fc26bdf4599e7db695ef7aefb7dcefaa2c2581bb58426a40",
+                "timestamp":"1500647715",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/54f25a6820b8a0e3fc26bdf4599e7db695ef7aefb7dcefaa2c2581bb58426a40/analysis/1497208372/",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: b4b75bda475ea58f2a5cf3329e311a70fa56745ba6cb2785523fa53139d4e37f",
+                "timestamp":"1500647715",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: b4b75bda475ea58f2a5cf3329e311a70fa56745ba6cb2785523fa53139d4e37f",
+                "timestamp":"1500647715",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"MSIL.Backdoor.Rurktar.A - Xchecked via VT: b4b75bda475ea58f2a5cf3329e311a70fa56745ba6cb2785523fa53139d4e37f",
+                "timestamp":"1500647715",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/b4b75bda475ea58f2a5cf3329e311a70fa56745ba6cb2785523fa53139d4e37f/analysis/1496056079/",
+                "to_ids":false
+            }
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "Event":{
+        "threat_level_id":"3",
+        "date":"2016-12-28",
+        "published":true,
+        "info":"OSINT - Switcher: Android joins the â€˜attack-the-routerâ€™ club",
+        "publish_timestamp":"1484666699",
+        "timestamp":"1484666593",
+        "Tag":[
+            {
+                "name":"enisa:nefarious-activity-abuse=\"DNS-poisoning-or-DNS-spoofing-or-DNS-Manipulations\""
+            },
+            {
+                "name":"tlp:white"
+            },
+            {
+                "name":"osint:source-type=\"blog-post\""
+            },
+            {
+                "name":"ms-caro-malware:malware-platform=\"AndroidOS\""
+            },
+            {
+                "name":"enisa:nefarious-activity-abuse=\"infected-trusted-mobile-apps\""
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482916441",
+                "type":"link",
+                "value":"https://securelist.com/blog/mobile/76969/switcher-android-joins-the-attack-the-router-club/",
+                "to_ids":false
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1482916457",
+                "type":"comment",
+                "value":"Recently, in our never-ending quest to protect the world from malware, we found a misbehaving Android trojan. Although malware targeting the Android OS stopped being a novelty quite some time ago, this trojan is quite unique. Instead of attacking a user, it attacks the Wi-Fi network the user is connected to, or, to be precise, the wireless router that serves the network. The trojan, dubbed Trojan.AndroidOS.Switcher, performs a brute-force password guessing attack on the routerâ€™s admin web interface. If the attack succeeds, the malware changes the addresses of the DNS servers in the routerâ€™s settings, thereby rerouting all DNS queries from devices in the attacked Wi-Fi network to the servers of the cybercriminals (such an attack is also known as DNS-hijacking). So, let us explain in detail how Switcher performs its brute-force attacks, gets into the routers and undertakes its DNS-hijack.",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"; package name â€“ com.baidu.com",
+                "timestamp":"1482916542",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"package name â€“ com.snda.wifi",
+                "timestamp":"1482916570",
+                "type":"md5",
+                "value":"<md5>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484666529",
+                "type":"mobile-application-id",
+                "value":"com.baidu.com",
+                "to_ids":false
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"",
+                "timestamp":"1484666593",
+                "type":"mobile-application-id",
+                "value":"com.snda.wifi",
+                "to_ids":false
+            },
+            {
+                "category":"Network activity",
+                "comment":"We recommend that all users check their DNS settings and search for the following rogue DNS servers:",
+                "timestamp":"1482916707",
+                "type":"ip-dst",
+                "value":"101.200.147.153",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"We recommend that all users check their DNS settings and search for the following rogue DNS servers:",
+                "timestamp":"1482916708",
+                "type":"ip-dst",
+                "value":"112.33.13.11",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"We recommend that all users check their DNS settings and search for the following rogue DNS servers:",
+                "timestamp":"1482916708",
+                "type":"ip-dst",
+                "value":"120.76.249.59",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"; package name â€“ com.baidu.com - Xchecked via VT: acdb7bfebf04affd227c93c97df536cf",
+                "timestamp":"1482916805",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"; package name â€“ com.baidu.com - Xchecked via VT: acdb7bfebf04affd227c93c97df536cf",
+                "timestamp":"1482916806",
+                "type":"sha1",
+                "value":"<sha1>",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"; package name â€“ com.baidu.com - Xchecked via VT: acdb7bfebf04affd227c93c97df536cf",
+                "timestamp":"1482916806",
+                "type":"link",
+                "value":"https://www.virustotal.com/file/d3aee0e8fa264a33f77bdd59d95759de8f6d4ed6790726e191e39bcfd7b5e150/analysis/1482813091/",
+                "to_ids":false
+            }
+        ]
+    }
+}

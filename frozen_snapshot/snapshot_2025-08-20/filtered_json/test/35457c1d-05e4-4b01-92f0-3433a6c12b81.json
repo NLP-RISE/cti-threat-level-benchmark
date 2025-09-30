@@ -1,0 +1,134 @@
+{
+    "Event":{
+        "threat_level_id":"2",
+        "date":"2023-12-30",
+        "published":true,
+        "info":"Seedworm: Iranian Hackers Target Telecoms Orgs in North and East Africa",
+        "publish_timestamp":"1703956379",
+        "timestamp":"1703956376",
+        "Tag":[
+            {
+                "name":"misp-galaxy:region=\"015 - Northern Africa\""
+            },
+            {
+                "name":"misp-galaxy:region=\"014 - Eastern Africa\""
+            },
+            {
+                "name":"misp-galaxy:sector=\"Telecoms\""
+            },
+            {
+                "name":"misp-galaxy:microsoft-activity-group=\"Mango Sandstorm\""
+            },
+            {
+                "name":"misp-galaxy:mitre-enterprise-attack-intrusion-set=\"MuddyWater - G0069\""
+            },
+            {
+                "name":"misp-galaxy:mitre-intrusion-set=\"MuddyWater - G0069\""
+            },
+            {
+                "name":"misp-galaxy:threat-actor=\"MuddyWater\""
+            },
+            {
+                "name":"tlp:white"
+            }
+        ],
+        "Attribute":[
+            {
+                "category":"Payload delivery",
+                "comment":"MuddyC2Go DLL launcher",
+                "timestamp":"1703956292",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Benign Java(TM) Platform SE 8 executable used for sideloading MuddyC2Go DLL",
+                "timestamp":"1703956283",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Custom keylogger",
+                "timestamp":"1703956274",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Payload delivery",
+                "comment":"Venom Proxy",
+                "timestamp":"1703956261",
+                "type":"sha256",
+                "value":"<sha256>",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"SimpleHelp C&C server",
+                "timestamp":"1703956216",
+                "type":"ip-dst",
+                "value":"146.70.124.102",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MuddyC2Go C&C server",
+                "timestamp":"1703956191",
+                "type":"ip-dst",
+                "value":"94.131.109.65",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MuddyC2Go C&C server",
+                "timestamp":"1703956191",
+                "type":"ip-dst",
+                "value":"95.164.38.99",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MuddyC2Go C&C server",
+                "timestamp":"1703956191",
+                "type":"ip-dst",
+                "value":"45.67.230.91",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MuddyC2Go C&C server",
+                "timestamp":"1703956191",
+                "type":"ip-dst",
+                "value":"95.164.46.199",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"MuddyC2Go C&C server",
+                "timestamp":"1703956191",
+                "type":"ip-dst",
+                "value":"94.131.98.14",
+                "to_ids":true
+            },
+            {
+                "category":"Network activity",
+                "comment":"GoSOCKS5proxy C&C server",
+                "timestamp":"1703956169",
+                "type":"ip-dst",
+                "value":"94.131.3.160",
+                "to_ids":true
+            },
+            {
+                "category":"External analysis",
+                "comment":"",
+                "timestamp":"1703956368",
+                "type":"link",
+                "value":"https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/iran-apt-seedworm-africa-telecoms",
+                "to_ids":false
+            }
+        ]
+    }
+}
